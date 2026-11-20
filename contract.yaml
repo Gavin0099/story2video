@@ -7,5 +7,11 @@ documents:
   - AGENTS.md
   - PLAN.md
   - governance/README.md
+  - AGENTS.base.md
+  - governance/TESTING.md
+  - governance/ARCHITECTURE.md
 validators:
   - governance/validators/episode_v1.py
+
+ai_behavior_override:
+  - AGENTS.base.md

@@ -1,21 +1,27 @@
-# AI Governance Framework 導入
+# story2video 開發治理
 
-本專案採用上游定義的 [external contract repo](https://github.com/Gavin0099/ai-governance-framework/blob/b8a16828481e6b537c474d4e2e4be4d3e047e3e8/docs/ADOPTION_MODEL.md#3-external-contract-repo)。`contract.yaml` 引用專案工作指引、計畫與 Episode v1 validator。CLI 與一般 CI 可獨立執行。框架 checkout 僅用於手動驗證契約。
+AI Governance Framework 固定於 `additional/ai-governance-framework`。[`framework.lock.json`](framework.lock.json) 記錄來源與 commit。[`contract.yaml`](../contract.yaml) 保留 Episode v1 驗證器並接上治理基線。一般 `s2v` 指令與 M0 測試仍可獨立執行。
 
-| 能力 | M0 狀態 |
-| --- | --- |
-| 工作範圍與驗收指引 | 見 `AGENTS.md` 與 `PLAN.md` |
-| 框架契約與 Episode v1 validator | 可隨指定上游 commit 手動驗證 |
-| 框架 runtime、Git hooks、F-7 更新與記憶治理 | 留待另行決定 |
+## 新 checkout
 
-## 契約驗收
-
-在本 repo 根目錄執行。框架 checkout 放在 repo 外或 gitignored 的 `artifacts/`。
+在 repo 根目錄初始化框架並安裝 Git hooks。Windows 使用 Git for Windows。
 
 ```sh
-git clone https://github.com/Gavin0099/ai-governance-framework.git artifacts/governance-framework
-git -C artifacts/governance-framework checkout --detach b8a16828481e6b537c474d4e2e4be4d3e047e3e8
-uv run --locked python governance/verify.py --framework-root artifacts/governance-framework
+git submodule update --init -- additional/ai-governance-framework
+cd additional/ai-governance-framework
+python -X utf8 -m governance_tools.hook_installer --repo ../.. --framework-root . --hooks-only
+cd ../..
 ```
 
-驗證器使用上游勘驗介面載入契約，執行合法、非法與缺少證據三種情境。結果涵蓋分集格式、授權欄位和旁白 ID。故事合理性、媒體品質與人員發布權限由後續里程碑驗收。
+`pre-commit` 會檢查計畫的更新日期與治理訊號。計畫超過 60 天未更新時，框架會擋下 commit。`pre-push` 會掃描本次 push 將新增可達的 Git JSON 物件，並執行框架 runtime smoke。兩支 hook 均安裝在目前 clone 的 `.git/hooks/`。
+
+## 驗收
+
+```sh
+python -X utf8 additional/ai-governance-framework/governance_tools/hook_install_validator.py --repo . --framework-root additional/ai-governance-framework --format human
+python -X utf8 additional/ai-governance-framework/governance_tools/governance_drift_checker.py --repo . --framework-root additional/ai-governance-framework --format human
+python -X utf8 additional/ai-governance-framework/governance_tools/external_repo_smoke.py --repo . --contract contract.yaml --format human
+uv run --locked python governance/verify.py
+```
+
+Episode v1 契約驗證涵蓋合法、非法與缺少證據三種情境。故事審核、媒體品質與公開發布權限屬於後續產品里程碑。

@@ -41,4 +41,4 @@ uv run --locked s2v validate --file tests/fixtures/episode.invalid.json
 - SQLite schema 初始版本為 1。狀態與事件在同一筆交易寫入。可重試錯誤只能回到原失敗階段。QA 退件回到草稿重新驗證。流程圖保留獨立公開核准，並在進入私人上傳狀態前要求明確標記受眾。
 - `video/` 提供可型別檢查的 Remotion 入口。內容審核、影片合成、API 成本、真實人工權限驗證與 YouTube 串接留待後續階段。
 
-治理採用 AI Governance Framework 的 [外部契約模式](governance/README.md)，可手動使用指定的上游 commit 驗證契約。
+開發治理採用固定版本的 AI Governance Framework。開發者可初始化 submodule、安裝本機 Git hooks 並重跑驗收。[開發治理](governance/README.md)
