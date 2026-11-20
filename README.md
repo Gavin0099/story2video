@@ -42,3 +42,7 @@ uv run --locked s2v validate --file tests/fixtures/episode.invalid.json
 - `video/` 提供可型別檢查的 Remotion 入口。內容審核、影片合成、API 成本、真實人工權限驗證與 YouTube 串接留待後續階段。
 
 開發治理採用固定版本的 AI Governance Framework。開發者可初始化 submodule、安裝本機 Git hooks 並重跑驗收。[開發治理](governance/README.md)
+
+## Shorts 本機試作
+
+工作分支另提供旁白、雙語字幕、視覺審查與 FFmpeg 合成的試作程式。[試作與跨電腦接續方式](experiments/pilot/README.md)
