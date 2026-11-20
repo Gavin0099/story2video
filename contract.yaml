@@ -1,0 +1,11 @@
+name: story2video-m0
+plugin_version: "1.0.0"
+framework_interface_version: "1"
+framework_compatible: ">=1.0.0,<2.0.0"
+domain: story2video
+documents:
+  - AGENTS.md
+  - PLAN.md
+  - governance/README.md
+validators:
+  - governance/validators/episode_v1.py

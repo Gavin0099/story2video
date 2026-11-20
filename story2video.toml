@@ -1,0 +1,2 @@
+[storage]
+database = "artifacts/story2video.sqlite3"

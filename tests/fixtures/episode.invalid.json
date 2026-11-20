@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "puzzle-invalid",
+  "script_revision": 1,
+  "content_type": "puzzle",
+  "language": "zh-TW",
+  "target_audience": "general",
+  "format": "shorts-9x16",
+  "duration_target_sec": 45,
+  "title": "測試用退件",
+  "hook": "門外有一雙鞋。",
+  "question": "為什麼鞋子一直在那裡？",
+  "answer": "那是一張貼紙。",
+  "clues": ["從側面看不到鞋底"],
+  "narration": [
+    {"id": "line-01", "text": "門外有一雙鞋。", "scene": "hook"},
+    {"id": "line-02", "text": "那是一張貼紙。", "scene": "reveal"}
+  ],
+  "visual_style": "cinematic-illustrated",
+  "source": {"origin": "licensed", "source_refs": [], "license_reviewed": false},
+  "ai_disclosure_review": {"required": null, "reviewed_by": null},
+  "youtube": {"made_for_kids": null, "privacy_status": "private"},
+  "review": {"logic": "pending", "editorial": "pending"}
+}

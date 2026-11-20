@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "puzzle-0001",
+  "script_revision": 1,
+  "content_type": "puzzle",
+  "language": "zh-TW",
+  "target_audience": "general",
+  "format": "shorts-9x16",
+  "duration_target_sec": 45,
+  "title": "收店後，門外還有一雙鞋",
+  "hook": "鞋店鎖門後，店員把一雙新鞋留在門外。",
+  "question": "她既沒有忘記收鞋，也沒有留給晚來的客人，為什麼？",
+  "answer": "店員在整理櫥窗樣品。門外那雙是印在玻璃外側的防撞貼，無法像鞋子一樣收回店內。",
+  "clues": ["那雙鞋總在相同位置", "經過的人從側面看不到鞋底"],
+  "narration": [
+    {"id": "line-01", "text": "鞋店收了，門外卻還有一雙新鞋。", "scene": "hook"},
+    {"id": "line-02", "text": "奇怪的是，從側面看，根本沒有鞋底。", "scene": "clue"},
+    {"id": "line-03", "text": "那是玻璃門外側的防撞貼，看起來剛好像一雙鞋。", "scene": "reveal"}
+  ],
+  "visual_style": "cinematic-illustrated",
+  "source": {"origin": "original", "source_refs": [], "license_reviewed": false},
+  "ai_disclosure_review": {"required": null, "reviewed_by": null},
+  "youtube": {"made_for_kids": null, "privacy_status": "private"},
+  "review": {"logic": "pending", "editorial": "pending"}
+}

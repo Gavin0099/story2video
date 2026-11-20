@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:story2video:episode:v1",
+  "title": "story2video Episode v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "episode_id", "script_revision", "content_type", "language",
+    "target_audience", "format", "duration_target_sec", "title", "hook", "question",
+    "answer", "clues", "narration", "visual_style", "source",
+    "ai_disclosure_review", "youtube", "review"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "episode_id": {"$ref": "#/$defs/id"},
+    "script_revision": {"type": "integer", "minimum": 1, "maximum": 2147483647},
+    "content_type": {"enum": ["puzzle", "science", "tech_tutorial"]},
+    "language": {"const": "zh-TW"},
+    "target_audience": {"enum": ["general", "kids"]},
+    "format": {"const": "shorts-9x16"},
+    "duration_target_sec": {"type": "integer", "minimum": 30, "maximum": 60},
+    "title": {"$ref": "#/$defs/text"},
+    "hook": {"$ref": "#/$defs/text"},
+    "question": {"$ref": "#/$defs/text"},
+    "answer": {"$ref": "#/$defs/text"},
+    "clues": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/text"}
+    },
+    "narration": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/narration_line"},
+      "allOf": [
+        {"contains": {"properties": {"scene": {"const": "hook"}}}},
+        {"contains": {"properties": {"scene": {"const": "reveal"}}}}
+      ]
+    },
+    "visual_style": {"$ref": "#/$defs/text"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "source_refs", "license_reviewed"],
+      "properties": {
+        "origin": {"enum": ["original", "licensed"]},
+        "source_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/text"}
+        },
+        "license_reviewed": {"type": "boolean"}
+      },
+      "if": {"properties": {"origin": {"const": "licensed"}}},
+      "then": {
+        "properties": {
+          "source_refs": {"minItems": 1},
+          "license_reviewed": {"const": true}
+        }
+      }
+    },
+    "ai_disclosure_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "reviewed_by"],
+      "properties": {
+        "required": {"type": ["boolean", "null"]},
+        "reviewed_by": {"anyOf": [{"$ref": "#/$defs/text"}, {"type": "null"}]}
+      }
+    },
+    "youtube": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["made_for_kids", "privacy_status"],
+      "properties": {
+        "made_for_kids": {"type": ["boolean", "null"]},
+        "privacy_status": {"const": "private"}
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logic", "editorial"],
+      "properties": {
+        "logic": {"$ref": "#/$defs/review_status"},
+        "editorial": {"$ref": "#/$defs/review_status"}
+      }
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "maxLength": 64, "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?![\\s\\S])"},
+    "text": {"type": "string", "pattern": "\\S"},
+    "review_status": {"enum": ["pending", "passed", "failed"]},
+    "narration_line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "scene"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "text": {"$ref": "#/$defs/text"},
+        "scene": {"enum": ["hook", "setup", "clue", "think", "reveal", "close"]}
+      }
+    }
+  }
+}
