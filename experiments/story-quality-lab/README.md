@@ -17,15 +17,17 @@ AI 盲讀使用乾淨的工作階段，由主持人逐輪貼出同一套提問�
 
 ## 怎麼記
 
-[讀者記錄表](reader-record.csv)已填入這次兩場 AI 複測作為範例。可另存一份副本保留欄名，清除範例列後填寫。每一列是一輪，用 session_id 匯集同場的資料，以 turn_no 保留順序，用 transcript_ref 對回完整原文。stage 依次填 part_1、part_2、q1 至 q3（有問才填）、lock、reveal、assessment。未執行的輪不新增列。最後一個是非回答若與鎖猜一起送出，就在 lock 填 question 和 answer，不重複新增問答列。空白代表該欄不適用或未收集。
+[讀者記錄表](reader-record.csv)已填入這次兩場 AI 複測作為範例。可另存一份副本保留欄名，清除範例列後填寫。每一列是一輪，用 reader_id 記匿名讀者、card_order 記該讀者第幾張卡。session_id 匯集同一讀者同一張卡的資料，turn_no 保留輪次順序，transcript_ref 對回完整原文。stage 依次填 part_1、part_2、q1 至 q3（有問才填）、lock、reveal、assessment。未執行的輪不新增列。最後一個是非回答若與鎖猜一起送出，就在 lock 填 question 和 answer，不重複新增問答列。空白代表該欄不適用或未收集。
 
 | 檢查 | 欄位與判法 |
 | --- | --- |
 | **Leakage Check** | 比對實際送出及首次接觸回報。每輪在 exposure 記已接觸資訊，判定在 leakage_check。PASS 代表投遞符合順序且讀者回報無額外接觸，FAIL 代表確認提前接觸，UNKNOWN 代表缺乏紀錄。 |
 | **Belief Shift** | belief_shift 依序寫原猜、改成什麼、是哪條線索或哪個是非回答。只提高信心時，記「猜測不變」，避免把每次問答都算作一次理解轉變。 |
-| **Reveal Fairness** | 讀者在 reveal 逐一指出已公開的線索、仍成立的替代解及沒有提示的設定。以 SUPPORTED、PARTIAL、UNSUPPORTED 記錄。用 fairness_evidence 區分「所問的核心」與「用來收尾的補充細節」，並分辨哪些線索來自題卡、哪些來自是非問答。 |
+| **Reveal Fairness** | 讀者在 reveal 逐一指出已公開的線索、仍成立的替代解及沒有提示的設定。以 SUPPORTED、PARTIAL、UNSUPPORTED 記錄。SUPPORTED 代表揭曉前的線索足以支持所問核心，PARTIAL 代表線索只支持一部分或仍有同樣合理的其他解，UNSUPPORTED 代表核心所需的資訊要等揭曉才出現。用 fairness_evidence 記下題卡和是非問答各提供什麼，以及哪些細節只用於收尾。 |
 
 每個是非問答都記 question、answer、guess、alternative、evidence。lock 依題卡自己的主持口徑填 core_match（FULL、PARTIAL、MISS 或 NOT_ASSESSED）。猜測列的 confidence_pct 和 continue_1to5 用前述量尺，若有計時才填 elapsed_seconds。assessment 兩道關卡各填 PASS、FAIL 或 PENDING，並附個別理由。AI 複測可以記錄發放和讀者反應，真人與實際短片還要分別驗收。
+
+若做完整稿雙版偏好，另開一筆 session_id，將 track 和 stage 都填 preference。在 preference_pair 按實際出場順序寫兩個代碼，preferred_card 填勝出的代碼或 TIE，preference_reason 記推薦理由，以及哪個動作較可信。
 
 ## 怎麼判
 
