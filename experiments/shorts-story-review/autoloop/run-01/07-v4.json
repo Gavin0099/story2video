@@ -1,0 +1,15 @@
+{
+  "story": "07",
+  "version": "v4",
+  "parent": "5a72a048b1a2e67b54d31305110e3abd8c92a25197903393cee8b134dcf389e6",
+  "first": "我在媽媽的餐車第三次喊：「二十七號！」排在前面等取餐的兩個人回頭幫我找。窗口那碗麵還是沒人拿。媽媽擦了擦手，拿著手機走到隊尾。",
+  "second": "隊伍快排到巷口的白線了。只要有人排進來，媽媽就再退到那個人後面，把手機舉過人頭，對著窗口。我以為她嫌我出餐慢，要拍給我看隊伍有多長。可從車旁就拍得到整條隊伍。\n\n她為什麼每次都要退到最後？",
+  "reveal": "媽媽傳來一段影片。畫面裡，我在窗口張嘴叫號，聲音全被巷口的機車蓋過去了。她拿著手機退到隊尾，是要我聽聽離窗口最遠的人聽見什麼。\n\n我把價目板翻過來，寫上「27」，從窗口舉出去。站在媽媽前面的客人低頭看了自己的單子，馬上把它舉了起來。",
+  "english": "“Number twenty-seven!” I called for the third time from Mom’s food truck. Two people waiting near the front turned to look. Nobody claimed the noodles. Mom wiped her hands, took her phone, and walked to the back of the line.\n\nThe line was nearly at the end of the alley. Whenever someone joined, Mom stepped behind them and raised her phone toward my window. I figured she wanted to show me how long the line was getting. She could film the whole thing from beside the truck. Why keep moving back?\n\nMom sent me a clip. I saw myself calling the number. All I heard were scooters. That’s what it sounded like from the end of the line. I turned the menu board over, wrote “27,” and held it up. The customer in front of Mom checked their slip and raised it.",
+  "cores": {
+    "最遠處的聲音": "母親跟著隊尾移動，為了記錄離窗口最遠的客人實際聽見的叫號或環境音。噪音的來源、價目板和二十七號顧客可由揭曉補充。"
+  },
+  "hypothesis": "用隊首聽見和隊尾移動的差異支持可推理的動機，保留影片聲軌的重新理解。",
+  "change": "撤換晚餐分配，改成母親在移動的隊尾記錄叫號，讓女兒從觀眾位置檢查收音。",
+  "belief_shift": "讀者先以為母親拍隊伍或拍出餐，後來回頭看懂她站在最遠位置是為了收音。"
+}

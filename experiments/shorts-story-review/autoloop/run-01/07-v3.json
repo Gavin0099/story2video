@@ -1,0 +1,15 @@
+{
+  "story": "07",
+  "version": "v3",
+  "parent": "c096a2eeee45af162afaa6ed6c4b80d61a0e707b",
+  "first": "媽媽的餐車快收攤時，有個客人臨時多點一碗麵。我拿起盤裡留給自己晚餐的那一團生麵，放進麵籃。媽媽看了一眼，抽了張點單，走到隊伍最後面。",
+  "second": "後來的人一站到她身後，她就側身讓人先點。我以為她想等收攤再試味道，還把鹽罐往窗口推了推。直到台上只剩最後一團麵，她才把點單遞進來。\n\n她為什麼非得排最後？",
+  "reveal": "點單上寫著我的名字。媽媽在窗口放下一枚五十元硬幣，說：「這碗算賣掉了。」又有人朝餐車走來。我把最後一團麵下鍋，翻過「售完」的牌子。坐下來的時候，麵還在冒煙。",
+  "english": "We were about to close Mom’s food truck when a customer asked for one more bowl of noodles. I took the uncooked portion I’d set aside for dinner and dropped it into the strainer. Mom saw me, took an order slip, and went to the back of the line.\n\nWhenever someone joined behind her, she let them go first. I figured she wanted to taste the noodles after closing, so I slid the salt jar toward the window. She handed me her slip when there was only one serving left. Why did she insist on going last?\n\nThe name on the slip was mine. Mom set a coin on the counter. “That bowl’s sold.” Someone else was walking up. I cooked the last serving and flipped the sign to SOLD OUT. The noodles were still steaming when I sat down.",
+  "cores": {
+    "最後一碗": "母親看見女兒會把留給自己的那份做給客人，讓有排隊的客人先買，再取得最後一碗給女兒。付款和在點單寫名字是揭曉深化。"
+  },
+  "hypothesis": "讓觀眾回想上面被交給客人的晚餐份量，重新解讀母親讓人插隊的目的。",
+  "change": "從母親放手讓女兒決定湯味，改成母親用點單替女兒保下一頓晚餐。",
+  "belief_shift": "讀者即使猜到母親在等最後一份，仍能看到排隊、名字和付款都在保住原本易被讓掉的一碗。"
+}

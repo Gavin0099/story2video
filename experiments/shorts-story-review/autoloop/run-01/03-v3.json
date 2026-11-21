@@ -1,0 +1,16 @@
+{
+  "story": "03",
+  "version": "v3",
+  "parent": "c096a2eeee45af162afaa6ed6c4b80d61a0e707b",
+  "first": "巷口裁縫店裡，裁縫把一件舊保全制服的五個扣眼，一個一個縫死。孫女交代，五顆鈕扣都留在原位。最下面那顆缺了一角，也留著。",
+  "second": "隔壁便當店一拉鐵門，阿嬤就把手伸向身旁的空位。昨晚制服還掛在椅背上，她沿著鈕扣摸到最下面，在缺角那裡停了很久。今晚椅背空了，她的手還是伸了過去。\n\n裁縫為什麼要把五個扣眼都縫死？",
+  "reveal": "裁縫合上制服前襟，縫住扣眼，把衣身做成裝棉的抱枕。孫女把抱枕靠在阿嬤平常伸手的那一側。隔壁的鐵門又響了，阿嬤伸手，拇指摸到了原來那個缺角。\n\n以前阿公下夜班，總在便當店拉下鐵門時回來，坐到阿嬤旁邊。兩個人看電視，她的拇指就擱在他那顆鈕扣上。",
+  "english": "At the tailor’s down the lane, a woman stitched all five buttonholes shut on an old security guard’s uniform. The granddaughter asked her to leave every button where it was, even the chipped one at the bottom.\n\nWhen the shop next door closed its metal shutter, Grandma reached toward the empty seat beside her. Last night the uniform was on the chair. She’d traced the buttons down and rested her thumb on the chipped one. Tonight the chair was bare, and she still reached over. Why sew the buttonholes shut?\n\nThe tailor had closed up the uniform and turned it into a stuffed cushion. The granddaughter put it within Grandma’s reach. The shutter rattled. Grandma reached over, and her thumb found the chip. Grandpa used to get home when the shop closed. When they watched TV together, she’d rest her thumb on that button.",
+  "cores": {
+    "保留觸感": "孫女留下原位置與缺角，讓阿嬤能摸到熟悉的那排鈕扣和缺角。",
+    "改成可摸的物件": "制服封住開口，因為改成留在阿嬤伸手可碰的位置的物件。確切名稱或作法可在揭曉才知道。"
+  },
+  "hypothesis": "把改衣技術問題改成一個可由聲音與觸覺回推的日常習慣。",
+  "change": "移除石膏客人與隱藏扣具，改為制服、椅子、鐵門與一顆缺角鈕扣。",
+  "belief_shift": "讀者猜到保留觸感後，能理解縫死扣眼與阿嬤伸手的原因，且揭曉仍有新內容。"
+}
