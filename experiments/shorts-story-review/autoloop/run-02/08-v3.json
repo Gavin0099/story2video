@@ -1,0 +1,16 @@
+{
+  "story": "08",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "試印的第一張",
+  "first": "印刷店搬家的早上，阿岑把試印用的墨擦得一乾二淨，照樣用印機壓了一張厚紙。爸爸把舊店鑰匙擱在缺了一角的櫃台上，摺好圍裙，拿起白手杖。搬家工人等著抬走那座櫃台。",
+  "second": "阿岑把厚紙翻過來，用窗邊的斜光檢查紙背。上面凸起一條細線，拐了兩個彎，接著是個缺了一角的長方形。她用指尖摸過兩個轉角，才把那張紙收好。\n\n她為什麼要把這張沒上墨的試印帶到新店？",
+  "reveal": "新店開門那天，阿岑把厚紙放在入口的矮台。爸爸從紙邊摸出那條凸線，摸過兩個轉角，再拿手杖沿新店的走道走。走過第二個彎，他摸到原來那座櫃台，拇指正好落在熟悉的缺角。\n\n他繫回圍裙，自己沿原路走回門口，把牌子翻到「營業中」。",
+  "english": "On moving day, Mei wiped the ink off the press and ran a thick sheet through anyway. Her father set his old shop key on the chipped counter. He folded his apron and picked up his white cane. The movers were waiting to take the counter.\n\nMei flipped the sheet. The window light caught a raised line with two turns. It ended at a rectangle with one corner missing. She traced it with a finger. Why take an inkless proof to the new shop?\n\nOn opening day, her father felt the line, then followed the route with his cane. After the second turn, his thumb found the chip in his old counter. He tied on his apron, walked back to the door, and turned the sign to OPEN.",
+  "cores": {
+    "摸得出的路": "她讓印機在紙上壓出可觸摸的路線和辨認得出的櫃台輪廓，讓拿白手杖的父親用手預讀新店入口至舊櫃台的走法。爸爸自己翻營業牌是揭曉深化。"
+  },
+  "hypothesis": "讓窗光與手指揭示紙的讀法，再用櫃台的缺角把路線接回爸爸的工作位置。",
+  "change": "從沾墨順序題改成無墨壓痕的觸覺路線，保留試印和印刷店的主題。",
+  "belief_shift": "看似爸爸交還鑰匙準備離開，揭曉仍由他親手重新開店。"
+}

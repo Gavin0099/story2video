@@ -1,0 +1,124 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "01-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 77.0,
+          "clear": false,
+          "cores": {
+            "黑貓地標": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "黑貓地標": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "黑貓地標": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "04-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "用動作替掉台詞": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": false,
+          "cores": {
+            "用動作替掉台詞": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": false,
+          "cores": {
+            "用動作替掉台詞": "partial"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "08-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 86.0,
+          "clear": false,
+          "cores": {
+            "摸得出的路": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 90.0,
+          "clear": false,
+          "cores": {
+            "摸得出的路": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "摸得出的路": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "12-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 95.0,
+          "clear": false,
+          "cores": {
+            "輪痕簽名": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 86.0,
+          "clear": false,
+          "cores": {
+            "輪痕簽名": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 75.0,
+          "clear": false,
+          "cores": {
+            "輪痕簽名": "partial"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

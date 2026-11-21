@@ -1,0 +1,17 @@
+{
+  "story": "01",
+  "version": "v4",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "週六有缺",
+  "first": "麵包店老闆從玻璃門撕下「週六缺人｜帶薪試做」海報。妮娜剛做完試工，哥哥拿過海報，在底下寫了幾個字，又把它貼回去。「你這就要找人換掉我？」妮娜問。老闆朝哥哥伸出手。「撕下來，或者把店門鑰匙給我。」",
+  "second": "收銀機旁攤著舊打卡卡片和現金出納簿。卡片姓名各不相同，每人只打過一個完整的週六班，日期一週接一週。出納簿在那些名字旁都寫著「試做免付」。妮娜回頭看門上的海報。哥哥劃掉了「請進店應徵」。\n\n哥哥為什麼把海報貼回去？",
+  "reveal": "店裡每個週六都找一個新人來免費頂班，哥哥一直負責招人。海報最下方是他新寫的：「帶薪是我答應的。做過這個班的人，請在我名字下面簽名。」下面是他的全名。\n\n哥哥把店門鑰匙放在櫃台上。妮娜拿起筆，在他的名字下面簽了名。",
+  "english": "The bakery owner tore down the ad for paid Saturday trial shifts. Nina had just finished hers. Her brother took the ad, wrote something on it, and taped it back up. “You’re already replacing me?” Nina asked. The owner held out his hand. “Take it down or give me your key.”\n\nBy the register, old time cards sat beside the cash ledger. Different names, one full Saturday each. The ledger marked the same names “trial, no pay.” On the ad, he’d crossed out “Apply Inside.” Why put it back up?\n\nEvery week the bakery used someone new to cover Saturday for free. Nina’s brother had recruited them. His note read, “I promised you pay. If you worked this shift, sign below.” He’d signed his full name. He set his key on the counter. Nina signed under his name.",
+  "cores": {
+    "店家重複讓試工者無薪頂班": "海報明稱帶薪，同名舊卡片與帳簿顯示不同人每週各做完整的一班，實際卻免付。",
+    "讓先前試做的人看見海報": "哥哥在原來招人位置張貼同張海報，划掉了應徵指示。他想把已做過試工的人找回來。最後的署名、哥哥的原職責、妹妹接筆是揭曉深化。"
+  },
+  "hypothesis": "讓海報看來先是為了換新人，第二段用工時和現金出納支持重複無薪頂班，再用劃掉招募指示暗示貼回去的對象已改變。",
+  "change": "更換舊海報故事的整個因果，以第一段誤會、兩份同名帳目與哥哥交出鑰匙呈現可追溯的責任。",
+  "belief_shift": "從哥哥替店家接著招人，轉成他讓各次試工的人回來留下紀錄，並以自己的名字與工作負起先前許諾。"
+}

@@ -1,0 +1,16 @@
+{
+  "story": "05",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "別找第六頁了",
+  "first": "開演前，姊姊趴在舞台地板上，用一根手指把道具門往回推。我翻開劇本，最後的第六頁不見了。「別找了，妳早背熟了。」她用鞋尖把門底下一角白紙往裡推。",
+  "second": "昨天彩排，門開著時，我把最後一句說得很順。照劇本把門關上，姊姊的臉一不見，我就卡住了。她像平常我點菜卡住時那樣，接過去替我說完。我彎腰看那角白紙，上面有我用紅筆圈起來的「關門」。姊姊鬆手，道具門推到一半就停住。\n\n她為什麼要把第六頁塞在門底下？",
+  "reveal": "姊姊把這頁摺成門擋。門關不到底，留下剛好可以看見她臉的一道縫。\n\n正式演出時，我還是卡了一下。姊姊吸口氣。我以為她要替我接話，她卻一直站在門縫那頭等。我看著她，自己把最後一句說完。「我還在這裡。」",
+  "english": "Before the show, my sister lay flat on the stage and pushed the prop door with one finger. Page six had vanished from my script. “You know it by heart,” she said. She nudged a scrap of paper under the door.\n\nYesterday I said my last line fine with the door open. Once it closed and I couldn’t see her, I froze. She said it for me, just like when I get stuck ordering food. Now I saw the scrap. I’d circled the words CLOSE DOOR in red. She let go. The door stopped halfway. Why put page six there?\n\nShe’d folded it into a wedge so I could see her face. Onstage I froze again. This time she waited. I looked at her. “I’m still here.”",
+  "cores": {
+    "留一道門縫": "第六頁摺起來可以擋住道具門，使門關不到底。姊姊從上次遮住臉時妹妹卡住、開著時能說完知道留縫能讓妹妹看見她。姊姊等妹妹說完是揭曉深化。"
+  },
+  "hypothesis": "把原本用來指示關門的頁變成留下視線的物件，讓同樣的停頓從搶話變成等待。",
+  "change": "用道具門和舞台走位改寫缺頁題，讓缺第六頁是姊姊有意的行動。",
+  "belief_shift": "從勸妹妹別看劇本的焦慮，變成可以看著彼此並讓妹妹說完一句話。"
+}

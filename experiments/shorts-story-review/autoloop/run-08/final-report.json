@@ -1,0 +1,130 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "01-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "店家週週用無薪試工頂班": "supported",
+            "讓已做過的人回來留下紀錄": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "店家週週用無薪試工頂班": "supported",
+            "讓已做過的人回來留下紀錄": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "店家週週用無薪試工頂班": "supported",
+            "讓已做過的人回來留下紀錄": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "03-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "另一半搬到對面的住處": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "另一半搬到對面的住處": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "另一半搬到對面的住處": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "06-v6": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "爸爸準備買女兒交還的舊鑰匙": "supported",
+            "買價是尚欠的押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "爸爸準備買女兒交還的舊鑰匙": "supported",
+            "買價是尚欠的押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "爸爸準備買女兒交還的舊鑰匙": "supported",
+            "買價是尚欠的押金": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "09-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 96.0,
+          "clear": true,
+          "cores": {
+            "打開牆是為了露出先前的漏水": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "打開牆是為了露出先前的漏水": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": true,
+          "cores": {
+            "打開牆是為了露出先前的漏水": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

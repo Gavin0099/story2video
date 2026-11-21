@@ -1,0 +1,165 @@
+{
+  "protocol": "story-quality-autoloop/v1",
+  "runtime": {
+    "cli_sha256": "2692c8c7bb2cf8b0aefe638741fc90236f4b824c59578ce84994f9de58200993",
+    "profile": [
+      "--no-daemon",
+      "-s",
+      "read-only",
+      "-a",
+      "never",
+      "--disable",
+      "shell_tool",
+      "--disable",
+      "shell_snapshot",
+      "--disable",
+      "unified_exec",
+      "--disable",
+      "view_image",
+      "--disable",
+      "image_generation",
+      "--disable",
+      "code_mode_host",
+      "--disable",
+      "apps",
+      "--disable",
+      "plugins",
+      "--disable",
+      "multi_agent",
+      "--disable",
+      "multi_agent_v2",
+      "--disable",
+      "memories",
+      "--disable",
+      "hooks",
+      "--disable",
+      "skill_search",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_max_bytes=0"
+    ],
+    "credentials": "keyring",
+    "exec_flags": [
+      "exec",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--json"
+    ],
+    "windows_flags": [
+      "-c",
+      "windows.sandbox=\"elevated\""
+    ],
+    "environment_keys": [
+      "ALLUSERSPROFILE",
+      "APPDATA",
+      "COMMONPROGRAMFILES",
+      "HOMEDRIVE",
+      "HOMEPATH",
+      "LOCALAPPDATA",
+      "PROCESSOR_ARCHITECTURE",
+      "PROGRAMDATA",
+      "PROGRAMFILES",
+      "PROGRAMFILES(X86)",
+      "SYSTEMDRIVE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "USERDOMAIN",
+      "USERNAME",
+      "USERPROFILE",
+      "WINDIR"
+    ],
+    "login": "chatgpt"
+  },
+  "drafts": {
+    "12-v5": "86ffab7b008159ce0009698bdc796c2806f8722bf70286be764fe284841c1911",
+    "05-v4": "8f55cf6bc89b6d1374abe8e5a53efd89dbb7d3f637c2e826e098b25f8bb82ec8",
+    "09-v4": "4cdbe02292d767eccc5a8fe6911b50828cf03591f62a3d59711ba9d464174bdc"
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "key": "12-v5",
+      "draft_sha256": "86ffab7b008159ce0009698bdc796c2806f8722bf70286be764fe284841c1911",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 2,
+      "key": "12-v5",
+      "draft_sha256": "86ffab7b008159ce0009698bdc796c2806f8722bf70286be764fe284841c1911",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 3,
+      "key": "12-v5",
+      "draft_sha256": "86ffab7b008159ce0009698bdc796c2806f8722bf70286be764fe284841c1911",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 4,
+      "key": "05-v4",
+      "draft_sha256": "8f55cf6bc89b6d1374abe8e5a53efd89dbb7d3f637c2e826e098b25f8bb82ec8",
+      "probe": 2,
+      "mode": "formal"
+    },
+    {
+      "number": 5,
+      "key": "05-v4",
+      "draft_sha256": "8f55cf6bc89b6d1374abe8e5a53efd89dbb7d3f637c2e826e098b25f8bb82ec8",
+      "probe": 2,
+      "mode": "formal"
+    },
+    {
+      "number": 6,
+      "key": "05-v4",
+      "draft_sha256": "8f55cf6bc89b6d1374abe8e5a53efd89dbb7d3f637c2e826e098b25f8bb82ec8",
+      "probe": 2,
+      "mode": "formal"
+    },
+    {
+      "number": 7,
+      "key": "09-v4",
+      "draft_sha256": "4cdbe02292d767eccc5a8fe6911b50828cf03591f62a3d59711ba9d464174bdc",
+      "probe": 3,
+      "mode": "formal"
+    },
+    {
+      "number": 8,
+      "key": "09-v4",
+      "draft_sha256": "4cdbe02292d767eccc5a8fe6911b50828cf03591f62a3d59711ba9d464174bdc",
+      "probe": 3,
+      "mode": "formal"
+    },
+    {
+      "number": 9,
+      "key": "09-v4",
+      "draft_sha256": "4cdbe02292d767eccc5a8fe6911b50828cf03591f62a3d59711ba9d464174bdc",
+      "probe": 3,
+      "mode": "formal"
+    }
+  ],
+  "probes": [
+    "fe7187c838f8eb596efa53c0eac282292fc87d6391d04dbedf6a1473cc0b7066",
+    "5a1e714114b9ff338aca8f958b9d7e03eed81a30b72ab2a86a20d094ee421a04",
+    "f05cf15f8c65ce3fd0726f61ffdb77a79b1b272c7093a60b345cd6e53cea6a54"
+  ],
+  "rubric_sha256": "3ff2f341d72d86de9b4886f54a0bd2fddd173c37d4cc67464569b04423552139",
+  "base_git_sha": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "reader_sha256": {
+    "1": "fe008eb6a8e4522f0da7b1ca8962454abef311b56a1ceae196294ae53112bf74",
+    "2": "7743f65899c03add26b7cd7ee91344fd30519e1a08cafdfa03800063d44f9d9f",
+    "3": "851029b96bba895f8649875ed484925a03f69170628db525426fb23a40192d22",
+    "4": "4e07c3001f1da3970b1fda2a946d88be0203a28be51f2b0960af969af503ecdf",
+    "5": "4f5a94c0c3060b9092a00080c4b677813e64191ebcf4ec1a639fb53579f9ca94",
+    "6": "2ad9d3316cadc58d33b11c71326311218fd7162a6e566500cda68964acb721af",
+    "7": "bfb726b7364baae0746d650ad70656275234ba1ba7ace239a40f49eefe653434",
+    "8": "a374656684cbdb53eca350fc5ad5e3d9946a2cf92c2a6a37e3fc96c721810586",
+    "9": "6d4e6d9cbe9162a3d68a2acf27bc380825b174d80323f8a4c282f6b0eeee5220"
+  }
+}

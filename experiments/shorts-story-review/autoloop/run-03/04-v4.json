@@ -1,0 +1,17 @@
+{
+  "story": "04",
+  "version": "v4",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "7c4efed8ed4cc6306eb1b7f201951f13f2c101bdbd50f3bbf4f8d25d7c2bf86d",
+  "title": "刪掉媽媽的台詞",
+  "first": "他把離家後第一次回來的那晚寫成了戲。試排時，媽媽演自己。男孩握著門把問：「我還能進來嗎？」媽媽把木椅挪近門邊，咳了一聲，照著劇本回答：「我早就原諒你了。」",
+  "second": "他剪了一段音檔給正式演員排練。那句「我早就原諒你了」被他消音了。咳聲還在，原本說話的幾秒也原樣空著。演員翻開劇本準備接台詞，他把本子合上，在男孩身旁的門外地板貼了椅腳記號。「聽到咳聲，再搬椅子。」\n\n他為什麼要刪掉媽媽的回答，卻留下咳聲和那段時間？",
+  "reveal": "當年媽媽沒有說原諒。那是他一直想聽的話，寫戲時才替她加進去的。那晚媽媽搬起木椅，跨門檻時咳了一聲。他始終沒敢開門，她就在外面坐到他身旁。\n\n正式演員聽見咳聲，把椅腳放到門外的記號上。男孩鬆開門把，也坐了下來。這一次，台上沒人替媽媽說話。",
+  "english": "He wrote a play about the first night he came home. His mother played herself at rehearsal. A boy held the doorknob. “Can I come in?” Mom moved her chair toward the door, coughed, and read her line. “I forgave you long ago.”\n\nHe muted her answer in the rehearsal track but kept the cough and the pause. The actor opened her script. He shut it and taped a mark for the chair beside the boy. “Move on the cough.” Why cut her answer?\n\nMom had never said it. He’d written the words he’d wanted to hear. That night, she’d coughed lifting her chair across the doorstep. She’d sat outside with him. At rehearsal, the actor set down the chair. The boy let go of the knob and joined her.",
+  "cores": {
+    "讓椅子代替回答": "錄音保留母親的咳聲作為搬椅的提示，保留原句時長讓演員完成這個動作。兒子以走位代替原先的台詞，重現母親那晚的回應。母親未曾說原諒及兒子為何寫進去是揭曉深化。"
+  },
+  "hypothesis": "用椅腳記號和合上劇本排除再念一段話，只留下為何他要以母親的行動改寫這一幕的懸念。",
+  "change": "加入正式排練的可見走位記號，依序呈現試排、剪輯與正式演員重演。",
+  "belief_shift": "讀者先知道空白中有動作，然後才理解為什麼他寧願重現陪坐，也要拿掉自己一直盼望的話。"
+}

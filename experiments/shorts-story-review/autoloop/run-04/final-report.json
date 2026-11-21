@@ -1,0 +1,95 @@
+{
+  "status": "NEEDS_RETHINK",
+  "qualified": [],
+  "versions": {
+    "12-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 88.0,
+          "clear": false,
+          "cores": {
+            "同一輛車的署名": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 85.0,
+          "clear": false,
+          "cores": {
+            "同一輛車的署名": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": true,
+          "cores": {
+            "同一輛車的署名": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "05-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 91.0,
+          "clear": false,
+          "cores": {
+            "門縫保住視線": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 88.0,
+          "clear": false,
+          "cores": {
+            "門縫保住視線": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": false,
+          "cores": {
+            "門縫保住視線": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "09-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 84.0,
+          "clear": false,
+          "cores": {
+            "把門框圖案帶走": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "把門框圖案帶走": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": false,
+          "cores": {
+            "把門框圖案帶走": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 3,
+  "reader_attempts": 9
+}

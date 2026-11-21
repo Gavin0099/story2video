@@ -1,0 +1,18 @@
+{
+  "story": "12",
+  "version": "v6",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "86ffab7b008159ce0009698bdc796c2806f8722bf70286be764fe284841c1911",
+  "title": "桌上停了一輛玩具車",
+  "first": "爸爸把紅色玩具車的兩個後輪沾上藍墨，車頭對準生日卡空白的署名欄。我怕濕輪胎弄髒卡片，伸手想抽走。他用沒纏紗布的手按住紙角。\n\n「我自己簽。」",
+  "second": "剛才，筆兩次從他包著紗布的拇指和食指間滑落。我說可以替他寫，他打開舊鐵盒，從一張摺起的卡片裡取出玩具車。舊卡上歪歪斜斜寫著「DAD」，署名的位置有兩道褪色的輪痕，左邊那道有幾個小小的 V 形缺口。\n\n爸爸為什麼偏要用這輛舊車簽名？",
+  "reveal": "那張卡是我四歲時送他的。他問要不要幫我寫名字。我把玩具車擺上卡片，說：「我自己簽。」他就替我按住紙角，讓我把車推過去。\n\n爸爸把新卡轉向我。上面印著「HAPPY BIRTHDAY, MAYA」。\n\n我用手指按住他剛鬆開的紙角。他用掌心把車推過署名欄。左後輪的缺角在新卡上也印出了一排小小的 V。",
+  "english": "Dad inked the back wheels of a red toy car and aimed it at the signature line on a birthday card. I reached for the card before the ink could touch it. He held down the corner. “I’ll sign it myself.”\n\nHe’d dropped his pen twice trying to grip it with bandaged fingers. Then he opened a tin and lifted the car out of a folded card. It said DAD. Two tire tracks crossed the signature line. The left one had little V-shaped gaps. Why sign with that old car?\n\nI’d made that card at four. “I’ll sign it myself,” I’d said. He’d held the corner for me.\n\nDad turned the new card toward me. Happy birthday, Maya. I held the corner while he pushed with his palm. The same gaps appeared.",
+  "cores": {
+    "車留下能取代簽名的輪痕": "爸爸握不住筆，可以推沾墨的車，用輪痕簽名。舊卡署名欄的輪痕示範這個做法。",
+    "這是父女共同的簽名記憶": "玩具車收在寫給爸爸的舊卡裡。爸爸用同一輛車重做女兒童年送他那張卡上的簽名。新卡收件人、當年與今天由誰按住紙角是揭曉的深化。"
+  },
+  "hypothesis": "讓讀者能把舊車與童年卡視為同一組物件，也讓女兒收下卡以前先理解該如何幫。",
+  "change": "把車從普通收納物移到舊卡裡，兩次簽名都由另一人按住同一個位置。",
+  "belief_shift": "開始以為輪痕只是權宜的代筆方法，揭曉能從收件人和按住紙角的反向動作看出傳回同一個簽名。"
+}

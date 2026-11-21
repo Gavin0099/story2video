@@ -1,0 +1,136 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "06-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 91.0,
+          "clear": true,
+          "cores": {
+            "買舊鑰匙的是爸爸": "supported",
+            "買價是女兒尚欠的公寓押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 89.0,
+          "clear": true,
+          "cores": {
+            "買舊鑰匙的是爸爸": "supported",
+            "買價是女兒尚欠的公寓押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 92.0,
+          "clear": true,
+          "cores": {
+            "買舊鑰匙的是爸爸": "supported",
+            "買價是女兒尚欠的公寓押金": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "11-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 89.0,
+          "clear": false,
+          "cores": {
+            "八號住戶下不了樓": "supported",
+            "把表決帶給八號": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": false,
+          "cores": {
+            "八號住戶下不了樓": "supported",
+            "把表決帶給八號": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "八號住戶下不了樓": "supported",
+            "把表決帶給八號": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "06-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "父親出錢買舊家鑰匙": "supported",
+            "價錢是女兒欠的押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "父親出錢買舊家鑰匙": "supported",
+            "價錢是女兒欠的押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "父親出錢買舊家鑰匙": "supported",
+            "價錢是女兒欠的押金": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "11-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "八號無法下樓": "supported",
+            "諾拉把投票帶上樓": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "八號無法下樓": "supported",
+            "諾拉把投票帶上樓": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "八號無法下樓": "supported",
+            "諾拉把投票帶上樓": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

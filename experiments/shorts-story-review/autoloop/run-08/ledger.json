@@ -1,0 +1,191 @@
+{
+  "protocol": "story-quality-autoloop/v2",
+  "runtime": {
+    "cli_sha256": "2692c8c7bb2cf8b0aefe638741fc90236f4b824c59578ce84994f9de58200993",
+    "profile": [
+      "--no-daemon",
+      "-s",
+      "read-only",
+      "-a",
+      "never",
+      "--disable",
+      "shell_tool",
+      "--disable",
+      "shell_snapshot",
+      "--disable",
+      "unified_exec",
+      "--disable",
+      "view_image",
+      "--disable",
+      "image_generation",
+      "--disable",
+      "code_mode_host",
+      "--disable",
+      "apps",
+      "--disable",
+      "plugins",
+      "--disable",
+      "multi_agent",
+      "--disable",
+      "multi_agent_v2",
+      "--disable",
+      "memories",
+      "--disable",
+      "hooks",
+      "--disable",
+      "skill_search",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_max_bytes=0"
+    ],
+    "credentials": "keyring",
+    "exec_flags": [
+      "exec",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--json"
+    ],
+    "windows_flags": [
+      "-c",
+      "windows.sandbox=\"elevated\""
+    ],
+    "environment_keys": [
+      "ALLUSERSPROFILE",
+      "APPDATA",
+      "COMMONPROGRAMFILES",
+      "HOMEDRIVE",
+      "HOMEPATH",
+      "LOCALAPPDATA",
+      "PROCESSOR_ARCHITECTURE",
+      "PROGRAMDATA",
+      "PROGRAMFILES",
+      "PROGRAMFILES(X86)",
+      "SYSTEMDRIVE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "USERDOMAIN",
+      "USERNAME",
+      "USERPROFILE",
+      "WINDIR"
+    ],
+    "login": "chatgpt"
+  },
+  "drafts": {
+    "01-v5": "e9393a3b105fc34344d8c693ee4187cfba8296739cf1875bcf9da53a7b9d06be",
+    "03-v5": "e6ac77e96a34f486767ebab1f06f0fd6c5113242152acdb41c57e39eeb45c9c3",
+    "06-v6": "63c18af4aeed38f8367dc143f8620d0bdc80b12a9cd25146e406743dd894b9ef",
+    "09-v5": "69b511eefaa5974bc1d0c29520b4c0b56a0f90e8ad8bc4442edf9a5df60ec497"
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "key": "01-v5",
+      "draft_sha256": "e9393a3b105fc34344d8c693ee4187cfba8296739cf1875bcf9da53a7b9d06be",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 2,
+      "key": "01-v5",
+      "draft_sha256": "e9393a3b105fc34344d8c693ee4187cfba8296739cf1875bcf9da53a7b9d06be",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 3,
+      "key": "01-v5",
+      "draft_sha256": "e9393a3b105fc34344d8c693ee4187cfba8296739cf1875bcf9da53a7b9d06be",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 4,
+      "key": "03-v5",
+      "draft_sha256": "e6ac77e96a34f486767ebab1f06f0fd6c5113242152acdb41c57e39eeb45c9c3",
+      "probe": 2,
+      "mode": "formal"
+    },
+    {
+      "number": 5,
+      "key": "03-v5",
+      "draft_sha256": "e6ac77e96a34f486767ebab1f06f0fd6c5113242152acdb41c57e39eeb45c9c3",
+      "probe": 2,
+      "mode": "formal"
+    },
+    {
+      "number": 6,
+      "key": "03-v5",
+      "draft_sha256": "e6ac77e96a34f486767ebab1f06f0fd6c5113242152acdb41c57e39eeb45c9c3",
+      "probe": 2,
+      "mode": "formal"
+    },
+    {
+      "number": 7,
+      "key": "06-v6",
+      "draft_sha256": "63c18af4aeed38f8367dc143f8620d0bdc80b12a9cd25146e406743dd894b9ef",
+      "probe": 3,
+      "mode": "formal"
+    },
+    {
+      "number": 8,
+      "key": "06-v6",
+      "draft_sha256": "63c18af4aeed38f8367dc143f8620d0bdc80b12a9cd25146e406743dd894b9ef",
+      "probe": 3,
+      "mode": "formal"
+    },
+    {
+      "number": 9,
+      "key": "06-v6",
+      "draft_sha256": "63c18af4aeed38f8367dc143f8620d0bdc80b12a9cd25146e406743dd894b9ef",
+      "probe": 3,
+      "mode": "formal"
+    },
+    {
+      "number": 10,
+      "key": "09-v5",
+      "draft_sha256": "69b511eefaa5974bc1d0c29520b4c0b56a0f90e8ad8bc4442edf9a5df60ec497",
+      "probe": 4,
+      "mode": "formal"
+    },
+    {
+      "number": 11,
+      "key": "09-v5",
+      "draft_sha256": "69b511eefaa5974bc1d0c29520b4c0b56a0f90e8ad8bc4442edf9a5df60ec497",
+      "probe": 4,
+      "mode": "formal"
+    },
+    {
+      "number": 12,
+      "key": "09-v5",
+      "draft_sha256": "69b511eefaa5974bc1d0c29520b4c0b56a0f90e8ad8bc4442edf9a5df60ec497",
+      "probe": 4,
+      "mode": "formal"
+    }
+  ],
+  "probes": [
+    "49db90f6717cb7967ef1ba37dab3e0fb6e06b21547f330d76126e5e39e7c0c7f",
+    "468e7a98b57e605b34be8143c47bb2ad0f7463a0b08d2e43a0f46db44fc612a3",
+    "0342144a94ac4c034f44e5e6aa28ce553cccf03aaf7557501cfaafaa2172a11a",
+    "4c931241f851a46f847e009b19c81e064449a2511edfa590adfdb74ed1aecfe9"
+  ],
+  "rubric_sha256": "c7bb71da8e3a3e3fa0dbce1f1efa296de4459799ac883419293bac14f1cb5ba3",
+  "base_git_sha": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "reader_sha256": {
+    "1": "26dd36328c4b417dc317b79ecf86792cda9cfb420e094f5f65f5b999e2a6bb75",
+    "2": "177f07facb7701fe2da2ade30c7ae3c53165dfc1c4c61b5eba6adc081724caad",
+    "3": "80c9ec3a358422111f97563eeeeded37f13a0e4e3cd605f8a1a3230f5f08a6ec",
+    "4": "f852cf1ba14c7ff2ab62bc8bbfe76873928f70645337c030d33180b8155bde02",
+    "5": "0415a1c0c43c19a5655480471fddb7796ed15f00af95161160962e582b1690f6",
+    "6": "c43d471efd4ca7e11e958427fe29baa68dcab528828b897a35dfec61639ea119",
+    "7": "2daa6b98beb60b0d5a905a1be38a78bd837eebdb26ab20fbc218e3ee2330617f",
+    "8": "2c528a06cbfe3dd1c80bd7c4f6cb0c06f64ac1d660f7ec9379aba4d43663e9ad",
+    "9": "54bc276126b9a51becee6c18f0f823ad40a4d1ea50723fbb629a809ebdb139e3",
+    "10": "913cfce75a56e48ffb91c4aa86de150959808db8951088aeef0d9154423c5060",
+    "11": "18d49a12a0a1bb92f2eaae958d16fb6615cd6d4a4353a7568d7344a122359600",
+    "12": "6469539dfe3fd6863645046facfe1c8914f2594caf89b730daba3f0d0de69422"
+  }
+}

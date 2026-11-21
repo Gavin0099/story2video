@@ -39,7 +39,7 @@ def turn(prompt, reply):
     ]}
 
 
-def stages(draft, values, support, critical=()):
+def stages(draft, values, support, critical=(), protocol=loop.PROTOCOL):
     replies = (
         {"prior_exposure": False, "guess": "首猜", "evidence": "膠帶",
          "confidence": 70, "keep_reading": 4, "reason": "留下痕跡"},
@@ -51,7 +51,7 @@ def stages(draft, values, support, critical=()):
                     for key, value in zip(loop.WEIGHTS, values, strict=True)},
          "critical_issues": list(critical)},
     )
-    return [turn(loop.prompt(part, draft, replies[:index]), replies[index])
+    return [turn(loop.prompt(part, draft, replies[:index], protocol), replies[index])
             for index, part in enumerate(loop.PARTS)]
 
 
@@ -159,6 +159,19 @@ class GateTests(unittest.TestCase):
     def test_exploration_never_counts_as_formal(self):
         self.attempts[0]["mode"] = "explore"
         self.fill()
+        self.assertFalse(self.report()["qualified"])
+
+    def test_original_protocol_replays_with_its_own_rubric(self):
+        original = loop.LEGACY_PROTOCOL
+        self.ledger["protocol"] = original
+        self.ledger["rubric_sha256"] = loop.rubric_digest(original)
+        for number in range(1, 4):
+            self.put(number, stages(self.draft, (5,) * 6, "supported", protocol=original))
+        self.assertEqual(self.report()["qualified"], [self.key])
+        self.ledger["protocol"] = loop.PROTOCOL
+        with self.assertRaisesRegex(ValueError, "rubric SHA mismatch"):
+            self.report()
+        self.ledger["rubric_sha256"] = loop.rubric_digest()
         self.assertFalse(self.report()["qualified"])
 
     def test_budget_caps_and_same_version_mutation(self):

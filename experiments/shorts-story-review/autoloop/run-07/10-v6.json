@@ -1,0 +1,16 @@
+{
+  "story": "10",
+  "version": "v6",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "斷椅上的簽名",
+  "first": "木匠瑪拉把櫥窗裡的新椅子搬走，換成一張斷了腿的木椅。她轉動椅子，讓路人看得見斷裂的接榫。接著，她在裂口旁蓋下了自己的名字。",
+  "second": "椅底的名牌寫著前徒弟伊沃的名字，旁邊有一道藍色斜線。工作檯上，瑪拉逐一檢查另一張椅子的接榫，檢查完，她也在椅底畫了一道一樣的斜線。收銀台旁壓著三張修理收據，付款人都是伊沃。\n\n她為什麼要把自己的名字蓋在斷椅上？",
+  "reveal": "藍線是瑪拉驗收接榫的記號。那批椅子趕工時，她沒仔細驗。客人拿椅子回來，她卻指著椅底伊沃的名字，叫他們去找伊沃。\n\n瑪拉在斷椅旁放了一張牌子，「這批椅子有問題。回來找我，修理免費。」她翻開訂單簿，從第一個還沒回來的買家開始打電話。",
+  "english": "Mara took the new chair out of her shop window and replaced it with a broken one. She turned the split joint toward the street. Then she stamped her name beside the crack.\n\nA tag underneath named Ivo, her former apprentice. Next to it was a blue slash. At her bench, Mara checked another chair’s joints and drew the same mark. By the till lay three repair receipts. All said “Paid by Ivo.” Why put her name on the broken chair?\n\nThe blue mark was hers. She’d rushed the checks on a big order. When chairs came back, she pointed to Ivo’s tag and sent the customers to him.\n\nShe put a sign beside the chair. “Bought one of these? Bring it to me. Repairs are free.” Then she opened the order book and called the first buyer who hadn’t come back.",
+  "cores": {
+    "驗收的人公開接回責任": "同一道藍線出現在經瑪拉驗收的椅子上；伊沃付了多筆修理費。瑪拉替斷椅蓋自己的名字、轉向路人，讓回來的買家找她，接回自己驗收的椅子。她當初怎麼指著名牌推責、免費修理及主動聯絡的範圍是揭曉深化。"
+  },
+  "hypothesis": "重複的驗收動作和收據讓讀者能推到瑪拉的責任，櫥窗原本賣新椅的位置讓這次署名成為公開的選擇。",
+  "change": "重寫以木頭痕跡為線索的故事，從童年回憶改為家具驗收和聲譽，讓瑪拉把裂口和自己的名字同時朝街上。",
+  "belief_shift": "從以為瑪拉在替作品署名，轉成她承認自己也完成了驗收，公開承擔先前讓徒弟付的修理費。"
+}

@@ -1,0 +1,16 @@
+{
+  "story": "09",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "門框裡的字",
+  "first": "舊餅店只剩一個蛋糕模還沒裝箱。媽媽把它橫塞進門底，頂住那扇一鬆手就會關的門。房東已經傳訊息說要來拿鑰匙，我伸手去抽模具，她按住我的手。",
+  "second": "她把一長條半透明烘焙紙貼上門框內側，那一面門關了就會遮住。紙底透出一個歪蝴蝶結。那是我第一次綁好蛋糕盒時，媽叫我在門框上畫的。我一直以為，那時她讓我做這些，是因為我還不夠格做蛋糕。\n\n都要交還店面了，媽媽為什麼偏要把門卡住？",
+  "reveal": "她想在還鑰匙前，把門後那些圖案描下來。她先描歪蝴蝶結，再描我第一次替客人找零時畫的硬幣。最後是我第一次賣出去的蛋糕。她描最早的蝴蝶結，跟描蛋糕一樣仔細。\n\n我托住那條紙，讓她揭下膠帶。「媽，明天新店開門，我們一起綁第一個盒子。」",
+  "english": "Only one cake tin was left to pack. Mom wedged it under the bakery door to hold it open. The landlord was coming for the keys. I reached for the tin. Mom stopped me.\n\nShe taped baking parchment over the part of the frame the door would cover. Through it I saw a lopsided bow. Mom had asked me to draw it when I tied my first cake box. Back then, I thought she was keeping me busy until I could bake. Why keep the door open?\n\nShe traced the bow, the coin I drew after making change, and the cake from my first sale. She took as much care with the bow as with the cake. I held the strip. “Tomorrow, Mom, let’s tie the first box together.”",
+  "cores": {
+    "帶走門框圖案": "媽媽卡住會自己關的門，才能持續看見門框內側的舊圖，在還鑰匙前隔著透明紙描下帶走。把女兒做的小事都當成里程碑是情感深化。"
+  },
+  "hypothesis": "用即將交屋、門遮住的狹窄面與透紙辨認蝴蝶結，讓留下門縫有單一可回推的用途，最後回收母女對學做蛋糕的不同理解。",
+  "change": "改成舊餅店關門前保留女兒的圖案，保留蛋糕模與門關不上的開場。",
+  "belief_shift": "從以為母親耽擱收店，改為理解她要帶走早期的成長記號，讓女兒知道自己在賣出第一個蛋糕以前就已經在店裡出了一份力。"
+}

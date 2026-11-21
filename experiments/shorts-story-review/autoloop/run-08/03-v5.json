@@ -1,0 +1,16 @@
+{
+  "story": "03",
+  "version": "v5",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "她把餐桌鋸成兩半",
+  "first": "搬家那天，伊娃把爸爸剛翻新的餐桌從兩座桌腳中間鋸成兩半。爸爸原本要交給她的備用鑰匙還在手裡。他早跟搬家工人說過，女兒這次要搬回家。前天，伊娃才量過他家窗下的凹位。隔天，他又看見伊娃在走廊對面，一扇幾乎一樣的門內拉開捲尺。",
+  "second": "一半餐桌剛好塞進爸爸窗下的凹位。爸爸拉了兩張椅子過來。伊娃請工人把另一半桌子抬起來，還指了指剩下的兩張椅子。爸爸把自己的備用鑰匙留在餐桌上。\n\n伊娃要把另一半餐桌搬去哪裡？",
+  "reveal": "伊娃拿起爸爸放下的鑰匙，帶工人穿過走廊，用自己的鑰匙打開對面的門。窗下有個一樣大的凹位。另一半餐桌一放進去，剛剛好。\n\n爸爸跟到門口。伊娃把他家的備用鑰匙放回他手裡。「明天換你來我家吃飯，好不好？」",
+  "english": "On moving day, Eva sawed through the dining table her dad had just refinished, right between its two pedestals. He was still holding the spare key he’d meant to give her. He’d told the movers she was coming home. Eva had measured the alcove under his window. The next day he’d seen her across the hall, tape measure out, inside a door just like his.\n\nOne half fit right under Dad’s window. He pulled up two chairs. Eva showed the movers the other half and the other two chairs. Dad left his spare key on the table. Where was Eva taking the other half?\n\nShe unlocked the apartment across the hall with her own key. Same alcove. The table fit. When Dad reached the doorway, Eva put his spare back in his hand. “Dinner at my place tomorrow?”",
+  "cores": {
+    "另一半搬到對面的住處": "搬家前她量了父親窗下與對門室內。她切出可以各自立起的兩半，一半和兩張椅子給爸爸，另一半和兩張椅子要放對門。以自己的鑰匙開門、歸還舊家的備用匙、邀爸爸作客是揭曉深化。"
+  },
+  "hypothesis": "先以鋸掉剛翻新的桌子呈現抗拒，兩次丈量和同樣分配能讓讀者推知她的空間選擇，最後具體呈現她也能主動作東。",
+  "change": "用同一張餐桌不再作為一間家共用的桌子，改以兩邊獨立桌座建立父女可往來的兩間家。",
+  "belief_shift": "從覺得伊娃拒絕父親或會搬回舊家，變成她選擇住在附近，但想維持自己的家，也邀請父親成為她的客人。"
+}

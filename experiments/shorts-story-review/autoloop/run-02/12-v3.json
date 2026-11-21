@@ -1,0 +1,16 @@
+{
+  "story": "12",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "桌上停了一輛玩具車",
+  "first": "爸爸把紅色玩具車的輪子滾過藍色印台，再用手掌把車推上生日卡。車還沒開完，我伸手要抽走卡片，爸爸用手腕壓住紙角。",
+  "second": "卡片旁有支剛從他手裡滑掉的筆。我撿起來，說我可以幫他寫。爸爸把筆推回來，從新卡底下抽出一張泛黃的舊卡。上面印著「給爸爸」，底下沒有署名，只有兩道褪色的藍輪痕，跟車剛留下的一樣寬。\n\n爸爸為什麼要讓玩具車從新卡片上開過去？",
+  "reveal": "舊卡是我四歲時送給他的。我還不會寫名字，就用這輛車的輪痕簽名。爸爸把新卡轉向我，我才看見上面印著我的名字和「生日快樂」。這回，他用我的方法，在給我的卡片上簽名。\n\n我放下筆，替他按平翹起的紙角。他把玩具車推過最後一小段。",
+  "english": "Dad rolled the red toy car’s wheels across a blue ink pad. Then he pushed it onto a birthday card with his palm. I reached to pull the card away. He held it down with his wrist.\n\nHis pen had just slipped from his fingers. I picked it up and offered to write for him. He slid an old card out from underneath. It said FOR DAD. No signature, just two faded blue tire tracks, the same width as the new ones. Why drive the car across the card?\n\nI’d made that card at four, before I could write my name. I’d signed it with those tracks. Dad turned the new card toward me. Happy birthday, Maya. I set down the pen and held the paper flat while he finished signing.",
+  "cores": {
+    "輪痕簽名": "爸爸需要在新卡留自己的署名，筆已從手裡滑掉，所以他重用舊卡上以車輪痕取代寫名字的做法。舊卡是女兒四歲時所寫、新卡回贈給她，以及她幫忙壓紙的動作屬於揭曉。"
+  },
+  "hypothesis": "讓藍色輪痕從弄髒卡片變成有先例的署名，最後讓同一個玩具把父女的角色對調。",
+  "change": "從咖啡桌傾斜測試改成同一輛玩具車在兩張相隔多年的卡片上留下相同輪痕。",
+  "belief_shift": "讀者由想抽掉卡片，改為看懂父親在簽名，再理解女兒為什麼放下筆只固定紙角。"
+}

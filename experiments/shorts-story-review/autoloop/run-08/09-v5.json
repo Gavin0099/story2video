@@ -1,0 +1,16 @@
+{
+  "story": "09",
+  "version": "v5",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "牆裡的水",
+  "first": "離新房客來看房只剩五分鐘，首月房租是我的證照考試費。哥哥卻一槌敲開我昨天才刷好的房間牆壁。自從我說我不能再替他付他那份房租，他就沒跟我說過話。",
+  "second": "哥哥撬下牆板時，一塊濕痕露了出來。層架螺絲的尖端卡在水管裡，水沿著它往下滴。那是哥哥早上裝的層架，下面還留著他量尺寸時畫的鉛筆線。他把掀開的牆板放到走廊，沒有蓋回去。\n\n哥哥明知道房客快到了，為什麼還要敲開牆壁？",
+  "reveal": "管子不是被那一槌打破的。哥哥敲牆是要露出他早上裝層架時打穿的水管。他從外套抽出寫著「摩托車訂金」的信封，把錢倒進我準備裝考試費的空信封。\n\n他劃掉門上聯絡單裡我的名字，填上自己的名字和電話。「先讓她看這面牆。修理的事找我。」他把門留著沒關。",
+  "english": "My prospective tenant was due in five minutes. Her first month’s rent would cover my licensing exam. Then my brother put a hammer through the wall I’d painted yesterday. He hadn’t spoken to me since I told him I couldn’t cover his share of the rent anymore.\n\nHe pulled back the wallboard. A screw from the shelf he’d put up that morning had pierced a pipe. Water dripped around it. His pencil marks were still under the shelf. He left the ruined board in the hallway. Why open the wall just before my tenant got here?\n\nHe’d opened it to expose the damage he’d caused. He took out his motorcycle deposit and put it in my exam envelope. Then he replaced my name on the door’s contact sheet with his. “Show her the wall first. I’ll handle the repair.” He left the door open.",
+  "cores": {
+    "打開牆是為了露出先前的漏水": "已濕的牆內及插進水管的層架螺絲，造成漏水與哥哥打開牆查看／揭露的合理因果。鉛筆線與早上裝層架表明是他自己造成的。由哥哥出錢並留下聯絡資料承擔，為揭曉深化。"
+  },
+  "hypothesis": "從住不下去就砸牆的誤解開始，第二段用牆內的漏水指向他自己留下的失誤，保留接下來面對誰與怎樣付款的角色選擇。",
+  "change": "以開牆揭露水管和交出摩托車訂金取代蛋糕盒情節，讓受影響的房客知道、哥哥接手聯絡。",
+  "belief_shift": "起初以為哥哥砸牆報復，後來看見他打開牆面對自己先前造成的漏水，並公開留下名字承擔修理。"
+}

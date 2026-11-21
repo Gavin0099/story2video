@@ -1,0 +1,17 @@
+{
+  "story": "04",
+  "version": "v6",
+  "parent": "f3625214f0c417efb0f69885e92e9d85d4fd54a9b839a28dfd782f0cf1b86209",
+  "prior_draft_sha256": "f3625214f0c417efb0f69885e92e9d85d4fd54a9b839a28dfd782f0cf1b86209",
+  "title": "停在姓氏前",
+  "first": "我好不容易把自己的名字念完，哥哥卻刪了這一遍。離配音試音截止只剩兩分鐘。接到這份工作，我下個月的房租就有著落。我攥緊劇本。他大概是要我念快一點。",
+  "second": "哥哥是來陪我念對手戲的。從小我們有個暗號。我想請他替我接話，就把掌心翻向上。錄第二遍時，我的掌心一直貼在劇本上。我把名字念對了。他只回放了一秒。我的姓疊著兩道聲音，他的早了一拍。他的手指又放上停止鍵。\n\n他為什麼寧可冒著來不及交件的風險，也要我再念一次？",
+  "reveal": "我又在姓氏前卡住。他張開嘴，手伸向停止鍵，卻抬起來摀住自己的嘴。錄音燈還亮著。他等著。\n\n我念完名字，才把掌心翻向上。哥哥這時才念他自己的第一句台詞。我把這一遍交了出去，連那一秒的空白也留著。",
+  "english": "I finally got my name out. My brother deleted the take. Two minutes to submit. If I got the voice acting job, I could pay next month’s rent. I gripped the script. He probably wanted me to go faster.\n\nHe was there to read opposite me. Palm up was our signal for him to finish a word for me. On the next take, I kept mine flat on the script. I got my name right. He replayed one second. We both said my last name. His voice came first. His finger went back to Stop. Why make me say it again?\n\nI got stuck again. He reached for Stop, then covered his mouth. The light stayed on. I finished my name and turned my palm up. Then he read his line. I sent that take, pause and all.",
+  "cores": {
+    "重錄要拿掉哥哥提早說出的那一句": "第二遍妹妹正確念名字，掌心沒有翻向上，因此沒有按兩人約定請哥哥代念。哥哥只重聽有他提早搶念的那一秒。重錄目的是讓她親自完成，而非去除停頓。翻掌讓哥哥念自己的台詞是揭曉深化。"
+  },
+  "hypothesis": "用兩人既有的暗號呈現妹妹這次沒有請人代念，再讓她用相同暗號決定何時哥哥讀自己的台詞。",
+  "change": "以掌心向上才請哥哥幫忙的約定取代泛稱多年習慣。第二段明寫重錄後回播。結尾讓她在念完後才翻掌。",
+  "belief_shift": "原以為哥哥嫌妹妹念太慢，後來聽見他自己代念，最後看見哥哥等她決定如何開口、妹妹仍讓哥哥參與自己的戲。"
+}

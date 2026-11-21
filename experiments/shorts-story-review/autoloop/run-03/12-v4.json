@@ -1,0 +1,17 @@
+{
+  "story": "12",
+  "version": "v4",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "6fe41fde10e282899fe440f5e495f3ebb5c1e92f35e1da5015687d495b85cd97",
+  "title": "桌上停了一輛玩具車",
+  "first": "爸爸把紅色玩具車的輪胎滾過藍色印台，往一張乾淨的生日卡推。我怕油墨碰到紙，伸手想把卡抽走。他立刻用手腕壓住紙角。",
+  "second": "車輪停在新卡印著「署名」的空格前。那支筆剛從爸爸指間滑下來。我撿起筆，他把筆推開。「我自己簽。」接著他翻出一張泛黃的卡片，上面印著「給爸爸」。同樣的署名欄裡，沒有字，只有兩道褪色的藍輪痕。\n\n爸爸為什麼偏要用這輛玩具車簽名？",
+  "reveal": "舊卡是我四歲時送他的。我還不會寫自己的名字，也不讓他代筆，就用這輛車留下兩道藍線。爸爸把新卡轉過來，我才看見上面印著我的名字。「妳那時候也說要自己簽。」\n\n我把筆放回桌上，替他按住紙角。他用手掌把車推過空白的署名欄。",
+  "english": "Dad rolled a red toy car across a blue ink pad and pushed it toward a clean birthday card. I reached to pull the card away from the wet wheels. He pinned the corner with his wrist.\n\nThe wheels stopped at the blank space for a signature. His pen had just slipped from his fingers. I picked it up. He pushed it aside. “I’ll sign it myself.” Then he pulled out an old card marked FOR DAD. Where the signature should go were two faded blue tracks. Why use this car?\n\nI’d signed that card with it at four, before I could write my name. Dad turned the new card toward me. It had my name on it. “You wanted to sign it yourself, too,” Dad said. I put down the pen and held the paper flat. He pushed the car across.",
+  "cores": {
+    "同一種署名": "爸爸握不住筆又想自己簽。舊、新卡的署名位置相同，舊卡已有兩道藍輪痕，說明他用同一輛玩具車把那種署名方法用在新卡。女兒是舊卡作者與新卡收件者屬揭曉深化。"
+  },
+  "hypothesis": "用明白的落款需求和同位置的兩道舊痕排除單純裝飾的解讀。",
+  "change": "讓敘事者先錯把父親的動作看成弄髒紙，第二段鎖定署名用途與輪痕在兩張卡的相同位置。",
+  "belief_shift": "讓觀眾理解同樣不讓人代筆是兩人跨時間的做法，最後女兒只按紙角。"
+}

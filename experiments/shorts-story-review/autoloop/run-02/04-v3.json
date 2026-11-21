@@ -1,0 +1,16 @@
+{
+  "story": "04",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "刪掉媽媽的台詞",
+  "first": "他把自己離家後第一次回來的那一晚寫成了戲。圍讀時，演他的男孩握著門把問：「我還能進來嗎？」演媽媽的演員照著劇本說：「我早就原諒你了。」台下，媽媽把椅子拖近側門，咳了一聲。",
+  "second": "回家後，他剪出給演員下次排練用的音檔。那句「我早就原諒你了」被他消音了。椅腳刮地的聲音和媽媽那聲咳嗽都留著，空下來的幾秒也沒有縮短。他拿起媽媽用過的劇本。她沒有改那句台詞，只劃掉了下一行的動作：「男孩推門進屋。」\n\n他為什麼刪掉媽媽的那句話，卻把咳嗽和空下來的時間留下？",
+  "reveal": "那晚他握著門把，一直沒敢打開。媽媽從旁邊的門出來，把椅子拖到他身邊。她搬到一半咳了一聲，坐下來，陪他在門外待著。「我早就原諒你了」是他盼了多年的一句話，寫戲時才放進去的。\n\n他把音檔放給演員聽，手指停在咳聲後那段空白。「這幾秒，妳把椅子搬出去。」下一次排練，男孩鬆開門把，坐到她旁邊。",
+  "english": "He wrote a play about the night he came home. At rehearsal, the boy playing him held the doorknob. “Can I come in?” The actor playing Mom answered, “I forgave you long ago.” In the audience, his mother dragged her chair toward the side door and coughed.\n\nHe muted that line in the rehearsal track. He kept the chair scrape, her cough, and the silence. In Mom’s script, she’d crossed out the stage direction: The boy goes inside. Why leave the silence?\n\nThat night, he’d never opened the door. Mom came out another way and sat beside him. He’d written the words he’d wanted to hear. He played the cough for the actor. “Take the chair outside here.” Next time, the boy let go of the knob and sat beside her.",
+  "cores": {
+    "用動作替掉台詞": "他刪掉自己寫的原諒台詞，以媽媽搬椅子的聲音和停頓提示這一段應讓椅子的動作代替說話。她實際坐到門外屬揭曉深化。"
+  },
+  "hypothesis": "以紙上被劃掉的舞台動作與媽媽當下的聲音，支持他在改掉自己替人說的話。",
+  "change": "把原本的背詞錄音改成一段演員走位的參考音檔，母親用沉默回應。",
+  "belief_shift": "讀者可推到聲音與走位，揭曉才明白當年是媽媽走到門外，兒子一直沒有進門。"
+}

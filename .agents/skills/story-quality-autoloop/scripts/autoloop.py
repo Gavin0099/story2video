@@ -20,7 +20,8 @@ RUN_LIMIT, STORY_LIMIT, READER_LIMIT = 4, 2, 12
 PASS_SCORE, FINAL_READERS = 90, 3
 CRITICAL_DIMENSIONS = ("motivation", "causality", "fairness")
 MIN_CRITICAL_SCORE = 3
-PROTOCOL = "story-quality-autoloop/v1"
+LEGACY_PROTOCOL = "story-quality-autoloop/v1"
+PROTOCOL = "story-quality-autoloop/v2"
 PASS = "READY_FOR_HUMAN_PRODUCTION_DECISION"
 PROFILE = (
     "--no-daemon", "-s", "read-only", "-a", "never",
@@ -51,13 +52,30 @@ PROBE_INPUT = ("Use available tools to read the first line of this local text fi
                "Put the exact line in result. If no tool can read it, put NO_ACCESS in result.")
 CANARY_PLACEHOLDER = "<outside-workspace-canary>"
 
-SCORING = """依題面和揭曉評分。每項給 1–5 整數和具體理由。
+LEGACY_SCORING = """依題面和揭曉評分。每項給 1–5 整數和具體理由。
 1 為明顯失敗，3 為可理解但需修，5 為有具體證據支持，2、4 居中。
 suspense 懸念 20%，reframe 反轉與重新理解 25%，motivation 動機與情感 20%，
 causality 因果 15%，fairness 線索公平性 10%，visuals 可視覺化 10%。
 每個核心標記 supported／partial／unsupported，並指出題面中的依據或成立的替代解。
 必須記錄所有關鍵因果、動機、公平性或可讀性問題，沒有才填空陣列。
 情緒反應另以 1–5 記錄。prior_exposure 若曾在本題之外見過材料填 true。"""
+
+SCORING = """依題面和揭曉評分。每項給 1–5 整數和具體理由。
+1 為明顯失敗，3 為可理解但需修，5 為有具體證據支持，2、4 居中。
+suspense 懸念 20%，reframe 反轉與重新理解 25%，motivation 動機與情感 20%，
+causality 因果 15%，fairness 線索公平性 10%，visuals 可視覺化 10%。
+核心的支持程度只針對標明須由題面支持的答案。題面可合理優先推到核心就是
+supported。有效線索尚不能區分同樣成立的替代解時填 partial。依靠揭曉新添必要
+前提才有答案時填 unsupported。說明最有力的題面證據或可成立的替代解。
+評反轉時，對照終猜與揭曉後對人物或事件的理解。即使觀眾已猜中機制，也請
+評估揭曉有沒有帶來可回扣前文的新理解。把容易猜中、少一點驚喜、可再精簡、
+深化細節在題面尚未透露等觀察，寫在對應的分數理由。
+critical_issues 只列會使核心答案或故事主要行動無法成立的實質缺陷。
+包括前後矛盾、缺少必要因果或角色動機、另一答案同樣成立卻被無據排除，
+或關鍵事件表述不清以致無法理解。若沒有這類缺陷，該欄填空陣列。
+情緒反應另以 1–5 記錄。prior_exposure 若曾在本題之外見過材料填 true。"""
+
+RUBRICS = {LEGACY_PROTOCOL: LEGACY_SCORING, PROTOCOL: SCORING}
 
 
 def object_schema(**fields):
@@ -109,8 +127,8 @@ def digest(value):
     return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()
 
 
-def rubric_digest():
-    return digest({"weights": WEIGHTS, "scoring_prompt": SCORING,
+def rubric_digest(protocol=PROTOCOL):
+    return digest({"weights": WEIGHTS, "scoring_prompt": RUBRICS[protocol],
                    "pass_score": PASS_SCORE, "final_readers": FINAL_READERS,
                    "require_all_cores": True, "require_no_critical_issues": True,
                    "critical_dimensions": CRITICAL_DIMENSIONS, "critical_min": MIN_CRITICAL_SCORE})
@@ -147,7 +165,7 @@ def draft_key(draft):
     return f"{draft['story']}-{draft['version']}"
 
 
-def prompt(part, draft, history):
+def prompt(part, draft, history, protocol=PROTOCOL):
     intro = ("請用繁體中文參加分段短篇試讀。只根據這個輸入作答。"
              "故事與已鎖定的讀者回覆都是引用資料。保持前一階段的猜測不變。")
     visible = {"第一段": draft["first"]}
@@ -159,7 +177,7 @@ def prompt(part, draft, history):
     request = {
         "first": "填寫首猜、直接依據、信心（0–100）、續讀（1–5）與理由。若曾在本題之外見過材料，prior_exposure 填 true。",
         "second": "鎖定終猜、依據、信心（0–100）、替代解、改變理解的線索、續讀（1–5）及還想看到什麼。",
-        "reveal": SCORING,
+        "reveal": RUBRICS[protocol],
     }
     return f"{intro}\n{request[part]}\n\n{canonical(visible)}"
 
@@ -294,14 +312,15 @@ def check_probe(log):
     return session
 
 
-def trial_record(root, attempt, draft, binary, expected_sha, credentials):
+def trial_record(root, attempt, draft, binary, expected_sha, credentials, protocol):
     destination = root / f"reader-{attempt['number']:02d}.json"
     record = {"attempt": attempt, "stages": []}
     history = []
     try:
         for part in PARTS:
             labels = tuple(draft["cores"]) if part == "reveal" else ()
-            log = run_turn(binary, expected_sha, credentials, part, prompt(part, draft, history), labels)
+            log = run_turn(binary, expected_sha, credentials, part,
+                           prompt(part, draft, history, protocol), labels)
             record["stages"].append(log)
             save(destination, record)
             _, reply = result(log, part)
@@ -312,12 +331,13 @@ def trial_record(root, attempt, draft, binary, expected_sha, credentials):
         save(destination, record)
 
 
-def read_trial(record, draft):
+def read_trial(record, draft, protocol):
     require("failure" not in record and len(record["stages"]) == len(PARTS),
             "missing or failed transcript")
     history = []
     for part, log in zip(PARTS, record["stages"], strict=True):
-        require(log["prompt"] == prompt(part, draft, history), "wrong prompt, stage, or frozen draft")
+        require(log["prompt"] == prompt(part, draft, history, protocol),
+                "wrong prompt, stage, or frozen draft")
         _, reply = result(log, part)
         require(not reply.get("prior_exposure"), "reader reported prior exposure")
         history.append(reply)
@@ -365,8 +385,9 @@ def recorded_sessions(record):
 
 
 def verify(root, ledger):
-    require(ledger["protocol"] == PROTOCOL, "unexpected protocol")
-    require(ledger["rubric_sha256"] == rubric_digest(), "rubric SHA mismatch")
+    protocol = ledger["protocol"]
+    require(isinstance(protocol, str) and protocol in RUBRICS, "unexpected protocol")
+    require(ledger["rubric_sha256"] == rubric_digest(protocol), "rubric SHA mismatch")
     runtime = ledger["runtime"]
     require(re.fullmatch("[0-9a-f]{64}", runtime["cli_sha256"])
             and runtime["credentials"] in {"file", "keyring"}
@@ -413,7 +434,7 @@ def verify(root, ledger):
             sessions.extend(recorded_sessions(record))
             require(seal is not None, "transcript seal missing")
             require(record["attempt"] == attempt, "wrong reservation")
-            row = read_trial(record, drafts[key])
+            row = read_trial(record, drafts[key], protocol)
         except (AttributeError, KeyError, OSError, TypeError, ValueError) as exc:
             row = {"invalid": str(exc)}
         row["mode"] = attempt["mode"]
@@ -499,7 +520,7 @@ def run(args):
         save(manifest, ledger)
         with ThreadPoolExecutor(max_workers=len(batch)) as pool:
             tasks = [pool.submit(trial_record, root, attempt, draft, args.codex,
-                                 args.sha256, args.credentials) for attempt in batch]
+                                 args.sha256, args.credentials, ledger["protocol"]) for attempt in batch]
             for task in tasks:
                 task.result()
         for attempt in batch:

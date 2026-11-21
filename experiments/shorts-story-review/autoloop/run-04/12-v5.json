@@ -1,0 +1,17 @@
+{
+  "story": "12",
+  "version": "v5",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "8713395a79698e28b6f01598f34ca34be35a9167dbefe2b84b0c015bf670c668",
+  "title": "桌上停了一輛玩具車",
+  "first": "爸爸把紅色玩具車的兩個後輪沾上藍墨。左後輪缺了一小塊，像個 V。他把車推向一張生日卡。我怕他弄髒卡片，伸手去抽，他用左手壓住紙角。",
+  "second": "他慣用的右手，拇指和食指都纏著紗布。剛才試了兩次，筆都在碰到紙前滑掉。我彎腰撿筆，他說：「我自己簽。」他把玩具車停在新卡的署名欄前，再攤開一張寫著「給爸爸」的舊卡。那張卡的署名欄裡有兩道褪色的藍輪印。左邊那道每隔一段就缺一個小小的 V。\n\n爸爸為什麼挑了這輛缺角的玩具車？",
+  "reveal": "舊卡是我四歲時送他的。我還不會寫名字。他問要不要幫我寫，我拿出這輛車說：「我自己簽。」現在，他用這個簽法來簽給我的生日卡。他轉過卡片，上方印著我的名字和「生日快樂」。\n\n我把筆放下，替他按平紙角。他用右手掌心把車推過署名欄。左側的輪印又留下一排小小的 V。",
+  "english": "Dad dipped a red toy car’s back wheels in blue ink. The left tire had a V-shaped notch. He aimed at a birthday card. I reached to save it from the ink. He held it down.\n\nTwo fingers on his writing hand were bandaged. He’d dropped the pen twice. “I’ll sign it myself.” He lined the car up with the signature box. Then he opened an old card marked FOR DAD. Two blue tracks filled its signature box. The left one had little V-shaped gaps. Why this car?\n\nI’d used it to sign the old card at four. “I’ll sign it myself,” I’d told him. He turned the new card toward me. Happy birthday, Maya. I held the corner flat. He pushed with his palm. The same gaps appeared.",
+  "cores": {
+    "同一輛車的署名": "爸爸的慣用手手指包紮，試了兩次都握不住筆，卻想自行署名。兩張卡的署名欄與左後輪特殊 V 形缺口，指向他選用舊卡所用的同一輛車和簽法。女兒是舊卡作者與新卡收件者是揭曉深化。"
+  },
+  "hypothesis": "把握筆困難與車的身分各做成一條可直接驗證的畫面線索，保留送給誰與當年的那句話。",
+  "change": "在兩段加入包紮的手指與特殊胎痕，明確交代動作由哪隻手完成。",
+  "belief_shift": "觀眾先看出這輛車為何能用，片尾才明白爸爸選同一輛車是在用女兒當年的話回應她。"
+}

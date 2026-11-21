@@ -1,0 +1,18 @@
+{
+  "story": "06",
+  "version": "v6",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "994a910a7386aad628d2ae7f3212f93faca8dcc176e2aac99ec19dbc3403b451",
+  "title": "五百美元的舊鑰匙",
+  "first": "莉娜把舊家的鑰匙還給爸爸。爸爸替它開價五百美元。\n\n剛才在鎖店裡，爸爸開了一張金額留白的支票，要替莉娜付押金，條件是她要給他一把新公寓的備用鑰匙。莉娜退回支票，放下舊鑰匙。爸爸展開她的租約，看了一眼，才在價目表的「配鑰匙 5 美元」下添了一行，「莉娜的鑰匙 500 美元」。原來連搬出去都得付他錢。",
+  "second": "租約上寫著「尚欠押金 500 美元」。爸爸打開自己的皮夾，抽出五張百元鈔。\n\n爸爸為什麼替那把舊鑰匙標價五百美元？",
+  "reveal": "「這把妳願意賣的話，我買。」爸爸把鈔票推給她。莉娜收下錢，還站在櫃台前。「那新家的備用鑰匙，你什麼時候要？」\n\n爸爸拿起剛剛寫價目表的筆，劃掉支票備註欄裡的「給爸爸的備用匙」，把舊鑰匙推還給她。「妳想我去的時候，再叫我。」\n\n莉娜把舊鑰匙扣回自己的鑰匙圈。",
+  "english": "When Lina returned the key to her dad’s house, he priced it at five hundred dollars.\n\nA minute earlier, at his locksmith shop, he’d offered a blank check for her deposit. He wanted a spare key to her new place. She slid it back. He opened her lease and glanced down. Then under “Key copies, five dollars,” he wrote, “Lina’s key, five hundred.” She’d have to pay to leave.\n\nThe lease showed a five-hundred-dollar deposit still due. Dad counted five hundred-dollar bills from his own wallet. Why had he put a price on her old key?\n\n“I’ll buy this one if you want to sell it.” Lina took the cash. “When do you want your spare?” He crossed “Dad’s spare key” off the check. Then he slid her old key back. “Invite me when you want me over.” Lina clipped the key onto her ring.",
+  "cores": {
+    "爸爸準備買女兒交還的舊鑰匙": "爸爸為舊鑰匙標價，並從自己的皮夾備好同額資金。是他付錢，而非向莉娜收走五百。",
+    "買價是尚欠的押金": "爸爸先看租約再標價。租約顯示同一金額，錢用來讓莉娜可以付押金。女兒再問新家備用鑰匙、父親劃掉條件和還舊家鑰匙是揭曉深化。"
+  },
+  "hypothesis": "在觀眾已重新判斷支付方向後，讓莉娜追問原條件，以她並未確定可拒絕的處境為第二次懸念。",
+  "change": "以 v4 的公寓備用匙條件為基礎。尾聲讓莉娜收錢後追問，爸爸用開價的同一支筆劃掉支票條件，再主動請莉娜決定來訪。",
+  "belief_shift": "從以為爸爸向她收離家費，到他主動買舊鑰匙，最後她才確定即使拿了幫忙，何時讓爸爸來仍由自己決定。"
+}

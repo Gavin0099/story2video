@@ -1,0 +1,16 @@
+{
+  "story": "04",
+  "version": "v5",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "停在姓氏前",
+  "first": "我終於把自己的名字念完，我哥卻刪了整段試音。離交件截止只剩兩分鐘。這是我第一次拿到有報酬的配音試音機會。要是錄取，我下個月的房租就有著落了。",
+  "second": "他是來陪我念對手戲的。從小我一停頓，他就替我接話。重錄時，我在姓氏前頓了一下，還是把名字念對了。我哥只倒回那一秒，放了兩遍。我的姓疊著兩個人的聲音，他的比我的早了一拍。他的手指又回到停止鍵上。\n\n我已經念對了，他為什麼寧可冒著來不及交件的風險，也要我再念一次？",
+  "reveal": "上一遍錄進了他替我念的姓。我要留下的是我自己念完的那一遍。\n\n最後一次，我又在姓氏前卡住。他張開嘴，手伸向停止鍵。下一秒，他抬起那隻手，摀住自己的嘴。錄音燈一直亮著。我念完名字，抬頭一看，他還在等。我朝他點頭，他才念他自己的第一句。\n\n我把這一遍交了出去，連那一秒的空白也留著。",
+  "english": "I finally got my name out. My brother deleted the whole audition take. Two minutes to submit. This was my first shot at paid voice work. If I got it, I could cover next month’s rent.\n\nHe was there to read the other part. Ever since we were kids, he’d jump in when I paused. On the next take, I hesitated before my last name, but I got it right. He played that second twice. Two voices said my name. His came in just before mine. He put a finger on Stop. Why make me say it again?\n\nOn the last take I paused. He opened his mouth and reached for Stop. Then he covered his own mouth. The recording light stayed on. I finished my name. He waited for my nod before reading his line. I sent that take, pause and all.",
+  "cores": {
+    "重錄是為了把姓名留給本人": "妹妹已經念對自己的姓。重播同一秒聽到哥哥早一拍搶念，這是一份應由妹妹親自試音的錄音。重錄是為了消除他的重疊代聲，而非修正妹妹的發音或停頓。哥哥摀嘴、等妹妹點頭、保留停頓是揭曉深化。"
+  },
+  "hypothesis": "把刪掉錄音的目的寫成哥哥自己造成的可聞問題。讓第二段的踩線聲音支持因果，結尾以同一隻手改止住自己。",
+  "change": "以當下有截止時間的雙人試音替換原來的舞台空白錄音。把刪檔、重播和最後按鍵的動作掛在哥哥的搶話上。",
+  "belief_shift": "一開始以為哥哥嫌妹妹停頓，之後聽懂重錄是在去除哥哥自己的聲音，最後看見他同意保留妹妹開口前的空白。"
+}
