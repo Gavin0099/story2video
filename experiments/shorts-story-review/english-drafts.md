@@ -94,13 +94,15 @@ The rack inside the door swung in and caught a box corner on the upper shelf. Th
 
 ## 10 · He Kept the Deepest Scratch
 
-His father was giving him the old workbench. He sanded out the scratches, but taped over the deepest one. His father pushed the sandpaper toward it. “You missed the worst one.”
+Dad was giving him the old workbench. He sanded every scratch but the deepest, which he taped over. Dad slid him the sandpaper. “You missed one.”
 
-There was a fleck of blue paint on its edge. He took a wooden toy car out of a drawer. It had one missing wheel and a chip in its blue front. When his father reached for the low stool under the bench, he pushed it back. “Leave that, too.”
+Blue paint edged the gouge. The wooden car he'd made as a boy had a chip in its blue paint. One wheel had fallen off during play. Dad brushed sawdust off the stool he'd carved his son's nickname into. “Leave that too,” his son said.
 
 Why keep the deepest scratch?
 
-He'd gouged the bench making his first car. He'd expected to be sent away. His father pulled the stool closer, held the car, and let him finish. Now he peeled back the tape and set the car beside the scratch. “Can you hold it for me again?” His father pulled up the stool.
+The car had slipped. A nail gouged the bench. He thought Dad would send him away. Dad pulled the stool closer and held the car so his son could finish the wheels.
+
+Now he peeled back the tape and pulled a new wooden wheel from his pocket. He lined it up with the bare axle. “Dad, hold it steady.” Dad pulled the stool closer and put both hands on the car.
 
 ## 11 · Three Tickets in the Same Row
 
