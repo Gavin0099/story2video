@@ -1,0 +1,18 @@
+{
+  "story": "06",
+  "version": "v5",
+  "parent": "994a910a7386aad628d2ae7f3212f93faca8dcc176e2aac99ec19dbc3403b451",
+  "prior_draft_sha256": "994a910a7386aad628d2ae7f3212f93faca8dcc176e2aac99ec19dbc3403b451",
+  "title": "五百美元的舊鑰匙",
+  "first": "莉娜把舊家的鑰匙還給爸爸。爸爸替它開價五百美元。\n\n在鎖店的櫃台前，爸爸剛開出一張金額留白的支票。他願意替莉娜付押金，只要她給他一把新公寓的備用鑰匙。她把支票推回去。「來我家要敲門，等我開門。」爸爸攤開她的租約，看了一眼，在價目表的「配鑰匙 5 美元」下添了一行，「莉娜的鑰匙 500 美元」。莉娜握緊自己的錢包。",
+  "second": "攤開的租約上，「尚欠押金 500 美元」被莉娜圈了起來。爸爸沒開收銀機。他從自己的皮夾裡抽出五張百元鈔。那張支票還擱在櫃台上。\n\n爸爸為什麼替這把舊鑰匙標價五百美元？",
+  "reveal": "爸爸撕掉支票，把鈔票推過去。「這把妳願意賣的話，我買。」莉娜收下錢。爸爸把舊鑰匙也推還給她。\n\n「我會敲門。」\n\n莉娜把鑰匙扣回自己的鑰匙圈。",
+  "english": "When Lina returned her old house key, her dad put a five-hundred-dollar price on it.\n\nHe’d put a blank check on the counter of his locksmith shop. He’d pay her deposit in exchange for a spare key to her new apartment. She pushed it back. “I want you to knock and wait for me to open the door.” He glanced at her lease. Under “Key copies, five dollars,” he wrote, “Lina’s key, five hundred.” She gripped her wallet.\n\nShe’d circled the deposit still due: five hundred dollars. Dad left the till shut and counted out five bills from his wallet, all hundreds. The check was still on the counter. Why had he priced the old key at five hundred?\n\nDad tore up the check. He slid the cash over. “I’ll buy this one, if you want to sell it.” Lina took the money. He pushed the key over, too. “I’ll knock.” She clipped it back onto her ring.",
+  "cores": {
+    "父親出錢買舊家鑰匙": "女兒交還舊家的鑰匙、退回附條件的支票。父親在價目表上替交還的鑰匙標價，自己從皮夾拿出同額現金，作為買方。",
+    "價錢是女兒欠的押金": "父親攤開租約看完才標價，同額是女兒尚欠的租屋押金。父親撕支票、還舊鑰匙並承諾敲門是揭曉深化。"
+  },
+  "hypothesis": "讓女兒具體說出願意親自開門的界線，父親撕掉附條件的支票並承諾敲門，讓兩次付款方式的差異成為可見的選擇。",
+  "change": "退回支票時加入敲門約定，讓支票留在櫃台直到揭曉；父親確認買方的動作前撕支票，最後回應女兒要求。",
+  "belief_shift": "原先以為搬家要付父親一筆錢，發現他願意自己付款，接著透過撕支票和敲門的承諾，看見父親願意尊重女兒自己開門的決定。"
+}

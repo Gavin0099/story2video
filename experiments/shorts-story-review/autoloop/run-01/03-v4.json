@@ -1,0 +1,15 @@
+{
+  "story": "03",
+  "version": "v4",
+  "parent": "2f3e152660a041f27daffa79fff2fbc3a6d250134f8bcb518b363e294364d9d5",
+  "first": "阿公過世後，照相館明天就要交屋。孫女在幾張舊全家福下面，翻到一只寫著「全家福」的紙袋，裡頭是一格還沒印過的底片。她把阿公的黑帆布工作服送去裁縫店，請人縫死五個扣眼。五顆鈕扣都得留在原位，第三顆白扣是阿公自己補的。",
+  "second": "後房門上的遮光板拆走了。白天，孫女把工作服攤平，四邊貼在門上的小窗。她關上門，桌上的白紙還落著五點亮光。她沿著前襟往下按，光點就一個一個消失。\n\n她為什麼要把五個扣眼都縫死？",
+  "reveal": "衣服送回來後，她重新貼好小窗。五點光全沒了，她才敢打開相紙盒，印出紙袋裡那張全家福。以前的合照裡總少一個人，因為阿公掌鏡。這次，他在最旁邊斜放了一面穿衣鏡。照片一角，阿公從相機後探出半張臉。她還認出了鏡子裡那顆白扣。",
+  "english": "Grandpa had died, and the family was handing back the keys to his photo studio tomorrow. Under some old family portraits, his granddaughter found a negative in an envelope marked “Family Portrait.” She asked a tailor to sew all five buttonholes shut on his black work shirt. Every button would stay, including the white one Grandpa had sewn on himself.\n\nShe taped the shirt over the little window in the back-room door. Five dots of light still fell on a sheet of paper. As she pressed along the front of the shirt, they vanished one by one. Why stitch the holes shut?\n\nBack from the tailor, the shirt blocked every dot. She opened the box of photo paper and made the print. Grandpa had always been behind the camera. This time, he’d angled a mirror into the shot. In one corner, he peeked out from behind his camera. She recognized his white button.",
+  "cores": {
+    "五個光點": "孫女用工作服補暗房的遮光，亮點來自各個扣眼，縫死這些小孔才能把小窗完全遮光，讓她安全印相。穿衣鏡和阿公入鏡屬揭曉深化。"
+  },
+  "hypothesis": "用五個光點把五個扣眼變成必要解，讓謎底仍有獨立的情感新資訊。",
+  "change": "換成照相館最後一天的暗房故事，保留制服，將五個開孔和最後一張全家福接成可拍的因果。",
+  "belief_shift": "讀者在揭曉前能推到暗房，揭曉後明白白扣也幫她認出原本總在鏡頭外的人。"
+}

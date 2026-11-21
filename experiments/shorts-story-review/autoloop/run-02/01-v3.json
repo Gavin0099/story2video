@@ -1,0 +1,16 @@
+{
+  "story": "01",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "他把海報貼了回去",
+  "first": "黑貓找到了，正趴在女兒腿上。爸爸去中庭把尋貓海報撕下來。隔天，他把電話那半折到背面，沿著舊膠帶印，把同一張海報貼回去。",
+  "second": "中庭兩條岔路的入口，各擺了一張一模一樣的紅椅子。女兒攤開自己畫的地圖。上面也有兩張紅椅子，只有一張旁邊畫了黑貓。一條路通到畫著她家門牌的門，另一條路通到一扇沒寫名字的門。她捏著鑰匙圈，上頭只有一把鑰匙。\n\n貓明明找到了，爸爸為什麼還要把海報貼回原位？",
+  "reveal": "有一次她和爸爸走過中庭，畫下那張尋貓海報，好認出要走的那條路。爸爸沿著舊膠帶印把黑貓貼回那張紅椅子旁，這樣她一走到岔路，就知道哪條通到媽媽的新家。\n\n他把媽媽交給他的備用鑰匙扣上去。「要我陪到哪裡？」女兒說：「到貓那裡。」走到黑貓旁，爸爸在紅椅子上坐下。女兒握著兩把鑰匙，自己走到另一扇門前。",
+  "english": "The black cat was home, curled up in his daughter’s lap. Dad took down the missing-cat poster. The next morning, he folded the phone number out of sight and taped it back over the old marks.\n\nTwo identical red benches stood where the courtyard path split. On his daughter’s hand-drawn map, only one bench had a black cat next to it. One path led home. The other door had no label. She held a ring with one key. Why put the poster back?\n\nShe’d drawn the cat to mark the turn to Mom’s new place. Dad put it back by the right bench and clipped on Mom’s spare key. “How far should I come?” “To the cat.” He sat down by the poster. She opened the other door herself.",
+  "cores": {
+    "黑貓地標": "女兒自己畫的地圖用黑貓標記兩個相似路口其中之一。爸爸貼回原處，讓她從現場認出地圖上的轉彎位置。另一扇門是媽媽的新家為揭曉深化。"
+  },
+  "hypothesis": "讓兩張一樣的紅椅子建立找回地標的必要性，第二把鑰匙留下情感重解。",
+  "change": "用已尋回的社區黑貓取代洪水後找救命恩人的故事，保留貼回原處與遮掉電話的動作。",
+  "belief_shift": "由以為尋貓仍有事未完，變成理解貓是地標，最後看見父親願意讓女兒自己選何時放手。"
+}

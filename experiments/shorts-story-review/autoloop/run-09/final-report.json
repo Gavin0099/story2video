@@ -1,0 +1,39 @@
+{
+  "status": "READY_FOR_HUMAN_PRODUCTION_DECISION",
+  "qualified": [
+    "04-v7"
+  ],
+  "versions": {
+    "04-v7": {
+      "status": "READY_FOR_HUMAN_PRODUCTION_DECISION",
+      "readers": [
+        {
+          "score": 91.0,
+          "clear": true,
+          "cores": {
+            "重錄是為了去除哥哥提前搶進的聲音": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": true,
+          "cores": {
+            "重錄是為了去除哥哥提前搶進的聲音": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 93.0,
+          "clear": true,
+          "cores": {
+            "重錄是為了去除哥哥提前搶進的聲音": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 1,
+  "reader_attempts": 3
+}

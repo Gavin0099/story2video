@@ -1,0 +1,17 @@
+{
+  "story": "09",
+  "version": "v4",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "74c19e34cfce639cd65b5570d0f36c046271bb65b453d8b8bfa819899b24a59f",
+  "title": "門框裡的字",
+  "first": "舊餅店今天要交還給房東。最後一個紙箱寫著「新店」，箱緣放著一捲綁蛋糕盒的緞帶。媽媽拿起剩下的蛋糕模，橫塞進門底。門一靠上去，模具鏗地響了一聲。",
+  "second": "我怕房東到了還鎖不了門，伸手要抽出模具。媽按住我的手，把半透明的烘焙紙貼在門框內側。那一面門關了就看不見。紙底透出一個歪蝴蝶結，是我第一次綁好蛋糕盒時，媽叫我畫的。我以為那些只是留給還不會烤蛋糕的人的雜事。\n\n房東就要來收鑰匙，媽媽為什麼還把門卡住？",
+  "reveal": "媽用蛋糕模撐著門，好把藏在門後的圖案全描下來。她描了蝴蝶結、我第一次找零時畫的硬幣，和我第一次賣出去的蛋糕。她用筆尖點了點蝴蝶結。「妳第一次跟我一起做生意，就是把這盒交給客人的那天。」\n\n我揭下描好的紙，平放進寫著「新店」的紙箱，再把緞帶收進去。「媽，明天第一個蛋糕盒，我們一起綁。」",
+  "english": "We were handing back the keys to the old bakery. A ribbon sat on a box marked NEW SHOP. Mom wedged the last cake tin under the door. The door hit it with a clang.\n\nI reached for the tin. Mom stopped me and taped baking parchment over the strip of frame the door would hide. A crooked bow showed through. She’d asked me to draw it when I tied my first box. I’d thought it was busywork until I could bake. Why keep the door open?\n\nMom traced the bow, the coin from my first time making change, and the first cake I sold. She tapped the bow. “That was your first day working with me.” I packed the tracing and ribbon. “Tomorrow, let’s tie the first box together.”",
+  "cores": {
+    "把門框圖案帶走": "門一關會遮住門框內側的圖案。交還鑰匙前，媽媽用還沒裝箱的模具撐門，隔著烘焙紙把圖案描走。女兒知道最早的工作就被母親當成一起做生意的起點，是揭曉深化。"
+  },
+  "hypothesis": "不改可回推的卡門因果，讓母親明確指認第一個蝴蝶結的意義，再以裝箱與緞帶回扣。",
+  "change": "在原段加上新店紙箱和緞帶的畫面，揭曉確認母親當時的用意，女兒實際把圖案帶走。",
+  "belief_shift": "讀者先能推知媽媽是要保住畫，揭曉和女兒一起明白那個歪蝴蝶結是她加入店裡的第一天。"
+}

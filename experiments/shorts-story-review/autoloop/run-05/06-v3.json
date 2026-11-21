@@ -1,0 +1,17 @@
+{
+  "story": "06",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "五百美元的舊鑰匙",
+  "first": "為了搬出去，莉娜和爸爸吵了一個禮拜。今天她走進爸爸的鎖店，把他家大門的鑰匙放上櫃台。價目表寫著「配鑰匙 5 美元」。爸爸拿筆在下面補了一行，「莉娜的鑰匙 500 美元」。她伸手摸向自己的皮夾。原來連走都得向他付錢。",
+  "second": "莉娜原本想讓爸爸知道她要搬去哪裡，把租約也帶來了。租約攤在鑰匙旁邊，上面印著「尚欠押金 500 美元」。爸爸瞥了租約一眼，沒開收銀機。他掏出自己的皮夾，數出五張百元鈔。\n\n爸爸為什麼要給那把舊鑰匙標價五百美元？",
+  "reveal": "爸爸打算用五百美元買走莉娜的舊鑰匙，讓她有錢付新公寓的押金。他把鈔票推給她，手按著那把舊鑰匙，停了一下。然後他把鑰匙也推過去。\n\n莉娜收下錢，把那把鑰匙扣回自己的鑰匙圈。",
+  "english": "After a week of fighting about her move, Lina put the key to her dad’s front door on the counter of his locksmith shop. Under “Key copies, five dollars,” he wrote, “Lina’s key, five hundred.” She reached for her wallet. Apparently, even leaving was going to cost her.\n\nShe’d brought her lease so he’d know her new address. It was open beside the key. Deposit due: five hundred dollars. Dad glanced at it. He left the till shut, took out his own wallet and counted five hundred-dollar bills. Why had he priced her old key at five hundred?\n\nHe meant to buy it from her so she could pay the deposit. He slid her the money. His hand rested on the key. Then he slid that over, too. Lina took the money and clipped the old key back onto her ring.",
+  "cores": {
+    "父親準備付錢買舊鑰匙": "他拿出自己的五張百元鈔，為女兒交還的鑰匙標價。他準備作支付方。",
+    "金額來自新住處的押金": "攤開的租約和價目表金額一致，父親掏錢前看了租約。目的是幫女兒付搬家押金。最後他連鑰匙一起推還，讓回家的選擇留在她手上，是揭曉深化。"
+  },
+  "hypothesis": "第一段讓標價像離家要繳的費用，第二段用金流和相同金額讓讀者能反推。歸還舊鑰匙讓父女關係的變化留到最後。",
+  "change": "用鎖店價目表顯示父親願意為女兒離家付出什麼，最後以舊鑰匙回到女兒手上完成第二次改讀。",
+  "belief_shift": "起初把標價當作阻止莉娜離家，後來理解父親出錢讓她搬出去，也讓她自己決定何時回來。"
+}

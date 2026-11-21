@@ -96,11 +96,11 @@ The rack inside the door swung in and caught a box corner on the upper shelf. Th
 
 Dad was giving him the old workbench. He sanded every scratch but the deepest, which he taped over. Dad slid him the sandpaper. “You missed one.”
 
-Blue paint edged the gouge. The wooden car he'd made as a boy had a chip in its blue paint. One wheel had fallen off during play. Dad brushed sawdust off the stool he'd carved his son's nickname into. “Leave that too,” his son said.
+Blue paint edged the gouge. The wooden car he'd made as a boy had a matching chip and had lost a wheel during play. Dad lifted the stool beside his chair. Two old scuffs ran from the door to where it had stood. His son set it back at the end of the scuffs. “Leave that too.”
 
 Why keep the deepest scratch?
 
-The car had slipped. A nail gouged the bench. He thought Dad would send him away. Dad pulled the stool closer and held the car so his son could finish the wheels.
+As a boy he'd dropped the car and gouged the bench. He carried his stool to the door, sure he'd have to leave. Dad dragged it back beside his chair, leaving those two lines. “Sit here. I'll hold it.” The boy finished the wheels.
 
 Now he peeled back the tape and pulled a new wooden wheel from his pocket. He lined it up with the bare axle. “Dad, hold it steady.” Dad pulled the stool closer and put both hands on the car.
 

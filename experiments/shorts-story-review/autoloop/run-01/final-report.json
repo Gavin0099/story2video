@@ -1,0 +1,109 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "03-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 79.0,
+          "clear": false,
+          "cores": {
+            "保留觸感": "supported",
+            "改成可摸的物件": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "invalid": "missing or duplicate required core",
+          "mode": "formal"
+        },
+        {
+          "invalid": "missing or duplicate required core",
+          "mode": "formal"
+        }
+      ]
+    },
+    "07-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "invalid": "missing or duplicate required core",
+          "mode": "formal"
+        },
+        {
+          "invalid": "missing or duplicate required core",
+          "mode": "formal"
+        },
+        {
+          "score": 74.0,
+          "clear": false,
+          "cores": {
+            "最後一碗": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "07-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "最遠處的聲音": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 95.0,
+          "clear": false,
+          "cores": {
+            "最遠處的聲音": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "最遠處的聲音": "partial"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "03-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "五個光點": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "五個光點": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "五個光點": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

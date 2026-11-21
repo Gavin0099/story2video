@@ -1,0 +1,17 @@
+{
+  "story": "05",
+  "version": "v4",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "56de1bc94b95479a440ce16c87c712b9c7c22f4969eb756b88897ddecea80b4d",
+  "title": "別找第六頁了",
+  "first": "開演前，姊姊趴在舞台上，把一個小東西塞進道具門底。我翻開劇本，想再看一眼最後一句，才發現整張末頁不見了。姊姊說：「別找第六頁了。那句妳背熟了。」",
+  "second": "昨天彩排，門一摔上，我就卡住。姊姊替我接了台詞。下台後我告訴她：「不是我忘詞。是我一看不見妳，就說不出來。」現在她試著關門，只關到一道窄縫就推不動了。我從門縫裡還看得見她的臉。門底露著一角白紙，有我用紅筆圈起來的「摔門」。\n\n姊姊為什麼要把第六頁塞進門底？",
+  "reveal": "末頁寫著那句我背熟的台詞。姊姊把紙摺成門擋，免得道具門合上，擋住我看她的那條縫。\n\n正式演出時，門停在同一道縫。我張開嘴，又卡住了。姊姊吸了一口氣。我以為她要替我念，她卻看著我，等到我自己把那句話說出來。「我還在這裡。」",
+  "english": "Before the show, my sister lay flat onstage and tucked something under the prop door. I opened my script for one last look. The last page was gone. “Stop looking for page six. You know the line.”\n\nYesterday, when the door slammed, I froze. She said my line for me. “I know the words,” I told her later. “I get stuck when I can’t see you.” Now she tried to shut the door. It stopped with a gap wide enough to see her face. Under it was a scrap with SLAM circled in red. Why put page six there?\n\nShe’d folded it into a wedge. Onstage I froze again. My sister took a breath. Then she waited. I looked at her. “I’m still here.”",
+  "cores": {
+    "門縫保住視線": "第六頁是已背熟的末頁。姊姊把它摺成道具門擋，避免門關到底，因為妹妹說過看不見她會卡詞。正式演出時姊姊等待妹妹自己開口是揭曉深化。"
+  },
+  "hypothesis": "移除門到底停在哪裡和只是猜妹妹為何卡詞的不確定，保留姊姊換了一種幫忙方式的情感落點。",
+  "change": "讓妹妹在彩排後親口交代視線與卡詞的因果，兩次皆明確是一道窄縫。",
+  "belief_shift": "先以為姊姊在處理缺頁與門，正式演出才看出她也決定把講話的時間留給妹妹。"
+}

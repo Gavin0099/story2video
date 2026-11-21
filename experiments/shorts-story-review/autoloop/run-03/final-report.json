@@ -1,0 +1,124 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "04-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 84.0,
+          "clear": false,
+          "cores": {
+            "讓椅子代替回答": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 77.0,
+          "clear": false,
+          "cores": {
+            "讓椅子代替回答": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 77.0,
+          "clear": false,
+          "cores": {
+            "讓椅子代替回答": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "12-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 86.0,
+          "clear": false,
+          "cores": {
+            "同一種署名": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 89.0,
+          "clear": false,
+          "cores": {
+            "同一種署名": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "同一種署名": "partial"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "05-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 88.0,
+          "clear": false,
+          "cores": {
+            "留一道門縫": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 93.0,
+          "clear": false,
+          "cores": {
+            "留一道門縫": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": false,
+          "cores": {
+            "留一道門縫": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "09-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 93.0,
+          "clear": false,
+          "cores": {
+            "帶走門框圖案": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": false,
+          "cores": {
+            "帶走門框圖案": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": false,
+          "cores": {
+            "帶走門框圖案": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

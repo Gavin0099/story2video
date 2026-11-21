@@ -1,0 +1,17 @@
+{
+  "story": "11",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "第八號",
+  "first": "住戶在一樓表決要不要賣掉大樓。諾拉的贊成票一投，爸爸就能湊足票數。爸爸喊「八號」，沒人回答。諾拉起身，把寫著「8」的椅子搬出會議室。爸爸在八號旁邊填了「缺席」。",
+  "second": "諾拉提著椅子走過貼著停用告示的電梯，一階一階往上走。八號門外放著兩袋雜貨。門上貼著住戶自己寫的紙條，「請送到樓上，我無法走樓梯。」諾拉把八號椅留在門邊，又下樓搬自己的椅子。\n\n諾拉為什麼把八號椅搬上樓？",
+  "reveal": "八號門開了。瓦爾先生坐著輪椅，膝上放著原本要投的票。諾拉在他身旁坐下，把八號椅轉向走上樓的爸爸。現在爸爸要讀八號的票，得先坐到他面前。\n\n爸爸伸手要諾拉的贊成票。她當著他的面把票撕開。「他還沒投。」",
+  "english": "The residents met downstairs to vote on selling the building. Nora had the yes vote her dad needed. He called, “Flat Eight.” No answer. Nora picked up the chair marked eight and carried it out. Her dad marked Eight absent.\n\nThe lift was out of order. Nora took the stairs. Outside Flat Eight were two bags of groceries and a note: “Please deliver upstairs. I can’t take the stairs.” Nora set the chair by the door and went back for her own. Why did she take Eight’s chair upstairs?\n\nMr. Vale opened his door in a wheelchair, his ballot on his lap. Nora sat beside him and turned Eight’s chair toward her dad. He held out his hand for Nora’s vote. She tore her yes ballot in half. “He hasn’t voted yet.”",
+  "cores": {
+    "八號住戶下不了樓": "八號被一樓會議記為缺席。電梯貼著停用告示，八號門口的紙條說住戶無法走樓梯。輪椅是揭曉的深化。",
+    "把表決帶給八號": "諾拉不只搬走八號椅，還將它放到八號門邊，再下去拿自己的椅子。她準備讓表決移到住戶能參與的地方。把椅子轉給父親、收回足以讓出售案通過的贊成票是揭曉的深化。"
+  },
+  "hypothesis": "觀眾先把搬走椅子當成配合記缺席，後來從樓梯與第二張椅子看出諾拉反而要帶回八號的聲音。",
+  "change": "以失去出席機會、表決席位和諾拉有分量的選票替代座位編號規則。",
+  "belief_shift": "諾拉看似替父親清掉空位，實際上用椅子和手中贊成票讓父親必須當面聽八號。"
+}

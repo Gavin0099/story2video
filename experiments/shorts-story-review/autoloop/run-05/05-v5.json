@@ -1,0 +1,18 @@
+{
+  "story": "05",
+  "version": "v5",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "prior_draft_sha256": "8f55cf6bc89b6d1374abe8e5a53efd89dbb7d3f637c2e826e098b25f8bb82ec8",
+  "title": "別找第六頁了",
+  "first": "開演前，姊姊趴在道具門旁，把一樣東西推進門底。我翻到劇本最後一張，才發現第六頁不見了。姊姊站起來說：「別找第六頁了。最後一句妳背熟了。」",
+  "second": "昨天彩排，門一摔上，我張著嘴，發不出聲。姊姊替我說了最後一句。我把門拉開，重來一次。這次我看著她，把那句說完了。現在姊姊試著把門關上，門卻在離門框一掌寬的地方停住。我低頭看見門底下夾著一角紙，上頭的「摔門」被我用紅筆圈了起來。\n\n姊姊動了第六頁，想讓今晚的最後一句台詞有什麼不同？",
+  "reveal": "姊姊把我背熟的末頁折成硬紙楔。門往回擺時，底邊把紙楔壓在地板上，留下一掌寬的縫，讓我還看得見她。「昨天妳自己說完了，我有聽見。」\n\n正式演出，門停在同一道縫。我吸了一口氣。姊姊也張開嘴。她隔著門縫看著我，又把嘴合上。我看著她說：「我還在這裡。」",
+  "english": "Before the show, my sister tucked something under the prop door. The last page was missing from my script. “Stop looking for page six. You know the last line.”\n\nYesterday, the door slammed. I froze. My sister said my line. I opened the door and tried again. Looking at her, I finished it myself. Now she tried to shut the door. It stopped a hand’s width from the frame. Under it was a scrap with SLAM in my red circle. What did she want to change about tonight’s last line?\n\nShe’d folded page six into a wedge so I could still see her. “I heard you finish it yesterday.” During the show, the door stopped at the same gap. I took a breath. My sister opened her mouth, looked at me, then closed it. “I’m still here,” I said.",
+  "cores": {
+    "末頁讓門留縫": "紅圈裡的「摔門」指出消失的末頁。姊姊把已背熟的末頁當門擋，讓門停在妹妹還看得到姊姊的位置。",
+    "讓妹妹自己說完": "昨天彩排門關上後，姊姊替妹妹說了最後一句。開門重來時妹妹自己說完。姊姊今晚用門縫創造同一條件，讓妹妹有機會親口說完。姊姊張嘴又合上是揭曉的深化。"
+  },
+  "hypothesis": "用同一場彩排的兩次試演支撐看見彼此的作用，保留姊姊臨場收住代答的動作，讓猜中門擋之後還有第二層。",
+  "change": "用妹妹開門重來後親口說出最後一句取代事後用台詞說明。問題指向誰能說出最後一句。",
+  "belief_shift": "姊姊先像在擅自處理劇本，最後可理解她保留視線與等待的目的，是讓妹妹完成自己的台詞。"
+}

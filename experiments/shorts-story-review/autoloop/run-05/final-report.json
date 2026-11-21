@@ -1,0 +1,136 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "02-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 89.0,
+          "clear": false,
+          "cores": {
+            "燈改為照退款公告": "supported",
+            "父親獨自出面退款": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "燈改為照退款公告": "supported",
+            "父親獨自出面退款": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 85.0,
+          "clear": true,
+          "cores": {
+            "燈改為照退款公告": "supported",
+            "父親獨自出面退款": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "05-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "末頁讓門留縫": "supported",
+            "讓妹妹自己說完": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 91.0,
+          "clear": true,
+          "cores": {
+            "末頁讓門留縫": "supported",
+            "讓妹妹自己說完": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "末頁讓門留縫": "supported",
+            "讓妹妹自己說完": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "12-v6": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 89.0,
+          "clear": false,
+          "cores": {
+            "車留下能取代簽名的輪痕": "supported",
+            "這是父女共同的簽名記憶": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 89.0,
+          "clear": false,
+          "cores": {
+            "車留下能取代簽名的輪痕": "supported",
+            "這是父女共同的簽名記憶": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 85.0,
+          "clear": false,
+          "cores": {
+            "車留下能取代簽名的輪痕": "supported",
+            "這是父女共同的簽名記憶": "partial"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "06-v3": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 89.0,
+          "clear": true,
+          "cores": {
+            "父親準備付錢買舊鑰匙": "supported",
+            "金額來自新住處的押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 89.0,
+          "clear": true,
+          "cores": {
+            "父親準備付錢買舊鑰匙": "supported",
+            "金額來自新住處的押金": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 92.0,
+          "clear": true,
+          "cores": {
+            "父親準備付錢買舊鑰匙": "supported",
+            "金額來自新住處的押金": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

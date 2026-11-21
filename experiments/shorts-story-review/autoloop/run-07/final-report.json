@@ -1,0 +1,127 @@
+{
+  "status": "STOP_BUDGET",
+  "qualified": [],
+  "versions": {
+    "04-v5": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 96.0,
+          "clear": true,
+          "cores": {
+            "重錄是為了把姓名留給本人": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 92.0,
+          "clear": true,
+          "cores": {
+            "重錄是為了把姓名留給本人": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "重錄是為了把姓名留給本人": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "01-v4": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "店家重複讓試工者無薪頂班": "supported",
+            "讓先前試做的人看見海報": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": false,
+          "cores": {
+            "店家重複讓試工者無薪頂班": "supported",
+            "讓先前試做的人看見海報": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 80.0,
+          "clear": false,
+          "cores": {
+            "店家重複讓試工者無薪頂班": "supported",
+            "讓先前試做的人看見海報": "partial"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "10-v6": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "驗收的人公開接回責任": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 82.0,
+          "clear": false,
+          "cores": {
+            "驗收的人公開接回責任": "partial"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "驗收的人公開接回責任": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    },
+    "04-v6": {
+      "status": "NEEDS_RETHINK",
+      "readers": [
+        {
+          "score": 84.0,
+          "clear": true,
+          "cores": {
+            "重錄要拿掉哥哥提早說出的那一句": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 92.0,
+          "clear": true,
+          "cores": {
+            "重錄要拿掉哥哥提早說出的那一句": "supported"
+          },
+          "mode": "formal"
+        },
+        {
+          "score": 87.0,
+          "clear": true,
+          "cores": {
+            "重錄要拿掉哥哥提早說出的那一句": "supported"
+          },
+          "mode": "formal"
+        }
+      ]
+    }
+  },
+  "revisions": 4,
+  "reader_attempts": 12
+}

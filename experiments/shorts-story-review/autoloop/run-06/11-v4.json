@@ -1,0 +1,18 @@
+{
+  "story": "11",
+  "version": "v4",
+  "parent": "e826871a791371f74e033271654d76806abe4f0814ede1de70b56a6902992ae4",
+  "prior_draft_sha256": "e826871a791371f74e033271654d76806abe4f0814ede1de70b56a6902992ae4",
+  "title": "第八號",
+  "first": "一樓的住戶會議要表決是否出售大樓。爸爸喊「八號」，沒人應聲。諾拉搬走八號椅，爸爸在名冊上寫了「缺席」。諾拉答應過他會投贊成。要是不賣，光是換電梯要負擔的錢，就抵她三個月的薪水。",
+  "second": "諾拉提著椅子走過停用的電梯，沿樓梯往上。八號門外放著兩袋雜貨，門上有一張手寫紙條，「請送到樓上，我無法走樓梯。」她把椅子放在八號門邊，折回一樓，從爸爸面前抱走投票箱。\n\n諾拉為什麼要把八號椅搬上樓？",
+  "reveal": "八號門開了。瓦爾先生坐著輪椅，手裡捏著折好的選票。諾拉把投票箱放上椅面。爸爸追上來，伸手扣住箱子。諾拉以為他要拿走。他把投票口轉向瓦爾，扶穩箱子。\n\n等瓦爾投完，諾拉才把自己那張贊成票投進去。",
+  "english": "The residents met downstairs to vote on selling their building. Nora’s dad called, “Flat Eight.” No one answered. Nora carried Eight’s chair out. Her dad marked Eight absent. She’d promised him a yes vote. If they stayed, her share of a new elevator would cost three months’ pay.\n\nNora carried the chair past the broken elevator and up the stairs. Two bags sat outside Flat Eight under a note: “Please deliver upstairs. I can’t take the stairs.” She set the chair down and went back for the ballot box. Why did she carry Eight’s chair upstairs?\n\nMr. Vale opened his door in a wheelchair, a folded ballot in his hand. Nora set the box on the chair. Her dad grabbed it. She thought he was taking it back. He turned the slot toward Vale and held the box steady. Only after Vale voted did Nora drop in her yes.",
+  "cores": {
+    "八號無法下樓": "電梯停用，八號門上紙條說無法走樓梯。一樓表決記為缺席，並不足以證明住戶放棄出席。輪椅與選票是揭曉的確認。",
+    "諾拉把投票帶上樓": "她把椅子搬去八號門前，折回拿原本在一樓的投票箱，是為了讓八號能投票。她使用椅面承接投票箱、父親扶住箱子、她仍投自己原先那票是揭曉深化。"
+  },
+  "hypothesis": "用投票箱代替第二張椅子，讓觀眾能推到是把表決帶上樓。讓諾拉有理由投贊成，且讓父親親手轉投票口，將公平的行動和投票立場分開呈現。",
+  "change": "在第二段明示同一投票箱被搬走，改用八號椅擺箱子。諾拉等八號投完，才照原意投自己的贊成票。",
+  "belief_shift": "原以為她搬走空椅以配合父親。她搬到八號門前以後，父親從記缺席的人變成親自扶箱讓八號投票的人。"
+}
