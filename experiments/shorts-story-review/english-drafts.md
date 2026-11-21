@@ -4,9 +4,9 @@ Each entry includes the reveal. These drafts preserve the clues in the Tradition
 
 ## 01 · He Put the Poster Back
 
-After his wife's funeral, a station attendant handed him a missing-person poster. “Do you want to take this with you?” He recognized his wife's yellow raincoat in a photo from the flooded platform.
+After his wife's funeral, a station attendant took down a notice. “Do you want to take this with you?” It bore his wife's photograph. In it, her yellow raincoat was torn at the cuff. A hand still gripped her arm on the flooded platform.
 
-At the trash can, he read the first line. “If you remember reaching out at the edge of the platform that day…” It was signed by his wife six months earlier. He put it back up and replaced her number with his own.
+At the trash can, he read the first line. “You left before I could ask your name.” His wife had signed it six months earlier. He put it back up and replaced her number with his own.
 
 Why put up the poster again?
 
@@ -26,7 +26,7 @@ The side wall hid them from the boat. The angled glass reflected their signal wh
 
 The tailor sewed every buttonhole shut. But her customer had asked her to keep every original button.
 
-His right hand was in a cast. He tried to button the jacket left-handed, but the fabric slipped away. He needed that uniform at the front desk the next day. She stitched the old buttons over the closed holes, then pressed two scraps of fabric together. Click.
+His right hand was in a cast, and the fabric kept slipping out of his left hand. He needed his uniform for work at the front desk. He pointed to the staff photo. “All five buttons have to stay where they are.” At pickup, he counted five and thought nothing had changed. Then he felt the stitches over the holes.
 
 Why sew the buttonholes shut?
 
@@ -34,13 +34,13 @@ She'd put snap fasteners inside the jacket. The old buttons covered the stitches
 
 ## 04 · He Muted His Mother's Lines
 
-After the community theater rehearsal, he muted every line his mother had spoken. He left in another actor's cough.
+After the community theater rehearsal, he muted every part where his mother was supposed to speak. He left in another actor's cough.
 
-Whenever she lost her place, her scene partner finished the line for her. Afterward she said, “I'd like to get through that part myself.” At home he played the recording. Her partner called her character's name. A few seconds of silence followed, exactly as long as her line. Then the next actor spoke.
+She'd gotten stuck on a word, and her scene partner had said the whole line for her. She was still trying to speak as the next line began. At home, he opened the script and replayed the marked passage. Her partner called her character's name. Where the stand-in line had been, there were now a few seconds of silence.
 
-Why leave the silence?
+Why mute the line her partner had said for her and leave the silence?
 
-It was a rehearsal track. Every cue was still there, with time for her to speak. That evening she heard her character's name, paused, and finished the line. He let her finish.
+He kept the cues and left room for his mother's lines. She got stuck on the same word that night. When he started to speak, she raised a hand. She replayed the cue and finished the line herself.
 
 ## 05 · Don't Look for Page Six
 
@@ -64,13 +64,13 @@ Facing the line entrance, the list gave people time to choose while they waited.
 
 ## 07 · She Went to the Back of the Line
 
-On her daughter's first day cooking alone at the family food cart, she came by. Her daughter reached for the apron she was carrying. She put it away and joined the line.
+On her daughter's first day cooking alone at the family food cart, she came by. Her daughter set the spatula where her mother usually stood. Her mother kept her apron in her bag and joined the line.
 
-Yesterday, she'd taken the spatula halfway through a practice run. “When you do that,” her daughter said, “I never get to find out how mine would taste.” This time she ordered the new soup her daughter had written on the menu and counted out the exact price.
+Yesterday she'd reached for the salt after the first spoonful. When she got to the counter today, her daughter picked up the salt jar again. Her mother was looking at the menu. There was a new soup with a name her daughter had given it.
 
 Why line up at her own cart?
 
-Today she was a customer. She was letting her daughter finish the whole pot her way. After her first spoonful, her daughter asked, “Should I change anything?” She held the bowl steady. “Will you have it again tomorrow?”
+She paid for the new soup and slid the salt jar back. “Let me try it the way you serve it.” She'd lined up to let her daughter decide what went in the bowl. She brought it back empty. “Will you have it again tomorrow?”
 
 ## 08 · The First Test Print
 
@@ -86,27 +86,27 @@ Each sheet picked up ink from the one below it. Red marked the back of blue. Blu
 
 A bakery had orders for three tall cakes. Before icing any of them, the owner put three empty boxes in the fridge. The apprentice pointed to the wider shelf. The owner moved them to the lower one.
 
-There was room on either side of the boxes upstairs, but the rack inside the door bumped a front corner when the owner tried to close it. On the lower shelf, the boxes could be staggered and pushed farther back.
+There was room on either side of the boxes upstairs, but the door stopped a hand's width from closing. On the narrower lower shelf, he staggered the boxes and the door closed.
 
 Why put empty boxes in the fridge before the cakes were ready?
 
-He was testing the space the finished boxes would need with the door closed. Once the first cake was boxed, the apprentice used the spot they'd tested. The door closed cleanly.
+The rack inside the door swung in and caught a box corner on the upper shelf. The owner was checking how much room he'd have with the door closed, before risking a finished cake. Once the first cake was boxed, the apprentice used the spot they'd tested. The door closed cleanly.
 
 ## 10 · He Kept the Deepest Scratch
 
-He sanded the scratches out of his father's workbench, but taped over the deepest one. His father pushed the sandpaper toward it. “You missed the worst one.”
+His father was giving him the old workbench. He sanded out the scratches, but taped over the deepest one. His father pushed the sandpaper toward it. “You missed the worst one.”
 
-There was a fleck of blue paint on its edge. He took a wooden toy car out of a drawer. It had one missing wheel and a chip in its blue front. His foot touched the low stool he'd used when he was too small to reach the bench.
+There was a fleck of blue paint on its edge. He took a wooden toy car out of a drawer. It had one missing wheel and a chip in its blue front. When his father reached for the low stool under the bench, he pushed it back. “Leave that, too.”
 
 Why keep the deepest scratch?
 
-That car was the first thing he'd made. An exposed nail had gouged the bench when it slipped. He'd expected his father to send him away. His father pulled the stool closer, held the car, and let him finish. He peeled back the tape. “I'm keeping this one.”
+He'd gouged the bench making his first car. He'd expected to be sent away. His father pulled the stool closer, held the car, and let him finish. Now he peeled back the tape and set the car beside the scratch. “Can you hold it for me again?” His father pulled up the stool.
 
-## 11 · Seat Eight Was Across the Aisle
+## 11 · Three Tickets in the Same Row
 
-Three friends bought seats seven, eight, and nine in the same row. The usher sent eight to the right and the other two to the left. Nobody had exchanged tickets.
+Three friends bought seats seven, eight, and nine in the same row. They expected to sit together. The usher asked one of them to follow first. Nobody had exchanged tickets.
 
-All three tickets were for row six of the same show. The two seats nearest the aisle on the left were one and three. On the right they were two and four. Seat five was on the left. Six was on the right.
+All three tickets were for row six of the same show. The usher stopped in the middle aisle. One was the first seat on one side, and two on the other. Beside seat seven was a plate that read nine. There was no seat in between.
 
 Why weren't seven, eight, and nine together?
 
