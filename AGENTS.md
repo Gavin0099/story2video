@@ -32,3 +32,17 @@
 
 - 測試使用本機 fixture，禁止在 M0 呼叫付費 AI 或 YouTube 上傳 API。
 - 勿將真實憑證或測試帳號資料放進 `tests/fixtures/`、Git、日誌或 `memory/`。
+- 公開發布、建立頻道、變更影片可見性等對外動作，其 Owner 授權與逐片結果須在動作當天（Asia/Taipei）commit 並 push 到遠端分支；push 失敗時，在 `memory/` 記錄尚未落版的項目與原因。`artifacts/` 不進版控，不能當作授權或發布證據的唯一存放處。
+
+## Governance Coverage
+<!-- governance:key=governance_coverage -->
+
+- 框架的 Git hooks 與 CI 檢查 repo 內容、Episode 契約與合併前檢查。YouTube Studio 上傳、公開與頻道設定不經框架 hook 檢查；這類動作的治理只有上一節的授權落版控規則與 Owner 授權本身。
+- Agent runtime 層目前宣告為 `hook_coverage_tier: C`（見 `governance/gate_policy.yaml`），session closeout 須手動執行。本專案不宣稱 runtime hook enforcement。
+
+## Merge Authority
+<!-- governance:key=merge_authority -->
+
+- 本 repo 為單一 Owner 專案，預設分支的合併採用 [`governance/SOLO_OWNER_MERGE_AUTHORITY_CONTRACT.md`](governance/SOLO_OWNER_MERGE_AUTHORITY_CONTRACT.md)。
+- 合併前須有 Owner 針對 PR 最終 head SHA 的合併確認紀錄（PR 留言寫明完整 SHA），且該 SHA 的必要檢查為綠。CI 綠或 bot 審查摘要本身不等於 Owner 確認。
+- 此宣告自本段合併進預設分支起生效，不回溯認定先前的合併。

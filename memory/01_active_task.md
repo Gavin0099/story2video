@@ -2,6 +2,8 @@
 
 ## Current Status
 
+- 2026-11-22：治理在實際開發目錄重新安裝並驗收（base `2d63c2d`）。11-21 重新 clone 後 submodule 未初始化、`.git/hooks/` 無 hook；已初始化 `b8a16828` 並裝回 pre-commit／pre-push。hook_install_validator、governance_drift_checker、external_repo_smoke、`governance/verify.py` 均 exit 0；post_task smoke 於拋棄式 worktree 執行 ok=True。commit `93acd55` 時 pre-commit 實際執行，輸出 memory workflow advisory（`warning_codes=missing_canonical_memory`，僅提示、未阻擋）。11-20 記錄的 PASS 證據檔位於不進版控的 `artifacts/`，新 clone 中已不存在。
+
 - 2026-11-22：WNL-021 生蛋動畫新版已輸出 40.8 秒本機片及開場片段。獨立預覽及正式檔畫面抽驗通過。見[成片紀錄](../experiments/science-shorts/egg-animation/README.md#改拍鏡頭與剖面)。
 
 - 2026-11-22：Owner 選定滿版微距構圖。已將同一物件的鏡頭連續性、實拍或生圖素材選擇、英文圖解及手機字幕檢查寫入 `science-shorts-visuals`，專案與本機版同步。
