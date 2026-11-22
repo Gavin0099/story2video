@@ -1,0 +1,673 @@
+{
+  "rubric": {
+    "hook": 15,
+    "clarity": 25,
+    "causal_retelling": 25,
+    "visual_plan": 20,
+    "pacing": 10,
+    "natural_language": 5
+  },
+  "minimum_each_reader": 85,
+  "episodes": {
+    "WNL-072": {
+      "revision": 2,
+      "sha256": "f13e12d2e24caee0c4bd23d9316838d6dc1c979e87b3e7147281cb48fdbf7c2a",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "f13e12d2e24caee0c4bd23d9316838d6dc1c979e87b3e7147281cb48fdbf7c2a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "OpenStax, the SFU/Dickinson lab, and CU Boulder support the same-mass and same-radius rolling comparison. Both languages tie linear speed to spin through the no-slip condition and compare equal vertical drops. The ideal diagram assigns one-third of the energy to rotation for the uniform disk and one-half for the thin hoop. It marks the equal-spin comparison as a model. https://openstax.org/books/university-physics-volume-1/pages/11-1-rolling-motion | https://www.sfu.ca/phys/140/1077/Unit12.pdf | https://physicslabs.colorado.edu/demos/mechanics/rotational-dynamics/moment-of-inertia/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "f13e12d2e24caee0c4bd23d9316838d6dc1c979e87b3e7147281cb48fdbf7c2a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一釋放閘、計時器、斜坡及等質量同直徑量測，把理想同高差能量分配與假想同轉速畫面分開。理想實心盤的轉動占約三分之一，薄環占約一半。拍攝時用輪緣標記核對無打滑、無導軌碰撞，同位置比速度，同時間比終點先後。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "f13e12d2e24caee0c4bd23d9316838d6dc1c979e87b3e7147281cb48fdbf7c2a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同坡並排實拍、等高畫格和等轉速模型各自回答一段推論，還能對回終點畫面。英文的 width across 略拗口。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "727401c7987b2e3e31faeba6f4b2165351f8699ab085a88af4750e328b25c994",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "f13e12d2e24caee0c4bd23d9316838d6dc1c979e87b3e7147281cb48fdbf7c2a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同高度看能量、同時間看賽果，安排清楚。動畫維持同半徑並分開同轉速的模型比較。中文「圓環轉動得用上較多能量」朗讀時略卡。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "727401c7987b2e3e31faeba6f4b2165351f8699ab085a88af4750e328b25c994",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 96
+        }
+      ]
+    },
+    "WNL-073": {
+      "revision": 2,
+      "sha256": "b71fe11db8d7bb7b989719ac67e9108a1aae0ed8df1b0ff6cbc1b6a215436495",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "b71fe11db8d7bb7b989719ac67e9108a1aae0ed8df1b0ff6cbc1b6a215436495",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NSIDC supports gravity-driven flow through deformation and possible basal sliding. NPS and USGS independently describe deformation within and between ice crystals. Both languages keep the ice solid and basal sliding conditional. The modeled frozen bed stays fixed as markers move different distances over the same time at different depths. https://nsidc.org/learn/parts-cryosphere/glaciers/science-glaciers | https://www.nps.gov/articles/howglaciersmove.htm | https://wa.water.usgs.gov/pubs/fs/fs_rainier.html"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "b71fe11db8d7bb7b989719ac67e9108a1aae0ed8df1b0ff6cbc1b6a215436495",
+        "status": "PASS",
+        "blockers": [],
+        "note": "原創縮時以固定岩壁對照冰上標記，晶粒示意接回同一凍結床谷地的冰內標記，讓等長時間的位移差可見。滑移圖保留尺度、時間與形變，只加入底層相對岩床的位移。成片核對兩個模型的凍結床與岩壁參照始終固定。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "b71fe11db8d7bb7b989719ac67e9108a1aae0ed8df1b0ff6cbc1b6a215436495",
+          "status": "PASS",
+          "blockers": [],
+          "note": "固定岩壁把標記的移動交代清楚。用同視角區分岩床上方的冰變形與冰沿岩床滑動，觀眾可以用前者解釋固定底部的例子。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "283ea925f0f8074b4b1ea7279fc51ad1292bdebf7ab0a14d5c24ac0875e1b0fa",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 92
+        },
+        {
+          "reviewer": "B",
+          "sha256": "b71fe11db8d7bb7b989719ac67e9108a1aae0ed8df1b0ff6cbc1b6a215436495",
+          "status": "PASS",
+          "blockers": [],
+          "note": "凍住的岩床、冰體變形與沿床滑動用同一剖面拆解，固定參照貫穿。短時間內連看谷地、冰晶和並排模型，應留足停頓給標記。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "283ea925f0f8074b4b1ea7279fc51ad1292bdebf7ab0a14d5c24ac0875e1b0fa",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        }
+      ]
+    },
+    "WNL-074": {
+      "revision": 3,
+      "sha256": "7e85a665c5743e550f9b08f86e3dbd86c876a3f870e0692f0438ffe993b53e92",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "7e85a665c5743e550f9b08f86e3dbd86c876a3f870e0692f0438ffe993b53e92",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The Soft Matter study in AMOLF's archive documents packed oil droplets in a continuous water phase and yolk-protein and phospholipid stabilization. The American Egg Board independently details the oil-water interfacial mechanism. Both languages preserve oil breakup followed by reduced coalescence. The labeled model retains oil quantity and a connected water phase. https://ir.amolf.nl/pub/10210/16567OA.pdf | https://www.incredibleegg.org/professionals/manufacturers/real-egg-functionality/emulsification/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "7e85a665c5743e550f9b08f86e3dbd86c876a3f870e0692f0438ffe993b53e92",
+        "status": "PASS",
+        "blockers": [],
+        "note": "開場實拍油水混合後重新分層及一匙成品，結尾回同一匙。模型保持總油量，從攪打分滴到合併，界面比較保持初始滴數、大小、路徑與觀察時間一致。成片核對親水端向水、親油端向油，並保留連續水相及 Time-lapse、Model 標示。"
+      },
+      "readers": [
+        {
+          "reviewer": "B",
+          "sha256": "7e85a665c5743e550f9b08f86e3dbd86c876a3f870e0692f0438ffe993b53e92",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同樣的碰撞只改有沒有界面層，因果很清楚。中文開場的「這罐油」需要畫面交代水也在罐裡；「水相」第一次出現稍硬。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "57c672ce488674f5a0315060e04bddea1ab74f6b14d3edc7d04dbd30e48875ae",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 23,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "C",
+          "sha256": "7e85a665c5743e550f9b08f86e3dbd86c876a3f870e0692f0438ffe993b53e92",
+          "status": "PASS",
+          "blockers": [],
+          "note": "開頭的分層與最後回到同一匙美乃滋相互呼應。固定油滴數目、大小和碰撞路徑的模型足以分辨乳化層的作用。轉移題要自行推導相同油量被分成小滴後的總表面積，畫面能提供直覺，但旁白並未明說這個關係。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "57c672ce488674f5a0315060e04bddea1ab74f6b14d3edc7d04dbd30e48875ae",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-075": {
+      "revision": 3,
+      "sha256": "3033ced0582edd9f5839916d45f33a35a14313f8051d5747cfa662134d76abe7",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "3033ced0582edd9f5839916d45f33a35a14313f8051d5747cfa662134d76abe7",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Messenger describes the elastic sac and its radial muscles. Deravi et al. independently document rapid expansion and retraction and show that pigment spreads in a thin layer when expanded. Both languages preserve contraction pulling the sac edges outward and relaxation allowing elastic recoil. The diagram tracks the same chromatophore from the model to the skin pattern. https://doi.org/10.1017/S1464793101005772 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3928930/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "3033ced0582edd9f5839916d45f33a35a14313f8051d5747cfa662134d76abe7",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一皮膚斑點連到具固定外端的放射肌模型。收縮時色素囊邊緣外移，側視小窗表現同份量色素變薄變寬。放鬆後同囊回縮，皮膚斑點位置保持不動。製作時核對回放的同一皮膚區、相近光線及原創動畫的 Model 標示。"
+      },
+      "readers": [
+        {
+          "reviewer": "B",
+          "sha256": "3033ced0582edd9f5839916d45f33a35a14313f8051d5747cfa662134d76abe7",
+          "status": "PASS",
+          "blockers": [],
+          "note": "俯視的肌肉固定點與側視的色素厚度，足以講清楚『收縮卻變大』。開場收得太近時會先被當成不明皮膚反應；末段才看清整隻烏賊是刻意安排。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "54a3f1a938ae9d5d2f2051ee80b03330c57fb489e0b52c2c447a79686a063790",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 10,
+            "clarity": 23,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 90
+        },
+        {
+          "reviewer": "C",
+          "sha256": "3033ced0582edd9f5839916d45f33a35a14313f8051d5747cfa662134d76abe7",
+          "status": "PASS",
+          "blockers": [],
+          "note": "相同色素由小而厚變成寬而薄的側視小窗，配合上視的肌肉固定點，能交代肌肉為何越短、色素囊反而越寬。開頭皮膚特寫缺少烏賊身分與尺度，繁中『深色斑點就在這裡展開了』也不如直接說斑點變大。若開場採動畫，畫面需要讓觀眾辨認是重現。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "54a3f1a938ae9d5d2f2051ee80b03330c57fb489e0b52c2c447a79686a063790",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 9,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 87
+        }
+      ]
+    },
+    "WNL-076": {
+      "revision": 2,
+      "sha256": "116106e369604a233208661b51cfeb0893e58926bc690a72c1b928e99dc096a7",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "116106e369604a233208661b51cfeb0893e58926bc690a72c1b928e99dc096a7",
+        "status": "PASS",
+        "blockers": [],
+        "note": "CU Boulder, Randolph College and the FSU-hosted optics demonstration independently support CD tracks acting as a reflection grating. Randolph College gives the constructive path difference and the FSU-hosted demonstration gives wavelength-dependent direction. Both languages preserve a single continuous spiral with locally near-parallel turns. The same-side first-order diagram gives red a larger angle at near-normal incidence and shows the white zero order. https://physicslabs.colorado.edu/demos/optics/interference/gratings/cd-as-reflection-grating/ | https://physics.randolphcollege.edu/psheldon/classes/p3332/Labs/Laser/CD.htm | https://osa.magnet.fsu.edu/teachersparents/classroomactivities/pdfs/fun%20with%20cds.pdf"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "116106e369604a233208661b51cfeb0893e58926bc690a72c1b928e99dc096a7",
+        "status": "PASS",
+        "blockers": [],
+        "note": "固定白光、曝光與相機實拍 CD 銀面。示意由同一螺旋取樣區進入等間距軌道，採固定入射幾何與同側一階出射；紅光離正向較遠，零階保留白光。成片逐格核對同色波峰相位、全程光程差與光路方向，並確認實拍彩色亮帶清楚移動。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "116106e369604a233208661b51cfeb0893e58926bc690a72c1b928e99dc096a7",
+          "status": "PASS",
+          "blockers": [],
+          "note": "相鄰軌道、路徑差、不同顏色出射方向和固定鏡頭的實拍能連成完整解釋。兩道反射波的波峰須在同一觀察方向上讀得清楚。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "3a15515066245ac6c509be2efb15087d5bd17465612cddffc9119f2803f47f50",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "116106e369604a233208661b51cfeb0893e58926bc690a72c1b928e99dc096a7",
+          "status": "PASS",
+          "blockers": [],
+          "note": "螺旋放大成局部平行軌道，再回同一機位看顏色切換，連接得自然。波峰和路程差都進畫面，須讓觀眾看得到重合的方向。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "3a15515066245ac6c509be2efb15087d5bd17465612cddffc9119f2803f47f50",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        }
+      ]
+    },
+    "WNL-077": {
+      "revision": 2,
+      "sha256": "7b5114ca7f908cfc9c73b269f00df877caf0492105798f9afd349852726db829",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "7b5114ca7f908cfc9c73b269f00df877caf0492105798f9afd349852726db829",
+        "status": "PASS",
+        "blockers": [],
+        "note": "US3627434A and EP0530227B1 independently document the stopped collar, opening jaws and friction retainer. US4521126 supplies an independent related design with the same broad advance, release and reset sequence. Both languages preserve that sequence. The scoped model follows one lead point through forward motion, retained extension, spring reset and regripping. https://patents.google.com/patent/US3627434A/en | https://patents.justia.com/patent/4521126 | https://patents.google.com/patent/EP0530227B1/en"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "7b5114ca7f908cfc9c73b269f00df877caf0492105798f9afd349852726db829",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一筆型實拍與標為 Model 的縱剖共用固定筆尖及筆芯追蹤點。下壓先同推夾頭、滑環與筆芯，再讓環碰止擋而夾頭開啟。復位期間前端保持件固定筆芯，滑環退到止擋後重新夾緊。窄幅預覽需確認環、保持件和筆芯的相對運動分得清楚。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "7b5114ca7f908cfc9c73b269f00df877caf0492105798f9afd349852726db829",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一筆芯追蹤點把完整週期串起來。夾頭出環、筆尖接手和彈簧帶回三個動作靠得很近，動畫需讓環停住的瞬間可辨認。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "cdc3f6dce406ae2fc68cc69d155dd05509f90f78cbd7a293038f37be7e910ad2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 93
+        },
+        {
+          "reviewer": "B",
+          "sha256": "7b5114ca7f908cfc9c73b269f00df877caf0492105798f9afd349852726db829",
+          "status": "PASS",
+          "blockers": [],
+          "note": "固定筆尖、刻度和追蹤點適合追按放順序。中文「快到行程底時」和「就能準備按下一下」較生硬，調成口語會更順。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "cdc3f6dce406ae2fc68cc69d155dd05509f90f78cbd7a293038f37be7e910ad2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-078": {
+      "revision": 2,
+      "sha256": "da8223fbc924b47a833a0564502db271d64d615159b1bc599a60529992cf269a",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "da8223fbc924b47a833a0564502db271d64d615159b1bc599a60529992cf269a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Texas Instruments and Infineon independently document the influence of the glove layer and finger distance on touch signal. Infineon and 3M describe projected mutual-capacitance sensing. The bilingual narration and model preserve the fixed glass and sensing threshold, added distance and weaker signal, with the demonstrated outcome scoped to the selected hardware and glove. https://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSP430Ware/3_80_02_10/exports/msp430ware_3_80_02_10/captivate/docs/users_guide/html/CapTIvate_Technology_Guide_html/markdown/ch_design_guide.html | https://www.infineon.com/assets/row/public/documents/30/59/infineon-industrial-capacitive-touchscreen-design-made-simpler-whitepaper-en.pdf | https://circuits.mit.edu/_static/F25/labs/rc/3m_capsense.pdf"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "da8223fbc924b47a833a0564502db271d64d615159b1bc599a60529992cf269a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "裸指與厚絕緣手套在同一玻璃位置和設定做離線點擊。模型固定電極、比例與閾值，接觸玻璃的是手套外表面，內側手指離電極較遠。結尾將 Model 留在示意插圖上。成片以示意訊號變化量標柱圖，實拍只顯示兩次點擊結果。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "da8223fbc924b47a833a0564502db271d64d615159b1bc599a60529992cf269a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "相同位置的兩次點擊和共用門檻的模型很容易對照，轉用到厚保護片時也能直接沿用同一條推論。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "cdee8ffa6cdd897b5883d607000bedea79ff18025618951e73cd0160ad22c7a9",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 99
+        },
+        {
+          "reviewer": "B",
+          "sha256": "da8223fbc924b47a833a0564502db271d64d615159b1bc599a60529992cf269a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "實拍驗證同一目標的反應，模型另外解釋門檻；同一接觸點及比例讓厚手套的變因看得見。英文與中文都讀得快而清楚。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "cdee8ffa6cdd897b5883d607000bedea79ff18025618951e73cd0160ad22c7a9",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 100
+        }
+      ]
+    },
+    "WNL-079": {
+      "revision": 3,
+      "sha256": "e41289a41fd057b36b3ad31acd08f3d64fbfcfe3f115714b2a0bd5699f9063dd",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "e41289a41fd057b36b3ad31acd08f3d64fbfcfe3f115714b2a0bd5699f9063dd",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The University of Florida derives regular polygon area by adding triangles with the same perpendicular center-to-edge height within each polygon. Both languages correctly use area = one-half times perimeter times this height. Independent unit-area calculation gives heights of 0.44, 0.50 and 0.54 and respective perimeters of 4.56, 4.00 and 3.72 after rounding. Ferhatosmanoglu et al. corroborate the ordering. Cornell establishes the three tilings and shared sides, which the model counts once in the interior. https://sites.cs.ucsb.edu/~omer/DOWNLOADABLE/IO_Partition_DAPD05.pdf | https://pi.math.cornell.edu/~mec/Winter2009/Mihai/section9.html | https://arxiv.org/abs/math/9906042 | https://web.mae.ufl.edu/uhk/NSIDED-POLYGONS.pdf"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "e41289a41fd057b36b3ad31acd08f3d64fbfcfe3f115714b2a0bd5699f9063dd",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同面積、同尺度的三個正多邊形從中心連到頂點。每種形狀內的小三角形共用同一垂直高度，底邊首尾接成周長，再由三形的高度與周長對照呈現等面積關係。鋪面只數內部共用邊，將每條邊的長度平分計入兩格。已重算所列高度及周長約值。製作時可直排三組比較，核對直角、公式與半周長標示在手機字幕下清楚可讀。"
+      },
+      "readers": [
+        {
+          "reviewer": "B",
+          "sha256": "e41289a41fd057b36b3ad31acd08f3d64fbfcfe3f115714b2a0bd5699f9063dd",
+          "status": "PASS",
+          "blockers": [],
+          "note": "高度、周長、共用邊這三步都有具體畫面。面積公式與三組長度相繼出現，節奏較密；英文末句可像中文在說到共用邊時補出鋪面內部。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "bee5057050c883b3d74a4e0df594d01e6b30e74a86c4b43dc7d0cfdacb47ba3d",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "C",
+          "sha256": "e41289a41fd057b36b3ad31acd08f3d64fbfcfe3f115714b2a0bd5699f9063dd",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一組底邊拆開再排回去能把周長公式與畫面對上，三組同尺度的垂線和周長數值也互相吻合。最後只比較鋪面內部，避免把外框算進去。英文『Give half the outline to each tile』單獨聽時可能要靠共用邊的高亮才能立刻理解。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "bee5057050c883b3d74a4e0df594d01e6b30e74a86c4b43dc7d0cfdacb47ba3d",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-080": {
+      "revision": 2,
+      "sha256": "71579f46117aab94bf547961fa0964b6eef1a6074909b25f2dada6a7e48afeb7",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "71579f46117aab94bf547961fa0964b6eef1a6074909b25f2dada6a7e48afeb7",
+        "status": "PASS",
+        "blockers": [],
+        "note": "ACS, the manufacturer and Science in School independently support air activation and exothermic iron oxidation. Both languages follow oxygen through the intact porous inner pouch to iron, with heat released by the reaction. The proposed comparison shows outer-surface temperatures at matched times with each contacted surface labeled. https://www.acs.org/content/dam/acsorg/msc/downloads/chapter-6/lesson-7/ch6-l7-lesson-plan.pdf | https://hothands.com/ | https://scienceinschool.org/article/2016/handwarmer-science/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "71579f46117aab94bf547961fa0964b6eef1a6074909b25f2dada6a7e48afeb7",
+        "status": "PASS",
+        "blockers": [],
+        "note": "開場及結尾使用同一實拍對照。封袋外表面與拆封後內袋外表面由同型探頭按同一時間線量測，標 Surface temperature 和實際經過時間。剖面分開穿入透氣袋的氧和由氧化位置朝外的熱流。製作預試溫差及讀數可重現性，保持透氣袋完整。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "71579f46117aab94bf547961fa0964b6eef1a6074909b25f2dada6a7e48afeb7",
+          "status": "PASS",
+          "blockers": [],
+          "note": "透氣內袋沒有被剪開，避免把氧的來源讀錯。兩個不同袋面測得的是各自表面溫度，畫面已標明，氧化和放熱則由模型交代。中文末段「鐵鏽形成時同類的氧化反應」讀起來偏書面。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "3e21cdfcb832bfeec916b7d067e515a9cf424ba7b170842cfb97193c4ce52fb7",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        },
+        {
+          "reviewer": "B",
+          "sha256": "71579f46117aab94bf547961fa0964b6eef1a6074909b25f2dada6a7e48afeb7",
+          "status": "PASS",
+          "blockers": [],
+          "note": "完整內袋與外袋分清楚，動畫也區分氧氣和熱。量的是兩包各自的外表面，畫面有標明；這組結果能顯示拆封後的表面溫差。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "3e21cdfcb832bfeec916b7d067e515a9cf424ba7b170842cfb97193c4ce52fb7",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        }
+      ]
+    },
+    "WNL-081": {
+      "revision": 2,
+      "sha256": "63e39bc401f2b4d11db6f98395136d9aa6291b7347743dde3ce28ce4b1199b19",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "63e39bc401f2b4d11db6f98395136d9aa6291b7347743dde3ce28ce4b1199b19",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Showalter's Voyager discovery and NASA's Cassini analysis establish Pan's gravitational maintenance of the Encke Gap. Hedman et al. and NASA's Revealing Pan's Influence independently establish narrow ringlets in the gap. Both languages scope the mechanism to Pan and preserve a relatively depleted gap. The model points the instantaneous force toward Pan and shows the altered trajectory separately. https://science.nasa.gov/resource/pan-alone-in-the-gap/ | https://www.nature.com/articles/351709a0 | https://science.nasa.gov/saturn/facts/ | https://pages.astro.umd.edu/~dphamil/research/reprints/HedBurHam13.pdf | https://science.nasa.gov/resource/revealing-pans-influence/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "63e39bc401f2b4d11db6f98395136d9aa6291b7347743dde3ce28ce4b1199b19",
+        "status": "PASS",
+        "blockers": [],
+        "note": "全幅土星沿同一 A 環位置放大到 Encke Gap 與 Pan。跟隨 Pan 的局部模型標向土星及軌道方向，瞬時力從粒子指向 Pan，並以兩條路徑區分未擾動和受擾後的平均軌道。成片核對軌道變化連續、窄環紋保留及 Model 與 Cassini 影像標示。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "63e39bc401f2b4d11db6f98395136d9aa6291b7347743dde3ce28ce4b1199b19",
+          "status": "PASS",
+          "blockers": [],
+          "note": "開頭明確聚焦單一縫隙，細環仍在也避免把空隙說成全空。動畫要讓單次近接示意與反覆作用後沿環分布的結果接得起來。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "cfa0036b65e2f3e240b62ef049755b5c4bbd971d0986cdc0e279c11a34a6b86b",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        },
+        {
+          "reviewer": "B",
+          "sha256": "63e39bc401f2b4d11db6f98395136d9aa6291b7347743dde3ce28ce4b1199b19",
+          "status": "PASS",
+          "blockers": [],
+          "note": "原軌道與改變的軌道疊圖能支持引力解釋，保留窄環紋又能避免把間隙誤看成完全空白。中文「幫這條縫維持開口」有點像器件說明。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "cfa0036b65e2f3e240b62ef049755b5c4bbd971d0986cdc0e279c11a34a6b86b",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        }
+      ]
+    }
+  }
+}
