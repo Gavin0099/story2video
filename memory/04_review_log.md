@@ -14,3 +14,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/whynest-001-final-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-001-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-001-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck under Node 22.16.0 | PASS: Codex post_task governance smoke and rejection of stale hash, duplicate reviewer, failed comprehension, and score 84
 - Next action: Deliver draft scripts in one GitHub PR for owner review. Film production and market validation are later work.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:eb76f63cc74b49c4f976c795c4544d76a31b4972d1c70e671a0d702a5ee4d341 -->
+### Canonical memory checkpoint — whynest-script-batch-002-20261122
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `eb76f63cc74b49c4f976c795c4544d76a31b4972d1c70e671a0d702a5ee4d341`
+- Commit binding: `12879739e816263553033853279e06ca3cf318ef` (bound)
+- Record: 完成 WhyNest Lab 第二批 WNL-032～041 十篇雙語稿、分鏡和獨立事實與圖解審查。每篇兩份獨立盲評均通過，最終分數為 89～97。河狸和羊毛篇 v3 由全新讀者重審。交付審查無未解 P0/P1。CI 以同一驗證器檢查兩批。
+- Validation boundary: PASS: artifacts/evidence/test-results/whynest-002-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-002-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-002-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: original audit hashes and final reader summaries match staged bytes
+- Next action: Present batch 002 in one GitHub PR for owner review. Batch 001 was already merged as c26413cc11378ec8380bc2b35a0be12c197069e0. Film production and market validation remain later stages.
+- PLAN reconciliation: `not_applicable`
