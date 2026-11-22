@@ -12,3 +12,5 @@ projection superseded them. History only; not current state.
 - WhyNest Lab 第三批十篇雙語科普稿完成事實、圖解與雙盲評驗收，可交 GitHub PR 看稿。 <!-- memory_record_projection:active-task-summary:1bec55856ad40f807f917476b27e5a571b36b8f05e028b19281da6a0a96d0631 -->
 
 - WhyNest Lab 第四批十篇雙語科普稿通過事實、圖解、獨立盲評與交付審查，供 GitHub PR 看稿。 <!-- memory_record_projection:active-task-summary:d0274823285ae37ed8b46d95614ab098581579980ff51925c95333bb9e185a4a -->
+
+- WhyNest Lab 第五批 WNL-062–071 通過稿件驗收，五批共 50 篇。荷葉篇修正顆粒拾起與連續微距分鏡後通過。 <!-- memory_record_projection:active-task-summary:0088b3676152867553348ee1e2411180a5dd9320264b55f8d3ad09e915217789 -->

@@ -58,3 +58,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/whynest-005-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-005-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-005-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: independent 89–95 scores and all 50 distinct mechanisms verified | Footage, final captions and market outcomes pending.
 - Next action: Open fifth batch PR against the fourth batch branch. Await production qualification and a separate publication decision.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:ff097dcb52fbe24b8c849c2a50b07bda0819cfe4208f9836913e1a20430ac1d7 -->
+### Canonical memory checkpoint — whynest-script-batch-006-20261122
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `ff097dcb52fbe24b8c849c2a50b07bda0819cfe4208f9836913e1a20430ac1d7`
+- Commit binding: `57cd2015bc443b53a460af32ebef96b9dae7175f` (bound)
+- Record: 新增十篇雙語科普稿、英文圖解標示與獨立分鏡、事實及雙盲評分紀錄。將第六批納入 CI，獨立交付審查無 P0/P1。
+- Validation boundary: PASS: artifacts/evidence/test-results/whynest-006-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-006-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-006-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: independent 87–100 scores and 60 distinct mechanisms verified | Footage, final captions and market outcomes pending.
+- Next action: Open sixth batch PR against the fifth batch branch. Await production qualification and separate publication authorization.
+- PLAN reconciliation: `not_applicable`
