@@ -1,0 +1,181 @@
+{
+  "reviewer": "/root/reader_b",
+  "status": "DRAFT_FINDINGS_NOT_APPROVAL",
+  "scope": "Preliminary consistency review of all four 16-image contact sheets, selected original-resolution PNGs, and scenes.py functions evaporation/suction/friction/bridge. No production PASS issued. No other reader scores were accessed.",
+  "renderer_path": "experiments/science-shorts/public-20-20261122/scenes.py",
+  "renderer_sha256_at_code_read": "1DEE0BAF293183B0B913A1AA2476E417EF1E0CD82E6BC0C79DF969E2E532E7E8",
+  "findings": [
+    {
+      "id": "15",
+      "severity": "blocking_before_production_approval",
+      "code_lines": [
+        392,
+        393,
+        426,
+        427,
+        429,
+        430,
+        431
+      ],
+      "images": [
+        "15/draft/cue-05-a.png",
+        "15/draft/cue-05-b.png"
+      ],
+      "observation": "At cue 05 (k=4), time=min(1,(k+p)/4) is already 1 for every progress value, so the book is stationary at x=486. The same shot labels Energy during the slide while the kinetic-energy bar decreases and thermal-energy bar increases. Both PNGs show identical book position despite different motion-energy levels.",
+      "implication": "The viewer sees a resting book retaining substantial kinetic energy and continuing to convert it to heat. The animation's state contradicts its own explanation of kinetic energy during sliding.",
+      "requested_change": "Replay the actual sliding phase explicitly and synchronize book speed/position and kinetic-energy share during cue 05, or move the energy-transfer graphic into the actual sliding interval. If a separate time axis is intentional, label and visually separate it as a replay instead of placing it over an apparently current stationary book.",
+      "verification_needed": "Regenerate cue 05 original-resolution pairs after the code change, inspect book motion versus kinetic-energy share, and bind any production review to the revised renderer and exact prepared inputs."
+    },
+    {
+      "id": "14",
+      "severity": "production_condition",
+      "code_lines": [
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        380
+      ],
+      "images": [
+        "14/draft/cue-04-b.png",
+        "14/draft/contact-sheet.png"
+      ],
+      "observation": "The pressure demonstration uses selected downward outside and upward inside pressure-force arrows; cue 05 explicitly calls them selected vertical pressure forces.",
+      "implication": "This is a useful selected-component comparison. It should not be presented later as a full directional distribution of air pressure or a complete contact-force diagram.",
+      "requested_change": "Retain selected-force/schematic framing in production; keep the sealed cavity, nonzero trapped-air markers and rim-opening path visible.",
+      "verification_needed": "Check prepared cue text and final rendered transitions for the press/seal/rebound/open order. No scientific defect identified in the sampled opening and pressure frames."
+    },
+    {
+      "id": "13",
+      "severity": "production_condition",
+      "code_lines": [
+        283,
+        284,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        299,
+        300,
+        301,
+        302,
+        325,
+        326,
+        327
+      ],
+      "images": [
+        "13/draft/cue-04-b.png",
+        "13/draft/cue-05-b.png",
+        "13/draft/contact-sheet.png"
+      ],
+      "observation": "The still-air inset has opposing arrows, the breeze inset carries schematic vapor markers laterally out of the crop, and equal-starting-shirt conditions are labeled. Cue 07 resets wetness while explicitly saying Matched shirts at the start.",
+      "implication": "No currently visible claim that water disappears or that wetness spontaneously returns without a comparison reset. The condition labels and symbol identification are doing necessary explanatory work.",
+      "requested_change": "Keep Water molecule symbols, schematic context, same room humidity, and matched-at-start labels readable in production. Do not treat marker counts or shrinking blue patches as measured evaporation rates.",
+      "verification_needed": "Confirm final animation preserves continuous lateral marker motion, and the reset-to-start comparison is understandable when heard with the actual cue timing."
+    },
+    {
+      "id": "16",
+      "severity": "production_condition",
+      "code_lines": [
+        460,
+        461,
+        462,
+        467,
+        468,
+        469,
+        472,
+        473,
+        474,
+        487,
+        488,
+        493,
+        494,
+        495,
+        496,
+        497
+      ],
+      "images": [
+        "16/draft/cue-05-b.png",
+        "16/draft/cue-06-b.png",
+        "16/draft/contact-sheet.png"
+      ],
+      "observation": "The left deck endpoint advances as warm increases, the reference deck and supports stay fixed, the gap narrows/widens correctly relative to the displayed warm/cool state, and the movement is labeled exaggerated. The stress example is a separate inset.",
+      "implication": "The sampled geometry supports the stated simplified expansion-joint explanation without implying that the whole bridge translates or piers stretch.",
+      "requested_change": "Retain fixed-reference, sliding-bearing and exaggerated-movement labels; do not present the illustrated displacement as a measured thermal coefficient or a universal bridge layout.",
+      "verification_needed": "Check the exact prepared animation for continuity across warm-to-cool transition and inspect encoded output before final acceptance."
+    }
+  ],
+  "not_verified": [
+    "Exact prepared input manifest, narration/audio, timing, source bundle, fonts, helpers and tool bindings were not supplied for this review.",
+    "The contact sheets sample all cue pairs, but only selected original PNGs were opened at full size; continuous animation and every transition remain unverified.",
+    "No MP4 was decoded or inspected, and caption bounds, audio, mobile readability and human viewing outcomes were not evaluated.",
+    "This review identifies internal visual consistency issues and production conditions; it is not a new full literature-based fact audit of episodes 13–16."
+  ],
+  "next_gate": "Prepare exact inputs only after required script reviews are available; fix episode 15 chronology, regenerate affected evidence, and obtain a new review bound to actual prepared bytes. Do not turn this draft findings file into a PASS by refreshing hashes.",
+  "inspected_png_digests": [
+    {
+      "path": "13/draft/contact-sheet.png",
+      "sha256": "61EB3B3B7001B6A91AD29CDBC491D6BBC69256A126289E31A9EA5407DDFD5B76",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "14/draft/contact-sheet.png",
+      "sha256": "FC9407A331CBD43FF95CC7A2954467E8BD064B5DB66BCF7D323BE88AA37ABCD5",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "15/draft/contact-sheet.png",
+      "sha256": "9C39B283458E9D3E0834AE5294FEABCB6B2E4EAA4F29A58F82A7557EAA28A951",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "16/draft/contact-sheet.png",
+      "sha256": "DCFD7B2F5D2DCB01045227B50AADBC54055F5EE23AD8E53DFB0E3BDC1A6D57B4",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "15/draft/cue-05-a.png",
+      "sha256": "93FEB33ACAB68A3F1FB8362F38922F2D1152D70123D49685DC0B63018FB5A64B",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "15/draft/cue-05-b.png",
+      "sha256": "78D32DDC40B70D60ADA94D3A52DB3FF1C55E311BF6FF9B646B406D07229BCFA5",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "14/draft/cue-06-b.png",
+      "sha256": "51D45625F9C8E593939E881DDCEA0D26D303F39C22333F6700A97F9FA67B8F6D",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "13/draft/cue-04-b.png",
+      "sha256": "930A08F2C7532ECA0934F2BD4EB01731241994251427B2DCAE75B006C14D5431",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "16/draft/cue-05-b.png",
+      "sha256": "B3C04FCC4B937E3698DF910967442CA84B3F7AD9FD338CB8B095FD19E099565D",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "16/draft/cue-06-b.png",
+      "sha256": "9A7867B535E432289AA3D53BF7DB365CAB96FD2BAAA1A71783D39B8C1AD892EE",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "14/draft/cue-04-b.png",
+      "sha256": "F490EBC12056CBC7652E6E1C10DE753327221A885959C67E8F7CD3398C231EB0",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    },
+    {
+      "path": "13/draft/cue-05-b.png",
+      "sha256": "50CC2C38B13A1BCC7DA4952DCD46A6F895054AE2D7D707EFAB126561D9B87F1D",
+      "measurement_scope": "Measured after visual inspection; no prepared manifest supplied."
+    }
+  ]
+}

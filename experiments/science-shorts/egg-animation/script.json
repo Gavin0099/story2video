@@ -1,0 +1,77 @@
+{
+  "id": "WNL-021",
+  "revision": 3,
+  "title_en": "Why Does This Egg Start Spinning Again?",
+  "title_zh": "蛋明明停了，為什麼又轉起來？",
+  "cues": [
+    {
+      "en": "Briefly stop these two spinning eggs. Let go right away. Only one starts turning again.",
+      "zh": "短暫按停兩顆正在轉的蛋，立刻放手。只有一顆又開始轉。",
+      "captions_en": ["Briefly stop these two spinning eggs.", "Let go right away.", "Only one starts turning again."],
+      "captions_zh": ["短暫按停兩顆正在轉的蛋，立刻放手。", "只有一顆又開始轉。"],
+      "scene": "Overhead illustrated demo. Two marked egg shells spin, both marks stop visibly, then only one resumes after release."
+    },
+    {
+      "en": "The hard-boiled egg stays still. The raw egg starts turning again. The difference is what's inside.",
+      "zh": "熟蛋停在原地，生蛋又轉了起來。差別就在蛋殼裡。",
+      "captions_en": ["The hard-boiled egg stays still.", "The raw egg starts turning again.", "The difference is what's inside."],
+      "captions_zh": ["熟蛋停在原地，生蛋又轉了起來。", "差別就在蛋殼裡。"],
+      "scene": "Same position. Labels appear; only raw egg turns briefly again."
+    },
+    {
+      "en": "In the hard-boiled egg, the solid inside and the shell turn together. Stop the shell, and the whole egg stops.",
+      "zh": "熟蛋裡面是固態，和蛋殼一起轉。按住蛋殼，整顆蛋就停下來。",
+      "captions_en": ["In the hard-boiled egg, the solid", "inside and the shell turn together.", "Stop the shell, and the whole egg stops."],
+      "captions_zh": ["熟蛋裡面是固態，和蛋殼一起轉。", "按住蛋殼，整顆蛋就停下來。"],
+      "scene": "Close cross-section. Solid core mark and shell mark rotate and stop together."
+    },
+    {
+      "en": "In the raw egg, a brief touch stops the shell while the liquid inside is still turning.",
+      "zh": "短暫按住生蛋，蛋殼停了，裡面的液體還在轉。",
+      "captions_en": ["In the raw egg, a brief touch", "stops the shell while the liquid", "inside is still turning."],
+      "captions_zh": ["短暫按住生蛋，蛋殼停了，", "裡面的液體還在轉。"],
+      "scene": "Same angle and scale. Shell mark stops; arrow continues turning inside."
+    },
+    {
+      "en": "Let go right away, and the moving liquid drags the shell around again.",
+      "zh": "立刻放手，還在轉的液體就會帶動蛋殼再轉一下。",
+      "captions_en": ["Let go right away, and the moving", "liquid drags the shell around again."],
+      "captions_zh": ["立刻放手，還在轉的液體", "就會帶動蛋殼再轉一下。"],
+      "scene": "Release. Same shell marker starts moving in the same direction; fluid loses speed."
+    },
+    {
+      "en": "Hold it still for longer, and the liquid slows down too. That little restart only happens if there's still motion inside.",
+      "zh": "如果按住久一點，液體也會慢下來。裡面還在轉，蛋殼才會再轉一下。",
+      "captions_en": ["Hold it still for longer, and the", "liquid slows down too.", "That little restart only happens", "if there's still motion inside."],
+      "captions_zh": ["如果按住久一點，液體也會慢下來。", "裡面還在轉，蛋殼才會再轉一下。"],
+      "scene": "Alternative long hold labeled. Inner arrow slows with shell held; fully stopped case ends with both still. End in original comparison layout."
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "Exploratorium",
+      "url": "https://annex.exploratorium.edu/cooking/eggs/activity-spin.html",
+      "supports": "Matched experiment and opposite outcomes on immediate release; moving liquid restarts the shell."
+    },
+    {
+      "publisher": "Institute of Physics",
+      "url": "https://spark.iop.org/spinning-eggs",
+      "supports": "Stop and release immediately; in the raw egg the liquid continues moving independently of the shell."
+    },
+    {
+      "publisher": "Japan Society of Mechanical Engineers",
+      "url": "https://www.jsme-fed.org/experiment-e/2009_12/005.html",
+      "supports": "When the shell stops momentarily, the liquid interior can keep rotating. The article discusses this as inertia rather than displaying a measured spin-down curve."
+    },
+    {
+      "publisher": "NASA Jet Propulsion Laboratory",
+      "url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/planetary-egg-wobble-and-newtons-first-law/",
+      "supports": "Step 9 calls for a brief touch and prompt release. The animation extends an alternative hold to show the qualitative consequence of drag at a stationary shell."
+    },
+    {
+      "publisher": "University of Illinois Physics Van",
+      "url": "https://van.physics.illinois.edu/ask/listing/609",
+      "supports": "Internal friction tends to bring the liquid and shell toward the same rotation rate. Together with the short-touch demonstrations, this supports the long-hold comparison as qualitative inference."
+    }
+  ]
+}

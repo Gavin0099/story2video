@@ -1,0 +1,124 @@
+{
+  "schema_version": "manual-channel-delivery.v1",
+  "prepared_at": "2026-11-22",
+  "status": "ready_for_account_and_visibility_selection",
+  "automatic_upload_enabled": false,
+  "public_release_authorized": false,
+  "channels": {
+    "turtle_soup": {
+      "display_name": "CluePause｜謎底之前",
+      "handle": "@CluePause",
+      "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+      "identity_evidence": "prior_session_record_not_reverified_this_turn",
+      "content_promise": "Original mysteries, fair clues, and a complete reveal."
+    },
+    "science": {
+      "display_name": null,
+      "handle": null,
+      "channel_id": null,
+      "name_candidates": [
+        "WhyNest Lab｜一分鐘科普",
+        "WhyPocket Lab｜一分鐘科普"
+      ],
+      "creation_status": "not_created",
+      "description_en": "Everyday questions, explained through clear visual science. Short illustrated explanations with English narration and Traditional Chinese captions. Start with ice, skies, and sound.",
+      "description_zh_Hant": "一個問題，懂一個原理。用插畫與動畫解說日常科學，從冰、天空與聲音開始。英文旁白，繁體中文字幕。",
+      "content_promise": "Understand one everyday scientific mechanism per video."
+    }
+  },
+  "episodes": [
+    {
+      "episode_id": "ice",
+      "route": "science",
+      "target_channel_id": null,
+      "video_id": null,
+      "upload_status": "not_uploaded",
+      "visibility": null,
+      "video_path": "artifacts/science-shorts/ice-visual-v2/ice-v2-zh.mp4",
+      "sha256": "6a257fb0855af005f1d912199cb897ceb4325efe23f6106868ebd2310fe28260",
+      "bytes": 6183374,
+      "duration_seconds": 48.1,
+      "title_en": "Why Does Ice Float?",
+      "title_zh_Hant": "冰為什麼浮在水上？",
+      "description_en": "A short visual explanation of an everyday science question.\nEnglish narration with Traditional Chinese on-screen captions.\nIllustrations and animations are explanatory schematics, not experimental footage. Created with AI-assisted illustrations and synthetic narration.\n\nSources:\nhttps://iapws.org/faqs/faq1\nhttps://www.usgs.gov/water-science-school/science/water-density",
+      "description_zh_Hant": "用圖解與動畫看懂日常科學問題。英文旁白，繁體中文字幕。\n畫面為解說示意，並非實驗錄影；使用 AI 輔助插畫與合成旁白。\n\n參考來源：\nhttps://iapws.org/faqs/faq1\nhttps://www.usgs.gov/water-science-school/science/water-density",
+      "video_language": "en-US",
+      "subtitle_files": {
+        "en": {
+          "path": "artifacts/science-shorts/ice-visual-v2/en.srt",
+          "sha256": "c05c634babb8b7c3d2258ab5b5517a07f969a3bfb2d44d30e81da73f09049fb9"
+        },
+        "zh-Hant": {
+          "path": "artifacts/science-shorts/ice-visual-v2/zh-Hant.srt",
+          "sha256": "5e1d491001addfc54873b2f913835b52a801d6c4f6ee0d3c4f5397079b52716e"
+        }
+      },
+      "audience_recommendation": "general_audience_not_made_for_kids",
+      "audience_basis": "Broad general-audience science explanations; not specifically directed at children.",
+      "disclosure_note": "Review Studio synthetic-content question against actual schematic animation; description discloses AI-assisted assets and voice.",
+      "qa_path": "artifacts/science-shorts/ice-visual-v2/qa.json"
+    },
+    {
+      "episode_id": "sky",
+      "route": "science",
+      "target_channel_id": null,
+      "video_id": null,
+      "upload_status": "not_uploaded",
+      "visibility": null,
+      "video_path": "artifacts/science-shorts/sky-space-visual-v2/sky/sky-v2-zh.mp4",
+      "sha256": "9adfd0223447378f8ac0f0bdc2c7256608ab86cfa976e6072e2c487d251af1ed",
+      "bytes": 6056262,
+      "duration_seconds": 46.1,
+      "title_en": "Why Is the Sky Blue?",
+      "title_zh_Hant": "天空為什麼是藍色？",
+      "description_en": "A short visual explanation of an everyday science question.\nEnglish narration with Traditional Chinese on-screen captions.\nIllustrations and animations are explanatory schematics, not experimental footage. Created with AI-assisted illustrations and synthetic narration.\n\nSources:\nhttps://spaceplace.nasa.gov/blue-sky/en/\nhttps://www.weather.gov/fgz/SkyBlue",
+      "description_zh_Hant": "用圖解與動畫看懂日常科學問題。英文旁白，繁體中文字幕。\n畫面為解說示意，並非實驗錄影；使用 AI 輔助插畫與合成旁白。\n\n參考來源：\nhttps://spaceplace.nasa.gov/blue-sky/en/\nhttps://www.weather.gov/fgz/SkyBlue",
+      "video_language": "en-US",
+      "subtitle_files": {
+        "en": {
+          "path": "artifacts/science-shorts/sky-space-visual-v2/sky/en.srt",
+          "sha256": "d6274fc7e46a3c1159442990021abc6dc022a3d41666cd53cba2adab5da332a9"
+        },
+        "zh-Hant": {
+          "path": "artifacts/science-shorts/sky-space-visual-v2/sky/zh-Hant.srt",
+          "sha256": "96243ce4874931acbbcd03a2c8a5a2472ace7ddf23410fa1ec0dcafce7ff047d"
+        }
+      },
+      "audience_recommendation": "general_audience_not_made_for_kids",
+      "audience_basis": "Broad general-audience science explanations; not specifically directed at children.",
+      "disclosure_note": "Review Studio synthetic-content question against actual schematic animation; description discloses AI-assisted assets and voice.",
+      "qa_path": "artifacts/science-shorts/sky-space-visual-v2/sky/qa.json"
+    },
+    {
+      "episode_id": "space",
+      "route": "science",
+      "target_channel_id": null,
+      "video_id": null,
+      "upload_status": "not_uploaded",
+      "visibility": null,
+      "video_path": "artifacts/science-shorts/sky-space-visual-v2/space/space-v2-zh.mp4",
+      "sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "bytes": 5045731,
+      "duration_seconds": 51.8,
+      "title_en": "How Do Astronauts Talk Across Empty Space?",
+      "title_zh_Hant": "隔著真空，太空人怎麼通話？",
+      "description_en": "A short visual explanation of an everyday science question.\nEnglish narration with Traditional Chinese on-screen captions.\nIllustrations and animations are explanatory schematics, not experimental footage. Created with AI-assisted illustrations and synthetic narration.\n\nSources:\nhttps://science.nasa.gov/ems/02_anatomy/\nhttps://science.nasa.gov/ems/05_radiowaves/\nhttps://www.esa.int/articles/about-us/directorates/science/listen-up",
+      "description_zh_Hant": "用圖解與動畫看懂日常科學問題。英文旁白，繁體中文字幕。\n畫面為解說示意，並非實驗錄影；使用 AI 輔助插畫與合成旁白。\n\n參考來源：\nhttps://science.nasa.gov/ems/02_anatomy/\nhttps://science.nasa.gov/ems/05_radiowaves/\nhttps://www.esa.int/articles/about-us/directorates/science/listen-up",
+      "video_language": "en-US",
+      "subtitle_files": {
+        "en": {
+          "path": "artifacts/science-shorts/sky-space-visual-v2/space/en.srt",
+          "sha256": "ded057d42ed1f558ef45fe94547fd41463baa6c3bfc323e7655f13966f9f2b09"
+        },
+        "zh-Hant": {
+          "path": "artifacts/science-shorts/sky-space-visual-v2/space/zh-Hant.srt",
+          "sha256": "c366e9cc800d18a7d5d73ac39d79a1fd00498b75ae82ca24f48107ce5e7fcbfe"
+        }
+      },
+      "audience_recommendation": "general_audience_not_made_for_kids",
+      "audience_basis": "Broad general-audience science explanations; not specifically directed at children.",
+      "disclosure_note": "Review Studio synthetic-content question against actual schematic animation; description discloses AI-assisted assets and voice.",
+      "qa_path": "artifacts/science-shorts/sky-space-visual-v2/space/qa.json"
+    }
+  ]
+}

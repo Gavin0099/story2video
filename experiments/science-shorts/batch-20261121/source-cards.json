@@ -1,0 +1,97 @@
+{
+  "schema_version": "science-source.v1",
+  "as_of": "2026-11-21",
+  "sources": [
+    {
+      "source_id": "nasa-radio",
+      "url": "https://science.nasa.gov/ems/05_radiowaves/",
+      "publisher": "NASA",
+      "title": "Radio Waves",
+      "locator": "What are radio waves?; receiver and speaker mechanical vibrations",
+      "summary": "Radio is electromagnetic. A receiver converts a radio signal into mechanical vibrations through speakers.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no diagrams copied"
+    },
+    {
+      "source_id": "usgs",
+      "url": "https://www.usgs.gov/water-science-school/science/water-density",
+      "publisher": "USGS",
+      "title": "Water Density",
+      "locator": "Ice is less dense than water",
+      "summary": "Ordinary ice has an open lattice, is less dense than liquid water, and floats. Density is mass per volume.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no site images used"
+    },
+    {
+      "source_id": "iapws",
+      "url": "https://iapws.org/faqs/faq1",
+      "publisher": "IAPWS",
+      "title": "FAQs About Water and Steam",
+      "locator": "What is the structure of a water molecule?; Why does liquid water have a density maximum?",
+      "summary": "Hydrogen bonding stabilizes an open ice network. Freezing increases volume, producing lower density than liquid water.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no figures copied"
+    },
+    {
+      "source_id": "nasa-sky",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+      "publisher": "NASA",
+      "title": "Why Is the Sky Blue?",
+      "locator": "Main explanation; What makes a red sunset?",
+      "summary": "Sunlight contains visible colors. Air scatters shorter blue wavelengths more than red. At sunset a longer atmospheric path removes more blue from the direct beam.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no figures copied",
+      "caveat": "Intro compares blue with all colors; use narrower blue-versus-red comparison to avoid violet error"
+    },
+    {
+      "source_id": "noaa",
+      "url": "https://www.weather.gov/fgz/SkyBlue",
+      "publisher": "NOAA/NWS",
+      "title": "Why Is The Sky Blue?",
+      "locator": "Explanation before So why are sunrises and sunsets red?; sunset section",
+      "summary": "Rayleigh scattering redirects blue/violet more than red. White sunlight contains a range of wavelengths; a longer direct path at sunset changes its color.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no figures copied"
+    },
+    {
+      "source_id": "nasa-waves",
+      "url": "https://science.nasa.gov/ems/02_anatomy/",
+      "publisher": "NASA",
+      "title": "Anatomy of an Electromagnetic Wave",
+      "locator": "What are Electromagnetic and Mechanical waves?; ELECTROMAGNETIC WAVES",
+      "summary": "Mechanical disturbances propagate through material; sound cannot cross an ideal vacuum. Radio is electromagnetic and can propagate in vacuum.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no figures copied"
+    },
+    {
+      "source_id": "nasa-cabin",
+      "url": "https://science.gsfc.nasa.gov/attic/cosmicopia.gsfc.nasa.gov/qa_sp_en.html",
+      "publisher": "NASA",
+      "title": "Cosmicopia: Energy Traveling Through Space",
+      "locator": "12. Sound in Space; 13. Tuning Fork in Space; Radio waves",
+      "summary": "Sound is a pressure wave; spacecraft air permits speech. A vibrating object in vacuum does not send airborne sound to another person. Radio carries communications.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no figures copied"
+    },
+    {
+      "source_id": "esa-radio",
+      "url": "https://www.esa.int/articles/about-us/directorates/science/listen-up",
+      "publisher": "ESA",
+      "title": "LISTEN UP!",
+      "locator": "Paragraphs beginning But how can there be sounds; However, there are radio waves",
+      "summary": "Sound needs material; electromagnetic radio needs no material and equipment converts received radio to speaker sound.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no audio or figures copied"
+    },
+    {
+      "source_id": "esa-cabin",
+      "url": "https://www.esa.int/media/how-loud-is-space",
+      "publisher": "ESA",
+      "title": "How loud is space?",
+      "locator": "Opening sentence and Acoustic Diagnostics explanation",
+      "summary": "Vacuum cannot transmit sound while the inside of a spacecraft can be noisy.",
+      "retrieved_at": "2026-11-21",
+      "material_reuse": "Facts paraphrased; no video copied"
+    }
+  ]
+}

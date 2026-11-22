@@ -1,0 +1,209 @@
+{
+  "schema_version": "ice-visual-final-video-review.v2",
+  "status": "PASS",
+  "scientific_visual_sample_pass": true,
+  "critical_defects": [],
+  "reviewer": {
+    "agent_id": "/root/fact_visual_audit",
+    "role": "Independent AI sampled scientific visual review of encoded output",
+    "model": "inherited native agent (API未提供精確版本)",
+    "human": false,
+    "domain_expert_attestation": false,
+    "token_usage": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21T15:18:11Z",
+  "renderer_sha256": "aad0052d5f0f486ee3cc6a05e80982e9a0c1dbedee7caa7710b38da549ad1438",
+  "inputs_sha256": "41a98e1cf1b6fd1eb8a9fc2dd5c0f95e48dc6203ccc7f5610186cc4bd5b170d3",
+  "preproduction_visual_review_sha256": "e2c5b1dfae248ed016a106f6b57357a99a63fd8f6771247db0251a979b7bf2eb",
+  "qa_json_sha256": "00e3f0b00ecc7684507a64121d38f264c9b1d04e518d235ce4d0a14c518c40a8",
+  "provenance_json_sha256": "b8e583f81aadf87ac7bed129677138500eb1973d23554285d1a972e9ad811042",
+  "media": [
+    {
+      "path": "artifacts/science-shorts/ice-visual-v2/ice-v2-zh.mp4",
+      "sha256": "6a257fb0855af005f1d912199cb897ceb4325efe23f6106868ebd2310fe28260",
+      "bytes": 6183374,
+      "video_duration_seconds": 48.033333,
+      "container_duration_seconds": 48.1,
+      "frames": 1441,
+      "sha256_recomputed_matches_qa": true,
+      "size_recomputed_matches_qa": true,
+      "visual_inspection": "Nine-shot contact sheet plus eight selected full-resolution shots and early-frame temporal samples, all decoded from this full MP4."
+    },
+    {
+      "path": "artifacts/science-shorts/ice-visual-v2/ice-v2-preview.mp4",
+      "sha256": "37c59f5fc80054234c928d93ac82124b4df8f9fde503ffbf440e7f93e667c540",
+      "bytes": 2299443,
+      "video_duration_seconds": 11.6,
+      "container_duration_seconds": 11.6,
+      "frames": 348,
+      "sha256_recomputed_matches_qa": true,
+      "size_recomputed_matches_qa": true,
+      "visual_inspection": "SHA and QA/provenance relationship verified. This clip is cut from the reviewed full MP4 by the frozen renderer; no separate visual sample was decoded from this clip by this reviewer."
+    }
+  ],
+  "sample_origin": "Read frozen render.py QA path: FFmpeg decodes ice-v2-zh.mp4 into actual-mp4/*.png; Pillow assembles contact.png from decoded stills. These are distinct from preview/*.png. Mid-shot samples use time seeking to cue midpoints, not an independently asserted exact integer-frame extraction.",
+  "sample_artifact_root": "artifacts/science-shorts/ice-visual-v2/actual-mp4",
+  "visually_inspected_samples": [
+    {
+      "name": "contact.png",
+      "sha256": "990abdc82a18329dd0925686c24035b012d628e4ea19c02dfeb746cac41f8542"
+    },
+    {
+      "name": "shot-01.png",
+      "sha256": "81872608cbab715473ee6137e11b3adebb4f123d519ce6e7253f841478ea216b"
+    },
+    {
+      "name": "shot-03.png",
+      "sha256": "d4fc1fbd70529bf0b55e84cf69450c76b851d7babcd70fdac9101964a97d9845"
+    },
+    {
+      "name": "shot-04.png",
+      "sha256": "40774808fc30b89afce40d7ccb25db1b56575015e31ab9aadd2fa801bcd771fd"
+    },
+    {
+      "name": "shot-05.png",
+      "sha256": "02c8730aca4ea29c20be1f8dbbcdb97e474546f1e12403bad297f94cadb94b6a"
+    },
+    {
+      "name": "shot-06.png",
+      "sha256": "b1b5a9a5ef07085e66879c23e0e2e44933fc3e8a2d8a3104902d0ca4c40dbe3c"
+    },
+    {
+      "name": "shot-07.png",
+      "sha256": "cd6f1eb1738c55f736a0f7e0b794b139e2f1ae97e0638340283d8c385f7015f9"
+    },
+    {
+      "name": "shot-08.png",
+      "sha256": "0acdebadf6926a46b59b1504c8bc6f6ba816372ea005888af66f7fcfb1b99f94"
+    },
+    {
+      "name": "shot-09.png",
+      "sha256": "393e375d0344988921add325ac618e1a329793264a69fefc397551d224163e9f"
+    },
+    {
+      "name": "frame-0015.png",
+      "sha256": "1aa6556d448a6fc0f18db50b4650b6b8e8631a2332e893fcf7405b0f31ac07d2"
+    },
+    {
+      "name": "frame-0030.png",
+      "sha256": "fba0b80c5d8f32e08b3b7eebb55f9c9ea5e4747fe1b905422af86a0d61cc418d"
+    },
+    {
+      "name": "frame-0045.png",
+      "sha256": "17a964873fae29afcad5ecda55bed141ddc086c4adc84b4ea1643e4e33456e92"
+    }
+  ],
+  "sample_coverage": {
+    "contact_sheet_shots": 9,
+    "full_resolution_shots": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "additional_nominal_frames": [
+      15,
+      30,
+      45
+    ],
+    "additional_nominal_seconds": [
+      0.5,
+      1,
+      1.5
+    ],
+    "full_audio_video_watch": false
+  },
+  "findings": [
+    {
+      "id": "FLOAT",
+      "status": "PASS",
+      "samples": [
+        "shot-01.png",
+        "shot-08.png",
+        "shot-09.png",
+        "frame-0015.png",
+        "frame-0030.png",
+        "frame-0045.png"
+      ],
+      "observed": "Cube is initially descending toward the water, then settles with most below the water surface; shallow top near/above the surface. No full-cube-above-water floating claim or numeric immersion fraction was introduced.",
+      "limit": "Sparse temporal sampling and stylized composite, not a physical buoyancy/refractive simulation or proof at every frame."
+    },
+    {
+      "id": "PARTICLE_COUNT_AND_SIZE",
+      "status": "PASS",
+      "samples": [
+        "shot-03.png",
+        "shot-04.png",
+        "shot-06.png"
+      ],
+      "observed": "Both comparison groups visibly retain 12 same-sized sphere symbols. ICE becomes ordered and the comparison panel expands without new symbols or enlarged molecule icons. Same-mass and 12-water-molecule labels remain visible.",
+      "limit": "Within-scene comparisons inspected; close-up scale changes elsewhere remain schematic magnification, not physical molecular growth."
+    },
+    {
+      "id": "SPACE_AND_STRUCTURE",
+      "status": "PASS",
+      "samples": [
+        "shot-04.png",
+        "shot-05.png",
+        "shot-06.png"
+      ],
+      "observed": "Spacing is emphasized between fixed-size symbols; particles are not replaced by air bubbles. Arrangement and volume remain labeled schematic, NOT A CRYSTAL MODEL and NOT TO SCALE. Orange markers are gap emphasis without a new atomic/bond-geometry claim."
+    },
+    {
+      "id": "DENSITY_AND_TEXT",
+      "status": "PASS",
+      "samples": [
+        "shot-07.png",
+        "shot-08.png",
+        "shot-09.png"
+      ],
+      "observed": "Correct density=mass/volume formula retained. Separate unchanged-mass, larger-volume and lower-density rows use =/up/down marks; no false chained equality. Closing text connects open arrangement to lower density and flotation and preserves the ordinary ice/liquid water comparison."
+    },
+    {
+      "id": "CAPTION_ALIGNMENT",
+      "status": "PASS_IN_SAMPLES",
+      "samples": [
+        "contact.png"
+      ],
+      "observed": "All nine sampled captions correspond to their explanatory shot; no sampled added causal claim, particle-count change or schematic-label loss after encoding.",
+      "limit": "Not forced alignment, phonetic verification, complete audio listening or all-frame subtitle review."
+    }
+  ],
+  "engineering_qa_read": {
+    "status": "PASS",
+    "reported_checks": [
+      "H.264/AAC; 1080×1920; 30fps; yuv420p",
+      "Full-file decode",
+      "Blackdetect",
+      "Silencedetect",
+      "Glyph-width and caption-height bounds",
+      "12/12 source-array molecule counts"
+    ],
+    "independent_checks_here": [
+      "Both MP4 byte counts and SHA-256 recomputed against qa.json",
+      "Renderer, inputs and preproduction review SHA-256 recomputed and matched provenance",
+      "Hashes of twelve visually inspected sample files recorded"
+    ],
+    "not_rerun_here": "This reviewer read the machine QA record and did not independently rerun its FFmpeg decode, black/silence analysis or caption-bound computations."
+  },
+  "nonblocking_notes": [
+    "Generated ice bubbles/cracks remain decorative. Captions and diagrams do not attribute flotation to trapped air.",
+    "Thin surface intersection and small schematic labels still merit the previously noted mobile human check.",
+    "Compression changes texture, but no sampled scientific information was lost or contradicted."
+  ],
+  "limits": [
+    "Sample-based AI image review only; not a complete playback of either MP4, a full motion or full audio check, a human comprehension trial or professional scientific endorsement.",
+    "Samples can miss brief transition artifacts, intermediate particle overlaps, motion defects and caption problems between selected times.",
+    "Short preview MP4 was hash/QA checked; visual samples were taken only from the full MP4.",
+    "No renewed full-text research, new reader score, commercial-rights audit, audience-appeal guarantee, publication or market approval.",
+    "Renderer, assets and existing visual-review files were left unchanged; only this new final-video-review JSON/Markdown were written."
+  ],
+  "human_acceptance": "PENDING",
+  "market_acceptance": "PENDING",
+  "publication_authorized": false
+}

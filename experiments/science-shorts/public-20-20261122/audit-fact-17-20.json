@@ -1,0 +1,116 @@
+[
+  {
+    "id": "17",
+    "script_sha256": "53f1d20be733d3aaee642fe23805680d3415f25f0cf162f9d166a3604b0941ec",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "UNSW Sydney Music Acoustics",
+        "url": "https://phys.unsw.edu.au/jw/strings.html",
+        "locator": "Harmonics in music and frequency equation, lines 89–96",
+        "finding": "For fixed vibrating length and mass per length, each mode's frequency increases with square root of the tension. The fundamental wavelength is twice the vibrating length."
+      },
+      {
+        "publisher": "Yamaha Corporation",
+        "url": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism003.html",
+        "locator": "Rule of strings and pitch, lines 8–14",
+        "finding": "A guitar's tuning key changes tension. Higher tension gives higher pitch. The open string's vibrating endpoints are the nut and saddle."
+      }
+    ],
+    "fact_narrative": "For the same open string at substantially unchanged active length and mass per length, tightening raises the vibration frequency and audible pitch. Holding the starting displacement constant makes the comparison clear. The slowed, single-mode illustration preserves the fixed endpoints and shows more cycles per time rather than more loops in space. The text and sketch claim no exact pitch ratio or pure sinusoidal sound for a real guitar."
+  },
+  {
+    "id": "18",
+    "script_sha256": "53f1d20be733d3aaee642fe23805680d3415f25f0cf162f9d166a3604b0941ec",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/college-physics-2e/pages/16-8-forced-oscillations-and-resonance",
+        "locator": "Section 16.8, lines 30–45 and Figure 16.25",
+        "finding": "Timed periodic forcing transfers energy efficiently near resonance, explicitly illustrated by a child on a swing. Damping removes energy and reduces the response."
+      },
+      {
+        "publisher": "Appalachian State University Department of Physics and Astronomy",
+        "url": "https://physics.appstate.edu/catalog/3-oscillations-and-waves/3a-oscillations/driven-mass-spring",
+        "locator": "PIRA driven mass on spring demonstration, lines 33–36",
+        "finding": "Compares timed pushes of a child on a swing with a driven oscillator. A small periodic drive can produce a large response, and maintaining motion against losses requires energy input."
+      },
+      {
+        "publisher": "UCLA Physics and Astronomy",
+        "url": "https://dbauer.physics.ucla.edu/5a/18-energy-and-work/",
+        "locator": "Work measures energy input and determining the sign of work, lines 155–169",
+        "finding": "The component of force aligned with the seat displacement does positive work, supplying energy. An applied force opposing the displacement does negative work."
+      }
+    ],
+    "fact_narrative": "A brief push aligned with the seat's tangent velocity supplies positive work. Delivering those pushes near the swing's natural rhythm can increase amplitude when energy added exceeds dissipation. Damping reduces the driven response. The short models one cycle as a repeat of position and direction, which is valid at the center crossing; exact position and speed together need not recur while amplitude is growing. The near-resonance and moderate-angle framing avoids promising one exact period or unbounded growth."
+  },
+  {
+    "id": "19",
+    "script_sha256": "53f1d20be733d3aaee642fe23805680d3415f25f0cf162f9d166a3604b0941ec",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "NASA Glenn Research Center",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "locator": "Newton's first law: inertia, lines 18–20",
+        "finding": "Without an unbalanced force, velocity persists at constant speed and direction."
+      },
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/college-physics-2e/pages/4-2-newtons-first-law-of-motion-inertia",
+        "locator": "Section 4.2, lines 30–36",
+        "finding": "A change in an object's velocity requires a net external force."
+      },
+      {
+        "publisher": "NASA STEM",
+        "url": "https://www.nasa.gov/stem-content/the-law-of-inertia-newtons-first-law/",
+        "locator": "Description paragraph, line 260",
+        "finding": "Seat belt supplies an external force to slow a pilot in the cited example. Treated as the same institution as NASA Glenn."
+      },
+      {
+        "publisher": "Monash University Faculty of Education / Victorian Department of Education and Training",
+        "url": "https://www.monash.edu/__data/assets/pdf_file/0008/3399668/Forces-and-Motion-forces-on-passengers.pdf",
+        "locator": "The scientific view, page 1",
+        "finding": "Distinguishes the apparent forward push in the braking car from inertia and cites seat belts as sources of braking force on passengers."
+      }
+    ],
+    "fact_narrative": "The vehicle can slow relative to the ground faster than the passenger initially does, so the passenger shifts forward relative to the vehicle even as both bodies still move forward in the ground frame. The belt exerts a backward component of force, contributing to passenger deceleration. The draft distinguishes velocity from force, uses a belted participant and allows concurrent slowing and other forces. No claim of a universal delay or real stopping distance."
+  },
+  {
+    "id": "20",
+    "script_sha256": "53f1d20be733d3aaee642fe23805680d3415f25f0cf162f9d166a3604b0941ec",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "Ontario Science Centre",
+        "url": "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking",
+        "locator": "What's happening, lines 27–30",
+        "finding": "Paper towel has gaps between cellulose fibers, with wetting and liquid cohesion supporting movement through these gaps."
+      },
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids",
+        "locator": "10.2 capillary action, Figure 10.19 and rise-height discussion, lines 74–89",
+        "finding": "Supports the towel example, attraction between water and cellulose, attraction between water molecules, and upward wicking against a gravitational head."
+      },
+      {
+        "publisher": "USGS Water Science School",
+        "url": "https://www.usgs.gov/water-science-school/science/capillary-action-and-water?trk=article-ssr-frontend-pulse_little-text-block",
+        "locator": "Capillary Action, lines 19–29. Opened the identical content through its indexed URL variant.",
+        "finding": "Gravitational head limits rise, and the paper towel demonstration applies to water wetting interconnected porous material."
+      },
+      {
+        "publisher": "USGS Water Supply Paper 2220",
+        "url": "https://pubs.usgs.gov/wsp/2220/report.pdf",
+        "locator": "Capillarity and Unsaturated Flow, capillarity discussion and equation 1",
+        "finding": "Explains the interaction of cohesion and adhesion and the opposition of gravitational and capillary gradients for upward unsaturated flow. Same institution as Water Science School."
+      }
+    ],
+    "fact_narrative": "Water wets cellulose and, through adhesion and cohesion, moves in the connected pore network. Capillary stresses can draw water against gravity to a finite height. The draft shows solid fibers and water-filled gaps at an illustrative scale and makes no generalization to all liquids, all paper, or actual measured rise. Its simplified channel intentionally omits irregular pore geometry and drying, keeping capillary rise physically interpretable."
+  }
+]

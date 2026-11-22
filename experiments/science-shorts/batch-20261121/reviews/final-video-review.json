@@ -1,0 +1,178 @@
+{
+  "schema_version": "science-final-video-review.v1",
+  "reviewer": {
+    "agent_id": "/root/fact_visual_audit",
+    "model": "inherited native agent (API未提供精確版本)",
+    "human": false,
+    "professional_scientist_attestation": false,
+    "token_usage": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21T14:50:44Z",
+  "status": "PASS",
+  "script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+  "renderer_sha256": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8",
+  "editorial_gate_sha256": "c4cba6d81cebdcb792f9beb638129e26ececdbebdf3397258d90b09380240926",
+  "frozen_fact_visual_audit_sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40",
+  "method": "Read production provenance and confirm current frozen renderer/script bindings; visually inspect images decoded from actual MP4 by the engineering verification agent using pinned FFmpeg. Mid-cue samples are distinct from renderer-generated preview PNGs. Motion will require a separate same-cue time pair.",
+  "episodes": [
+    {
+      "id": "ice",
+      "status": "PASS_SAMPLED_SCIENCE_VISUALS",
+      "source_mp4_sha256": "9fc5e599b90a086a5fbc32d7647067a4442119bb0ed119c33a7c262afc15d94f",
+      "evidence": "qa-evidence/ice/ice-zh/actual-mp4-contact.png",
+      "contact_sha256": "90027df117196de6df5f2cc44fc3760da04ef13f868feec60ace73f6c250ca5d",
+      "frame_numbers": [
+        80,
+        251,
+        423,
+        593,
+        757,
+        902,
+        1046,
+        1194,
+        1357
+      ],
+      "claim_alignment": "All nine sampled cue frames show the expected Chinese cue and corresponding density/structure/flotation diagram. Fixed-mass cue is paired with both equal-count groups and mass/volume equation.",
+      "findings": [
+        "Nine molecule dots in each group, with equal apparent symbol size.",
+        "ICE occupied group footprint expands relative to liquid; no bubbles or added molecules.",
+        "Open structure labeled arrangement only/not crystal model.",
+        "Most of cube is underwater in sampled hook, answer and takeaway frames.",
+        "No sampled particle-growth or trapped-air explanation."
+      ],
+      "critical_defects": [],
+      "limits": [
+        "Contact sheet inspected visually; not a full-motion or full-audio watch.",
+        "Samples can miss brief artifacts between cue midpoints."
+      ],
+      "final_provenance_verified": true,
+      "video_duration_seconds": 48.033333
+    },
+    {
+      "id": "sky",
+      "status": "PASS_SAMPLED_SCIENCE_VISUALS",
+      "source_mp4_sha256": "dc0c4d365f8305bda8dddb7aad85d63915a645813178093ca17e925a68bd288f",
+      "final_provenance_verified": true,
+      "evidence": "qa-evidence/sky/sky-zh/actual-mp4-contact.png",
+      "contact_sha256": "a94a8a8e338ede663054298ac7103be509c30a508b8d1a87e8e7013d97563861",
+      "frame_numbers": [
+        56,
+        161,
+        278,
+        412,
+        537,
+        669,
+        808,
+        939,
+        1084,
+        1270
+      ],
+      "full_frame_inspection": [
+        "cue-06.png",
+        "cue-08.png",
+        "sunset-pulse-a.png",
+        "sunset-pulse-b.png"
+      ],
+      "claim_alignment": "All ten cue-midpoint images show the expected Chinese text and corresponding scattering/daytime or longer-path/sunset schematic. Cue 6 sends side-scattered blue to the eye, with direct red continuing on another path. Cue 8 compares short and long paths through the same schematic atmospheric layer to the same eye.",
+      "findings": [
+        "Incoming colored rays remain bundled and parallel, with colors separated for explanation explicitly labeled.",
+        "Blue changes direction; red retains color. No blue-to-red conversion or blue-versus-violet ranking is displayed.",
+        "Short vertical and longer horizontal atmosphere paths are visible; sunset red beam reaches the eye.",
+        "Sunset pulse pair at frames 1050→1056 (35.0→35.2s) visibly moves all three cyan pulse dots upward along outward arrows, away from direct red beam. The original reversed-motion defect is absent in this sample."
+      ],
+      "motion_pair": {
+        "a": {
+          "frame": 1050,
+          "seconds": 35,
+          "path": "qa-evidence/sky/sky-zh/sunset-pulse-a.png",
+          "sha256": "5e73252f2860f1592ecd9396fda635f5d1aae3d79af6c426459c41038760f733"
+        },
+        "b": {
+          "frame": 1056,
+          "seconds": 35.2,
+          "path": "qa-evidence/sky/sky-zh/sunset-pulse-b.png",
+          "sha256": "452bd004f37d2a6d27a3e45e906d3574e11f1178b5d46f1c6d5e8970cc4a00f1"
+        },
+        "observed_direction": "UPWARD_OUT_OF_DIRECT_BEAM",
+        "limitations": "Two decoded frames within one cue, not complete animation playback or all periodic resets."
+      },
+      "critical_defects": [],
+      "limits": [
+        "Qualitative flattened atmospheric diagram; no curvature, numerical optical depth or quantitative color model is established.",
+        "Contact sheet plus selected full-resolution stills and one short temporal pair are not complete audiovisual viewing."
+      ],
+      "video_duration_seconds": 46.033333
+    },
+    {
+      "id": "space",
+      "status": "PASS_SAMPLED_SCIENCE_VISUALS",
+      "source_mp4_sha256": "60475a4f6126bee867b63c340b3550b6166040dac052890a571e92925bd695ea",
+      "final_provenance_verified": true,
+      "evidence": "qa-evidence/space/space-zh/actual-mp4-contact.png",
+      "contact_sha256": "d119e2fd01af0067a340b34f6fb863158e805d5a28986c5d9305be9641e72671",
+      "frame_numbers": [
+        85,
+        241,
+        401,
+        564,
+        708,
+        865,
+        1042,
+        1199,
+        1317,
+        1456
+      ],
+      "full_frame_inspection": [
+        "cue-03.png",
+        "cue-08.png",
+        "cue-09.png"
+      ],
+      "claim_alignment": "All ten sampled cue frames match the expected Chinese caption and sound/material, radio/vacuum, or receiving/local-sound diagram. The dedicated cue-3 inset is separate from the vacuum gap; cues 8–9 show the speaker, air particles and labeled ear inside the receiver helmet.",
+      "findings": [
+        "AIR particle diagram is below the astronaut pair in its own box labeled SEPARATE INSET: SOUND IN AIR. Main VACUUM GAP is empty of particles, tether and shared solid.",
+        "No sampled sound wave crosses the vacuum. The crossed-out pre-radio sketch is distinct from the later labeled electromagnetic waveform.",
+        "Radio across the gap is identified as ELECTROMAGNETIC WAVE. Local sound is shown separately as dots inside receiver helmet.",
+        "Speaker rectangle, local air dots, ear arc/EAR and speaker→air→ear label remain visible in actual decoded receiver frames.",
+        "The scope stays ideal vacuum gap/no shared solid path; no statement that the entire universe is silent."
+      ],
+      "critical_defects": [],
+      "limits": [
+        "Only still samples of space motion were inspected; particle oscillation bounds were verified in the prior frozen-code review rather than a full motion watch.",
+        "EAR and speaker→air→ear explanatory labels are small; mobile readability remains a human video-gate task."
+      ],
+      "video_duration_seconds": 51.733333
+    }
+  ],
+  "critical_defects": [],
+  "human_video_gate": "PENDING",
+  "market_gate": "PENDING",
+  "publication_authorized": false,
+  "scope": "Sampled science visuals from actual burned-ZH MP4s; no full audiovisual or human acceptance claim",
+  "final_video_visual_sample_pass": true,
+  "artifact_root": "artifacts/science-shorts/batch-20261121",
+  "integrity_checks": {
+    "method": "PowerShell Get-FileHash comparison against each frames.json and current frozen files",
+    "source_mp4_hashes_match": {
+      "ice": true,
+      "sky": true,
+      "space": true
+    },
+    "image_hashes_checked": {
+      "ice": 11,
+      "sky": 14,
+      "space": 12
+    },
+    "image_hash_mismatches": 0,
+    "contact_sheet_hashes_match": true,
+    "renderer_matches_preproduction_audit": true,
+    "preproduction_audit_hash_unchanged": true,
+    "editorial_gate_hash_unchanged": true
+  },
+  "limits": [
+    "AI sample-based scientific visual inspection only; not a complete audiovisual watch, human retelling trial, professional scientific endorsement or publication approval.",
+    "Only burned Traditional Chinese review profile visually inspected at this stage; not each pixel of all language/subtitle variants.",
+    "No new external source verification needed for timing-only revision because all scientific words and visual instructions were independently confirmed unchanged.",
+    "Thirty-seven individual decoded PNGs plus three contact sheets had file-integrity hashes checked; this count is not the number of visually inspected full-resolution stills. The contact sheets cover all 29 cue midpoints, with selected full-resolution checks and the sky temporal pair."
+  ]
+}

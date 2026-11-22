@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "script_sha256": "29121e4a5ceccb1b53ef6f9d1cdb719d35e835551eea85e598f696b29b5789d7",
+    "renderer_sha256": "b6b71f90cca9b42975e46944f7284f439d218d09bffec6dd23c0548238234e26",
+    "shared_renderer_sha256": "5027ec341313bdd07de6b0fdc4981e111e8d1d17a84c734b07afc9dac8540e07",
+    "timeline_sha256": "fe705abecbdf331497823c2b5d207504e3b2c9c2eefba9f3ec091f8a405d958c",
+    "narration_sha256": "1414254a7f903319cc75591ef41b606a549d59d34a1eb55f5c6a7a6658b4645d",
+    "preview_sha256": "2dc35f714d20389e4417798e9af19cded8914636b098fae09b9d9c87869d8ee6"
+  },
+  "fact_visual": {
+    "reviewer": "fact_visual_audit",
+    "status": "PASS",
+    "critical_defects": [],
+    "rights_defects": [],
+    "observations": [
+      "Verified five institutional sources. The long-hold result is a qualitative inference, and animation timing and speeds are not measurements.",
+      "Original programmatic drawing inputs only in the visual compositor. Verified the separate egg silhouettes and labels in the revised tabletop images.",
+      "Cooked interior and shell stop together. Held raw and released cutaway frame pairs show separate rotation and an unobscured shell marker."
+    ],
+    "scope": "Script, scientific visual plan, renderer, input hashes and pre-encode snapshots. Rights assessment covers the visual assets inspected."
+  },
+  "readers": [
+    {
+      "reviewer": "egg_v3_reader_a",
+      "scores": {"hook": 14, "clarity": 24, "causal_retelling": 24, "visual_plan": 19, "pacing": 9, "natural_language": 4},
+      "total": 94,
+      "blockers": [],
+      "notes": "Both eggs were correctly reconstructed. A longer hold weakens restart, which disappears once the liquid stops. Keep the shell marker visible."
+    },
+    {
+      "reviewer": "egg_v3_reader_b",
+      "scores": {"hook": 14, "clarity": 24, "causal_retelling": 25, "visual_plan": 19, "pacing": 9, "natural_language": 4},
+      "total": 95,
+      "blockers": [],
+      "notes": "Correctly predicted both immediate release and long hold. Leave enough time after each release to observe the result."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "attempts": [
+    {
+      "id": 1,
+      "script_sha256": "2f19a9c3fa2f38acd69a32ed6f584d1ff126d451968a6403ed46a10f19a50585",
+      "renderer_sha256": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8",
+      "command": "artifacts/render-venv/Scripts/python.exe -I experiments/science-shorts/render.py --batch experiments/science-shorts/batch-20261121 --output artifacts/science-shorts/batch-20261121 --tools artifacts/render-tools/verified/ffmpeg-9.1-essentials_build/bin --models artifacts/73h-episode02/models",
+      "result": "STOPPED_BEFORE_SKY_VIDEO",
+      "completed": {"ice_frames":1441,"ice_video_sec":48.033333,"ice_container_sec":48.1},
+      "failure": "ValueError: sky: 44.73s outside 45–60s; revise rather than speed up",
+      "sky_video_produced": false,
+      "space_attempted": false,
+      "correction": "Increase only final sky non-speech hold 0.8→2.1 seconds, keep narration/translated words/diagram instructions unchanged. Rebind audit/gate then rerender. No speed-up.",
+      "new_script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8"
+    }
+  ]
+}

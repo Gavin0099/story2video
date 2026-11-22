@@ -1,0 +1,36 @@
+[
+  {
+    "id": "11",
+    "script_sha256": "2b71e0e51a22bc6a539ec89e5cc2d69fab3f93f37a6290bf273aba9efc8f4470",
+    "baseline_file": "writer-a.json",
+    "baseline_sha256": "f116f5aa789c336af4cba98a6a755d57e34a07c92ad69624d5cbe9d1d52a5256",
+    "delta_verification": {"scope": "Compared all seven cues across en, zh, visual and overlay_en; cue count unchanged. Did not inspect source/claim-audit fields or another reader's scores.", "changes": [{"cue": 1, "field": "zh", "before": "乾杯一倒進冰飲，外面就開始冒水珠。是杯子漏水嗎？", "after": "原本乾燥的玻璃杯，倒進冰飲後，杯外冒出小水珠。是漏出來的嗎？"}], "other_public_cue_or_visual_changes": false},
+    "scores": {"hook": 14, "clarity": 22, "causal_retelling": 23, "visual_plan": 18, "pacing": 8, "natural_language": 4},
+    "total": 89,
+    "threshold": 85,
+    "pass": true,
+    "critical_defects": [],
+    "retell": "冷杯把外壁附近的空氣冷卻；如果降到那層空氣的露點以下，空氣中的部分水蒸氣便凝結成杯外水珠。水來自房間空氣，不是杯內飲料漏過玻璃。同室內的室溫杯若保持在露點以上，可以仍然乾燥。",
+    "boundary": "冷卻至露點以下是凝結條件，不能推成所有冷杯在任何室內條件下都一定冒水珠。",
+    "lingering_misconceptions": ["露點仍只被當作門檻引入，沒有再說明這個門檻代表什麼。", "結尾提供地方的說法仍需保留冷卻與露點條件。"],
+    "transfer_test": {"question": "同樣材質的杯子若沒有冷到周圍空氣露點以下，能否僅因杯外有表面就推論一定產生水珠？", "answer": "不能。稿本的條件是外壁附近空氣被冷卻至露點以下；表面本身不是足夠條件。", "result": "能保留凝結條件；為讀者依稿推論，非真人新測試或外部查證。"},
+    "notes": "開頭中文已消除乾杯歧義，語言自然由3升至4，其他分項維持，沒有因熟悉度上調因果分。曾讀原稿並做過事實查核，這是窄幅修訂重評，不是首次盲讀。未看A的意見或分數。未看本修訂成片。"
+  },
+  {
+    "id": "12",
+    "script_sha256": "2b71e0e51a22bc6a539ec89e5cc2d69fab3f93f37a6290bf273aba9efc8f4470",
+    "baseline_file": "writer-a.json",
+    "baseline_sha256": "f116f5aa789c336af4cba98a6a755d57e34a07c92ad69624d5cbe9d1d52a5256",
+    "delta_verification": {"scope": "Compared all seven cues across en, zh, visual and overlay_en; cue count unchanged. Did not inspect source/claim-audit fields or another reader's scores.", "changes": [{"cue": 1, "field": "overlay_en", "before": "Why does a longer wrench help?", "after": "Why push farther out?"}], "other_public_cue_or_visual_changes": false},
+    "scores": {"hook": 11, "clarity": 24, "causal_retelling": 23, "visual_plan": 19, "pacing": 8, "natural_language": 4},
+    "total": 89,
+    "threshold": 85,
+    "pass": true,
+    "critical_defects": [],
+    "retell": "扳手以螺帽中心為轉軸。同樣大小的側向推力，施力位置離轉軸越遠，產生的扭矩越大，因此更容易轉動。若沿握柄方向推，力的作用線通過轉軸，便沒有讓它轉動的扭矩。",
+    "boundary": "距離比較維持相同大小的側向力，不能把離轉軸較遠套用到任意施力方向。",
+    "lingering_misconceptions": ["距離為何放大轉動效果仍主要是稿本給定的規則；修訂沒有增加新的物理機制。", "結尾仍需和側向推力畫面配合，避免只記住距離。"],
+    "transfer_test": {"question": "把手移得更遠，卻改成沿握柄朝螺帽中心推，能否用距離更遠就有更大扭矩來解釋？", "answer": "不能。這個方向的作用線通過轉軸，不符合側向推的比較條件；稿本明說這種推法不產生該轉軸的扭矩。", "result": "能把位置與施力方向同時帶入新情境；為讀者依稿推論，非真人新測試或外部查證。"},
+    "notes": "英文開頭疊字已與同一把扳手上移動手的位置一致。這修掉一項小型文畫不一致，原本評分已肯定主要比較，因此各分項維持，不為每處修字自動加分。曾讀原稿並做過事實查核，這是窄幅修訂重評，不是首次盲讀。未看A的意見或分數。未看本修訂成片。"
+  }
+]

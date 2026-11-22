@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "local production only; not human/publish/market approval",
+  "script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+  "reviewed_original_sha256": "80e59d8eac55bb019cae40df840b38b107679cc5f97921798de3631d50db76f7",
+  "renderer_sha256": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8",
+  "fact_pass": true,
+  "visual_plan_pass": true,
+  "episodes": [
+    {
+      "id": "ice",
+      "scores": [
+        88,
+        89
+      ],
+      "critical_defects": []
+    },
+    {
+      "id": "sky",
+      "scores": [
+        87,
+        86
+      ],
+      "critical_defects": []
+    },
+    {
+      "id": "space",
+      "scores": [
+        89,
+        87
+      ],
+      "critical_defects": []
+    }
+  ],
+  "review_files": [
+    {
+      "path": "fact-visual-v1.json",
+      "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40"
+    },
+    {
+      "path": "reader-a-v1.json",
+      "sha256": "c711c648a496f91089eea0cfd61c528dde4d305301bf8fb0715eb0d86577b1fe"
+    },
+    {
+      "path": "reader-b-v1.json",
+      "sha256": "a79256b9a77b6664596821da0d2a56dab432ea58b9f8a77540a9ad99b68d5a2d"
+    },
+    {
+      "path": "reader-a-protocol.md",
+      "sha256": "a6f607373394461b9cfe1e4b31b00b5023e065677c6a69ccce2ae67794127f19"
+    },
+    {
+      "path": "reader-b-protocol.md",
+      "sha256": "6c178f291ce67f819d37414f3926bb8acb5c5cce8581f5ccc6a904fd682b7f80"
+    }
+  ]
+}

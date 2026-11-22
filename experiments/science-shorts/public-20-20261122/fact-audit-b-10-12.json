@@ -1,0 +1,57 @@
+{
+  "auditor": "/root/reader_b",
+  "audit_date": "2026-11-22",
+  "input_file": "writer-a.json",
+  "script_sha256": "F116F5AA789C336AF4CBA98A6A755D57E34A07C92AD69624D5CBE9D1D52A5256",
+  "scope": "Independent desk fact audit of episodes 10–12 en/zh narration, visual and overlay_en cues. Auditor did not write these scripts. External sources were consulted only after reader scoring was frozen. No author claim audit or other reader review was accessed. No physical experiment, rendered frame or recorded narration was checked.",
+  "sources": [
+    {"id": "S1", "title": "American Chemical Society: Protons, Neutrons, and Electrons", "url": "https://www.acs.org/middleschoolchemistry/lessonplans/chapter4/lesson1.html", "locator": "Extend Step 7, balloon/sweater and wall simulation discussion", "access": "Opened official lesson page"},
+    {"id": "S2", "title": "OpenStax College Physics 2e: Conductors and Insulators", "url": "https://openstax.org/books/college-physics-2e/pages/18-2-conductors-and-insulators", "locator": "Figure 18.14 and neutral-insulator polarization explanation", "access": "Official publisher search extract"},
+    {"id": "S3", "title": "Institute of Physics: Electric forces", "url": "https://spark.iop.org/electric-forces", "locator": "Electrical forces acting on uncharged objects, by charged objects", "access": "Opened official teaching page"},
+    {"id": "S4", "title": "OpenStax University Physics Volume 1: Friction", "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction", "locator": "Static and Kinetic Friction", "access": "Opened official publisher page"},
+    {"id": "S5", "title": "NOAA: Learning Lesson — Sweatin' to the Coldies", "url": "https://www.noaa.gov/jetstream/ll-sweatin", "locator": "Overview and Discussion, cold glass condensation from surrounding air", "access": "Opened official agency lesson"},
+    {"id": "S6", "title": "National Weather Service: Temperature — Dry Bulb/Wet Bulb/Dew Point", "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/definitions/dry_wet_bulb_definition/dry_wet_bulb.html", "locator": "Dew Point definition and cold-bottle example", "access": "Official agency search extract"},
+    {"id": "S7", "title": "OpenStax University Physics Volume 1: Torque", "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque", "locator": "Equations 10.22–10.23 and zero-angle/90-degree discussion", "access": "Opened official publisher page"},
+    {"id": "S8", "title": "GLOBE Atmosphere: Clouds", "url": "https://www.globe.gov/documents/d/atmosphere/clouds-pdf", "locator": "Water vapor is invisible to the human eye", "access": "Official program search extract"}
+  ],
+  "episodes": [
+    {
+      "id": "10",
+      "verdict": "pass_with_production_conditions",
+      "critical_defects": [],
+      "claims": [
+        {"cues": [1, 2], "claim": "Balloon/sweater rubbing can transfer electrons onto the balloon, producing negative charge.", "finding": "Supported for the illustrated conventional material pairing. The English can appropriately avoids claiming every possible sweater/balloon material must charge identically.", "sources": ["S1"]},
+        {"cues": [3, 4, 5, 7], "claim": "A negative balloon polarizes a neutral insulating wall; slight charge displacement leaves unlike charge nearer, giving net attraction while total wall charge remains neutral.", "finding": "Supported. The planned bound-negative-side displacement is a suitable schematic; preserve slight local displacement rather than drawing bulk conduction across the wall.", "sources": ["S1", "S2", "S3"]},
+        {"cues": [6], "claim": "At wall contact, friction can prevent downward sliding.", "finding": "Consistent with static friction opposing attempted downward motion. Applying the general friction model to this scene is the auditor's mechanics inference: electrostatic attraction enables contact compression and sufficient static friction can balance weight. The word can preserves the sufficient-friction condition.", "sources": ["S4"]}
+      ],
+      "nonblocking_findings": ["If the final force illustration is presented as a complete force diagram, include wall contact reaction as well as electrostatic attraction; alternatively label displayed arrows as selected forces. The existing vertical friction/weight inset is acceptable as a selected comparison.", "Retain equal positive/negative wall charge counts and label particle graphics as schematic; do not imply the wall acquires net positive charge."],
+      "required_script_corrections": []
+    },
+    {
+      "id": "11",
+      "verdict": "pass_with_editorial_fix",
+      "critical_defects": [],
+      "claims": [
+        {"cues": [1, 2], "claim": "Room air contains invisible water vapor, which can supply outside droplets on a cold glass.", "finding": "Supported. The intact glass and differently colored internal drink distinguish atmospheric condensate from leakage.", "sources": ["S5", "S8"]},
+        {"cues": [3, 4, 5, 7], "claim": "Cold glass cools adjacent air; below its dew point some vapor condenses into surface liquid.", "finding": "Supported at this explanatory scale. NOAA's glass experiment explicitly uses adjacent-air cooling below dew point. The depicted outer surface must be cold enough; do not detach the dew-point marker from the local air/surface comparison.", "sources": ["S5", "S6"]},
+        {"cues": [6], "claim": "A room-temperature comparison glass can remain dry in the same room.", "finding": "Consistent conditional comparison when that glass stays above the dew point; this is an inference from the dew-point criterion. The planned two-sided temperature markers and the word can preserve the condition.", "sources": ["S5", "S6"]}
+      ],
+      "nonblocking_findings": ["Chinese cue 1 wording 乾杯一倒進冰飲 is awkward and can be read as a toast; replace with 原本乾燥的杯子，倒進冰飲後…… before subtitle production. This is an editorial fix rather than a false scientific mechanism.", "Do not render schematic water-vapor markers as actual visible steam or mist; the visual plan already prohibits this.", "The ending's place-to-turn-liquid phrase should retain the cold/dew-point context; a surface alone is not the criterion."],
+      "required_script_corrections": []
+    },
+    {
+      "id": "12",
+      "verdict": "pass_with_production_conditions",
+      "critical_defects": [],
+      "claims": [
+        {"cues": [1, 2, 3], "claim": "The nut center is the rotation reference, and sideways force produces torque.", "finding": "Supported for the fixed-axis wrench setup. A turning arc may show rotation direction but must not replace the straight applied-force vector.", "sources": ["S7"]},
+        {"cues": [4, 5, 7], "claim": "Equal perpendicular pushes farther from the axis produce larger torque.", "finding": "Supported by torque magnitude r F sin(theta). With the shown 90-degree angle and equal force, increasing r increases torque. Turning a stubborn nut remains conditional on exceeding resisting torque, which the can wording allows.", "sources": ["S7"]},
+        {"cues": [6], "claim": "An ideal force along the handle through the rotation center produces no torque about that center.", "finding": "Supported: the perpendicular lever arm is zero. Keep the arrow line precisely through the center in the illustration.", "sources": ["S7"]}
+      ],
+      "nonblocking_findings": ["The hook overlay asks about a longer wrench, while the spoken demonstration moves the hand along one handle. Both are compatible with the lever-arm explanation, but synchronizing the overlay would improve editorial precision.", "Do not illustrate the farther push with a larger force arrow or a changed application angle; that would break the controlled comparison.", "The general conclusion about greater distance must retain the same sideways force condition; distance alone is insufficient for arbitrary force directions."],
+      "required_script_corrections": []
+    }
+  ],
+  "overall": "No blocking scientific contradiction found in the frozen scripts at the stated explanatory scope. This is evidence for narration and storyboard plausibility, not verification of the final animation, experiment or viewer comprehension. Reader scores were not changed by this audit.",
+  "source_limitations": ["S2, S6 and S8 were verified from official indexed extracts rather than full page/PDF inspection.", "A Physics Classroom polarization page returned 403 on opening; it was not needed as a relied-on source because official OpenStax and ACS material cover the mechanism."]
+}

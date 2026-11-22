@@ -1,0 +1,1666 @@
+{
+  "schema_version": "science-script.v1",
+  "revision": "writer-b-r1",
+  "editorial_status": "draft awaiting independent review",
+  "writer": {
+    "agent": "/root/fact_visual_audit",
+    "role": "writer only for this artifact",
+    "model": "inherited native agent; API does not provide exact version"
+  },
+  "batch_id": "public-20-20261122",
+  "onscreen_language": "en",
+  "subtitles": [
+    "en",
+    "zh-Hant"
+  ],
+  "burned_subtitles": false,
+  "production_gate": {
+    "required_independent_readers": 2,
+    "minimum_each_score": 85,
+    "reader_reviews": "PENDING",
+    "independent_factual_review": "PENDING",
+    "scientific_visual_review": "PENDING",
+    "encode_allowed": false,
+    "publication_authority": "Owner authorization is handled by parent; this draft grants no approval."
+  },
+  "research_method": "Institutional source pages were opened before drafting. Evidence and limits are author mapping, not an independent factual verdict. Two pages from one institution count as one institution.",
+  "episodes": [
+    {
+      "id": "13",
+      "slug": "breeze-drying",
+      "title_en": "Why Does a Breeze Dry Clothes Faster?",
+      "title_zh": "微風吹，衣服為何乾得比較快？",
+      "question": "Why can moving air speed up drying?",
+      "description_en": "A breeze carries water vapor away from wet fabric. Compare matching cloths while keeping temperature and humidity the same.",
+      "description_zh": "微風會帶走濕布旁的水蒸氣。固定溫度、濕度與布料，看看空氣流動如何加快乾燥。",
+      "sources": [
+        {
+          "id": "uf",
+          "publisher": "University of Florida IFAS",
+          "institution": "university-of-florida",
+          "title": "Evaporation Loss During Sprinkler Irrigation",
+          "url": "https://ask.ifas.ufl.edu/publication/AE048",
+          "locator": "Paragraph beginning 'Wind is an important factor', extracted lines 27–29.",
+          "evidence": "Wind transports water vapor away and replaces moist air near an evaporating surface.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Agricultural context; transfer principle applies to a wet surface, but its loss percentages are not used for clothes."
+        },
+        {
+          "id": "psu",
+          "publisher": "Penn State University",
+          "institution": "penn-state",
+          "title": "Evaporation and Climate",
+          "url": "https://courses.ems.psu.edu/geog3/book/export/html/905",
+          "locator": "Opening clothesline example and paragraph 'Wind speed', extracted lines 3–7.",
+          "evidence": "Wind carries water vapor away; dry, windy conditions increase evaporation.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Avoid the page's informal language that air 'holds' water and its oversimplified temperature-energy explanation."
+        },
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Humidity, Evaporation, and Boiling",
+          "url": "https://openstax.org/books/college-physics-2e/pages/13-6-humidity-evaporation-and-boiling",
+          "locator": "Humidity and evaporation discussion, extracted lines 32–41.",
+          "evidence": "Evaporation occurs below boiling; water-vapor partial pressure affects net evaporation.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Molecular inset is symbolic; no humidity or drying-time prediction."
+        },
+        {
+          "id": "nsta",
+          "publisher": "National Science Teaching Association",
+          "institution": "nsta",
+          "title": "What's the difference between evaporation and boiling?",
+          "url": "https://www.nsta.org/science-and-children/science-and-children-february-2020/q-whats-difference-between-evaporation-and",
+          "locator": "Factors affecting evaporation, extracted lines 56–68: wind, humidity and surface evaporation without bubbles.",
+          "evidence": "Moving air and lower humidity can increase evaporation. Evaporation occurs at the surface and does not require boiling.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Educational explanation, not measured clothing drying times."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Moving air can increase evaporation by carrying vapor away from a wet surface, replacing the moist air nearby.",
+          "source_urls": [
+            "https://ask.ifas.ufl.edu/publication/AE048",
+            "https://courses.ems.psu.edu/geog3/book/export/html/905"
+          ],
+          "limits": [
+            "Compare equal initial water, fabric, exposed area, temperature and ambient humidity; do not promise faster drying in every weather condition."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Liquid water can become water vapor below boiling; humidity influences the net rate.",
+          "source_urls": [
+            "https://openstax.org/books/college-physics-2e/pages/13-6-humidity-evaporation-and-boiling",
+            "https://www.nsta.org/science-and-children/science-and-children-february-2020/q-whats-difference-between-evaporation-and"
+          ],
+          "limits": [
+            "Vapor is individual molecules, not visible miniature liquid droplets. No air water-capacity container metaphor."
+          ]
+        }
+      ],
+      "invariants": [
+        "Two cloths begin with equal water content, material and exposed area. Same room temperature and ambient humidity; only nearby airflow differs.",
+        "At the same microscopic viewing scale, every water symbol has the same size in liquid and vapor. Track departures; no shrinking molecules.",
+        "Vapor markers remain distinct from broad airflow arrows. No steam cloud, boiling bubbles or visible droplet spray.",
+        "The contrast is qualitative and time-compressed, not a measured two-times drying rate."
+      ],
+      "simplification": "An isothermal schematic of mass transfer. Real airflow can also change cloth temperature; that coupled effect and sunlight are excluded.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "cloth_panels": "Two equal 300 by 380 px cloth rectangles at x=170 and x=610; no numerical fabric size asserted.",
+        "molecular_inset": "12 equal-radius water markers initially on each matched patch; departures are tracked in the surrounding air region.",
+        "time": "Use 'Time compressed' during the wet-area comparison."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "Two equally wet shirts. Why can the one in a breeze dry faster?",
+          "zh": "兩件一樣濕的衣服，為什麼吹到微風的那件可能乾得更快？",
+          "scene": "hook",
+          "visual": "Illustrated clothesline; match shirts, then reveal a breeze beside the right shirt.",
+          "overlay_en": "Why does a breeze help?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Illustrated clothesline; match shirts, then reveal a breeze beside the right shirt.",
+            "controls": "Equal fabric, water and exposed area; breeze is the only comparison change."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "First, water can evaporate from wet cloth without ever reaching its boiling point.",
+          "zh": "先看濕布：水不用沸騰，也能從布上蒸發。",
+          "scene": "surface",
+          "visual": "Magnify one damp fiber patch into a separate symbolic molecular inset.",
+          "overlay_en": "Evaporation",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Magnify one damp fiber patch into a separate symbolic molecular inset.",
+            "controls": "Keep actual shirt scene separate from inset; no bubbles or steam."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Water molecules leave the surface and become invisible water vapor in the air.",
+          "zh": "水分子離開表面，變成空氣中看不見的水蒸氣。",
+          "scene": "molecules",
+          "visual": "A few equal-sized water markers leave the wet patch; explain that visible markers are symbols.",
+          "overlay_en": "Water vapor | Schematic",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "A few equal-sized water markers leave the wet patch; explain that visible markers are symbols.",
+            "controls": "Same marker radius across phases. No liquid-drop trail drawn as vapor."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "In still air, moisture builds up near the fabric, slowing further net evaporation.",
+          "zh": "空氣不流動時，布旁的水蒸氣會增加，讓淨蒸發變慢。",
+          "scene": "still",
+          "visual": "Show vapor markers returning as well as leaving in the still-air panel.",
+          "overlay_en": "Still air: vapor builds nearby",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Show vapor markers returning as well as leaving in the still-air panel.",
+            "controls": "Some exchange continues; do not freeze all molecular motion or declare zero evaporation."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "A breeze carries that vapor away and brings less humid air alongside the cloth.",
+          "zh": "微風把附近的水蒸氣帶走，讓較乾的空氣來到布旁。",
+          "scene": "breeze",
+          "visual": "Flow arrows carry vapor markers sideways out of the near-surface region.",
+          "overlay_en": "Moving air carries vapor away",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Flow arrows carry vapor markers sideways out of the near-surface region.",
+            "controls": "Ambient air is less humid than the moist boundary layer; do not change room humidity between panels."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "That lets more water escape overall, so the wet patch can shrink faster.",
+          "zh": "整體離開的水就能更多，濕的部分也可能縮小得更快。",
+          "scene": "compare",
+          "visual": "Resume equal-time cloth panels; reduce wet-area tint faster on the breezy side.",
+          "overlay_en": "Time compressed",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Resume equal-time cloth panels; reduce wet-area tint faster on the breezy side.",
+            "controls": "Tint shows remaining wet area, not changing molecule size; qualitative rates only."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "Keep temperature, starting wetness, and fabric the same for a fair comparison.",
+          "zh": "比較時，要固定溫度、起始含水量，以及布料。",
+          "scene": "controls",
+          "visual": "Brief checklist connects both shirts with matching badges.",
+          "overlay_en": "Same temperature | Same fabric | Same water",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Brief checklist connects both shirts with matching badges.",
+            "controls": "No sun or heater appears on just one side."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "The breeze helps by removing nearby vapor. It does not make water disappear.",
+          "zh": "微風的幫助，是帶走附近的水蒸氣；水並沒有消失。",
+          "scene": "answer",
+          "visual": "Return to clothesline and follow a final vapor symbol beyond the shirt.",
+          "overlay_en": "Water moves into the air",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Return to clothesline and follow a final vapor symbol beyond the shirt.",
+            "controls": "No vanishing molecule effect; markers leave the crop through a visible outflow."
+          }
+        }
+      ],
+      "spoken_word_count_en": 104
+    },
+    {
+      "id": "14",
+      "slug": "suction-cup",
+      "title_en": "What Holds a Suction Cup Down?",
+      "title_zh": "吸盤是被什麼壓住的？",
+      "question": "Why is a sealed suction cup hard to lift?",
+      "description_en": "A suction cup seals a region of lower air pressure. The higher pressure outside helps keep it against a smooth surface.",
+      "description_zh": "吸盤封住一小塊氣壓較低的空間；外側較高的氣壓，幫忙把它壓在平滑表面上。",
+      "sources": [
+        {
+          "id": "purdue",
+          "publisher": "Purdue University Physics and Astronomy",
+          "institution": "purdue-university",
+          "title": "Demos: 2A-01 Suction Cups",
+          "url": "https://www.physics.purdue.edu/demos/display_page.php?item=2A-01",
+          "locator": "Description and explanation, extracted lines 103–107.",
+          "evidence": "A cup on a smooth surface resists removal; lifting the rim admits air. The pressure difference accounts for the holding force.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "The complete-vacuum force estimate is an ideal upper bound and is deliberately excluded."
+        },
+        {
+          "id": "sw",
+          "publisher": "Science World",
+          "institution": "science-world-vancouver",
+          "title": "Balloon and Cup Attraction",
+          "url": "https://www.scienceworld.ca/resource/balloon-and-cup-attraction-windbag/",
+          "locator": "Explanation, extracted lines 23–27; tip around line 58.",
+          "evidence": "Expelling air and increasing the sealed volume reduces inside pressure; greater outside pressure holds the cup.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Balloon-and-cup demonstration differs from a rubber suction cup; only the pressure-difference mechanism is transferred."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "When a cup seals a region of lower air pressure, the greater outside pressure produces a net push toward the surface; admitting air reduces the difference.",
+          "source_urls": [
+            "https://www.physics.purdue.edu/demos/display_page.php?item=2A-01",
+            "https://www.scienceworld.ca/resource/balloon-and-cup-attraction-windbag/"
+          ],
+          "limits": [
+            "Use a flexible cup and a smooth nonporous horizontal surface. The cavity still contains air; no perfect vacuum or universal holding load."
+          ]
+        }
+      ],
+      "invariants": [
+        "Use the same cup on horizontal glass throughout, avoiding unspoken friction needed for a hanging vertical load.",
+        "Show some air remaining under the cup; never label the cavity a perfect vacuum.",
+        "Pressure acts from all directions; diagram selected opposing vertical contributions only, labelled 'Pressure forces: simplified'.",
+        "Lifting the edge creates an actual open route for air before the inside/outside labels equalize; the seal is not magnetic or glue."
+      ],
+      "simplification": "Selected pressure forces and elastic cup recovery are shown qualitatively. Seal leakage and rubber stiffness affect real performance.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "cup": "One 440 px wide cup on a horizontal glass strip y=1180; cross-section is a separate inset.",
+        "pressure": "Paired broad force arrows toward/away from glass with qualitative labels; no 1-atmosphere cavity assumption.",
+        "release": "Lift a 45 px rim segment; draw incoming air through that visible gap."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "This cup is hard to lift off smooth glass. What is holding it down?",
+          "zh": "吸盤貼上平滑玻璃後，很難直接提起。是什麼把它壓住？",
+          "scene": "hook",
+          "visual": "A hand gently tugs a cup straight upward from horizontal glass; it stays sealed.",
+          "overlay_en": "What holds it down?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "A hand gently tugs a cup straight upward from horizontal glass; it stays sealed.",
+            "controls": "No vertical wall or unsupported heavy object."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Pressing the flexible cup flattens it and pushes some air out around the rim.",
+          "zh": "壓下柔軟的吸盤，吸盤變扁，部分空氣從邊緣跑出去。",
+          "scene": "press",
+          "visual": "Cross-section flattens; a few air markers exit before the rim seals.",
+          "overlay_en": "Press: some air escapes",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Cross-section flattens; a few air markers exit before the rim seals.",
+            "controls": "Show outward path while rim is open; not all air removed."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "The rim seals against the glass as the cup tries to spring back.",
+          "zh": "邊緣貼住玻璃形成密封，吸盤則試著恢復原來的形狀。",
+          "scene": "seal",
+          "visual": "Rim contacts glass; dome recovers slightly with trapped air still visible.",
+          "overlay_en": "Sealed rim",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Rim contacts glass; dome recovers slightly with trapped air still visible.",
+            "controls": "Cup recovery increases cavity volume without lifting the sealed edge."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "The trapped air now has lower pressure than the air outside the cup.",
+          "zh": "裡面剩下的空氣，氣壓就比吸盤外面低。",
+          "scene": "pressure",
+          "visual": "Reveal a lower-pressure label in the cavity and higher-pressure label outside.",
+          "overlay_en": "Inside: lower pressure | Outside: higher pressure",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Reveal a lower-pressure label in the cavity and higher-pressure label outside.",
+            "controls": "Residual particles remain inside; no 'vacuum' label."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "That pressure difference gives a net push toward the glass, helping hold the cup.",
+          "zh": "這個氣壓差形成朝向玻璃的淨推力，幫忙把吸盤壓住。",
+          "scene": "forces",
+          "visual": "Selected opposing pressure arrows combine into a downward net-arrow inset.",
+          "overlay_en": "Net push toward glass",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Selected opposing pressure arrows combine into a downward net-arrow inset.",
+            "controls": "Arrows are schematic integrated pressure forces, not individual air jets."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "Now lift just one edge. Air can flow through the new opening underneath.",
+          "zh": "只要掀起一個邊角，空氣就能從開口進入吸盤下面。",
+          "scene": "release",
+          "visual": "Lift the rim tab; inward markers pass through the new opening.",
+          "overlay_en": "Lift the edge: air enters",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Lift the rim tab; inward markers pass through the new opening.",
+            "controls": "Do not equalize before a visible opening exists."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "The pressures become more nearly equal, and the cup comes away much more easily.",
+          "zh": "內外氣壓變得比較接近，吸盤就容易拿下來了。",
+          "scene": "equalize",
+          "visual": "Pressure labels converge, net arrow fades, then cup lifts clear.",
+          "overlay_en": "Pressure difference decreases",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Pressure labels converge, net arrow fades, then cup lifts clear.",
+            "controls": "Release is continuous; do not depict a magic sudden disappearance of all air."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "A good seal preserves the pressure difference. Suction is a push from outside.",
+          "zh": "好的密封能維持氣壓差；吸盤的作用，來自外面較大的推力。",
+          "scene": "answer",
+          "visual": "Return to the intact cup and briefly replay the outside-pressure arrow.",
+          "overlay_en": "A seal preserves the difference",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Return to the intact cup and briefly replay the outside-pressure arrow.",
+            "controls": "Qualify with higher outside pressure; no claim of an inward pulling vacuum force."
+          }
+        }
+      ],
+      "spoken_word_count_en": 108
+    },
+    {
+      "id": "15",
+      "slug": "sliding-book",
+      "title_en": "Why Does a Sliding Book Stop?",
+      "title_zh": "滑出去的書，為什麼會停下？",
+      "question": "What slows a book sliding across a level table?",
+      "description_en": "After your hand lets go, kinetic friction opposes the book's slide. Its motion energy is transferred mainly into thermal energy.",
+      "description_zh": "手放開後，動摩擦力阻礙書本滑動；書本的運動能量，主要轉成書本與桌面的熱能。",
+      "sources": [
+        {
+          "id": "arizona",
+          "publisher": "University of Arizona",
+          "institution": "university-of-arizona",
+          "title": "Kinetic Friction",
+          "url": "https://opentextbooks.library.arizona.edu/erozo/chapter/friction/",
+          "locator": "Kinetic friction section, extracted lines 144–170, especially sliding right / friction left example.",
+          "evidence": "Kinetic friction opposes relative sliding; an unpushed sliding object slows and stops.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "The simple constant-coefficient model is approximate; static friction at rest need not be nonzero."
+        },
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Nonconservative Forces",
+          "url": "https://openstax.org/books/college-physics/pages/7-5-nonconservative-forces",
+          "locator": "Opening discussion and Example 7.9, extracted lines 23–25 and 67–81.",
+          "evidence": "Friction reduces mechanical energy; sliding-to-rest example relates work to lost kinetic energy and thermal energy.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "No claim that total energy disappears or that all friction is dissipative."
+        },
+        {
+          "id": "gt",
+          "publisher": "Georgia Institute of Technology",
+          "institution": "georgia-tech",
+          "title": "Physics 2211 Quiz 3 Solutions, Spring 2021",
+          "url": "https://www.introphys.gatech.edu/2021/Spring/2211/Quiz_solutions/q3s.pdf",
+          "locator": "PDF page index 4 (printed page 5), question 5, extracted lines 219–238.",
+          "evidence": "For a book sliding on a table, the book-plus-table system gains thermal energy from kinetic friction.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Its worked example has a hand maintaining speed; use it for energy transfer only, not as the unforced deceleration demonstration."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "After the hand releases a book sliding on a horizontal table, kinetic friction opposes the slide and slows it.",
+          "source_urls": [
+            "https://opentextbooks.library.arizona.edu/erozo/chapter/friction/",
+            "https://openstax.org/books/college-physics/pages/7-5-nonconservative-forces"
+          ],
+          "limits": [
+            "No continuing horizontal hand force. Air drag is neglected. Clamp motion at rest rather than reverse it."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "During the slide, mechanical energy is transferred mainly into thermal energy of the book and table.",
+          "source_urls": [
+            "https://openstax.org/books/college-physics/pages/7-5-nonconservative-forces",
+            "https://www.introphys.gatech.edu/2021/Spring/2211/Quiz_solutions/q3s.pdf"
+          ],
+          "limits": [
+            "Some energy can also become sound and deformation. Temperature rise may be too small to feel; no glow or sparks."
+          ]
+        }
+      ],
+      "invariants": [
+        "Keep hand visibly clear after release; weight and table normal balance vertically.",
+        "Rightward velocity and leftward kinetic-friction arrows coexist during sliding; after rest, remove the kinetic-friction arrow and never reverse the book.",
+        "Total-energy accounting retains the initial energy; use thermal-energy increase in book plus table, not a disappearing energy bar.",
+        "Do not generalize to ideal rolling without slipping or say all static friction necessarily dissipates energy."
+      ],
+      "simplification": "A level, stationary table with approximately constant kinetic friction; sound and deformation are minor unquantified channels.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "book": "240 by 95 px book sliding right across a 900 px table.",
+        "optional_internal_model": "If numeric motion is needed, m=1 kg, v0=2 m/s, mu_k=0.2, g=9.8 m/s^2; t_stop≈1.02 s and x_stop≈1.02 m. This is a model, not measured footage.",
+        "motion": "Scale 600 px/m for that optional model; slowed playback must say 'Slow motion'. Qualitative nonnumeric animation is also allowed."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "Give a book a shove. Once your hand lets go, why does it stop?",
+          "zh": "推一下桌上的書。手放開後，它為什麼會停下來？",
+          "scene": "hook",
+          "visual": "A hand pushes a book right, then lifts completely clear as the book slides.",
+          "overlay_en": "Why does it stop?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "A hand pushes a book right, then lifts completely clear as the book slides.",
+            "controls": "Table is horizontal and stationary."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "The book is sliding across the table, and the two surfaces rub together.",
+          "zh": "書本在桌面上滑動，兩個接觸的表面彼此摩擦。",
+          "scene": "contact",
+          "visual": "Enlarge the contact region into a schematic rubbing-surface inset.",
+          "overlay_en": "Sliding contact",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Enlarge the contact region into a schematic rubbing-surface inset.",
+            "controls": "Do not present giant interlocking teeth as a literal universal microscopic mechanism."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Kinetic friction acts opposite the slide: here, the book moves right, friction points left.",
+          "zh": "動摩擦力的方向，和滑動相反：書往右滑，摩擦力就向左。",
+          "scene": "arrows",
+          "visual": "Blue velocity arrow points right; orange friction-force arrow points left.",
+          "overlay_en": "Motion right | Friction left",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Blue velocity arrow points right; orange friction-force arrow points left.",
+            "controls": "Different colors and labels distinguish velocity from force."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "With no hand still pushing, that opposing force makes the book slow down.",
+          "zh": "沒有手繼續推，這個反向的力就讓書本逐漸減速。",
+          "scene": "decelerate",
+          "visual": "Equal-time position markers become closer together as the book slows.",
+          "overlay_en": "No more push",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Equal-time position markers become closer together as the book slows.",
+            "controls": "Speed decreases continuously; no camera movement disguising speed."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "Its energy of motion has not vanished. Much becomes thermal energy in both surfaces.",
+          "zh": "運動的能量沒有消失；大部分轉成書本和桌面的熱能。",
+          "scene": "energy",
+          "visual": "Motion-energy bar falls while book-plus-table thermal-energy increment rises.",
+          "overlay_en": "Motion energy -> thermal energy",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Motion-energy bar falls while book-plus-table thermal-energy increment rises.",
+            "controls": "Bars balance within the stated simplified model; no new energy from nothing."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "Energy spreads through the book and table; the diagram exaggerates it for clarity.",
+          "zh": "能量散布在書本和桌面中；圖解為了看清楚，做了誇張呈現。",
+          "scene": "thermal",
+          "visual": "Small distributed thermal markers highlight both contact regions, with no visible glow.",
+          "overlay_en": "Energy spread: exaggerated",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Small distributed thermal markers highlight both contact regions, with no visible glow.",
+            "controls": "No red-hot book, smoke, numerical temperature claim or claim of a measured experiment."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "When the book stops sliding, this kinetic-friction arrow stops too; it does not reverse.",
+          "zh": "書本停止滑動後，這支動摩擦力箭頭也收起；書不會因此倒滑。",
+          "scene": "rest",
+          "visual": "Book rests; velocity and kinetic-friction arrows fade to zero.",
+          "overlay_en": "At rest: no sliding",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Book rests; velocity and kinetic-friction arrows fade to zero.",
+            "controls": "No other horizontal force is present, so no static-friction arrow is needed."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "Friction transfers energy and changes the book's motion. The total energy has not disappeared.",
+          "zh": "摩擦把能量轉移出去，改變書本的運動；總能量並沒有消失。",
+          "scene": "answer",
+          "visual": "Return to the resting book with the completed energy-transfer diagram.",
+          "overlay_en": "Energy transferred, not lost",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Return to the resting book with the completed energy-transfer diagram.",
+            "controls": "Conservation refers to the book-plus-table-plus-surroundings system, not the book's kinetic energy alone."
+          }
+        }
+      ],
+      "spoken_word_count_en": 109
+    },
+    {
+      "id": "16",
+      "slug": "bridge-gaps",
+      "title_en": "Why Do Bridges Have Expansion Gaps?",
+      "title_zh": "橋上的伸縮縫，有什麼用？",
+      "question": "Why can a bridge need a gap between sections?",
+      "description_en": "Bridge materials generally expand when they warm. An expansion joint leaves room for movement rather than forcing the deck to buckle.",
+      "description_zh": "橋梁材料受熱通常會膨脹。伸縮縫預留移動空間，減少橋面受限制時產生的熱應力。",
+      "sources": [
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Thermal Expansion",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+          "locator": "Figure 1.5 expansion joints and linear thermal expansion section; extracted lines 34–49.",
+          "evidence": "Most materials expand when heated over ordinary ranges; bridge joints allow length changes without buckling.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Thermal expansion coefficients vary by material and temperature; not every material always expands."
+        },
+        {
+          "id": "modot",
+          "publisher": "Missouri Department of Transportation",
+          "institution": "missouri-dot",
+          "title": "770.7 Maintenance of Bridge Superstructure",
+          "url": "https://epg.modot.org/index.php/770.7_Maintenance_of_Bridge_Superstructure",
+          "locator": "Section 770.7.7 Expansion Joint Maintenance, extracted lines 96–100.",
+          "evidence": "Expansion joints accommodate bridge movement caused by temperature changes.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Real joints also accommodate other movements and have many designs; no engineering design prescription is given."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Temperature changes make ordinary bridge materials change length; an expansion joint accommodates the resulting movement.",
+          "source_urls": [
+            "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+            "https://epg.modot.org/index.php/770.7_Maintenance_of_Bridge_Superstructure"
+          ],
+          "limits": [
+            "Use an ordinary temperature range and one schematic span fixed at one end and free to move at the other. Not all bridges require the same visible joint."
+          ]
+        }
+      ],
+      "invariants": [
+        "Keep the pier positions fixed; show one deck end on a sliding bearing and the other end fixed, with a gap against the next fixed reference section.",
+        "Warmer deck becomes longer and the shown gap becomes narrower. Cooler deck becomes shorter and the gap widens.",
+        "The gap remains open in the normal illustration; do not teach that normal joints must slam shut in hot weather.",
+        "Thermal expansion displacement is exaggerated and labelled; no material identity, actual joint dimension or temperature-derived numerical promise is implied."
+      ],
+      "simplification": "One-dimensional expansion of one span, ignoring temperature gradients, structural loads, creep and multi-span details.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "span": "Deck from x=130 to x=740 when cool; adjacent fixed reference begins x=870. Draw fixed bearing left and sliding bearing right.",
+        "comparison": "Warm deck endpoint x=790, same adjacent reference x=870. 50 px movement is exaggerated, not a real bridge measurement.",
+        "labels": "Fixed end | Sliding bearing | Expansion gap | Movement exaggerated"
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "This gap in a bridge is deliberate. Why leave space in a solid road?",
+          "zh": "橋面上的這道縫是刻意留下的。好好的路，為什麼要留空間？",
+          "scene": "hook",
+          "visual": "Illustrated car passes over a covered bridge joint; reveal a simple side-view inset.",
+          "overlay_en": "Why leave a gap?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Illustrated car passes over a covered bridge joint; reveal a simple side-view inset.",
+            "controls": "Road joint cover remains plausible; do not show a wheel-trapping hole."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Most bridge materials expand when they warm up and contract when they cool down.",
+          "zh": "多數橋梁材料變熱時會膨脹，變冷時則會收縮。",
+          "scene": "temperature",
+          "visual": "Side-view span changes from cool blue tint to warm orange tint.",
+          "overlay_en": "Warmer: longer | Cooler: shorter",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Side-view span changes from cool blue tint to warm orange tint.",
+            "controls": "Tint indicates temperature only, not melting or material transformation."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Across a long span, even a small fractional change can mean noticeable movement.",
+          "zh": "橋跨很長，即使只增加一小部分長度，也可能產生明顯位移。",
+          "scene": "length",
+          "visual": "Reveal a long span and enlarge its moving endpoint with a linked inset.",
+          "overlay_en": "Small change, long span",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Reveal a long span and enlarge its moving endpoint with a linked inset.",
+            "controls": "No invented numerical movement; magnification inset is explicitly separate."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "An expansion joint provides room for the bridge deck to change its length.",
+          "zh": "伸縮縫就是預留空間，讓橋面能夠改變長度。",
+          "scene": "joint",
+          "visual": "Label gap and sliding bearing; fixed piers remain still.",
+          "overlay_en": "Room to move",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Label gap and sliding bearing; fixed piers remain still.",
+            "controls": "One end fixed, one sliding; do not stretch fixed supports."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "In this simplified view, the warming deck lengthens and the gap becomes narrower.",
+          "zh": "在這個簡化圖中，橋面變熱伸長，旁邊的縫就變窄。",
+          "scene": "warm",
+          "visual": "Animate warm deck endpoint toward adjacent reference while gap shrinks.",
+          "overlay_en": "Warmer deck -> narrower gap",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Animate warm deck endpoint toward adjacent reference while gap shrinks.",
+            "controls": "Left fixed end and adjacent reference do not move; never scale the whole image."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "As the deck cools and shortens, that same gap becomes wider again.",
+          "zh": "橋面冷卻縮短時，同一道縫又會變寬。",
+          "scene": "cool",
+          "visual": "Reverse the endpoint displacement and restore the cool view.",
+          "overlay_en": "Cooler deck -> wider gap",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Reverse the endpoint displacement and restore the cool view.",
+            "controls": "Changes use the same bridge and viewing scale."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "Blocking thermal movement can create large stresses, so engineers design ways to accommodate it.",
+          "zh": "熱脹冷縮的移動若受到阻擋，就可能產生很大的應力，因此工程上要預留移動方式。",
+          "scene": "purpose",
+          "visual": "Briefly compare free movement with a restrained schematic carrying a stress label.",
+          "overlay_en": "Movement exaggerated | Avoid thermal stress",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Briefly compare free movement with a restrained schematic carrying a stress label.",
+            "controls": "No sensational bridge collapse; frame as design purpose, not a prediction for this bridge."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "The gap is useful space: it lets the bridge respond to changing temperature.",
+          "zh": "這道縫是有用的空間，讓橋梁能隨溫度變化調整長度。",
+          "scene": "answer",
+          "visual": "Return to the original bridge and highlight the joint unobtrusively.",
+          "overlay_en": "A gap with a purpose",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Return to the original bridge and highlight the joint unobtrusively.",
+            "controls": "Do not imply every bridge uses this exact joint or that temperature is the only load."
+          }
+        }
+      ],
+      "spoken_word_count_en": 106
+    },
+    {
+      "id": "17",
+      "slug": "guitar-tension",
+      "title_en": "Why Does Tightening a String Raise Its Pitch?",
+      "title_zh": "琴弦拉緊，音調為什麼升高？",
+      "question": "How does tension change the pitch of the same guitar string?",
+      "description_en": "With vibrating length held fixed, increasing string tension increases its vibration frequency and raises pitch.",
+      "description_zh": "固定同一根琴弦的有效振動長度，提高張力會使振動頻率增加，音調也會升高。",
+      "sources": [
+        {
+          "id": "unsw",
+          "publisher": "UNSW Sydney Music Acoustics",
+          "institution": "unsw-sydney",
+          "title": "Strings, standing waves and harmonics",
+          "url": "https://phys.unsw.edu.au/jw/strings.html",
+          "locator": "Tension and tuning discussion, extracted lines 90–98, especially line 91 and the frequency formula.",
+          "evidence": "Increasing tension raises frequency; the fundamental depends on length, tension and linear mass density.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Ideal flexible string model. Real tightening slightly stretches the string; use a modest tuning change."
+        },
+        {
+          "id": "yamaha",
+          "publisher": "Yamaha Corporation",
+          "institution": "yamaha-corporation",
+          "title": "The rule of strings and pitch",
+          "url": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism003.html",
+          "locator": "Pitch factors at extracted lines 8–14.",
+          "evidence": "Tightening raises pitch; thickness and vibrating length also affect pitch. Nut and saddle support the sounding string length.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Instrument-maker educational source, independent of UNSW; not a claim that length or thickness never changes in real tuning."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "For the same string with essentially fixed vibrating length and linear density, greater tension produces a higher vibration frequency and pitch.",
+          "source_urls": [
+            "https://phys.unsw.edu.au/jw/strings.html",
+            "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism003.html"
+          ],
+          "limits": [
+            "Compare one open string, with no fretting or string replacement. Modest tuning approximates fixed linear density. Pluck amplitude is not the pitch control."
+          ]
+        }
+      ],
+      "invariants": [
+        "One open string between fixed nut and saddle throughout. No fretting, thicker replacement string or changing visible active length.",
+        "Both comparison strings show the fundamental: one spatial half-wave and two fixed endpoint nodes. More temporal oscillations, not more spatial loops, represent higher fundamental frequency.",
+        "Use the same pluck displacement and viewing scale so loudness is not substituted for pitch.",
+        "When showing tension arrows, they point outward at opposite endpoints. String transverse motion is perpendicular to its resting length.",
+        "The moving waveform is explicitly slow motion and its cycles are not literal audio-rate motion."
+      ],
+      "simplification": "Ideal fundamental-mode string with fixed active length and approximately fixed mass per unit length. Real strings have harmonics and stiffness; no exact pitch ratio is promised.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "string": "Horizontal active length x=160..920, baseline y=850; endpoint nodes fixed.",
+        "animation": "Use y(x,t)=A*sin(pi*(x-160)/760)*cos(phase(t)), A=55 px for both conditions; tighter-string phase advances faster while both retain one half-wave.",
+        "comparison": "Compare 2 versus 3 schematic cycles in an equal visual time window, labelled 'Slow motion'; these are visual rates, not claimed measured notes."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "Turn this guitar's tuning peg, tighten one string, and its note rises. Why?",
+          "zh": "轉動吉他的調音鈕，把一根弦拉緊，音調就升高。為什麼？",
+          "scene": "hook",
+          "visual": "Same illustrated guitar and open string; hand turns its tuning peg.",
+          "overlay_en": "Why does the note rise?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Same illustrated guitar and open string; hand turns its tuning peg.",
+            "controls": "No fret pressed; string identity does not change."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Keep the same string and the same vibrating length between its two supports.",
+          "zh": "先固定同一根弦，以及兩個支點之間的有效振動長度。",
+          "scene": "controls",
+          "visual": "Reveal nut and saddle with a fixed length bracket.",
+          "overlay_en": "Same string | Same vibrating length",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Reveal nut and saddle with a fixed length bracket.",
+            "controls": "Active-length bracket remains constant."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Turning the peg increases the tension: the string is pulled more strongly along its length.",
+          "zh": "調音鈕增加張力，也就是把弦沿著長度方向拉得更緊。",
+          "scene": "tension",
+          "visual": "Isolate the active string; outward endpoint arrows increase in length.",
+          "overlay_en": "Higher tension",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Isolate the active string; outward endpoint arrows increase in length.",
+            "controls": "Tension arrows lie along the resting string, not vertically."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "When plucked, the tighter string completes more vibrations in the same amount of time.",
+          "zh": "撥動後，較緊的弦在相同時間內，能完成更多次振動。",
+          "scene": "frequency",
+          "visual": "Two equal-duration slow-motion insets show lower- and higher-tension fundamentals.",
+          "overlay_en": "Same time | More vibrations",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Two equal-duration slow-motion insets show lower- and higher-tension fundamentals.",
+            "controls": "Higher temporal frequency; same one-half-wave mode and same amplitude."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "More vibrations per second means a higher frequency, which we hear as higher pitch.",
+          "zh": "每秒振動次數更多，就是頻率較高；聽起來，音調也比較高。",
+          "scene": "pitch",
+          "visual": "Cycle counters advance faster on the tighter string; return to guitar.",
+          "overlay_en": "Higher frequency -> higher pitch",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Cycle counters advance faster on the tighter string; return to guitar.",
+            "controls": "Counters are schematic; no claim of a real measured note."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "The drawing is slowed down. Real musical strings vibrate far too quickly to follow.",
+          "zh": "這是放慢的示意圖；真正演奏時，琴弦振動得快得多。",
+          "scene": "scale",
+          "visual": "Expose a clear slow-motion badge and one fixed-end waveform.",
+          "overlay_en": "Slow motion | Schematic",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Expose a clear slow-motion badge and one fixed-end waveform.",
+            "controls": "Do not imply the drawn 2–3 cycles per visual second are guitar audio frequency."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "Here, both plucks start with the same displacement, so tension is the control we change.",
+          "zh": "這裡兩次撥弦的起始位移相同，因此比較時只改變張力。",
+          "scene": "contrast",
+          "visual": "Keep equal pluck-size markers while highlighting only the tension control.",
+          "overlay_en": "Same pluck | Change tension",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Keep equal pluck-size markers while highlighting only the tension control.",
+            "controls": "Avoid the absolute claim that amplitude has no possible effect on real-string frequency."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "Same string, same length, greater tension: faster vibration, and a higher note.",
+          "zh": "同一根弦、相同長度，張力更大，就振動更快、音調更高。",
+          "scene": "answer",
+          "visual": "End on the unchanged guitar with tension and frequency badges.",
+          "overlay_en": "More tension -> higher pitch",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "End on the unchanged guitar with tension and frequency badges.",
+            "controls": "No broken string or unsafe extreme tightening; modest tuning only."
+          }
+        }
+      ],
+      "spoken_word_count_en": 110
+    },
+    {
+      "id": "18",
+      "slug": "swing-timing",
+      "title_en": "Why Do Small, Timed Pushes Build a Swing?",
+      "title_zh": "小小推一下，鞦韆為什麼越盪越高？",
+      "question": "Why do pushes timed with a swing's natural rhythm work well?",
+      "description_en": "A helper can add energy by pushing in step with a swing's motion. Timing matters; resistance still removes energy.",
+      "description_zh": "配合鞦韆的自然節奏推，可以有效加入能量；推的時機很重要，阻力也仍持續帶走能量。",
+      "sources": [
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Forced Oscillations and Resonance",
+          "url": "https://openstax.org/books/college-physics-2e/pages/16-8-forced-oscillations-and-resonance",
+          "locator": "Driving, damping and child-on-swing example; extracted lines 30–45, especially line 45.",
+          "evidence": "A parent driving a child on a swing near its natural frequency transfers energy effectively; damping reduces response.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Small-amplitude oscillator analogy. Do not reuse the page's oversimplified Tacoma Narrows explanation."
+        },
+        {
+          "id": "app",
+          "publisher": "Appalachian State University Department of Physics and Astronomy",
+          "institution": "appalachian-state",
+          "title": "A driven mass on spring",
+          "url": "https://physics.appstate.edu/catalog/3-oscillations-and-waves/3a-oscillations/driven-mass-spring",
+          "locator": "Demonstration explanation around extracted line 36.",
+          "evidence": "Correctly timed repeated input, illustrated by pushing a child on a swing, builds motion near the system's natural frequency.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "The demonstration apparatus is a mass on a spring. Apply the swing analogy qualitatively, not its measured frequency."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "A helper who pushes in step with a swing's natural rhythm can add energy repeatedly and build its amplitude; damping removes energy.",
+          "source_urls": [
+            "https://openstax.org/books/college-physics-2e/pages/16-8-forced-oscillations-and-resonance",
+            "https://physics.appstate.edu/catalog/3-oscillations-and-waves/3a-oscillations/driven-mass-spring"
+          ],
+          "limits": [
+            "External helper pushes, not a rider pumping by changing body geometry. Moderate amplitudes; no unlimited growth or exact fixed period at large angles."
+          ]
+        }
+      ],
+      "invariants": [
+        "Keep pivot, rope length, rider mass and camera fixed; rider does not actively change body geometry.",
+        "A helper push appears only in a brief interval as the seat passes the low point moving away from the helper; tangential force points along velocity in that interval.",
+        "Remove the hand/force arrow on the return path. Do not automatically push in one direction through both halves of a cycle.",
+        "Raise peak angle gradually, roughly 10 to 25 degrees, without lengthening ropes or moving the pivot.",
+        "Depict energy as added by the helper, with ongoing losses, not created by resonance. Keep the peak finite."
+      ],
+      "simplification": "Moderate-angle externally driven pendulum. The approximate natural rhythm is useful here; the exact period varies with large amplitude, and real helper pushes are not sinusoidal.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "pivot": [
+          550,
+          480
+        ],
+        "rope_length_px": 630,
+        "angle_range": "Start at ±10 degrees; build to at most ±25 degrees. Geometry must keep seat distance from pivot constant.",
+        "timing": "One short push per full back-and-forth cycle, near the bottom on the outward pass. Motion is schematic; avoid a claimed real period.",
+        "force": "For theta measured from downward vertical, use seat=(xp+L*sin(theta), yp+L*cos(theta)); force tangent in the sign of theta_dot during the push."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "A few small pushes can make a swing climb higher. Why does timing matter?",
+          "zh": "小小推幾次，就能讓鞦韆盪得更高。為什麼時機這麼重要？",
+          "scene": "hook",
+          "visual": "Helper beside a small-amplitude swing; show successive modest peaks.",
+          "overlay_en": "Why does timing matter?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Helper beside a small-amplitude swing; show successive modest peaks.",
+            "controls": "Same rope length, pivot and rider throughout."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "A swing has a natural back-and-forth rhythm: one complete cycle returns to its starting point.",
+          "zh": "鞦韆有自然的來回節奏；一個完整循環，會回到原來的狀態。",
+          "scene": "rhythm",
+          "visual": "Let the swing coast briefly; a subtle cycle marker follows one complete return.",
+          "overlay_en": "A natural rhythm",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Let the swing coast briefly; a subtle cycle marker follows one complete return.",
+            "controls": "One complete cycle means the same position and direction, not merely crossing the same point."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "A helper pushes as the rider moves away, adding energy in the motion's direction.",
+          "zh": "幫忙的人在乘坐者往前離開時推，沿著移動方向加入能量。",
+          "scene": "push",
+          "visual": "Short tangential force arrow appears near the low point on the away pass.",
+          "overlay_en": "Push with the motion",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Short tangential force arrow appears near the low point on the away pass.",
+            "controls": "Hand force aligns with velocity only during brief contact; label it as force."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "Wait for the next cycle, then add another push at the matching moment.",
+          "zh": "等下一次循環，再在相配的時機補上一推。",
+          "scene": "repeat",
+          "visual": "Helper waits while seat returns, then repeats at the same phase.",
+          "overlay_en": "Wait for the next cycle",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Helper waits while seat returns, then repeats at the same phase.",
+            "controls": "No push on the returning seat or continuous horizontal force."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "Those repeated, well-timed inputs can build a larger motion from individually small pushes.",
+          "zh": "一次次配合節奏加入能量，單次小推也能累積成較大的擺動。",
+          "scene": "build",
+          "visual": "Show peak-angle markers growing gradually from 10 to 25 degrees.",
+          "overlay_en": "Small inputs can build motion",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Show peak-angle markers growing gradually from 10 to 25 degrees.",
+            "controls": "Amplitude growth requires energy input; rope never stretches to create height."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "Driving near the natural rhythm is called resonance: energy transfer becomes especially effective.",
+          "zh": "以接近自然節奏驅動，就是共振；能量傳遞會特別有效。",
+          "scene": "resonance",
+          "visual": "Link the repeating helper push to the cycle marker.",
+          "overlay_en": "Resonance: match the rhythm",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Link the repeating helper push to the cycle marker.",
+            "controls": "Qualitative weakly damped oscillator explanation; no exact resonance formula claimed."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "Air resistance and friction still remove energy, so the growth cannot continue without limit.",
+          "zh": "空氣阻力和摩擦仍會帶走能量，因此擺幅不會無限制地增加。",
+          "scene": "losses",
+          "visual": "Two small loss arrows balance later inputs; peak-angle markers stop growing.",
+          "overlay_en": "Energy in | Energy out",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Two small loss arrows balance later inputs; peak-angle markers stop growing.",
+            "controls": "No energy recycling loop or zero-loss real swing."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "To build the swing, add energy at the right time, cycle after cycle.",
+          "zh": "要讓鞦韆盪高，就在正確時機，一輪又一輪地加入能量。",
+          "scene": "answer",
+          "visual": "Return to a comfortable finite swing and one correctly timed push.",
+          "overlay_en": "The right push, at the right time",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Return to a comfortable finite swing and one correctly timed push.",
+            "controls": "This is a model explanation, not a dangerous swing-height challenge."
+          }
+        }
+      ],
+      "spoken_word_count_en": 109
+    },
+    {
+      "id": "19",
+      "slug": "braking-inertia",
+      "title_en": "Why Do You Lean Forward When a Car Brakes?",
+      "title_zh": "車一煞車，人為什麼往前傾？",
+      "question": "Why does a passenger tend to move forward relative to a braking car?",
+      "description_en": "The car slows, while your body tends to keep its motion. A backward force from the restraint helps slow you with the car.",
+      "description_zh": "車開始減速時，身體傾向維持原來的運動；安全帶等約束提供向後的力，讓人也跟著減速。",
+      "sources": [
+        {
+          "id": "nasa",
+          "publisher": "NASA Glenn Research Center",
+          "institution": "nasa",
+          "title": "Newton's Laws of Motion",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+          "locator": "First-law statement, extracted lines 18–20.",
+          "evidence": "Without a net external force, an object maintains straight-line constant-velocity motion.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "General law, not a vehicle crash test or injury-reduction statistic."
+        },
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Newton's First Law of Motion: Inertia",
+          "url": "https://openstax.org/books/college-physics-2e/pages/4-2-newtons-first-law-of-motion-inertia",
+          "locator": "First law and friction discussion, extracted lines 30–35.",
+          "evidence": "A net force is required to change velocity; inertia is resistance to a change of motion.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Use an approximately inertial ground frame; do not introduce a forward pseudo-force."
+        },
+        {
+          "id": "nasa-belt",
+          "publisher": "NASA STEM",
+          "institution": "nasa",
+          "title": "The Law of Inertia: Newton's First Law",
+          "url": "https://www.nasa.gov/stem-content/the-law-of-inertia-newtons-first-law/",
+          "locator": "Description paragraph, extracted line 260.",
+          "evidence": "The video description explicitly identifies a seatbelt as an external force stopping a pilot.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Read the page description, not the linked full video. NASA Glenn and NASA STEM together are one institution, not two."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "As a car slows, the passenger's body tends to retain its motion; changing its velocity requires a net external force.",
+          "source_urls": [
+            "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+            "https://openstax.org/books/college-physics-2e/pages/4-2-newtons-first-law-of-motion-inertia"
+          ],
+          "limits": [
+            "Explain in a stationary ground frame. The passenger's relative forward movement does not require a new forward force."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "A restraint can exert a backward force that slows the passenger with the vehicle.",
+          "source_urls": [
+            "https://www.nasa.gov/stem-content/the-law-of-inertia-newtons-first-law/",
+            "https://openstax.org/books/college-physics-2e/pages/4-2-newtons-first-law-of-motion-inertia"
+          ],
+          "limits": [
+            "The car illustration applies the first law and the NASA restraint example; forces also arise from the seat and other contacts. No crash performance or medical claim."
+          ]
+        }
+      ],
+      "invariants": [
+        "Show a belted illustrated passenger from the start. Do not propose an unbelted real demonstration.",
+        "Car and passenger initially move right together relative to fixed ground markers. Car slows; the passenger can briefly move forward relative to the car while still moving forward relative to the ground.",
+        "Use blue rightward velocity arrows and orange backward force arrows with distinct labels. Never draw a forward arrow labelled 'Inertia force' in the ground frame.",
+        "The belt remains anchored to the car and exerts a backward force on the torso during slowing; it is not a forward pushing jet.",
+        "Do not show the car instantly stop while the restrained passenger travels metres unopposed. Use modest relative lean and overlapping deceleration."
+      ],
+      "simplification": "A schematic straight-line braking interval with a belted passenger. Body flexibility, belt stretch, seat forces and braking dynamics are not quantified.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "car": "Side cutaway occupying x=100..980, y=700..1280, facing right. Fixed ground tick marks establish the frame.",
+        "motion": "Torso leans forward by about 35 px relative to the seat while both remain moving right and decelerating; this pixel shift is illustrative.",
+        "vectors": "Velocity and force use separate color/legend. Only velocity-arrow lengths encode speed, never acceleration or pressure."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "The car brakes, and you lean forward. Did something suddenly push you that way?",
+          "zh": "車一煞車，你就往前傾。是突然有什麼把你往前推嗎？",
+          "scene": "hook",
+          "visual": "Side-view cutaway of a belted passenger leaning slightly forward during braking.",
+          "overlay_en": "Why the forward lean?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Side-view cutaway of a belted passenger leaning slightly forward during braking.",
+            "controls": "Illustration only; no real unsafe braking demonstration."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Before braking, you and the car are moving together at the same speed.",
+          "zh": "煞車之前，你和車子一起移動，速度相同。",
+          "scene": "before",
+          "visual": "Fixed ground ticks pass beneath car and passenger; equal blue velocity arrows appear.",
+          "overlay_en": "Before: moving together",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Fixed ground ticks pass beneath car and passenger; equal blue velocity arrows appear.",
+            "controls": "Use the ground frame and straight, level road."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Braking slows the car, but your body tends to keep its previous motion.",
+          "zh": "車子煞車減速時，身體卻傾向維持原來的運動。",
+          "scene": "braking",
+          "visual": "Car velocity arrow shortens; torso begins a small forward lean relative to seat.",
+          "overlay_en": "The car slows",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Car velocity arrow shortens; torso begins a small forward lean relative to seat.",
+            "controls": "Body slowing can overlap car slowing; do not show a completely force-free belted interval."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "That tendency is inertia. Changing your body's velocity requires a net external force.",
+          "zh": "這個傾向叫作慣性。要改變身體的速度，需要外力的合力。",
+          "scene": "inertia",
+          "visual": "Freeze with a simple first-law badge; no new forward force arrow.",
+          "overlay_en": "Inertia: motion tends to continue",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Freeze with a simple first-law badge; no new forward force arrow.",
+            "controls": "Inertia is a property, not an additional force."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "Relative to the slowing car, your body can move forward while restraints slow it too.",
+          "zh": "相對於正在減速的車，身體可能向前移；同時，約束的力也讓身體減速。",
+          "scene": "relative",
+          "visual": "Brief car-relative inset shows modest torso displacement against a fixed seat outline.",
+          "overlay_en": "Forward relative to the car",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Brief car-relative inset shows modest torso displacement against a fixed seat outline.",
+            "controls": "Explicitly label the changed frame; main ground-frame scene remains clear."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "The seat belt helps provide a backward force, reducing your body's forward speed.",
+          "zh": "安全帶幫忙提供向後的力，降低身體向前移動的速度。",
+          "scene": "belt",
+          "visual": "Show the belt's backward force on the torso, then shorten body velocity arrow.",
+          "overlay_en": "Belt force backward",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Show the belt's backward force on the torso, then shorten body velocity arrow.",
+            "controls": "Belt anchors remain attached to the car; do not claim it is the only contact force."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "So the forward lean does not require a mysterious new force pushing you forward.",
+          "zh": "所以，往前傾並不需要一個神祕的新力量，把你往前推。",
+          "scene": "clarify",
+          "visual": "Remove the question mark at the passenger's front; keep only backward slowing-force arrow.",
+          "overlay_en": "No new forward push needed",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Remove the question mark at the passenger's front; keep only backward slowing-force arrow.",
+            "controls": "No forward inertia force in the ground frame."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "The lean is relative motion. A backward force helps your body slow with the car.",
+          "zh": "這個前傾是相對運動；向後的力，幫助身體跟著車子減速。",
+          "scene": "answer",
+          "visual": "Car and passenger settle together with the belt visible.",
+          "overlay_en": "Changing motion needs force",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Car and passenger settle together with the belt visible.",
+            "controls": "Do not imply a universal measurable delay before any passenger force begins."
+          }
+        }
+      ],
+      "spoken_word_count_en": 110
+    },
+    {
+      "id": "20",
+      "slug": "paper-wicking",
+      "title_en": "Why Does Water Climb a Paper Towel?",
+      "title_zh": "水為什麼會沿著紙巾往上爬？",
+      "question": "How can water rise through paper without a pump?",
+      "description_en": "Water wets cellulose fibers and spreads through tiny connected spaces. Capillary action can lift it against gravity, within limits.",
+      "description_zh": "水會潤濕纖維素纖維，並沿著連通的小空隙移動。這種毛細作用能讓水對抗重力上升，但並非沒有極限。",
+      "sources": [
+        {
+          "id": "ontario",
+          "publisher": "Ontario Science Centre",
+          "institution": "ontario-science-centre",
+          "title": "Send Water Walking",
+          "url": "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking",
+          "locator": "Explanation of adhesion, cohesion and cellulose spaces, extracted lines 28–30.",
+          "evidence": "Paper towel has cellulose fibers and narrow spaces; attraction between water and fibers and between water molecules enables capillary movement.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Use the paper-wicking explanation; do not generalize its simplified tree-water statement to full tall-tree transport."
+        },
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Properties of Liquids",
+          "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids",
+          "locator": "Paper towel Figure 10.19 and capillarity discussion, extracted lines 74–89 and 114–116.",
+          "evidence": "Adhesion to a porous material and cohesion within water explain wicking; in a simple vertical capillary, gravity limits rise.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "An actual paper network is not a single uniform circular tube; do not apply its tube-height formula numerically to a towel."
+        },
+        {
+          "id": "usgs",
+          "publisher": "US Geological Survey Water Science School",
+          "institution": "usgs",
+          "title": "Capillary Action and Water",
+          "url": "https://www.usgs.gov/water-science-school/science/capillary-action-and-water",
+          "locator": "Initial successful text open, extracted lines 19–22, water movement in porous spaces and definitions.",
+          "evidence": "Capillary movement in porous spaces involves adhesion, cohesion and surface tension.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Initial text open succeeded; later requests timed out. Used as corroboration for the mechanism, not the sole evidence for the limiting height."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Water can wick through the tiny spaces in paper because water is attracted to the cellulose fibers and to other water molecules.",
+          "source_urls": [
+            "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking",
+            "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids"
+          ],
+          "limits": [
+            "Use untreated absorbent paper towel. Waxed or hydrophobic paper may behave differently."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Capillary action can raise water against gravity, but does not provide unlimited upward rise.",
+          "source_urls": [
+            "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids",
+            "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking"
+          ],
+          "limits": [
+            "The simple-channel inset illustrates gravity opposing rise; real paper has irregular connected pores, and finite strip length or evaporation may limit the observed wet front first."
+          ]
+        }
+      ],
+      "invariants": [
+        "The bottom of the paper stays in contact with reservoir water; the wet front remains connected to the water supply through wetted spaces.",
+        "Draw a fixed irregular fiber network with gaps between fibers. Water fills these spaces and wets surfaces; do not portray solid fibers as empty drinking straws.",
+        "Molecular inset uses equal-sized water symbols throughout; no water molecules grow and no new pores appear as a mechanism.",
+        "Show adhesion to fibers and cohesion between water symbols separately; avoid a literal rope-chain of molecules with rigid bonds.",
+        "Gravity still points downward. Do not animate an endlessly rising water column or a self-powered recirculating pump.",
+        "On-image words, including schematic and time-compression labels, are English only."
+      ],
+      "simplification": "A qualitative connected-pore explanation. The ideal capillary inset illustrates the direction of forces, not an exact pore shape, measured rise height or drying model.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "paper": "Paper strip x=420..650, y=540..1270 with bottom y=1270 immersed below a reservoir surface at y=1190.",
+        "fiber_inset": "Separate 520 by 400 px inset with 8 stationary curved cellulose-fiber strokes and visible connected gaps; 12 equal-radius water symbols used only as a local schematic.",
+        "time": "Wet front moves upward over compressed time; no claimed centimetres or seconds. A separate simplified channel shows gravity, not a paper-height prediction."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "Dip a paper towel into water. Why does the wet patch climb above the surface?",
+          "zh": "把紙巾一端浸入水中。濕的部分為什麼會爬到水面上方？",
+          "scene": "hook",
+          "visual": "Paper strip dips into a shallow cup; a wet tint creeps upward.",
+          "overlay_en": "Why does water climb?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Paper strip dips into a shallow cup; a wet tint creeps upward.",
+            "controls": "Paper remains in continuous contact with water; no hidden pump."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Paper contains a tangled network of tiny fibers, with narrow connected spaces between them.",
+          "zh": "紙裡有交錯的細小纖維，纖維之間留著狹窄、連通的空隙。",
+          "scene": "fibers",
+          "visual": "Magnify a labeled patch into a fixed network of fibers and inter-fiber spaces.",
+          "overlay_en": "Fibers and tiny spaces | Schematic",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Magnify a labeled patch into a fixed network of fibers and inter-fiber spaces.",
+            "controls": "Fibers are solid strokes, not hollow pipes."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Water molecules are attracted to the cellulose fibers. That attraction is called adhesion.",
+          "zh": "水分子會被纖維素纖維吸引；這種不同物質間的吸引，叫作附著力。",
+          "scene": "adhesion",
+          "visual": "Equal-sized water symbols approach and wet a fiber surface.",
+          "overlay_en": "Adhesion: water to fiber",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Equal-sized water symbols approach and wet a fiber surface.",
+            "controls": "No changing particle size or magical creation of water."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "Water molecules also attract one another. That attraction is called cohesion.",
+          "zh": "水分子彼此之間也會吸引，這種吸引叫作內聚力。",
+          "scene": "cohesion",
+          "visual": "Brief dotted attraction markers connect neighboring water symbols without rigid bonds.",
+          "overlay_en": "Cohesion: water to water",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Brief dotted attraction markers connect neighboring water symbols without rigid bonds.",
+            "controls": "Attraction markers are symbolic, not a literal molecular crystal."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "Together, these effects let water spread through the narrow spaces, including upward against gravity.",
+          "zh": "這些作用共同讓水沿著狹窄空隙移動，甚至能對抗重力向上爬。",
+          "scene": "wicking",
+          "visual": "Connected wet region advances through irregular gaps and along fiber surfaces.",
+          "overlay_en": "Water wicks through the spaces",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Connected wet region advances through irregular gaps and along fiber surfaces.",
+            "controls": "No detached flying liquid blobs or upward-flow arrows inside solid fibers."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "This movement through small spaces is capillary action. No hidden pump is needed.",
+          "zh": "這種在小空隙裡移動的現象，就是毛細作用，不需要隱藏的幫浦。",
+          "scene": "name",
+          "visual": "Return to paper strip with a connecting zoom locator; wet front continues slowly.",
+          "overlay_en": "Capillary action | Time compressed",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Return to paper strip with a connecting zoom locator; wet front continues slowly.",
+            "controls": "Do not imply the animation is recorded experimental footage."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "Gravity still pulls downward, so capillary action cannot lift water without limit.",
+          "zh": "重力仍然向下拉，所以毛細作用不能讓水無限往上升。",
+          "scene": "limit",
+          "visual": "Separate simplified vertical-channel inset shows a finite raised meniscus and downward weight.",
+          "overlay_en": "Gravity still acts | Simplified channel",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Separate simplified vertical-channel inset shows a finite raised meniscus and downward weight.",
+            "controls": "Do not assign this channel's equilibrium height to the actual paper strip."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "The towel soaks up water because its fibers and tiny spaces work together.",
+          "zh": "紙巾能吸水，是纖維與細小空隙共同作用的結果。",
+          "scene": "answer",
+          "visual": "Return to the familiar paper towel and highlight its connected wet region.",
+          "overlay_en": "Tiny spaces, visible results",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Return to the familiar paper towel and highlight its connected wet region.",
+            "controls": "No universal claim about waxed paper or every liquid."
+          }
+        }
+      ],
+      "spoken_word_count_en": 105
+    }
+  ],
+  "completion": "All assigned episodes 13–20 drafted; ready for independent reader and factual review, not production approval.",
+  "research_access_limitations": [
+    {
+      "resource": "USGS Capillary Action and Water",
+      "result": "Initial text open succeeded; later fetch/find requests timed out. Two other independent sources support the core claim."
+    },
+    {
+      "resource": "NASA STEM linked video",
+      "result": "Page description was opened and read; the full linked video was not watched."
+    },
+    {
+      "resource": "Purdue original astro host / GSU string page / MTSU and UPenn resonance pages / IOP rolling-resistance page / UCSB answer",
+      "result": "Unavailable requests were excluded from claim support; successful alternatives are listed per episode."
+    }
+  ],
+  "unverified_scope": [
+    "No independent factual verdict or reader score is asserted by this author.",
+    "No renderer, illustration, timing, TTS, MP4, audio, subtitles or upload has been generated or verified for these eight drafts.",
+    "Spoken word counts use whitespace-separated English tokens; planned cue boundaries are not measured audio timings.",
+    "Art quality, human understanding, subject-matter expert review and market outcomes remain unverified."
+  ]
+}

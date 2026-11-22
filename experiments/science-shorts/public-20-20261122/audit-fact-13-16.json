@@ -1,0 +1,110 @@
+[
+  {
+    "id": "13",
+    "script_sha256": "c0919a3f1da7456ee240bc75800220d7aea63403d8b5a8d015c37a8e74787074",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "University of Florida IFAS Extension",
+        "url": "https://ask.ifas.ufl.edu/publication/AE048.pdf",
+        "locator": "BUL290, factors affecting evaporation, page 2",
+        "finding": "Airflow transports vapor away from an evaporating surface and refreshes the near-surface air. Opened the publisher's equivalent PDF because the HTML route looped."
+      },
+      {
+        "publisher": "Penn State University",
+        "url": "https://courses.ems.psu.edu/geog3/book/export/html/905",
+        "locator": "Clothesline example and wind discussion, web lines 3–7",
+        "finding": "Separates wind, humidity, and temperature and explicitly says wind carries vapor away, increasing evaporation."
+      },
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/college-physics-2e/pages/13-6-humidity-evaporation-and-boiling",
+        "locator": "Section 13.6, humidity discussion; freeze-drying check",
+        "finding": "Supports the impact of humidity on net evaporation and the escape of molecules into the vapor phase."
+      }
+    ],
+    "fact_narrative": "The controlled comparison fixes fabric, starting wetness, temperature, and ambient humidity. Water evaporates below its boiling point. Vapor can build up near still fabric, lowering net evaporation, and moving air can bring locally less humid air next to the cloth by carrying vapor away. The wording is conditional and gives no measured rate. Read 'less humid' as compared with adjacent still air, as specified in cue 5's controls. Cue 7's spoken control list is abbreviated, while ambient humidity is explicit in the description and shot controls."
+  },
+  {
+    "id": "14",
+    "script_sha256": "c0919a3f1da7456ee240bc75800220d7aea63403d8b5a8d015c37a8e74787074",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "Purdue University Physics and Astronomy",
+        "url": "https://www.physics.purdue.edu/demos/display_page.php?item=2A-01",
+        "locator": "2A-01, demonstration and directions, web lines 103–106",
+        "finding": "Shows pressing a rubber cup to a flat smooth surface, resistance to a straight pull, and easy release by lifting one edge. Ideal total vacuum is only a limiting example."
+      },
+      {
+        "publisher": "Science World Vancouver",
+        "url": "https://www.scienceworld.ca/resource/balloon-and-cup-attraction-windbag/",
+        "locator": "Explanation, directly opened with HTTP 200 after browser fetch timed out",
+        "finding": "In its analogous sealed system, increasing the volume of trapped air lowers its pressure and leaves a larger inward pressure force outside."
+      },
+      {
+        "publisher": "University of Sydney School of Physics",
+        "url": "https://www.physics.sydney.edu.au/super/physics_tut/activities/Properties_of_Matter/Suction_Cups.pdf",
+        "locator": "Suction Cups and Magdeburg Plates, The Physics",
+        "finding": "Directly confirms that the cup requires a lower pressure inside and a seal to maintain the difference."
+      },
+      {
+        "publisher": "University of Iowa Physics and Astronomy",
+        "url": "https://instructional-resources.physics.uiowa.edu/2b3050-rubber-sheets",
+        "locator": "2B30.50, Procedure, web lines 50–55",
+        "finding": "Confirms pressing to expel air on a smooth surface and releasing an adhering sheet by lifting the edge."
+      }
+    ],
+    "fact_narrative": "Pressing a flexible cup expels some air. With the rim sealed, elastic recovery increases the volume for remaining air and reduces cavity pressure. Greater vertical pressure force from ambient air produces a net pressure force toward the glass. Admitting air through the lifted rim reduces the pressure difference and makes removal easier. The draft correctly keeps air inside and gives no perfect-vacuum or maximum-load claim."
+  },
+  {
+    "id": "15",
+    "script_sha256": "c0919a3f1da7456ee240bc75800220d7aea63403d8b5a8d015c37a8e74787074",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "University of Arizona Libraries",
+        "url": "https://opentextbooks.library.arizona.edu/erozo/chapter/friction/",
+        "locator": "Chapter 26, introductory example and Exercise 26.2, directly opened with HTTP 200",
+        "finding": "Kinetic friction opposes relative sliding. Its simple horizontal-book example has zero friction at rest in the absence of applied horizontal force."
+      },
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/college-physics/pages/7-5-nonconservative-forces",
+        "locator": "Section 7.5, web lines 23–31",
+        "finding": "Friction reduces mechanical energy and transfers it to thermal energy. The level-ground example distinguishes the loss of kinetic energy from the total accounting."
+      },
+      {
+        "publisher": "Georgia Institute of Technology",
+        "url": "https://www.introphys.gatech.edu/2021/Spring/2211/Quiz_solutions/q3s.pdf",
+        "locator": "Quiz 3, Spring 2021, question 5, page 5",
+        "finding": "Separately verifies the thermal increase in both book and table during a slide. The worked case has an applied hand force, so it is used for the energy partition only."
+      }
+    ],
+    "fact_narrative": "For the released book on a stationary horizontal table, relative sliding is rightward and kinetic friction on the book acts leftward. The force slows the book. A simplified accounting converts most of the lost kinetic energy to thermal energy in both surfaces, with small optional sound or deformation. At rest without another horizontal force there is no kinetic friction and no reversal. Cue 8's 'missing motion' reads as shorthand for lost kinetic energy after cue 5 names it precisely. 'The book's kinetic energy became mostly thermal energy' would be clearer if revised."
+  },
+  {
+    "id": "16",
+    "script_sha256": "c0919a3f1da7456ee240bc75800220d7aea63403d8b5a8d015c37a8e74787074",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+        "locator": "Section 1.3, Figure 1.5, Golden Gate Bridge worked example and Thermal Stress",
+        "finding": "Bridge joints allow temperature-driven length changes. For positive expansion coefficients the change scales with original length, and restraint can create substantial stress."
+      },
+      {
+        "publisher": "Missouri Department of Transportation",
+        "url": "https://epg.modot.org/index.php/770.7_Maintenance_of_Bridge_Superstructure",
+        "locator": "Section 770.7.7, web lines 96–99",
+        "finding": "Bridge expansion joints are designed to accommodate movement caused by temperature changes."
+      }
+    ],
+    "fact_narrative": "For a positive-expansion span anchored at its left end and facing a fixed adjacent reference, warmer length moves the right end toward the reference and narrows the gap. Cooling reverses that displacement. The one-dimensional comparison is named as simplified and specifies no numerical full-size displacement. Restraint is a potential source of thermal stress, and the draft frames the joint as providing movement room across the example's temperature range."
+  }
+]

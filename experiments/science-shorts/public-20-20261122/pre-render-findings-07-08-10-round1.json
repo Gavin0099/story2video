@@ -1,0 +1,70 @@
+{
+  "reviewer": "/root/fact_visual_audit",
+  "scope": "Independent pre-render visual inspection of exact prepared snapshots and PNGs; no PASS receipts issued for this initial round.",
+  "reviewed_on": "2026-11-22",
+  "renderer_sha256": "bb8281e0492121c0060cea93787e0537c7749b277505c8506ad94d1630560d4d",
+  "scenes_sha256": "2f0729825e1fc33a9d3f727d81314ec51de714e99c870e9f769639d0e08ac1b0",
+  "bindings": "All 31 input records for each episode had existing file, matching size and SHA256, including opening-art, scene snapshot, English and Traditional Chinese SRT.",
+  "episodes": [
+    {
+      "id": "07",
+      "inputs_sha256": "71093d1c8da3e69a46943cc3304d7f359819527e32ad7f0006cef604c8f9f744",
+      "status": "BLOCKED",
+      "critical_defects": [
+        "Equal-volume comparison is not generated from the promised exact model: sphere r=120 versus spheroid equatorial r=97 and polar r=173 gives volume ratio 0.941989, despite SAME ENCLOSED VOLUME label.",
+        "The surface-tension cue displays only a THIN FILM pointer, not the promised tangential pulls or an equivalent area-decrease mechanism."
+      ],
+      "additional_notes": [
+        "Add depth/3D cues for the sphere/ellipsoid comparison; 2D silhouette area is not the conserved quantity.",
+        "The Unicode arrow in the hook headline renders as a missing-glyph square; use a supported glyph or ASCII 'to'."
+      ],
+      "samples_viewed": [
+        "cue-01-a.png",
+        "cue-03-a.png",
+        "cue-04-a.png"
+      ]
+    },
+    {
+      "id": "08",
+      "inputs_sha256": "182812a4662068ec00569193bd42c3d1f15eb4502662a1064d0e224f56553a0d",
+      "status": "BLOCKED",
+      "critical_defects": [
+        "Opening art replaces p<.42 of the hook, hiding the first 34.29 degrees of the case's 90-degree diagram rotation; only about 55.71 degrees remain visible. The art needle points upper-right and the subsequent diagram upper-left without a stable map marker, weakening the fixed-direction controlled demonstration."
+      ],
+      "correction": "Keep illustration as an establishing view, then reset diagram progress q=(p-.42)/.58 for a complete case rotation, with fixed needle/map marker/field. Do not imply the art is the same measured direction view.",
+      "samples_viewed": [
+        "cue-01-a.png",
+        "cue-01-b.png",
+        "cue-05-a.png"
+      ]
+    },
+    {
+      "id": "10",
+      "inputs_sha256": "6dcf3fb7c8a91405579fbd203518185e518b5840834b1ba67d7c9c17d3a52e74",
+      "status": "BLOCKED",
+      "critical_defects": [
+        "At transfer cue k=1 the fabric right edge x=210 remains 62 px from the balloon left edge x=272; electron symbols fly through that gap instead of transferring across the rubbed contact interface."
+      ],
+      "resolved_prior_defects": [
+        "Support/closing balloon now reaches wall contact: center425+radius98=wall523.",
+        "Upward friction/downward weight arrows have matching lengths.",
+        "Wall retains six positive and six negative symbols; only local bound-negative displacement changes."
+      ],
+      "additional_notes": [
+        "Label shown friction/weight as selected vertical forces, and local charge display as schematic/exaggerated. These clarify the prior fact-audit conditions."
+      ],
+      "samples_viewed": [
+        "cue-01-a.png",
+        "cue-02-b.png",
+        "cue-04-a.png",
+        "cue-06-a.png",
+        "cue-07-b.png"
+      ]
+    }
+  ],
+  "limitations": [
+    "Static code inspection plus listed representative prepared PNGs; no complete animation, audio playback or MP4 was reviewed.",
+    "Scientific code review is separate from artwork appeal, human comprehension and market acceptance.",
+    "Fixes must be prepared into new hash-bound snapshots/previews and independently rechecked before a PASS receipt."
+  ]
+}

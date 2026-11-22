@@ -1,0 +1,14 @@
+{
+  "protocol": "science-pilot.v1",
+  "source_issue": "https://github.com/Gavin0099/story2video/issues/8",
+  "authorization": "2026-11-21 user: 文案 → sub agent review → 分數到後再產出影片 → 評估另外頻道",
+  "scope": "Three local science pilots; no production Episode v1/SQLite changes, uploads, publication, channel creation or paid media calls",
+  "rubric": {"hook":15,"clarity":25,"causal_retelling":25,"visual_plan":20,"pacing":10,"natural_language":5},
+  "minimum_score_each_reader": 85,
+  "readers": 2,
+  "required": ["two independent publishers per core claim", "independent fact audit", "independent visual review", "no critical fact, visual or rights defect", "both comprehension readers meet threshold"],
+  "max_revisions": 2,
+  "reader_protocol": "Fresh no-history agents. Stage 1 hook only, no sources/answers/scores. Stage 2 exact full bilingual cues and visual plan. No tool/file access permitted in reader instructions. Native prompt separation, not hardened CLI sandbox attestation.",
+  "human_video_gate": "Pending: five first-time human viewers per frozen MP4, at least four correctly retell mechanism; mobile readability/listening check",
+  "market_gate": "Pending: separately authorized public test and D7/D28 evidence; AI score is not a market result"
+}

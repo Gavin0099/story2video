@@ -1,0 +1,90 @@
+[
+  {
+    "id": "11",
+    "script_sha256": "2b71e0e51a22bc6a539ec89e5cc2d69fab3f93f37a6290bf273aba9efc8f4470",
+    "status": "PASS",
+    "critical_defects": [],
+    "auditor": {
+      "agent": "/root/fact_visual_audit",
+      "model": "inherited native agent; API does not provide exact version",
+      "independence": "Did not write episodes 11/12; no score assigned."
+    },
+    "reviewed_on": "2026-11-22",
+    "input_file": "writer-a-11-12-r2.json",
+    "comparison": {
+      "parent_file": "writer-a.json",
+      "parent_sha256": "f116f5aa789c336af4cba98a6a755d57e34a07c92ad69624d5cbe9d1d52a5256",
+      "english_narration_unchanged": true,
+      "change": "Only cue 1 zh changed: 乾杯一倒進冰飲… -> 原本乾燥的玻璃杯，倒進冰飲後，杯外冒出小水珠。是漏出來的嗎？",
+      "method": "Exact per-cue comparison of en/zh/scene/visual/overlay_en/claim_ids. All English narration and mechanism/visual cues unchanged."
+    },
+    "sources_checked": [
+      {
+        "publisher": "NOAA JetStream",
+        "url": "https://www.noaa.gov/jetstream/ll-sweatin",
+        "access": "Opened official full page text",
+        "locator": "Overview lines 75–76; Discussion line 90",
+        "finding": "Outside drops originate from atmospheric water vapor when adjacent air cools below dew point."
+      },
+      {
+        "publisher": "Federal Aviation Administration",
+        "url": "https://www.faa.gov/media/28556",
+        "access": "Opened official 113-page PDF text",
+        "locator": "PDF page index 31, printed 20, lines 956–963: warm/cold glass comparison. PDF page index 79, printed 68, DEW POINT, lines 2205–2213.",
+        "finding": "Initially dry glass develops condensation outside as it is cooled; this confirms the new Chinese hook without a leakage assertion."
+      }
+    ],
+    "finding": "The revised Chinese line removes the toast/乾杯 ambiguity and accurately describes an initially dry glass developing external droplets after a cold drink is added. The following unchanged cues preserve vapor origin and the dew-point condition.",
+    "nonblocking_notes": [
+      "The FAA evidence locator in the script uses earlier extraction line numbers. This audit records the actual page/section accessed; no scientific statement depends on those stale line numbers."
+    ],
+    "limitations": [
+      "This is a narrow factual/subtitle/headline revision confirmation with fresh cited-source access, not a new reader score.",
+      "No exact prepared scene, subtitle SRT, rendered image, audio or MP4 is approved by this receipt. The prior 10–12 scene defects require a separate exact visual gate."
+    ]
+  },
+  {
+    "id": "12",
+    "script_sha256": "2b71e0e51a22bc6a539ec89e5cc2d69fab3f93f37a6290bf273aba9efc8f4470",
+    "status": "PASS",
+    "critical_defects": [],
+    "auditor": {
+      "agent": "/root/fact_visual_audit",
+      "model": "inherited native agent; API does not provide exact version",
+      "independence": "Did not write episodes 11/12; no score assigned."
+    },
+    "reviewed_on": "2026-11-22",
+    "input_file": "writer-a-11-12-r2.json",
+    "comparison": {
+      "parent_file": "writer-a.json",
+      "parent_sha256": "f116f5aa789c336af4cba98a6a755d57e34a07c92ad69624d5cbe9d1d52a5256",
+      "english_narration_unchanged": true,
+      "change": "Only cue 1 overlay_en changed: Why does a longer wrench help? -> Why push farther out?",
+      "method": "Exact per-cue comparison of en/zh/scene/visual/overlay_en/claim_ids. All English narration and mechanism/visual cues unchanged."
+    },
+    "sources_checked": [
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+        "access": "Opened official full page text",
+        "locator": "Defining Torque lines 35–36; equations/angle discussion lines 61–63",
+        "finding": "At equal perpendicular force, greater distance increases torque; a through-axis force has zero torque."
+      },
+      {
+        "publisher": "UC Santa Barbara Physics Lecture Demonstrations",
+        "url": "https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/28.12.html",
+        "access": "Opened official full page text",
+        "locator": "Lines 3–6, rF sin(theta) and handle distance",
+        "finding": "The revised hook about moving the push farther from the nut matches the actual lever-arm comparison."
+      }
+    ],
+    "finding": "The revised English overlay correctly asks about the point of force application, matching the unchanged equal-perpendicular-force narration.",
+    "nonblocking_notes": [
+      "visual_plan cue 1 retains the older longer-wrench overlay, while cues[0].overlay_en has the new phrase. Both are scientifically compatible; production should use the revised cue headline and keep exact input binding."
+    ],
+    "limitations": [
+      "This is a narrow factual/subtitle/headline revision confirmation with fresh cited-source access, not a new reader score.",
+      "No exact prepared scene, subtitle SRT, rendered image, audio or MP4 is approved by this receipt. The prior 10–12 scene defects require a separate exact visual gate."
+    ]
+  }
+]
