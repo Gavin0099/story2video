@@ -25,3 +25,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/whynest-002-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-002-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-002-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: original audit hashes and final reader summaries match staged bytes
 - Next action: Present batch 002 in one GitHub PR for owner review. Batch 001 was already merged as c26413cc11378ec8380bc2b35a0be12c197069e0. Film production and market validation remain later stages.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:1bec55856ad40f807f917476b27e5a571b36b8f05e028b19281da6a0a96d0631 -->
+### Canonical memory checkpoint — whynest-script-batch-003-20261122
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `1bec55856ad40f807f917476b27e5a571b36b8f05e028b19281da6a0a96d0631`
+- Commit binding: `b743d92c9b62c8b8ea1a2235d21928dc37b82bc9` (bound)
+- Record: 完成 WhyNest Lab 第三批 WNL-042～051 十篇雙語腳本、來源與分鏡，每篇通過獨立事實和圖解審查及兩份盲評，採計分數為 92～99。蜂蜜篇由兩位新讀者重評 v2。交付審查無未解 P0/P1。第三批加入 CI 驗證器。
+- Validation boundary: PASS: artifacts/evidence/test-results/whynest-003-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-003-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-003-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: exact staged script and cue digests plus 30 distinct mechanism IDs
+- Next action: Present batch 003 in a GitHub PR based on the open batch 002 branch, for owner review. Film production and market validation remain later stages.
+- PLAN reconciliation: `not_applicable`
