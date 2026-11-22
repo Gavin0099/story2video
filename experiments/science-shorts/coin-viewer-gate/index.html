@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#151319">
+<title>短片試看</title>
+<style>
+  :root { color-scheme: dark; font: 16px/1.6 system-ui, sans-serif; background: #151319; color: #f5f0fb; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100svh; }
+  [hidden] { display: none !important; }
+  main { min-height: 100svh; max-width: 31rem; margin: auto; padding: 2rem 1.25rem; display: grid; align-content: center; }
+  h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); line-height: 1.15; margin: 0 0 1rem; }
+  p { margin: 0 0 1.15rem; color: #e3d9eb; }
+  label { display: block; margin: 0 0 .35rem; }
+  input, button, a, textarea { font: inherit; }
+  input, textarea { width: 100%; padding: .65rem; border-radius: .65rem; border: 1px solid #73667d; }
+  textarea { min-height: 5rem; resize: vertical; }
+  button, .download { background: #eee0ff; color: #21172b; border: 1px solid transparent; border-radius: .65rem;
+    padding: .55rem .95rem; display: inline-block; min-height: 44px; font-weight: 650; text-decoration: none; cursor: pointer; }
+  button:disabled { cursor: default; opacity: .5; }
+  :focus-visible { outline: 2px solid #abdbea; outline-offset: 3px; }
+  #start { margin-top: .8rem; }
+  #status { margin: .65rem 0 0; }
+  #player { position: fixed; inset: 0; background: #000; display: grid; place-items: center; touch-action: none; }
+  #player.preparing #screen, #player.preparing #leave { visibility: hidden; }
+  #screen { position: relative; width: min(100vw, 56.25dvh); aspect-ratio: 9 / 16; }
+  video { display: block; width: 100%; height: 100%; }
+  video::cue { color: #fff; background: #17131be8; line-height: 1.25; }
+  canvas { position: absolute; left: 7.87037%; top: 29.322917%; width: 84.259259%; height: 47.395833%; pointer-events: none; }
+  #leave { position: fixed; right: .45rem; bottom: max(.5rem, env(safe-area-inset-bottom)); color: white; background: #211c2ae8; border-color: #b5a1c5; font-size: .85rem; }
+  #after form { display: grid; gap: .75rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: .65rem; }
+  .secondary { background: #211c2a; color: #fff; border-color: #73667d; }
+</style>
+</head>
+<body>
+<main id="intro">
+  <h1>短片試看</h1>
+  <p>像平常一樣看短片，想離開時可以往上滑。這次會記錄匿名停留時間，你也可以自行決定是否留下回覆。</p>
+  <label for="code">試看代碼</label>
+  <input id="code" autocomplete="off" spellcheck="false" autocapitalize="characters" maxlength="8">
+  <button id="start" disabled>開始觀看</button>
+  <p id="status" role="status">正在準備影片。</p>
+</main>
+
+<section id="player" aria-label="短片" hidden>
+  <div id="screen">
+    <video id="video" preload="auto" playsinline disablepictureinpicture controlslist="nodownload noremoteplayback" src="source.mp4">
+      <track kind="captions" srclang="zh-Hant" label="繁體中文" src="zh-Hant.vtt">
+    </video>
+    <canvas id="hook" width="300" height="300" hidden></canvas>
+  </div>
+  <button id="leave" type="button" aria-label="離開這支短片">往上滑 ↑</button>
+</section>
+
+<main id="after" hidden>
+  <h1 id="after-title" tabindex="-1">觀看結束</h1>
+  <p id="after-message">你可以用一句話寫下第一印象，也可以略過。</p>
+  <form id="feedback">
+    <div>
+      <label for="observation">剛才的畫面發生了什麼？</label>
+      <textarea id="observation" maxlength="400"></textarea>
+    </div>
+    <div id="explain">
+      <label for="reason">你覺得是什麼原因？</label>
+      <textarea id="reason" maxlength="400"></textarea>
+    </div>
+    <div class="actions">
+      <button type="submit">儲存匿名紀錄</button>
+      <button id="skip" class="secondary" type="button">略過回覆</button>
+    </div>
+  </form>
+  <a id="download" class="download" hidden>下載匿名紀錄</a>
+  <button id="back-preview" class="secondary" type="button" hidden>返回預覽</button>
+</main>
+
+<script>
+const get = (id) => document.getElementById(id);
+const video = get("video");
+const hook = get("hook");
+const context = hook.getContext("2d", { alpha: false });
+const atlases = [];
+const requestedPreview = new URLSearchParams(location.search).get("preview");
+const preview = ["A", "B"].includes(requestedPreview) ? requestedPreview : null;
+const localKey = "why-nest-coin:completed:";
+let assignments = {};
+let assignment;
+let code;
+let maximum = 0;
+let previousFrame = -1;
+let outcome;
+let gesture;
+let state = "loading";
+
+function drawOpening(seconds) {
+  const frame = Math.max(0, Math.floor(seconds * 30 + 0.0001));
+  hook.hidden = assignment.variant !== "B" || frame >= 90;
+  if (hook.hidden || frame === previousFrame) return;
+  const tile = frame % 30;
+  context.drawImage(atlases[Math.floor(frame / 30)], (tile % 5) * 300, Math.floor(tile / 5) * 300,
+    300, 300, 0, 0, 300, 300);
+  previousFrame = frame;
+}
+
+function observeFrame(seconds) {
+  if (state !== "watching") return;
+  maximum = Math.max(maximum, seconds);
+  drawOpening(seconds);
+}
+
+function requestFrame() {
+  if (state !== "watching") return;
+  if ("requestVideoFrameCallback" in video) {
+    video.requestVideoFrameCallback((_now, frame) => {
+      observeFrame(frame.mediaTime);
+      requestFrame();
+    });
+    return;
+  }
+  requestAnimationFrame(() => {
+    if (!video.paused && video.readyState >= 2) observeFrame(video.currentTime);
+    requestFrame();
+  });
+}
+
+function finish(reason) {
+  if (state !== "watching") return;
+  state = "finished";
+  video.pause();
+  const watched = reason === "ended" ? video.duration : maximum;
+  outcome = {
+    format_version: 1, participant_code: code, cohort: assignment.cohort, variant: assignment.variant,
+    end_reason: reason, valid: ["swipe", "leave", "ended"].includes(reason),
+    watched_seconds: Number(watched.toFixed(3)), reached_3s: watched >= 3,
+    completed: reason === "ended", measurement: "requestVideoFrameCallback" in video ? "presented media time" : "media time",
+  };
+  if (!preview && outcome.valid) {
+    try { localStorage.setItem(localKey + code, "1"); } catch {}
+  }
+  get("player").hidden = true;
+  get("after").hidden = false;
+  get("after-title").focus();
+  if (preview) {
+    get("feedback").hidden = true;
+    get("after-message").textContent = "預覽完成。這次播放未納入測試。";
+    get("back-preview").hidden = false;
+  } else if (!outcome.valid) {
+    get("after-message").textContent = "這次播放出了問題。請把這筆記錄交給主持人。";
+    get("observation").disabled = true;
+    get("reason").disabled = true;
+  }
+}
+
+function start() {
+  if (state !== "ready") return;
+  code = preview ? "PREVIEW" : get("code").value.trim().toUpperCase();
+  assignment = preview ? { variant: preview, cohort: "normal" } : assignments[code];
+  if (!assignment || !(preview || Object.hasOwn(assignments, code))) {
+    get("status").textContent = "找不到這個試看代碼，請向主持人確認。";
+    return;
+  }
+  if (!preview) {
+    try {
+      if (localStorage.getItem(localKey + code)) {
+        get("status").textContent = "這個代碼已完成試看。";
+        return;
+      }
+    } catch {}
+  }
+  video.muted = assignment.cohort === "muted";
+  video.textTracks[0].mode = video.muted ? "disabled" : "showing";
+  get("explain").hidden = video.muted;
+  state = "starting";
+  get("intro").hidden = true;
+  get("player").classList.add("preparing");
+  get("player").hidden = false;
+  drawOpening(0);
+  requestFrame();
+  video.play().catch(() => finish("playback_error"));
+}
+
+function prepare() {
+  const images = Array.from({length: 3}, (_, index) => new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => { atlases[index] = img; resolve(); };
+    img.onerror = reject;
+    img.src = "hook-" + index + ".webp";
+  }));
+  const videoReady = new Promise((resolve, reject) => {
+    if (video.readyState >= 2) resolve();
+    video.addEventListener("loadeddata", resolve, {once: true});
+    video.addEventListener("error", reject, {once: true});
+  });
+  const codes = preview ? Promise.resolve({}) : fetch("assignments.json").then((response) => {
+    if (!response.ok) throw Error("Missing assignments");
+    return response.json();
+  });
+  // iOS may wait for a gesture before preloading. Keep both conditions under the same startup rule.
+  const canStart = "ontouchstart" in window ? Promise.resolve() : videoReady;
+  Promise.all([canStart, codes, ...images]).then((values) => {
+    assignments = values[1];
+    state = "ready";
+    get("status").textContent = "";
+    get("start").disabled = false;
+  }).catch(() => {
+    get("status").textContent = "影片素材載入失敗，請向主持人確認。";
+  });
+  videoReady.catch(() => {
+    if (state !== "watching") get("status").textContent = "影片載入失敗，請向主持人確認。";
+  });
+}
+
+function exportResult(includeAnswers) {
+  if (!outcome || preview) return;
+  const result = {...outcome};
+  result.observation = includeAnswers ? get("observation").value.trim() : "";
+  result.explanation = includeAnswers && assignment.cohort === "normal" ? get("reason").value.trim() : "";
+  const data = new Blob([JSON.stringify(result, null, 2)], {type: "application/json"});
+  const link = get("download");
+  link.href = URL.createObjectURL(data);
+  link.download = code + ".json";
+  get("feedback").hidden = true;
+  get("after-message").textContent = "請下載，再把匿名紀錄交給主持人。";
+  link.hidden = false;
+  link.focus();
+}
+
+if (preview) {
+  get("intro").querySelector("h1").textContent = "硬幣篇 " + preview + " 版預覽";
+  get("intro").querySelector("p").textContent = "這個連結供工作預覽。正式首看請使用主持人提供的匿名試看代碼。";
+  get("code").hidden = true;
+  get("intro").querySelector("label").hidden = true;
+}
+get("start").addEventListener("click", start);
+get("back-preview").addEventListener("click", () => location.reload());
+get("leave").addEventListener("click", () => finish("leave"));
+get("player").addEventListener("touchstart", (event) => {
+  if (state === "watching" && event.touches.length === 1) gesture = event.touches[0];
+}, {passive: true});
+get("player").addEventListener("touchend", (event) => {
+  if (!gesture) return;
+  const end = event.changedTouches[0];
+  if (gesture.clientY - end.clientY > 36 && Math.abs(end.clientX - gesture.clientX) < 70) finish("swipe");
+  gesture = null;
+}, {passive: true});
+document.addEventListener("keydown", (event) => {
+  if (state === "watching" && ["Escape", "ArrowUp"].includes(event.key)) finish("leave");
+});
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) finish("interrupted");
+});
+video.addEventListener("playing", () => {
+  if (state !== "starting") return;
+  state = "watching";
+  drawOpening(0);
+  get("player").classList.remove("preparing");
+  requestFrame();
+});
+video.addEventListener("ended", () => finish("ended"));
+video.addEventListener("error", () => finish("playback_error"));
+get("feedback").addEventListener("submit", (event) => { event.preventDefault(); exportResult(true); });
+get("skip").addEventListener("click", () => exportResult(false));
+prepare();
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,342 @@
+{
+  "schema_version": "science-visual-review.v2",
+  "reviewer": {
+    "agent": "/root/fact_visual_audit",
+    "role": "Independent AI scientific visual reviewer; not author or audience scorer",
+    "model": "inherited native agent (API未提供精確版本)",
+    "human": false,
+    "domain_expert_claim": false,
+    "tokens": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21 15:39:43 UTC",
+  "git_sha": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea",
+  "status": "PASS",
+  "critical_defects": [],
+  "visual_plan_pass": true,
+  "local_encode_allowed": true,
+  "renderer_path": "experiments/science-shorts/sky-space-visual-v2/render.py",
+  "renderer_sha256": "f74cf527f05dd0bb80c31433cb654f6d6f482e88d5c71600bc21b0647fc692b4",
+  "script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+  "scope": "Fresh review of new visual plan, renderer implementation and sampled PNG previews against unchanged scientific claims; not a reuse of the former visual pass.",
+  "original_fact_basis": {
+    "audit": "experiments/science-shorts/batch-20261121/reviews/fact-visual-v1.json",
+    "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40",
+    "method": "Previously independently visited primary sources retained for unchanged claims. No fresh full-source research or audience rescoring in this incremental visual review.",
+    "excluded": "NASA Cosmicopia timeout remains excluded even though its historical card remains in source-cards.json."
+  },
+  "public_content_check": {
+    "cues": 10,
+    "script_vs_original_timeline_en_zh_claim_ids": "10/10 exact",
+    "narration_and_timeline": "Original files bound by per-topic manifest; unchanged bytes verified."
+  },
+  "limitations": [
+    "Pre-encode Pillow PNG previews and renderer code; no new MP4 exists within this review scope.",
+    "Contact sheet covers all ten cue midpoints; selected original-size images and motion pairs inspected. This is not continuous full-video/audio viewing.",
+    "No human first-watch, mobile legibility, professional scientist certification, audience score, aesthetic guarantee or market acceptance.",
+    "Qualitative scientific schematics: lengths, colors, particle spacing, wave timing and apparatus are simplified. These are not physical simulations or quantitative measurements.",
+    "Approval binds these exact renderer and inputs hashes. Changed renderer, assets, timeline or public claims need renewed review; actual encoded MP4 sampling remains required."
+  ],
+  "market_acceptance": "NOT_ASSESSED",
+  "human_acceptance": "PENDING",
+  "actual_mp4_review": "PENDING",
+  "verification_commands": [
+    "Get-Content render.py, visual-plan.md, image-prompts.json, topic-inputs.json and original source-cards.json",
+    "Get-FileHash -Algorithm SHA256 for renderer, inputs, every manifest file and all preview PNGs; Get-Item size compared to manifest",
+    "ConvertFrom-Json comparison of each original episode cue en, zh and claim_ids with its original timeline",
+    "view_image of contact sheets and listed original-size previews; independent evaluation of motion formulas",
+    "git rev-parse HEAD"
+  ],
+  "episode": "space",
+  "revision": "space-visual-v2",
+  "inputs_path": "experiments/science-shorts/sky-space-visual-v2/space-inputs.json",
+  "inputs_sha256": "33210b286522a69ddbc69cd8978872c9ed75fdab69dfaa679d1daac34cb7569d",
+  "input_file_checks": [
+    {
+      "path": "experiments/science-shorts/batch-20261121/scripts-final.json",
+      "sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+      "size": 22940,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/source-cards.json",
+      "sha256": "8e480a70887131396ef92d5cad0e8a878d0ae597eba0743bae2b0229acf605b4",
+      "size": 4770,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/editorial-gate.json",
+      "sha256": "c4cba6d81cebdcb792f9beb638129e26ececdbebdf3397258d90b09380240926",
+      "size": 1514,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/reviews/fact-visual-v1.json",
+      "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40",
+      "size": 51731,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/reviews/reader-a-v1.json",
+      "sha256": "c711c648a496f91089eea0cfd61c528dde4d305301bf8fb0715eb0d86577b1fe",
+      "size": 5525,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/reviews/reader-b-v1.json",
+      "sha256": "a79256b9a77b6664596821da0d2a56dab432ea58b9f8a77540a9ad99b68d5a2d",
+      "size": 5379,
+      "pass": true
+    },
+    {
+      "path": "experiments/episode-02-73h/render-manifest.json",
+      "sha256": "ad137928738f0ce7d8e1cd5e9195cc01f6f30e6c307585abab9dff5417dcd321",
+      "size": 703,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/ice-visual-v2/render.py",
+      "sha256": "aad0052d5f0f486ee3cc6a05e80982e9a0c1dbedee7caa7710b38da549ad1438",
+      "size": 22543,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/sky-space-visual-v2/image-prompts.json",
+      "sha256": "e1bc70de5728bb956c96923a86debd74fa2a523fd7a23e0511c4edca773748ea",
+      "size": 3463,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/sky-space-visual-v2/visual-plan.md",
+      "sha256": "5161375c053adbc7168be679fdae6217ce01a05aeb56e8d45e37235bc055f96c",
+      "size": 1662,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/batch-20261121/space/timeline.json",
+      "sha256": "8e4c51e2df5e11ab1769905671edd109e00cc9d5b661e515e2c927cf01f9c5e1",
+      "size": 5512,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/batch-20261121/space/narration.wav",
+      "sha256": "af8e6c803522271e8ecc56ee152f0fbf003673852dff81797cd9d4d33c90c017",
+      "size": 2483244,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/sky-space-visual-v2/assets/astronaut.png",
+      "sha256": "d98848b0a9d73a87887d0a97fb4ee8b4ab72c50a114940c80da9442451950daa",
+      "size": 2131938,
+      "pass": true
+    }
+  ],
+  "preview_evidence": [
+    {
+      "file": "contact.png",
+      "sha256": "253e7a527bd3c3a728584b6f0858c141277c5229f2977ea06bc198c050099641",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/contact.png",
+      "inspection": "contact sheet inspected"
+    },
+    {
+      "file": "frame-0380.png",
+      "sha256": "684d744ae7532a7c1cdb2bb4ed533e248921948dcc667abd3ea1f3b7fc713330",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/frame-0380.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-0386.png",
+      "sha256": "8f4efc525f8e18cea41b08c3970646f4ca72e79afcaab2323fa286a3d601a205",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/frame-0386.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-1040.png",
+      "sha256": "4626dd1636861064da4e207265eee0af95a21d11a878ca653be4d79775d9d98a",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/frame-1040.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-1046.png",
+      "sha256": "015da61f61a4ef93ed37eac93c8cd6715a48197a35e4c70d40bfe11cd22ac323",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/frame-1046.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-1190.png",
+      "sha256": "4e8ccfdff861a628583249bf9974e256dced37bdfee25292b97a3062be1ec419",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/frame-1190.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-1196.png",
+      "sha256": "215e59f8102b45662c72b9347a876fd87b4af3e8967eb72ec67ae85f5b0762f8",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/frame-1196.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-01.png",
+      "sha256": "8370bea3cf89a08b0129716a0160fe17f870b31b97a0a54b068db67178589df5",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-01.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-02.png",
+      "sha256": "a38abb40f789020e59c43b3509e9e506d33774b74fdc6300972569d59abbd116",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-02.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-03.png",
+      "sha256": "edc4d6cd084a4f7b9a43619ceede997fa193a04c67f35222539c254df21e243f",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-03.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-04.png",
+      "sha256": "14feee689261892c7517945939105ec8495bcb0c3f2ce10286173d027525e4ee",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-04.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-05.png",
+      "sha256": "387a33f01af95ce78391d42ee45f33f75ea77d25c231deba48376e17cf090782",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-05.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-06.png",
+      "sha256": "a55f1619eafd63ac89bcfe3ff2dca4f5967349212e41b8e6ec0c78c85b475eaf",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-06.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-07.png",
+      "sha256": "23d4233ca23c415671a9ce594e58d54ebe907436f1c7738df88476244ac6a6f7",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-07.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-08.png",
+      "sha256": "a3b56c06ac557ec70aa1c2e39f51ab8c71f9b521094904713ec5045cd911adc7",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-08.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-09.png",
+      "sha256": "7ea576e2db3af5566a600d27c80ac2c668d9081867610ada27a10f063ad9956b",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-09.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-10.png",
+      "sha256": "a456d8b95e558e1275eb65373376c44a9c2925d44331e55d956630ad57ac49b1",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/preview/shot-10.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    }
+  ],
+  "revision_history": [
+    {
+      "status": "PASS",
+      "renderer_sha256": "e531f48dba09303937e21bd9d62ff5845ffcecf7c0b7dd4e2a829bb26ddd3a11",
+      "review_sha256": "617b89ec5bf6c7c909a24ba41893d0c1426fefe8313bc2cf00a7ccca8597b33f",
+      "reviewed_at_utc": "2026-11-21 15:37:25 UTC",
+      "critical_defects": [],
+      "superseded_reason": "Author requested composition-only revision before encode. Old receipt written immediately before the message arrived; encoding paused pending independent revision review.",
+      "prior_changed_preview_hashes": []
+    },
+    {
+      "status": "PASS",
+      "renderer_sha256": "f74cf527f05dd0bb80c31433cb654f6d6f482e88d5c71600bc21b0647fc692b4",
+      "reviewed_at_utc": "2026-11-21 15:39:43 UTC",
+      "method": "Reversed only right-aligned raster crop and sky closing-card/text y positions in memory; original UTF-8 bytes reproduce exact prior e531 SHA. Both manifests reverified. Sky shots01/06/10 and contact freshly viewed. All other sky PNGs and every space PNG byte-identical.",
+      "prior_renderer_reconstructed_sha256": "e531f48dba09303937e21bd9d62ff5845ffcecf7c0b7dd4e2a829bb26ddd3a11",
+      "prior_exact": true,
+      "inputs_unchanged": true,
+      "changed_pngs": [],
+      "critical_defects": []
+    }
+  ],
+  "checks": [
+    {
+      "id": "space.c1-medium",
+      "status": "PASS",
+      "evidence": "space_intuition, space_air / shots02–04: material required, air identified as one medium; AIR independent panel contains30 particle symbols, PERFECT/理想 vacuum panel contains none.",
+      "sources": [
+        "NASA anatomy",
+        "ESA LISTEN UP!"
+      ]
+    },
+    {
+      "id": "space.c1-motion",
+      "status": "PASS",
+      "evidence": "air_particles x=fixed_x+8*sin(5t-.7j), fixed y: each particle remains within ±8px of its own equilibrium; no transport across panel or vacuum. Frames380/386 show changing local offsets with the disturbance marker advancing right. Phase progression also advances right.",
+      "formula_samples": [
+        {
+          "frame": 380,
+          "first_row": [
+            273.8457925167181,
+            341.7555864628851,
+            410.40741941519883,
+            482.00307415331406,
+            557.3598080725387,
+            635.5259842608223,
+            714.2286412082285,
+            790.9425021210634,
+            864.0776520564867,
+            933.7272997632368
+          ]
+        },
+        {
+          "frame": 386,
+          "first_row": [
+            277.9807888262581,
+            349.0804262352669,
+            417.47711605169263,
+            485.4926388587197,
+            555.6280440399514,
+            629.3873671743272,
+            706.5702586021422,
+            785.3662110005574,
+            863.2060692674874,
+            937.9703443102671
+          ]
+        }
+      ],
+      "caveat": "Traveling outline is a qualitative emphasis marker, not a computed pressure-front or calibrated phase-speed trace; regular particle rows illustrate coherent acoustic displacement, not literal gas molecular trajectories."
+    },
+    {
+      "id": "space.c1-gap",
+      "status": "PASS",
+      "evidence": "space_pair shots01/05: no orange particles or sound propagation in the vacuum gap. Background stars are distinct and expressly labeled as not a transmitting medium."
+    },
+    {
+      "id": "space.c2-radio",
+      "status": "PASS",
+      "evidence": "space_pair shots06/07 plus frames1040/1046: cyan radio/electromagnetic symbol and forward arrow connect the radios across vacuum without orange particles. y=1000+26*sin(.045*(x-350)-4t) advances right in phase; white emphasis pulse also advances right.",
+      "sources": [
+        "NASA anatomy",
+        "ESA LISTEN UP!"
+      ]
+    },
+    {
+      "id": "space.c3-receiver",
+      "status": "PASS",
+      "evidence": "receiver / shots08/09 and frames1190/1196: separate closed helmet cutaway labeled internal; cyan receiver signal goes to speaker,20 orange air-particle symbols are confined inside, then ear. Speaker→air→ear labels and direction arrow explicit; ear emphasis does not replace the receiving sound mechanism.",
+      "sources": [
+        "NASA Radio Waves",
+        "ESA LISTEN UP!"
+      ]
+    },
+    {
+      "id": "space.labels",
+      "status": "PASS",
+      "evidence": "Ten sampled subtitles align with unchanged source cues. Orange local material vibration and cyan electromagnetic/electrical signal are distinguished. Schematic-not-scale note retained."
+    }
+  ],
+  "optional_art_suggestions": [
+    "For any later physics-focused revision, derive the traveling emphasis outline from the same phase field as the local particle displacement, or label it as a propagation guide.",
+    "Keep background stars distinct from orange air particles and retain separate panel/helmet labels in future edits."
+  ]
+}
+

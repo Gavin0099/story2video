@@ -1,0 +1,392 @@
+{
+  "schema_version": "science-final-video-review.v2",
+  "episode": "space",
+  "status": "PASS",
+  "result": "PASS_SAMPLED_SCIENCE_VISUALS",
+  "critical_defects": [],
+  "reviewer": {
+    "agent": "/root/fact_visual_audit",
+    "model": "inherited native agent (API未提供精確版本)",
+    "role": "Independent AI scientific visual sampler; not author, human viewer, domain-expert certification or audience scorer",
+    "tokens": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21 15:46:11 UTC",
+  "git_sha": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea",
+  "renderer_sha256": "f74cf527f05dd0bb80c31433cb654f6d6f482e88d5c71600bc21b0647fc692b4",
+  "inputs_sha256": "33210b286522a69ddbc69cd8978872c9ed75fdab69dfaa679d1daac34cb7569d",
+  "preproduction_review_sha256": "2628011c75adce7aacbd9532f70b7a87707cc52d821495cdf89a1dedcde0b16b",
+  "provenance_sha256": "a1c11289886ac202793ed74a5d20bde21209f7e7715062fd1576817eec863966",
+  "qa_sha256": "725cd59209f2d91590a07f81b43863a275aca485a238ba915e1dcd194f019087",
+  "provenance_binding_checks": {
+    "renderer": true,
+    "inputs_manifest": true,
+    "preproduction_review": true,
+    "original_narration": true
+  },
+  "actual_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+  "outputs": [
+    {
+      "name": "space-v2-zh.mp4",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/space-v2-zh.mp4",
+      "actual_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "bytes": 5045731,
+      "hash_and_size_pass": true,
+      "sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "container_duration_seconds": 51.8,
+      "video_duration_seconds": 51.733333,
+      "frames": 1552,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fps": "30/1",
+      "codecs": [
+        "h264",
+        "aac"
+      ],
+      "pixel_format": "yuv420p",
+      "reported_decode": "PASS",
+      "reported_blackdetect": "PASS",
+      "reported_silence_starts": [],
+      "reported_integrated_lufs": -17.1,
+      "reported_true_peak_dbfs": -1.4,
+      "visual_scope": "Full explanation sampled through actual decoded frames"
+    },
+    {
+      "name": "space-v2-preview.mp4",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/space-v2-preview.mp4",
+      "actual_sha256": "6e531005176cdb72b12f76d4beb3a3e6963c7b973d21c2be559e3c6d4aaddae3",
+      "bytes": 1104573,
+      "hash_and_size_pass": true,
+      "sha256": "6e531005176cdb72b12f76d4beb3a3e6963c7b973d21c2be559e3c6d4aaddae3",
+      "container_duration_seconds": 12,
+      "video_duration_seconds": 12,
+      "frames": 360,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fps": "30/1",
+      "codecs": [
+        "h264",
+        "aac"
+      ],
+      "pixel_format": "yuv420p",
+      "reported_decode": "PASS",
+      "reported_blackdetect": "PASS",
+      "reported_silence_starts": [],
+      "reported_integrated_lufs": -17,
+      "reported_true_peak_dbfs": -1.3,
+      "visual_scope": "File hash/size verified; no separate visual frame review of short re-encode"
+    }
+  ],
+  "machine_qa": {
+    "status": "PASS",
+    "source": "Existing bound qa.json, inspected as engineering evidence; this reviewer did not rerun full decode/audio analyses.",
+    "caption_bounds": "PASS",
+    "intentional_silence": "No reported ≥2s silence."
+  },
+  "scientific_checks": [
+    {
+      "id": "independent-air-vacuum",
+      "status": "PASS",
+      "evidence": "Actual shot04 and contact: AIR panel has30 orange particle symbols, ideal-vacuum panel none. The air mechanism is independent of the two astronauts' vacuum gap; distant star dots remain distinct and labeled."
+    },
+    {
+      "id": "local-oscillation",
+      "status": "PASS",
+      "evidence": "Actual frames380/386: same30 symbols remain near own positions; orange emphasis guide advances right independently. Frozen formula limits each displacement to±8px, no mass flow across the gap. Regular rows/guide are schematic, not literal molecular trajectories or a calibrated pressure front."
+    },
+    {
+      "id": "electromagnetic-gap",
+      "status": "PASS",
+      "evidence": "Actual frames1040/1046: cyan wave and forward signal connect radios across the vacuum, with no orange medium; marker/phase advance right."
+    },
+    {
+      "id": "receiver-sound",
+      "status": "PASS",
+      "evidence": "Actual frames1190/1196 plus shot09: labeled receiver→speaker→20 local air-particle symbols→ear, confined to closed internal-helmet cutaway. Local air shifts near its own positions, no air in exterior vacuum. Ear cue remains audible-sound explanation."
+    },
+    {
+      "id": "cue-alignment",
+      "status": "PASS",
+      "evidence": "Contact spans all ten cue midpoints; mechanism labels, schematic note and Traditional Chinese subtitles remain aligned. No new critical problem observed after encoding."
+    }
+  ],
+  "sample_binding": [
+    {
+      "name": "contact.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/contact.png",
+      "sha256": "a8d2431f9ddaff1d748ac90d6bbbae2bb5872ac7207e6c6504312908cfc555d5",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": null,
+      "nominal_seconds": null,
+      "inspection": "contact viewed; composite of all10 cue midpoints",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "frame-0000.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-0000.png",
+      "sha256": "a495ac01a37285df0f82daa3a8b4fa3f5a8c4a71d58ea346299081eab8890d1f",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 0,
+      "nominal_seconds": 0,
+      "inspection": "not visually inspected; hash recorded",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "frame-0380.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-0380.png",
+      "sha256": "8c9875107293633db6c9261170a770fa7104282e66aa15ae666d9c363f2ecffa",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 380,
+      "nominal_seconds": 12.666666666666666,
+      "inspection": "original-size viewed",
+      "source_proof": "Reviewer independently redecoded exact MP4 frame via verified FFmpeg; PNG hash exactly matches."
+    },
+    {
+      "name": "frame-0386.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-0386.png",
+      "sha256": "ce89090e7828a784a8e804408e2661f722bf4154b36a1112e58388ceab569e07",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 386,
+      "nominal_seconds": 12.866666666666667,
+      "inspection": "original-size viewed",
+      "source_proof": "Reviewer independently redecoded exact MP4 frame via verified FFmpeg; PNG hash exactly matches."
+    },
+    {
+      "name": "frame-1040.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-1040.png",
+      "sha256": "e8f51eae47d54f76edf712f732d65dd6613604899154f89b6f2e54313cfab914",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1040,
+      "nominal_seconds": 34.666666666666664,
+      "inspection": "original-size viewed",
+      "source_proof": "Reviewer independently redecoded exact MP4 frame via verified FFmpeg; PNG hash exactly matches."
+    },
+    {
+      "name": "frame-1046.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-1046.png",
+      "sha256": "0e98ea8d2b56b921c9b1c7afe67137827ae04d26a67047fdd7b160342f4aa75d",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1046,
+      "nominal_seconds": 34.86666666666667,
+      "inspection": "original-size viewed",
+      "source_proof": "Reviewer independently redecoded exact MP4 frame via verified FFmpeg; PNG hash exactly matches."
+    },
+    {
+      "name": "frame-1190.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-1190.png",
+      "sha256": "136bf282d9466cd8f7120b4395100e54bbbbea008bfe9cc1087329cca94a7096",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1190,
+      "nominal_seconds": 39.666666666666664,
+      "inspection": "original-size viewed",
+      "source_proof": "Reviewer independently redecoded exact MP4 frame via verified FFmpeg; PNG hash exactly matches."
+    },
+    {
+      "name": "frame-1196.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-1196.png",
+      "sha256": "7d91e715ba73d45d5853f75e4a332780e748ee6a0d641aada74d8c59b6a927c4",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1196,
+      "nominal_seconds": 39.86666666666667,
+      "inspection": "original-size viewed",
+      "source_proof": "Reviewer independently redecoded exact MP4 frame via verified FFmpeg; PNG hash exactly matches."
+    },
+    {
+      "name": "frame-1551.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/frame-1551.png",
+      "sha256": "6b0ae1345fad8d872d7a9ffa917acfcc70a837d68c0ec800a405d0de0f7a962a",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1551,
+      "nominal_seconds": 51.7,
+      "inspection": "not visually inspected; hash recorded",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-01.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-01.png",
+      "sha256": "7acf5453e442ed7ed6be7ac6585661d1a47cb690a58d99ae38515594400a6e9f",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 85,
+      "nominal_seconds": 2.8333333333333335,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-02.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-02.png",
+      "sha256": "adc1f934596b5dc65c49eb739e14ca1f005102b3a06a26244b22da0af0783cc9",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 241,
+      "nominal_seconds": 8.033333333333333,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-03.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-03.png",
+      "sha256": "03b4fd9c411bb5f304ca3691ab510d9578d188f10bdeaa4d29102e526d92e710",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 401,
+      "nominal_seconds": 13.366666666666667,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-04.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-04.png",
+      "sha256": "858be1d51ccf416be3d1827488661560a92fa669d78c6d5ba5c221f41078a24c",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 564,
+      "nominal_seconds": 18.8,
+      "inspection": "original-size viewed",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-05.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-05.png",
+      "sha256": "07febfb0c4fe54e1bb49c11a6276d584e971390b754cbc8c8ac6e26448f5dd16",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 708,
+      "nominal_seconds": 23.6,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-06.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-06.png",
+      "sha256": "026a0ebc647a824e505780c10350c21250538340a42ec385e684b00f2a57937a",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 865,
+      "nominal_seconds": 28.833333333333332,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-07.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-07.png",
+      "sha256": "52c73f311030b058dd7b1fd19044a7116e34ebbeb58564e13b456b73a37521d2",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1042,
+      "nominal_seconds": 34.733333333333334,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-08.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-08.png",
+      "sha256": "706f09818dc3a3f15bf213f04e92040973e7cae434a4c3322533c5d6a5d48922",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1199,
+      "nominal_seconds": 39.96666666666667,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-09.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-09.png",
+      "sha256": "522550250e1e0993f59bd7e9fa2a8eeb3f7741c4da262c530343b902b0b4d613",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1317,
+      "nominal_seconds": 43.9,
+      "inspection": "original-size viewed",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    },
+    {
+      "name": "shot-10.png",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/space/actual-mp4/shot-10.png",
+      "sha256": "e65db59737257ecf8ee7a7d28cfe7705209711dcf36429725e615501c7eb0e34",
+      "source_mp4_sha256": "fbf7b55750137cbf33e22318fba93ff101ab86be4854a38bdee8f7c134ce8a0f",
+      "nominal_frame_zero_based": 1456,
+      "nominal_seconds": 48.53333333333333,
+      "inspection": "viewed through ten-cue contact",
+      "source_proof": "Provided by frozen renderer QA extraction; hash independently measured by reviewer."
+    }
+  ],
+  "independent_redecode": {
+    "ffmpeg_path": "D:/story2video/artifacts/render-tools/verified/ffmpeg-9.1-essentials_build/bin/ffmpeg.exe",
+    "ffmpeg_size": 110590976,
+    "ffmpeg_sha256": "ed8f66cb877087a96f5bbb40a2944f0e764f2ad8870d5cb647360d912e62bc07",
+    "binary_binding_verified_before_execution": true,
+    "command_template": "& verified_absolute_ffmpeg -hide_banner -loglevel error -nostdin -y -ss (n/30) -i topic-v2-zh.mp4 -frames:v 1 actual-mp4/independent-audit/frame-NNNN.png",
+    "results": [
+      {
+        "topic": "space",
+        "frame": 380,
+        "seconds": "12.666666666666666",
+        "file": "frame-0380.png",
+        "sha256": "8c9875107293633db6c9261170a770fa7104282e66aa15ae666d9c363f2ecffa",
+        "provided_sample_sha256": "8c9875107293633db6c9261170a770fa7104282e66aa15ae666d9c363f2ecffa",
+        "matches_provided": true
+      },
+      {
+        "topic": "space",
+        "frame": 386,
+        "seconds": "12.866666666666667",
+        "file": "frame-0386.png",
+        "sha256": "ce89090e7828a784a8e804408e2661f722bf4154b36a1112e58388ceab569e07",
+        "provided_sample_sha256": "ce89090e7828a784a8e804408e2661f722bf4154b36a1112e58388ceab569e07",
+        "matches_provided": true
+      },
+      {
+        "topic": "space",
+        "frame": 1040,
+        "seconds": "34.666666666666664",
+        "file": "frame-1040.png",
+        "sha256": "e8f51eae47d54f76edf712f732d65dd6613604899154f89b6f2e54313cfab914",
+        "provided_sample_sha256": "e8f51eae47d54f76edf712f732d65dd6613604899154f89b6f2e54313cfab914",
+        "matches_provided": true
+      },
+      {
+        "topic": "space",
+        "frame": 1046,
+        "seconds": "34.86666666666667",
+        "file": "frame-1046.png",
+        "sha256": "0e98ea8d2b56b921c9b1c7afe67137827ae04d26a67047fdd7b160342f4aa75d",
+        "provided_sample_sha256": "0e98ea8d2b56b921c9b1c7afe67137827ae04d26a67047fdd7b160342f4aa75d",
+        "matches_provided": true
+      },
+      {
+        "topic": "space",
+        "frame": 1190,
+        "seconds": "39.666666666666664",
+        "file": "frame-1190.png",
+        "sha256": "136bf282d9466cd8f7120b4395100e54bbbbea008bfe9cc1087329cca94a7096",
+        "provided_sample_sha256": "136bf282d9466cd8f7120b4395100e54bbbbea008bfe9cc1087329cca94a7096",
+        "matches_provided": true
+      },
+      {
+        "topic": "space",
+        "frame": 1196,
+        "seconds": "39.86666666666667",
+        "file": "frame-1196.png",
+        "sha256": "7d91e715ba73d45d5853f75e4a332780e748ee6a0d641aada74d8c59b6a927c4",
+        "provided_sample_sha256": "7d91e715ba73d45d5853f75e4a332780e748ee6a0d641aada74d8c59b6a927c4",
+        "matches_provided": true
+      }
+    ]
+  },
+  "verification_commands": [
+    "Get-FileHash and Get-Item on all4 actual MP4 files against qa.reports SHA/bytes",
+    "Get-FileHash on renderer, input manifests, preproduction JSON, provenance, qa, original narration and all provided decoded PNGs",
+    "view_image actual-mp4/contact.png and listed original-size actual frames",
+    "Verified FFmpeg independent re-decode of critical frame pairs/triple; exact PNG SHA comparison",
+    "git rev-parse HEAD"
+  ],
+  "skill": "%USERPROFILE%/.codex/skills/science-shorts-visuals/SKILL.md",
+  "limits": [
+    "This is representative scientific visual sampling of the complete Traditional-Chinese-caption MP4, not continuous complete audio/video watching.",
+    "Each topic's12s preview MP4 SHA/bytes and declared QA were checked, but its re-encoded images were not separately reviewed; short preview is not a complete explanation.",
+    "No new full-source research or script score; unchanged claims use the prior fact audit and new preproduction visual review. Samples confirm expected encoded behavior.",
+    "Machine full decode, black/silence, loudness/peak and caption bounds are QA-reported checks; reviewer independently verified artifact bindings and9 critical decodes across the two topics.",
+    "No human first-watch/mobile legibility test, professional scientist signoff, aesthetic guarantee, retention or market evidence.",
+    "Schematic rays, particles, timing and apparatus remain qualitative, not a physics simulation."
+  ],
+  "unchanged_files": "Did not modify renderer, assets, existing preproduction reviews, original audits/gates or ice outputs.",
+  "human_acceptance": "PENDING",
+  "market_acceptance": "NOT_ASSESSED"
+}
+

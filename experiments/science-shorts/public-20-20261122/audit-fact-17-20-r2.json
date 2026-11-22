@@ -1,0 +1,68 @@
+[
+  {
+    "id": "17",
+    "script_sha256": "ff3b624a3f62e494a118437ff99342d143f3b9b6a69cda5ef092dfe0f606dbf6",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/16-3-wave-speed-on-a-stretched-string",
+        "locator": "Section 16.3, Figure 16.14 and force/acceleration derivation, lines 38–73",
+        "finding": "For fixed small-slope geometry, net transverse force on a string element equals tension times the difference of the two end slopes. Dividing by element mass gives acceleration; the wave speed is the square root of tension divided by the linear density."
+      },
+      {
+        "publisher": "UNSW Sydney Music Acoustics",
+        "url": "https://phys.unsw.edu.au/jw/strings.html",
+        "locator": "Harmonics in music, lines 89–98",
+        "finding": "The fixed-end fundamental is half a wavelength across the active length. At fixed length and linear density, its frequency increases with the square root of tension."
+      },
+      {
+        "publisher": "UNSW Sydney Physclips",
+        "url": "https://www.animations.physics.unsw.edu.au/jw/waves_superposition_reflection.htm",
+        "locator": "Wave pulses in a stretched string, lines 13–20",
+        "finding": "Transverse acceleration follows the vector sum of tensions. An already moving element continues through an instant of zero net force. This is a traveling-wave comparison from the same institution as the preceding source."
+      },
+      {
+        "publisher": "Yamaha Corporation",
+        "url": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism003.html",
+        "locator": "The rule of strings and pitch, lines 8–14",
+        "finding": "Tuning keys alter tension and greater tension raises pitch. The open string is supported at nut and saddle."
+      }
+    ],
+    "fact_narrative": "The revised causal bridge is valid for the stated small-deflection fundamental of the same string. With identical bowed shapes, transverse components of the local tensions add toward the baseline, and their net magnitude rises with tension. The same mass accelerates more at that displacement. For fixed active length and linear density the fundamental periods are proportional to the inverse square root of tension, so the tighter string crosses faster and completes more cycles per second. In the ideal mode, restoring force vanishes at the straight position while speed is nonzero. Keep applied tension tangent to the two local segments in the force inset and use the resultant toward the baseline, with opposite sides cancelling longitudinally. No exact rate or large-deflection claim."
+  },
+  {
+    "id": "20",
+    "script_sha256": "ff3b624a3f62e494a118437ff99342d143f3b9b6a69cda5ef092dfe0f606dbf6",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {
+        "publisher": "Rice University / OpenStax",
+        "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids",
+        "locator": "Section 10.2, Figure 10.19, Figure 10.20 and capillary rise equation, lines 74–89",
+        "finding": "Paper-towel wicking comes from attraction of the liquid to cellulose and to other liquid molecules. The capillary model for matching wettable circular channels has equilibrium rise inversely proportional to radius."
+      },
+      {
+        "publisher": "University of Washington",
+        "url": "https://courses.washington.edu/biomechs/lectures/lecture15.pdf",
+        "locator": "Lecture 15, Capillary rise and surface tension, lines 502–526 of text extraction",
+        "finding": "Direct force balance identifies the upward component of surface tension as 2πrγ cos θ and the raised column's downward weight as πr²hρg."
+      },
+      {
+        "publisher": "Ontario Science Centre",
+        "url": "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking",
+        "locator": "How does it work, lines 26–29",
+        "finding": "Provides a physical demonstration of water traveling through paper towel and identifies the small gaps between cellulose fibers."
+      },
+      {
+        "publisher": "USGS Water Science School",
+        "url": "https://www.usgs.gov/water-science-school/science/capillary-action-and-water?trk=article-ssr-frontend-pulse_little-text-block",
+        "locator": "Capillary Action, lines 19–29, publisher content via indexed URL variant",
+        "finding": "Describes wetting at the edges, a curved meniscus held together by surface tension, towel wicking and a finite gravitational head."
+      }
+    ],
+    "fact_narrative": "The revised causal bridge from edge wetting to connected liquid is supported by the cellulose and surface-tension sources. For equal height h and the same water, contact angle and gravity, the ideal circular-channel model gives capillary force divided by raised water weight equal to 2γ cos θ/(r h ρ g). Halving radius halves the absolute upward force but quarters the column weight, so the force-to-weight ratio doubles. The ideal channel supports the direction of capillary rise while giving no rate or quantitative height for irregular paper pores. Compare equal-height snapshots as a schematic and keep upward contact-line force at the meniscus. A taller equilibrium level is separate from the equal-height force comparison."
+  }
+]

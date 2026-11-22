@@ -18,6 +18,12 @@ cd ../..
 
 Git hooks 使用目前 shell 的 Python。可先啟用 `.venv`，或在 Git 指令前加上 `uv run --locked --group governance`，讓 runtime 找到治理使用的 PyYAML。
 
+## 安裝須在實際開發目錄重做
+
+Git hooks 存在各 clone 的 `.git/hooks/`，不隨 Git 傳遞。每次新 clone，都要在實際開發目錄執行上方安裝與下方驗收；隔離 checkout、bare remote 或 GitHub CI 的通過結果，不代表本機已安裝。worktree 共用主目錄的 `.git/hooks/`。驗收結果寫入 `memory/`；`artifacts/` 不進版控，不能當成唯一證據。
+
+`Governance Drift` workflow 有 paths filter，未改到治理路徑的 PR 不會執行，因此不設為必要檢查。預設分支的必要檢查為 `M0 CI` 的 `test (ubuntu-latest)`、`test (windows-latest)` 與 `secret-scan`。
+
 ## 驗收
 
 ```sh

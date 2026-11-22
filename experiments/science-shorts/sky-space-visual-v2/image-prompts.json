@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image_gen",
+  "calls": 3,
+  "prompts": {
+    "sky_day": "Create a premium adult educational editorial 3D illustration, portrait 9:16, beautiful clear daytime sky scene for a science explainer about why the sky is blue. The top 70% is a rich luminous clean blue atmospheric sky with subtle gradient, absolutely NO clouds, NO visible Sun or moon, NO stars, NO rays, NO diagram. The bottom 30% has stylized warm apricot and teal rolling coastal hills, a soft peach walking path and a tiny person in a cream jacket standing on the path at lower right, looking up at the blue sky. Sophisticated tactile 3D illustration, coherent with translucent turquoise glass and warm peach studio art direction: sculpted soft forms, elegant lighting, fine material depth, not flat clip art and not a photograph. Make sky luminous and inviting; enough tonal variation to feel alive. Leave the top 25% quiet blue for separately composited light title, and bottom 18% calm for subtitles. No text, no letters, no symbols, no infographic. Single coherent landscape and original character.",
+    "astronaut": "A single original full-body astronaut, isolated on a genuinely transparent background PNG cutout for an adult science explainer. Premium polished tactile stylized 3D editorial illustration, sophisticated not childish. Rounded ivory pressure suit, coral orange chest accents, subtle teal equipment, sculpted padded fabric and convincing glossy metallic gold visor, visor completely closed and opaque (no face visible). Helmet faces gently to image right, one gloved hand near a clearly visible small radio/microphone control on chest, other arm relaxed. Complete body with boots, no cropped limbs, realistic stylized adult proportions. Warm peach key light from upper left and cool turquoise rim light from right. Standing/floating neutral pose. Single astronaut only. No tether, no tube trailing out, no ground or cast shadow outside the astronaut, no scene, no planet, no stars, no waves, no letters, no text, no logos. Generous transparent margins, preserve alpha. Designed to remain legible when composited twice against a deep teal space background.",
+    "sky_sunset": "Edit this landscape into the matching SUNSET version for the same science explainer. Preserve exactly the same coastal hills, path, camera framing, person, pose, and composition. Change only the time of day and lighting: luminous warm apricot-orange and coral-red clear sky near the horizon, subtle deeper peach above, warm sunset glow across the hills and character, cool teal shadows. Keep the same sophisticated tactile 3D editorial illustration style. Absolutely NO clouds, no stars, no visible Sun disk (it will be composited separately), no beams or diagrams. Keep top 25% quiet for title and bottom 18% calm for subtitles. No text, letters, symbols, logos. This is the same place and observer at sunset, not a new scene."
+  },
+  "paths": {
+    "sky_day": "artifacts/science-shorts/sky-space-visual-v2/assets/sky-day.png",
+    "sky_sunset": "artifacts/science-shorts/sky-space-visual-v2/assets/sky-sunset.png",
+    "astronaut": "artifacts/science-shorts/sky-space-visual-v2/assets/astronaut.png"
+  },
+  "roles": {
+    "sky_day": "new scene",
+    "sky_sunset": "time-of-day edit with sky-day as reference",
+    "astronaut": "transparent foreground asset"
+  },
+  "cost": "Tool did not report currency cost; subscription, time, compute unpriced; no metered media API calls."
+}

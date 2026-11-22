@@ -4,6 +4,10 @@
 
 **主持人入口** · [題卡](readers/) · [揭曉詞](reveals.md) · [版本表與編輯審查](editorial.md) · [首輪 AI 摘要](ai-readers.md) · [複測逐輪原文](blind-retest.md) · [讀者記錄表](reader-record.csv)
 
+下一輪可直接使用[無問答試讀主持包](next-round.md)和[空白記錄表](reader-record-next.csv)。交接後的資料檢查與未驗證項目見[驗收紀錄](validation-2026-11-21.md)。本機檢查命令為 `python -X utf8 experiments/story-quality-lab/verify.py`，只驗證資料結構，不判定故事公平性或內容關卡。
+
+成片首次觀看使用 [Shorts Viewer Gate](shorts-viewer-gate.md)。三種反轉的原創試作見[實驗題卡](viewer-gate-pilots.md)，主持人記錄見[空白試片表](viewer-gate-record.csv)。
+
 ## 怎麼測
 
 1. 每位第一次接觸故事的讀者，各拿一張窗與一張海報題卡。依序分派 67C → 94N、26M → 41K、73H → 58R 給前三位，下一組用相同配對逆序，之後循環。每張卡開始前先問讀者是否接觸過這則故事。讀過任何版本的人可提供編輯意見，該故事不計入首次盲測。

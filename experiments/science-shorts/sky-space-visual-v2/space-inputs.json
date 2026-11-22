@@ -1,0 +1,57 @@
+{
+  "revision": "space-visual-v2",
+  "files": {
+    "experiments/science-shorts/batch-20261121/scripts-final.json": {
+      "size": 22940,
+      "sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8"
+    },
+    "experiments/science-shorts/batch-20261121/source-cards.json": {
+      "size": 4770,
+      "sha256": "8e480a70887131396ef92d5cad0e8a878d0ae597eba0743bae2b0229acf605b4"
+    },
+    "experiments/science-shorts/batch-20261121/editorial-gate.json": {
+      "size": 1514,
+      "sha256": "c4cba6d81cebdcb792f9beb638129e26ececdbebdf3397258d90b09380240926"
+    },
+    "experiments/science-shorts/batch-20261121/reviews/fact-visual-v1.json": {
+      "size": 51731,
+      "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40"
+    },
+    "experiments/science-shorts/batch-20261121/reviews/reader-a-v1.json": {
+      "size": 5525,
+      "sha256": "c711c648a496f91089eea0cfd61c528dde4d305301bf8fb0715eb0d86577b1fe"
+    },
+    "experiments/science-shorts/batch-20261121/reviews/reader-b-v1.json": {
+      "size": 5379,
+      "sha256": "a79256b9a77b6664596821da0d2a56dab432ea58b9f8a77540a9ad99b68d5a2d"
+    },
+    "experiments/episode-02-73h/render-manifest.json": {
+      "size": 703,
+      "sha256": "ad137928738f0ce7d8e1cd5e9195cc01f6f30e6c307585abab9dff5417dcd321"
+    },
+    "experiments/science-shorts/ice-visual-v2/render.py": {
+      "size": 22543,
+      "sha256": "aad0052d5f0f486ee3cc6a05e80982e9a0c1dbedee7caa7710b38da549ad1438"
+    },
+    "experiments/science-shorts/sky-space-visual-v2/image-prompts.json": {
+      "size": 3463,
+      "sha256": "e1bc70de5728bb956c96923a86debd74fa2a523fd7a23e0511c4edca773748ea"
+    },
+    "experiments/science-shorts/sky-space-visual-v2/visual-plan.md": {
+      "size": 1662,
+      "sha256": "5161375c053adbc7168be679fdae6217ce01a05aeb56e8d45e37235bc055f96c"
+    },
+    "artifacts/science-shorts/batch-20261121/space/timeline.json": {
+      "size": 5512,
+      "sha256": "8e4c51e2df5e11ab1769905671edd109e00cc9d5b661e515e2c927cf01f9c5e1"
+    },
+    "artifacts/science-shorts/batch-20261121/space/narration.wav": {
+      "size": 2483244,
+      "sha256": "af8e6c803522271e8ecc56ee152f0fbf003673852dff81797cd9d4d33c90c017"
+    },
+    "artifacts/science-shorts/sky-space-visual-v2/assets/astronaut.png": {
+      "size": 2131938,
+      "sha256": "d98848b0a9d73a87887d0a97fb4ee8b4ab72c50a114940c80da9442451950daa"
+    }
+  }
+}

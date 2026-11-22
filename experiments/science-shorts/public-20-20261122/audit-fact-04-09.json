@@ -1,0 +1,59 @@
+[
+  {
+    "id": "04",
+    "script_sha256": "04b126af0bc1a173e4bf8f322b6d4063a016502c4f9a9e8e2c28ea1a787bb59f",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {"publisher":"Harvard Project Zero","url":"https://pz.harvard.edu/sites/default/files/AirPressureModule.pdf","inspection":"Opened full parsed PDF; printed introduction p.8 and section Revealing Relational Causality Behind Drinking From a Straw (parsed lines 162–164, 1717–1735), plus release example at 2454–2456.","support":"Removing air lowers internal pressure relative to atmospheric pressure; external pressure drives liquid upward. Air admitted again removes the pressure difference."},
+      {"publisher":"University of Houston Physics Outreach","url":"https://outreach.phys.uh.edu/pressureexperiments.htm","inspection":"Opened HTML, Sucking Water Through a Straw section, parsed lines 129–150.","support":"Reduced mouth pressure and atmospheric pressure on the drink explain the upward flow. An additional straw open to air prevents the required pressure reduction."}
+    ],
+    "fact":"The causal claim is supported: an initially open straw equilibrates with room air; reducing pressure above its liquid allows the higher external pressure on the exposed liquid to drive flow upward against gravity. Reopening the top restores equal gas pressure and the communicating liquid levels settle together. The script describes an ordinary open cup, immersed unobstructed straw, and a transient sip; it makes no unlimited lifting-height or perfect-vacuum claim.",
+    "scenes_inspection":{"path":"experiments/science-shorts/public-20-20261122/scenes.py","sha256":"a1b1bc98b076a505a833c0f133d12531d54b9751d296d99e7e1b8f95c97cadd2","function":"straw","invariants":"Baseline liquid levels match, external arrows act on the exposed drink surface, the column rises within the straw, and reopening returns its level. These directions agree with the narration. The simplified surface-pressure arrows are not a claim that air pressure acts only downward."},
+    "scope":"Fact gate only. Draft PNG observations and any subsequent visual acceptance are separate; this is not an encoded-video receipt.",
+    "checked_on":"2026-11-22"
+  },
+  {
+    "id": "05",
+    "script_sha256": "04b126af0bc1a173e4bf8f322b6d4063a016502c4f9a9e8e2c28ea1a787bb59f",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {"publisher":"University of Iowa Physics","url":"https://instructional-resources.physics.uiowa.edu/6a4240-refraction-penny-cup","inspection":"Opened HTML, Procedure, parsed lines 48–51.","support":"The initially obscured coin becomes visible when water is added without moving the observer's eyes."},
+      {"publisher":"Western Washington University Physics","url":"https://physics.wwu.edu/refraction-re-appearing-penny","inspection":"Opened HTML, demonstration instructions, parsed lines 50–57.","support":"A fixed camera is positioned just beyond sight of the coin over the rim; adding water without disturbing the coin makes it visible."},
+      {"publisher":"University of Iowa Physics, supplemental optics lecture","url":"https://homepage.physics.uiowa.edu/~rmerlino/1200_S_15/1200_L_29_L%26O_1.pdf","inspection":"Opened full parsed lecture PDF, printed p.3, parsed lines 126–185.","support":"Defines the normal perpendicular to the surface, seeing as light entering the eyes, and oblique water-to-air refraction away from the normal. Added because the two demonstration pages do not explicitly state the bending direction."}
+    ],
+    "fact":"The two supplied university demonstrations support the fixed coin/fixed observer experiment. The additional Iowa lecture explicitly supports the directional explanation: a transmitted ray leaving water obliquely for air bends away from the surface normal. A suitable ray can therefore clear the rim and reach the unchanged eye position. The script uses can, and describes this demonstration geometry, rather than claiming all incident angles transmit or every water level reveals a coin. No coin motion is required.",
+    "scenes_inspection":{"path":"experiments/science-shorts/public-20-20261122/scenes.py","sha256":"a1b1bc98b076a505a833c0f133d12531d54b9751d296d99e7e1b8f95c97cadd2","function":"coin","invariants":"Coin and eye coordinates are fixed; the normal is vertical at the horizontal water boundary; the outgoing segment makes a larger angle to that normal and clears the rim. The empty straight line is blocked at the rim. Current code uses a continuous two-segment pulse at p=.5. Geometry is qualitative, not a measured Snell-law construction."},
+    "scope":"Fact gate only. Cutaway clarity and newly generated motion samples need separate visual acceptance; this is not an encoded-video receipt.",
+    "checked_on":"2026-11-22"
+  },
+  {
+    "id": "06",
+    "script_sha256": "04b126af0bc1a173e4bf8f322b6d4063a016502c4f9a9e8e2c28ea1a787bb59f",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {"publisher":"American Physical Society","url":"https://www.aps.org/learning-resources/getting-warmer-colder","inspection":"Opened HTML, Teacher Background, parsed lines 225–232.","support":"Equilibrated objects share room temperature; heat flows from warmer skin into cooler objects; higher metal conductivity removes finger heat faster and feels colder."},
+      {"publisher":"University of California Santa Barbara / UC eScholarship","url":"https://escholarship.org/content/qt5571212q/qt5571212q.pdf?t=prk0re","inspection":"Opened full parsed thesis PDF, A Thermoelectric Display for Assessment of Touch Sensory Deficits, Chapter 1 Introduction, printed p.1, parsed lines 407–417.","support":"Explicit room-temperature wood/metal comparison: equal temperatures after equilibration, metal feels colder because it conducts hand heat away more readily."}
+    ],
+    "fact":"Both inspected sources directly support the explanation. The script establishes equal initial room temperature and skin warmer than both rulers. Heat therefore enters both materials, while ordinary metal transports heat away from the contact region more readily than wood, leading to faster local skin cooling and a colder sensation. This is a comparison under the stated initial conditions, not a claim that metal always has a lower temperature or always feels colder. The qualitative account does not assert a universal numerical heat-transfer rate.",
+    "scenes_inspection":{"path":"experiments/science-shorts/public-20-20261122/scenes.py","sha256":"a1b1bc98b076a505a833c0f133d12531d54b9751d296d99e7e1b8f95c97cadd2","function":"metal","invariants":"Both objects receive the same initial temperature label. Heat arrows point from fingers into the materials, with greater penetration and spreading on the metal side. No cold substance or heat flow from the cooler ruler to warmer skin is depicted."},
+    "scope":"Fact gate only. The amount of visible cooling and presentation clarity are separate visual questions; this is not an encoded-video receipt.",
+    "checked_on":"2026-11-22"
+  },
+  {
+    "id": "09",
+    "script_sha256": "04b126af0bc1a173e4bf8f322b6d4063a016502c4f9a9e8e2c28ea1a787bb59f",
+    "status": "PASS",
+    "critical_defects": [],
+    "sources_checked": [
+      {"publisher":"Yale University Physics Demonstrations","url":"https://yppsweb2.its.yale.edu/physics/demos/viewdemo.asp?ID=2C50.10&Record=Back","inspection":"Opened returned Air Resistance and Viscous Drag demonstration page, parsed lines 4–8; legacy URL returns display code 2C30.65.","support":"Compares a dropped flat sheet against the same paper crumpled, demonstrating surface-area effects on air resistance."},
+      {"publisher":"NASA Glenn Research Center","url":"https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/","inspection":"Opened HTML, forces, drag equation and terminal-velocity discussion, parsed lines 8–35.","support":"Weight equals mass times gravitational acceleration; drag opposes motion and depends on speed, projected area, air density and drag coefficient; net downward force is weight minus drag."}
+    ],
+    "fact":"Crumpling preserves the amount and mass of paper, so the two sheets have equal weight at essentially the same location. Their falling motion in air also depends on drag, which opposes the downward velocity. Yale supplies the direct paper demonstration and NASA supplies the force and drag relationships. The script appropriately compares broadside sheet and compact ball at the same speed and says typically: projected area and shape both matter, so it does not assert a universal area-only law or a fixed drag ratio. Flutter and the crumpled paper arriving first describe the ordinary demonstrated outcome.",
+    "scenes_inspection":{"path":"experiments/science-shorts/public-20-20261122/scenes.py","sha256":"a1b1bc98b076a505a833c0f133d12531d54b9751d296d99e7e1b8f95c97cadd2","function":"paper","invariants":"Downward gravity arrows are equal and upward drag arrows oppose the fall; the same-speed comparison shows greater sheet drag. Current k=3 has downward motion. Arrow scaling still merits a separate visual correction because the flat drag arrow is longer than its gravity arrow; this fact PASS does not approve that force-diagram presentation."},
+    "scope":"Fact gate only. Force-arrow scaling was sent separately to the parent for visual correction and is not accepted by this receipt; this is not an encoded-video receipt.",
+    "checked_on":"2026-11-22"
+  }
+]

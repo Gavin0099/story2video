@@ -1,0 +1,50 @@
+{
+  "schema_version": "manual-channel-split.v1",
+  "approved_at": "2026-11-22",
+  "browser_connection": "Primary",
+  "status": "three_pilots_public_in_studio",
+  "science": {
+    "display_name": "WhyNest Lab｜一分鐘科普",
+    "verified_public_display_name": "WhyNest Lab",
+    "preferred_handle": "@WhyNestLab",
+    "handle_availability_verified": true,
+    "channel_id": "UCJpx-XFeS91Vd26QokWAWOw",
+    "creation_status": "created_brand_assets_and_bilingual_description_saved",
+    "description_en": "Everyday questions, explained through clear visual science. Short illustrated explanations with English narration and Traditional Chinese captions. Start with ice, skies, and sound.",
+    "description_zh_Hant": "一個問題，懂一個原理。用插畫與動畫解說日常科學，從冰、天空與聲音開始。英文旁白，繁體中文字幕。",
+    "avatar": "artifacts/science-shorts/channel-split-20261122/brand-v2/avatar.png",
+    "banner": "artifacts/science-shorts/channel-split-20261122/brand-v2/banner.jpg",
+    "allowed_episode_ids": ["ice", "sky", "space"],
+    "upload_visibility": "private",
+    "public_release_authorized": true
+  },
+  "turtle_soup": {
+    "display_name": "CluePause｜謎底之前",
+    "handle": "@CluePause",
+    "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+    "identity_evidence": "verified in local signed-in Chrome Studio and channel switcher",
+    "allowed_science_uploads": false
+  },
+  "delivery_preflight": "experiments/science-shorts/channel-split-20261122/delivery-preflight.json",
+  "delivery_mode": "manual_studio_not_connected_to_core_cli",
+  "pre_upload_requirements": [
+    "Verify intended account access in the active browser",
+    "Verify existing CluePause owner access and check for existing WhyNest Lab to avoid duplicate creation",
+    "Confirm actual new science channel ID is distinct from CluePause before upload",
+    "Verify local file transfer capability without moving credentials",
+    "Verify per-video audience and disclosure against actual content",
+    "Save and reopen each video to confirm private visibility and subtitles"
+  ],
+  "live_videos": [
+    {"episode_id": "ice", "video_id": "a-tHhhJhNG8", "visibility": "public", "public_verified_at": "2026-11-22T00:42:19.4039030+08:00", "bilingual_caption_tracks_verified": true, "signed_in_playback_started": true},
+    {"episode_id": "sky", "video_id": "EVWSVM3KBzA", "visibility": "public", "public_verified_at": "2026-11-22T00:42:28.2150014+08:00", "bilingual_caption_tracks_verified": true, "signed_in_playback_started": true},
+    {"episode_id": "space", "video_id": "cezLqruPBzQ", "visibility": "public", "public_verified_at": "2026-11-22T00:43:59.0280385+08:00", "bilingual_caption_tracks_verified": true, "signed_in_playback_started": true}
+  ],
+  "last_browser_result": {
+    "action": "read_only_identity_reconnaissance",
+    "error_code": "UNAUTHORIZED",
+    "message": "This app connection requires reauthentication. Reconnect the app and try again.",
+    "remote_changes_performed": false,
+    "fallback": "local signed-in Chrome after verifying CluePause ownership and distinct science channel ID"
+  }
+}

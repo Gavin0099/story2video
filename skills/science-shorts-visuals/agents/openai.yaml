@@ -1,0 +1,4 @@
+interface:
+  display_name: "科普 Shorts 視覺製作"
+  short_description: "Create science Shorts with layered artwork, animation and review"
+  default_prompt: "Use $science-shorts-visuals to create a science Short with illustrated scenes and accurate mechanism animation."

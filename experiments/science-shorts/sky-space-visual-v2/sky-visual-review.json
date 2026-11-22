@@ -1,0 +1,360 @@
+{
+  "schema_version": "science-visual-review.v2",
+  "reviewer": {
+    "agent": "/root/fact_visual_audit",
+    "role": "Independent AI scientific visual reviewer; not author or audience scorer",
+    "model": "inherited native agent (API未提供精確版本)",
+    "human": false,
+    "domain_expert_claim": false,
+    "tokens": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21 15:39:43 UTC",
+  "git_sha": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea",
+  "status": "PASS",
+  "critical_defects": [],
+  "visual_plan_pass": true,
+  "local_encode_allowed": true,
+  "renderer_path": "experiments/science-shorts/sky-space-visual-v2/render.py",
+  "renderer_sha256": "f74cf527f05dd0bb80c31433cb654f6d6f482e88d5c71600bc21b0647fc692b4",
+  "script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+  "scope": "Fresh review of new visual plan, renderer implementation and sampled PNG previews against unchanged scientific claims; not a reuse of the former visual pass.",
+  "original_fact_basis": {
+    "audit": "experiments/science-shorts/batch-20261121/reviews/fact-visual-v1.json",
+    "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40",
+    "method": "Previously independently visited primary sources retained for unchanged claims. No fresh full-source research or audience rescoring in this incremental visual review.",
+    "excluded": "NASA Cosmicopia timeout remains excluded even though its historical card remains in source-cards.json."
+  },
+  "public_content_check": {
+    "cues": 10,
+    "script_vs_original_timeline_en_zh_claim_ids": "10/10 exact",
+    "narration_and_timeline": "Original files bound by per-topic manifest; unchanged bytes verified."
+  },
+  "limitations": [
+    "Pre-encode Pillow PNG previews and renderer code; no new MP4 exists within this review scope.",
+    "Contact sheet covers all ten cue midpoints; selected original-size images and motion pairs inspected. This is not continuous full-video/audio viewing.",
+    "No human first-watch, mobile legibility, professional scientist certification, audience score, aesthetic guarantee or market acceptance.",
+    "Qualitative scientific schematics: lengths, colors, particle spacing, wave timing and apparatus are simplified. These are not physical simulations or quantitative measurements.",
+    "Approval binds these exact renderer and inputs hashes. Changed renderer, assets, timeline or public claims need renewed review; actual encoded MP4 sampling remains required."
+  ],
+  "market_acceptance": "NOT_ASSESSED",
+  "human_acceptance": "PENDING",
+  "actual_mp4_review": "PENDING",
+  "verification_commands": [
+    "Get-Content render.py, visual-plan.md, image-prompts.json, topic-inputs.json and original source-cards.json",
+    "Get-FileHash -Algorithm SHA256 for renderer, inputs, every manifest file and all preview PNGs; Get-Item size compared to manifest",
+    "ConvertFrom-Json comparison of each original episode cue en, zh and claim_ids with its original timeline",
+    "view_image of contact sheets and listed original-size previews; independent evaluation of motion formulas",
+    "git rev-parse HEAD"
+  ],
+  "episode": "sky",
+  "revision": "sky-visual-v2",
+  "inputs_path": "experiments/science-shorts/sky-space-visual-v2/sky-inputs.json",
+  "inputs_sha256": "abdebf4f4f9e5ebfd10cd6e4a406ba1b55003b779ced9176eb5145503c85432c",
+  "input_file_checks": [
+    {
+      "path": "experiments/science-shorts/batch-20261121/scripts-final.json",
+      "sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+      "size": 22940,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/source-cards.json",
+      "sha256": "8e480a70887131396ef92d5cad0e8a878d0ae597eba0743bae2b0229acf605b4",
+      "size": 4770,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/editorial-gate.json",
+      "sha256": "c4cba6d81cebdcb792f9beb638129e26ececdbebdf3397258d90b09380240926",
+      "size": 1514,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/reviews/fact-visual-v1.json",
+      "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40",
+      "size": 51731,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/reviews/reader-a-v1.json",
+      "sha256": "c711c648a496f91089eea0cfd61c528dde4d305301bf8fb0715eb0d86577b1fe",
+      "size": 5525,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/batch-20261121/reviews/reader-b-v1.json",
+      "sha256": "a79256b9a77b6664596821da0d2a56dab432ea58b9f8a77540a9ad99b68d5a2d",
+      "size": 5379,
+      "pass": true
+    },
+    {
+      "path": "experiments/episode-02-73h/render-manifest.json",
+      "sha256": "ad137928738f0ce7d8e1cd5e9195cc01f6f30e6c307585abab9dff5417dcd321",
+      "size": 703,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/ice-visual-v2/render.py",
+      "sha256": "aad0052d5f0f486ee3cc6a05e80982e9a0c1dbedee7caa7710b38da549ad1438",
+      "size": 22543,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/sky-space-visual-v2/image-prompts.json",
+      "sha256": "e1bc70de5728bb956c96923a86debd74fa2a523fd7a23e0511c4edca773748ea",
+      "size": 3463,
+      "pass": true
+    },
+    {
+      "path": "experiments/science-shorts/sky-space-visual-v2/visual-plan.md",
+      "sha256": "5161375c053adbc7168be679fdae6217ce01a05aeb56e8d45e37235bc055f96c",
+      "size": 1662,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/batch-20261121/sky/timeline.json",
+      "sha256": "cde29dd369778bfe7a8dd1f6316cc2370cc2b7ab7eb2264359b722f9adc2780e",
+      "size": 5407,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/batch-20261121/sky/narration.wav",
+      "sha256": "8fed802a3b6a37b7519dbead9340778d2c78f61c778b2b02c364b5d5a3a5b74d",
+      "size": 2209644,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/sky-space-visual-v2/assets/sky-day.png",
+      "sha256": "1a53f9e977d5164b6ea29cc34b438fd6e732b3c30fd36384788477d3bd3652d4",
+      "size": 1961566,
+      "pass": true
+    },
+    {
+      "path": "artifacts/science-shorts/sky-space-visual-v2/assets/sky-sunset.png",
+      "sha256": "ad98808182e969ec897505fe28dbe539d89302d800871daf2698a967b6d00ae2",
+      "size": 2016503,
+      "pass": true
+    }
+  ],
+  "preview_evidence": [
+    {
+      "file": "contact.png",
+      "sha256": "c81ba6ee45a9dc0fdd9c03a77f0037162d2585ebc809a3d792cbfaf514bc1c99",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/contact.png",
+      "inspection": "contact sheet inspected"
+    },
+    {
+      "file": "frame-1040.png",
+      "sha256": "78e805c2c49d5eeb9a727ed6e5fb3d12f55dab9e4a599aa42c0e5fc791e12b28",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/frame-1040.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-1046.png",
+      "sha256": "c75720e4386f558c33ccac974f77156f79662d95308c8afe5f35bdc3665d65ae",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/frame-1046.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "frame-1070.png",
+      "sha256": "6551bceb773644509cadfef5752920face131e03f6d4ed6bb718b452ec238b60",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/frame-1070.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-01.png",
+      "sha256": "9e42689f105acb28b415f5d3deae37db85575dc9c2f5d5bcd9833e0509a7d1f6",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-01.png",
+      "inspection": "original-size inspected after final composition revision"
+    },
+    {
+      "file": "shot-02.png",
+      "sha256": "eb24c7048c7e29a10bb7c4837d678496cb04387c6bdbc11728de756dd9b8efba",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-02.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-03.png",
+      "sha256": "1f2173c43c2e99a04053f7923eec376382c91a38185611261fb0e7957d9455c6",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-03.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-04.png",
+      "sha256": "ca184ca1e5fb213b0518ae25b916679b7e7c6779ce0ed7b66011244aa657ca08",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-04.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-05.png",
+      "sha256": "d7d3ac0144776618da44c33590096ad792fc114e3f58ce3ccd19eec41d04f6f8",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-05.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-06.png",
+      "sha256": "ebaec4b05906ef09fc6f9356ea9260eefeb4a2694c498db8b32d2fd63a027372",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-06.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-07.png",
+      "sha256": "f3b07cb949b8a90d396e5a8621eab3b9e6892b0e119355b938afcb15c6516bac",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-07.png",
+      "inspection": "midpoint inspected through contact sheet; file hash verified"
+    },
+    {
+      "file": "shot-08.png",
+      "sha256": "d9a38542380bc33e3009dab2cc6d07805e33ec1a95f5ddaad5030b3cdc7ca714",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-08.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-09.png",
+      "sha256": "5b0722b9660c1805dc7cc394d1c9707464f07fee0ccf8153aedb5c294693850a",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-09.png",
+      "inspection": "original-size inspected"
+    },
+    {
+      "file": "shot-10.png",
+      "sha256": "aba7e3fd955d8bb966b464e65498a35560587055a8bebe91018077ba52e601ed",
+      "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-10.png",
+      "inspection": "original-size inspected after final composition revision"
+    }
+  ],
+  "revision_history": [
+    {
+      "status": "PASS",
+      "renderer_sha256": "e531f48dba09303937e21bd9d62ff5845ffcecf7c0b7dd4e2a829bb26ddd3a11",
+      "review_sha256": "d0ff7dfb23415d026c429bd28840d80b87d81081a67f6f8aaacc182bfb11f57f",
+      "reviewed_at_utc": "2026-11-21 15:37:25 UTC",
+      "critical_defects": [],
+      "superseded_reason": "Author requested composition-only revision before encode. Old receipt written immediately before the message arrived; encoding paused pending independent revision review.",
+      "prior_changed_preview_hashes": [
+        {
+          "file": "contact.png",
+          "sha256": "b79a0e845162f605a4b0a19d0d01f5ee77e76eec3a41a8c96185f8f0b515360e",
+          "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/contact.png",
+          "inspection": "contact sheet inspected"
+        },
+        {
+          "file": "shot-01.png",
+          "sha256": "79cb7664ff4b42c674ad84dcb06ec20ccbfd5299849893e8e0c6fd7ede56211e",
+          "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-01.png",
+          "inspection": "midpoint inspected through contact sheet; file hash verified"
+        },
+        {
+          "file": "shot-06.png",
+          "sha256": "99421539e96f237c8ba075f117de12a9db839d49060c22c938dfa17e29a2ff71",
+          "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-06.png",
+          "inspection": "original-size inspected"
+        },
+        {
+          "file": "shot-10.png",
+          "sha256": "404ea4bae0c7fb08fac414e7776df70a839ce9d7203d0088a7873ebcc911aaea",
+          "path": "artifacts/science-shorts/sky-space-visual-v2/sky/preview/shot-10.png",
+          "inspection": "midpoint inspected through contact sheet; file hash verified"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "renderer_sha256": "f74cf527f05dd0bb80c31433cb654f6d6f482e88d5c71600bc21b0647fc692b4",
+      "reviewed_at_utc": "2026-11-21 15:39:43 UTC",
+      "method": "Reversed only right-aligned raster crop and sky closing-card/text y positions in memory; original UTF-8 bytes reproduce exact prior e531 SHA. Both manifests reverified. Sky shots01/06/10 and contact freshly viewed. All other sky PNGs and every space PNG byte-identical.",
+      "prior_renderer_reconstructed_sha256": "e531f48dba09303937e21bd9d62ff5845ffcecf7c0b7dd4e2a829bb26ddd3a11",
+      "prior_exact": true,
+      "inputs_unchanged": true,
+      "changed_pngs": [
+        "contact.png",
+        "shot-01.png",
+        "shot-06.png",
+        "shot-10.png"
+      ],
+      "critical_defects": []
+    }
+  ],
+  "checks": [
+    {
+      "id": "sky.c1",
+      "status": "PASS",
+      "evidence": "sky_colors / shot-02: sunlight represented as a mixture of visible colors. Explicit note says separate color lines identify components, not spontaneous physical dispersion.",
+      "sources": [
+        "NASA sky",
+        "NOAA/NWS"
+      ]
+    },
+    {
+      "id": "sky.c2-scattering",
+      "status": "PASS",
+      "evidence": "sky_scatter / shots04–05: molecule marker, outgoing arrows away from it and surviving forward beam; five incident traces in each blue/red panel, four versus one redirected as explicitly nonquantitative illustration. Blue traces remain blue, red remain red.",
+      "sources": [
+        "NASA sky",
+        "NOAA/NWS"
+      ]
+    },
+    {
+      "id": "sky.c2-eye",
+      "status": "PASS",
+      "evidence": "sky_hero index5 / shot-06: incoming blue paths terminate at separate eye symbol, direct solar arrow is separate. Text explicitly identifies sky away from Sun."
+    },
+    {
+      "id": "sky.c3-path",
+      "status": "PASS",
+      "evidence": "sky_atmosphere / shots03,07,08: earth() reused without changing atmosphere shell, observer=(540,1000) fixed. Short path (540,850)→observer has length150px; long segment(110,1000)→observer length430px, both within same atmospheric layer. Solar angle changes, not atmosphere thickness.",
+      "caveat": "Sun symbol, eye altitude and shell thickness are explicitly schematic, not astronomical scale."
+    },
+    {
+      "id": "sky.c3-motion",
+      "status": "PASS",
+      "evidence": "shot-09 and frames1040/1046: three blue markers move upward/outward along their blue arrows, y decreases by25,29.5,34px respectively while red forward beam stays red and continues toward observer. Frame1070 confirms repeated pulses, with expected modulo-cycle reset; no reverse travel or blue-to-red conversion.",
+      "formula_samples": [
+        {
+          "frame": 1040,
+          "points": [
+            {
+              "x": 166.66666666666663,
+              "y": 916.666666666667
+            },
+            {
+              "x": 284.36666666666656,
+              "y": 836.7666666666673
+            },
+            {
+              "x": 402.06666666666666,
+              "y": 737.0666666666666
+            }
+          ]
+        },
+        {
+          "frame": 1046,
+          "points": [
+            {
+              "x": 170.16666666666669,
+              "y": 891.6666666666666
+            },
+            {
+              "x": 287.8666666666666,
+              "y": 807.2666666666669
+            },
+            {
+              "x": 405.5666666666667,
+              "y": 703.0666666666662
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sky.labels",
+      "status": "PASS",
+      "evidence": "Ten sampled subtitles align with unchanged cue meaning. SCHEMATIC / NOT TO SCALE and relevant Chinese qualifiers retained. Day/sunset art provides setting, not new mechanistic evidence."
+    }
+  ],
+  "optional_art_suggestions": [
+    "Increase contrast or add a small backing plate behind fine schematic notes over the hero photograph-like illustration; assess on a phone in a human review.",
+    "Current qualitative five-ray comparison should retain its explicit nonquantitative note if restyled."
+  ]
+}
+

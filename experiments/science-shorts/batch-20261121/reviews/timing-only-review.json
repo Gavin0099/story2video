@@ -1,0 +1,42 @@
+{
+  "schema_version": "science-timing-only-review.v1",
+  "reviewer": "/root/fact_visual_audit",
+  "model": "inherited native agent (API未提供精確版本)",
+  "reviewed_at_utc": "2026-11-21T14:44:29Z",
+  "status": "PASS",
+  "old_script_sha256": "2f19a9c3fa2f38acd69a32ed6f584d1ff126d451968a6403ed46a10f19a50585",
+  "new_script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+  "renderer_sha256": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8",
+  "differences": [
+    {
+      "path": "revision",
+      "before": "v1-sources2",
+      "after": "v1-sources2-timing1"
+    },
+    {
+      "path": "episodes.1.cues.9.pause",
+      "before": 0.8,
+      "after": 2.1
+    },
+    {
+      "path": "timing_change",
+      "after": "Sky measured 44.73 seconds; final non-speech hold increased 0.8→2.1 seconds. All public words, scene and visual instructions unchanged."
+    }
+  ],
+  "public_words_unchanged": true,
+  "source_claims_unchanged": true,
+  "scientific_visual_instructions_unchanged": true,
+  "all_other_pauses_unchanged": true,
+  "voice_speed_unchanged": true,
+  "added_non_speech_frames": 39,
+  "added_non_speech_seconds": 1.3,
+  "expected_not_yet_measured_sky_video_duration_seconds": 46.03,
+  "carry_forward_fact_pass": true,
+  "carry_forward_visual_plan_pass": true,
+  "critical_defects": [],
+  "old_audit_archive": "reviews/fact-visual-v1-pre-timing.json",
+  "limitations": [
+    "No new MP4 generated at time of this timing review.",
+    "No new full-video, human-viewer, market or professional-scientist attestation."
+  ]
+}

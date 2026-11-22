@@ -1,0 +1,49 @@
+{
+  "revision": "ice-visual-v2",
+  "files": {
+    "experiments/science-shorts/batch-20261121/scripts-final.json": {
+      "size": 22940,
+      "sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8"
+    },
+    "experiments/science-shorts/batch-20261121/source-cards.json": {
+      "size": 4770,
+      "sha256": "8e480a70887131396ef92d5cad0e8a878d0ae597eba0743bae2b0229acf605b4"
+    },
+    "experiments/science-shorts/batch-20261121/editorial-gate.json": {
+      "size": 1514,
+      "sha256": "c4cba6d81cebdcb792f9beb638129e26ececdbebdf3397258d90b09380240926"
+    },
+    "experiments/science-shorts/batch-20261121/reviews/fact-visual-v1.json": {
+      "size": 51731,
+      "sha256": "416d926451d2053b6b8104c2fc8e0e919992d05b66e7bf22d86eef434e252c40"
+    },
+    "experiments/science-shorts/batch-20261121/reviews/reader-a-v1.json": {
+      "size": 5525,
+      "sha256": "c711c648a496f91089eea0cfd61c528dde4d305301bf8fb0715eb0d86577b1fe"
+    },
+    "experiments/science-shorts/batch-20261121/reviews/reader-b-v1.json": {
+      "size": 5379,
+      "sha256": "a79256b9a77b6664596821da0d2a56dab432ea58b9f8a77540a9ad99b68d5a2d"
+    },
+    "experiments/episode-02-73h/render-manifest.json": {
+      "size": 703,
+      "sha256": "ad137928738f0ce7d8e1cd5e9195cc01f6f30e6c307585abab9dff5417dcd321"
+    },
+    "artifacts/science-shorts/batch-20261121/ice/timeline.json": {
+      "size": 4749,
+      "sha256": "8afb999027433c76a14511d05b1560d31c6d5f62fe91387cd31d290830a661fc"
+    },
+    "artifacts/science-shorts/batch-20261121/ice/narration.wav": {
+      "size": 2305644,
+      "sha256": "0c8a69645c622b40bc36218ce77f5ce20da0a1454533c27981c1e15957cd3286"
+    },
+    "artifacts/science-shorts/ice-visual-v2/assets/glass.png": {
+      "size": 1675073,
+      "sha256": "9dcf38cc1da0ce5ace2dd870281a207041910d18cbbaaf7c4bd540c18adcd9e8"
+    },
+    "artifacts/science-shorts/ice-visual-v2/assets/ice.png": {
+      "size": 2134686,
+      "sha256": "2d0565cff013160be784e3d8fc9084052ac3d5f9cc2078a2cfa1abd04a5b704e"
+    }
+  }
+}

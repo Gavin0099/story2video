@@ -1,0 +1,925 @@
+{
+  "schema_version": "science-script.v1",
+  "revision": "writer-a-r1-partial",
+  "editorial_status": "draft awaiting independent review",
+  "episodes": [
+    {
+      "id": "04",
+      "slug": "straw",
+      "title_en": "What Really Lifts Your Drink?",
+      "title_zh": "吸管裡的飲料是誰推上去的？",
+      "question": "What really lifts a drink through a straw?",
+      "invariants": [
+        "Open cup and submerged straw; no pressure arrows pulling upward from mouth. Downward pressure at exposed surface; upward displacement in tube after pressure difference.",
+        "Same room pressure throughout. Compare relative air pressure labels only; no absolute values or identical force arrows across differently sized surfaces.",
+        "At release show liquid fall back only after tube opens to room air."
+      ],
+      "simplification": "Neglect capillary rise in a typical drinking straw and flow losses; drawn markers are qualitative.",
+      "description_en": "Lowering air pressure above the liquid in a straw lets the relatively greater atmospheric pressure acting on the drink surface push liquid up the straw.",
+      "description_zh": "讓外面的空氣重新進入管口，飲料就會落回杯中液面的高度。",
+      "sources": [
+        {
+          "publisher": "Harvard Project Zero",
+          "url": "https://pz.harvard.edu/sites/default/files/AirPressureModule.pdf",
+          "evidence": "Drinking-from-a-straw example, lines 162–164: pressure difference and outside pressure pushing liquid."
+        },
+        {
+          "publisher": "University of Houston Physics Outreach",
+          "url": "https://outreach.phys.uh.edu/pressureexperiments.htm",
+          "evidence": "Sucking Water Through a Straw: mouth pressure decreases and surrounding air pushes on liquid."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Lowering air pressure above the liquid in a straw lets the relatively greater atmospheric pressure acting on the drink surface push liquid up the straw.",
+          "source_urls": [
+            "https://pz.harvard.edu/sites/default/files/AirPressureModule.pdf",
+            "https://outreach.phys.uh.edu/pressureexperiments.htm"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "Watch this drink climb a straw. Where does the push really come from?",
+          "zh": "飲料會沿著吸管往上爬。到底是誰在推？",
+          "scene": "hook",
+          "visual": "Macro cutaway of open cup and striped straw; liquid rises, then freeze above the cup’s surface.",
+          "overlay_en": "What lifts your drink?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Before the sip, the straw is open and room air reaches both surfaces.",
+          "zh": "喝之前，吸管開著，管內外的液面都接觸室內空氣。",
+          "scene": "rest",
+          "visual": "Pull back to a cross section with an open upper end and two equal-level menisci; label both room pressure.",
+          "overlay_en": "Equal pressure",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Now seal your lips around the straw and draw some air out of it.",
+          "zh": "嘴唇包緊吸管，先把管裡一些空氣吸出來。",
+          "scene": "lower",
+          "visual": "Close-up at mouth end; animate a few schematic air markers departing that end.",
+          "overlay_en": "Air leaves the straw",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "That makes the air pressure inside the straw lower than the pressure outside.",
+          "zh": "吸管裡的氣壓，就比外面低了。",
+          "scene": "compare",
+          "visual": "Split inset of air above tube and cup; show lower vs room pressure with comparison labels.",
+          "overlay_en": "Lower pressure",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Room air still presses on the exposed drink surface. That pressure pushes liquid up the straw.",
+          "zh": "外面的空氣還在壓著杯中液面，於是把飲料推上吸管。",
+          "scene": "rise",
+          "visual": "Return to cup cross-section; downward arrows above exposed surface, then animate liquid rising in the connected column.",
+          "overlay_en": "Room air pushes",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The difference in pressure is what gets the liquid moving upward against gravity.",
+          "zh": "正是內外氣壓的差，讓液體能逆著重力往上。",
+          "scene": "cause",
+          "visual": "Track the moving meniscus; retain lower-pressure label above it and a small downward gravity marker off to the side.",
+          "overlay_en": "Pressure difference",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Open the top to room air again, and the liquid drops back to the cup’s level.",
+          "zh": "讓外面的空氣重新進入管口，飲料就會落回杯中液面的高度。",
+          "scene": "release",
+          "visual": "Pull back as mouth lifts away; equalize pressure indicators first, then settle both surfaces at the same height.",
+          "overlay_en": "Open to room air",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Macro cutaway of open cup and striped straw; liquid rises, then freeze above the cup’s surface.",
+          "overlay_en": "What lifts your drink?"
+        },
+        {
+          "cue": 2,
+          "scene": "rest",
+          "action": "Pull back to a cross section with an open upper end and two equal-level menisci; label both room pressure.",
+          "overlay_en": "Equal pressure"
+        },
+        {
+          "cue": 3,
+          "scene": "lower",
+          "action": "Close-up at mouth end; animate a few schematic air markers departing that end.",
+          "overlay_en": "Air leaves the straw"
+        },
+        {
+          "cue": 4,
+          "scene": "compare",
+          "action": "Split inset of air above tube and cup; show lower vs room pressure with comparison labels.",
+          "overlay_en": "Lower pressure"
+        },
+        {
+          "cue": 5,
+          "scene": "rise",
+          "action": "Return to cup cross-section; downward arrows above exposed surface, then animate liquid rising in the connected column.",
+          "overlay_en": "Room air pushes"
+        },
+        {
+          "cue": 6,
+          "scene": "cause",
+          "action": "Track the moving meniscus; retain lower-pressure label above it and a small downward gravity marker off to the side.",
+          "overlay_en": "Pressure difference"
+        },
+        {
+          "cue": 7,
+          "scene": "release",
+          "action": "Pull back as mouth lifts away; equalize pressure indicators first, then settle both surfaces at the same height.",
+          "overlay_en": "Open to room air"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "coin",
+      "title_en": "Why Does This Coin Reappear?",
+      "title_zh": "倒水後，硬幣為什麼又出現？",
+      "question": "Why can you see a coin after adding water without moving the coin or your eye?",
+      "invariants": [
+        "Keep eye, coin, cup and rim fixed in both views.",
+        "Trace physical rays from coin toward eye, kink at water-air surface only; outgoing angle from vertical normal is larger than incoming angle, below critical incidence.",
+        "Opaque cup. After refraction, path clears the near rim; before water, straight coin-eye path strikes the rim."
+      ],
+      "simplification": "Use a representative ray per view. No total internal reflection, glare, waves, or measuring optical angles.",
+      "description_en": "With fixed coin and eye positions, adding water creates a water-air boundary. A light ray from the coin can refract away from the normal and reach the eye over the cup rim.",
+      "description_zh": "水改變了光走的路，硬幣還是在原本的地方。",
+      "sources": [
+        {
+          "publisher": "University of Iowa Physics and Astronomy",
+          "url": "https://instructional-resources.physics.uiowa.edu/6a4240-refraction-penny-cup",
+          "evidence": "Penny and Cup lab: line of sight blocked by rim before filling and penny appears after filling."
+        },
+        {
+          "publisher": "Western Washington University Physics",
+          "url": "https://physics.wwu.edu/refraction-re-appearing-penny",
+          "evidence": "Re-appearing penny demonstration: refraction at the water surface changes which rays reach the viewer."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "With fixed coin and eye positions, adding water creates a water-air boundary. A light ray from the coin can refract away from the normal and reach the eye over the cup rim.",
+          "source_urls": [
+            "https://instructional-resources.physics.uiowa.edu/6a4240-refraction-penny-cup",
+            "https://physics.wwu.edu/refraction-re-appearing-penny"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "This coin vanishes behind a cup rim. Add water, and it appears again.",
+          "zh": "硬幣被杯緣擋住了。倒點水，它卻又出現。",
+          "scene": "hook",
+          "visual": "Use fixed eye-level view of a cup. Coin invisible in the empty view, reveal only once the water settles.",
+          "overlay_en": "The reappearing coin",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The coin stays at the bottom, and your eye stays in exactly the same spot.",
+          "zh": "硬幣留在杯底，你的眼睛也停在原處。",
+          "scene": "lock",
+          "visual": "Show a cutaway side view with lock marks on coin and eye; mark the opaque near rim.",
+          "overlay_en": "Same eye position",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "In the empty cup, the straight path from the coin to your eye hits the rim.",
+          "zh": "杯子空的時候，硬幣到眼睛的直線路徑會撞上杯緣。",
+          "scene": "blocked",
+          "visual": "Animate one ray along the straight path and stop it at the opaque rim, leaving a dashed blocked continuation.",
+          "overlay_en": "Blocked by the rim",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Once you add water, light from the coin can cross from water into air.",
+          "zh": "加水後，來自硬幣的光能從水進入空氣。",
+          "scene": "boundary",
+          "visual": "Wipe water into cup while retaining coin and eye position; focus the flat water surface.",
+          "overlay_en": "Water / Air",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "As a ray crosses at an angle, it bends away from a line straight up from the surface.",
+          "zh": "光線斜著穿出水面時，會往遠離垂直線的方向偏折。",
+          "scene": "bend",
+          "visual": "Zoom at boundary; draw dashed vertical normal and correct incoming/outgoing segments.",
+          "overlay_en": "Refraction",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "That bend is refraction. A ray now clears the rim and reaches your eye.",
+          "zh": "這叫折射。折過去的光越過杯緣，進到你眼睛裡。",
+          "scene": "reach",
+          "visual": "Pull back and animate the full transmitted ray from coin to eye above rim.",
+          "overlay_en": "Ray reaches the eye",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The water changes the path of the light while the coin sits right where it started.",
+          "zh": "水改變了光走的路，硬幣還是在原本的地方。",
+          "scene": "return",
+          "visual": "Match-cut initial and filled eye views against stationary cup and coin schematic.",
+          "overlay_en": "Same coin, new path",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Use fixed eye-level view of a cup. Coin invisible in the empty view, reveal only once the water settles.",
+          "overlay_en": "The reappearing coin"
+        },
+        {
+          "cue": 2,
+          "scene": "lock",
+          "action": "Show a cutaway side view with lock marks on coin and eye; mark the opaque near rim.",
+          "overlay_en": "Same eye position"
+        },
+        {
+          "cue": 3,
+          "scene": "blocked",
+          "action": "Animate one ray along the straight path and stop it at the opaque rim, leaving a dashed blocked continuation.",
+          "overlay_en": "Blocked by the rim"
+        },
+        {
+          "cue": 4,
+          "scene": "boundary",
+          "action": "Wipe water into cup while retaining coin and eye position; focus the flat water surface.",
+          "overlay_en": "Water / Air"
+        },
+        {
+          "cue": 5,
+          "scene": "bend",
+          "action": "Zoom at boundary; draw dashed vertical normal and correct incoming/outgoing segments.",
+          "overlay_en": "Refraction"
+        },
+        {
+          "cue": 6,
+          "scene": "reach",
+          "action": "Pull back and animate the full transmitted ray from coin to eye above rim.",
+          "overlay_en": "Ray reaches the eye"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Match-cut initial and filled eye views against stationary cup and coin schematic.",
+          "overlay_en": "Same coin, new path"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "metal",
+      "title_en": "Why Does Metal Feel Colder Than Wood?",
+      "title_zh": "同樣室溫，金屬為什麼摸起來更冷？",
+      "question": "Why does room-temperature metal feel colder than room-temperature wood?",
+      "invariants": [
+        "Equal initial sample temperature, both below skin temperature; identical contact area and start time.",
+        "Heat arrows from hands toward both samples, thicker or faster on metal; no cold arrows travelling toward hands.",
+        "Changing skin temperature at contact, not changing ambient reading; no numeric rate claim."
+      ],
+      "simplification": "Focus on transient heat transfer into familiar bulk materials. Actual cooling depends on contact, thermal effusivity, and sample properties.",
+      "description_en": "Objects equilibrated in the same room can share a temperature. Common metal in contact with warmer skin typically carries heat away more rapidly than wood, cooling the skin faster and feeling colder.",
+      "description_zh": "兩把尺一開始一樣暖。差別在於它們帶走你手上熱量的速度。",
+      "sources": [
+        {
+          "publisher": "American Physical Society",
+          "url": "https://www.aps.org/learning-resources/getting-warmer-colder",
+          "evidence": "Getting Warmer/Getting Colder personally compares thermometer readings and heat leaving skin."
+        },
+        {
+          "publisher": "University of California, Santa Barbara",
+          "url": "https://escholarship.org/content/qt5571212q/qt5571212q.pdf?t=prk0re",
+          "evidence": "Study of thermal cues and material perception, introduction on skin contact, room-temperature samples and thermal response."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Objects equilibrated in the same room can share a temperature. Common metal in contact with warmer skin typically carries heat away more rapidly than wood, cooling the skin faster and feeling colder.",
+          "source_urls": [
+            "https://www.aps.org/learning-resources/getting-warmer-colder",
+            "https://escholarship.org/content/qt5571212q/qt5571212q.pdf?t=prk0re"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "Touch this metal ruler, then this wood ruler. Why does one feel colder?",
+          "zh": "摸摸金屬尺，再摸木尺。為什麼金屬尺比較冰？",
+          "scene": "hook",
+          "visual": "Desk view with metal and wood rulers, separate highlights and fingers entering frame.",
+          "overlay_en": "Why does metal feel colder?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Both sat on the same desk long enough to reach the same room temperature.",
+          "zh": "兩把尺在同一張桌上放了很久，已經到了相同的室溫。",
+          "scene": "measure",
+          "visual": "Show paired contact probes with matching qualitative indicators; material textures remain visible.",
+          "overlay_en": "Same starting temperature",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Your fingertips are warmer than either ruler, so heat moves from skin into both.",
+          "zh": "指尖比兩把尺都暖，所以熱會從皮膚傳到尺上。",
+          "scene": "direction",
+          "visual": "Top-down contact then cross section; same-size contact pads, two arrows pointing from skin into materials.",
+          "overlay_en": "Heat leaves skin",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The metal carries that heat away from the contact area faster than the wood.",
+          "zh": "金屬比木頭更快把熱從接觸的地方帶走。",
+          "scene": "compare",
+          "visual": "Animate equal-size warm highlights spreading quickly into metal and slowly into wood.",
+          "overlay_en": "Heat spreads faster in metal",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Heat then keeps leaving the skin more quickly on the metal side.",
+          "zh": "因此，碰金屬的那邊，皮膚會繼續更快地失去熱。",
+          "scene": "rate",
+          "visual": "Show two qualitative heat-flow arrows of different thickness, both pointing away from skin.",
+          "overlay_en": "Faster heat transfer",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "That fingertip cools faster, and you feel the difference right at the surface.",
+          "zh": "那根手指降溫比較快，摸起來就更冰。",
+          "scene": "feel",
+          "visual": "Zoom onto skin pads and show the metal-side skin tone shifting toward cooler color faster.",
+          "overlay_en": "Skin cools faster",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The two rulers started out equally warm. What felt different was how fast they took heat from you.",
+          "zh": "兩把尺一開始一樣暖。差別在於它們帶走你手上熱量的速度。",
+          "scene": "return",
+          "visual": "Return to rulers and equal initial thermometer marks; concise takeaway appears.",
+          "overlay_en": "Same temperature, different feeling",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Desk view with metal and wood rulers, separate highlights and fingers entering frame.",
+          "overlay_en": "Why does metal feel colder?"
+        },
+        {
+          "cue": 2,
+          "scene": "measure",
+          "action": "Show paired contact probes with matching qualitative indicators; material textures remain visible.",
+          "overlay_en": "Same starting temperature"
+        },
+        {
+          "cue": 3,
+          "scene": "direction",
+          "action": "Top-down contact then cross section; same-size contact pads, two arrows pointing from skin into materials.",
+          "overlay_en": "Heat leaves skin"
+        },
+        {
+          "cue": 4,
+          "scene": "compare",
+          "action": "Animate equal-size warm highlights spreading quickly into metal and slowly into wood.",
+          "overlay_en": "Heat spreads faster in metal"
+        },
+        {
+          "cue": 5,
+          "scene": "rate",
+          "action": "Show two qualitative heat-flow arrows of different thickness, both pointing away from skin.",
+          "overlay_en": "Faster heat transfer"
+        },
+        {
+          "cue": 6,
+          "scene": "feel",
+          "action": "Zoom onto skin pads and show the metal-side skin tone shifting toward cooler color faster.",
+          "overlay_en": "Skin cools faster"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Return to rulers and equal initial thermometer marks; concise takeaway appears.",
+          "overlay_en": "Same temperature, different feeling"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "bubble",
+      "title_en": "Why Are Soap Bubbles Round?",
+      "title_zh": "肥皂泡為什麼會變圓？",
+      "question": "Why does an isolated, small soap bubble tend to round out after leaving the wand?",
+      "invariants": [
+        "Compare equal enclosed volume in 3D. If shown schematically, use two equal-height width-adjusted silhouettes labelled as slices and avoid equivalent-area/volume claim from 2D outline alone.",
+        "Surface tension acts along film, not as independent radial arrows; show short tangential paired pulls or surface-area decrease only.",
+        "Bubble free of wand after detaching; no foam clusters or claims all bubbles are perfectly spherical."
+      ],
+      "simplification": "Assume isolated small bubble in still air. Ignore wind, gravity deformation, film drainage and pressure evolution during detachment.",
+      "description_en": "A small free soap bubble is a thin liquid film around air. Surface tension favors less surface area, and for a given enclosed volume a sphere has the least surface area.",
+      "description_zh": "泡泡棒能固定液膜的形狀，自由漂浮的泡泡則會自己變圓。",
+      "sources": [
+        {
+          "publisher": "Australian National University",
+          "url": "https://science.anu.edu.au/engagement/science-lab-experiments-home-school/making-cube-bubble",
+          "evidence": "Explanation of why free bubbles form spheres and why frames constrain soap films."
+        },
+        {
+          "publisher": "UNSW Physclips",
+          "url": "https://www.animations.physics.unsw.edu.au/jw/light/soap-bubbles.htm",
+          "evidence": "Soap bubble formation: surface energy and why the sphere minimizes surface for a fixed volume."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "A small free soap bubble is a thin liquid film around air. Surface tension favors less surface area, and for a given enclosed volume a sphere has the least surface area.",
+          "source_urls": [
+            "https://science.anu.edu.au/engagement/science-lab-experiments-home-school/making-cube-bubble",
+            "https://www.animations.physics.unsw.edu.au/jw/light/soap-bubbles.htm"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "A soap bubble stretches as it leaves the wand. Why does it round out?",
+          "zh": "肥皂泡離開泡泡棒時先被拉長，為什麼接著又變圓？",
+          "scene": "hook",
+          "visual": "Side-lit backyard scene; soap film stretches on wand briefly then detaches.",
+          "overlay_en": "Why do bubbles round out?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Look close. The bubble is a thin liquid film wrapped around a pocket of air.",
+          "zh": "放大看，肥皂泡是一層很薄的液膜，包住一團空氣。",
+          "scene": "film",
+          "visual": "Magnify one edge, separate colored film from interior air and label as schematic.",
+          "overlay_en": "Thin liquid film / Air",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Making more film surface takes energy, so surface tension favors a smaller surface area.",
+          "zh": "增加液膜表面需要能量，所以表面張力會讓表面積傾向縮小。",
+          "scene": "tension",
+          "visual": "Inset film patch with two tangent markers, then cut to surface shrink; no force arrows aimed at center.",
+          "overlay_en": "Surface tension",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Now compare two shapes holding the same amount of space inside.",
+          "zh": "現在比較兩種內部空間一樣大的形狀。",
+          "scene": "volume",
+          "visual": "Show an elongated shape and a sphere as 3D outline meshes; label same volume before comparing surfaces.",
+          "overlay_en": "Equal volume",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "A sphere wraps that volume with the least surface area of any shape.",
+          "zh": "相同體積下，球體需要的表面積最小。",
+          "scene": "surface",
+          "visual": "Highlight each outer mesh in turn and show the sphere with the shorter qualitative surface-area bar.",
+          "overlay_en": "Less surface area",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "So once a small bubble floats free, the film tends to settle into a sphere.",
+          "zh": "所以，小泡泡自由漂浮後，液膜會趨向球形。",
+          "scene": "settle",
+          "visual": "Return to the free bubble, softly damps from elongated to round without shrinking enclosed volume visibly.",
+          "overlay_en": "Small free bubble",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "A wand can hold a film in another shape. A free bubble makes its own round outline.",
+          "zh": "泡泡棒能固定液膜的形狀，自由漂浮的泡泡則會自己變圓。",
+          "scene": "return",
+          "visual": "Two final views: stretched film still on the ring versus a separate small round bubble floating.",
+          "overlay_en": "Held film / Free bubble",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Side-lit backyard scene; soap film stretches on wand briefly then detaches.",
+          "overlay_en": "Why do bubbles round out?"
+        },
+        {
+          "cue": 2,
+          "scene": "film",
+          "action": "Magnify one edge, separate colored film from interior air and label as schematic.",
+          "overlay_en": "Thin liquid film / Air"
+        },
+        {
+          "cue": 3,
+          "scene": "tension",
+          "action": "Inset film patch with two tangent markers, then cut to surface shrink; no force arrows aimed at center.",
+          "overlay_en": "Surface tension"
+        },
+        {
+          "cue": 4,
+          "scene": "volume",
+          "action": "Show an elongated shape and a sphere as 3D outline meshes; label same volume before comparing surfaces.",
+          "overlay_en": "Equal volume"
+        },
+        {
+          "cue": 5,
+          "scene": "surface",
+          "action": "Highlight each outer mesh in turn and show the sphere with the shorter qualitative surface-area bar.",
+          "overlay_en": "Less surface area"
+        },
+        {
+          "cue": 6,
+          "scene": "settle",
+          "action": "Return to the free bubble, softly damps from elongated to round without shrinking enclosed volume visibly.",
+          "overlay_en": "Small free bubble"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Two final views: stretched film still on the ring versus a separate small round bubble floating.",
+          "overlay_en": "Held film / Free bubble"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "compass",
+      "title_en": "What Makes a Compass Needle Turn?",
+      "title_zh": "指南針的指針是被什麼轉動的？",
+      "question": "What causes a freely pivoting compass needle to point near north?",
+      "invariants": [
+        "Keep external field arrows fixed while needle rotates toward them; case may turn independently.",
+        "Clearly distinguish geographic map north arrow from local magnetic bearing; no assertion that the needle aims at a single exact point.",
+        "Mark tilt restricted by ordinary flat compass, so arrows represent horizontal component."
+      ],
+      "simplification": "Work with a level compass and a stable local field away from interfering metal or magnets; shown declination exaggerated.",
+      "description_en": "A compass needle is a small magnet that pivots to align with the horizontal component of the local magnetic field; Earth’s field normally dominates, but its heading can differ from true north.",
+      "description_zh": "再轉一下外殼。底下的外殼在轉，指針還是跟著磁場方向。",
+      "sources": [
+        {
+          "publisher": "U.S. Geological Survey",
+          "url": "https://www.usgs.gov/media/audio/how-does-compass-work",
+          "evidence": "Needle is a freely pivoting magnet, turns in local or Earth magnetic field, and can have interference."
+        },
+        {
+          "publisher": "NOAA National Centers for Environmental Information",
+          "url": "https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions",
+          "evidence": "Compass FAQ explains local horizontal field direction and magnetic declination from true north."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "A compass needle is a small magnet that pivots to align with the horizontal component of the local magnetic field; Earth’s field normally dominates, but its heading can differ from true north.",
+          "source_urls": [
+            "https://www.usgs.gov/media/audio/how-does-compass-work",
+            "https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "Turn a compass case. Why does the needle keep swinging back to the same direction?",
+          "zh": "轉一下指南針外殼。為什麼指針總會轉回同一個方向？",
+          "scene": "hook",
+          "visual": "Compass on trail map; case turns under a still needle after its small wobble.",
+          "overlay_en": "What turns a compass needle?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Inside is a tiny magnet balanced on a pivot, so it can turn freely.",
+          "zh": "裡面是一根小磁鐵，架在支點上，可以自由轉動。",
+          "scene": "pivot",
+          "visual": "Exploded side view shows needle balanced on central pin; restore top-down view.",
+          "overlay_en": "Pivot / Small magnet",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Earth produces a magnetic field. Around the compass, that field has a local direction.",
+          "zh": "地球有磁場。在指南針所在的位置，磁場有自己的方向。",
+          "scene": "field",
+          "visual": "Pull back from compass to globe with a small selected region, then project back to local schematic.",
+          "overlay_en": "Earth’s magnetic field",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The field twists the needle until it lines up with the field along the ground.",
+          "zh": "磁場讓指針轉動，直到它和磁場在水平面上的方向一致。",
+          "scene": "align",
+          "visual": "Side-to-top transition shows tilt projected onto horizontal plane; pivot needle toward fixed arrow.",
+          "overlay_en": "Horizontal field",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The marked end generally points near map north, but it can be a little off.",
+          "zh": "標記的那一端大致朝北，但可能和地圖的正北差一個角度。",
+          "scene": "compare",
+          "visual": "Reveal true north first, then local magnetic bearing on same map; small exaggerated angle label.",
+          "overlay_en": "True north / Magnetic bearing",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "That angle varies from place to place because the field’s direction changes.",
+          "zh": "這個角度因地而異，因為各地的磁場方向不同。",
+          "scene": "local",
+          "visual": "Slide between two qualitative map locations with different angle offsets, not numeric values.",
+          "overlay_en": "Direction varies by location",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Turn the case again. The needle follows the field, even while the case turns underneath.",
+          "zh": "再轉一下外殼。底下的外殼在轉，指針還是跟著磁場方向。",
+          "scene": "return",
+          "visual": "Back to trail map; animate case markings rotating independently of aligned needle.",
+          "overlay_en": "Same needle direction",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Compass on trail map; case turns under a still needle after its small wobble.",
+          "overlay_en": "What turns a compass needle?"
+        },
+        {
+          "cue": 2,
+          "scene": "pivot",
+          "action": "Exploded side view shows needle balanced on central pin; restore top-down view.",
+          "overlay_en": "Pivot / Small magnet"
+        },
+        {
+          "cue": 3,
+          "scene": "field",
+          "action": "Pull back from compass to globe with a small selected region, then project back to local schematic.",
+          "overlay_en": "Earth’s magnetic field"
+        },
+        {
+          "cue": 4,
+          "scene": "align",
+          "action": "Side-to-top transition shows tilt projected onto horizontal plane; pivot needle toward fixed arrow.",
+          "overlay_en": "Horizontal field"
+        },
+        {
+          "cue": 5,
+          "scene": "compare",
+          "action": "Reveal true north first, then local magnetic bearing on same map; small exaggerated angle label.",
+          "overlay_en": "True north / Magnetic bearing"
+        },
+        {
+          "cue": 6,
+          "scene": "local",
+          "action": "Slide between two qualitative map locations with different angle offsets, not numeric values.",
+          "overlay_en": "Direction varies by location"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Back to trail map; animate case markings rotating independently of aligned needle.",
+          "overlay_en": "Same needle direction"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "paper",
+      "title_en": "Why Does Crumpled Paper Fall Faster?",
+      "title_zh": "同樣的紙，揉成團為什麼掉更快？",
+      "question": "Why does a compact paper ball usually beat an identical flat sheet to the ground?",
+      "invariants": [
+        "Use sheets cut from the same stock, same mass, same drop height and start time; no downward shove; air still.",
+        "Show equal downward weight arrows, no drag at rest, and compare upward drag at matched falling speed only.",
+        "Flat sheet may flutter, so label typical broadside orientation; avoid measured speed or fixed landing gap."
+      ],
+      "simplification": "Qualitative presentation, no exact trajectories, terminal speed, or Reynolds-number claims.",
+      "description_en": "For equal masses, gravitational force is equal; a broadside sheet typically has more upward aerodynamic drag than a compact paper ball at the same falling speed, changing the fall.",
+      "description_zh": "紙一樣，重力也一樣。形狀改變了空氣阻擋下落的程度。",
+      "sources": [
+        {
+          "publisher": "Yale Physics Lab Demonstrations",
+          "url": "https://yppsweb2.its.yale.edu/physics/demos/viewdemo.asp?ID=2C50.10&Record=Back",
+          "evidence": "Flat versus crumpled paper in same gravity; lab changes profile facing air."
+        },
+        {
+          "publisher": "NASA Glenn Research Center",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/",
+          "evidence": "Weight and drag directions; drag depends on reference area, speed, density and drag coefficient."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "For equal masses, gravitational force is equal; a broadside sheet typically has more upward aerodynamic drag than a compact paper ball at the same falling speed, changing the fall.",
+          "source_urls": [
+            "https://yppsweb2.its.yale.edu/physics/demos/viewdemo.asp?ID=2C50.10&Record=Back",
+            "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "Drop two identical sheets. One is flat. The other is crumpled. Which lands first?",
+          "zh": "兩張一樣的紙，一張攤平、一張揉成團。哪張會先落地？",
+          "scene": "hook",
+          "visual": "Parallel overhead setup with simultaneous release, pause before either touches floor.",
+          "overlay_en": "Which paper lands first?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Crumpling changes the shape, but you still have the same amount of paper.",
+          "zh": "揉紙只改變形狀，紙的份量沒有變。",
+          "scene": "mass",
+          "visual": "Quick rewind of one sheet folding itself into a ball; show no scraps and matching mass markers.",
+          "overlay_en": "Same mass",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "So gravity pulls down on both with the same force.",
+          "zh": "因此，重力往下拉兩張紙的力一樣大。",
+          "scene": "gravity",
+          "visual": "Show equal downward arrows after reset. Neither sheet has upward drag arrows until moving.",
+          "overlay_en": "Equal weight",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "As they fall, air pushes back. That opposing force is called drag.",
+          "zh": "下落時，空氣會阻擋它們。這個反向的力叫空氣阻力。",
+          "scene": "drag",
+          "visual": "Replay falling; upward drag arrows appear only after motion begins.",
+          "overlay_en": "Air drag",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "At the same falling speed, the broadside sheet typically meets more air resistance than the compact ball.",
+          "zh": "在同樣的下落速度下，攤開迎風的紙通常比紙團受到更大的空氣阻力。",
+          "scene": "profile",
+          "visual": "Hold matched-speed demonstration spots, show front-facing silhouettes and qualitative upward drag contrast.",
+          "overlay_en": "Same falling speed",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The flat sheet flutters and falls more slowly while the ball gets to the floor.",
+          "zh": "平紙飄來飄去，下降比較慢，紙團先到了地板。",
+          "scene": "finish",
+          "visual": "Return to release view and play a qualitative landing, with flat paper fluttering.",
+          "overlay_en": "Usually lands first",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Same paper, same gravity. The shape changes how much the air slows the fall.",
+          "zh": "紙一樣，重力也一樣。形狀改變了空氣阻擋下落的程度。",
+          "scene": "return",
+          "visual": "End on flat sheet and paper ball in the same frame beside a small airflow cue.",
+          "overlay_en": "Shape changes drag",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Parallel overhead setup with simultaneous release, pause before either touches floor.",
+          "overlay_en": "Which paper lands first?"
+        },
+        {
+          "cue": 2,
+          "scene": "mass",
+          "action": "Quick rewind of one sheet folding itself into a ball; show no scraps and matching mass markers.",
+          "overlay_en": "Same mass"
+        },
+        {
+          "cue": 3,
+          "scene": "gravity",
+          "action": "Show equal downward arrows after reset. Neither sheet has upward drag arrows until moving.",
+          "overlay_en": "Equal weight"
+        },
+        {
+          "cue": 4,
+          "scene": "drag",
+          "action": "Replay falling; upward drag arrows appear only after motion begins.",
+          "overlay_en": "Air drag"
+        },
+        {
+          "cue": 5,
+          "scene": "profile",
+          "action": "Hold matched-speed demonstration spots, show front-facing silhouettes and qualitative upward drag contrast.",
+          "overlay_en": "Same falling speed"
+        },
+        {
+          "cue": 6,
+          "scene": "finish",
+          "action": "Return to release view and play a qualitative landing, with flat paper fluttering.",
+          "overlay_en": "Usually lands first"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "End on flat sheet and paper ball in the same frame beside a small airflow cue.",
+          "overlay_en": "Shape changes drag"
+        }
+      ]
+    }
+  ]
+}

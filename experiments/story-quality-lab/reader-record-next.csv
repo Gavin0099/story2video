@@ -1,0 +1,1 @@
+session_id,reader_id,reader_type,card_id,track,card_order,turn_no,stage,transcript_ref,exposure,leakage_check,question,answer,guess,alternative,evidence,confidence_pct,continue_1to5,elapsed_seconds,stopped,belief_shift,core_match,reveal_fairness,fairness_evidence,emotion_1to5,puzzle_gate,puzzle_reason,shorts_gate,shorts_reason,preference_pair,preferred_card,preference_reason

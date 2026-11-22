@@ -1,0 +1,10 @@
+# Superseded active-task-summary projections
+
+Byte-exact lines moved here by governance_tools.memory_record when a newer
+projection superseded them. History only; not current state.
+
+- Development governance is wired. M0 application tests passed locally, Git hooks were exercised, and remote GitHub Actions remains pending. <!-- memory_record_projection:active-task-summary:c7a4ba9b9b9e6f026fea9f7994336845ec73ce12f4c3573eab2f594878f2e1b6 -->
+
+- Story Quality AutoLoop 已交付 PR #7，首次實跑四稿、十二場，0 篇達標。 <!-- memory_record_projection:active-task-summary:57b8958510c67701f6ccd2b2b9e57bab93ca871df6eb4e919553d93aa2d98771 -->
+
+- Story Quality AutoLoop 已交付 PR #7，首次實跑四稿、十二場，0 篇達標。 <!-- memory_record_projection:active-task-summary:f39c75f05e5aca14d306a144db1fe98f9dce5b3160ab9b66915631c664686c85 -->

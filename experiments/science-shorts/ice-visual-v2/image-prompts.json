@@ -1,0 +1,13 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": {
+    "hero": "Create a premium editorial 3D illustration asset for an adult science explainer, vertical portrait 9:16. A single beautiful wide clear cylindrical drinking glass, about 70% full of clear water with a subtle turquoise tint, on a warm ivory tabletop against a soft peach and pale apricot studio background. NO ice cubes and no other objects inside or outside the glass. Glass occupies central 65% width, from 30% down to 78% of the frame. Water surface ellipse at about 44% height of image. Front-facing camera slightly above the water surface so we see the ellipse. Tactile translucent glass, delicate condensation beads, soft teal caustics on table, warm side light, gentle long shadow. Clean sophisticated science magazine art direction, playful but not childish. The upper 23% and bottom 18% are quiet clear negative space for separately added title and subtitles. Not a photograph, polished stylized 3D illustration with real material depth. No text, no letters, no labels, no arrows, no logos. No molecular structures. The water must look still, flat and calm.",
+    "cube": "Generate a single isolated ICE CUBE as a transparent-background PNG cutout asset for compositing into a premium science explainer. A rounded, slightly irregular, clear translucent turquoise ice cube, with delicate internal cracks and a few air bubbles, beautiful refractive facets and convincing cool ice material. Perspective: front view slightly from above, showing a shallow top face and front plus narrow right side. Light from upper left is warm peach, secondary cool cyan light from right. Shape roughly square in image, not an elongated crystal. The cube occupies about 80% width and height, centered, with generous transparent margins. Polished stylized 3D editorial illustration, sophisticated and tactile. Only the one ice cube, no glass, no water, no ground, no cast shadow outside the cube, no splash, no particles outside it, no scene or colored backdrop, no text, no letters, no diagram. Genuinely transparent background; preserve alpha for clean compositing."
+  },
+  "generated_paths": [
+    "artifacts/science-shorts/ice-visual-v2/assets/glass.png",
+    "artifacts/science-shorts/ice-visual-v2/assets/ice.png"
+  ],
+  "calls": 2,
+  "cost": "Tool did not report a monetary amount. No metered media API or new voice call."
+}

@@ -1,0 +1,622 @@
+{
+  "schema_version": "science-script.v1",
+  "revision": "writer-b-17-20-r2",
+  "supersedes": {
+    "file": "writer-b.json",
+    "sha256": "53f1d20be733d3aaee642fe23805680d3415f25f0cf162f9d166a3604b0941ec",
+    "ids": [
+      "17",
+      "20"
+    ]
+  },
+  "editorial_status": "revised draft awaiting fresh independent review",
+  "writer": {
+    "agent": "/root/fact_visual_audit",
+    "role": "writer only for this artifact",
+    "model": "inherited native agent; API does not provide exact version"
+  },
+  "onscreen_language": "en",
+  "subtitles": [
+    "en",
+    "zh-Hant"
+  ],
+  "burned_subtitles": false,
+  "production_gate": {
+    "required_independent_readers": 2,
+    "minimum_each_score": 85,
+    "reader_reviews": "PENDING",
+    "independent_factual_review": "PENDING",
+    "scientific_visual_review": "PENDING",
+    "encode_allowed": false,
+    "publication_authority": "Owner authorization is handled by parent; this draft grants no approval."
+  },
+  "revision_reason": {
+    "17": "Add tension -> restoring force -> shorter cycle causal bridge.",
+    "20": "Add edge wetting, liquid continuity and narrow-channel pull relative to weight without a universal claim."
+  },
+  "timing_scope": "Retain 8 planned cue slots and 85–110 English words. No measured TTS timing exists; remeasure duration after approval.",
+  "episodes": [
+    {
+      "id": "17",
+      "slug": "guitar-tension",
+      "title_en": "Why Does Tightening a String Raise Its Pitch?",
+      "title_zh": "琴弦拉緊，音調為什麼升高？",
+      "question": "How does tension change the pitch of the same guitar string?",
+      "description_en": "With vibrating length held fixed, increasing string tension increases its vibration frequency and raises pitch.",
+      "description_zh": "固定同一根琴弦的有效振動長度，提高張力會使振動頻率增加，音調也會升高。",
+      "sources": [
+        {
+          "id": "unsw",
+          "publisher": "UNSW Sydney Music Acoustics",
+          "institution": "unsw-sydney",
+          "title": "Strings, standing waves and harmonics",
+          "url": "https://phys.unsw.edu.au/jw/strings.html",
+          "locator": "Tension and tuning discussion, extracted lines 90–98, especially line 91 and the frequency formula.",
+          "evidence": "Increasing tension raises frequency; the fundamental depends on length, tension and linear mass density.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Ideal flexible string model. Real tightening slightly stretches the string; use a modest tuning change."
+        },
+        {
+          "id": "yamaha",
+          "publisher": "Yamaha Corporation",
+          "institution": "yamaha-corporation",
+          "title": "The rule of strings and pitch",
+          "url": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism003.html",
+          "locator": "Pitch factors at extracted lines 8–14.",
+          "evidence": "Tightening raises pitch; thickness and vibrating length also affect pitch. Nut and saddle support the sounding string length.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Instrument-maker educational source, independent of UNSW; not a claim that length or thickness never changes in real tuning."
+        },
+        {
+          "id": "rice-restoring",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Wave Speed on a Stretched String",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/16-3-wave-speed-on-a-stretched-string",
+          "locator": "Restoring-force/tension-component derivation lines 35–55; speed relation 64–73; frequency/length 95–97.",
+          "evidence": "For the same curved profile and linear density, larger tension produces larger transverse acceleration; wave speed increases with the square root of tension.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Small slopes, flexible string, approximately constant tension and linear density. Shorter-period bridge is author synthesis, not independent review."
+        },
+        {
+          "id": "unsw-restoring",
+          "publisher": "UNSW Sydney Physclips",
+          "institution": "unsw-sydney",
+          "title": "Travelling waves, superposition, reflection and transmission",
+          "url": "https://www.animations.physics.unsw.edu.au/jw/waves_superposition_reflection.htm",
+          "locator": "Tension components and transverse acceleration, lines 15–20; Linear media, line 40.",
+          "evidence": "Local tension components accelerate and reverse string sections; small displacement gives an approximately proportional restoring force.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Second UNSW page counts as the same institution; Rice supplies the independent institution."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "For the same string with essentially fixed vibrating length and linear density, greater tension produces a higher vibration frequency and pitch.",
+          "source_urls": [
+            "https://phys.unsw.edu.au/jw/strings.html",
+            "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/mechanism/mechanism003.html"
+          ],
+          "limits": [
+            "Compare one open string, with no fretting or string replacement. Modest tuning approximates fixed linear density. Pluck amplitude is not the pitch control."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "For the same small displaced profile and segment mass, greater string tension supplies a larger transverse restoring force. The same fundamental mode accelerates back more rapidly and has a shorter period.",
+          "source_urls": [
+            "https://openstax.org/books/university-physics-volume-1/pages/16-3-wave-speed-on-a-stretched-string",
+            "https://www.animations.physics.unsw.edu.au/jw/waves_superposition_reflection.htm"
+          ],
+          "limits": [
+            "Author synthesis of tension-component force law and ideal-string period relation, awaiting independent factual review.",
+            "Keep local slope/curvature and linear density fixed. In the fundamental, the resultant opposes displacement, not velocity at every instant."
+          ]
+        }
+      ],
+      "invariants": [
+        "One open string between fixed nut and saddle throughout. No fretting, thicker replacement string or changing visible active length.",
+        "Both comparison strings show the fundamental: one spatial half-wave and two fixed endpoint nodes. More temporal oscillations, not more spatial loops, represent higher fundamental frequency.",
+        "Use the same pluck displacement and viewing scale so loudness is not substituted for pitch.",
+        "When showing tension arrows, they point outward at opposite endpoints. String transverse motion is perpendicular to its resting length.",
+        "The moving waveform is explicitly slow motion and its cycles are not literal audio-rate motion.",
+        "Freeze the same displaced profile for the restoring-force comparison; do not draw a greater initial bend on the tighter string.",
+        "At midpoint equilibrium crossing, restoring resultant is zero while speed is nonzero; never stop the string at its straight position."
+      ],
+      "simplification": "Ideal fundamental-mode string with fixed active length and approximately fixed mass per unit length. Real strings have harmonics and stiffness; no exact pitch ratio is promised.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "string": "Horizontal active length x=160..920, baseline y=850; endpoint nodes fixed.",
+        "animation": "Use y(x,t)=A*sin(pi*(x-160)/760)*cos(phase(t)), A=55 px for both conditions; tighter-string phase advances faster while both retain one half-wave.",
+        "comparison": "Compare 2 versus 3 schematic cycles in an equal visual time window, labelled 'Slow motion'; these are visual rates, not claimed measured notes.",
+        "restoring_inset": "Enlarge a midpoint segment. At downward displacement, tangent tension forces point up-left/up-right; horizontal components cancel and the resultant points toward baseline. For a 3/2 visual frequency ratio at equal density, a quantitative tension ratio is 9/4, not 3/2. Prefer unnumbered qualitative force arrows."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "Tighten this guitar string, and its note rises. What changes inside the vibration?",
+          "zh": "把這根吉他弦拉緊，音調就升高。振動裡發生了什麼改變？",
+          "scene": "hook",
+          "visual": "Same open guitar string; hand turns tuning peg, then reveal enlarged string inset.",
+          "overlay_en": "Why does the note rise?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Same open guitar string; hand turns tuning peg, then reveal enlarged string inset.",
+            "controls": "Same string and active length; modest tuning change."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Keep the same string, vibrating length, and small sideways pluck.",
+          "zh": "固定同一根弦、有效振動長度，以及同樣小的側向撥動。",
+          "scene": "controls",
+          "visual": "Match both endpoints, linear density and initial midpoint displacement in two snapshots.",
+          "overlay_en": "Same string | Same length | Same bend",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Match both endpoints, linear density and initial midpoint displacement in two snapshots.",
+            "controls": "Small fundamental-mode displacement. No fretting or new string."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "Plucking bends the string. Tension in its two sides pulls it back toward straight.",
+          "zh": "撥弦讓弦彎曲，兩側的張力會把它拉回接近直線的位置。",
+          "scene": "restoring",
+          "visual": "Pause displaced midpoint; two tangent tension vectors combine into a resultant toward baseline.",
+          "overlay_en": "Tension pulls it back",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Pause displaced midpoint; two tangent tension vectors combine into a resultant toward baseline.",
+            "controls": "Resultant opposes midpoint displacement, not always velocity."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "At the same bend, greater tension gives a stronger restoring pull.",
+          "zh": "彎曲相同時，張力更大，拉回原位的回復力也更強。",
+          "scene": "compare-force",
+          "visual": "Same displaced profile on both strings; larger tension vectors yield larger restoring resultant.",
+          "overlay_en": "Same bend -> stronger restoring pull",
+          "claim_ids": [
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Same displaced profile on both strings; larger tension vectors yield larger restoring resultant.",
+            "controls": "Same segment mass and slope geometry. Arrows encode force, not greater initial bend."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "The same string accelerates back faster, so each back-and-forth cycle takes less time.",
+          "zh": "同一根弦會更快加速回去，因此每個來回振動的週期更短。",
+          "scene": "shorter-cycle",
+          "visual": "Release equal bends together; tighter string reaches baseline and completes a full return sooner.",
+          "overlay_en": "Stronger pull -> shorter cycle",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Release equal bends together; tighter string reaches baseline and completes a full return sooner.",
+            "controls": "Inertia carries string through baseline; zero restoring resultant at equilibrium does not mean zero speed."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "That means more cycles each second: a higher frequency, heard as higher pitch.",
+          "zh": "週期更短，每秒完成的次數就更多；頻率更高，聽起來音調也更高。",
+          "scene": "frequency",
+          "visual": "Count complete cycles in equal visual-time windows; retain one spatial half-wave.",
+          "overlay_en": "More cycles -> higher pitch",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Count complete cycles in equal visual-time windows; retain one spatial half-wave.",
+            "controls": "No extra spatial loops to represent higher fundamental frequency."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "Watch the slower demonstration: equal starting bends, but the tighter string cycles faster.",
+          "zh": "看這個放慢的示範：起始彎曲一樣，但較緊的弦振動得更快。",
+          "scene": "slow-motion",
+          "visual": "Repeat synchronized release with slow-motion badge and endpoint markers.",
+          "overlay_en": "Slow motion | Equal starting bends",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Repeat synchronized release with slow-motion badge and endpoint markers.",
+            "controls": "Visual rates are not literal guitar audio frequencies."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "More tension, stronger restoring pull, shorter cycles, higher note.",
+          "zh": "張力更大、回復力更強、週期更短，音調就更高。",
+          "scene": "answer",
+          "visual": "Return to guitar with the four-step causal sequence.",
+          "overlay_en": "Tension -> restoring pull -> frequency -> pitch",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "shot_plan": {
+            "action": "Return to guitar with the four-step causal sequence.",
+            "controls": "No large-amplitude or strongly nonlinear string claim."
+          }
+        }
+      ],
+      "spoken_word_count_en": 96,
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Same open guitar string; hand turns tuning peg, then reveal enlarged string inset.",
+          "overlay_en": "Why does the note rise?",
+          "controls": "Same string and active length; modest tuning change."
+        },
+        {
+          "cue": 2,
+          "scene": "controls",
+          "action": "Match both endpoints, linear density and initial midpoint displacement in two snapshots.",
+          "overlay_en": "Same string | Same length | Same bend",
+          "controls": "Small fundamental-mode displacement. No fretting or new string."
+        },
+        {
+          "cue": 3,
+          "scene": "restoring",
+          "action": "Pause displaced midpoint; two tangent tension vectors combine into a resultant toward baseline.",
+          "overlay_en": "Tension pulls it back",
+          "controls": "Resultant opposes midpoint displacement, not always velocity."
+        },
+        {
+          "cue": 4,
+          "scene": "compare-force",
+          "action": "Same displaced profile on both strings; larger tension vectors yield larger restoring resultant.",
+          "overlay_en": "Same bend -> stronger restoring pull",
+          "controls": "Same segment mass and slope geometry. Arrows encode force, not greater initial bend."
+        },
+        {
+          "cue": 5,
+          "scene": "shorter-cycle",
+          "action": "Release equal bends together; tighter string reaches baseline and completes a full return sooner.",
+          "overlay_en": "Stronger pull -> shorter cycle",
+          "controls": "Inertia carries string through baseline; zero restoring resultant at equilibrium does not mean zero speed."
+        },
+        {
+          "cue": 6,
+          "scene": "frequency",
+          "action": "Count complete cycles in equal visual-time windows; retain one spatial half-wave.",
+          "overlay_en": "More cycles -> higher pitch",
+          "controls": "No extra spatial loops to represent higher fundamental frequency."
+        },
+        {
+          "cue": 7,
+          "scene": "slow-motion",
+          "action": "Repeat synchronized release with slow-motion badge and endpoint markers.",
+          "overlay_en": "Slow motion | Equal starting bends",
+          "controls": "Visual rates are not literal guitar audio frequencies."
+        },
+        {
+          "cue": 8,
+          "scene": "answer",
+          "action": "Return to guitar with the four-step causal sequence.",
+          "overlay_en": "Tension -> restoring pull -> frequency -> pitch",
+          "controls": "No large-amplitude or strongly nonlinear string claim."
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "slug": "paper-wicking",
+      "title_en": "Why Does Water Climb a Paper Towel?",
+      "title_zh": "水為什麼會沿著紙巾往上爬？",
+      "question": "How can water rise through paper without a pump?",
+      "description_en": "Water wets cellulose fibers and spreads through tiny connected spaces. Capillary action can lift it against gravity, within limits.",
+      "description_zh": "水會潤濕纖維素纖維，並沿著連通的小空隙移動。這種毛細作用能讓水對抗重力上升，但並非沒有極限。",
+      "sources": [
+        {
+          "id": "ontario",
+          "publisher": "Ontario Science Centre",
+          "institution": "ontario-science-centre",
+          "title": "Send Water Walking",
+          "url": "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking",
+          "locator": "Explanation of adhesion, cohesion and cellulose spaces, extracted lines 28–30.",
+          "evidence": "Paper towel has cellulose fibers and narrow spaces; attraction between water and fibers and between water molecules enables capillary movement.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "Use wettable cellulose-gap mechanism only. Do not repeat an absolute adhesion-versus-cohesion inequality or its 'power balance shifts' inter-cup drainage account."
+        },
+        {
+          "id": "rice",
+          "publisher": "Rice University / OpenStax",
+          "institution": "rice-university",
+          "title": "Properties of Liquids",
+          "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids",
+          "locator": "Paper towel Figure 10.19 and capillarity discussion, extracted lines 74–89 and 114–116.",
+          "evidence": "Adhesion to a porous material and cohesion within water explain wicking; in a simple vertical capillary, gravity limits rise.",
+          "visit_result": "OPENED_TEXT",
+          "accessed_on": "2026-11-22",
+          "limits": "An actual paper network is not a single uniform circular tube; do not apply its tube-height formula numerically to a towel."
+        },
+        {
+          "id": "usgs",
+          "publisher": "US Geological Survey Water Science School",
+          "institution": "usgs",
+          "title": "Capillary Action and Water",
+          "url": "https://www.usgs.gov/water-science-school/science/capillary-action-and-water",
+          "locator": "Capillary Action introduction, lines 19–24: relative tube surface area, upward force at liquid edges, surface continuity, gravity and paper towel.",
+          "evidence": "Wetting gives upward force at liquid edges; cohesion/surface tension maintains liquid continuity. Narrow channels increase relative wall influence; gravity limits rise.",
+          "visit_result": "OPENED_TEXT; fresh successful official /special-topics/ redirect to canonical page",
+          "accessed_on": "2026-11-22",
+          "limits": "Canonical requests intermittently timed out, but fresh redirected official text succeeded for this revision. Do not repeat simplified tall-tree transport claims."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Wetting raises water at channel edges; cohesion keeps the liquid connected, allowing capillary flow through wettable spaces between cellulose fibers.",
+          "source_urls": [
+            "https://www.usgs.gov/water-science-school/science/capillary-action-and-water",
+            "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids",
+            "https://www.ontariosciencecentre.ca/science-at-home/diy-science-fun/send-water-walking"
+          ],
+          "limits": [
+            "Use untreated absorbent paper towel. Waxed or hydrophobic paper may behave differently."
+          ]
+        },
+        {
+          "id": "c2",
+          "text": "Capillary action can raise water against gravity, but does not provide unlimited upward rise.",
+          "source_urls": [
+            "https://www.usgs.gov/water-science-school/science/capillary-action-and-water",
+            "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids"
+          ],
+          "limits": [
+            "The simple-channel inset illustrates gravity opposing rise; real paper has irregular connected pores, and finite strip length or evaporation may limit the observed wet front first."
+          ]
+        },
+        {
+          "id": "c3",
+          "text": "For matching wettable cylindrical channels at equal column height, a smaller radius increases capillary upward-force-to-weight ratio: contact-line pull scales with radius while weight scales with radius squared.",
+          "source_urls": [
+            "https://www.usgs.gov/water-science-school/science/capillary-action-and-water",
+            "https://openstax.org/books/chemistry-atoms-first-2e/pages/10-2-properties-of-liquids"
+          ],
+          "limits": [
+            "Author synthesis of relative wall influence and ideal capillary relation; awaits independent factual review.",
+            "Same surface tension, contact angle, density, height and gravity. Not a universal pore-network height or rate law; narrower does not mean faster wicking."
+          ]
+        }
+      ],
+      "invariants": [
+        "The bottom of the paper stays in contact with reservoir water; the wet front remains connected to the water supply through wetted spaces.",
+        "Draw a fixed irregular fiber network with gaps between fibers. Water fills these spaces and wets surfaces; do not portray solid fibers as empty drinking straws.",
+        "Molecular inset uses equal-sized water symbols throughout; no water molecules grow and no new pores appear as a mechanism.",
+        "Show adhesion to fibers and cohesion between water symbols separately; avoid a literal rope-chain of molecules with rigid bonds.",
+        "Gravity still points downward. Do not animate an endlessly rising water column or a self-powered recirculating pump.",
+        "On-image words, including schematic and time-compression labels, are English only.",
+        "Narrow/wide inset compares equal column height and the same liquid/wetting/gravity, identified as a 3D circular-channel model. Upward force acts at meniscus contact line, not uniformly from every wall pixel.",
+        "Do not show greater absolute capillary force in the narrow channel: halving radius halves upward pull but quarters water weight at equal height, doubling the ratio. No faster-wicking assertion."
+      ],
+      "simplification": "A qualitative connected-pore explanation. The ideal capillary inset illustrates the direction of forces, not an exact pore shape, measured rise height or drying model.",
+      "diagram_scale": {
+        "canvas": [
+          1080,
+          1920
+        ],
+        "paper": "Paper strip x=420..650, y=540..1270 with bottom y=1270 immersed below a reservoir surface at y=1190.",
+        "fiber_inset": "Separate 520 by 400 px inset with 8 stationary curved cellulose-fiber strokes and visible connected gaps; 12 equal-radius water symbols used only as a local schematic.",
+        "time": "Wet front moves upward over compressed time; no claimed centimetres or seconds. A separate simplified channel shows gravity, not a paper-height prediction.",
+        "channel_comparison": "Separate ideal cylindrical channels: diameters 80 vs 40 px, equal liquid height 180 px. Static qualitative upward-force bars may be 80 vs 40 arbitrary units, weight bars 50 vs 12.5; hide numerical units. Label 'Same height | Same liquid | Same wetting | Simplified channels'. Do not claim this is a common equilibrium or use it to set diameter-dependent wicking rates."
+      },
+      "cues": [
+        {
+          "cue": 1,
+          "en": "Dip paper into water. Why does the wet patch climb above the surface?",
+          "zh": "把紙巾一端浸入水中，濕的部分為什麼會爬到水面上方？",
+          "scene": "hook",
+          "visual": "Untreated absorbent towel strip stays dipped in reservoir; wet front rises.",
+          "overlay_en": "Why does water climb?",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Untreated absorbent towel strip stays dipped in reservoir; wet front rises.",
+            "controls": "Not every paper is wettable; no hidden pump."
+          }
+        },
+        {
+          "cue": 2,
+          "en": "Between paper's fibers are tiny connected spaces that water can wet.",
+          "zh": "紙的纖維之間，有水能潤濕的細小連通空隙。",
+          "scene": "fibers",
+          "visual": "Magnify a fixed fiber network with connected inter-fiber gaps.",
+          "overlay_en": "Wettable, connected spaces",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Magnify a fixed fiber network with connected inter-fiber gaps.",
+            "controls": "Fibers are solid, not hollow drinking straws."
+          }
+        },
+        {
+          "cue": 3,
+          "en": "At their walls, attraction draws water upward along the edges: adhesion.",
+          "zh": "在空隙壁面，附著的吸引作用讓水沿著邊緣往上爬。",
+          "scene": "edges",
+          "visual": "Separate wetting-channel inset: concave liquid edge rises along wettable wall.",
+          "overlay_en": "Adhesion lifts the edges",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Separate wetting-channel inset: concave liquid edge rises along wettable wall.",
+            "controls": "Curved meniscus stays connected to liquid below; no flying droplets."
+          }
+        },
+        {
+          "cue": 4,
+          "en": "Water also attracts water. This cohesion keeps the moving liquid connected.",
+          "zh": "水也會吸引水；內聚力讓正在移動的液體保持連續。",
+          "scene": "continuous",
+          "visual": "Neighboring equal-size water symbols remain within a continuous liquid region.",
+          "overlay_en": "Cohesion keeps water connected",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Neighboring equal-size water symbols remain within a continuous liquid region.",
+            "controls": "Attraction indicators are schematic; no rigid chain of chemical bonds."
+          }
+        },
+        {
+          "cue": 5,
+          "en": "So the rising edges can pull more water along through each narrow space.",
+          "zh": "因此，往上升的邊緣也能帶動更多水，沿著狹窄空隙移動。",
+          "scene": "pull",
+          "visual": "A connected wet front advances with reservoir water supplying it from below.",
+          "overlay_en": "Edges rise; connected water follows",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "A connected wet front advances with reservoir water supplying it from below.",
+            "controls": "No detached liquid blobs or one-way molecular ratchet."
+          }
+        },
+        {
+          "cue": 6,
+          "en": "At equal height, narrower channels have more upward pull relative to their water weight.",
+          "zh": "比較相同高度的水柱時，通道越窄，向上拉力相對於水重就越大。",
+          "scene": "narrow",
+          "visual": "Separate two cylindrical wettable channel models at equal water height; compare capillary pull and weight.",
+          "overlay_en": "Same height | Narrower channel: greater pull-to-weight ratio",
+          "claim_ids": [
+            "c3"
+          ],
+          "shot_plan": {
+            "action": "Separate two cylindrical wettable channel models at equal water height; compare capillary pull and weight.",
+            "controls": "Same liquid, wetting and gravity. Smaller diameter reduces absolute pull too; weight falls faster. Do not claim narrower pores wick faster."
+          }
+        },
+        {
+          "cue": 7,
+          "en": "This is capillary action. Gravity still pulls downward, so the rise has limits.",
+          "zh": "這就是毛細作用。重力仍然向下拉，所以上升有它的極限。",
+          "scene": "limit",
+          "visual": "Simple-channel inset shows finite capillary balance, then return to paper.",
+          "overlay_en": "Capillary action | Gravity still acts",
+          "claim_ids": [
+            "c2",
+            "c3"
+          ],
+          "shot_plan": {
+            "action": "Simple-channel inset shows finite capillary balance, then return to paper.",
+            "controls": "Ideal-channel equilibrium is not a numerical prediction for paper."
+          }
+        },
+        {
+          "cue": 8,
+          "en": "The paper wicks water because wettable fibers and small, connected spaces work together.",
+          "zh": "紙巾能吸水，是因為可潤濕的纖維與細小連通空隙共同作用。",
+          "scene": "answer",
+          "visual": "Return to familiar strip with connected wet region and reservoir supply.",
+          "overlay_en": "Wettable fibers + tiny spaces",
+          "claim_ids": [
+            "c1"
+          ],
+          "shot_plan": {
+            "action": "Return to familiar strip with connected wet region and reservoir supply.",
+            "controls": "Time compressed macro motion; no universal hydrophobic-paper claim."
+          }
+        }
+      ],
+      "spoken_word_count_en": 99,
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Untreated absorbent towel strip stays dipped in reservoir; wet front rises.",
+          "overlay_en": "Why does water climb?",
+          "controls": "Not every paper is wettable; no hidden pump."
+        },
+        {
+          "cue": 2,
+          "scene": "fibers",
+          "action": "Magnify a fixed fiber network with connected inter-fiber gaps.",
+          "overlay_en": "Wettable, connected spaces",
+          "controls": "Fibers are solid, not hollow drinking straws."
+        },
+        {
+          "cue": 3,
+          "scene": "edges",
+          "action": "Separate wetting-channel inset: concave liquid edge rises along wettable wall.",
+          "overlay_en": "Adhesion lifts the edges",
+          "controls": "Curved meniscus stays connected to liquid below; no flying droplets."
+        },
+        {
+          "cue": 4,
+          "scene": "continuous",
+          "action": "Neighboring equal-size water symbols remain within a continuous liquid region.",
+          "overlay_en": "Cohesion keeps water connected",
+          "controls": "Attraction indicators are schematic; no rigid chain of chemical bonds."
+        },
+        {
+          "cue": 5,
+          "scene": "pull",
+          "action": "A connected wet front advances with reservoir water supplying it from below.",
+          "overlay_en": "Edges rise; connected water follows",
+          "controls": "No detached liquid blobs or one-way molecular ratchet."
+        },
+        {
+          "cue": 6,
+          "scene": "narrow",
+          "action": "Separate two cylindrical wettable channel models at equal water height; compare capillary pull and weight.",
+          "overlay_en": "Same height | Narrower channel: greater pull-to-weight ratio",
+          "controls": "Same liquid, wetting and gravity. Smaller diameter reduces absolute pull too; weight falls faster. Do not claim narrower pores wick faster."
+        },
+        {
+          "cue": 7,
+          "scene": "limit",
+          "action": "Simple-channel inset shows finite capillary balance, then return to paper.",
+          "overlay_en": "Capillary action | Gravity still acts",
+          "controls": "Ideal-channel equilibrium is not a numerical prediction for paper."
+        },
+        {
+          "cue": 8,
+          "scene": "answer",
+          "action": "Return to familiar strip with connected wet region and reservoir supply.",
+          "overlay_en": "Wettable fibers + tiny spaces",
+          "controls": "Time compressed macro motion; no universal hydrophobic-paper claim."
+        }
+      ]
+    }
+  ],
+  "unverified_scope": [
+    "No independent factual verdict or reader score is asserted by this author.",
+    "No renderer, illustration, timing, TTS, MP4, audio, subtitles or upload has been generated or verified for these eight drafts.",
+    "Spoken word counts use whitespace-separated English tokens; planned cue boundaries are not measured audio timings.",
+    "Art quality, human understanding, subject-matter expert review and market outcomes remain unverified."
+  ]
+}

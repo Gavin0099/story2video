@@ -1,0 +1,133 @@
+[
+  {
+    "script_sha256": "f017450b35b2080dd74f2db6c294c48285531f72149285c0cc2f0058846109ae",
+    "status": "PASS",
+    "critical_defects": [],
+    "auditor": {
+      "agent": "/root/fact_visual_audit",
+      "model": "inherited native agent; API does not provide exact version",
+      "independence": "Did not author episodes 07/08. Wrote episodes 13–20 and is not scoring/auditing those drafts here."
+    },
+    "reviewed_on": "2026-11-22",
+    "input_file": "writer-a-07-08-r2.json",
+    "scope": "Independent source-based review of exact English/Traditional Chinese cues, overlays, invariants and storyboard; no reader score and no renderer/media approval.",
+    "id": "07",
+    "sources_checked": [
+      {
+        "publisher": "Australian National University",
+        "institution": "anu",
+        "url": "https://science.anu.edu.au/engagement/science-lab-experiments-home-school/making-cube-bubble",
+        "access": "Opened full official page text successfully",
+        "locator": "How do cube-shaped bubbles work?, extracted lines 278–289",
+        "finding": "Free bubbles favor spherical geometry; surface tension favors reduced surface area, while frames and surrounding films constrain other shapes."
+      },
+      {
+        "publisher": "UNSW Sydney Physclips",
+        "institution": "unsw",
+        "url": "https://www.animations.physics.unsw.edu.au/jw/light/soap-bubbles.htm",
+        "access": "Opened full official page text successfully",
+        "locator": "Surface tension, Minimal surfaces, and Soap bubble formation; extracted lines 19–23 and 36–40",
+        "finding": "Creating interface costs energy; contraction favors less area subject to constraints. Force is along the moved boundary, consistent with tangential film pulls."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim": "c1",
+        "cues": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "status": "SUPPORTED",
+        "finding": "The small isolated free bubble, positive surface energy, and least-area sphere for prescribed enclosed volume are supported. A fixed idealized volume is explicitly stated, avoiding the claim that all real detaching bubbles preserve exact volume."
+      },
+      {
+        "claim": "equal-volume geometry",
+        "status": "SUPPORTED",
+        "finding": "The prescribed 3D semiaxis multipliers k, k^(-1/2), k^(-1/2) have product 1, preserving ellipsoid volume. This is an independent mathematical check of the storyboard, not a check of renderer implementation."
+      },
+      {
+        "claim": "bilingual qualifiers",
+        "status": "SUPPORTED",
+        "finding": "English small/free/tends and Traditional Chinese 小/自由漂浮/漸漸接近 preserve the stated context. Final same-space line is tied to the idealized comparison, not an unqualified measured bubble law."
+      }
+    ],
+    "production_conditions": [
+      "Keep the equal-volume comparison three-dimensional; preserving only 2D silhouette area would fail the stated model.",
+      "Render surface-tension pulls tangent to a film patch, not independent inward radial force arrows.",
+      "Label fixed-volume morph and timing as schematic; retain isolated small free bubble and do not generalize to frames or foam."
+    ],
+    "limitations": [
+      "Desk/source review only; no physical experiment or complete source videos watched.",
+      "No rendered frame, film thickness, pressure evolution, real fluid relaxation or damping rate verified.",
+      "PASS applies only to the exact script hash; independent visual/encoded-output gates still required."
+    ]
+  },
+  {
+    "script_sha256": "f017450b35b2080dd74f2db6c294c48285531f72149285c0cc2f0058846109ae",
+    "status": "PASS",
+    "critical_defects": [],
+    "auditor": {
+      "agent": "/root/fact_visual_audit",
+      "model": "inherited native agent; API does not provide exact version",
+      "independence": "Did not author episodes 07/08. Wrote episodes 13–20 and is not scoring/auditing those drafts here."
+    },
+    "reviewed_on": "2026-11-22",
+    "input_file": "writer-a-07-08-r2.json",
+    "scope": "Independent source-based review of exact English/Traditional Chinese cues, overlays, invariants and storyboard; no reader score and no renderer/media approval.",
+    "id": "08",
+    "sources_checked": [
+      {
+        "publisher": "US Geological Survey",
+        "institution": "usgs",
+        "url": "https://www.usgs.gov/media/audio/how-does-compass-work",
+        "access": "Opened official page and complete transcript successfully",
+        "locator": "Transcript, extracted lines 31–34",
+        "finding": "Needle is a freely pivoting magnet, aligning with the local field; local interference can affect its direction."
+      },
+      {
+        "publisher": "NOAA National Centers for Environmental Information",
+        "institution": "noaa",
+        "url": "https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions",
+        "access": "Opened official FAQ text successfully",
+        "locator": "Compass FAQ, extracted lines 120–143; field components around lines 28–37",
+        "finding": "Compass aligns with the horizontal component at its location, not one exact point. Declination distinguishes magnetic bearing from true north. Horizontal field can be too weak near magnetic poles."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim": "c1",
+        "cues": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "status": "SUPPORTED",
+        "finding": "The level pivoting magnetic needle aligns with the horizontal local field; the ordinary stable-field scene can retain needle direction as housing turns. True north and magnetic heading are correctly separated."
+      },
+      {
+        "claim": "bilingual qualifiers",
+        "status": "SUPPORTED",
+        "finding": "English 'part of that field runs along the ground' and Chinese 水平方向 agree with the horizontal-component model. The marked end is the north-seeking end and the illustrated true/magnetic angle is qualitative."
+      }
+    ],
+    "production_conditions": [
+      "Hold overhead camera, map and local field fixed while only the case rotates in hook/return; separately perturb the needle for alignment.",
+      "Identify the north-seeking marked end, and never imply the needle points to a single exact geographic or magnetic pole.",
+      "Use a level ordinary compass in a nonzero horizontal field away from magnetic-pole blackout regions and interfering magnets/metal; exaggerated declination is a schematic angle."
+    ],
+    "limitations": [
+      "Page/transcript text was read; the audio was not listened to in full.",
+      "At magnetic poles or strong local interference the ordinary direction scene fails; this is excluded by the production condition.",
+      "No rendered needle/case motion or source-specific present-day declination verified. Exact script PASS is not visual/encode approval."
+    ]
+  }
+]

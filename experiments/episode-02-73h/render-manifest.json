@@ -1,0 +1,24 @@
+{
+  "ffmpeg": {
+    "size": 110590976,
+    "sha256": "ed8f66cb877087a96f5bbb40a2944f0e764f2ad8870d5cb647360d912e62bc07"
+  },
+  "ffprobe": {
+    "size": 110374912,
+    "sha256": "df0199f606faa88e9ad192732a7c3987acfb647663534c297772e17730611a08"
+  },
+  "inputs": {
+    "storyboard.png": {
+      "size": 2451218,
+      "sha256": "630a881766cc291baf46de98b1456d5bd6ca7036c7a3eb824276ad6006645086"
+    },
+    "models/kokoro-v1.0.int8.onnx": {
+      "size": 92361271,
+      "sha256": "6e742170d309016e5891a994e1ce1559c702a2ccd0075e67ef7157974f6406cb"
+    },
+    "models/voices-v1.0.bin": {
+      "size": 28214398,
+      "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d"
+    }
+  }
+}

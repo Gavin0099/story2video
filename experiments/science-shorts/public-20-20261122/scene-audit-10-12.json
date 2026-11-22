@@ -1,0 +1,90 @@
+{
+  "auditor": "/root/fact_visual_audit",
+  "model": "inherited native agent; API does not provide exact version",
+  "reviewed_on": "2026-11-22",
+  "status": "BLOCKED",
+  "scope": "Static code review of the live scene functions balloon/condensation/wrench against exact writer-a.json and fact-audit-b-10-12.json. No renderer/assets edited and no MP4 verified.",
+  "script_sha256": "f116f5aa789c336af4cba98a6a755d57e34a07c92ad69624d5cbe9d1d52a5256",
+  "scenes_sha256_at_inspection": "1dee0baf293183b0b913a1aa2476e417ef1e0cd82e6bc0c79df969e2e532e7e8",
+  "episodes": [
+    {
+      "id": "10",
+      "status": "BLOCKED",
+      "critical_defects": [
+        {
+          "locator": "scenes.py balloon, lines 214–228, k=5/6",
+          "finding": "At friction cue k=5 the balloon center is 380 and rightmost body x=478, whereas wall starts x=550: 72 px visible separation. Closing k=6 reaches at most x=503, still 47 px away. Friction cannot support an object that is not in contact.",
+          "correction": "For contact/support/closing fix balloon center at wall-98=452, accounting for outline; show actual touching surfaces. At k=5 add upward static-friction and downward weight arrows, equal for this resting case. Either label selected vertical forces or also show the horizontal contact reaction and electric attraction."
+        }
+      ],
+      "required_improvements": [
+        {
+          "locator": "balloon k=1",
+          "finding": "The sweater is drawn and RUB arrow appears, but no electron tokens move from fabric to balloon as narrated.",
+          "correction": "Animate equal negative tokens crossing the fabric/rubber interface; retain a matched loss on fabric. Do not turn electrons into protons."
+        },
+        {
+          "locator": "balloon k=2..6",
+          "finding": "Wall charge pairs appear already widely separated from k=3; closing k=6 has no charges. The tiny bound displacement and overall neutrality condition are not demonstrated.",
+          "correction": "Use a magnified wall inset with equal plus/minus counts before and after; fixed positive centers and small local negative displacement. Add 'Schematic; displacement exaggerated'. Retain or recap equal wall counts in closing. Avoid bulk conduction across wall."
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "status": "BLOCKED",
+      "critical_defects": [
+        {
+          "locator": "scenes.py condensation lines 232–248",
+          "finding": "There is no dew-point reference or local temperature threshold, and compare cue k=5 still shows the same single iced, wet glass instead of the required cold/warm control. This loses the condition distinguishing a cold-enough surface from any surface.",
+          "correction": "Add local temperature/dew-point comparison in k=3. For k=5 draw two matching initially dry intact glasses in the same room: cold surface below local dew point with drops; room-temperature surface above dew point dry. Qualitative labels suffice; do not introduce a universal temperature."
+        },
+        {
+          "locator": "condensation ice square centered (345,521), surface y=556",
+          "finding": "The top ice square spans y=481..561, leaving only 5 of 80 px below liquid surface; a free ice cube is depicted almost entirely above water.",
+          "correction": "Move that cube mostly beneath the surface (or remove it). Keep the drink/cold condition clear without unphysical floating geometry."
+        }
+      ],
+      "required_improvements": [
+        {
+          "locator": "condensation k=1..4",
+          "finding": "Outside vapor markers do remain outside intact glass, but the yellow arrow at k=2/3/4 points toward the glass without identifying what it represents.",
+          "correction": "Either label it as selected water transfer in the condensing stage, or show heat leaving the adjacent air toward the colder wall with a distinct heat label. Do not imply the cold glass squirts coldness into air."
+        },
+        {
+          "locator": "writer-a.json episode 11 Chinese cue 1",
+          "finding": "Prior fact audit requests editorial repair of 乾杯一倒進冰飲 before subtitle production.",
+          "correction": "Use a new revision or explicitly corrected subtitle input: 原本乾燥的杯子，倒進冰飲後……; do not silently alter a hash-bound script."
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "status": "BLOCKED",
+      "critical_defects": [
+        {
+          "locator": "scenes.py wrench lines 259–266, k=5",
+          "finding": "The 'Through pivot / No torque' cue still has a horizontal force at the handle end, while its mostly vertical handle rotates by -0.27*ease(p). This creates nonzero torque and visible rotation in the supposed zero-torque demonstration.",
+          "correction": "At k=5 keep wrench/nut angle fixed, draw the force along the handle with its line through nut center, and remove the turning arc/rotation."
+        },
+        {
+          "locator": "wrench k=4 and line 266",
+          "finding": "In the rotating torque-effect cue the force remains screen-horizontal while the handle tilts. It is no longer perpendicular, violating the controlled equal-force comparison.",
+          "correction": "For each handle unit vector u=(sin(a),-cos(a)), use a perpendicular force direction such as n=(cos(a),sin(a)), attached at the same fractional position. Keep both force-arrow magnitudes equal and the torque sign consistent."
+        }
+      ],
+      "required_improvements": [
+        {
+          "locator": "wrench k=3/4",
+          "finding": "Both equal-length force arrows are present, but the requested lever-arm distances and qualitative torque contrast are not explicitly shown.",
+          "correction": "Add r1/r2 distance brackets from nut center to application point and distinguish torque magnitude with separate bars, while preserving equal force arrows and angle."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "This is a source-code inspection, not an actual PNG or encoded motion review. Coordinates and branch behavior were computed from the inspected code.",
+    "The scene file is live and may change; this verdict is tied to the recorded snapshot SHA. Fresh previews and motion pairs are required after fixes.",
+    "Existing script fact PASS or reader scores do not override the defects above."
+  ]
+}

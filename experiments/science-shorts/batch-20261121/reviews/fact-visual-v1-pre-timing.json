@@ -1,0 +1,977 @@
+{
+  "schema_version": "science-fact-visual-audit.v1",
+  "reviewer": {
+    "agent_id": "/root/fact_visual_audit",
+    "role": "Independent AI fact auditor and scientific visual-plan reviewer",
+    "model": "inherited native agent (API未提供精確版本)",
+    "human": false,
+    "domain_expert_attestation": false,
+    "token_usage": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21T14:37:53Z",
+  "git_sha": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea",
+  "script_path": "experiments/science-shorts/batch-20261121/scripts-final.json",
+  "script_sha256": "2f19a9c3fa2f38acd69a32ed6f584d1ff126d451968a6403ed46a10f19a50585",
+  "script_revision": "v1-sources2",
+  "renderer_path": "experiments/science-shorts/render.py",
+  "renderer_sha256": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8",
+  "source_cards_sha256": "8e480a70887131396ef92d5cad0e8a878d0ae597eba0743bae2b0229acf605b4",
+  "gate_policy_sha256": "e7f1518efed78b649f02ee8af6052a817eb1eaebe066e98d1522e1b71cb78747",
+  "method": "Read every EN/ZH cue and claim. Independently opened institutional first-party educational pages using web tools, checked named sections, and deduplicated all NASA pages as one publisher. Reviewed frozen Pillow drawing code and representative PNGs from the actual drawing functions. This is not human, professional scientific, audience-score, or final-MP4 approval.",
+  "status": "PASS_FOR_LOCAL_PRODUCTION",
+  "fact_pass": true,
+  "visual_plan_pass": true,
+  "critical_defects": [],
+  "production_decision": "ALLOW_LOCAL_PRODUCTION_IF_BOTH_REQUIRED_COMPREHENSION_READERS_PASS; NO_UPLOAD_OR_PUBLICATION",
+  "source_access": [
+    {
+      "id": "usgs",
+      "publisher": "USGS",
+      "url": "https://www.usgs.gov/water-science-school/science/water-density",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "Water Density L27–33; Ice is less dense than water L59–68",
+      "support": "Density is mass per volume. Ice has a regular open lattice, lower density than liquid water, and floats with most volume submerged.",
+      "limits": "Everyday ordinary ice only; no numerical floating fraction adopted."
+    },
+    {
+      "id": "iapws",
+      "publisher": "IAPWS",
+      "url": "https://iapws.org/faqs/faq1",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "Why does liquid water have a density maximum? L177–192",
+      "support": "Freezing expands ordinary water; crystalline ice has extra open space and lower density, explaining flotation.",
+      "limits": "Educational explanation; not a review of exotic phases or pressure conditions. Fixed-mass density consequence also uses the density definition."
+    },
+    {
+      "id": "nasa-sky",
+      "publisher": "NASA",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "L26–43; What makes a red sunset? L50–57",
+      "support": "White sunlight combines visible colors. Molecules scatter light directionally; blue wavelengths are shorter than red. A longer atmospheric path removes more blue from the direct beam.",
+      "limits": "The page loosely says blue scatters more than other colors. Audit accepts only blue-versus-red; violet is excluded. Sunset aerosols and multiple scattering are not fully modeled."
+    },
+    {
+      "id": "noaa",
+      "publisher": "NOAA/NWS",
+      "url": "https://www.weather.gov/fgz/SkyBlue",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "Understanding the atmosphere and light L161–169; So why are sunrises and sunsets red? L170–172",
+      "support": "White sunlight contains visible wavelengths. Blue/violet scatter preferentially to red; long sunset paths preferentially remove shorter wavelengths from direct sight lines.",
+      "limits": "No source diagram reused. Script does not repeat the page's loose absorption wording or volcanic-aerosol generalizations."
+    },
+    {
+      "id": "nasa-waves",
+      "publisher": "NASA",
+      "url": "https://science.nasa.gov/ems/02_anatomy/",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "What are Electromagnetic and Mechanical waves? L241–244; ELECTROMAGNETIC WAVES L247–249",
+      "support": "Sound is a mechanical disturbance requiring material. Particles oscillate locally; an ideal vacuum cannot carry sound. Electromagnetic waves need no material medium.",
+      "limits": "The script's perfect-vacuum boundary is idealized, not a claim that all space contains no matter."
+    },
+    {
+      "id": "nasa-cabin",
+      "publisher": "NASA",
+      "url": "https://science.gsfc.nasa.gov/attic/cosmicopia.gsfc.nasa.gov/qa_sp_en.html",
+      "result": "FAILED_TIMEOUT",
+      "attempts": 2,
+      "locator": null,
+      "support": null,
+      "limits": "web.open returned (400) Timeout fetching twice. Content and source-card summary were not independently verified and are excluded as evidence."
+    },
+    {
+      "id": "nasa-radio",
+      "publisher": "NASA",
+      "url": "https://science.nasa.gov/ems/05_radiowaves/",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "WHAT ARE RADIO WAVES? L242–247",
+      "support": "Radio is electromagnetic; receivers produce mechanical speaker vibrations and audible sound.",
+      "limits": "Generic mechanism, not verification of a particular spacesuit communication design. NASA pages remain one institution."
+    },
+    {
+      "id": "esa-radio",
+      "publisher": "ESA",
+      "url": "https://www.esa.int/articles/about-us/directorates/science/listen-up",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "Archive article dated 2003-07-24, paragraphs L201–203",
+      "support": "Sound requires material; radio is electromagnetic and needs no material carrier. Receiving equipment translates the radio signal to speaker-produced sound.",
+      "limits": "Archived educational page. Do not adopt its generic phrase that space has no air as a universal cosmological statement."
+    },
+    {
+      "id": "esa-cabin",
+      "publisher": "ESA",
+      "url": "https://www.esa.int/media/how-loud-is-space",
+      "result": "SUCCESS",
+      "attempts": 1,
+      "locator": "Description L229–231, published 2020-04-03",
+      "support": "Vacuum cannot transmit sound; spacecraft interiors contain audible noise.",
+      "limits": "Contextual boundary check only; does not count as a third institution or independently corroborate ESA's other page."
+    }
+  ],
+  "source_count_rule": "USGS + IAPWS; NASA + NOAA/NWS; NASA + ESA. Multiple pages from one institution never count as independent institutions.",
+  "history": [
+    {
+      "stage": "source_audit_v1",
+      "result": "PROVENANCE_GAP",
+      "detail": "Original space.c2 cited NASA Cosmicopia. Two independent open attempts timed out; that page was excluded. Main agent replaced its reference with reachable NASA EM anatomy in scripts-final.json, added NASA Radio Waves card, and preserved exact bilingual cues and visual constraints."
+    },
+    {
+      "stage": "visual_initial",
+      "renderer_sha256": "c0c92ba3e9f2f86d5063faf0ed4442b9105968b7c079b33f32bd99be23d1e7ae",
+      "result": "BLOCK",
+      "defect_id": "VIS-SPACE-01",
+      "severity": "critical",
+      "detail": "Air-particle inset occupied the gap between astronauts while surrounding labels identified an ideal vacuum. It could teach that matter fills the vacuum gap."
+    },
+    {
+      "stage": "visual_revision_1",
+      "renderer_sha256": "ecf7d84aeafd51118254b4accf80a970a691193b1f67e21b80d25681107ed400",
+      "result": "VIS-SPACE-01_RESOLVED",
+      "evidence": "Reopened preview/space-3.png: particle inset below astronauts, separate AIR label, main gap empty. Reopened space-8.png: speaker, local air and ear visible. Code confirms positions. Added sky scattering marker and straight direct red path also inspected."
+    },
+    {
+      "stage": "motion_code_review",
+      "renderer_sha256": "ecf7d84aeafd51118254b4accf80a970a691193b1f67e21b80d25681107ed400",
+      "result": "BLOCK",
+      "defect_id": "VIS-SKY-02",
+      "severity": "critical",
+      "detail": "Sunset blue arrows pointed upward away from beam, but moving pulse y=600+((t*70+x)%100) moved downward and off the arrow line; static preview could not reveal direction."
+    },
+    {
+      "stage": "visual_revision_2",
+      "renderer_sha256": "b881a965d2fec75db48a5af1821e4fc68c2984892c2b3b68e4104fe72570eb02",
+      "result": "VIS-SKY-02_RESOLVED",
+      "evidence": "Read corrected code: phase=(t*.4+x*.001)%1; position=(x+20*phase,730-130*phase). Between periodic resets, it lies on the arrow segment and travels from the direct beam outward. No MP4 yet exists."
+    },
+    {
+      "stage": "gate_binding_freeze",
+      "renderer_sha256": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8",
+      "result": "PASS",
+      "evidence": "Inspected validation addition binding audit.renderer_sha256 to actual renderer bytes. Get-FileHash independently matched final renderer. PowerShell compared original/final exact cues and visual_constraints: both true; nine claims, 29 cues. Later gate-validator additions did not alter diagram design."
+    }
+  ],
+  "episodes": [
+    {
+      "id": "ice",
+      "title_en": "Why Does Ice Float?",
+      "title_zh": "冰為什麼浮在水上？",
+      "fact_pass": true,
+      "visual_plan_pass": true,
+      "critical_defects": [],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Ordinary ice has a more open, ordered molecular arrangement than liquid water, with more space between molecules.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "usgs",
+              "publisher": "USGS",
+              "url": "https://www.usgs.gov/water-science-school/science/water-density",
+              "locator": "Water Density L27–33; Ice is less dense than water L59–68",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "iapws",
+              "publisher": "IAPWS",
+              "url": "https://iapws.org/faqs/faq1",
+              "locator": "Why does liquid water have a density maximum? L177–192",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "USGS",
+            "IAPWS"
+          ],
+          "reason": "Both institutions explicitly describe regular/open ice structure and extra intermolecular space relative to liquid.",
+          "necessary_qualification": "Ordinary water ice at everyday pressure; open packing is not a claim every nearest-neighbor bond length grows."
+        },
+        {
+          "id": "c2",
+          "text": "When the same mass of water occupies a larger volume as ordinary ice, its density is lower.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "usgs",
+              "publisher": "USGS",
+              "url": "https://www.usgs.gov/water-science-school/science/water-density",
+              "locator": "Water Density L27–33; Ice is less dense than water L59–68",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "iapws",
+              "publisher": "IAPWS",
+              "url": "https://iapws.org/faqs/faq1",
+              "locator": "Why does liquid water have a density maximum? L177–192",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "USGS",
+            "IAPWS"
+          ],
+          "reason": "USGS defines density as mass per volume and describes less-dense open ice. IAPWS states expansion on freezing and lower density. Fixed mass with larger volume mathematically entails lower density.",
+          "necessary_qualification": "Fixed mass is essential and is explicit in EN/ZH cue 7; no mass loss, added molecules, or trapped-air mechanism."
+        },
+        {
+          "id": "c3",
+          "text": "Ordinary ice floats because it is less dense than liquid water.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "usgs",
+              "publisher": "USGS",
+              "url": "https://www.usgs.gov/water-science-school/science/water-density",
+              "locator": "Water Density L27–33; Ice is less dense than water L59–68",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "iapws",
+              "publisher": "IAPWS",
+              "url": "https://iapws.org/faqs/faq1",
+              "locator": "Why does liquid water have a density maximum? L177–192",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "USGS",
+            "IAPWS"
+          ],
+          "reason": "Both explicitly connect ordinary ice flotation to its lower density than liquid water.",
+          "necessary_qualification": "Liquid water comparison in ordinary gravity; other phases, heavy-water ice, and numerical buoyancy fractions are excluded."
+        }
+      ],
+      "bilingual_cue_audit": [
+        {
+          "cue_number": 1,
+          "scene": "hook",
+          "en": "Drop an ice cube into water. Why does the solid stay on top?",
+          "zh": "把冰塊放進水裡，為什麼固體反而浮在上面？",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Question refers to ordinary ice in water; not a claim that every solid floats. Water glass supplies liquid-water context."
+        },
+        {
+          "cue_number": 2,
+          "scene": "intuition",
+          "en": "You might picture freezing as packing everything tighter. Here, the arrangement opens up.",
+          "zh": "你可能以為結冰會讓分子排得更緊，這裡的排列卻變得更鬆。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Conditional intuition, not asserted premise; more open arrangement is supported. EN/ZH equivalent."
+        },
+        {
+          "cue_number": 3,
+          "scene": "comparison",
+          "en": "Compare the liquid and frozen forms, using the same amount of water.",
+          "zh": "拿同樣多的水，比較液態與結冰後的樣子。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Same amount is initially ambiguous but is resolved explicitly as same mass in cue 7 and the planned SAME MASS comparison."
+        },
+        {
+          "cue_number": 4,
+          "scene": "mechanism",
+          "en": "As ordinary ice forms, the molecules settle into a more open, ordered pattern.",
+          "zh": "普通的冰形成時，分子會排成較開放、規則的結構。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Ordinary/普通 limits ice type; ordered/open structural summary is supported."
+        },
+        {
+          "cue_number": 5,
+          "scene": "spacing",
+          "en": "That pattern leaves more space between molecules than in the liquid.",
+          "zh": "這種排列讓分子之間的空間，比液態時更多。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "More space means collective open packing, not every nearest-neighbor distance uniformly increasing. Schematic must communicate voids rather than swelling molecules."
+        },
+        {
+          "cue_number": 6,
+          "scene": "volume",
+          "en": "Keep the same amount of water, and the frozen version takes up more room.",
+          "zh": "水的量相同，結成冰以後，佔的空間卻更大。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Same quantity and larger total occupied volume; cue 7 clarifies fixed mass."
+        },
+        {
+          "cue_number": 7,
+          "scene": "density",
+          "en": "Same mass, larger volume. That means a lower density.",
+          "zh": "同樣的質量，體積更大，密度就更低。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Density conclusion follows directly from fixed mass divided by increased volume. EN/ZH preserve both conditions."
+        },
+        {
+          "cue_number": 8,
+          "scene": "answer",
+          "en": "Ordinary ice is less dense than the liquid water around it, so it floats.",
+          "zh": "普通冰的密度比周圍的液態水低，所以會浮起來。",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Comparison is specifically ordinary ice versus surrounding liquid water. EN/ZH preserve causal density contrast."
+        },
+        {
+          "cue_number": 9,
+          "scene": "takeaway",
+          "en": "The trick is inside the cube: how the water molecules are arranged.",
+          "zh": "關鍵藏在冰塊裡，就是水分子的排列方式。",
+          "claim_ids": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Structural cause is a concise recap; no claim that trapped air is necessary."
+        }
+      ],
+      "visual_constraints_audit": [
+        {
+          "constraint": "All visuals must be original programmatic diagrams; do not download source images.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Original Pillow shapes only; no source imagery is loaded by the drawing function."
+        },
+        {
+          "constraint": "Molecule diagrams are schematic: label them and do not imply a flat two-dimensional physical crystal.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Nine molecule symbols on each side retain radius 19; larger ICE group extent is caused by coordinate separation."
+        },
+        {
+          "constraint": "Use equal molecule counts and identical molecule sizes in equal-mass comparisons; expansion is spacing, not growing molecules or added air.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Liquid is irregular with small bounded motion; ICE is ordered. The label says arrangement only, not a crystal model, avoiding a literal square-lattice interpretation."
+        },
+        {
+          "constraint": "Show most of the floating cube submerged, without a numerical submerged fraction.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Floating cube top near 805 and bottom near 985 versus waterline 820 places most volume underwater."
+        },
+        {
+          "constraint": "Keep English narration and editable Traditional Chinese captions separate from scientific diagrams.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Clean diagram master and independently generated EN/ZH subtitle files are separate in renderer design."
+        }
+      ],
+      "visual_findings": [
+        "Original Pillow shapes only; no source imagery is loaded by the drawing function.",
+        "Nine molecule symbols on each side retain radius 19; larger ICE group extent is caused by coordinate separation.",
+        "Liquid is irregular with small bounded motion; ICE is ordered. The label says arrangement only, not a crystal model, avoiding a literal square-lattice interpretation.",
+        "Floating cube top near 805 and bottom near 985 versus waterline 820 places most volume underwater.",
+        "Clean diagram master and independently generated EN/ZH subtitle files are separate in renderer design."
+      ]
+    },
+    {
+      "id": "sky",
+      "title_en": "Why Is the Sky Blue?",
+      "title_zh": "天空為什麼是藍色？",
+      "fact_pass": true,
+      "visual_plan_pass": true,
+      "critical_defects": [],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Sunlight that looks white contains many visible colors.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "nasa-sky",
+              "publisher": "NASA",
+              "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+              "locator": "L26–43; What makes a red sunset? L50–57",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "noaa",
+              "publisher": "NOAA/NWS",
+              "url": "https://www.weather.gov/fgz/SkyBlue",
+              "locator": "Understanding the atmosphere and light L161–169; So why are sunrises and sunsets red? L170–172",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "NASA",
+            "NOAA/NWS"
+          ],
+          "reason": "Both identify white-looking sunlight as a mixture of visible colors.",
+          "necessary_qualification": "Not six isolated monochromatic colors; line colors are illustrative."
+        },
+        {
+          "id": "c2",
+          "text": "Air molecules scatter sunlight in different directions and scatter blue light more strongly than red, sending blue light toward an observer looking away from the Sun.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "nasa-sky",
+              "publisher": "NASA",
+              "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+              "locator": "L26–43; What makes a red sunset? L50–57",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "noaa",
+              "publisher": "NOAA/NWS",
+              "url": "https://www.weather.gov/fgz/SkyBlue",
+              "locator": "Understanding the atmosphere and light L161–169; So why are sunrises and sunsets red? L170–172",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "NASA",
+            "NOAA/NWS"
+          ],
+          "reason": "Both describe scattering by atmospheric gas molecules. NASA gives shorter blue than red wavelengths and directional scattering; NOAA identifies preferential blue/violet scattering. The blue-versus-red comparison and off-Sun view are supported.",
+          "necessary_qualification": "Clear daytime Earth atmosphere; not blue-versus-violet and not a complete color-perception model."
+        },
+        {
+          "id": "c3",
+          "text": "Near sunset, sunlight follows a longer atmospheric path to the observer; more blue light is scattered away from the direct path and the transmitted light appears redder.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "nasa-sky",
+              "publisher": "NASA",
+              "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+              "locator": "L26–43; What makes a red sunset? L50–57",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "noaa",
+              "publisher": "NOAA/NWS",
+              "url": "https://www.weather.gov/fgz/SkyBlue",
+              "locator": "Understanding the atmosphere and light L161–169; So why are sunrises and sunsets red? L170–172",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "NASA",
+            "NOAA/NWS"
+          ],
+          "reason": "Both explicitly explain longer near-horizon atmospheric paths and preferential removal of blue from the direct beam, leaving redder transmitted light.",
+          "necessary_qualification": "Relative redder light in a selected sunset example; not a universal red sunset or complete aerosol/multiple-scattering model."
+        }
+      ],
+      "bilingual_cue_audit": [
+        {
+          "cue_number": 1,
+          "scene": "hook",
+          "en": "Why is the sky blue when sunlight looks white?",
+          "zh": "陽光看起來是白色，天空為什麼卻是藍色？",
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Clear daytime Earth context must be provided by diagram; title is an everyday question, not an assertion about every sky."
+        },
+        {
+          "cue_number": 2,
+          "scene": "intuition",
+          "en": "The light starts out carrying many colors mixed together.",
+          "zh": "原來陽光裡，混合了許多不同顏色的光。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Many colors mixed together is supported; does not say sunlight is six discrete lines."
+        },
+        {
+          "cue_number": 3,
+          "scene": "setup",
+          "en": "To see what happens next, follow it into Earth's atmosphere.",
+          "zh": "接著，跟著這束光進入地球的大氣。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Transition instruction makes no additional physical assertion."
+        },
+        {
+          "cue_number": 4,
+          "scene": "mechanism",
+          "en": "Tiny air molecules scatter some of that light in different directions.",
+          "zh": "微小的空氣分子，會把一部分光散射到不同方向。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Some/一部分 preserves partial scattering; different directions is not conversion of wavelength."
+        },
+        {
+          "cue_number": 5,
+          "scene": "comparison",
+          "en": "They scatter blue light more strongly than red light.",
+          "zh": "其中，藍光比紅光更容易被散射。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Blue compared only with red. Does not claim blue is scattered more than violet."
+        },
+        {
+          "cue_number": 6,
+          "scene": "answer",
+          "en": "So blue light reaches your eyes from across the sky, away from the Sun.",
+          "zh": "因此，看向太陽以外的天空，也有藍光從不同方向進入眼睛。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Observer looking away from Sun receives scattered light. EN/ZH equivalent causal account."
+        },
+        {
+          "cue_number": 7,
+          "scene": "sunset_transition",
+          "en": "Now move the Sun toward the horizon in our diagram.",
+          "zh": "現在，把示意圖中的太陽移到接近地平線。",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Explicitly a diagram manipulation; does not claim the Sun physically circles Earth."
+        },
+        {
+          "cue_number": 8,
+          "scene": "long_path",
+          "en": "Sunlight takes a longer path through the atmosphere to reach the observer.",
+          "zh": "陽光要穿過更長一段大氣，才到得了觀察者。",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Longer atmospheric path is compared at fixed observer in the same atmosphere; visual must actually show it."
+        },
+        {
+          "cue_number": 9,
+          "scene": "sunset_mechanism",
+          "en": "More blue is scattered out of that direct path, leaving the light looking redder.",
+          "zh": "更多藍光在途中被散射出去，沿原路到達的光就顯得更紅。",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "More blue removed from direct path, transmitted light redder. EN/ZH preserve comparative, not absolute, wording."
+        },
+        {
+          "cue_number": 10,
+          "scene": "takeaway",
+          "en": "Blue sky and red sunset: the same scattering, with a different path through air.",
+          "zh": "藍天與紅色夕陽，都是散射，只是光穿過大氣的路徑不同。",
+          "claim_ids": [
+            "c2",
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Acceptable recap of selected clear-sky/red-sunset example; does not provide a complete model of every sunset. Scope and schematic label are necessary."
+        }
+      ],
+      "visual_constraints_audit": [
+        {
+          "constraint": "Use original vector or canvas diagrams only; no downloaded sky photos or source graphics.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Original rays, molecule dots, Sun symbol, and eye are programmatic; no downloaded photos."
+        },
+        {
+          "constraint": "Show colors bundled in the incoming beam: air molecules do not separate sunlight as a prism would.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Incoming red/gold/blue paths are parallel and bundled, separated only for explanation; labels explicitly state this."
+        },
+        {
+          "constraint": "Show scattering as a change of direction, not a change of blue light into red light.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Blue branches change direction; no blue ray is recolored red. Daytime red transmission is now collinear with its input and the scattering point has a molecule marker."
+        },
+        {
+          "constraint": "Compare blue only against red; never label blue the most scattered color.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Only BLUE: scattered more than red is asserted. No violet ranking, numeric scattering ratio, or wavelength-conversion claim."
+        },
+        {
+          "constraint": "Draw observer and ray paths explicitly; the sunset diagram is explanatory and is not an instruction to stare at the Sun.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Daytime side-scattered ray ends at the eye while direct red follows a different path; sunset direct red ends at a labeled eye."
+        },
+        {
+          "constraint": "Label all path and ray diagrams as schematic; do not encode an unsupported numerical scattering ratio.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "All frames carry SCHEMATIC / NOT TO SCALE; labels say simplified paths and colors separated for explanation. No numeric scattering ratio is asserted; ray counts are qualitative only."
+        }
+      ],
+      "visual_findings": [
+        "Original rays, molecule dots, Sun symbol, and eye are programmatic; no downloaded photos.",
+        "Incoming red/gold/blue paths are parallel and bundled, separated only for explanation; labels explicitly state this.",
+        "Blue branches change direction; no blue ray is recolored red. Daytime red transmission is now collinear with its input and the scattering point has a molecule marker.",
+        "Only BLUE: scattered more than red is asserted. No violet ranking, numeric scattering ratio, or wavelength-conversion claim.",
+        "Daytime side-scattered ray ends at the eye while direct red follows a different path; sunset direct red ends at a labeled eye.",
+        "Same schematic atmospheric layer now contains short overhead and longer horizontal paths to the same sunset eye.",
+        "Sunset blue pulse uses (x+20*phase,730-130*phase), phase increasing 0→1, so it moves away from the direct beam along the upward arrow."
+      ]
+    },
+    {
+      "id": "space",
+      "title_en": "How Do Astronauts Talk Across Empty Space?",
+      "title_zh": "隔著真空，太空人怎麼通話？",
+      "fact_pass": true,
+      "visual_plan_pass": true,
+      "critical_defects": [],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Sound is a mechanical disturbance carried through matter, including air; a perfect vacuum provides no material medium for that disturbance to propagate.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "nasa-waves",
+              "publisher": "NASA",
+              "url": "https://science.nasa.gov/ems/02_anatomy/",
+              "locator": "What are Electromagnetic and Mechanical waves? L241–244; ELECTROMAGNETIC WAVES L247–249",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "esa-radio",
+              "publisher": "ESA",
+              "url": "https://www.esa.int/articles/about-us/directorates/science/listen-up",
+              "locator": "Archive article dated 2003-07-24, paragraphs L201–203",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "NASA",
+            "ESA"
+          ],
+          "reason": "Both describe sound as a material mechanical vibration and state no sound propagation through empty vacuum.",
+          "necessary_qualification": "Perfect/ideal vacuum with no solid bridge; sound inside a pressurized helmet or spacecraft remains possible."
+        },
+        {
+          "id": "c2",
+          "text": "Radio waves are electromagnetic waves and can propagate across a vacuum without a material medium.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "nasa-waves",
+              "publisher": "NASA",
+              "url": "https://science.nasa.gov/ems/02_anatomy/",
+              "locator": "What are Electromagnetic and Mechanical waves? L241–244; ELECTROMAGNETIC WAVES L247–249",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "nasa-radio",
+              "publisher": "NASA",
+              "url": "https://science.nasa.gov/ems/05_radiowaves/",
+              "locator": "WHAT ARE RADIO WAVES? L242–247",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "esa-radio",
+              "publisher": "ESA",
+              "url": "https://www.esa.int/articles/about-us/directorates/science/listen-up",
+              "locator": "Archive article dated 2003-07-24, paragraphs L201–203",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "NASA",
+            "ESA"
+          ],
+          "reason": "NASA EM anatomy establishes vacuum propagation without material; its Radio Waves page explicitly classifies radio as electromagnetic. ESA independently combines both propositions in one paragraph.",
+          "necessary_qualification": "NASA's two pages are one institution. Cosmicopia is excluded after two fetch timeouts."
+        },
+        {
+          "id": "c3",
+          "text": "Receiving equipment translates a radio signal into sound through a speaker, so the message can cross the vacuum as radio and be heard locally as sound.",
+          "status": "SUPPORTED",
+          "source_evidence": [
+            {
+              "source_id": "nasa-radio",
+              "publisher": "NASA",
+              "url": "https://science.nasa.gov/ems/05_radiowaves/",
+              "locator": "WHAT ARE RADIO WAVES? L242–247",
+              "access_result": "SUCCESS"
+            },
+            {
+              "source_id": "esa-radio",
+              "publisher": "ESA",
+              "url": "https://www.esa.int/articles/about-us/directorates/science/listen-up",
+              "locator": "Archive article dated 2003-07-24, paragraphs L201–203",
+              "access_result": "SUCCESS"
+            }
+          ],
+          "independent_publishers": [
+            "NASA",
+            "ESA"
+          ],
+          "reason": "Both explicitly describe receiving radio equipment producing mechanical speaker vibration and local sound.",
+          "necessary_qualification": "Generic communication mechanism, not a specification of a particular spacesuit. Local air and speaker-to-ear path are necessary."
+        }
+      ],
+      "bilingual_cue_audit": [
+        {
+          "cue_number": 1,
+          "scene": "hook",
+          "en": "Two astronauts. Empty space between them. How can either hear a word?",
+          "zh": "兩名太空人，中間隔著真空，怎麼還能聽見對方說話？",
+          "claim_ids": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Two separated suited astronauts and empty gap is a defined idealized scenario, not all space everywhere."
+        },
+        {
+          "cue_number": 2,
+          "scene": "intuition",
+          "en": "Shouting louder seems like the obvious answer. But sound needs a carrier.",
+          "zh": "直覺會想喊大聲一點，但聲音得靠物質傳遞。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "An intuition is corrected; carrier must mean material for sound, not for radio."
+        },
+        {
+          "cue_number": 3,
+          "scene": "sound_mechanism",
+          "en": "A voice makes matter vibrate, passing a disturbance from particle to particle.",
+          "zh": "說話讓物質振動，把擾動從一個粒子傳到下一個。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Particle-to-particle mechanical disturbance is a sound-in-air simplification; local particle motion must be shown."
+        },
+        {
+          "cue_number": 4,
+          "scene": "vacuum",
+          "en": "Air can carry that disturbance. A perfect vacuum has no matter to carry it.",
+          "zh": "空氣能傳遞這種擾動；理想真空裡沒有物質能接力。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Perfect/理想 vacuum is the necessary idealization; no matter means absent material sound medium."
+        },
+        {
+          "cue_number": 5,
+          "scene": "sound_boundary",
+          "en": "So the voice itself cannot cross the empty gap between them.",
+          "zh": "所以，聲音本身無法穿過兩人之間的真空。",
+          "claim_ids": [
+            "c1"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Applies to empty gap without tether/shared solid, so no alternate mechanical conduction route."
+        },
+        {
+          "cue_number": 6,
+          "scene": "radio",
+          "en": "Their radios solve this by sending electromagnetic waves instead of sound waves.",
+          "zh": "無線電解決了這個問題：送出去的是電磁波。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Radio signal is electromagnetic, not mechanical sound. EN/ZH equivalent."
+        },
+        {
+          "cue_number": 7,
+          "scene": "radio_crossing",
+          "en": "These waves can cross a vacuum without air or other material carrying them.",
+          "zh": "電磁波可以穿過真空，不需要空氣或其他物質承載。",
+          "claim_ids": [
+            "c2"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "These waves refers to electromagnetic waves; no material medium is required."
+        },
+        {
+          "cue_number": 8,
+          "scene": "receiver",
+          "en": "The receiving radio turns the signal back into sound through a speaker.",
+          "zh": "接收端的無線電，再透過喇叭把訊號轉回聲音。",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Speaker reconversion is explicit; radio is not heard directly by the ear."
+        },
+        {
+          "cue_number": 9,
+          "scene": "hearing",
+          "en": "That is what reaches the astronaut's ears.",
+          "zh": "最後，這段聲音才進入太空人的耳朵。",
+          "claim_ids": [
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "That/這段聲音 refers to local speaker sound, with local helmet air necessary in diagram."
+        },
+        {
+          "cue_number": 10,
+          "scene": "takeaway",
+          "en": "Same message, different carrier: radio across the gap, sound at the receiving end.",
+          "zh": "同一句話，換了傳法：跨越真空靠無線電，接收後再變回聲音。",
+          "claim_ids": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "status": "SUPPORTED",
+          "translation": "NO_CRITICAL_SCOPE_OR_CAUSALITY_SHIFT",
+          "note": "Same message, different transmission form is acceptable; carrier/傳法 is not a claim radio needs material. No instantaneous-transmission claim."
+        }
+      ],
+      "visual_constraints_audit": [
+        {
+          "constraint": "Use original programmatic astronaut icons and diagrams only; no NASA or ESA images or audio.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Original programmatic astronaut symbols only, without NASA/ESA assets."
+        },
+        {
+          "constraint": "The external gap must have no air dots, tether, shared solid surface, or traveling sound-wave animation.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Gap has no tether or shared solid. Sound-in-air inset was moved below the astronauts and explicitly labeled separate; the main gap remains empty."
+        },
+        {
+          "constraint": "Distinguish sound and electromagnetic radio through both labels and shape, not color alone.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Radio uses a labeled electromagnetic sinusoid and direction arrow; local sound uses bounded particle dots, a speaker and ear. Distinction does not rely only on color."
+        },
+        {
+          "constraint": "Show sound particles oscillating locally rather than flying along with the wave.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Air inset particles oscillate within ±9 pixels around fixed rest positions; phase shifts by rest position, so disturbance travels without bulk particle transport."
+        },
+        {
+          "constraint": "Use PERFECT VACUUM for the idealized empty-medium diagram; do not label the entire universe silent.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Caption says perfect/ideal vacuum, while main schematic labels ideal vacuum gap; this is a local idealization, not universe-wide silence."
+        },
+        {
+          "constraint": "Receiving equipment and local sound must be visible; radio waves do not enter the ear as audible sound.",
+          "result": "PASS_WITH_STATED_LIMITS",
+          "evidence": "Receiving helmet contains speaker symbol, local air dots, ear shape/EAR, and speaker→air→ear label."
+        }
+      ],
+      "visual_findings": [
+        "Original programmatic astronaut symbols only, without NASA/ESA assets.",
+        "Gap has no tether or shared solid. Sound-in-air inset was moved below the astronauts and explicitly labeled separate; the main gap remains empty.",
+        "Radio uses a labeled electromagnetic sinusoid and direction arrow; local sound uses bounded particle dots, a speaker and ear. Distinction does not rely only on color.",
+        "Air inset particles oscillate within ±9 pixels around fixed rest positions; phase shifts by rest position, so disturbance travels without bulk particle transport.",
+        "Caption says perfect/ideal vacuum, while main schematic labels ideal vacuum gap; this is a local idealization, not universe-wide silence.",
+        "Receiving helmet contains speaker symbol, local air dots, ear shape/EAR, and speaker→air→ear label."
+      ]
+    }
+  ],
+  "preview_inspected": [
+    "artifacts/science-shorts/batch-20261121/preview/ice-1.png",
+    "artifacts/science-shorts/batch-20261121/preview/ice-2.png",
+    "artifacts/science-shorts/batch-20261121/preview/ice-5.png",
+    "artifacts/science-shorts/batch-20261121/preview/ice-9.png",
+    "artifacts/science-shorts/batch-20261121/preview/sky-1.png",
+    "artifacts/science-shorts/batch-20261121/preview/sky-5.png",
+    "artifacts/science-shorts/batch-20261121/preview/sky-6.png",
+    "artifacts/science-shorts/batch-20261121/preview/sky-8.png",
+    "artifacts/science-shorts/batch-20261121/preview/sky-10.png",
+    "artifacts/science-shorts/batch-20261121/preview/space-1.png",
+    "artifacts/science-shorts/batch-20261121/preview/space-3.png",
+    "artifacts/science-shorts/batch-20261121/preview/space-4.png",
+    "artifacts/science-shorts/batch-20261121/preview/space-7.png",
+    "artifacts/science-shorts/batch-20261121/preview/space-8.png",
+    "artifacts/science-shorts/batch-20261121/preview/space-10.png"
+  ],
+  "scientific_visual_limits": [
+    "Preview PNGs use provisional timing and are not proof of actual narration/caption alignment, rendered motion, mobile readability, or final media.",
+    "Diagrams are qualitative. Nine particle dots, ray-arrow counts, box-area changes and short/long path lengths encode no measured scale, density ratio, photon counts, or scattering ratio.",
+    "Ice grid illustrates relative arrangement only; it is not a literal 2D crystal model or molecular geometry.",
+    "Atmosphere is a flattened schematic layer instead of the storyboard's curved-Earth cross section. Both sunset comparison paths meet the same eye within that layer; no quantitative curvature claim is made.",
+    "The renderer simplifies the exact shot list: no complete curved-Earth orbit transition, split ending or full six-color spectrum inset. These are limitations of storyboard fidelity, not current critical scientific contradictions.",
+    "Color assignment differs from the prose storyboard, but shapes and labels distinguish radio, local sound and light.",
+    "Visual-rights inspection found no copied source graphics in drawing code. Audio/model/font redistribution rights and commercial publication are outside this fact/visual attestation."
+  ],
+  "unverified": [
+    "No frozen MP4, actual TTS listening, forced alignment, full motion playback or human video review at this stage.",
+    "No five-human retelling test or real-audience market measurements.",
+    "No upload, publication, channel creation, credential handling, production Episode v1/SQLite behavior or broad executable-security audit.",
+    "README acceptance commands are required for engineering closeout by the main agent; this review only writes audit records and does not claim to have run pytest/npm/governance checks.",
+    "Source access is tool-reported fetched content, not independently archived byte-level HTTP snapshots. The timed-out Cosmicopia source is unverified."
+  ],
+  "engineering_acceptance": "Independent content/visual preproduction review only; main agent must record build/test evidence separately.",
+  "market_acceptance": "PENDING; AI comprehension scores, including 85+, are not scientific evidence or market success.",
+  "checks_run": [
+    {
+      "command": "git rev-parse HEAD",
+      "result": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea"
+    },
+    {
+      "command": "Get-FileHash experiments/science-shorts/render.py -Algorithm SHA256",
+      "result": "432700a6bc30e8295ccaeda13c98599c66335b888a704df202e065853cedd1d8"
+    },
+    {
+      "command": "Get-FileHash experiments/science-shorts/batch-20261121/scripts-final.json -Algorithm SHA256",
+      "result": "2f19a9c3fa2f38acd69a32ed6f584d1ff126d451968a6403ed46a10f19a50585"
+    },
+    {
+      "command": "PowerShell ConvertFrom-Json + case-sensitive ConvertTo-Json comparison of scripts-v1/final cues and visual_constraints",
+      "result": "CuesEqual=true; VisualConstraintsEqual=true; Claims=9; Cues=29"
+    },
+    {
+      "command": "web.open/find on nine institution source URLs, view_image on listed previews, Get-Content renderer",
+      "result": "Eight source pages fetched; one source URL timed out on both attempts. Images and code inspected; source details in source_access."
+    }
+  ]
+}

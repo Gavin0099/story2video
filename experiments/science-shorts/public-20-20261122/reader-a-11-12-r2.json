@@ -1,0 +1,71 @@
+[
+  {
+    "id": "11",
+    "script_sha256": "2b71e0e51a22bc6a539ec89e5cc2d69fab3f93f37a6290bf273aba9efc8f4470",
+    "scores": {
+      "hook": 14,
+      "clarity": 22,
+      "causal_retelling": 23,
+      "visual_plan": 18,
+      "pacing": 8,
+      "natural_language": 5
+    },
+    "total": 90,
+    "critical_defects": [],
+    "retell": "杯子外面的空氣本來就有看不見的水蒸氣。冷玻璃使緊鄰外壁的空氣降溫，若降到露點以下，一部分水蒸氣就凝結成杯外液滴。水來自室內空氣，而不是穿過杯壁的飲料；室溫杯在相同環境下可以保持乾燥。",
+    "boundary": "需要外壁旁空氣冷到露點以下；不是所有摸起來涼的杯子一定會冒水珠。",
+    "evidence": [
+      "If that air cools below its dew point, some of its water vapor turns into liquid.",
+      "That liquid forms droplets on the outside. The water came from the room air."
+    ],
+    "transfer_test": {
+      "prompt": "如果杯旁空氣仍在露點以上，依稿中的條件一定會長出水珠嗎？",
+      "answer": "不會有這個保證；稿中的凝結條件尚未成立。外壁若出水，也不能只憑這段把所有情況都判為凝結。",
+      "result": "能保留if條件，避免把冷杯必出水當成定律。"
+    },
+    "lingering_misconceptions": [
+      "露點只透過一條溫度標記交代，初聽可能記住術語卻不清楚它隨環境而異；稿中沒有進一步討論。",
+      "結尾只說提供地方，若單獨記這句，可能漏掉冷卻與露點條件。"
+    ],
+    "notes": "不同顏色的杯內飲料與透明外滴、完整杯壁、室溫對照有效。新版原本乾燥的玻璃杯消除舊稿乾杯的語意歧義，語言自然度由4調為5，其餘評分保留。仍只評稿本與計畫，非來源或成片驗證。",
+    "review_type": "Narrow r2 editorial refresh after reading full current cues; same reviewer, not a fresh audience. Old receipt preserved.",
+    "revision_review": {
+      "change": "Only zh cue01 changed to explicitly identify an originally dry glass and outside droplets.",
+      "judgment": "The prior toast/dry-glass ambiguity is resolved; translation retains the original cold-drink and leak question. No causal or visual-plan change. Natural-language score increases by one; other categories unchanged."
+    }
+  },
+  {
+    "id": "12",
+    "script_sha256": "2b71e0e51a22bc6a539ec89e5cc2d69fab3f93f37a6290bf273aba9efc8f4470",
+    "scores": {
+      "hook": 13,
+      "clarity": 23,
+      "causal_retelling": 24,
+      "visual_plan": 19,
+      "pacing": 8,
+      "natural_language": 5
+    },
+    "total": 92,
+    "critical_defects": [],
+    "retell": "扳手繞螺帽中心轉動，與握柄垂直的推力產生扭矩。在力大小與推力方向相同時，把手移得離中心更遠，就增加轉動效果。若改成沿握柄直推，作用方向通過中心，便沒有這個轉動效果。",
+    "boundary": "更遠的比較同時固定力大小與側向方向；不是抓得遠後朝任何方向推都同樣有效。",
+    "evidence": [
+      "Now use the same sideways push, but put your hand farther from the pivot.",
+      "Push straight along the handle instead, and the force points through the pivot without turning it."
+    ],
+    "transfer_test": {
+      "prompt": "手在扳手最末端，但只沿握柄往螺帽中心推，能因距離很遠就得到大扭矩嗎？",
+      "answer": "不能；力的方向通過轉軸，稿中說這樣不產生轉動效果。必須保留側向推的條件。",
+      "result": "能區分單純抓握距離和有效轉動條件。"
+    },
+    "lingering_misconceptions": [
+      "螺帽最終轉動表示扭矩已足以克服阻礙，稿中未說任何小推力移遠都一定能轉開；不能把示範結尾過度概括。"
+    ],
+    "notes": "新版hook overlay直接對應把手移遠，與英文旁白、中文及同一扳手的近遠比較一致。既有分項分數保留；只評兩處明示修訂與其語境，未讀他人評閱或核准證據。",
+    "review_type": "Narrow r2 editorial refresh after reading full current cues; same reviewer, not a fresh audience. Old receipt preserved.",
+    "revision_review": {
+      "change": "Only English hook overlay changed from Why does a longer wrench help? to Why push farther out?",
+      "judgment": "The overlay now matches moving the hand along the same wrench, and avoids implying that a different tool is required. This improves precision without changing the already clear causal explanation or warranting another score increase."
+    }
+  }
+]

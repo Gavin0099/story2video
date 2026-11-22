@@ -1,0 +1,313 @@
+{
+  "schema_version": "science-script.v1",
+  "revision": "writer-a-11-12-r2-subtitle-and-title",
+  "editorial_status": "revision submitted for independent review",
+  "episodes": [
+    {
+      "id": "11",
+      "slug": "condensation",
+      "title_en": "Where Do the Drops on a Cold Glass Come From?",
+      "title_zh": "冰杯外面的水珠是哪來的？",
+      "question": "Where does the water on the outside of an intact cold glass come from?",
+      "invariants": [
+        "Water vapor markers only outside the glass; none crosses the intact wall and inside liquid does not color outside droplets.",
+        "Temperature arrow falls below a qualitative local dew-point line, not a single universal temperature.",
+        "Use equal intact containers in the same room, clean and initially dry; the warm control is above that room’s dew point."
+      ],
+      "simplification": "No rates, timing guarantees, surface chemistry or fluid-flow model. The outside gas shown is a schematic zoom; water vapor is invisible.",
+      "description_en": "Water vapor from the surrounding air can form liquid droplets on the outside of a cold glass when air near the surface is cooled below its dew point.",
+      "description_zh": "這些水珠就是凝結。冰冷的杯壁提供了水蒸氣變成液體的地方。",
+      "sources": [
+        {
+          "publisher": "NOAA JetStream",
+          "url": "https://www.noaa.gov/jetstream/ll-sweatin",
+          "evidence": "Sweatin' to the Coldies: compares outside condensation on cold and room-temperature glass and explains vapor in surrounding air cooling."
+        },
+        {
+          "publisher": "Federal Aviation Administration",
+          "url": "https://www.faa.gov/media/28556",
+          "evidence": "Dew Point section lines 1993–2004: droplets form outside a cold glass as ambient water vapor condenses."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Water vapor from the surrounding air can form liquid droplets on the outside of a cold glass when air near the surface is cooled below its dew point.",
+          "source_urls": [
+            "https://www.noaa.gov/jetstream/ll-sweatin",
+            "https://www.faa.gov/media/28556"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "A dry glass fills with a cold drink. Tiny drops appear outside. Did it leak?",
+          "zh": "原本乾燥的玻璃杯，倒進冰飲後，杯外冒出小水珠。是漏出來的嗎？",
+          "scene": "hook",
+          "visual": "Kitchen macro view of an intact tumbler; orange drink inside, clear droplets appear outside.",
+          "overlay_en": "Where do the drops come from?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Look at the air around the glass. It contains water vapor you cannot see.",
+          "zh": "看看杯子旁邊的空氣。裡面有看不見的水蒸氣。",
+          "scene": "vapor",
+          "visual": "Magnify outside air; introduce tiny schematic water vapor markers, never mist or real visible vapor.",
+          "overlay_en": "Invisible water vapor",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The cold glass cools the thin layer of air right next to its outside surface.",
+          "zh": "冰冷的玻璃，把緊貼在外壁的那一層空氣冷卻。",
+          "scene": "cool",
+          "visual": "Cross section shows a cooler color spreading outward from the wall into the thin near-surface region.",
+          "overlay_en": "Cooler air next to the glass",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "If that air cools below its dew point, some of its water vapor turns into liquid.",
+          "zh": "那層空氣低於露點後，部分水蒸氣就會凝結成液態水。",
+          "scene": "threshold",
+          "visual": "Qualitative thermometer crosses a horizontal dew-point marker; release a few vapor markers toward an outer-surface water drop.",
+          "overlay_en": "Below the dew point",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "That liquid forms droplets on the outside. The water came from the room air.",
+          "zh": "液滴在杯外形成。這些水來自房間裡的空氣。",
+          "scene": "bead",
+          "visual": "Animate droplets growing on the outside and coalescing; hold an intact wall between orange drink and clear droplets.",
+          "overlay_en": "Droplets form outside",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Set a room-temperature glass next to it. That glass can stay dry in the same room.",
+          "zh": "旁邊放一個室溫杯。在同一個房間裡，室溫杯可以維持乾燥。",
+          "scene": "compare",
+          "visual": "Two same-shape glasses side by side, one below and one above shown dew-point marker.",
+          "overlay_en": "Cold glass / Room-temperature glass",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Those beads are condensation. The cold glass gave water vapor a place to turn liquid.",
+          "zh": "這些水珠就是凝結。冰冷的杯壁提供了水蒸氣變成液體的地方。",
+          "scene": "return",
+          "visual": "Back to full tumbler. One outside droplet rolls down while the colored drink stays inside.",
+          "overlay_en": "Condensation",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Kitchen macro view of an intact tumbler; orange drink inside, clear droplets appear outside.",
+          "overlay_en": "Where do the drops come from?"
+        },
+        {
+          "cue": 2,
+          "scene": "vapor",
+          "action": "Magnify outside air; introduce tiny schematic water vapor markers, never mist or real visible vapor.",
+          "overlay_en": "Invisible water vapor"
+        },
+        {
+          "cue": 3,
+          "scene": "cool",
+          "action": "Cross section shows a cooler color spreading outward from the wall into the thin near-surface region.",
+          "overlay_en": "Cooler air next to the glass"
+        },
+        {
+          "cue": 4,
+          "scene": "threshold",
+          "action": "Qualitative thermometer crosses a horizontal dew-point marker; release a few vapor markers toward an outer-surface water drop.",
+          "overlay_en": "Below the dew point"
+        },
+        {
+          "cue": 5,
+          "scene": "bead",
+          "action": "Animate droplets growing on the outside and coalescing; hold an intact wall between orange drink and clear droplets.",
+          "overlay_en": "Droplets form outside"
+        },
+        {
+          "cue": 6,
+          "scene": "compare",
+          "action": "Two same-shape glasses side by side, one below and one above shown dew-point marker.",
+          "overlay_en": "Cold glass / Room-temperature glass"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Back to full tumbler. One outside droplet rolls down while the colored drink stays inside.",
+          "overlay_en": "Condensation"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "slug": "wrench",
+      "title_en": "Why Does a Longer Wrench Help?",
+      "title_zh": "扳手長一點，螺帽為什麼更好轉？",
+      "question": "Why does pushing perpendicular to a longer wrench produce more torque on the same nut?",
+      "invariants": [
+        "Same nut axis, arrow lengths, force angle, plane of rotation and drive direction for position comparison.",
+        "Arcs indicating torque share same turning sign and are distinguishable from translational force arrows.",
+        "End-on push must point through axis of nut and produce no turning torque about its center. No directions to modify a torque-rated wrench."
+      ],
+      "simplification": "Qualitative demonstration with rigid wrench and fixed pivot. Static friction at the nut controls when it turns and is not quantified.",
+      "description_en": "Torque about the nut increases with perpendicular lever arm for the same applied force; with equal perpendicular pushes, applying farther from the nut produces greater turning effect.",
+      "description_zh": "回到側面推。同樣大的力，離轉軸越遠，轉動效果越大。",
+      "sources": [
+        {
+          "publisher": "OpenStax University Physics, Rice University",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+          "evidence": "Section 10.6: torque about a pivot is force times perpendicular lever arm; direction and point of application both matter."
+        },
+        {
+          "publisher": "UC Santa Barbara Physics Lecture Demonstrations",
+          "url": "https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/28.12.html",
+          "evidence": "Wrenches and screwdrivers: at a right angle torque grows as distance from center of nut to applied push increases."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "Torque about the nut increases with perpendicular lever arm for the same applied force; with equal perpendicular pushes, applying farther from the nut produces greater turning effect.",
+          "source_urls": [
+            "https://openstax.org/books/university-physics-volume-1/pages/10-6-torque",
+            "https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/28.12.html"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "A stubborn nut barely moves. Why can pushing farther down the wrench make it turn?",
+          "zh": "螺帽卡得很緊。為什麼手往扳手末端挪一點，就比較好轉？",
+          "scene": "hook",
+          "visual": "Macro workshop bench with centered nut; hand tries a sideways push close to the head.",
+          "overlay_en": "Why push farther out?",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The wrench turns around the center of the nut. Mark that point as the pivot.",
+          "zh": "扳手繞著螺帽中心轉。把中心標成轉軸。",
+          "scene": "pivot",
+          "visual": "Snap to plan view, reveal center target while ruler-like handle remains horizontal.",
+          "overlay_en": "Pivot",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "A sideways push makes a turning effect called torque.",
+          "zh": "往側面推會產生轉動的效果，叫做扭矩。",
+          "scene": "torque",
+          "visual": "One straight force arrow crossing handle at 90 degrees, with separate direction arc by nut.",
+          "overlay_en": "Force / Torque",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Now use the same sideways push, but put your hand farther from the pivot.",
+          "zh": "現在用一樣大的力往側面推，但手移到離轉軸更遠的位置。",
+          "scene": "compare",
+          "visual": "Compare near and far push with same straight force arrows and two clearly marked distances.",
+          "overlay_en": "Same push / Longer distance",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The larger distance gives the same push more torque around the nut.",
+          "zh": "距離更大，同樣的力就能在螺帽上產生更大的扭矩。",
+          "scene": "effect",
+          "visual": "Animated larger arc or qualitative torque bars; still show both equal force arrows.",
+          "overlay_en": "More torque",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Push straight along the handle instead, and the force points through the pivot without turning it.",
+          "zh": "如果改成沿著握柄推，力就會通過轉軸，不會把螺帽轉動。",
+          "scene": "radial",
+          "visual": "Rotate force arrow to point straight along handle through center; turning arc vanishes.",
+          "overlay_en": "Through pivot / No torque",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Back to the sideways push. Farther out means more turning effect with the same force.",
+          "zh": "回到側面推。同樣大的力，離轉軸越遠，轉動效果越大。",
+          "scene": "return",
+          "visual": "Return to workshop view; hand moves outward and the nut gives a short clear turn.",
+          "overlay_en": "Farther out, more turning effect",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Macro workshop bench with centered nut; hand tries a sideways push close to the head.",
+          "overlay_en": "Why does a longer wrench help?"
+        },
+        {
+          "cue": 2,
+          "scene": "pivot",
+          "action": "Snap to plan view, reveal center target while ruler-like handle remains horizontal.",
+          "overlay_en": "Pivot"
+        },
+        {
+          "cue": 3,
+          "scene": "torque",
+          "action": "One straight force arrow crossing handle at 90 degrees, with separate direction arc by nut.",
+          "overlay_en": "Force / Torque"
+        },
+        {
+          "cue": 4,
+          "scene": "compare",
+          "action": "Compare near and far push with same straight force arrows and two clearly marked distances.",
+          "overlay_en": "Same push / Longer distance"
+        },
+        {
+          "cue": 5,
+          "scene": "effect",
+          "action": "Animated larger arc or qualitative torque bars; still show both equal force arrows.",
+          "overlay_en": "More torque"
+        },
+        {
+          "cue": 6,
+          "scene": "radial",
+          "action": "Rotate force arrow to point straight along handle through center; turning arc vanishes.",
+          "overlay_en": "Through pivot / No torque"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Return to workshop view; hand moves outward and the nut gives a short clear turn.",
+          "overlay_en": "Farther out, more turning effect"
+        }
+      ]
+    }
+  ]
+}

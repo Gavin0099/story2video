@@ -1,0 +1,143 @@
+{
+  "schema_version": "ice-visual-review.v2",
+  "status": "PASS",
+  "reviewer": {
+    "agent_id": "/root/fact_visual_audit",
+    "role": "Independent AI scientific visual-plan and preview reviewer",
+    "model": "inherited native agent (API未提供精確版本)",
+    "human": false,
+    "domain_expert_attestation": false,
+    "token_usage": null,
+    "cost": null
+  },
+  "reviewed_at_utc": "2026-11-21T15:13:47Z",
+  "git_sha": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea",
+  "renderer_sha256": "aad0052d5f0f486ee3cc6a05e80982e9a0c1dbedee7caa7710b38da549ad1438",
+  "inputs_sha256": "41a98e1cf1b6fd1eb8a9fc2dd5c0f95e48dc6203ccc7f5610186cc4bd5b170d3",
+  "image_prompts_sha256": "5e0ac07be491e102441033c0ee8b38e1922797425ab1376f66aa4d74237d41eb",
+  "script_sha256": "d0b7de7d7ac4c1aa9986840999721c83735fea615703b0ba3479648f00a73cf8",
+  "source_cards_sha256": "8e480a70887131396ef92d5cad0e8a878d0ae597eba0743bae2b0229acf605b4",
+  "critical_defects": [],
+  "local_encode_allowed": true,
+  "publication_authorized": false,
+  "review_scope": "New v2 scientific composition, programmatic particle animation, new raster layers, baked explanatory text, preview frames and frozen inputs. This is a fresh visual pass; old visual approval was not transferred.",
+  "inputs_integrity": {
+    "files_checked": 11,
+    "size_matches": 11,
+    "sha256_matches": 11,
+    "result": "PASS",
+    "checks": "PowerShell Get-Item and Get-FileHash against every inputs.json binding."
+  },
+  "scientific_findings": [
+    {
+      "id": "FLOAT",
+      "status": "PASS",
+      "evidence": "Inspected shot-01, shot-08, shot-09 and early frames 15/30/45. Initial cube is above water during the drop; settled frames put only its shallow top near/above the surface and most of the cube beneath it. Hero uses the same ice asset, a single settled waterline and bounded bobbing; no unsupported numeric submerged fraction is written.",
+      "limitations": "Stylized 2D compositing and tint, not a hydrostatic or refractive physical simulation. The exact visible surface depends on the background ellipse."
+    },
+    {
+      "id": "EQUAL_MASS",
+      "status": "PASS",
+      "evidence": "WATER and ORDER each contain 12 entries. particles() zips the same 12 entries; comparison() draws both groups with the same default radius=29 and ball() image, without adding particles or changing radius as the ICE group changes arrangement. Stable comparison previews visibly show 12 symbols on each side, both labeled 12 water molecules and same mass.",
+      "limitations": "Symbol count denotes equal mass of ordinary water molecules; 12 is a didactic sample, not a measured molecule count in a real cube."
+    },
+    {
+      "id": "EXPANSION",
+      "status": "PASS",
+      "evidence": "ICE comparison panel grows from 360×490 to 405×555 while liquid stays unchanged. ICE particle coordinates become more orderly and more separated with fixed symbol size. A geometry spot-check using the frozen formulas at frame 902 confirms a larger center convex hull and larger mean nearest-neighbor distance for ICE than liquid.",
+      "limitations": "Pixel area, panel shape, nearest-neighbor distances and visible gaps encode no actual water density ratio or molecular bond lengths."
+    },
+    {
+      "id": "SCHEMATIC",
+      "status": "PASS",
+      "evidence": "Molecular scenes explicitly state each ball represents one water molecule and arrangement/volume changes are schematic. The English label says NOT A CRYSTAL MODEL and NOT TO SCALE. The closing card repeats that the picture is not a crystal-structure model. No atomic geometry, crystal symmetry or exact bond geometry is claimed.",
+      "limitations": "Orange gap markers and dots are explanatory marks, not a verified structural model. A 2D grid must remain labeled schematic."
+    },
+    {
+      "id": "DENSITY_CAUSALITY",
+      "status": "PASS",
+      "evidence": "Shot 7 uses the correct DENSITY = MASS / VOLUME formula and three separate rows: unchanged mass, increased volume, lower density. Right-side =, up and down marks attach to those individual quantities, with a divider before the result; they do not form a false chained equality. Later captions compare ordinary ice with surrounding liquid water before concluding it floats."
+    },
+    {
+      "id": "MAGNIFICATION",
+      "status": "PASS",
+      "evidence": "Macro scene links the cube to an explicitly framed molecular inset. Its growing window and larger symbols are presented as a change of viewing scale. Spacing close-up uses 12 symbols of a fixed radius=48 within that scene. Neither is an equal-mass comparison using different molecule sizes.",
+      "limitations": "Different shot scales are illustrative; macro symbol-size changes must not be described as physical molecular swelling."
+    },
+    {
+      "id": "TEXT_AND_AUDIO",
+      "status": "PASS",
+      "evidence": "New baked Chinese/English text preserves arrangement→larger occupied volume at fixed mass→lower density→flotation. inputs() checks exact en/zh/claim_ids against the reviewed ice script and the frozen original timeline; original narration.wav is byte-bound. No new scientific narration or source claim was introduced.",
+      "limitations": "This review did not listen to a new encoded output, perform forced alignment, or rerun reader scoring."
+    }
+  ],
+  "source_basis": [
+    {
+      "publisher": "USGS",
+      "url": "https://www.usgs.gov/water-science-school/science/water-density",
+      "locator": "Water Density; Ice is less dense than water",
+      "basis": "Previously independently opened and reviewed within this task thread; frozen source-card and script hashes match. Density definition, regular/open ordinary ice arrangement, lower density and flotation support the unchanged explanation."
+    },
+    {
+      "publisher": "IAPWS",
+      "url": "https://iapws.org/faqs/faq1",
+      "locator": "Why does liquid water have a density maximum?",
+      "basis": "Previously independently opened and reviewed within this task thread; frozen source-card and script hashes match. Open ice structure, expansion on freezing, lower density and flotation support the unchanged explanation."
+    }
+  ],
+  "preview_inspected": [
+    "artifacts/science-shorts/ice-visual-v2/preview/contact.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-01.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-02.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-03.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-04.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-05.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-06.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-07.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-08.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/shot-09.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/frame-0015.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/frame-0030.png",
+    "artifacts/science-shorts/ice-visual-v2/preview/frame-0045.png"
+  ],
+  "code_geometry_spotcheck": {
+    "frame": 902,
+    "scope": "Illustration geometry only; not physical measurement or general proof at every frame",
+    "samples": [
+      {
+        "ordered": 0,
+        "particles": 12,
+        "radius": 29,
+        "mean_nearest_neighbor_pixels": 82.21092773460423,
+        "center_hull_area_pixels2": 76960.610421301
+      },
+      {
+        "ordered": 1,
+        "particles": 12,
+        "radius": 29,
+        "mean_nearest_neighbor_pixels": 86.89999999999999,
+        "center_hull_area_pixels2": 80177.1
+      }
+    ]
+  },
+  "nonblocking_observations": [
+    "The generated ice raster visibly contains internal cracks and some bubbles. The explanation never attributes flotation to these bubbles; the molecular scenes and causal text attribute it to arrangement and density. Do not turn the decorative bubbles into a causal annotation.",
+    "At the start of the comparison sequence both panels use the same irregular arrangement before the ICE side becomes ordered. This is a staged explanatory transition, not a claim that every displayed intermediate is an equilibrium ice structure.",
+    "Short dissolves can superpose outgoing and incoming explanatory views; they are editing transitions, not molecule creation or a numerical count comparison during the dissolve.",
+    "Small English and schematic labels still need a mobile human readability check. The new art direction is not evidence of audience appeal or improved retention."
+  ],
+  "optional_art_suggestions": [
+    "If first-time viewers mistake the settled cube for a suspended object, a subtle surface-intersection line in front of the cube could clarify the waterline.",
+    "If viewers misattribute flotation to trapped air, reduce bubble salience in a later separately reviewed asset version; no current narration or diagram makes that attribution.",
+    "Keep visual emphasis on the changing empty space and fixed symbol size during the equal-mass comparison; avoid animation that looks like molecule inflation."
+  ],
+  "limits": [
+    "Preview PNGs and drawing formulas were inspected before encoding; no v2 MP4 existed as evidence for this pass.",
+    "No new full-motion/full-audio viewing, all-frame visual check, mobile human test or scientific expert review.",
+    "Artwork uses generated raster layers with deterministic camera/compositing/diagrams, not a physical water or crystal simulation.",
+    "Unchanged claims rely on the already verified USGS/IAPWS evidence; no additional claim-specific research or source retrieval was necessary.",
+    "No audience-score re-evaluation, appeal guarantee, rights audit of every dependency, upload/publication authorization or market acceptance.",
+    "Engineering tests and rendered-media QA are the parent agent's separate ledger. This reviewer changed only review artifacts and did not modify renderer or assets."
+  ],
+  "next_gate": "Encode locally using these exact renderer/inputs hashes, then inspect actual MP4 samples independently. Human comprehension, art preference and market gates remain pending."
+}

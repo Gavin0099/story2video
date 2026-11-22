@@ -1,0 +1,36 @@
+{
+  "schema_version": "writer-integrity-check.v1",
+  "checked_at_utc": "2026-11-21T16:57:15Z",
+  "agent": "/root/fact_visual_audit",
+  "role": "author integrity check only; not independent factual review",
+  "git_sha": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea",
+  "artifact": "experiments/science-shorts/public-20-20261122/writer-b.json",
+  "artifact_sha256": "53f1d20be733d3aaee642fe23805680d3415f25f0cf162f9d166a3604b0941ec",
+  "commands": [
+    {
+      "command": "Get-Content -LiteralPath <artifact> -Raw | ConvertFrom-Json",
+      "result": "Exit 0; JSON parsed."
+    },
+    {
+      "command": "PowerShell field checks: exact IDs 13..20; 7–9 cues; 85–110 whitespace-separated English words; recomputed counts equal stored counts; cue claim references; at least two distinct institutions mapped per claim; no CJK in overlay_en; onscreen_language=en; subtitles=en,zh-Hant; burned_subtitles=false",
+      "result": "Exit 0; all checks passed."
+    },
+    {
+      "command": "Get-FileHash -LiteralPath <artifact> -Algorithm SHA256",
+      "result": "53F1D20BE733D3AAEE642FE23805680D3415F25F0CF162F9D166A3604B0941EC"
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "result": "2d63c2d2fa70d43e1a60b3fa7ec5a11664d341ea"
+    }
+  ],
+  "engineering_scope": "Research/script JSON only. No src/story2video, video, executable, schema, store or governance changes by this author.",
+  "not_run": [
+    "README full pytest and npm acceptance suite: no production code changed by this author.",
+    "Independent factual and scientific visual gate: pending other reviewers.",
+    "Two independent reader scores >=85: pending.",
+    "Audio, timing, renderer, encoded output and captions QA: no media generated for these drafts."
+  ],
+  "market_acceptance": "Not evaluated; no human comprehension, aesthetic or market evidence claimed.",
+  "source_access": "Institutional pages opened and locators recorded in the draft. Page availability is not proof that every drafted claim is correct; independent factual gate remains mandatory."
+}

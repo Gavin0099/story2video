@@ -1,0 +1,326 @@
+{
+  "schema_version": "science-script.v1",
+  "revision": "writer-a-07-08-r2",
+  "supersedes": {
+    "file": "writer-a.json",
+    "sha256": "f116f5aa789c336af4cba98a6a755d57e34a07c92ad69624d5cbe9d1d52a5256",
+    "ids": [
+      "07",
+      "08"
+    ]
+  },
+  "editorial_status": "revised draft awaiting fresh independent review",
+  "onscreen_language": "en",
+  "subtitles": [
+    "en",
+    "zh-Hant"
+  ],
+  "episodes": [
+    {
+      "id": "07",
+      "slug": "bubble",
+      "title_en": "Why Are Soap Bubbles Round?",
+      "title_zh": "肥皂泡為什麼會變圓？",
+      "question": "Why does an isolated, small soap bubble tend to round out after leaving the wand?",
+      "invariants": [
+        "Compare equal enclosed volume in 3D; k longer axis and 1/sqrt(k) on both other axes. Shape changes are schematic and not measured timing.",
+        "Surface tension acts along film, not as independent radial arrows; show short tangential paired pulls or surface-area decrease only.",
+        "Bubble free of wand after detaching; no foam clusters or claims all bubbles are perfectly spherical."
+      ],
+      "simplification": "Assume isolated small bubble in still air. Ignore wind, gravity deformation, film drainage and pressure evolution during detachment. Compare a fixed idealized trapped-air volume; actual bubbles can have small volume/pressure changes and loss over time.",
+      "description_en": "A small free soap bubble is a thin liquid film around air. Surface tension favors less surface area, and for a given enclosed volume a sphere has the least surface area.",
+      "description_zh": "泡泡棒能固定液膜的形狀，自由漂浮的泡泡則會自己變圓。",
+      "sources": [
+        {
+          "publisher": "Australian National University",
+          "url": "https://science.anu.edu.au/engagement/science-lab-experiments-home-school/making-cube-bubble",
+          "evidence": "Explanation of why free bubbles form spheres and why frames constrain soap films."
+        },
+        {
+          "publisher": "UNSW Physclips",
+          "url": "https://www.animations.physics.unsw.edu.au/jw/light/soap-bubbles.htm",
+          "evidence": "Soap bubble formation: surface energy and why the sphere minimizes surface for a fixed volume."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "A small free soap bubble is a thin liquid film around air. Surface tension favors less surface area, and for a given enclosed volume a sphere has the least surface area.",
+          "source_urls": [
+            "https://science.anu.edu.au/engagement/science-lab-experiments-home-school/making-cube-bubble",
+            "https://www.animations.physics.unsw.edu.au/jw/light/soap-bubbles.htm"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "This bubble leaves the wand stretched like an egg. What makes it turn round?",
+          "zh": "這顆泡泡離開泡泡棒時拉得像一顆蛋。是什麼讓它變圓？",
+          "scene": "hook",
+          "visual": "Close-up: the same stretched bubble detaches, wobbles, and rounds out. Hold a brief before/after silhouette side by side.",
+          "overlay_en": "Stretched → Round",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "A soap bubble is a thin liquid film wrapped around a pocket of air.",
+          "zh": "肥皂泡是一層薄薄的液膜，包住一團空氣。",
+          "scene": "film",
+          "visual": "Cut to a cross section of a detached bubble with distinct boundary and air interior. Magnify the film near one edge.",
+          "overlay_en": "Liquid film / Trapped air",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Making more film surface takes energy. Surface tension pulls along the film and tends to shrink its area.",
+          "zh": "增加液膜的表面積需要能量。表面張力沿著液膜拉，讓表面積傾向縮小。",
+          "scene": "tension",
+          "visual": "Show restrained tangential pulls along opposite edges of a highlighted film patch. Then lift away schematic arrows.",
+          "overlay_en": "Surface tension",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Imagine a stretched bubble and a round one holding the same volume of trapped air.",
+          "zh": "想像一顆拉長的泡泡和一顆圓泡泡，裡面包住的空氣體積一樣大。",
+          "scene": "volume",
+          "visual": "Side-by-side 3D ellipsoid and sphere. Set stretched shape axes k, 1/sqrt(k), 1/sqrt(k) times sphere radius. Equal-volume labels apply to the 3D shapes.",
+          "overlay_en": "Same volume of air",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The stretched one needs more film area. A sphere needs the least area for that volume.",
+          "zh": "拉長的泡泡需要更多液膜。相同體積下，球體需要的表面積最小。",
+          "scene": "surface",
+          "visual": "Label the two outer surfaces, then show matched-scale qualitative bars labelled Film area, longer for ellipsoid. Preserve identical enclosed volume.",
+          "overlay_en": "More film area / Less film area",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "So a small bubble floating free tends to settle into the round shape.",
+          "zh": "所以，小泡泡自由漂浮時，形狀會漸漸接近球體。",
+          "scene": "settle",
+          "visual": "Animate free small bubble from stretched to round with damped wobble; preserve qualitative volume in this morph.",
+          "overlay_en": "Small free bubble",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The air still has room inside. The round film just wraps it with less surface.",
+          "zh": "裡面的空氣還有原來那麼多空間，圓圓的液膜只用了更少的表面積。",
+          "scene": "return",
+          "visual": "Return to side-by-side moment snapshots of isolated bubble; retain the equal-volume callout and smaller surface bar so final comparison refers to idealized illustration.",
+          "overlay_en": "Same space, less surface",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Close-up: the same stretched bubble detaches, wobbles, and rounds out. Hold a brief before/after silhouette side by side.",
+          "overlay_en": "Stretched → Round"
+        },
+        {
+          "cue": 2,
+          "scene": "film",
+          "action": "Cut to a cross section of a detached bubble with distinct boundary and air interior. Magnify the film near one edge.",
+          "overlay_en": "Liquid film / Trapped air"
+        },
+        {
+          "cue": 3,
+          "scene": "tension",
+          "action": "Show restrained tangential pulls along opposite edges of a highlighted film patch. Then lift away schematic arrows.",
+          "overlay_en": "Surface tension"
+        },
+        {
+          "cue": 4,
+          "scene": "volume",
+          "action": "Side-by-side 3D ellipsoid and sphere. Set stretched shape axes k, 1/sqrt(k), 1/sqrt(k) times sphere radius. Equal-volume labels apply to the 3D shapes.",
+          "overlay_en": "Same volume of air"
+        },
+        {
+          "cue": 5,
+          "scene": "surface",
+          "action": "Label the two outer surfaces, then show matched-scale qualitative bars labelled Film area, longer for ellipsoid. Preserve identical enclosed volume.",
+          "overlay_en": "More film area / Less film area"
+        },
+        {
+          "cue": 6,
+          "scene": "settle",
+          "action": "Animate free small bubble from stretched to round with damped wobble; preserve qualitative volume in this morph.",
+          "overlay_en": "Small free bubble"
+        },
+        {
+          "cue": 7,
+          "scene": "return",
+          "action": "Return to side-by-side moment snapshots of isolated bubble; retain the equal-volume callout and smaller surface bar so final comparison refers to idealized illustration.",
+          "overlay_en": "Same space, less surface"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "compass",
+      "title_en": "What Makes a Compass Needle Turn?",
+      "title_zh": "指南針的指針是被什麼轉動的？",
+      "question": "What causes a freely pivoting compass needle to point near north?",
+      "invariants": [
+        "Fixed overhead camera and unchanged field arrows while the housing turns 90° in the hook/return. Separately show the needle rotating back toward the field when perturbed.",
+        "Clearly distinguish geographic map north arrow from local magnetic bearing; no assertion that the needle aims at a single exact point.",
+        "Mark tilt restricted by ordinary flat compass, so arrows represent horizontal component."
+      ],
+      "simplification": "Work with a level compass and a stable local field away from interfering metal or magnets; shown declination exaggerated.",
+      "description_en": "A compass needle is a small magnet that pivots to align with the horizontal component of the local magnetic field; Earth’s field normally dominates, but its heading can differ from true north.",
+      "description_zh": "再轉一下外殼。底下的外殼在轉，指針還是跟著磁場方向。",
+      "sources": [
+        {
+          "publisher": "U.S. Geological Survey",
+          "url": "https://www.usgs.gov/media/audio/how-does-compass-work",
+          "evidence": "Needle is a freely pivoting magnet, turns in local or Earth magnetic field, and can have interference."
+        },
+        {
+          "publisher": "NOAA National Centers for Environmental Information",
+          "url": "https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions",
+          "evidence": "Compass FAQ explains local horizontal field direction and magnetic declination from true north."
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "text": "A compass needle is a small magnet that pivots to align with the horizontal component of the local magnetic field; Earth’s field normally dominates, but its heading can differ from true north.",
+          "source_urls": [
+            "https://www.usgs.gov/media/audio/how-does-compass-work",
+            "https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions"
+          ]
+        }
+      ],
+      "cues": [
+        {
+          "en": "Turn the case a quarter turn. Why does the compass needle keep pointing the same way?",
+          "zh": "把指南針的外殼轉四分之一圈。為什麼指針還是指著同一個方向？",
+          "scene": "hook",
+          "visual": "Use a fixed overhead camera with a stationary trail map below the compass. Rotate only the housing by 90 degrees. Use a fixed marker on the map to make the needle's retained direction obvious.",
+          "overlay_en": "The case turns",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The needle is a little magnet balanced on a pivot. It can turn inside the case.",
+          "zh": "指針是一根架在支點上的小磁鐵，能在外殼裡轉動。",
+          "scene": "pivot",
+          "visual": "Explode the compass layering into case, pivot and colored needle. Then collapse back to fixed overhead view.",
+          "overlay_en": "Pivot / Magnet",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Earth has a magnetic field. At your location, part of that field runs along the ground.",
+          "zh": "地球有磁場。在你所在的位置，磁場有一部分是沿著水平面的。",
+          "scene": "field",
+          "visual": "Briefly tilt viewpoint to show tilted field vector and horizontal projection separately, then return to the overhead schematic.",
+          "overlay_en": "Horizontal field",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The field turns the needle until it lines up with that horizontal direction.",
+          "zh": "磁場讓指針轉動，直到指針與磁場的水平方向一致。",
+          "scene": "align",
+          "visual": "Show lightly perturbed needle rotating toward fixed horizontal field arrow. Case does not move in this shot.",
+          "overlay_en": "Needle lines up",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "The marked tip gives the magnetic heading. The map’s true north can point a different way.",
+          "zh": "標記的那端指出當地磁北的方向，和地圖的正北方向可能不同。",
+          "scene": "compare",
+          "visual": "Show one map north arrow and one local magnetic heading arrow separated by a clear illustrative angle. Keep the needle aligned with the local field arrow.",
+          "overlay_en": "True north / Magnetic heading",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "Watch the case again. The markings move, but the field direction stays the same.",
+          "zh": "再看一次外殼。外殼上的刻度轉了，但磁場方向沒變。",
+          "scene": "return",
+          "visual": "Replay the initial housing rotation against the same stationary background and fixed field arrow.",
+          "overlay_en": "The field stays fixed",
+          "claim_ids": [
+            "c1"
+          ]
+        },
+        {
+          "en": "And that’s why the needle still points the same way.",
+          "zh": "所以，指針還是指著同一個方向。",
+          "scene": "answer",
+          "visual": "Hold the now-rotated case with the marked needle pointing at the same stationary map dot from the opening.",
+          "overlay_en": "Same needle direction",
+          "claim_ids": [
+            "c1"
+          ]
+        }
+      ],
+      "visual_plan": [
+        {
+          "cue": 1,
+          "scene": "hook",
+          "action": "Use a fixed overhead camera with a stationary trail map below the compass. Rotate only the housing by 90 degrees. Use a fixed marker on the map to make the needle's retained direction obvious.",
+          "overlay_en": "The case turns"
+        },
+        {
+          "cue": 2,
+          "scene": "pivot",
+          "action": "Explode the compass layering into case, pivot and colored needle. Then collapse back to fixed overhead view.",
+          "overlay_en": "Pivot / Magnet"
+        },
+        {
+          "cue": 3,
+          "scene": "field",
+          "action": "Briefly tilt viewpoint to show tilted field vector and horizontal projection separately, then return to the overhead schematic.",
+          "overlay_en": "Horizontal field"
+        },
+        {
+          "cue": 4,
+          "scene": "align",
+          "action": "Show lightly perturbed needle rotating toward fixed horizontal field arrow. Case does not move in this shot.",
+          "overlay_en": "Needle lines up"
+        },
+        {
+          "cue": 5,
+          "scene": "compare",
+          "action": "Show one map north arrow and one local magnetic heading arrow separated by a clear illustrative angle. Keep the needle aligned with the local field arrow.",
+          "overlay_en": "True north / Magnetic heading"
+        },
+        {
+          "cue": 6,
+          "scene": "return",
+          "action": "Replay the initial housing rotation against the same stationary background and fixed field arrow.",
+          "overlay_en": "The field stays fixed"
+        },
+        {
+          "cue": 7,
+          "scene": "answer",
+          "action": "Hold the now-rotated case with the marked needle pointing at the same stationary map dot from the opening.",
+          "overlay_en": "Same needle direction"
+        }
+      ]
+    }
+  ]
+}
