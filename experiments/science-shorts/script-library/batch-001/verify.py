@@ -12,6 +12,7 @@ HERE = Path(__file__).resolve().parent
 BATCH_RANGES = {
     "batch-001": range(22, 32),
     "batch-002": range(32, 42),
+    "batch-003": range(42, 52),
 }
 RUBRIC = {
     "hook": 15,
