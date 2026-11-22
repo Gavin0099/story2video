@@ -1,5 +1,6 @@
-"""Validate the frozen WhyNest Lab batch and its published review receipts."""
+"""Validate a frozen WhyNest Lab script batch and its published review receipts."""
 
+import argparse
 from hashlib import sha256
 import json
 from pathlib import Path
@@ -8,7 +9,10 @@ import sys
 from urllib.parse import urlsplit
 
 HERE = Path(__file__).resolve().parent
-EPISODES = {f"WNL-{number:03d}" for number in range(22, 32)}
+BATCH_RANGES = {
+    "batch-001": range(22, 32),
+    "batch-002": range(32, 42),
+}
 RUBRIC = {
     "hook": 15,
     "clarity": 25,
@@ -106,12 +110,13 @@ def verify_reviews(episode, record, cue_digest):
                 f"{episode}: invalid total or blind reader below threshold")
 
 
-def verify(root):
+def verify(root, batch="batch-001"):
     receipt = json.loads((root / "reviews.json").read_text(encoding="utf-8"))
     require(receipt["rubric"] == RUBRIC and receipt["minimum_each_reader"] == MINIMUM, "Changed scoring policy")
     records = receipt["episodes"]
     paths = {path.stem: path for path in (root / "episodes").glob("*.md")}
-    require(set(records) == set(paths) == EPISODES, "Expected ten script and review pairs WNL-022–031")
+    expected = {f"WNL-{number:03d}" for number in BATCH_RANGES[batch]}
+    require(set(records) == set(paths) == expected, f"{batch}: expected its ten script and review pairs")
     index = (root / "README.md").read_text(encoding="utf-8")
     mechanisms = set()
     for episode in sorted(records):
@@ -127,8 +132,11 @@ def verify(root):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--batch", choices=BATCH_RANGES, default="batch-001")
+    args = parser.parse_args()
     try:
-        count = verify(HERE)
+        count = verify(HERE.parent / args.batch, args.batch)
     except (KeyError, OSError, TypeError, ValueError) as error:
         sys.exit(f"WhyNest Lab batch rejected: {error}")
     print(f"WhyNest Lab batch verified: {count} scripts, {count * 4} independent review summaries.")
