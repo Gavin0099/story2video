@@ -1,0 +1,673 @@
+{
+  "rubric": {
+    "hook": 15,
+    "clarity": 25,
+    "causal_retelling": 25,
+    "visual_plan": 20,
+    "pacing": 10,
+    "natural_language": 5
+  },
+  "minimum_each_reader": 85,
+  "episodes": {
+    "WNL-042": {
+      "revision": 2,
+      "sha256": "c4588c78d533e70d817210846c6c83a0689e03895f96bdbcdb014719a7d3e7f4",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "c4588c78d533e70d817210846c6c83a0689e03895f96bdbcdb014719a7d3e7f4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "ANU demonstrates that light reflected from upper and lower object points travels straight through the aperture to opposite heights. MIT's geometric model and Wisconsin's screen demonstration independently confirm. Both languages now consistently identify the reflected ray and projected inverted image. The diagram preserves uninterrupted crossing paths and fixes screen orientation. https://science.anu.edu.au/engagement/science-lab-experiments-home-school/make-pinhole-camera | https://visionbook.mit.edu/imaging.html | https://wonders.physics.wisc.edu/make-a-pinhole-camera/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "c4588c78d533e70d817210846c6c83a0689e03895f96bdbcdb014719a7d3e7f4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The arrow tip explicitly reflects light. Matching marker colors connect the object and image while both rays preserve slope and direction through the common aperture. Keep the Top and Bottom labels keyed to the object ends and show the cutaway as a schematic."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "c4588c78d533e70d817210846c6c83a0689e03895f96bdbcdb014719a7d3e7f4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Matching the red and blue endpoints across the practical shot and the side view makes the reversal easy to track. The labels 'Top' and 'Bottom' could specify whether they name the object or the screen.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "c58ef9953d103bfb16ebecc530d2ba1463a317d5626f7a0238e0b8e3f0a97547",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 98
+        },
+        {
+          "reviewer": "B",
+          "sha256": "c4588c78d533e70d817210846c6c83a0689e03895f96bdbcdb014719a7d3e7f4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Keeping both rays visible and straight through the hole makes the reversal clear. The final line could be heard as saying the hole makes light turn if the shot of the two straight paths disappears too soon.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "c58ef9953d103bfb16ebecc530d2ba1463a317d5626f7a0238e0b8e3f0a97547",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-043": {
+      "revision": 2,
+      "sha256": "485e823b800cd5bca9d84743cc1edf23b801696f9d332aa677b4a5c2e1701bbf",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "485e823b800cd5bca9d84743cc1edf23b801696f9d332aa677b4a5c2e1701bbf",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The Nature primary study describes axial slowing/stagnation, bending instability and deposition in a circular coil. APS laboratory results and Cruickshank and Munson's JFM experiment independently verify the conditional regimes and onset thresholds. Ribe's added JFM paper gives a numerical regime diagram for a continuously supplied rotating coil. The spoken example limits the claim to this pour; the side-to-overhead handoff keeps nozzle and plate fixed, traces the rotating contact point making one turn while deposited coils stay in place, and ends active coiling after the last strand arrives. https://softmath.seas.harvard.edu/wp-content/uploads/2019/10/pre2000-11.pdf | https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.93.214502 | https://doi.org/10.1017/S0022112081003467 | https://doi.org/10.1017/jfm.2016.836"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "485e823b800cd5bca9d84743cc1edf23b801696f9d332aa677b4a5c2e1701bbf",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The matched side-to-overhead move holds the plate and outlet fixed and follows the same active buckle. Slow motion and the touchdown marker track one full loop as stationary deposited honey accumulates. Mark slow motion and let the tail land before the end hold."
+      },
+      "readers": [
+        {
+          "reviewer": "C",
+          "sha256": "485e823b800cd5bca9d84743cc1edf23b801696f9d332aa677b4a5c2e1701bbf",
+          "status": "PASS",
+          "blockers": [],
+          "note": "兩種語言的開場都讓我想知道細流怎麼開始向旁邊彎。後面從側面追到第一次彎折，再從俯視追當下的落點，讓我能說清楚盤上的圈是怎麼逐段形成的。從側面切到斜俯視時若能讓我一眼認出同一次彎折，前後會更好接。英文的 ‘More honey arrives than can keep going straight’ 讀起來稍微拗口；中文的「停止倒入」口語可說「停手不倒了」。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "5dabac51038062e0cabe09bbfa4a8a707499d73e9cddb2a4392c8d29f5acae49",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "D",
+          "sha256": "485e823b800cd5bca9d84743cc1edf23b801696f9d332aa677b4a5c2e1701bbf",
+          "status": "PASS",
+          "blockers": [],
+          "note": "側視停在第一次向旁偏折，再沿同一處切到斜俯視，讓我能把受阻和彎折接起來。俯視用落點與四分之一圈、半圈和一圈的進度標記，能交代盤上的圈如何逐段被鋪出。旁白足以解釋為何向側邊彎，也說清楚落點如何鋪成圈。它把持續繞轉限於這次實拍，略過了為何這次的彎折會持續旋轉。英文的 More honey arrives than can keep going straight 需要多聽半拍才能理解。整體有足夠時間跟上，只要 20–29 秒那段的停格與轉角順暢。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "5dabac51038062e0cabe09bbfa4a8a707499d73e9cddb2a4392c8d29f5acae49",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 92
+        }
+      ]
+    },
+    "WNL-044": {
+      "revision": 2,
+      "sha256": "59bd3a298f43ce7df755f24840664b1c4eb13f5dbce39486c0f8a86d91b12a2a",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "59bd3a298f43ce7df755f24840664b1c4eb13f5dbce39486c0f8a86d91b12a2a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "RailTEC's exact chapter, Railway Engineering Compendium §10.3, and Simpson's Newcastle thesis figure independently establish the same axle rotation, outward shift with tapered treads larger on the wheelset's inboard side, unequal effective rolling radii, and longer outer rail arc. The UTRGV indexed deck, slides 115–116, also shows its conical wheel lesson. The fixed rails, moving wheelset, equal-angle arc comparison and no-flange-contact idealization match the science. https://railtec.illinois.edu/wp/wp-content/uploads/NURail-Guidebook-Rail-K-12-STEM-Outreach-3-Wheel-Rail-2020-12-23.pdf | https://jernbaneteknologi.no/en/chapters/10-wheel-rail-interaction/ | https://theses.ncl.ac.uk/jspui/handle/10443/3584"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "59bd3a298f43ce7df755f24840664b1c4eb13f5dbce39486c0f8a86d91b12a2a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "With the rails fixed, the rigid wheelset shifts toward the outside of the curve, moving each contact point along the inward-widening tread. Equal rotation gives different rolling lengths in the labeled ideal model. Reveal the contact labels in sequence for portrait readability."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "59bd3a298f43ce7df755f24840664b1c4eb13f5dbce39486c0f8a86d91b12a2a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The stationary rails in the end view let me see exactly what moves. The equal-angle radius comparison is what resolves the shared-axle puzzle.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "0ec871d9daee1f7ae4902647034b56c43679409cb8d8e22540dfb71f630241fe",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "59bd3a298f43ce7df755f24840664b1c4eb13f5dbce39486c0f8a86d91b12a2a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The rails stay fixed while the wheelset moves, which lets me see how the contact points change. The two arcs unrolling at the same time are what make it click for me.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "0ec871d9daee1f7ae4902647034b56c43679409cb8d8e22540dfb71f630241fe",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 98
+        }
+      ]
+    },
+    "WNL-045": {
+      "revision": 2,
+      "sha256": "b09e430b7e0452c1e905e5b0426b23faa4d8bc3b1ca9e4d4e654ca7a33839950",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "b09e430b7e0452c1e905e5b0426b23faa4d8bc3b1ca9e4d4e654ca7a33839950",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Von Frisch Figs. 2–3 and the FUB-hosted full Dormagen paper Fig. 1 establish upwards as solar-azimuth reference and run duration as rough distance. Biology Open's Couvillon study quantifies both variables in degrees and seconds; Riley's original radar abstract independently supports successful use of encoded direction and distance. The diagram keeps vertical comb and top-down solar reference separate, preserves angular sign and changes duration at the same angle. https://www.nobelprize.org/uploads/2018/06/frisch-lecture.pdf | https://pubmed.ncbi.nlm.nih.gov/15889092/ | https://refubium.fu-berlin.de/bitstream/handle/fub188/42781/pgad275.pdf?isAllowed=y&sequence=1 | https://pubmed.ncbi.nlm.nih.gov/23213438/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "b09e430b7e0452c1e905e5b0426b23faa4d8bc3b1ca9e4d4e654ca7a33839950",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The upright comb and overhead map use matching signed angles from their respective references. The fixed angle and shared playback speed isolate waggle duration, and the map varies only distance. Time the central waggle run and keep subtitles clear of both views."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "b09e430b7e0452c1e905e5b0426b23faa4d8bc3b1ca9e4d4e654ca7a33839950",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The upright comb and overhead map make the two reference directions visible. Keeping the angle fixed in the duration comparison isolates the second signal.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "315e13e625cf872e4706a405a10628018bfe4dcd6fa19fdab372058747400a76",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 98
+        },
+        {
+          "reviewer": "B",
+          "sha256": "b09e430b7e0452c1e905e5b0426b23faa4d8bc3b1ca9e4d4e654ca7a33839950",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Putting the comb next to the overhead map gives me two reference directions I can compare. Holding the angle steady while showing the two durations helps me keep direction and distance straight.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "315e13e625cf872e4706a405a10628018bfe4dcd6fa19fdab372058747400a76",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-046": {
+      "revision": 2,
+      "sha256": "4b3f5f24b258d8e06603a62d2d93a7def8c37fad94f4f87eca5f02ed4063f394",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "4b3f5f24b258d8e06603a62d2d93a7def8c37fad94f4f87eca5f02ed4063f394",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NPS and UH Hilo's Poupou case agree on freshly quenched glass and shoreline accumulation. Correctly named USGS GIP 117 documents lava fragmentation and surf reworking of recently chilled fragments. For already solid rock, NOAA corroborates NPS on wave erosion and basaltic black sand. The storyboard shows both routes individually and scopes the example to some volcanic coasts. https://home.nps.gov/articles/coastal-sediments-parent-material.htm | https://hilo.hawaii.edu/csav/gallery/littoral.php | https://pubs.usgs.gov/gip/117/gip117_ebook.pdf | https://oceanservice.noaa.gov/facts/sand.html"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "4b3f5f24b258d8e06603a62d2d93a7def8c37fad94f4f87eca5f02ed4063f394",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The safe animated schematic shows lava fragmenting at the seawater contact, transport and deposition at the same shoreline, and older basalt erosion as another route. Retain the Some volcanic coasts label and the visual scale change on the grain close-ups."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "4b3f5f24b258d8e06603a62d2d93a7def8c37fad94f4f87eca5f02ed4063f394",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Following a grain back to seawater first explains how it forms, then showing grains washed ashore explains how it arrives. The older-rock route appears late enough to compete briefly with the main thread.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e47f0d3fbb54e6b2e7e073a779fc744cfbd7050b9d276d7c00f3f1a2cfddb90f",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "4b3f5f24b258d8e06603a62d2d93a7def8c37fad94f4f87eca5f02ed4063f394",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The film answers both parts of the hook by following the fragments from formation to deposition. Reusing the shore view for old rock makes that second source easy to place.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e47f0d3fbb54e6b2e7e073a779fc744cfbd7050b9d276d7c00f3f1a2cfddb90f",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-047": {
+      "revision": 2,
+      "sha256": "89239e658730c21162c29d78a1cd7e7392b3ebcfc74c00eed5113f7d15a8a733",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "89239e658730c21162c29d78a1cd7e7392b3ebcfc74c00eed5113f7d15a8a733",
+        "status": "PASS",
+        "blockers": [],
+        "note": "BIRT and Chiotellis & Campbell support fermentation gas and growth; the measurement paper and Sroan, Bean & MacRitchie independently support diffusion into existing gas nuclei. BIRT and the USDA-hosted latter experiment substantiate wheat dough's gluten retention and expansion. The properly attributed sources and two equal-start samples are consistent. The cross-section grows existing bubbles, and the planned height labels depend on the filmed result. https://www.bakeinfo.co.nz/facts/bread/science-of-bread-making/ | https://eprints.hud.ac.uk/id/eprint/23652/ | https://doi.org/10.1016/j.jcs.2008.07.003"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "89239e658730c21162c29d78a1cd7e7392b3ebcfc74c00eed5113f7d15a8a733",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Matched vessels, start lines and real elapsed time make the yeast contrast interpretable. The linked cutaway distinguishes yeast from the existing bubbles that fill with added CO₂ inside the gluten network. CO₂ fills bubbles would make the end label more specific."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "89239e658730c21162c29d78a1cd7e7392b3ebcfc74c00eed5113f7d15a8a733",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The common starting line makes the time-lapse comparison clear, and the cut back from a stretching bubble to the rising dough shows how those two scales connect.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "2b03072ef05a3fb7f0c5cb87850215200dc596c7913867e90092bd1402f10045",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 99
+        },
+        {
+          "reviewer": "B",
+          "sha256": "89239e658730c21162c29d78a1cd7e7392b3ebcfc74c00eed5113f7d15a8a733",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The original height line gives the opening and closing shots a shared reference. The cut from swollen bubbles back to the container connects the small change to the visible rise.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "2b03072ef05a3fb7f0c5cb87850215200dc596c7913867e90092bd1402f10045",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 98
+        }
+      ]
+    },
+    "WNL-048": {
+      "revision": 2,
+      "sha256": "1c4062a4c7022f3cebeb0bf32f6f6b3c3bc7dcad1bfa678a65618d7ac16e3358",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "1c4062a4c7022f3cebeb0bf32f6f6b3c3bc7dcad1bfa678a65618d7ac16e3358",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Berkeley Data 140 and the Tufts teaching derivation agree on independent uniform 365-day draws and the complement of distinct birthdays. Directly calculated 49.2702765676% all distinct and 50.7297234324% any match; Harvard's independent solution reports the same rounded values. Both languages now state the required premise, the formula ends at 343/365, and the labeled class example is separate from the probability bar. https://data140.org/textbook/content/chapter-01/birthday-problem/ | https://www.cs.tufts.edu/comp/250P/classpages/birthday.html | https://www.physics.harvard.edu/sites/g/files/omnuum6476/files/sol46.pdf"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "1c4062a4c7022f3cebeb0bf32f6f6b3c3bc7dcad1bfa678a65618d7ac16e3358",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The spoken independent, uniform 365-day premise supports the occupied-calendar demonstration. The Example label distinguishes one outcome from the calculated complement. Reveal the factors progressively and keep the approximate 50.7% result beside the bar and clear of either caption track."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "1c4062a4c7022f3cebeb0bf32f6f6b3c3bc7dcad1bfa678a65618d7ac16e3358",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The calendar builds the avoidance fractions and the filled-out bar explains subtraction. The 11 seconds that also introduce both model assumptions give younger viewers little time to read the fractions.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "bb8642301dc05dc5c3758f261436c1c41b471a866a02b0b78e7aa879452378d2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "1c4062a4c7022f3cebeb0bf32f6f6b3c3bc7dcad1bfa678a65618d7ac16e3358",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Filling in the rest of the 100% bar makes the subtraction clear. I need a moment to connect the shrinking calendar counts to the product, especially the condition that the earlier birthdays are all different.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "bb8642301dc05dc5c3758f261436c1c41b471a866a02b0b78e7aa879452378d2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-049": {
+      "revision": 2,
+      "sha256": "fda42151e998cf898c30d035b194c08821d2270d191d4448d44f4d2208324ad4",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "fda42151e998cf898c30d035b194c08821d2270d191d4448d44f4d2208324ad4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Queensland, CU Boulder and Sydney independently support vacuum suppressing gas transfer and reflective inner surfaces limiting radiative exchange. Illinois Physics Van corroborates Sydney on the joined solid neck/lip; CU's experiment shows eventual cooling even with evacuation and silvering. Both languages now use the neck as a path example, and the storyboard depicts residual radiation and a labeled qualitative cooling trend. https://physicsmuseum.uq.edu.au/vacuum-flask | https://physicslabs.colorado.edu/demos/thermodynamics/heat-and-the-first-law/heat-transfer-applications/thermos-set/ | https://www.physics.usyd.edu.au/super/physics_tut/activities/Thermal_Physics/Thermos_Flask.pdf | https://van.physics.illinois.edu/ask/listing/1680"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "fda42151e998cf898c30d035b194c08821d2270d191d4448d44f4d2208324ad4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The fixed cutaway distinguishes reduced gas transfer, infrared reflection and continued heat loss through the solid neck. Keep the infrared layer visually independent of evacuation. The Cooling trend (schematic) label makes the status of the curve explicit."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "fda42151e998cf898c30d035b194c08821d2270d191d4448d44f4d2208324ad4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The fixed cross-section makes the air-versus-vacuum comparison easy to follow. The gas mechanisms, radiation, and the solid path through the neck come in quick succession near the end.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "6e323ef96be872ca4cadfb889eed19ef20640adad99d6210435ed9c4a91c4b15",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 94
+        },
+        {
+          "reviewer": "B",
+          "sha256": "fda42151e998cf898c30d035b194c08821d2270d191d4448d44f4d2208324ad4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Keeping the cross-section fixed makes the air-filled and evacuated gaps comparable. The later pullback to the neck gives the heat escaping through solid material its own visible path.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "6e323ef96be872ca4cadfb889eed19ef20640adad99d6210435ed9c4a91c4b15",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-050": {
+      "revision": 2,
+      "sha256": "65bd2fba89c44aa930563da5cbbb66ada51f3b68e675f942f975aedf87e5c836",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "65bd2fba89c44aa930563da5cbbb66ada51f3b68e675f942f975aedf87e5c836",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Bose, the Técnico Lisboa prototype and the Sensors primary study independently support local destructive interference and partial attenuation. The audible demo is labeled simulated, and its two signed pressure curves share a time axis, location and scale. The sources accurately describe three experimental configurations using steady pink noise and unsteady babble. MDPI is readable via browser indexing, but returned 403 to direct Python; the identical full text is available at PMC. https://www.bose.com/stories/what-is-active-noise-cancellation | https://fenix.tecnico.ulisboa.pt/downloadFile/1689244997257201/ExtendedAbstract.pdf | https://pmc.ncbi.nlm.nih.gov/articles/PMC9572409/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "65bd2fba89c44aa930563da5cbbb66ada51f3b68e675f942f975aedf87e5c836",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The revised ending describes scalar pressure changes at a single ear. Plot the pressure deviations against shared time and show partial cancellation on the same scale. Keep the fan running and label the audio simulation while the comparison plays."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "65bd2fba89c44aa930563da5cbbb66ada51f3b68e675f942f975aedf87e5c836",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The marked instant on the shared timeline makes adding the pressures intuitive. The third trace explains what remains with real headphones, and the simulated audio reinforces the same result.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e2dadd577712eee496ff86e9b49aa8db05e0230b5734b4e594d7aac66e9282b0",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 99
+        },
+        {
+          "reviewer": "B",
+          "sha256": "65bd2fba89c44aa930563da5cbbb66ada51f3b68e675f942f975aedf87e5c836",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The two pressure traces sharing a cursor let me see what ‘at the same time’ means. The third trace then shows why the real example gets quieter without going silent.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e2dadd577712eee496ff86e9b49aa8db05e0230b5734b4e594d7aac66e9282b0",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 99
+        }
+      ]
+    },
+    "WNL-051": {
+      "revision": 2,
+      "sha256": "c56b39cd3e75f277c7d4394917b6b44eee72ff7aa63f2494d25221ca934f22f9",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "c56b39cd3e75f277c7d4394917b6b44eee72ff7aa63f2494d25221ca934f22f9",
+        "status": "PASS",
+        "blockers": [],
+        "note": "FAA and ESA corroborate broadcast timing/position data, one receiver clock offset, and the simultaneous four-observation solve for three position coordinates and that offset in basic 3D GPS. ESA GNSS Data Processing §6.1 eq. (6.2) confirms the same additive distance bias across observations before other errors are considered. The labels refer to the internal GPS receiver clock, and the graphic leaves actual geometry fixed as each estimated range gains the same signed term. https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/gps/howitworks | https://www.esa.int/da/articles/about-us/directorates/resilience-navigation-and-connectivity/navigation/how-satellite-navigation-works | https://gssc.esa.int/navipedia/GNSS_Book/ESA_GNSS-Book_TM-23_Vol_I.pdf"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "c56b39cd3e75f277c7d4394917b6b44eee72ff7aa63f2494d25221ca934f22f9",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The labeled schematic keeps geometric paths fixed and applies an identical signed distance offset to all four separate estimates. The next shot feeds the four measurements into one concurrent solve for position and receiver clock bias. Stage the four estimate labels to leave space for either caption track."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "c56b39cd3e75f277c7d4394917b6b44eee72ff7aa63f2494d25221ca934f22f9",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Keeping the true paths fixed while the estimated values all shift together makes the extra unknown visible. Four simultaneous paths and four solving labels ask viewers to take in a fair amount at once.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "d172daaeaadfd1311c07e625d46331a4da15524b8b935098b92fbb2d79fff4be",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "c56b39cd3e75f277c7d4394917b6b44eee72ff7aa63f2494d25221ca934f22f9",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Keeping the actual paths fixed while the same offset moves all the displayed estimates answers why time counts as an extra unknown. The joint solution is quick, but I can see that each measurement feeds into all four unknowns.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "d172daaeaadfd1311c07e625d46331a4da15524b8b935098b92fbb2d79fff4be",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    }
+  }
+}
