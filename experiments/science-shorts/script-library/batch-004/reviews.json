@@ -1,0 +1,673 @@
+{
+  "rubric": {
+    "hook": 15,
+    "clarity": 25,
+    "causal_retelling": 25,
+    "visual_plan": 20,
+    "pacing": 10,
+    "natural_language": 5
+  },
+  "minimum_each_reader": 85,
+  "episodes": {
+    "WNL-052": {
+      "revision": 1,
+      "sha256": "f96540749479d1b075015fdbb605092ac343b8bf541742e5e5552d341be0fd03",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "f96540749479d1b075015fdbb605092ac343b8bf541742e5e5552d341be0fd03",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NASA and NOAA independently establish precipitation guided by the magnetic field, electron excitation of atomic oxygen, and oxygen emission in the common green aurora. NOAA identifies the 557.7 nm line and the excited 1S state. The two languages cover one valid excitation path without implying every green photon takes that path. The planned diagram preserves the oxygen atom and distinguishes the incoming electron, energy-level transition, and outward photon. https://science.nasa.gov/sun/auroras/ | https://www.spaceweather.gov/content/aurora-tutorial"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "f96540749479d1b075015fdbb605092ac343b8bf541742e5e5552d341be0fd03",
+        "status": "PASS",
+        "blockers": [],
+        "note": "從同一道光帶進入高空、碰撞及氧原子的能階，最後回到原地景。電子減能、氧的升降能階與向外的綠光波包在圖上可分辨。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "f96540749479d1b075015fdbb605092ac343b8bf541742e5e5552d341be0fd03",
+          "status": "PASS",
+          "blockers": [],
+          "note": "從同一段光帶推近再拉遠，原子的綠光和地面的景象接得起來。把撞進來的電子和放出去的綠光畫得不同，可讓我一眼跟上能量去了哪裡。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "477badb1e1ae16145f20e16d28c5103a0b652074ce19d68835422a408a1fdc79",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "f96540749479d1b075015fdbb605092ac343b8bf541742e5e5552d341be0fd03",
+          "status": "PASS",
+          "blockers": [],
+          "note": "開場問的是誰在發光，回到同一道光帶時有回答。原子取得能量和放出綠光分成兩拍，我能跟上。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "477badb1e1ae16145f20e16d28c5103a0b652074ce19d68835422a408a1fdc79",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        }
+      ]
+    },
+    "WNL-053": {
+      "revision": 2,
+      "sha256": "b1f614fd6ca21d3b3bbb3ca8db27ca0fe9d79011df4ca1e40bc5c704eacee495",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "b1f614fd6ca21d3b3bbb3ca8db27ca0fe9d79011df4ca1e40bc5c704eacee495",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Iowa State independently compares opening one socket switch in each topology. Siemens Stiftung's battery demonstrations show direct removal and which lamp stays on. Iowa's reconfigurable DC demo documents removable rated bulbs without being described as an exact replica. The bilingual narration and diagrams preserve the break in the single series loop and the complete parallel branch, use a low-voltage board, and compare whether lamps stay lit. https://learning.physics.iastate.edu/electric-lamps-series-and-parallel | https://medienportal.siemens-stiftung.org/view/106119 | https://instructional-resources.physics.uiowa.edu/5f2050-series-and-parallel-light-bulbs"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "b1f614fd6ca21d3b3bbb3ca8db27ca0fe9d79011df4ca1e40bc5c704eacee495",
+        "status": "PASS",
+        "blockers": [],
+        "note": "低壓教具對照以通斷為讀值。圖解保留電池兩端、串聯唯一缺口及並聯未斷支路通過共用主線的閉合路徑。來源文字修訂維持同一個畫面判定。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "b1f614fd6ca21d3b3bbb3ca8db27ca0fe9d79011df4ca1e40bc5c704eacee495",
+          "status": "PASS",
+          "blockers": [],
+          "note": "先看燈的反應，再用原位線圖追到電池，比直接講串聯、並聯好跟。回到並排實拍時也能核對自己的預測。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "67aa96e4b9462115b5f7ffdca00933be8010995624a08cd44d0019c38d3c11c0",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 99
+        },
+        {
+          "reviewer": "B",
+          "sha256": "b1f614fd6ca21d3b3bbb3ca8db27ca0fe9d79011df4ca1e40bc5c704eacee495",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同位置各拔一顆就看出差別。線圖和燈座留在原位，讓我能用手指沿著還通的線走一遍。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "67aa96e4b9462115b5f7ffdca00933be8010995624a08cd44d0019c38d3c11c0",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 99
+        }
+      ]
+    },
+    "WNL-054": {
+      "revision": 2,
+      "sha256": "11aba4813d013ab43fc8dac1f2d80c3a5146424e4f3c3080bf148b21ac0b502e",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "11aba4813d013ab43fc8dac1f2d80c3a5146424e4f3c3080bf148b21ac0b502e",
+        "status": "PASS",
+        "blockers": [],
+        "note": "UCSB shows the higher-expansion brass on the outside of a heated bonded strip, Purdue independently demonstrates reverse deflection when flipped, and the University of Iowa independently contrasts opposite deflections with hot and cold conditions. Both languages preserve the held starting geometry and the free-expansion comparison, while the revised close-up explicitly depicts the intact bond. https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/48.09.html | https://www.physics.purdue.edu/demos/display_page.php?item=3A-03 | https://instructional-resources.physics.uiowa.edu/4a3010-expansion-contraction-demo-bimetal-strip"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "11aba4813d013ab43fc8dac1f2d80c3a5146424e4f3c3080bf148b21ac0b502e",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一雙金屬片的側邊近景明定兩層全程緊貼完整接合。同初長同溫升的展開對照，以及翻面後較易膨脹的材料仍在外弧，均有可追蹤的參照。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "11aba4813d013ab43fc8dac1f2d80c3a5146424e4f3c3080bf148b21ac0b502e",
+          "status": "PASS",
+          "blockers": [],
+          "note": "先看各自伸長多少，再把兩層合起來看弧長，我容易理解外側究竟是哪一層。中文的「伸長較多」比「容易膨脹」更直接連回同樣加熱的比較。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "155e959269d0d2defeb2342ed1599a47e270254f068ff1b13d80b13bd526a5a1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "11aba4813d013ab43fc8dac1f2d80c3a5146424e4f3c3080bf148b21ac0b502e",
+          "status": "PASS",
+          "blockers": [],
+          "note": "先讓我看兩片分開時的長短，再看接合後的外弧，彎曲的方向有根據。上下互換那一拍也讓人看出規則。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "155e959269d0d2defeb2342ed1599a47e270254f068ff1b13d80b13bd526a5a1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-055": {
+      "revision": 2,
+      "sha256": "208005d43aabe924b59f6333a984319ef16fe88732b872b1909b60e6071b8aa4",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "208005d43aabe924b59f6333a984319ef16fe88732b872b1909b60e6071b8aa4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Autumn's dry-adhesion force measurements and Huber's independent AFM measurements on glass support the branched hairs, weak nanoscale attraction and contact-count effect. The C2 sources distinguish Autumn and Hill setal measurements, Tian's model, and Wu's independent model of directional adhesion and active toe hyperextension. Both languages now show the toe curling and patches releasing in sequence at toe scale. The storyboard illustrates reorientation in those patches with no universal release sequence imposed on individual spatulae. https://polypedal.berkeley.edu/publications/070_Autumn_EvidenceforVanDerWaalsAdhesion_ProcNatAcadSci_2002.pdf | https://pubmed.ncbi.nlm.nih.gov/10864324/ | https://pubmed.ncbi.nlm.nih.gov/17148113/ | https://pubmed.ncbi.nlm.nih.gov/21288955/ | https://pmc.ncbi.nlm.nih.gov/articles/PMC1748224/ | https://pmc.ncbi.nlm.nih.gov/articles/PMC4528657/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "208005d43aabe924b59f6333a984319ef16fe88732b872b1909b60e6071b8aa4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一乾玻璃與同一趾連接宏觀和顯微畫面。趾尖先捲，接觸線沿同一趾移動，接觸區按區釋放。細尖轉角附在對應接觸區，尺度與英語標示清楚。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "208005d43aabe924b59f6333a984319ef16fe88732b872b1909b60e6071b8aa4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "一路追同一根趾，能把放大後的細毛和實際的一步連起來。抬起那格裡接觸線移動，比只畫整隻腳離開更能解釋怎麼放掉。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "95d98cf69038afb769f4e83f50a991da48b3e21b5b49368213591b67e6cd6ada",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 97
+        },
+        {
+          "reviewer": "B",
+          "sha256": "208005d43aabe924b59f6333a984319ef16fe88732b872b1909b60e6071b8aa4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "一直跟同一根趾讓放大和退回實拍有連續感。最後一句的「放下它們抓住」有點拗口，捲起放開的鏡頭仍然看得懂。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "95d98cf69038afb769f4e83f50a991da48b3e21b5b49368213591b67e6cd6ada",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        }
+      ]
+    },
+    "WNL-056": {
+      "revision": 2,
+      "sha256": "ed78561140e4c5b0b287e06dd0661d4a4031a132a343fba3f7032a19f3c57bf4",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "ed78561140e4c5b0b287e06dd0661d4a4031a132a343fba3f7032a19f3c57bf4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The corrected Vine and Matthews original explains matched anomalies with reversals and spreading, and Pitman and Heirtzler independently measured them across the Pacific-Antarctic Ridge. USGS and Geological Society support cooling remanence and show that older rock lies farther out in a simple steady spreading section. In both languages and the storyboard, new rock forms at the ridge, the old bands move out without flipping, and the bands and colors remain schematic. https://courses.washington.edu/ess502/Vine_Matthews.pdf | https://pubmed.ncbi.nlm.nih.gov/17780036/ | https://pubs.usgs.gov/gip/dynamic/developing.html | https://www.geolsoc.org.uk/Plate-Tectonics/Chap1-Pioneers-of-Plate-Tectonics/Vine-and-Matthews.html"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "ed78561140e4c5b0b287e06dd0661d4a4031a132a343fba3f7032a19f3c57bf4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "原創磁測圖和剖面共用同一海嶺，磁性條帶是可編輯的資料示意。舊岩極性鎖定，新岩從中間增加，從中線往兩邊均變老。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "ed78561140e4c5b0b287e06dd0661d4a4031a132a343fba3f7032a19f3c57bf4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "有測量圖與剖面兩種視角，靠同一段海嶺和中線才跟得上。開場的條紋要一眼看得出來是測得的磁性差，後面的翻轉才容易懂。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "2cf2147142d276d9b9dba08108a2ec9631c9b0f11bb11b438d3b9959ee3aa2ad",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 93
+        },
+        {
+          "reviewer": "B",
+          "sha256": "ed78561140e4c5b0b287e06dd0661d4a4031a132a343fba3f7032a19f3c57bf4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "舊岩帶上的方向在磁場翻轉後留著，讓我懂得兩邊配對是在配形成時期。測量船開場較抽象，看到中線和色帶後才進入問題。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "2cf2147142d276d9b9dba08108a2ec9631c9b0f11bb11b438d3b9959ee3aa2ad",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-057": {
+      "revision": 2,
+      "sha256": "7444997d3399cdae2f36f362cc0f63cc2b039eb956db9d9da178ab0ac56e43a1",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "7444997d3399cdae2f36f362cc0f63cc2b039eb956db9d9da178ab0ac56e43a1",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The controlled cycle now explicitly melts, cools, gently reheats and sets. The reheat removes lower-melting forms while enough Form V seed can persist, consistent with Purdue's protocol. Chen and Afoakwa independently support the contribution of temper and microstructure to gloss and fracture, and the script uses conditional claims about the directly cooled comparator. The compared samples come from the same material and the diagram is labeled illustrative. https://extension.purdue.edu/extmedia/FS/FS-153-W.pdf | https://www.nature.com/articles/s41467-021-25206-1.pdf | https://pureportal.strath.ac.uk/en/publications/effects-of-tempering-and-fat-crystallisation-behaviour-on-microst/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "7444997d3399cdae2f36f362cc0f63cc2b039eb956db9d9da178ab0ac56e43a1",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Melt、Cool、Gentle reheat、Set 四段連續顯示全融、冷卻成種、回溫選擇性融化並留下第五型種晶、入模凝固生長。實拍同批黑巧克力分裝對照，依預試真實效果剪接。錄音後核對四段圖解與旁白對齊。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "7444997d3399cdae2f36f362cc0f63cc2b039eb956db9d9da178ab0ac56e43a1",
+          "status": "PASS",
+          "blockers": [],
+          "note": "折斷聲讓我很快看懂差別。中段要在十一秒內交代三次溫度變化、留下種晶以及凝固時的生長，四格動畫需要讓留下和長大各有一拍。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "b24ca133179e963048989ad823c81babc8c51c68a802ab3b419fa687ff9cf237",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "7444997d3399cdae2f36f362cc0f63cc2b039eb956db9d9da178ab0ac56e43a1",
+          "status": "PASS",
+          "blockers": [],
+          "note": "光澤和折斷聲很好認。四步驟和第五型種晶都在同一段帶過，回溫留下種晶與凝固時長大需要在畫面上有明顯停頓。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "b24ca133179e963048989ad823c81babc8c51c68a802ab3b419fa687ff9cf237",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-058": {
+      "revision": 1,
+      "sha256": "b3b2a0ad0c9f564196e9af0c6ecca6f20e5360e0dd3d886944c2dda726494118",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "b3b2a0ad0c9f564196e9af0c6ecca6f20e5360e0dd3d886944c2dda726494118",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Michigan and UConn course examples independently show how different group frequencies reverse weighted overall comparisons. Blyth explicitly formalizes the two-stratum reversal. Recomputed Alex 5/5 easy and 4/10 hard against Jamie 9/10 and 0/2, yielding 9/15 = 60% and 9/12 = 75%, with easy shares 5/15 and 10/12. English, Traditional Chinese and storyboard counts agree. The storyboard preserves one cell per game and limits the inference to fictional counts. https://websites.umich.edu/~hlm/math425/simpson.pdf | https://statds.github.io/ids-s26/02-case-study/02_case_study_simpsons_paradox.html | https://www.tandfonline.com/doi/abs/10.1080/01621459.1972.10482387"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "b3b2a0ad0c9f564196e9af0c6ecca6f20e5360e0dd3d886944c2dda726494118",
+        "status": "PASS",
+        "blockers": [],
+        "note": "格子一局一格，搬運之後總計一致。簡單 100% 對 90%、困難 40% 對 0%、合計 60% 對 75%。重排保留玩家欄與關卡來源，手機畫面可按節奏逐次揭露。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "b3b2a0ad0c9f564196e9af0c6ecca6f20e5360e0dd3d886944c2dda726494118",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一格直接移到總表，比新打一張總表更能說明分母怎麼來。開頭要讓兩種難度的勝率與總勝率依序出現，留時間讓觀眾看出哪個名字領先。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "b5ad2c1bd7b456ca8031f5e9c684a5dc2070f3242f7cc84d50346da8b541be07",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 99
+        },
+        {
+          "reviewer": "B",
+          "sha256": "b3b2a0ad0c9f564196e9af0c6ecca6f20e5360e0dd3d886944c2dda726494118",
+          "status": "PASS",
+          "blockers": [],
+          "note": "原來那些小格子移到總表，讓我看出兩個分母為什麼不同。開頭一次讀三個比較稍密，後面逐關打開才很好跟。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "b5ad2c1bd7b456ca8031f5e9c684a5dc2070f3242f7cc84d50346da8b541be07",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-059": {
+      "revision": 1,
+      "sha256": "029eea95db1f47c9c3459eee9148a9e054101cda639c6cfacbda8d898dfbec34",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "029eea95db1f47c9c3459eee9148a9e054101cda639c6cfacbda8d898dfbec34",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Manufacturer YKK and Sundback's original patents independently show the Y channel, shaped interlocking elements and bidirectional slider function. The scripts and view directions agree that for closure two separated rows enter the broad side and exit mechanically interlocked; reversing sliders sends a closed row through the narrow inlet and splits it at the separator without turning the slider. The animation is scoped to a verified conventional metal-tooth example. https://www.ykk.com/english/ykk/tech/01.html | https://patents.google.com/patent/US1219881A/en | https://patents.google.com/patent/US1302606A/en"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "029eea95db1f47c9c3459eee9148a9e054101cda639c6cfacbda8d898dfbec34",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一背包拉頭從實拍進入透明剖面。閉合時分離齒由寬端雙叉入、扣合由窄端出。反向時滑動方向改變，原朝向與中央分隔部保留。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "029eea95db1f47c9c3459eee9148a9e054101cda639c6cfacbda8d898dfbec34",
+          "status": "PASS",
+          "blockers": [],
+          "note": "回拉時固定拉頭朝向，兩個方向的動作就能對上。特寫中能看到一顆齒怎麼進入對面的空隙，我就能從 Y 的形狀推回外面看到的結果。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "d22a920bb2726a3a75ea6903336fc4415029ee2500e38fcb7bbc3095e62af94f",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 98
+        },
+        {
+          "reviewer": "B",
+          "sha256": "029eea95db1f47c9c3459eee9148a9e054101cda639c6cfacbda8d898dfbec34",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同個拉頭保持方向來回演示，能直接比較合與分。透明殼裡的齒頭特寫也回答了為什麼出了拉頭仍然扣著。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "d22a920bb2726a3a75ea6903336fc4415029ee2500e38fcb7bbc3095e62af94f",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 99
+        }
+      ]
+    },
+    "WNL-060": {
+      "revision": 3,
+      "sha256": "1c9dc848314b98a0a82ea6bb53e29ff12bd03a09c646964234f17a6b5d856783",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "1c9dc848314b98a0a82ea6bb53e29ff12bd03a09c646964234f17a6b5d856783",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The University of Washington and Exploratorium independently demonstrate the monocular effect, and Purves establishes the nasal optic disc and absent photoreceptors. Urale section 3.1 measures a mean 15.8° laterally and 0.8° inferior, and Ling Table 2 independently measures 16.00° temporal and 2.05° inferior. For the specified 9:16 card, 82% width horizontally and 6% height down produce an approximately 1.9° downward elevation at the example distances. The two distance examples produce about 14.74° and 14.93° of horizontal eccentricity and are clearly identified as starting estimates. Both language tracks preserve fixation and left-eye cover, and the storyboard keeps the dot on screen. Device layout and individual observation remain production checks. https://faculty.washington.edu/chudler/chvision.html | https://www.exploratorium.edu/snacks/blind-spot | https://www.ncbi.nlm.nih.gov/sites/books/NBK11145/ | https://pmc.ncbi.nlm.nih.gov/articles/PMC9812231/ | https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254195"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "1c9dc848314b98a0a82ea6bb53e29ff12bd03a09c646964234f17a6b5d856783",
+        "status": "PASS",
+        "blockers": [],
+        "note": "9:16 卡面固定十字與圓點。按所定位置計算，水平中心距 5 公分、眼距 19 公分時，圓點在注視方向右方約 14.74°、下方約 1.90°，角直徑約 0.46°。8 公分和 30 公分的起始配置亦相近。手機預試包含右側控制項及字幕。影片內圓點保持原像素，右眼俯視剖面呈現圓點落於鼻側視神經盤，由未成功操作的觀眾續看。"
+      },
+      "readers": [
+        {
+          "reviewer": "I",
+          "sha256": "1c9dc848314b98a0a82ea6bb53e29ff12bd03a09c646964234f17a6b5d856783",
+          "status": "PASS",
+          "blockers": [],
+          "note": "示範從開場就能動手做，圓點在畫面上持續可見也讓觀眾能自行驗證。從移螢幕到眼球剖面之間，我要自己補上視角改變這一步。右眼的剖面也足以讓我推想雙眼張開時會怎樣。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e2ca6eda6aa9700723e8ccc05a1193c88ff1727f8d4d7b0b037ab3ad28c5cd5b",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "J",
+          "sha256": "1c9dc848314b98a0a82ea6bb53e29ff12bd03a09c646964234f17a6b5d856783",
+          "status": "PASS",
+          "blockers": [],
+          "note": "開場給我一個可以跟著做的動作，並在揭曉前交代暫停與調整距離，讓我有時間找到圓點消失的位置。後面的剖面把視神經離開處與圓點消失連起來。英文「only the dot can vanish」略生硬，中文講得更清楚。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e2ca6eda6aa9700723e8ccc05a1193c88ff1727f8d4d7b0b037ab3ad28c5cd5b",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 4
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-061": {
+      "revision": 5,
+      "sha256": "6aaf33de3e381f370cb94321556632ca50f0aab43fbc65b2d9e935c4e1e80329",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "6aaf33de3e381f370cb94321556632ca50f0aab43fbc65b2d9e935c4e1e80329",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The bilingual recap accurately describes slow rearrangement and possible transient jamming on a quick push. The probe enters the suspension. The comparison uses the same probe and matched penetration depth during the nearly constant-speed phase of each run, with synchronized force and depth, matched blank profiles, and exclusion of acceleration, braking, and travel-stop effects. The stated force ordering requires a repeatable bench result before filming."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "6aaf33de3e381f370cb94321556632ca50f0aab43fbc65b2d9e935c4e1e80329",
+        "status": "PASS",
+        "blockers": [],
+        "note": "起始和收尾兩次實拍以同一探棒、深度標記及共同力值刻度比較。用同步位置、時間與力資料確認兩種近似等速的區段，僅在同一深度標示試樣反力。依各自相同速度歷程做無樣本空行程，排除加速、煞停、行程端衝擊及觸底，確認可重複量測才配音。連續水相、同尺度和同濃度的顆粒圖用接觸高亮呈現暫時連結與鬆弛。 第五版明寫同一探棒進入澱粉懸浮液，英文結尾把顆粒重排限定在慢壓；與圖解的快慢對照一致。"
+      },
+      "readers": [
+        {
+          "reviewer": "I",
+          "sha256": "6aaf33de3e381f370cb94321556632ca50f0aab43fbc65b2d9e935c4e1e80329",
+          "status": "PASS",
+          "blockers": [],
+          "note": "在同一深度對照兩個力值，讓開場的問題有可見的證據。粒子接觸從探棒旁向外擴展，也讓我能把快壓、摩擦與傳力連起來。英文的 same pressing distance 稍顯生硬，深度標記消除了可能的歧義。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4a4d5e82aa4330a1b4443fb5a143138354043fcfa14d24555c941359ff209bae",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "J",
+          "sha256": "6aaf33de3e381f370cb94321556632ca50f0aab43fbc65b2d9e935c4e1e80329",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同深度的並排力值讓我知道接下來要解釋哪個差異。慢壓顆粒側移、快壓接觸連在一起、停手後接觸淡去，三段視覺動作能對應旁白。中文的「卡在一起的這一區能暫時傳力」略偏書面，但用前一句的畫面可以跟上。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4a4d5e82aa4330a1b4443fb5a143138354043fcfa14d24555c941359ff209bae",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 96
+        }
+      ]
+    }
+  }
+}
