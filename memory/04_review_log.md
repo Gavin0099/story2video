@@ -47,3 +47,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/whynest-004-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-004-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-004-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: staged script digests and all 40 distinct mechanisms match delivery review
 - Next action: Present batch 004 in a GitHub PR based on the open batch 003 branch, for owner review. Bench experiments, mobile playback, production and market validation remain later stages.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:0088b3676152867553348ee1e2411180a5dd9320264b55f8d3ad09e915217789 -->
+### Canonical memory checkpoint — whynest-script-batch-005-20261122
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `0088b3676152867553348ee1e2411180a5dd9320264b55f8d3ad09e915217789`
+- Commit binding: `2e92e7789eadc31a9ff1eccff30ef04fc3b4e297` (bound)
+- Record: 新增 10 篇有來源的雙語科普腳本、英文圖解分鏡和獨立評分收據。CI 增列第五批。獨立交付審查無 P0/P1。
+- Validation boundary: PASS: artifacts/evidence/test-results/whynest-005-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-005-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-005-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: independent 89–95 scores and all 50 distinct mechanisms verified | Footage, final captions and market outcomes pending.
+- Next action: Open fifth batch PR against the fourth batch branch. Await production qualification and a separate publication decision.
+- PLAN reconciliation: `not_applicable`
