@@ -27,6 +27,8 @@ jobs:
           uv sync --locked
           uv run --locked pytest
         shell: bash
+      - name: Check WhyNest Lab script batch and review evidence
+        run: python -X utf8 experiments/science-shorts/script-library/batch-001/verify.py
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version-file: .node-version

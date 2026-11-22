@@ -1,0 +1,673 @@
+{
+  "rubric": {
+    "hook": 15,
+    "clarity": 25,
+    "causal_retelling": 25,
+    "visual_plan": 20,
+    "pacing": 10,
+    "natural_language": 5
+  },
+  "minimum_each_reader": 85,
+  "episodes": {
+    "WNL-022": {
+      "revision": 3,
+      "sha256": "ca492ff9bc93267916bb5fec3138816fe1382aaa4367f8a9c0cb090776e1b721",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "ca492ff9bc93267916bb5fec3138816fe1382aaa4367f8a9c0cb090776e1b721",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Weber State's handheld calculator demo shows the same setup, OpenStax §27.8 states electric-field polarization and cos² transmission, and Waterloo's LCD-sunglasses procedure confirms angular attenuation and return. The script confines the result to a checked LCD/lens pair and uses minimum rather than zero. Chinese wording can describe light leaving the LCD, since many calculators are reflective."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "ca492ff9bc93267916bb5fec3138816fe1382aaa4367f8a9c0cb090776e1b721",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Same exposed calculator digits and a locked exposure isolate lens angle. The transverse electric-field arrow and fixed LCD reference distinguish polarization from the light path. Pretest that the selected calculator and lenses produce a clear bright-to-dark change, then keep the lens-exterior digits visible during both turns."
+      },
+      "readers": [
+        {
+          "reviewer": "C",
+          "sha256": "ca492ff9bc93267916bb5fec3138816fe1382aaa4367f8a9c0cb090776e1b721",
+          "status": "PASS",
+          "blockers": [],
+          "note": "鏡片外保留數字能看出計算機仍開著。平行箭頭與繁中句能釐清對齊的是偏振方向。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "f59b539484a86f7369081ac0b37c69fe090f9bc8341b02e4c431f6893c0d71ee",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "ca492ff9bc93267916bb5fec3138816fe1382aaa4367f8a9c0cb090776e1b721",
+          "status": "PASS",
+          "blockers": [],
+          "note": "露出的數字能驗證螢幕仍亮著，旁白可更早點出是偏光鏡片。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "f59b539484a86f7369081ac0b37c69fe090f9bc8341b02e4c431f6893c0d71ee",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-023": {
+      "revision": 2,
+      "sha256": "d2cc8c687e38891f7a299d75a96014b15232f99c2c1c64d4304ee6b1380c9397",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "d2cc8c687e38891f7a299d75a96014b15232f99c2c1c64d4304ee6b1380c9397",
+        "status": "PASS",
+        "blockers": [],
+        "note": "OpenStax §16.5 documents wall reflections and superposition, CU Boulder's thermal-image test shows hot spots with the turntable removed, and Hong Kong CFS describes rotating food through a fixed cavity pattern. The qualified, off-center comparison correctly claims improved average uniformity with residual cold spots possible."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "d2cc8c687e38891f7a299d75a96014b15232f99c2c1c64d4304ee6b1380c9397",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The off-center bite crosses successive cavity-fixed heating regions in the turning case. The stopped comparison is animated and the exterior footage uses normal closed-door operation. Carry the same food position and initial state across the two schematics. Give the relative map an English schematic cue and use no stock thermal image."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "d2cc8c687e38891f7a299d75a96014b15232f99c2c1c64d4304ee6b1380c9397",
+          "status": "PASS",
+          "blockers": [],
+          "note": "追蹤同一口食物並保留爐壁參照，能推得盤心原地不動。開場的食物移動弧線要清楚。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e02a684fc2efe11b642d338f526770ce64d20703d9de9919ab59dfded568aa47",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "d2cc8c687e38891f7a299d75a96014b15232f99c2c1c64d4304ee6b1380c9397",
+          "status": "PASS",
+          "blockers": [],
+          "note": "固定爐壁並追蹤同一口食物，可以看出熱區與轉盤的相對運動。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "e02a684fc2efe11b642d338f526770ce64d20703d9de9919ab59dfded568aa47",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        }
+      ]
+    },
+    "WNL-024": {
+      "revision": 1,
+      "sha256": "454b1214d23014f04811035310a0ee5955a193f308c625a17adb2f0364a1d927",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "454b1214d23014f04811035310a0ee5955a193f308c625a17adb2f0364a1d927",
+        "status": "PASS",
+        "blockers": [],
+        "note": "LPI's side-by-side trial uses salted and plain ice and explains surface liquid and depressed freezing point. University of Washington confirms NaCl freezing-point depression experimentally, and Minnesota LTAP and FHWA confirm lower practical effectiveness with colder pavement. The script correctly omits a universal numerical cutoff."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "454b1214d23014f04811035310a0ee5955a193f308c625a17adb2f0364a1d927",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Matched ice samples lead into the wet edge and a qualitative freezing-point comparison. The schematic uses a common pavement temperature and a separate colder case. Pretest identical samples and surfaces at a common known temperature where the brine difference is observable. Preserve relative puddle sizes and show the English time-lapse cue."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "454b1214d23014f04811035310a0ee5955a193f308c625a17adb2f0364a1d927",
+          "status": "PASS",
+          "blockers": [],
+          "note": "共用溫度尺能建立兩種冰點的關係。兩塊冰若都融得很快，桌拍較難接上圖解條件。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "90c1d7b9669fbaeec7292a5b437b942a13315bed7bff49f4788a21a1bbd0d1d4",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 17,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 89
+        },
+        {
+          "reviewer": "B",
+          "sha256": "454b1214d23014f04811035310a0ee5955a193f308c625a17adb2f0364a1d927",
+          "status": "PASS",
+          "blockers": [],
+          "note": "冰塊桌拍切到路面模型時，觀眾可能想知道兩場景的比較溫度是否相同。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "90c1d7b9669fbaeec7292a5b437b942a13315bed7bff49f4788a21a1bbd0d1d4",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 22,
+            "causal_retelling": 23,
+            "visual_plan": 17,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 88
+        }
+      ]
+    },
+    "WNL-025": {
+      "revision": 1,
+      "sha256": "ff508167a1da8d516bfb1852172e236756609f9644b9e50f37b64b21a418c141",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "ff508167a1da8d516bfb1852172e236756609f9644b9e50f37b64b21a418c141",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NWS explains the flashlight footprint and longer daylight, and USNO independently confirms the nearly fixed tilt, opposite seasons, and different day lengths. Penn State gives independent direct support for the larger oblique footprint and reduced intensity per area. July examples are midlatitude illustrations rather than daily weather reports."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "ff508167a1da8d516bfb1852172e236756609f9644b9e50f37b64b21a418c141",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Matching beam energy, paired absolute latitudes and a fixed axial orientation isolate the mechanisms for opposite seasons. The illustrations are feasible in the stated proportions. Use a visible projection of the tilt in the half-orbit diagram, preserve the same projected axis orientation, and advance both day-length markers at the same angular rate."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "ff508167a1da8d516bfb1852172e236756609f9644b9e50f37b64b21a418c141",
+          "status": "PASS",
+          "blockers": [],
+          "note": "照光面積與白晝時長都有可獨立理解的畫面，中段兩次示意轉換需留足停留時間。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "9d1f610f685811b5aa66cb1a5ea01fd522026131f2aed1fb98504dd0f6b700a3",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "ff508167a1da8d516bfb1852172e236756609f9644b9e50f37b64b21a418c141",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同量光落在兩片板上讓光照角度的結果可見，繁中開場句稍拗口。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "9d1f610f685811b5aa66cb1a5ea01fd522026131f2aed1fb98504dd0f6b700a3",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-026": {
+      "revision": 1,
+      "sha256": "829c846e470b78e1acb817b8673215c307dfd110a11e236e0a8b7e8e9e880222",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "829c846e470b78e1acb817b8673215c307dfd110a11e236e0a8b7e8e9e880222",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NASA explains the one-spin-per-orbit relationship; Open University's animation discussion shows why real lunar libration modifies the Earth view slightly; Rice independently documents the extra visible lunar edges. The left→down→right→up→left marker sequence is correct for the stated right→top→left→bottom→right model path."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "829c846e470b78e1acb817b8673215c307dfd110a11e236e0a8b7e8e9e880222",
+        "status": "PASS",
+        "blockers": [],
+        "note": "From a fixed view, the right, top, left and bottom orbital positions require the marker to face left, down, right and up. The surface-fixed marker and orbit/spin counts convey synchronous rotation. Render the final apparent libration as a slight change in the visible surface near the limb. Keep the whole-disc framing stable."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "829c846e470b78e1acb817b8673215c307dfd110a11e236e0a8b7e8e9e880222",
+          "status": "PASS",
+          "blockers": [],
+          "note": "俯視與地球視角的並列可讓觀眾驗算自轉。開場可能使人期待同步自轉最初如何形成。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "d77dcd163dcf22571edd30df1c20ff1e40542517c9f8a97141ffea05aaa0d39c",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "829c846e470b78e1acb817b8673215c307dfd110a11e236e0a8b7e8e9e880222",
+          "status": "PASS",
+          "blockers": [],
+          "note": "固定俯視的方向變化配合地球視角，能釐清兩個參照方向。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "d77dcd163dcf22571edd30df1c20ff1e40542517c9f8a97141ffea05aaa0d39c",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-027": {
+      "revision": 1,
+      "sha256": "4aeba822f4ebb42aa6b5c1990de9a2cc072e995de03242561b41d6f6214fb5ca",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "4aeba822f4ebb42aa6b5c1990de9a2cc072e995de03242561b41d6f6214fb5ca",
+        "status": "PASS",
+        "blockers": [],
+        "note": "ACS and RSC directly verify indicative color changes; ANU independently compares an acid, water, and bicarbonate, and explicitly labels vinegar an extension. MDPI solution spectroscopy and Wiley Fig. 6's pigmented film independently support the link from pH-dependent anthocyanin forms to light absorption. Following the film's stated actual-sample color control avoids overstating exact shades."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "4aeba822f4ebb42aa6b5c1990de9a2cc072e995de03242561b41d6f6214fb5ca",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Matched three-cup footage isolates the added solutions. The symbolic pigment forms connect the observed color to light absorption without assigning numerical pH or claiming color precision. Use the recorded cup hues at matched exposure and white balance. Pretest the food-grade concentrations so all labeled outcomes are legible."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "4aeba822f4ebb42aa6b5c1990de9a2cc072e995de03242561b41d6f6214fb5ca",
+          "status": "PASS",
+          "blockers": [],
+          "note": "三杯用同樣燈光與加液量。清水和碳酸氫鈉溶液的對照結果仰賴畫面辨認。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "67b1d79f6e2cd355bcf72fe2ae2bb5a8e954a1dab9415b030c9868c81cdeee30",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 93
+        },
+        {
+          "reviewer": "B",
+          "sha256": "4aeba822f4ebb42aa6b5c1990de9a2cc072e995de03242561b41d6f6214fb5ca",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同批原汁、等量加液與水對照讓變因清楚。開場等到揭曉加醋才明確指出變色問題。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "67b1d79f6e2cd355bcf72fe2ae2bb5a8e954a1dab9415b030c9868c81cdeee30",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-028": {
+      "revision": 1,
+      "sha256": "ce8aabd9066000227a18e26052857bea1986c3ea4bd9e334da1ebe277937b281",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "ce8aabd9066000227a18e26052857bea1986c3ea4bd9e334da1ebe277937b281",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Harvard Forest explains chlorophyll decline and retention of some yellow carotenoid pigment; Wisconsin Extension independently says carotenoids exist throughout the growing season and are ordinarily masked by chlorophyll. The scope is normal green-to-yellow senescence, with schematic symbols and no claim that real carotenoid amount stays exactly fixed."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "ce8aabd9066000227a18e26052857bea1986c3ea4bd9e334da1ebe277937b281",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The same leaf and vein anchor the change in scale, and only the green symbols decrease in the model. The yellow symbols already present carry the causal explanation. Keep the opening a view of the existing green–yellow boundary unless actual time-lapse is recorded. Keep the English model label on the explanatory animation."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "ce8aabd9066000227a18e26052857bea1986c3ea4bd9e334da1ebe277937b281",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一條葉脈串起前後，模型符號需要英文標示為示意。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "301f799ad6cee1f88d86bf51f42667e3b61f08c04aae7f15612eb69c097a21c5",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 18,
+            "pacing": 10,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "ce8aabd9066000227a18e26052857bea1986c3ea4bd9e334da1ebe277937b281",
+          "status": "PASS",
+          "blockers": [],
+          "note": "沿同一條葉脈進出示意圖，綠色符號減少與旁白機制相符。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "301f799ad6cee1f88d86bf51f42667e3b61f08c04aae7f15612eb69c097a21c5",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-029": {
+      "revision": 1,
+      "sha256": "53446f8d9818b9b6fb635e793b39fb6fd988407a340209d49d195bd0e6149676",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "53446f8d9818b9b6fb635e793b39fb6fd988407a340209d49d195bd0e6149676",
+        "status": "PASS",
+        "blockers": [],
+        "note": "OpenStax and Penn State independently depict equal-speed expansion from a prior emission location, shorter forward and longer rearward spacing, and corresponding receiver pitch for a constant-tone source. The bilingual hook distinguishes emitted pitch from heard pitch and the off-axis audio condition avoids promising a necessary sudden jump."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "53446f8d9818b9b6fb635e793b39fb6fd988407a340209d49d195bd0e6149676",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Each wavefront is emitted from the source position at that instant, expands at the same speed and reaches a fixed off-track listener. The revised 10-second opening and ending can accommodate isolated simulated audio. Align the pitch with wavefront arrival at the listener, use a continuous transition through the pass and preserve an audible narration-free interval in both replays."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "53446f8d9818b9b6fb635e793b39fb6fd988407a340209d49d195bd0e6149676",
+          "status": "PASS",
+          "blockers": [],
+          "note": "聲音示範加耳旁波峰計數也能支援靜音觀看。通過時須讓音高與動畫精確同步。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "f7fa71b93e771bc92f856188af520ad01717c30b249c7105bd9e5f471d7b0df1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 97
+        },
+        {
+          "reviewer": "B",
+          "sha256": "53446f8d9818b9b6fb635e793b39fb6fd988407a340209d49d195bd0e6149676",
+          "status": "PASS",
+          "blockers": [],
+          "note": "耳邊通過的波峰計數配合示意音，能把聽見的音調連回發波機制。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "f7fa71b93e771bc92f856188af520ad01717c30b249c7105bd9e5f471d7b0df1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 20,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-030": {
+      "revision": 1,
+      "sha256": "9e44efd57253f955d338a0559f192f022d65e75c4eddce888881d7060610916b",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "9e44efd57253f955d338a0559f192f022d65e75c4eddce888881d7060610916b",
+        "status": "PASS",
+        "blockers": [],
+        "note": "FAA details droplets condensing and freezing behind the jet, UK DfT independently confirms initial ice-cloud formation and dry/moist differences, and NASA satellite observations verify persistent spreading in humid air. The narration restricts the claim to exhaust contrails and separates initial formation from persistence."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "9e44efd57253f955d338a0559f192f022d65e75c4eddce888881d7060610916b",
+        "status": "PASS",
+        "blockers": [],
+        "note": "The engine-wake view leads from mixing to droplets and then ice. The drier and sufficiently moist examples begin with formed trails and change humidity only, so formation and persistence remain distinct. Match initial trail age, framing and playback duration. Keep exhaust vapor visually distinct from the later white ice-crystal trail; use original illustrated or animated assets."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "9e44efd57253f955d338a0559f192f022d65e75c4eddce888881d7060610916b",
+          "status": "PASS",
+          "blockers": [],
+          "note": "乾濕比較使用兩道已形成的尾跡，存留差異清楚。腳本只需讓觀眾推斷消散快慢。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "424a1b01e3562dc859efabf8c9fc4866efa5905be747364e16347a9fe5c6423a",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "9e44efd57253f955d338a0559f192f022d65e75c4eddce888881d7060610916b",
+          "status": "PASS",
+          "blockers": [],
+          "note": "固定機型與溫度，改變空氣濕度，畫面就足以回答第二道理解題。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "424a1b01e3562dc859efabf8c9fc4866efa5905be747364e16347a9fe5c6423a",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 10,
+            "natural_language": 5
+          },
+          "total": 97
+        }
+      ]
+    },
+    "WNL-031": {
+      "revision": 1,
+      "sha256": "4f671bffe4509afbcf97fa4349e26b117367d99d986e02919c13bbb9674e893a",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "4f671bffe4509afbcf97fa4349e26b117367d99d986e02919c13bbb9674e893a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "IOP and SFU directly demonstrate induced eddy-current braking in a copper tube; Levin et al. link the delay to electromagnetic induction; Sydney separately documents the actual copper-versus-plastic comparison while SFU used glass. The force statement correctly describes upward magnetic braking while downward motion continues."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "4f671bffe4509afbcf97fa4349e26b117367d99d986e02919c13bbb9674e893a",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Matched tubes isolate the material, the current loops stay in the copper wall, and an upward net magnetic force accompanies continued downward motion. Synchronize the two releases on one time base and keep the receiving area visible. Pretest clearance and use a securely supported tube and a catch area suitable for the magnet."
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "4f671bffe4509afbcf97fa4349e26b117367d99d986e02919c13bbb9674e893a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "匹配兩管長度與內徑並區分向下運動和向上磁力，能把實拍接到機制。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "49cc9c943f923b02d1fc648c859ff12daea56ba3a2d2a9ce8eda5453fc6302d4",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        },
+        {
+          "reviewer": "B",
+          "sha256": "4f671bffe4509afbcf97fa4349e26b117367d99d986e02919c13bbb9674e893a",
+          "status": "PASS",
+          "blockers": [],
+          "note": "英文開頭靠畫面交代磁鐵落入管中。剖面把電流留在管壁內，位置清楚。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "49cc9c943f923b02d1fc648c859ff12daea56ba3a2d2a9ce8eda5453fc6302d4",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 92
+        }
+      ]
+    }
+  }
+}
