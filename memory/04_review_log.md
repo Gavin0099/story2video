@@ -36,3 +36,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/whynest-003-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-003-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-003-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: exact staged script and cue digests plus 30 distinct mechanism IDs
 - Next action: Present batch 003 in a GitHub PR based on the open batch 002 branch, for owner review. Film production and market validation remain later stages.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:d0274823285ae37ed8b46d95614ab098581579980ff51925c95333bb9e185a4a -->
+### Canonical memory checkpoint — whynest-script-batch-004-20261122
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `d0274823285ae37ed8b46d95614ab098581579980ff51925c95333bb9e185a4a`
+- Commit binding: `cf26c29e7c10ddefbe2fd623d0813767b8515064` (bound)
+- Record: 完成 WhyNest Lab 第四批 WNL-052～061 雙語腳本與分鏡，每篇通過獨立事實和圖解及兩份盲評，採計分數為 93～99。盲點篇、玉米粉水篇修稿後以新情境題由兩位新讀者重評。獨立交付審查無未解 P0/P1。CI 檢查四批。
+- Validation boundary: PASS: artifacts/evidence/test-results/whynest-004-editorial.json -> exit_code=0 | PASS: artifacts/evidence/test-results/whynest-004-pytest.json -> exit_code=0 (61 tests) | PASS: artifacts/evidence/test-results/whynest-004-governance.json -> exit_code=0 | PASS: npm ci and npm run typecheck with Node 22.16.0 | PASS: staged script digests and all 40 distinct mechanisms match delivery review
+- Next action: Present batch 004 in a GitHub PR based on the open batch 003 branch, for owner review. Bench experiments, mobile playback, production and market validation remain later stages.
+- PLAN reconciliation: `not_applicable`
