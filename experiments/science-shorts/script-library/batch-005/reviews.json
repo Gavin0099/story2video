@@ -1,0 +1,673 @@
+{
+  "rubric": {
+    "hook": 15,
+    "clarity": 25,
+    "causal_retelling": 25,
+    "visual_plan": 20,
+    "pacing": 10,
+    "natural_language": 5
+  },
+  "minimum_each_reader": 85,
+  "episodes": {
+    "WNL-062": {
+      "revision": 2,
+      "sha256": "d0d0c4f2e86cb3e7a10f65ba933aafc6a0aceb38389d6a506c19921a9cfe83c3",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "d0d0c4f2e86cb3e7a10f65ba933aafc6a0aceb38389d6a506c19921a9cfe83c3",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NASA's space-flight chapter and CU Boulder independently support phase geometry. NASA's Hubble note and CU Boulder independently establish that Venus grows in apparent diameter as it nears Earth and becomes a crescent. Both languages and the non-collinear, same-magnification model preserve illumination toward the Sun and Earth-view geometry. https://science.nasa.gov/learn/basics-of-space-flight/chapter1-2/ | https://www.colorado.edu/sbo/facultystudent-resources/astronomy-info | https://science.nasa.gov/photojournal/venus-cloud-tops-viewed-by-hubble/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "d0d0c4f2e86cb3e7a10f65ba933aafc6a0aceb38389d6a506c19921a9cfe83c3",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一模擬望遠鏡視野帶入固定地球觀點和日照的軌道模型。近側偏離日地線呈細月牙，遠側呈較滿而較小的圓盤。製作時以同倍率投影計算兩者的視直徑與亮面方向，畫面保留模擬標示。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "d0d0c4f2e86cb3e7a10f65ba933aafc6a0aceb38389d6a506c19921a9cfe83c3",
+          "status": "PASS",
+          "blockers": [],
+          "note": "地球視線與明暗面對照能回答我看完開場提出的問題。保留相同望遠鏡倍率，可同時看出月牙厚度與視圓盤大小的差別。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "f647674d2f39bd18b02fb420a8b57edbcb4260e5865e8468b212429b4a1567d4",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 94
+        },
+        {
+          "reviewer": "B",
+          "sha256": "d0d0c4f2e86cb3e7a10f65ba933aafc6a0aceb38389d6a506c19921a9cfe83c3",
+          "status": "PASS",
+          "blockers": [],
+          "note": "兩個模擬望遠鏡視野能讓觀眾直接比亮面比例和視直徑。『地球與太陽的連線附近』也可能讓人聯想到日地線遠側，下一鏡頭的近側位置和後面的遠側對照補足指涉。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "f647674d2f39bd18b02fb420a8b57edbcb4260e5865e8468b212429b4a1567d4",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 22,
+            "causal_retelling": 23,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-063": {
+      "revision": 2,
+      "sha256": "0555de4bd4e8cf4a9cc5d54222740a364a4518792bb04d21256796d3c6f6b5cc",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "0555de4bd4e8cf4a9cc5d54222740a364a4518792bb04d21256796d3c6f6b5cc",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Shimano's pawl assembly and Park Tool independently establish engagement and overrun. The independent US5515957 patent and Kappstein explain the audible ratchet impacts during overrun. Both languages scope the mechanism to the depicted spring-pawl hub, and the diagram keeps the ratchet ring wheel-linked, the pawl carrier chain-linked and relative motion correct. https://patents.google.com/patent/US20070089960A1/en | https://www.parktool.com/en-us/blog/repair-help/freewheel-removal-and-installation | https://patents.justia.com/patent/5515957 | https://www.kappstein.com/pages/whisper-tech-clutch"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "0555de4bd4e8cf4a9cc5d54222740a364a4518792bb04d21256796d3c6f6b5cc",
+        "status": "PASS",
+        "blockers": [],
+        "note": "架上單車開場實拍與收音使用同一棘爪式花鼓。剖面用同側視角保留齒環與驅動體的相對方向。踩踏時棘爪頂陡面後同步，滑行時齒環超前、斜面頂開棘爪、棘爪彈落。成片核對實拍聲音與示意慢放的落點。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "0555de4bd4e8cf4a9cc5d54222740a364a4518792bb04d21256796d3c6f6b5cc",
+          "status": "PASS",
+          "blockers": [],
+          "note": "固定視角下的齒環超前、棘爪縮回與落下，能逐步對上開場聽到的聲音。口語中的「踩到追上輪子」要配合畫面才容易理解是驅動體的轉速追上齒環。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1b96e4b56bca061d3ee18be4136e58bda3c818677c0cc0415bb49e342b25e67f",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        },
+        {
+          "reviewer": "B",
+          "sha256": "0555de4bd4e8cf4a9cc5d54222740a364a4518792bb04d21256796d3c6f6b5cc",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一剖面能保住兩零件的相對運動，聲音落在棘爪回到齒隙時也能印證原因。『停下腳踏板』聽起來比『停止踩踏』生硬。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1b96e4b56bca061d3ee18be4136e58bda3c818677c0cc0415bb49e342b25e67f",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-064": {
+      "revision": 2,
+      "sha256": "7a7c65cd9a47abc644b2e77d7dc2a5a1e20eb290721e3ef2447ad044e1d72403",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "7a7c65cd9a47abc644b2e77d7dc2a5a1e20eb290721e3ef2447ad044e1d72403",
+        "status": "PASS",
+        "blockers": [],
+        "note": "University of Maine Extension and Serra et al.'s apple cultivar study independently substantiate apple flesh browning after tissue damage and oxygen exposure. The Foods article gives the separated plastids and vacuoles, PPO catalysis and quinone-to-pigment sequence. The Plant Physiology study confirms an apple PPO gene promotes the observed browning. English and Traditional Chinese preserve damage, enzyme/substrate contact, atmospheric oxygen, and subsequent pigment formation. The diagram preserves enzyme identity and the time-lapse controls exposure and lighting. https://extension.umaine.edu/4h/stem-toolkits/fruit-science/ | https://www.mdpi.com/2304-8158/10/1/186 | https://pubmed.ncbi.nlm.nih.gov/39535880/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "7a7c65cd9a47abc644b2e77d7dc2a5a1e20eb290721e3ef2447ad044e1d72403",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同果實相鄰切片、同一固定鏡位與色彩參照的縮時，足以呈現切面隨時間褐變。示意圖從切面追到破損細胞，再呈現氧參與和後續褐色產物。製作時讓開場標籤指向切開時刻，標實測經過時間，酵素符號全程保留。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "7a7c65cd9a47abc644b2e77d7dc2a5a1e20eb290721e3ef2447ad044e1d72403",
+          "status": "PASS",
+          "blockers": [],
+          "note": "切開的細胞、加進來的氧和稍後出現的色素把過程連起來。縮時要保留同一塊切面與時間標記，才能看出開場兩個切面之間少講的時間差。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "851189ffe292b563c3ed27d8a55d9b2e59553ec6488852e6a4223bcd16ee3fd2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 10,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 90
+        },
+        {
+          "reviewer": "B",
+          "sha256": "7a7c65cd9a47abc644b2e77d7dc2a5a1e20eb290721e3ef2447ad044e1d72403",
+          "status": "PASS",
+          "blockers": [],
+          "note": "實拍的 Now 和 Earlier 補足開場的時間關係，固定曝光的縮時也讓色差能靠同一塊切面辨認。分隔、切破、接觸氧和顏色生成的順序明確。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "851189ffe292b563c3ed27d8a55d9b2e59553ec6488852e6a4223bcd16ee3fd2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 11,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-065": {
+      "revision": 2,
+      "sha256": "7e51d578bea8f92082af1fe7c65cff3b543fc4e0327f33602ffed03859b686b4",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "7e51d578bea8f92082af1fe7c65cff3b543fc4e0327f33602ffed03859b686b4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "OpenStax and Oregon State Extension independently establish guard-cell control of pore aperture, water loss and carbon dioxide exchange. The bilingual script explains CO2 provision for photosynthesis. The storyboard and production conditions specify a typical sunlit leaf. A constricted pore is compared using fixed gradients and the same time window, with separate visual identities for CO2 and H2O. https://openstax.org/books/biology/pages/30-5-transport-of-water-and-solutes-in-plants | https://extension.oregonstate.edu/catalog/em-9904-vegetative-plant-parts"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "7e51d578bea8f92082af1fe7c65cff3b543fc4e0327f33602ffed03859b686b4",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一葉面從實物進入典型氣孔剖面，保衛細胞變形帶動開口。修訂後兩個開度使用相同濃度差和等長時間窗，比較兩色概念點的淨通過量。保留 CO₂ 淨流入、H₂O 淨流出的方向與各自標示。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "7e51d578bea8f92082af1fe7c65cff3b543fc4e0327f33602ffed03859b686b4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一孔道的兩種淨方向夠清楚，縮窄前的氣孔也保留了同一個視角作比較。開場連續說兩次「需要的東西」有點繞口，直到光合作用出現才知道兩種需求。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1a4c778e2883ea1b97e76f83cfc0bc146b925d5c89278245275cf9de04c38236",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 92
+        },
+        {
+          "reviewer": "B",
+          "sha256": "7e51d578bea8f92082af1fe7c65cff3b543fc4e0327f33602ffed03859b686b4",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一個孔配兩種粒子的淨移動，加上開孔和窄孔在相同時間窗的對照，讓保水與吸收二氧化碳之間的取捨可直接讀出。開頭的『需要的東西』要等到後面才具體。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1a4c778e2883ea1b97e76f83cfc0bc146b925d5c89278245275cf9de04c38236",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-066": {
+      "revision": 2,
+      "sha256": "00bb2e1cbc9ebcfd38ab5140ff821e10a78cb72b8f0a6915b8fbaaf271b0f70e",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "00bb2e1cbc9ebcfd38ab5140ff821e10a78cb72b8f0a6915b8fbaaf271b0f70e",
+        "status": "PASS",
+        "blockers": [],
+        "note": "NACA cup force tests and the UPM group's experiments and torque model support the cup force asymmetry. Met Office describes rotation rate in the same measuring instrument, and UPM documents the calibration curve. Both languages maintain force-to-torque and rotation-to-speed causal steps. The startup sketch uses same-direction wind-force arrows, equal opposing moment arms for the comparison, and a through-axis third force in the stated simplified model. Actual fan counts remain conditional on production. https://ntrs.nasa.gov/citations/19930081442 | https://www.mdpi.com/1424-8220/14/11/21418 | https://weather.metoffice.gov.uk/guides/observations/how-we-measure-wind"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "00bb2e1cbc9ebcfd38ab5140ff821e10a78cb72b8f0a6915b8fbaaf271b0f70e",
+        "status": "PASS",
+        "blockers": [],
+        "note": "修訂後以定格俯視控制兩代表杯的力臂相同、第三杯的簡化力線過軸。順風力向量與淨轉矩曲箭頭可以清楚對照。實拍用足以覆蓋轉子的扇流，兩檔各等轉速穩定再同步比對等長窗的圈數。校正圖使用概念刻度。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "00bb2e1cbc9ebcfd38ab5140ff821e10a78cb72b8f0a6915b8fbaaf271b0f70e",
+          "status": "PASS",
+          "blockers": [],
+          "note": "箭頭都順風而力矩反向，是我在最初問題後最需要看到的對照。第三杯通過軸心是圖中的簡化條件；畫面要讓觀眾辨識該條件才能照圖復述。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4297dfe1ae0b3cda0dc498ca6b353ff1a0918d147474dc23a84661ffbbabd745",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 92
+        },
+        {
+          "reviewer": "B",
+          "sha256": "00bb2e1cbc9ebcfd38ab5140ff821e10a78cb72b8f0a6915b8fbaaf271b0f70e",
+          "status": "PASS",
+          "blockers": [],
+          "note": "風力線、等力臂和三杯中暫時沒有轉矩的一杯，讓起轉原因可以從圖反推。模型中的起轉條件和風扇實拍中的穩定轉速也分得清楚。中文的『朝一側轉』要和轉向箭頭一起看才明確。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4297dfe1ae0b3cda0dc498ca6b353ff1a0918d147474dc23a84661ffbbabd745",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-067": {
+      "revision": 1,
+      "sha256": "14d3b22c3fb2266be74aed486c5c9dfc771092d85aff049015db3355ac12480d",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "14d3b22c3fb2266be74aed486c5c9dfc771092d85aff049015db3355ac12480d",
+        "status": "PASS",
+        "blockers": [],
+        "note": "TxDOT and Georgia DDS independently establish the role of tread water drainage and the loss of pavement contact when drainage is exceeded. The tray test compares equal-speed, equal-water rollers and only checks visible water routing. The actual water-wedge lift belongs to the explicit schematic. Both languages keep the qualified road claim. https://www.txdot.gov/content/txdotoms/us/en/manuals/des/hyd/chapter-10--storm-drains/section-4--pavement-drainage/hydroplaning.html | https://dds.georgia.gov/section-26"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "14d3b22c3fb2266be74aed486c5c9dfc771092d85aff049015db3355ac12480d",
+        "status": "PASS",
+        "blockers": [],
+        "note": "透明板下的原創桌上模型用等水膜、等速與等載重比較排水路徑。側視抬升用有標示的示意圖，底視留同向接地框。製作時預試溝內水流的可見度，採動畫備案時持續顯示 Model animation。"
+      },
+      "readers": [
+        {
+          "reviewer": "C",
+          "sha256": "14d3b22c3fb2266be74aed486c5c9dfc771092d85aff049015db3355ac12480d",
+          "status": "PASS",
+          "blockers": [],
+          "note": "模型底視和側面示意各自對應排水和接觸兩個現象。保留同一方向及接地區標線有助於接上兩個視角。模型的槽內水路須在畫面看得清楚，腳本已列出重拍或改用標示清楚的動畫。中文「看這顆的水」略卡，可以直說「看水怎麼從這顆滾輪的溝槽流出去」。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4ace2e469e32f082cb9cff1d9b3706a2905fea28786f6e34db975486a5c49723",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "D",
+          "sha256": "14d3b22c3fb2266be74aed486c5c9dfc771092d85aff049015db3355ac12480d",
+          "status": "PASS",
+          "blockers": [],
+          "note": "從輪胎下方找水路的問題，能一路接到側面示意和兩個模型的比較。真實胎面被抬起的現象由示意圖說明，模型專注呈現水流出口。成片須讓人辨認槽裡的水如何連續流到出口，僅看見兩側都濕不足以說明差別。『橡膠滾到濕處』略有翻譯感。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4ace2e469e32f082cb9cff1d9b3706a2905fea28786f6e34db975486a5c49723",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 92
+        }
+      ]
+    },
+    "WNL-068": {
+      "revision": 1,
+      "sha256": "6efebd123b518a496676c90569b0a4a724622f63451b37b9952c7df1f21c8a4f",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "6efebd123b518a496676c90569b0a4a724622f63451b37b9952c7df1f21c8a4f",
+        "status": "PASS",
+        "blockers": [],
+        "note": "OpenStax and NC State Extension independently establish the four-stage vapor compression cycle and the room-side rejection of heat absorbed inside plus compressor work. Both languages preserve the conversion in phase and the heat-transfer direction. The model traces a closed refrigerant loop and distinguishes heat arrows, refrigerant arrows and electric work. https://openstax.org/books/physics/pages/12-4-applications-of-thermodynamics-heat-engines-heat-pumps-and-refrigerators | https://content.ces.ncsu.edu/introduction-to-the-postharvest-engineering-for-fresh-fruits-and-vegetables/4-review-of-refrigeration"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "6efebd123b518a496676c90569b0a4a724622f63451b37b9952c7df1f21c8a4f",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一冰箱的原創實拍接入蒸氣壓縮循環剖面。冷媒沿閉環同色流動，熱流箭頭各有內吸與外排方向，壓縮作功獨立定位。外側盤管承接取出的熱及壓縮機輸入，成片確認內外區域和氣液狀態可辨。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "6efebd123b518a496676c90569b0a4a724622f63451b37b9952c7df1f21c8a4f",
+          "status": "PASS",
+          "blockers": [],
+          "note": "沿同一條紫色管路追蹤，加上箱內外的熱箭頭，足以重述熱的路徑。節流元件只有名稱與位置，影片的時間也主要用在傳熱方向及電能去處。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "396db502fd89d3eaf7ecac423c29b9d5af7b043731eadee3cd91a796aa19838e",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 22,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 89
+        },
+        {
+          "reviewer": "B",
+          "sha256": "6efebd123b518a496676c90569b0a4a724622f63451b37b9952c7df1f21c8a4f",
+          "status": "PASS",
+          "blockers": [],
+          "note": "冷媒線和熱量箭頭分開，使封閉循環和房間收到的能量都能追蹤。節流後為何又能在內側吸熱快速帶過，主要的熱量去向仍清楚。『把飲料冰涼』稍拗口。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "396db502fd89d3eaf7ecac423c29b9d5af7b043731eadee3cd91a796aa19838e",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-069": {
+      "revision": 2,
+      "sha256": "890bb656e128ac87e1fd25ecd0cd105e6220b02baf7e8ed762cac03b93579f31",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "890bb656e128ac87e1fd25ecd0cd105e6220b02baf7e8ed762cac03b93579f31",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Canterbury's CS Unplugged and Harvard CS50 independently establish weights doubling by position and binary off/on selection. The two nonoverlapping blocks cover 0–7 and 8–15, and 13 maps to 1101 in 8, 4, 2, 1 order. Both languages and the revised visual keep each physical weight single-use on the designated pan and depict zero as no selected weights. https://www.csunplugged.org/en/topics/binary-numbers/how-binary-digits-work/ | https://cs50.harvard.edu/ap/2025/curriculum/technology/notes/hardware/"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "890bb656e128ac87e1fd25ecd0cd105e6220b02baf7e8ed762cac03b93579f31",
+        "status": "PASS",
+        "blockers": [],
+        "note": "實拍起始右盤空著，四砝碼列在桌上，用英文標出每枚一次與單盤限制。兩組四欄區塊保留 0–7 和加 8 後的 8–15 一對一關係並亮出 7 接 8。固定 8、4、2、1 欄位，令十三的 8、4、1 對應 1101。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "890bb656e128ac87e1fd25ecd0cd105e6220b02baf7e8ed762cac03b93579f31",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一組合加八的構圖能支撐下一個砝碼的推論。我會先看右盤數字，再看四列小格，因此加八的段落要有明顯的視覺焦點，避免手機畫面塞滿十六格時找不到正在比對的組合。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "c27b854b8592d112123a109e7f7cfdc2f361629fa36930b8566b4a4f479ed8e2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 17,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 91
+        },
+        {
+          "reviewer": "B",
+          "sha256": "890bb656e128ac87e1fd25ecd0cd105e6220b02baf7e8ed762cac03b93579f31",
+          "status": "PASS",
+          "blockers": [],
+          "note": "單盤規則靠畫面補足，十三的示例直接說明每個砝碼可以不用。兩組區間的接合看得出來，但兩組各八格的圖表擠在約十五秒內，後面還會接二進位，第一次看要讀得很快。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "c27b854b8592d112123a109e7f7cfdc2f361629fa36930b8566b4a4f479ed8e2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 22,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 89
+        }
+      ]
+    },
+    "WNL-070": {
+      "revision": 4,
+      "sha256": "b6069107e25cb575de0578159f83c6820b3ef6d9943879c5ab6364be3b5c7162",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "b6069107e25cb575de0578159f83c6820b3ef6d9943879c5ab6364be3b5c7162",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Barthlott, Koch, and Zhao support the wax-coated hierarchy, trapped air and small wetted area, and lotus self-cleaning observations support the leaf application. Two separately authored primary experiments directly corroborate the qualified rear-contact-line mechanism on rough superhydrophobic surfaces: Geyer et al. observed the receding side lift particles, and Quan et al. show both test dust types picked up at the trailing interface in Figure 1. English and Traditional Chinese retain that some loose grains attach to the water and can lift at the rear. The diagram tracks one grain past the leading edge to pickup at the trailing line, with a labeled model if continuous macro footage cannot document transfer. https://link.springer.com/article/10.1007/s00425-026-04937-9 | https://pubs.rsc.org/en/content/articlehtml/2009/sm/b818940d | https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/admi.202202044 | https://digital.library.adelaide.edu.au/server/api/core/bitstreams/1e94800f-b39b-4f29-b82f-2b7915ea7f60/content | https://www.nature.com/articles/srep38239.pdf"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "b6069107e25cb575de0578159f83c6820b3ef6d9943879c5ab6364be3b5c7162",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一葉片的連續微距保留顆粒初始位置與葉面參照。概念剖面依序顯示水珠前緣通過時粉粒仍留在葉上、後緣接觸線將粉粒帶起，最後同一粉粒仍附在水珠上。實拍需逐格確認轉移可辨，否則改用全程標示 Model 的連續動畫，實拍畫面呈現同傾角有水珠與無水珠的路徑對照。"
+      },
+      "readers": [
+        {
+          "reviewer": "D",
+          "sha256": "b6069107e25cb575de0578159f83c6820b3ef6d9943879c5ab6364be3b5c7162",
+          "status": "PASS",
+          "blockers": [],
+          "note": "先看到一顆粉粒被帶走，再放大葉面解釋水珠為何容易滾，最後回到同一顆粉粒，證據和因果可以互相對上。原先落點與粒子去向都交代清楚。『真正接觸葉面固體的水就很少』略生硬，接觸面積的意思在下一句才完整說出。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4a4af4a4ef0f085331852713b907190aaa96fde2b240a3ea27fef432ce8c74c7",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "E",
+          "sha256": "b6069107e25cb575de0578159f83c6820b3ef6d9943879c5ab6364be3b5c7162",
+          "status": "PASS",
+          "blockers": [],
+          "note": "兩題都能依影片中的接觸、黏附與滾動關係回答。凸起上的蠟質結構有畫面可指，旁白對蠟的說明集中在它形成的細小構造。剖面動畫跟著同一顆粒，回到實拍時也保留原落點，能看清楚粉粒被水珠帶起的前後。25–38 秒有三個連續動作，顆粒離開葉面的那一刻要看得清楚。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4a4af4a4ef0f085331852713b907190aaa96fde2b240a3ea27fef432ce8c74c7",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 92
+        }
+      ]
+    },
+    "WNL-071": {
+      "revision": 2,
+      "sha256": "6ef023575f17f4e3206576d3cf1358edc796971cad5d08d6f1ccc77c19715691",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "6ef023575f17f4e3206576d3cf1358edc796971cad5d08d6f1ccc77c19715691",
+        "status": "PASS",
+        "blockers": [],
+        "note": "USGS travel times and BGS independently establish earlier P arrivals and the S-minus-P delay as a distance estimator under a travel-time model. BGS and the USGS location FAQ independently establish the multi-station location constraint. Both languages and diagrams hold a common source and horizontal time scale, identify arrival time rather than amplitude, use a fixed-depth planar approximation for circles, and qualify distance as an estimate. https://www.usgs.gov/programs/earthquake-hazards/earthquake-travel-times | https://www.bgs.ac.uk/discovering-geology/earth-hazards/earthquakes/how-are-earthquakes-detected/ | https://www.usgs.gov/faqs/how-do-seismologists-locate-earthquake"
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "6ef023575f17f4e3206576d3cf1358edc796971cad5d08d6f1ccc77c19715691",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一震源的 P、S 波前各用固定速度擴張，近遠測站共用時間起點、速度模型與橫向秒刻度。成片可垂直排列波形保留手機版的差值括號，示意波形各標首次到時。結尾以站為中心的距離帶呈現多站約束。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "6ef023575f17f4e3206576d3cf1358edc796971cad5d08d6f1ccc77c19715691",
+          "status": "PASS",
+          "blockers": [],
+          "note": "相同秒刻度把距離較遠與到時差較長連起來，距離圈再示範單站結果的用途。S 波加速的轉移題可以從前面的兩個波前直接推得。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "8cc036b34e374446fc36ec8d707268ab30618a856fb4f79cb993bfd989ff8c0e",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "6ef023575f17f4e3206576d3cf1358edc796971cad5d08d6f1ccc77c19715691",
+          "status": "PASS",
+          "blockers": [],
+          "note": "共同秒刻度直接顯出近遠站的到時差，游標到模型距離、再到站點距離圈的步驟清楚。『走時模型』第一次聽略專門，圖上的讀值能補上意思。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "8cc036b34e374446fc36ec8d707268ab30618a856fb4f79cb993bfd989ff8c0e",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        }
+      ]
+    }
+  }
+}
