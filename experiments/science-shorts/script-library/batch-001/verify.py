@@ -15,6 +15,7 @@ BATCH_RANGES = {
     "batch-003": range(42, 52),
     "batch-004": range(52, 62),
     "batch-005": range(62, 72),
+    "batch-006": range(72, 82),
 }
 RUBRIC = {
     "hook": 15,
