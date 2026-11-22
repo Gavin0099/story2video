@@ -1,0 +1,148 @@
+{
+  "channel": "CluePause｜謎底之前",
+  "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+  "timezone": "Asia/Taipei",
+  "source": "Signed-in YouTube Studio",
+  "owner_authorization": {
+    "date": "2026-11-22",
+    "quote": "先改公開 然後看下一個10篇劇本",
+    "scope": "Publish V11, V12, V13",
+    "video_ids": [
+      "VyX6jxjfEDw",
+      "mdAU5oD51uE",
+      "bGBCSoRLP2g"
+    ]
+  },
+  "public_total": 20,
+  "verified_all_at": "2026-11-22T23:46:45.1703981+08:00",
+  "editorial_base_sha": "9f2324b2180402a840edb5a5c3ef91e99d3a9e16",
+  "videos": [
+    {
+      "clip": "V11",
+      "video_id": "VyX6jxjfEDw",
+      "title": "Why Did She Deflate Every Balloon Before the Party? | CluePause",
+      "visibility_before": "private",
+      "visibility_verified": "public",
+      "published_at": "2026-11-22T23:45:42.7038646+08:00",
+      "verified_at": "2026-11-22T23:45:51.2826848+08:00",
+      "source_mp4_sha256": "7837cfa2fda278a54b046065066e971881a7dbe5efebc301508d488fc840a4ee",
+      "captions": [
+        "en",
+        "zh-Hant"
+      ],
+      "watch": "https://www.youtube.com/shorts/VyX6jxjfEDw"
+    },
+    {
+      "clip": "V12",
+      "video_id": "mdAU5oD51uE",
+      "title": "Why Did Dad Cover a Working Bike Light? | CluePause",
+      "visibility_before": "private",
+      "visibility_verified": "public",
+      "published_at": "2026-11-22T23:45:57.1245043+08:00",
+      "verified_at": "2026-11-22T23:46:05.6233037+08:00",
+      "source_mp4_sha256": "051529febb0c70d63754d85dbbc7729a8c23136f75591cbb3b5fa80167e1d768",
+      "captions": [
+        "en",
+        "zh-Hant"
+      ],
+      "watch": "https://www.youtube.com/shorts/mdAU5oD51uE"
+    },
+    {
+      "clip": "V13",
+      "video_id": "bGBCSoRLP2g",
+      "title": "Why Did the Barber Cut a Notch in His Own Hair? | CluePause",
+      "visibility_before": "private",
+      "visibility_verified": "public",
+      "published_at": "2026-11-22T23:46:11.2908055+08:00",
+      "verified_at": "2026-11-22T23:46:19.2046653+08:00",
+      "source_mp4_sha256": "e2538fe67079570a7cb2e5442ed7991527dc5c70685cdc275a1c9c6da26d2791",
+      "captions": [
+        "en",
+        "zh-Hant"
+      ],
+      "watch": "https://www.youtube.com/shorts/bGBCSoRLP2g"
+    }
+  ],
+  "studio_inventory": [
+    {
+      "video_id": "bkN-xFKj5nc",
+      "visibility": "public"
+    },
+    {
+      "video_id": "2mLUR21IRg0",
+      "visibility": "public"
+    },
+    {
+      "video_id": "4qsXH1p5sZo",
+      "visibility": "public"
+    },
+    {
+      "video_id": "9rt4gNnVGTw",
+      "visibility": "public"
+    },
+    {
+      "video_id": "qiCj06ZsZu4",
+      "visibility": "public"
+    },
+    {
+      "video_id": "pSsjWQ3I51Y",
+      "visibility": "public"
+    },
+    {
+      "video_id": "gspKu9kvup4",
+      "visibility": "public"
+    },
+    {
+      "video_id": "3xHKnUxwq1A",
+      "visibility": "public"
+    },
+    {
+      "video_id": "F-IwKZ4IJMo",
+      "visibility": "public"
+    },
+    {
+      "video_id": "KGZ5m5-snvw",
+      "visibility": "public"
+    },
+    {
+      "video_id": "Jr4c4LI2m-s",
+      "visibility": "public"
+    },
+    {
+      "video_id": "1nGth0mOd8Q",
+      "visibility": "public"
+    },
+    {
+      "video_id": "IpSdY4UvTXQ",
+      "visibility": "public"
+    },
+    {
+      "video_id": "atViBdYhtrc",
+      "visibility": "public"
+    },
+    {
+      "video_id": "_NCdLngI7-Y",
+      "visibility": "public"
+    },
+    {
+      "video_id": "mq-vM04kKJA",
+      "visibility": "public"
+    },
+    {
+      "video_id": "TjegsYzOdzY",
+      "visibility": "public"
+    },
+    {
+      "video_id": "VyX6jxjfEDw",
+      "visibility": "public"
+    },
+    {
+      "video_id": "mdAU5oD51uE",
+      "visibility": "public"
+    },
+    {
+      "video_id": "bGBCSoRLP2g",
+      "visibility": "public"
+    }
+  ]
+}
