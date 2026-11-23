@@ -1,0 +1,60 @@
+{
+  "experiment_id": "threads-science-comics-02-04-20261123",
+  "authorization_date_taipei": "2026-11-23",
+  "authorization_source": "authorization.md",
+  "target_account": "gavinwu05191023",
+  "display_name": "GavinWu",
+  "verified_profile_visibility": "public",
+  "timestamp_basis": "local timestamp immediately before pressing Publish; independently verified actual post by canonical permalink",
+  "base_git_sha": "42eeeabb76a60c4d83dd39e3d91b76c668514eae",
+  "engineering_acceptance": "caption and attachment preflight; signed-in author, rendered caption, one image, and permalink readback; signed-out HTTP verification; existing 61 pytest tests passed",
+  "market_acceptance": "pending_fixed_age_measurement",
+  "posts": [
+    {
+      "issue": "02",
+      "topic": "天空為什麼是藍色？",
+      "status": "published_verified",
+      "post_url": "https://threads.com/@gavinwu05191023/post/DgE7JINE6QJ",
+      "submitted_at_taipei": "2026-11-23T16:13:04+08:00",
+      "caption_path": "02-caption.txt",
+      "caption_file_sha256": "7b5ec5529fa76b294867f17124553adc6cd688c37e8133f83d6473942f3f0c9e",
+      "image_path": "02-blue-sky.png",
+      "image_sha256": "1b114f62b400380d585914feb81cb41b414f3cea4d967188a1411a138bc49b1f",
+      "published_attachment_count": 1,
+      "signed_out_http_readback": "HTTP 200, caption opening, author and image metadata present",
+      "first_24h_due_taipei": "2026-11-24T16:13:04+08:00",
+      "submitted_caption_sha256": "355d3e179222d70b6c15f12137e31022fd3572c41536029d4078c5501b15b0b4"
+    },
+    {
+      "issue": "03",
+      "topic": "太空人怎麼聊天？",
+      "status": "published_verified",
+      "post_url": "https://threads.com/@gavinwu05191023/post/DgE7g7rE5uB",
+      "submitted_at_taipei": "2026-11-23T16:16:20+08:00",
+      "caption_path": "03-caption.txt",
+      "caption_file_sha256": "c6c4d50b1e4b6add1156801a49012b27d9236c8c725dc2c9d5b97de4219d7116",
+      "image_path": "03-astronaut-radio.png",
+      "image_sha256": "d6902ea07cee0790c53e95584a8311017471276d840dead10ff555761f106b96",
+      "published_attachment_count": 1,
+      "signed_out_http_readback": "HTTP 200, caption opening, author and image metadata present",
+      "first_24h_due_taipei": "2026-11-24T16:16:20+08:00",
+      "submitted_caption_sha256": "0f3c6243821c906ac32e12bb5a6d51519ebf5d8d18f2579a8d9016afb49cfe13"
+    },
+    {
+      "issue": "04",
+      "topic": "水怎麼爬上紙巾？",
+      "status": "published_verified",
+      "post_url": "https://threads.com/@gavinwu05191023/post/DgE7qx6Ew1w",
+      "submitted_at_taipei": "2026-11-23T16:17:40+08:00",
+      "caption_path": "04-caption.txt",
+      "caption_file_sha256": "4c6393a29c1220a460801368920e34d954d2fecfc2bd6cbe717690f95450d267",
+      "image_path": "04-paper-towel.png",
+      "image_sha256": "56ae90bc578288310e6f8ecb7b0c2106a5cbf78e6eb9c8fc867b22b74b60f0ac",
+      "published_attachment_count": 1,
+      "signed_out_http_readback": "HTTP 200, caption opening, author and image metadata present",
+      "first_24h_due_taipei": "2026-11-24T16:17:40+08:00",
+      "submitted_caption_sha256": "0250778c0242697f6bb767cd2f0370929508494cdbf6b5a134cdb4620a734d3d"
+    }
+  ],
+  "caption_hash_basis": "caption_file_sha256 uses the tracked Git blob; submitted_caption_sha256 uses the trimmed UTF-8 caption with LF newlines"
+}
