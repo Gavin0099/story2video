@@ -1,0 +1,7 @@
+Edit the provided four-panel Traditional Chinese comic. Preserve its title, characters, style, colors, ALL text and the other three panels exactly. Correct ONLY the comparison drawing in the upper-right panel.
+REMOVE ALL little water-molecule icons from the UPPER-RIGHT panel ONLY. Instead show two simple equal-mass VOLUME illustrations with NO particles at all:
+LEFT: a transparent straight-sided measuring container holding smooth blue liquid water. Label remains「液態的水（同樣質量）」.
+RIGHT: the same width container with a smooth solid pale-blue block of ordinary ice, reaching a modestly higher height, approximately 9% taller than the liquid sample. Keep mass label「結冰後的水（同樣質量）」. The two samples occupy almost the same space but ice a little more. Not a huge difference. NO molecule icons, NO air bubbles, NO faces in these two schematic samples. Replace the equality sign between the drawings with a small right-pointing arrow. Add exactly「結冰」above that arrow.
+Keep existing small label「示意，非比例」under the comparison and the speech bubble「同樣多的水，結冰後更占空間。」.
+The whole idea is that the SAME mass occupies slightly more volume after freezing; removing all discrete molecules from this comparison avoids incorrect particle counts.
+Keep lower-left molecular diagram fully unchanged. Keep lower-right humorous floating cube fully unchanged. Do not add or remove any other content. Large readable Traditional Chinese only.

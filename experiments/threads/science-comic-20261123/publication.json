@@ -1,0 +1,24 @@
+{
+  "experiment_id": "threads-science-comic-20261123-01",
+  "authorization_date_taipei": "2026-11-23",
+  "authorization_source": "authorization.md",
+  "target_account": "gavinlog0099",
+  "target_display_name": "gavinlog",
+  "topic": "冰塊，你怎麼沒沉下去？",
+  "status": "ready_waiting_for_target_login",
+  "publish_attempted": false,
+  "published_at_taipei": null,
+  "post_url": null,
+  "final_image_path": "experiments/threads/science-comic-20261123/ice-comic.png",
+  "final_image_sha256": "2bdeed5559d632b601a1d541ede1b5e43e346e749e51fa1dcdf2991f66d7d0ce",
+  "caption_path": "caption.txt",
+  "target_session_verified": false,
+  "browser_blockers": [
+    "Primary connector requires reauthentication",
+    "Browser Use connector has insufficient credits",
+    "Local Chrome has not established a verified Threads session for gavinlog0099; another login candidate reiko0099 is not authorized"
+  ],
+  "engineering_acceptance": "local_image_fact_and_mobile_width_QA_passed; core_pytest_61_passed; online_readback_not_verified",
+  "market_acceptance": "not_measured_not_published",
+  "base_git_sha": "9f2324b2180402a840edb5a5c3ef91e99d3a9e16"
+}

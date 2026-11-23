@@ -1,0 +1,14 @@
+Use case: illustration-story, with scientific-educational accuracy.
+Asset type: ONE finished Traditional Chinese science comic for Threads, portrait 4:5, target 1600x2000 or similar high resolution. A clear 2-by-2 grid of exactly FOUR panels, read left to right then down. This is original content for account gavinlog0099. Do not use the user's account screenshot as visual input.
+Primary request: A warm, funny, immediately understandable comic titled「冰塊，你怎麼沒沉下去？」explaining why ordinary water ice floats in liquid water. Cohesive hand-drawn editorial cartoon, expressive dad with short black hair and glasses and curious elementary-school-age child, cozy everyday kitchen, cute ice cube with tiny face. Cream paper, dark navy outlines, icy blue and small warm orange accents. Large clean Traditional Chinese lettering, much empty space around text. Keep all text precise, readable on a phone, no tiny explanatory essay.
+Top title exactly:「冰塊，你怎麼沒沉下去？」
+Small series label exactly:「生活科普 01」
+Panel 1 (upper left): Child and dad observe a transparent glass of water with ordinary ice mostly underwater, only a small cap above the clear waterline (about 90% submerged). Child speech exactly:「變硬了，怎麼還浮著？」
+Panel 2 (upper right): Dad compares the SAME MASS of liquid water and ice: two labeled schematic cutaways showing the SAME NUMBER of identical tiny blue molecule icons, closely and irregularly arranged in smaller liquid region, and more openly and regularly spaced in a visibly larger ice region. Do not draw bubbles or hollow cubes; gaps are microscopic molecular spacing. Text exactly:「同樣多的水，」「結冰後更占空間。」
+Panel 3 (lower left): Large magnified conceptual diagram with identical molecule icons linked by fine dashed intermolecular connections into an open regular network, paired with a small loosely moving irregular liquid cluster if space allows. Molecule size never changes. No fake chemistry, no atoms gaining size. This is schematic, not a literal flat ice lattice. Narration exactly:「氫鍵讓水分子」「排成較疏鬆的結構。」
+Small diagram label exactly:「分子排列示意」
+Panel 4 (lower right): Return to dad and child at the glass; ice still about 90% underwater, happy facial expression on the cube. Dad's speech exactly:「密度比水小，就浮起來啦！」
+Ice cube speech exactly:「我只是站得比較開。」
+Small closing qualifier exactly:「一般冰在液態水中」
+Footer small but readable:「gavinlog0099」
+Constraints: EXACTLY four panels. Traditional Chinese only except account handle. Bubble reading order obvious. No Chinese character errors. No extra invented text. All ice shown floating is mostly submerged, never perched above water or floating in air. No visual suggesting air bubbles cause buoyancy, hydrogen bonds exist only in ice, or molecule mass changes. Humor is figurative and explanation remains correct. Do not depict boiling water, dangerous experiments, real brands, platform UI or watermark.
