@@ -1,0 +1,673 @@
+{
+  "rubric": {
+    "hook": 15,
+    "clarity": 25,
+    "causal_retelling": 25,
+    "visual_plan": 20,
+    "pacing": 10,
+    "natural_language": 5
+  },
+  "minimum_each_reader": 85,
+  "episodes": {
+    "WNL-032": {
+      "revision": 1,
+      "sha256": "2289528a4b83c4ec9ab5d8b7858f019d692cae66e2939b1df7f63d12195d9417",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "2289528a4b83c4ec9ab5d8b7858f019d692cae66e2939b1df7f63d12195d9417",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1: Minnesota and Ohio list gray or red exterior appearances with a red to red-brown streak. C2: Minnesota comparison section and Temple lab independently identify the powder color as a streak and show the unglazed tile test. Both languages treat it as one identification clue and give red-brown for the verified specimens, not a required identical shade."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "2289528a4b83c4ec9ab5d8b7858f019d692cae66e2939b1df7f63d12195d9417",
+        "status": "PASS",
+        "blockers": [],
+        "note": "沿同一道粉痕進入磨粒剖面，顆粒落下時即呈紅褐色。不同標本使用同一瓷板、燈光和白平衡，容許天然條痕色差。成片確認樣品與粉痕在手機尺寸仍可區分，並標示放大剖面為示意。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "2289528a4b83c4ec9ab5d8b7858f019d692cae66e2939b1df7f63d12195d9417",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一板面上保留灰亮標本與紅褐粉末，再以偏紅標本做第二道條痕，清楚兌現開場的顏色預測。第一題的「為什麼」如果是問同一礦物的表面與粉末為何呈現不同顏色，片中只交代兩者是在哪種形態下觀察到的，沒有解釋更深一層的原因。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "9e59ae2de0637b6170bf5b6420c8d633a40a44e531a711f71381e53a00248fd2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 22,
+            "causal_retelling": 22,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 89
+        },
+        {
+          "reviewer": "B",
+          "sha256": "2289528a4b83c4ec9ab5d8b7858f019d692cae66e2939b1df7f63d12195d9417",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The matched swipes show the difference between surface color and powder color cleanly. The short explains where the red comes from at the level of the test. It leaves the deeper question of why the intact surface appears gray to the eye unexplored.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "9e59ae2de0637b6170bf5b6420c8d633a40a44e531a711f71381e53a00248fd2",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 22,
+            "causal_retelling": 22,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 90
+        }
+      ]
+    },
+    "WNL-033": {
+      "revision": 3,
+      "sha256": "e37af0df40ffd8a1ef58432c72204d6dee8071a57123772b16150a4e98292cd2",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "e37af0df40ffd8a1ef58432c72204d6dee8071a57123772b16150a4e98292cd2",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1: Hoseney et al. found that the pericarp contains pressure and that the initial rupture affects expansion. Virot and Ponomarenko use heat and high-speed footage to test rupture and subsequent expansion. C2: Hoseney micrographs and Wu–Schwartzberg controlled trials support starch foam, steam expansion and solidification with evaporative cooling. The revised source title and its support for C2 match the retrieved paper. The bilingual account is valid as a qualitative mechanism for popcorn kernels."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "e37af0df40ffd8a1ef58432c72204d6dee8071a57123772b16150a4e98292cd2",
+        "status": "PASS",
+        "blockers": [],
+        "note": "以同一粒尖進入剖面，照壓力上升、澱粉軟化、殼破、蒸氣膨脹及泡孔定形推進，回到同尺度實物。開場英語與繁中問同一問題。封閉式設備或原創示意足以安全製作，應在成片標明慢動作、示意和定性壓力尺。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "e37af0df40ffd8a1ef58432c72204d6dee8071a57123772b16150a4e98292cd2",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一顆粒從慢動作接到剖面，再同步呈現破裂、降壓和泡孔放大，讓兩個答案都能沿同一因果鏈推回去。中文開場的「這粒小玉米」和最後的「把壓力留在裡面」略生硬，但畫面和中段用詞足以辨認玉米粒與殼內升壓。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "95ffe581af9fa3dd7a6066d0f58d43fea8c79b338e87d591057044023010b880",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 25,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 95
+        },
+        {
+          "reviewer": "B",
+          "sha256": "e37af0df40ffd8a1ef58432c72204d6dee8071a57123772b16150a4e98292cd2",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Following the same kernel through the rupture makes it easy to connect the mechanism to the opening. The pressure-drop and vapor-expansion beat carries two linked changes at once. The Chinese opening '這粒小玉米' is understandable, though it could sound like a whole miniature corn rather than one kernel.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "95ffe581af9fa3dd7a6066d0f58d43fea8c79b338e87d591057044023010b880",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        }
+      ]
+    },
+    "WNL-034": {
+      "revision": 1,
+      "sha256": "6ffa7daf6f820e18ffc1a714f43492f207798be41505e3e585a55a8f8f4cb547",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "6ffa7daf6f820e18ffc1a714f43492f207798be41505e3e585a55a8f8f4cb547",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1: Banks et al. document the cat's vertical constriction and its aperture range; Elsevier anatomy figure 11–38 describes a vertical slit when constricted and a round pupil when dilated. C2: the veterinary anatomy and independent Merck anatomy explanations support iris-muscle aperture control and the light response. The script appropriately uses a house cat, states that light can cause the pattern, and fixes incident light only in the illustration of aperture size."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "6ffa7daf6f820e18ffc1a714f43492f207798be41505e3e585a55a8f8f4cb547",
+        "status": "PASS",
+        "blockers": [],
+        "note": "以同一隻貓、匹配眼角與虹膜標記維持辨識度，保留環境自然亮暗並避免直照，找不到對照片可用有標示的雙動畫。圖解須標清固定入射束僅用來比較開口，以免和實拍亮暗對照混讀。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "6ffa7daf6f820e18ffc1a714f43492f207798be41505e3e585a55a8f8f4cb547",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一隻貓的配準特寫加上虹膜和瞳孔的指標，讓觀眾能把動作部位對回實物。開場先告訴觀眾光線有變，再問「什麼改變了」，仍可能被聽成在問光線而非瞳孔如何變形。若比較光束的入射量固定，畫面宜讓觀眾看出這是在單獨比較開口大小。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4cb47936fa9cbeacfd31fe4fa34fe2e2e5875f647eedd17be8f5cebc412bbab1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 12,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        },
+        {
+          "reviewer": "B",
+          "sha256": "6ffa7daf6f820e18ffc1a714f43492f207798be41505e3e585a55a8f8f4cb547",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The matched eye images and identical test rays support the explanation of iris, pupil, and light. The opening question is broad because it comes after the script has already named the visible change. The script explains how the opening changes and what that does, with little detail about why its outline is specifically vertical.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "4cb47936fa9cbeacfd31fe4fa34fe2e2e5875f647eedd17be8f5cebc412bbab1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-035": {
+      "revision": 3,
+      "sha256": "9acf4fb9abac7ca13792524cbae87068a5a0cc3ac04ca9c79037d2cd4d4c1741",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "9acf4fb9abac7ca13792524cbae87068a5a0cc3ac04ca9c79037d2cd4d4c1741",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1/C2: McKemy et al. measured cold and menthol currents in sensory trigeminal neurons, including a menthol response at fixed temperature, and Peier et al. independently found TRPM8 in a subset of sensory neurons and recorded activation by both stimuli. Jin et al. corroborate orolingual TRPM8. Green's human comparisons at the same solution temperature corroborate the sensory effect without requiring a colder test item. V2's No added cooling label describes the schematic stimulus, and Room temperature is restricted to pre-bite candy. Both scripts use can, allowing differences by context, dose and actual cooling."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "9acf4fb9abac7ca13792524cbae87068a5a0cc3ac04ca9c79037d2cd4d4c1741",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同機位把 Cold 與 Menthol 兩種刺激連到同一處 TRPM8，再用定性脈衝連至腦部。No added cooling 標示薄荷醇示意，Room temperature 只指入口前條件。成片應檢查並排畫面和字幕留白。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "9acf4fb9abac7ca13792524cbae87068a5a0cc3ac04ca9c79037d2cd4d4c1741",
+          "status": "PASS",
+          "blockers": [],
+          "note": "室溫與涼感的落差直接引出謎題。兩種刺激用同一個受體位置和訊號路徑，清楚說明兩者如何引發涼感。開場擺了對照糖，但後面沒有拿它做比較，容易讓人以為會看到兩種糖的對照試吃。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "5c4aa2be5a2f1dcbb7ee3c8d771a3d377a4e7131f615cff53fe8e893f4f1cf91",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 25,
+            "causal_retelling": 25,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 97
+        },
+        {
+          "reviewer": "B",
+          "sha256": "9acf4fb9abac7ca13792524cbae87068a5a0cc3ac04ca9c79037d2cd4d4c1741",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The two triggers converge on the same sensor in matching images, which makes the distinction between cooling and cool sensation easy to retell. The pulse toward the brain is necessarily schematic, and the plate comparison is secondary because the ordinary candy never gets its own taste beat.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "5c4aa2be5a2f1dcbb7ee3c8d771a3d377a4e7131f615cff53fe8e893f4f1cf91",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 96
+        }
+      ]
+    },
+    "WNL-036": {
+      "revision": 1,
+      "sha256": "5420d71f6e87bd7ffa55b8eaf06b8d8eadbcff5b75764db5ee67787d85f41003",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "5420d71f6e87bd7ffa55b8eaf06b8d8eadbcff5b75764db5ee67787d85f41003",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1: OpenStax and Ontario Grade 7 E2.4 state A = pi*r^2 and r = d/2. C2 follows directly: 6^2*pi = 36*pi in²; 2*4^2*pi = 32*pi in². The bilingual script uses equal scale, ideal round diameters and top-view area. Both the square visualization and 36:32 bars are consistent with the derivation."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "5420d71f6e87bd7ffa55b8eaf06b8d8eadbcff5b75764db5ee67787d85f41003",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同尺度俯拍、過圓心的直徑與半徑、雙向放大及共尺度 36:32 面積條可連成一個解釋。成片檢查三張圓形與面積單位在手機仍清楚，收尾不等式建議標明 Area 以避免誤讀為直徑相加。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "5420d71f6e87bd7ffa55b8eaf06b8d8eadbcff5b75764db5ee67787d85f41003",
+          "status": "PASS",
+          "blockers": [],
+          "note": "給觀眾猜測的停頓和保持同尺度的俯拍讓比較成立，面積條也清楚拆出兩個 16π。英文「more pizza from above」不太自然，中文直接問面積則清楚。外接方格的工作是示意兩軸同時放大，畫面需保留圓形公式以免讀成方格面積。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1a7d892fbfd8f9bab538ce7cbfb1273c5dd94b0e61f2212d4f659630b4f1ecad",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 94
+        },
+        {
+          "reviewer": "B",
+          "sha256": "5420d71f6e87bd7ffa55b8eaf06b8d8eadbcff5b75764db5ee67787d85f41003",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The shared scale, two-axis arrows, and proportional area bars carry the comparison through from the question to the result. The numbers are concentrated in one beat, and the English opening sounds slightly awkward where the Chinese asks directly about area.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1a7d892fbfd8f9bab538ce7cbfb1273c5dd94b0e61f2212d4f659630b4f1ecad",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-037": {
+      "revision": 1,
+      "sha256": "816cbdaca052d78ca333899d8fef026588dbf4babc3423ef1e1c44ee681a36e1",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "816cbdaca052d78ca333899d8fef026588dbf4babc3423ef1e1c44ee681a36e1",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1: ANU's demonstration explicitly uses folds along the span and applies equal central loads. Manchester separately demonstrates larger stiffness for the same folded card. C2: Manchester and MIT derive bending stiffness from section geometry, with contributions based on squared distance from the neutral axis. Compression above/tension below fit the specified simply supported downward center load. Both versions limit the demonstration to the pictured fold orientation and equal weights."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "816cbdaca052d78ca333899d8fef026588dbf4babc3423ef1e1c44ee681a36e1",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同紙厚、跨距、中置載重和載具，折線沿橋長。以端面連接上下側受壓／受拉，再回實拍比較同載重撓度。成片的變形基準應分別對齊兩橋原本的對應量測點，避免把截面高度誤算成撓度。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "816cbdaca052d78ca333899d8fef026588dbf4babc3423ef1e1c44ee681a36e1",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同跨距、同載重的對照，以及從側面撓曲切到端面高度的運鏡，足以說清楚形狀的作用。英文開場用「sags」對比「holds」可能讓人以為平紙完全承托不住，後面基準線量的是下垂差。中文「折線」也比整體的起伏形狀更窄。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1b317839bc2d818350e9fdabb692ac67070466685e29eb98aa7272de1df9a763",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 92
+        },
+        {
+          "reviewer": "B",
+          "sha256": "816cbdaca052d78ca333899d8fef026588dbf4babc3423ef1e1c44ee681a36e1",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Keeping span and load matched makes the comparison interpretable. The end view and deflection baseline make the explanation visible. The compression, tension, and midline labels arrive together, so the short needs time for viewers to connect the side view to the cross-section.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "1b317839bc2d818350e9fdabb692ac67070466685e29eb98aa7272de1df9a763",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-038": {
+      "revision": 3,
+      "sha256": "c623f89c8af97b0eb59d7d4ea5f3b1605962cfb7607724cc6fc6905fc1c8b0e9",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "c623f89c8af97b0eb59d7d4ea5f3b1605962cfb7607724cc6fc6905fc1c8b0e9",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1/C2: White et al. (USGS) compared dam and no-dam hydraulic runs, estimating transient storage from inflow and outflow. Its discussion explicitly covers off-channel ponds and the amount of capacity available before a storm. Puttock et al. independently measured event timing and describe lateral storage and delayed release. V3 accurately shows ongoing downstream flow while the pond accumulates water, then partial release after the inflow pulse. Both languages condition the modeled result on initial room to fill and tie real effects to local conditions and storm size."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "c623f89c8af97b0eb59d7d4ea5f3b1605962cfb7607724cc6fc6905fc1c8b0e9",
+        "status": "PASS",
+        "blockers": [],
+        "note": "Stream model、No dam／With dam、Same inflow 與各自起始水位清楚交代對照。固定斜側機位與共同尺度同時保留池面及出入口，從入流增加一路看到池面回落。模型動態與手機畫面尚待成片驗證，蓄水上升時須呈現入流大於出流，回落時呈現相反關係。"
+      },
+      "readers": [
+        {
+          "reviewer": "C",
+          "sha256": "c623f89c8af97b0eb59d7d4ea5f3b1605962cfb7607724cc6fc6905fc1c8b0e9",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The opening poses a clear puzzle. The paired streams share a shape, inflow and clock, and the falling pond level after the rush makes the temporary storage visible. I could infer that the pond rises when more water comes in than goes out. The narration leaves that relationship implicit. The comparison also asks viewers to track several English labels and both water levels in an eleven-second shot.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "42c9a7292f9cf9ea1b974b51b89506b169cc8a656911e42951c6a96ef61906b1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 18,
+            "pacing": 8,
+            "natural_language": 5
+          },
+          "total": 91
+        },
+        {
+          "reviewer": "D",
+          "sha256": "c623f89c8af97b0eb59d7d4ea5f3b1605962cfb7607724cc6fc6905fc1c8b0e9",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The fixed bank marker and consistent camera orientation let the opening pose the question through two simultaneous observations. The words never make explicit that the pond rises while water enters faster than it leaves, so the viewer must infer the relation between the two visible flows. The Chinese phrase “讓一樣的一波水” is a little awkward.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "42c9a7292f9cf9ea1b974b51b89506b169cc8a656911e42951c6a96ef61906b1",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-039": {
+      "revision": 2,
+      "sha256": "9d63e1ff180aba9e117a3303decda8983ea2469489962d00f734d3cff9d269bb",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "9d63e1ff180aba9e117a3303decda8983ea2469489962d00f734d3cff9d269bb",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1: University of Arizona's skeleton-plot examples and NPS field reports show a long, shared pattern matched to dated calendar years. C2: Arizona's dendroarchaeology field guide and Historic England's reports corroborate the NPS examples showing original edge preservation aids felling estimates and trimming may hide later years. Both languages keep cutting-year accuracy qualified and production notes distinguish construction age. Align the long shared pattern, not identical widths or a short match."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "9d63e1ff180aba9e117a3303decda8983ea2469489962d00f734d3cff9d269bb",
+        "status": "PASS",
+        "blockers": [],
+        "note": "木結與徑向線帶入保留窄寬模式的 Example 序列，匹配後年代由內向外遞增，修切外緣時內側既有年份保持不變。虛構年代只作例子。成片用清楚的序列裁切說明只顯示長比對的一段。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "9d63e1ff180aba9e117a3303decda8983ea2469489962d00f734d3cff9d269bb",
+          "status": "PASS",
+          "blockers": [],
+          "note": "長序列逐步滑動對齊，接著削去外側仍保留同一組已貼上的年份，前後兩個推論都可直接在畫面讀出。中文「已定年的參照序列」在沒有例子時略抽象，觀眾要等到位移圖解才有具體對照。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "8b6ab8f0c2d840b24da3f3509a16e853d990ff7130b63c6c94500e010d98aaa9",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 93
+        },
+        {
+          "reviewer": "B",
+          "sha256": "9d63e1ff180aba9e117a3303decda8983ea2469489962d00f734d3cff9d269bb",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Sliding the patterns and then holding the aligned dates in place while trimming the edge clearly distinguishes dating the rings from dating the felling. Some of the Chinese terminology is dense in the first reference explanation, and the last Chinese line says '保留了多少' where the location of the original edge is the decisive detail.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "8b6ab8f0c2d840b24da3f3509a16e853d990ff7130b63c6c94500e010d98aaa9",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 13,
+            "clarity": 23,
+            "causal_retelling": 24,
+            "visual_plan": 19,
+            "pacing": 8,
+            "natural_language": 4
+          },
+          "total": 91
+        }
+      ]
+    },
+    "WNL-040": {
+      "revision": 3,
+      "sha256": "8a9dd5188f2fbfe7a70517e9ba246c96285eee213d5805732b3704003513147e",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "8a9dd5188f2fbfe7a70517e9ba246c96285eee213d5805732b3704003513147e",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1/C2: Frishman et al. measured anisotropic sliding related to overlapping wool scales and linked mechanical action to fiber migration and shrinkage. CSIRO and Woolmark independently describe directional friction, agitation in water, and lasting densification by felting in untreated wool. V3 specifies equally soaked and dried swatches with only one wet-rubbed, then explains the illustrated dry contraction in both languages."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "8a9dd5188f2fbfe7a70517e9ba246c96285eee213d5805732b3704003513147e",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同框先示等大試片、同條件泡水與單片濕揉，再用同機位及格底比兩片全乾尺寸。Rubbed／Not rubbed 標示回扣起始記號。纖維示意仍以相同往返距離及較長的逆向阻力箭頭表現方向差異。實拍縮絨結果、箭頭方向和手機畫面尚待成片驗證。"
+      },
+      "readers": [
+        {
+          "reviewer": "C",
+          "sha256": "8a9dd5188f2fbfe7a70517e9ba246c96285eee213d5805732b3704003513147e",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The dry samples on the same grid make the outcome easy to compare. The cut from cloth to yarn to fiber and back helps connect the scales to the change in cloth size. Both narrations are easy to follow. The longer arrow in the scale diagram could be read as greater travel unless its meaning as resistance is visually clear. The move from two sliding fibers to a packed bundle may also feel abrupt if the bundle is shown only after it has tightened.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "59c88495db981f1b67ae0785c0d1e387b9155533bbd3fe70d098a73492785138",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 14,
+            "clarity": 24,
+            "causal_retelling": 24,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 94
+        },
+        {
+          "reviewer": "D",
+          "sha256": "8a9dd5188f2fbfe7a70517e9ba246c96285eee213d5805732b3704003513147e",
+          "status": "PASS",
+          "blockers": [],
+          "note": "The same grid before and after drying makes the comparison easy to assess, and the narration returns directly to the rubbed square. The diagram uses a long arrow for greater resistance while both motions travel the same distance, so viewers could read that arrow as more movement. The transition to the compact bundle could show the fibers tangling more directly.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "59c88495db981f1b67ae0785c0d1e387b9155533bbd3fe70d098a73492785138",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 93
+        }
+      ]
+    },
+    "WNL-041": {
+      "revision": 2,
+      "sha256": "61aee188c1498efba0d9769857f827c4cd4737220d0fae3dd0628b7426adbedd",
+      "fact": {
+        "reviewer": "fact-reviewer",
+        "sha256": "61aee188c1498efba0d9769857f827c4cd4737220d0fae3dd0628b7426adbedd",
+        "status": "PASS",
+        "blockers": [],
+        "note": "C1/C2: DENSO WAVE directly documents the addition of Reed–Solomon codewords and correction levels, and independent GS1 Playbook §§5.1.2–5.1.3 documents added codewords, data recovery and structural-placement risks. Correction capacity concerns codewords rather than a universal percentage of covered surface. V2 ties the larger-cover result to the shown scanner and positions, without claiming a particular cause for the failed scan."
+      },
+      "visual": {
+        "reviewer": "visual-reviewer",
+        "sha256": "61aee188c1498efba0d9769857f827c4cd4737220d0fae3dd0628b7426adbedd",
+        "status": "PASS",
+        "blockers": [],
+        "note": "同一張純文字紙卡與同一掃描器，未遮及小遮片顯示相同輸出，大遮片只報告此處的 Not read。Schematic 使用非 QR 條塊說明修正資訊，與掃描結果清楚分開。成片仍須實測兩個遮片與手機尺寸的可讀性。"
+      },
+      "readers": [
+        {
+          "reviewer": "A",
+          "sha256": "61aee188c1498efba0d9769857f827c4cd4737220d0fae3dd0628b7426adbedd",
+          "status": "PASS",
+          "blockers": [],
+          "note": "同一張碼先掃原文、再用小遮片成功掃出同一內容，最後使用大遮片失敗，清楚表現修正有條件。英文結尾的「message underneath」容易又讓人想到直接讀紙下方的格子，中文「算回」更貼合前段。實測比較也只直接顯示這兩種遮擋結果，沒有固定遮擋大小再單獨比較不同位置。",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "6f4c674381b3285d1080fba0cec11df1dd0388a03092e616c659dfb3609d83a0",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 24,
+            "causal_retelling": 23,
+            "visual_plan": 18,
+            "pacing": 9,
+            "natural_language": 4
+          },
+          "total": 93
+        },
+        {
+          "reviewer": "B",
+          "sha256": "61aee188c1498efba0d9769857f827c4cd4737220d0fae3dd0628b7426adbedd",
+          "status": "PASS",
+          "blockers": [],
+          "note": "Using the same card and scanner for success and failure is a strong demonstration of the limit. The two information streams are identifiable in the schematic, although the converging arrows show the idea of recovery without giving a concrete example of how a missing value is worked out.",
+          "stages": [
+            "hook-only",
+            "full-script"
+          ],
+          "cue_sha256": "6f4c674381b3285d1080fba0cec11df1dd0388a03092e616c659dfb3609d83a0",
+          "core_retelling_correct": true,
+          "transfer_answer_correct": true,
+          "scores": {
+            "hook": 15,
+            "clarity": 23,
+            "causal_retelling": 23,
+            "visual_plan": 19,
+            "pacing": 9,
+            "natural_language": 5
+          },
+          "total": 94
+        }
+      ]
+    }
+  }
+}
