@@ -1,0 +1,43 @@
+{
+  "experiment_id": "grade3-science-carousel-20261123",
+  "authorization_source": "authorization.md",
+  "authorization_date_taipei": "2026-11-24",
+  "base_git_sha": "e5943fabf7186d1f9953fa4818b6aece18d5ed30",
+  "account": "gavinwu05191023",
+  "display_name": "GavinWu",
+  "topic": "紙巾泡進水裡，怎麼還是乾的？",
+  "status": "published_verified",
+  "permalink": "https://www.threads.com/@gavinwu05191023/post/DgFyoYqk_SQ",
+  "submitted_at_taipei": "2026-11-24T00:17:55+08:00",
+  "direct_post_verified_at_taipei": "2026-11-24T00:19:47+08:00",
+  "caption_path": "02-air/caption.txt",
+  "caption_sha256": "d5be3fb68409b2152b0e3326133c58c3f9a7e0570f2cbef62d3ea3b1f9e07ef5",
+  "caption_paragraphs_and_source_links_verified": true,
+  "attachment_count_verified": 4,
+  "attachments": [
+    {
+      "position": 1,
+      "path": "02-air/cards/01.png",
+      "sha256": "1b3c6bbb9573392c0d9d0711b57d0bf175bcaf2953fdf84f7d8b1edbddb64a88"
+    },
+    {
+      "position": 2,
+      "path": "02-air/cards/02.png",
+      "sha256": "efc604ad903193f3323151b16ce869b2cf3a24b60adadc87f02c08c3484d8994"
+    },
+    {
+      "position": 3,
+      "path": "02-air/cards/03.png",
+      "sha256": "5810f56af22428522af5151c66590ae8457babd620da09bce739ec613de5f59a"
+    },
+    {
+      "position": 4,
+      "path": "02-air/cards/04.png",
+      "sha256": "893c48c3e7211e68250ec4eb3098d1aa37189a65256ba472881dfa7c96de3b43"
+    }
+  ],
+  "engineering_acceptance": "Chrome composer checked for exact caption and slides 01–04 in sequence. Signed-in direct post readback verified account, full caption, two source links and four images. uv run --locked --offline pytest --tb=line: 61 passed.",
+  "unverified": "Signed-out content readback, physical mobile device, post compression and reader comprehension.",
+  "market_acceptance": "Pending.",
+  "first_24h_due_taipei": "2026-11-25T00:17:55+08:00"
+}
