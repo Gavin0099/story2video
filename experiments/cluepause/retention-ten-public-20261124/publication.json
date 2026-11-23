@@ -1,0 +1,350 @@
+{
+  "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+  "channel_handle": "@CluePause",
+  "authorization": "沒問題就幫我上傳設定公開",
+  "authorization_local_date": "2026-11-24",
+  "media_source_commit": "e5943fabf7186d1f9953fa4818b6aece18d5ed30",
+  "verified_at_taipei": "2026-11-24T01:17:15.728479+08:00",
+  "human_first_view_test": "pending",
+  "videos": [
+    {
+      "clip": "R01",
+      "episode": "36-v1",
+      "story_sha256": "ddd4b8900b85bbdce26d6769d1b29f44c9933b77c523256ede93f417d9d35a92",
+      "master_sha256": "c20524810e449df0656ef791cd1d70d4b199ec73f7f786eb2bde91144ef6c024",
+      "duration_s": 38.367,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "The Teacher Cut Our Banner Before the Parade | CluePause",
+      "title_zh": "校慶遊行前，老師剪開了全班的旗子｜謎底之前",
+      "id": "luI51YHMozo",
+      "watch": "https://www.youtube.com/shorts/luI51YHMozo",
+      "studio": "https://studio.youtube.com/video/luI51YHMozo/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:09:03.9129837+08:00",
+      "caption_sha256": {
+        "en": "a9167e8977fa2c1132182f76c7f6e64650472d10733c5ae5bcfe30574d767ca7",
+        "zh-Hant": "75d897f07805e07e8b5edd768c4df4ec11aa1d31dcc668ad71b4610a165e3bcf"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:08:55.461843+08:00",
+      "shorts_list": {
+        "clip": "R01",
+        "id": "luI51YHMozo",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "The Teacher Cut Our Banner Before the Parade | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:09:07.0943572+08:00"
+      }
+    },
+    {
+      "clip": "R02",
+      "episode": "17-v2",
+      "story_sha256": "08ac0de175f3aa7db6fd63f0d13e03c25b276d853f0d170c3e3cecc74867be4a",
+      "master_sha256": "2a97d23e7de0bb8780c62544129b973260b43deb16444ca95a5299be8babd52b",
+      "duration_s": 41.867,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "I Took My Name Off the Winning Painting | CluePause",
+      "title_zh": "我把自己的名字從得獎畫上拿下來｜謎底之前",
+      "id": "rTylRYakedc",
+      "watch": "https://www.youtube.com/shorts/rTylRYakedc",
+      "studio": "https://studio.youtube.com/video/rTylRYakedc/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:10:20.1371838+08:00",
+      "caption_sha256": {
+        "en": "75d66291f6cea6b8a3e57c7b5a9a9c912d5645b5f38a051c7e1d0033473d085b",
+        "zh-Hant": "442879869b5d2e3a412789275fe838071fe72bc463e81fcbc9293e5b72034163"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:10:11.186820+08:00",
+      "shorts_list": {
+        "clip": "R02",
+        "id": "rTylRYakedc",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "I Took My Name Off the Winning Painting | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:10:23.2454748+08:00"
+      }
+    },
+    {
+      "clip": "R03",
+      "episode": "59-v1",
+      "story_sha256": "3e7fc9733602bd19e322ff999bf3fbeea9048d513dd50cab8a5af4ca182de460",
+      "master_sha256": "db91b6617413fcbbd2ad79d45dc237d5784f00384d6a25acf12c777511ab0786",
+      "duration_s": 43.4,
+      "story_scores": [
+        91.0,
+        95.0,
+        91.0
+      ],
+      "title_en": "They Carried Off the Speaker Mid-Announcement | CluePause",
+      "title_zh": "爸的名字還沒念完，喇叭就被抬走了｜謎底之前",
+      "id": "Ej7UhNu1Bzc",
+      "watch": "https://www.youtube.com/shorts/Ej7UhNu1Bzc",
+      "studio": "https://studio.youtube.com/video/Ej7UhNu1Bzc/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:11:18.6706297+08:00",
+      "caption_sha256": {
+        "en": "dcc9f396f9b7b8b1a0151cd9b2baa8beba1e0e1f879d97b499d59ecde2dbba36",
+        "zh-Hant": "946499792c2b632e5a3f29f95d800ce0956b0fdaee2e9433acb91bace3bfbcd9"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:11:09.822074+08:00",
+      "shorts_list": {
+        "clip": "R03",
+        "id": "Ej7UhNu1Bzc",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "They Carried Off the Speaker Mid-Announcement | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:11:21.7895425+08:00"
+      }
+    },
+    {
+      "clip": "R04",
+      "episode": "62-v1",
+      "story_sha256": "3ecf81385053ffb449cdb151112bfce5f681a220315dac30a1a0a2fb61e52d0d",
+      "master_sha256": "9bd8ef2dfb019e361880ac68e6b1c3110100264c2f7fc9c97389f2b2e63d72d2",
+      "duration_s": 40.2,
+      "story_scores": [
+        91.0,
+        91.0,
+        95.0
+      ],
+      "title_en": "My Aunt Stood in the Last Parking Space | CluePause",
+      "title_zh": "阿姨站在畢業典禮的最後一個空車位｜謎底之前",
+      "id": "6MKh90QXRwY",
+      "watch": "https://www.youtube.com/shorts/6MKh90QXRwY",
+      "studio": "https://studio.youtube.com/video/6MKh90QXRwY/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:12:15.6501736+08:00",
+      "caption_sha256": {
+        "en": "196fd62f206515de313273ce034f2e55d361d5276c7d2837c4103403cae226b6",
+        "zh-Hant": "66c025d4ee6f1256c19e70f821d5cb8adc0a0748e3f5da228e7623873e1e1d6a"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:12:06.424763+08:00",
+      "shorts_list": {
+        "clip": "R04",
+        "id": "6MKh90QXRwY",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "My Aunt Stood in the Last Parking Space | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:12:19.5905566+08:00"
+      }
+    },
+    {
+      "clip": "R05",
+      "episode": "21-v1",
+      "story_sha256": "f52f59f028e9aaec1d4539fd105dddf3609fe283bc9a63484133d1d71267ba06",
+      "master_sha256": "c68fb9d6d32274da7dbc03db20bd6fb328dd3f3d883fe1a2db969c919c52cf86",
+      "duration_s": 40.867,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "Mom Crossed Her Own Name Out | CluePause",
+      "title_zh": "媽媽劃掉了自己的名字｜謎底之前",
+      "id": "ctTPG7EYJv8",
+      "watch": "https://www.youtube.com/shorts/ctTPG7EYJv8",
+      "studio": "https://studio.youtube.com/video/ctTPG7EYJv8/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:13:13.7390403+08:00",
+      "caption_sha256": {
+        "en": "ca7534733d1a5d3c2828b43a6b11d3b44b6216ad67468de62d0f31798f464b48",
+        "zh-Hant": "ef0d24b355e24f6098c0f6460f922a56f08b6f202b5512f5875acc5da5d71bdc"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:13:04.328498+08:00",
+      "shorts_list": {
+        "clip": "R05",
+        "id": "ctTPG7EYJv8",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "Mom Crossed Her Own Name Out | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:13:16.8972006+08:00"
+      }
+    },
+    {
+      "clip": "R06",
+      "episode": "15-v1",
+      "story_sha256": "701d2e53f403d2d53c07a9196dfae6a62b9ba08db37ddbcbf3b649c4e563e5d6",
+      "master_sha256": "ec80cbc9c0762d2dcd6a0069d9cdfc2908639db890ad83adace8cdcdaf57c661",
+      "duration_s": 37.733,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "Dad Gave Away Our Shop's Last Bowl | CluePause",
+      "title_zh": "麵店關門前，爸把我的麵端走了｜謎底之前",
+      "id": "VRo3UaH9YRo",
+      "watch": "https://www.youtube.com/shorts/VRo3UaH9YRo",
+      "studio": "https://studio.youtube.com/video/VRo3UaH9YRo/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:14:10.1551108+08:00",
+      "caption_sha256": {
+        "en": "bd22fc2631081d5817561c1a51ee16564f795c50b43b7e0cfe99afce8afebca8",
+        "zh-Hant": "0fb3c5eb10e214e3f582b2095ba50fb2ab189c3d9d4f8ecd64c954b4cec7321f"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:14:01.668972+08:00",
+      "shorts_list": {
+        "clip": "R06",
+        "id": "VRo3UaH9YRo",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "Dad Gave Away Our Shop's Last Bowl | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:14:13.2799572+08:00"
+      }
+    },
+    {
+      "clip": "R07",
+      "episode": "58-v1",
+      "story_sha256": "cb0fd73b5bef88d47751df9f29579126c33675a976453bf70dec9cc79b916696",
+      "master_sha256": "baa7f65751ec08e9e26e5cec19886f83e17070fa6ab3725dff49763e648fc8e0",
+      "duration_s": 39.6,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "She Took Grandpa's Name Off the Memorial Wall | CluePause",
+      "title_zh": "紀念園開放前，阿姨拆下阿公的名字｜謎底之前",
+      "id": "6QMFsmIeQ1c",
+      "watch": "https://www.youtube.com/shorts/6QMFsmIeQ1c",
+      "studio": "https://studio.youtube.com/video/6QMFsmIeQ1c/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:15:07.6554825+08:00",
+      "caption_sha256": {
+        "en": "0aab8b86055b5c146c5ecbf6d8b48d20baffbf47ef6c5ca9d686753327921730",
+        "zh-Hant": "308b57c113d7584f5db15d6f121a05b70a5f8a4e561e778d6ad8e3626d71b6c6"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:14:58.075164+08:00",
+      "shorts_list": {
+        "clip": "R07",
+        "id": "6QMFsmIeQ1c",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "She Took Grandpa's Name Off the Memorial Wall | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:15:10.8407246+08:00"
+      }
+    },
+    {
+      "clip": "R08",
+      "episode": "11-v1",
+      "story_sha256": "805ffbc715cc5d17ac7029ea33e5f4a4aa9dc883f3e19ed0358ff3d6882e69af",
+      "master_sha256": "47e4749f58c294fce759fc407f39984ee815aca516e68e9c6359f5b665060a67",
+      "duration_s": 43.867,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "Dad Refunded My First Repair | CluePause",
+      "title_zh": "爸退掉了我第一筆修車費｜謎底之前",
+      "id": "GOX81YZpIak",
+      "watch": "https://www.youtube.com/shorts/GOX81YZpIak",
+      "studio": "https://studio.youtube.com/video/GOX81YZpIak/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:16:06.5078344+08:00",
+      "caption_sha256": {
+        "en": "bb37109267660f2687a562fba5b9c40af6cb0ba932edc9770c433870000f1c01",
+        "zh-Hant": "feca7362ca54774d2ce2bda4c3bd4be2da4b0e656e32b8eb3268b03f2f31ad43"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:16:01.814589+08:00",
+      "shorts_list": {
+        "clip": "R08",
+        "id": "GOX81YZpIak",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "Dad Refunded My First Repair | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:16:09.6468632+08:00"
+      }
+    },
+    {
+      "clip": "R09",
+      "episode": "18-v2",
+      "story_sha256": "d6fb4d4f670990f2e69ad8c91cbb0d22033fd6c07426a69a85a5292bcbbba054",
+      "master_sha256": "c9c5cf6bda62ed50b77aea3280bd4e7f66e4265bbd5e4523c474de1118de67b0",
+      "duration_s": 37.433,
+      "story_scores": [
+        91.0,
+        91.0,
+        91.0
+      ],
+      "title_en": "I Moved My Chair Before My First Solo | CluePause",
+      "title_zh": "第一次獨奏前，我把椅子搬走了｜謎底之前",
+      "id": "E7RkA0n-DpE",
+      "watch": "https://www.youtube.com/shorts/E7RkA0n-DpE",
+      "studio": "https://studio.youtube.com/video/E7RkA0n-DpE/edit",
+      "verified_visibility": "public",
+      "verified_at": "2026-11-24T01:17:03.0610241+08:00",
+      "caption_sha256": {
+        "en": "44cbc069911d44650c58c09fc39c6aa1070c9469d9dbf188b1083b95535a71b9",
+        "zh-Hant": "c8de372ae151235b184c835dec3a0ddb648f961216559eca88c5682620e9fd28"
+      },
+      "ai_disclosure": "yes",
+      "made_for_kids": "no",
+      "hd_ready": true,
+      "published_at_taipei": "2026-11-24T01:16:54.558502+08:00",
+      "shorts_list": {
+        "clip": "R09",
+        "id": "E7RkA0n-DpE",
+        "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+        "title": "I Moved My Chair Before My First Solo | CluePause",
+        "visibility": "公開",
+        "restrictions": "—",
+        "verified_at": "2026-11-24T01:17:06.2231648+08:00"
+      }
+    },
+    {
+      "clip": "R10",
+      "episode": "61-v2",
+      "story_sha256": "83cea6c5c43432c9c480c345c5b9ac2bac306ba97e83ab7e353a2f12fd339b99",
+      "master_sha256": "c61769b943febd0cdc811bb285e00f55f85d4cfb1207edf36a827c5e74a39f17",
+      "duration_s": 40.233,
+      "story_scores": [
+        91.0,
+        95.0,
+        91.0
+      ],
+      "verified_visibility": "local-only",
+      "reason": "Visual prototype. Continuous practical verification of shell flotation, travel beneath the bridge and sandcastle stability is pending."
+    }
+  ],
+  "public_count": 9
+}
