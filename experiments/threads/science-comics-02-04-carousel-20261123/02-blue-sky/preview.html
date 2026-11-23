@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>天空為什麼是藍色？｜科普漫畫預覽</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: #e9edf3; color: #172643; font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+  main { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 12px; }
+  .page { width: min(100%, 360px); container-type: inline-size; }
+  .sheet {
+    aspect-ratio: 4 / 5;
+    padding: 2.8cqw 4.1cqw 3.5cqw;
+    display: grid;
+    grid-template-rows: 10cqw 1fr 1fr;
+    gap: 1.9cqw;
+    background: #fbf3e6;
+  }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 2cqw; }
+  h1, h2 { margin: 0; font-weight: 800; font-size: 5.65cqw; line-height: 1.13; letter-spacing: 0.02em; }
+  .position { font-size: 2.8cqw; font-weight: 800; color: #415773; white-space: nowrap; }
+  figure {
+    margin: 0;
+    min-height: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 8.5cqw;
+    border: 0.35cqw solid #172643;
+    border-radius: 2.1cqw;
+    background: #fffaf1;
+  }
+  .art { position: relative; overflow: hidden; background: #121e39; }
+  .art { position: relative; background: #f8eedf; }
+  .art img {
+    display: block;
+    position: absolute;
+    left: var(--x, 50%);
+    top: 50%;
+    width: max(100%, calc(44.5cqw * var(--ratio) / var(--span)));
+    height: auto;
+    transform: translate(calc(-1 * var(--x, 50%)), calc(-1 * var(--focus)));
+  }
+  figcaption {
+    display: flex;
+    align-items: center;
+    gap: 2cqw;
+    padding: 0 2.7cqw;
+    font-size: 4.22cqw;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  figcaption::before { content: ""; flex: 0 0 0.72cqw; height: 4cqw; border-radius: 1cqw; background: #6b87a8; }
+  figcaption.girl::before { background: #d56c46; }
+  figcaption.dad::before { background: #263f66; }
+  [hidden] { display: none !important; }
+  body.export { background: #fbf3e6; }
+  body.export main { display: block; padding: 0; }
+  body.export .page { width: 100vw; }
+</style>
+</head>
+<body>
+<main>
+  <article class="page" id="card-1" aria-label="第 1 張">
+    <div class="sheet">
+      <header><h1>天空為什麼是藍色？</h1><span class="position">1 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/01.png" style="--ratio:2;--span:0.498;--focus:25%;--x:42%" alt="女孩在公園指向一大片藍天，爸爸跟著抬頭。"></div>
+        <figcaption class="girl">爸，天空的藍是哪來的？</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/01.png" style="--ratio:2;--span:0.484;--focus:75.7%;--x:42%" alt="女孩拿起一張白卡，比較它與天空的顏色。"></div>
+        <figcaption class="girl">照到白卡的陽光，看起來是白的耶。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-2" aria-label="第 2 張">
+    <div class="sheet">
+      <header><h2>白光裡有許多顏色</h2><span class="position">2 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/02.png" style="--ratio:1;--span:0.55;--focus:27.6%;--x:50%" alt="白光通過玻璃稜鏡後，在白卡上分開成彩色光帶。"></div>
+        <figcaption>用稜鏡，可以把白光的顏色分開。</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/02.png" style="--ratio:1;--span:0.432;--focus:78.3%;--x:50%" alt="示意陽光在大氣中遇到空氣分子。"></div>
+        <figcaption>在天空中，陽光會遇到空氣分子。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-3" aria-label="第 3 張">
+    <div class="sheet">
+      <header><h2>藍光更容易被散開</h2><span class="position">3 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/03.png" style="--ratio:1;--span:0.491;--focus:24.65%;--x:50%" alt="數道藍色箭頭從空氣分子向不同角度散出。"></div>
+        <figcaption>空氣分子比起紅光，更容易散射藍光。</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/03.png" style="--ratio:1;--span:0.491;--focus:75.35%;--x:50%" alt="父女背對太陽，望向另一側的藍天。"></div>
+        <figcaption class="dad">看離太陽很遠的那片天空。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-4" aria-label="第 4 張">
+    <div class="sheet">
+      <header><h2>藍光進到眼睛</h2><span class="position">4 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/04.png" style="--ratio:2;--span:0.493;--focus:24.75%;--x:42%" alt="女孩望向藍天，露出恍然大悟的表情。"></div>
+        <figcaption>散過來的藍光進到眼睛，就看見藍天。</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/04.png" style="--ratio:2;--span:0.489;--focus:75.45%;--x:46%" alt="女孩拿起藍色鉛筆比對天空，爸爸笑了。"></div>
+        <figcaption class="girl">那我的藍色鉛筆也太接近了吧！</figcaption>
+      </figure>
+    </div>
+  </article>
+</main>
+<script>
+  const cardNumber = new URLSearchParams(location.search).get("slide");
+  const selected = document.getElementById("card-" + cardNumber);
+  if (selected) {
+    document.body.classList.add("export");
+    document.querySelectorAll(".page").forEach((page) => {
+      page.hidden = page !== selected;
+    });
+  }
+</script>
+</body>
+</html>

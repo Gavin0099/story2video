@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>水怎麼爬上紙巾？｜科普漫畫預覽</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: #e9edf3; color: #172643; font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+  main { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 12px; }
+  .page { width: min(100%, 360px); container-type: inline-size; }
+  .sheet {
+    aspect-ratio: 4 / 5;
+    padding: 2.8cqw 4.1cqw 3.5cqw;
+    display: grid;
+    grid-template-rows: 10cqw 1fr 1fr;
+    gap: 1.9cqw;
+    background: #fbf3e6;
+  }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 2cqw; }
+  h1, h2 { margin: 0; font-weight: 800; font-size: 5.65cqw; line-height: 1.13; letter-spacing: 0.02em; }
+  .position { font-size: 2.8cqw; font-weight: 800; color: #415773; white-space: nowrap; }
+  figure {
+    margin: 0;
+    min-height: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 8.5cqw;
+    border: 0.35cqw solid #172643;
+    border-radius: 2.1cqw;
+    background: #fffaf1;
+  }
+  .art { position: relative; overflow: hidden; background: #121e39; }
+  .art { position: relative; background: #f8eedf; }
+  .art img {
+    display: block;
+    position: absolute;
+    left: var(--x, 50%);
+    top: 50%;
+    width: max(100%, calc(44.5cqw * var(--ratio) / var(--span)));
+    height: auto;
+    transform: translate(calc(-1 * var(--x, 50%)), calc(-1 * var(--focus)));
+  }
+  figcaption {
+    display: flex;
+    align-items: center;
+    gap: 2cqw;
+    padding: 0 2.7cqw;
+    font-size: 4.22cqw;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  figcaption::before { content: ""; flex: 0 0 0.72cqw; height: 4cqw; border-radius: 1cqw; background: #6b87a8; }
+  figcaption.girl::before { background: #d56c46; }
+  figcaption.dad::before { background: #263f66; }
+  [hidden] { display: none !important; }
+  body.export { background: #fbf3e6; }
+  body.export main { display: block; padding: 0; }
+  body.export .page { width: 100vw; }
+</style>
+</head>
+<body>
+<main>
+  <article class="page" id="card-1" aria-label="第 1 張">
+    <div class="sheet">
+      <header><h1>水怎麼爬上紙巾？</h1><span class="position">1 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/01.png" style="--ratio:1;--span:0.488;--focus:24.5%;--x:50%" alt="女孩拿著一條紙巾，準備把末端浸入玻璃杯。"></div>
+        <figcaption class="girl">爸，只沾一頭，紙巾會濕到哪？</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/01.png" style="--ratio:1;--span:0.494;--focus:75.2%;--x:50%" alt="紙巾直立，只有底端在帶淡藍色的水裡。"></div>
+        <figcaption>只把紙巾的下端浸進水裡。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-2" aria-label="第 2 張">
+    <div class="sheet">
+      <header><h2>濕痕超過了水面</h2><span class="position">2 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/02.png" style="--ratio:1;--span:0.49;--focus:24.6%;--x:50%" alt="連著杯水的藍色濕痕已略高於水面。"></div>
+        <figcaption class="girl">咦，水面上方也變濕了！</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/02.png" style="--ratio:1;--span:0.492;--focus:75.3%;--x:50%" alt="相同杯子與紙巾，濕痕升高，上端仍乾燥。"></div>
+        <figcaption>再等一下，濕痕又往上爬了。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-3" aria-label="第 3 張">
+    <div class="sheet">
+      <header><h2>紙巾裡有小縫</h2><span class="position">3 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/03.png" style="--ratio:1;--span:0.491;--focus:24.65%;--x:50%" alt="放大示意紙巾中纖維的形狀和相通的細小空隙。"></div>
+        <figcaption>放大看，纖維之間有相通的小縫。</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/03.png" style="--ratio:1;--span:0.491;--focus:75.35%;--x:50%" alt="示意淡藍色的水接觸兩側纖維，沿縫隙向上延伸。"></div>
+        <figcaption>水會貼住纖維，水分子也會互相吸引。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-4" aria-label="第 4 張">
+    <div class="sheet">
+      <header><h2>水沿著小縫往上</h2><span class="position">4 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/04.png" style="--ratio:1;--span:0.473;--focus:23.75%;--x:50%" alt="回到同一杯水，紙巾下端濕潤，上段仍乾。"></div>
+        <figcaption class="dad">這叫毛細作用，重力也會限制爬多高。</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/04.png" style="--ratio:1;--span:0.509;--focus:74.45%;--x:50%" alt="女孩對著濕痕笑，爸爸看著她和紙巾。"></div>
+        <figcaption class="girl">我才沾一下，它就開始爬了！</figcaption>
+      </figure>
+    </div>
+  </article>
+</main>
+<script>
+  const cardNumber = new URLSearchParams(location.search).get("slide");
+  const selected = document.getElementById("card-" + cardNumber);
+  if (selected) {
+    document.body.classList.add("export");
+    document.querySelectorAll(".page").forEach((page) => {
+      page.hidden = page !== selected;
+    });
+  }
+</script>
+</body>
+</html>

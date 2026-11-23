@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>太空人怎麼聊天？｜科普漫畫預覽</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: #e9edf3; color: #172643; font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+  main { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 12px; }
+  .page { width: min(100%, 360px); container-type: inline-size; }
+  .sheet {
+    aspect-ratio: 4 / 5;
+    padding: 2.8cqw 4.1cqw 3.5cqw;
+    display: grid;
+    grid-template-rows: 10cqw 1fr 1fr;
+    gap: 1.9cqw;
+    background: #fbf3e6;
+  }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 2cqw; }
+  h1, h2 { margin: 0; font-weight: 800; font-size: 5.65cqw; line-height: 1.13; letter-spacing: 0.02em; }
+  .position { font-size: 2.8cqw; font-weight: 800; color: #415773; white-space: nowrap; }
+  figure {
+    margin: 0;
+    min-height: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 8.5cqw;
+    border: 0.35cqw solid #172643;
+    border-radius: 2.1cqw;
+    background: #fffaf1;
+  }
+  .art { position: relative; overflow: hidden; background: #121e39; }
+  .art img {
+    display: block;
+    position: absolute;
+    inset: 50% auto auto 0;
+    width: 100%;
+    transform: translateY(calc(-1 * var(--focus, 25%)));
+  }
+  figure:nth-of-type(2) .art { --focus: 75%; }
+  #card-1 figure:first-of-type .art { --focus: 20.5%; }
+  #card-1 figure:nth-of-type(2) .art { --focus: 70.2%; }
+  #card-2 figure:first-of-type .art { --focus: 20%; }
+  #card-2 figure:nth-of-type(2) .art { --focus: 72.8%; }
+  #card-3 .sheet { grid-template-rows: 10cqw 1.14fr 0.86fr; }
+  #card-3 figure:first-of-type .art { --focus: 22.2%; }
+  #card-3 figure:nth-of-type(2) .art { --focus: 72%; }
+  #card-4 figure:first-of-type .art { --focus: 19.5%; }
+  figcaption {
+    display: flex;
+    align-items: center;
+    gap: 2cqw;
+    padding: 0 2.7cqw;
+    font-size: 4.22cqw;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  figcaption::before { content: ""; flex: 0 0 0.72cqw; height: 4cqw; border-radius: 1cqw; background: #6b87a8; }
+  figcaption.girl::before { background: #d56c46; }
+  figcaption.dad::before { background: #263f66; }
+  [hidden] { display: none !important; }
+  body.export { background: #fbf3e6; }
+  body.export main { display: block; padding: 0; }
+  body.export .page { width: 100vw; }
+</style>
+</head>
+<body>
+<main>
+  <article class="page" id="card-1" aria-label="第 1 張">
+    <div class="sheet">
+      <header><h1>太空人怎麼聊天？</h1><span class="position">1 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/01.png" alt="女孩在密閉頭盔裡喊，兩名太空人之間只有真空。"></div>
+        <figcaption class="girl">爸，你聽得到嗎？</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/01.png" alt="爸爸望著女孩，疑惑地攤手。"></div>
+        <figcaption>看得見，聽不見。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-2" aria-label="第 2 張">
+    <div class="sheet">
+      <header><h2>頭盔裡，聽得到</h2><span class="position">2 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/02.png" alt="只在女孩的頭盔內看得到藍色聲波圖示。"></div>
+        <figcaption class="girl">咦？我聽得到自己啊！</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/02.png" alt="兩頂頭盔之間沒有任何聲波。"></div>
+        <figcaption>聲音需要物質的振動才能傳遞。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-3" aria-label="第 3 張">
+    <div class="sheet">
+      <header><h2>打開無線電</h2><span class="position">3 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/03.png" alt="女孩按下胸前的通訊鍵。"></div>
+        <figcaption class="girl">試試無線電！</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/03.png" alt="橘色箭頭從女孩的天線指向爸爸的天線。"></div>
+        <figcaption>無線電訊號能穿過真空。</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="page" id="card-4" aria-label="第 4 張">
+    <div class="sheet">
+      <header><h2>這次聽見了</h2><span class="position">4 / 4</span></header>
+      <figure>
+        <div class="art"><img src="art/04.png" alt="藍色聲波圖示出現在爸爸頭盔裡的耳機旁。"></div>
+        <figcaption>耳機把訊號變回聲音。</figcaption>
+      </figure>
+      <figure>
+        <div class="art"><img src="art/04.png" alt="女孩和爸爸笑了起來。"></div>
+        <figcaption class="dad">收到！晚餐吃什麼？</figcaption>
+      </figure>
+    </div>
+  </article>
+</main>
+<script>
+  const cardNumber = new URLSearchParams(location.search).get("slide");
+  const selected = document.getElementById("card-" + cardNumber);
+  if (selected) {
+    document.body.classList.add("export");
+    document.querySelectorAll(".page").forEach((page) => {
+      page.hidden = page !== selected;
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+{
+  "experiment_id": "threads-science-comics-02-04-carousel-20261123",
+  "authorization_date_taipei": "2026-11-23",
+  "authorization_source": "authorization.md",
+  "account": "gavinwu05191023",
+  "display_name": "GavinWu",
+  "base_git_sha": "8b449a6927e9b04de2e32c22fb2791336b52ff5a",
+  "timestamp_basis": "Asia/Taipei local clock at Threads UI confirmation and submit",
+  "engineering_acceptance": "8 panels per post, 4 1080×1350 PNGs, 360 CSS px visual QA, 61 pytest tests passed, signed-in old and new permalink readback",
+  "market_acceptance": "pending_new_posts_24h_and_human_reader_measurement",
+  "posts": [
+    {
+      "issue": "02",
+      "topic": "天空為什麼是藍色？",
+      "old_post_url": "https://threads.com/@gavinwu05191023/post/DgE7JINE6QJ",
+      "old_post_status": "deleted_verified",
+      "deleted_at_taipei": "2026-11-23T17:12:18+08:00",
+      "old_post_readback": "old permalink redirected to owner profile with old caption absent",
+      "new_post_url": "https://threads.com/@gavinwu05191023/post/DgFCEKsE2Cw",
+      "new_post_status": "published_verified",
+      "submitted_at_taipei": "2026-11-23T17:13:34+08:00",
+      "published_attachment_count": 4,
+      "published_caption_verified": true,
+      "caption_path": "02-blue-sky/caption.txt",
+      "submitted_caption_sha256": "40fd35df96d84acfd7631e162101296de30fd4e1ddc7e308102899e34b415263",
+      "attachments": [
+        {
+          "path": "02-blue-sky/cards/01.png",
+          "sha256": "6260e7b3639eb3cd435a5022f445fbac18d60d7ae0a3631408ca125610f10a6a"
+        },
+        {
+          "path": "02-blue-sky/cards/02.png",
+          "sha256": "c8f3006409486df8fafc668227b79033c75cb3a19cf629c4d4e3c415f0c41436"
+        },
+        {
+          "path": "02-blue-sky/cards/03.png",
+          "sha256": "c55dcfb57732c3513a9c57b62b158b4f3453279635e718325f35efcd4524cb61"
+        },
+        {
+          "path": "02-blue-sky/cards/04.png",
+          "sha256": "2d6d3be9b6a59a5c9c9c4dff22f68d30277afea31fdaf06ac193eefe5d9f089f"
+        }
+      ],
+      "signed_out_http_readback": {
+        "http": 200,
+        "final_url": "https://www.threads.com/@gavinwu05191023/post/DgFCEKsE2Cw",
+        "author_in_response": false,
+        "opening_in_response": false,
+        "preview_image_in_response": false
+      },
+      "first_24h_due_taipei": "2026-11-24T17:13:34+08:00"
+    },
+    {
+      "issue": "03",
+      "topic": "太空人怎麼聊天？",
+      "old_post_url": "https://threads.com/@gavinwu05191023/post/DgE7g7rE5uB",
+      "old_post_status": "deleted_verified",
+      "deleted_at_taipei": "2026-11-23T17:14:35+08:00",
+      "old_post_readback": "old permalink redirected to owner profile with old caption absent",
+      "new_post_url": "https://threads.com/@gavinwu05191023/post/DgFCMYlk5iz",
+      "new_post_status": "published_verified",
+      "submitted_at_taipei": "2026-11-23T17:14:41+08:00",
+      "published_attachment_count": 4,
+      "published_caption_verified": true,
+      "caption_path": "../space-radio-carousel-20261123-cast-v2/caption.txt",
+      "submitted_caption_sha256": "e95e561972a53aab4bfe5ce13e6fbb71ea8304d8a038bbf6ac6158e206616071",
+      "attachments": [
+        {
+          "path": "../space-radio-carousel-20261123-cast-v2/cards/01.png",
+          "sha256": "5f65446d40372281d416ed74d262ca8293b5f9460f1ee36251fed84ccf6d2aef"
+        },
+        {
+          "path": "../space-radio-carousel-20261123-cast-v2/cards/02.png",
+          "sha256": "07527ea0fa3b61eb70f457053cf3eef4a6bf0b5e2529d5c1624e21f0b7cbc7a8"
+        },
+        {
+          "path": "../space-radio-carousel-20261123-cast-v2/cards/03.png",
+          "sha256": "c73c3984bf55351b5f7e2675628c5f56118948610738108adf47364e29f40ec9"
+        },
+        {
+          "path": "../space-radio-carousel-20261123-cast-v2/cards/04.png",
+          "sha256": "236d30064f40d89dcced902aaef0f670fc223de4ed6878c4deeac58a8dd7ac8f"
+        }
+      ],
+      "signed_out_http_readback": {
+        "http": 200,
+        "final_url": "https://www.threads.com/@gavinwu05191023/post/DgFCMYlk5iz",
+        "author_in_response": false,
+        "opening_in_response": false,
+        "preview_image_in_response": false
+      },
+      "first_24h_due_taipei": "2026-11-24T17:14:41+08:00"
+    },
+    {
+      "issue": "04",
+      "topic": "水怎麼爬上紙巾？",
+      "old_post_url": "https://threads.com/@gavinwu05191023/post/DgE7qx6Ew1w",
+      "old_post_status": "deleted_verified",
+      "deleted_at_taipei": "2026-11-23T17:15:18+08:00",
+      "old_post_readback": "old permalink redirected to owner profile with old caption absent",
+      "new_post_url": "https://threads.com/@gavinwu05191023/post/DgFCRkAk0WA",
+      "new_post_status": "published_verified",
+      "submitted_at_taipei": "2026-11-23T17:15:23+08:00",
+      "published_attachment_count": 4,
+      "published_caption_verified": true,
+      "caption_path": "04-paper-towel/caption.txt",
+      "submitted_caption_sha256": "efe3a35a6e03ed60b6cf51f2055d2df4270a32f46686bd6ca0a89052a92dffa5",
+      "attachments": [
+        {
+          "path": "04-paper-towel/cards/01.png",
+          "sha256": "8b811ec1ebda7bd24928cfb397ccd7ac96fff1856ff1b109c5b9a73b3a3f2735"
+        },
+        {
+          "path": "04-paper-towel/cards/02.png",
+          "sha256": "7468a388e53c62fb8d29c86c1dc91f462968666bef12137accb140d8b0be03e5"
+        },
+        {
+          "path": "04-paper-towel/cards/03.png",
+          "sha256": "ff8a6aca14b9840d79fad8153dcd0d76a05497445d45579949e1604ed1eee554"
+        },
+        {
+          "path": "04-paper-towel/cards/04.png",
+          "sha256": "bb58b6326efad6457f43a8462183df0ad44b2e4d537b074555313db261a6d2af"
+        }
+      ],
+      "signed_out_http_readback": {
+        "http": 200,
+        "final_url": "https://www.threads.com/@gavinwu05191023/post/DgFCRkAk0WA",
+        "author_in_response": false,
+        "opening_in_response": false,
+        "preview_image_in_response": false
+      },
+      "first_24h_due_taipei": "2026-11-24T17:15:23+08:00"
+    }
+  ]
+}
