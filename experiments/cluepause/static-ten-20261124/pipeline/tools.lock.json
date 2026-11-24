@@ -1,0 +1,12 @@
+{
+  "ffmpeg": {
+    "bytes": 110590976,
+    "sha256": "ed8f66cb877087a96f5bbb40a2944f0e764f2ad8870d5cb647360d912e62bc07",
+    "environment": "S2V_FFMPEG"
+  },
+  "ffprobe": {
+    "bytes": 110374912,
+    "sha256": "df0199f606faa88e9ad192732a7c3987acfb647663534c297772e17730611a08",
+    "environment": "S2V_FFPROBE"
+  }
+}
