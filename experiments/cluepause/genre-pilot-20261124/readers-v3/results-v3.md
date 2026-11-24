@@ -7,7 +7,7 @@
 - 劇本及讀者材料凍結於 `7015cbc6a13955b7b57b5b6975a79e6543d2a1cc`：P01 為 [puzzle-v3.md](../puzzle-v3.md)，U01 為 [uncanny_mystery-v3.md](../uncanny_mystery-v3.md)，**H01 為 [urban_horror-v2.1.md](../urban_horror-v2.1.md)**。`readers-v3` 是批次名稱，不表示 H01 已改成 v3。
 - 受測材料為本目錄 `<series>/part1-setup.md`、`part2-reveal.md`；執行工具為 [readers/run_blind_readers.sh](../readers/run_blind_readers.sh)，已提交於 `ec45e80afda757df6047f4118acb26f696c174a9`。本次核對上述三稿及六份 packet 從凍結 SHA 到該 HEAD 無差異。
 - 原稿開頭「尚未做新版讀者測試」是凍結當時的狀態；本報告補記其後已完成的讀稿，不改寫受測稿。v1／v2 分數、影音 QA 與 P01 v1 私人上傳（`YX8NJR966As`）不移轉到本輪。
-- 本報告與 raw 匯入檔仍未提交；上列 HEAD 不包含本次新增證據。Owner 本次要求不 commit。
+- 初次整理時，本報告與 raw 匯入檔尚未提交，上列 HEAD 不包含當時新增證據；現已包含於 `1e5df551c62b5625e50583988c5f956bd2b8647e`。本次僅修正換行正規化的驗證說明，依 Owner 要求不 commit。
 
 ## 讀者流程與證據邊界
 
@@ -15,8 +15,8 @@
 - 工具預設模型／推理為 `gpt-6.1-sol`／high。Owner 提供九場已完成的執行事實；本次只整理既有結果，未重跑讀者，也未讀取或匯入 logs。四種 raw 檔本身沒有模型／推理參數或完整執行軌跡，不能單靠它們獨立證明實際參數、歷史揭曉時序或讀者未越界。隔離是資料夾與提示隔離，沒有 OS 層讀取屏障。
 - 海龜湯與日常詭異：揭曉前問主猜與信心、替代解、改變理解的線索、關字幕理解與續看；揭曉後問解釋是否完整、新增必要設定、關鍵因果缺陷、反轉感受、兌現與 0–100 總分。都市怪談改問威脅、規則、預期、不安及緊張感；**沒有要求單一答案或信心百分比**，不補造數值。
 - 評分面向沿用工具提示；不是已有逐項權重的 90 分量表。下表使用讀者明示的 overall，沒有重算各面向平均，也沒有由整合者改分。
-- 本次僅匯入每位的 `guess.md`、`review.md`、`guess.sha256`、`session-id.txt`，共 36 檔；不匯入來源的 part1／part2 副本或 logs。匯入前掃描無個人路徑，逐位元複製後核對來源與目的 SHA-256 相同；九份現存 guess 均符合其 lock manifest，九個 session UUID 互異。
-- `guess.sha256` 記錄原始位元組；本次未改換行。repo 的 `.gitattributes` 指定 LF，日後入 Git 若發生正規化，應保留原始 lock 並交代位元組差異，不可重寫 lock 冒充讀者當時產物。
+- 本次僅匯入每位的 `guess.md`、`review.md`、`guess.sha256`、`session-id.txt`，共 36 檔；不匯入來源的 part1／part2 副本或 logs。匯入前掃描無個人路徑，逐位元複製後核對來源與目的 SHA-256 相同；匯入當時九份 guess 均符合其 lock manifest，九個 session UUID 互異。
+- `guess.sha256` 記錄原始位元組，全部保留不變。repo 的 `.gitattributes` 指定 LF；提交後核對發現 `raw/puzzle/B/guess.md`、`raw/puzzle/C/guess.md`、`raw/uncanny_mystery/B/guess.md`、`raw/urban_horror/B/guess.md` 各有最後一個 CRLF 被 Git 正規化為 LF，各少一個 CR（`0x0D`），其餘位元組不變。因此提交版本直接比對原始 lock 僅有 5/9 相符；下方命令只在記憶體中為這四檔還原末端 CRLF，再比對原始 lock，不改檔案或 manifest。這證明指定換行轉換後仍符合原鎖定內容，不代表提交位元組與原始位元組完全相同。
 
 ## 結果
 
@@ -75,7 +75,7 @@ v2 基準為 [results-v2.md](../readers-v2/results-v2.md) 及其 raw（劇本凍
 
 ## 工程／文件驗收與未驗證範圍
 
-驗收基準：分支 `codex/cluepause-genre-pilot-v3-20261124`，HEAD `ec45e80afda757df6047f4118acb26f696c174a9`；本次新增檔案未提交。工程檢查與劇本判定分開，工程成功不會使 Story Quality Gate 通過。
+初次匯入驗收基準：分支 `codex/cluepause-genre-pilot-v3-20261124`，當時 HEAD `ec45e80afda757df6047f4118acb26f696c174a9`，當時新增檔案未提交。下表保留當時命令的結果與限制；提交後的換行驗證另記於表後。工程檢查與劇本判定分開，工程成功不會使 Story Quality Gate 通過。
 
 | 命令／檢查 | 結果與限制 |
 |---|---|
@@ -85,10 +85,12 @@ v2 基準為 [results-v2.md](../readers-v2/results-v2.md) 及其 raw（劇本凍
 | `uv sync --locked`、`uv run --locked pytest` | 無法執行：PATH 找不到 uv；未宣稱 Python 工程驗收通過 |
 | `video/`：`npm.cmd ci --cache ..\artifacts\npm-cache` | exit 1：下載 TypeScript 套件遭 `EACCES`；Node 24.13.0 另超出專案 Node 22 範圍。未完成依賴重建，未改套件契約 |
 | `video/`：`npm.cmd run typecheck` | exit 1：找不到 `tsc`；未完成型別驗收 |
-| 本報告下方 PowerShell 靜態核對 | PASS：36 raw、9 hashes、9 unique sessions、無個人路徑、報告連結／空白核對通過；不自動判斷故事品質 |
+| 初次匯入時的 PowerShell 靜態核對 | PASS：原工作目錄的 36 raw、9 原始 hashes、9 unique sessions、無個人路徑、報告連結／空白核對通過；此結果不適用於提交後直接比對原始 lock，現用下方修正命令重跑；不自動判斷故事品質 |
 | `git diff --check`、`git status --short` | diff exit 0；狀態為本輪 raw／報告新增與必要的兩份 memory 審查紀錄更新。diff 不涵蓋 untracked 內容，另以靜態核對補足；未 commit |
 
-可在 repo 根目錄重跑本輪匯入後的文件／raw 核對（不需來源個人路徑）：
+提交後修正驗收（2026-11-24）：基準 HEAD `1e5df551c62b5625e50583988c5f956bd2b8647e`。執行下方 PowerShell 命令，原工作目錄 PASS（0 次還原）；另將該 HEAD 的 Git archive 匯出為乾淨副本，放入本次修正報告後執行相同命令，PASS（4 次還原）：36 raw、9 原始 locks、9 個唯一 session、無個人路徑、報告連結／空白均通過。`git diff --check` 通過；僅修改本報告，未 commit。未重跑初次匯入的來源複製核對、Python／Node 工程驗收或讀者測試；市場／真人驗收仍未完成。
+
+可在 repo 根目錄重跑以下文件／raw 核對（PowerShell，不需來源個人路徑；fresh checkout 的四份 LF 檔會在記憶體中還原末端 CRLF，原始工作副本若已保有末端 CRLF 則直接核對）：
 
 ```powershell
 $ErrorActionPreference = 'Stop'
@@ -97,6 +99,8 @@ $raw = Join-Path $root 'raw'
 $names = @('guess.md', 'review.md', 'guess.sha256', 'session-id.txt')
 $ids = @()
 $count = 0
+$restored = 0
+$crlfFinalGuesses = @('puzzle/B', 'puzzle/C', 'uncanny_mystery/B', 'urban_horror/B')
 foreach ($s in @('puzzle', 'uncanny_mystery', 'urban_horror')) {
   foreach ($r in @('A', 'B', 'C')) {
     $dir = Join-Path $raw "$s\$r"
@@ -108,7 +112,17 @@ foreach ($s in @('puzzle', 'uncanny_mystery', 'urban_horror')) {
       if ($body -match '(?i)([A-Z]:[\\/]|/(?:Users|home|mnt/[a-z])/)') { throw 'Personal path' }
       $count++
     }
-    $hash = (Get-FileHash -LiteralPath (Join-Path $dir 'guess.md') -Algorithm SHA256).Hash.ToLowerInvariant()
+    $guessBytes = [IO.File]::ReadAllBytes((Join-Path $dir 'guess.md'))
+    if ($crlfFinalGuesses -contains "$s/$r") {
+      if ($guessBytes.Length -lt 2 -or $guessBytes[-1] -ne 10) { throw "Missing final LF: $s/$r" }
+      if ($guessBytes[-2] -ne 13) {
+        $guessBytes = [byte[]]($guessBytes[0..($guessBytes.Length - 2)] + @(13, 10))
+        $restored++
+      }
+    }
+    $sha = [Security.Cryptography.SHA256]::Create()
+    try { $hash = [BitConverter]::ToString($sha.ComputeHash($guessBytes)).Replace('-', '').ToLowerInvariant() }
+    finally { $sha.Dispose() }
     $lock = [IO.File]::ReadAllText((Join-Path $dir 'guess.sha256')).Trim()
     if ($lock -cne "$hash  guess.md") { throw "Guess mismatch: $s/$r" }
     $sid = [IO.File]::ReadAllText((Join-Path $dir 'session-id.txt')).Trim()
@@ -124,7 +138,7 @@ foreach ($m in [regex]::Matches($prose, '\[[^\]]+\]\(([^)]+)\)')) {
   if (!(Test-Path -LiteralPath (Join-Path $root $m.Groups[1].Value))) { throw 'Broken report link' }
 }
 if ($report -match '(?m)[ \t]+\r?$') { throw 'Report trailing whitespace' }
-'PASS: 36 raw files; 9 hashes; 9 unique sessions; no personal paths; report links/whitespace'
+"PASS: 36 raw files; 9 original locks; $restored final CRLF restorations in memory; 9 unique sessions; no personal paths; report links/whitespace"
 ```
 
 **市場／真人驗收**：`HUMAN_TEST_PENDING / PUBLIC_DATA_PENDING`；未收集，不記為零或 PASS。未驗證實際鏡頭能否呈現必要細節、手機字幕、音效／旁白、成片理解、原創性外部查核、真人興趣及 D1／D7。未改動正式引擎、Episode v1、SQLite、治理契約或框架版本；未做媒體生成、上傳或發布，也未宣稱完成完整工程或治理驗收。
