@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-24",
+  "timezone": "Asia/Taipei",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "requests": [
+    {
+      "request": 1,
+      "asset": "handle-plate",
+      "arguments": {
+        "transparent_background": false,
+        "prompt": "Use case: photorealistic-natural. Asset type: background plate for H01 CluePause cinematic horror motion composite. Generate one full-bleed 9:16 portrait photograph, ideally 1080x1920. Macro, nearly straight-on view of a CLOSED dark walnut apartment entrance door interior at night, brushed nickel circular lever rosette centered at 40% width 52% height. The moving LEVER HANDLE ITSELF IS ABSENT, leaving a small round central spindle socket on the fixed rosette, so a separate lever can rotate there. Absolutely no residual lever silhouette or handle shadow to double up. Door seam and shut jamb visible on far right. On lower left, a young adult woman's pale hand hovers well away (at least 25 cm below rosette), clearly NOT touching hardware. Realistic warm dim apartment light from upper left, cool shadows, detailed wood grain, restrained tension, no supernatural creature. Camera axis perpendicular to door so lever would rotate in image plane. Hardware must be large enough for a legible macro motion shot. No text, captions, typography, logos, diagrams, watermark, framing border or letterbox. Fill entire canvas with the photographed scene. This is the still PLATE only; no moving lever."
+      },
+      "original_file": "exec-ee10a9d5-f27e-401a-9938-fd22658f749f.png"
+    },
+    {
+      "request": 2,
+      "asset": "handle-element",
+      "arguments": {
+        "transparent_background": true,
+        "num_last_images_to_include": 1,
+        "prompt": "Use case: background-extraction/compositing. Reference image: the previous dark walnut door plate, use for hardware material, camera and illumination only. Generate ONE isolated photorealistic brushed nickel door LEVER, on real transparent alpha background. The fixed round mounting rosette is NOT part of this element. A small round metal hub at left with a straight softly rounded horizontal lever extending to RIGHT. Front orthographic view, matching the almost perpendicular camera of reference. Hub rotation axis points towards camera. Lever and hub occupy central canvas with generous transparent margins. Same warm upper-left light and cool shadow as reference. Metal satin finish, lever length about twice hub diameter. Include hub, no separate screws, no rosette, no door, no hand, no background, no text, no watermark, no framing. This is one rigid object that will be composited at reference spindle and deterministically rotated clockwise 18 degrees. Do not render motion or different states."
+      },
+      "original_file": "exec-312e1c2a-9f37-4f3d-bbcc-d5667a6365cc.png"
+    },
+    {
+      "request": 3,
+      "asset": "intercom-plate",
+      "arguments": {
+        "transparent_background": false,
+        "prompt": "Use case: photorealistic-natural. Asset type: still background plate for layered horror intercom shot. One full-bleed 9:16 portrait cinematic realistic photograph, ideally 1080x1920. Same dim warm apartment interior lighting: warm upper left with cool shadows, dark walnut closed door edge at far right and plaster wall. Tight FRONT-ON close-up of a modest unbranded brushed metal wall intercom, centered and large, grille in lower half, physical blank black rectangular display in upper half, small circular UNLIT listening indicator below display. The display's removable luminous glass CONTENT is absent: leave a simple matte black empty rectangular recess, square camera alignment, no perspective slant. No screen glow yet. Small circular indicator is also dark and unlit. No buttons being touched, no hands, no people. Top-down warm reflection on metal housing. No words or letters anywhere, no device labels, no logos, no captions, no watermark, no borders. Entire frame is photographed environment; never letterboxed. Static plate will receive an independently generated luminous screen glass insert and listening light on alpha, fading on via deterministic animation. No saved invitation or story text."
+      },
+      "original_file": "exec-bcd15f90-c3f5-4597-9e35-fe4f9d10861a.png"
+    },
+    {
+      "request": 4,
+      "asset": "screen-element",
+      "arguments": {
+        "transparent_background": true,
+        "num_last_images_to_include": 1,
+        "prompt": "Use case: compositing. Reference image: previous front-on brushed metal intercom plate; use camera, recess shape and lighting as reference. Generate ONE isolated blank softly luminous blue-green physical intercom screen-glass INSERT, FRONT-ON rectangular horizontal 1.43:1 aspect, subtly rounded corners matching the black screen recess in reference. Authentic dim LCD glass, muted teal luminous texture, very subtle reflected warm upper-left lighting and small surface imperfections, subtle edge falloff, no imagery or symbols. REAL TRANSPARENT alpha outside the glass rectangle, generous transparent margins. Only the rectangular glass insert is present, no housing, no metal frame, no wall, no indicator light, no people. Absolutely no text, glyphs, letters, icons, instructions or watermark. This alpha element will fade into the existing black recess. Keep it uniform and dim enough to read as switched-on physical hardware, not a graphic card."
+      },
+      "original_file": "exec-c97d5288-6035-4680-a8f6-a85cd495fd0f.png"
+    },
+    {
+      "request": 5,
+      "asset": "indicator-element",
+      "arguments": {
+        "transparent_background": true,
+        "prompt": "Use case: product-mockup. Generate ONE small isolated softly glowing teal-green circular listening LED lens on REAL transparent alpha. Straight front-on view. Photorealistic tiny physical glass indicator with dim cyan-green core, gentle soft halo and warm upper-left specular highlight to match an old brushed metal apartment intercom under tungsten light. Centered, generous transparent margins. No bezel, no metal housing, no black background, no words, no text, no icons, no diagram, no watermark. This is a real hardware LED element for a photographic composite, not a stylized symbol. Keep physical texture and restrained glow."
+      },
+      "original_file": "exec-aa6188c1-f85e-4f32-bbeb-4c7022fa4b7c.png"
+    },
+    {
+      "request": 6,
+      "asset": "latch-plate",
+      "arguments": {
+        "transparent_background": false,
+        "prompt": "Use case: photorealistic-natural. Asset type: H01 latch retraction background plate. ONE full-bleed vertical 9:16 realistic macro photograph, ideally 1080x1920, same warm upper-left apartment lighting, dark walnut door and brushed nickel hardware as previous door plate. Camera sees a small exposed interior surface-mounted horizontal SLIDING SECURITY BOLT on a CLOSED door near the jamb, straight-on so bolt travel is horizontal in image plane. Door occupies left 70%, dark jamb at right 30%, seam at 72%. At mid-frame a brushed steel rectangular bolt guide housing on left and matching metal keeper socket fixed on right jamb; housing opening and keeper socket lie on same horizontal axis. For this separate plate THE MOVING BOLT IS ABSENT: visible dark channel between left guide opening and right keeper, no residual sliding shaft, no turn knob. Guide at x 38%, keeper at x 70%, bolt axis y 52%. The later generated bolt will bridge that gap, then retract left into housing. The physical door remains SHUT. No cutaway diagram, no floating arrows, no figures, no hands, no text, no labels, no logos, no watermarks, no border, no letterbox. Real detailed nickel, worn wood, soft photographic shadows. Make hardware large and mechanically simple enough for clearly legible translation motion."
+      },
+      "original_file": "exec-2958a363-99d0-4ed6-960b-15e721abe58d.png"
+    },
+    {
+      "request": 7,
+      "asset": "latch-element",
+      "arguments": {
+        "transparent_background": true,
+        "num_last_images_to_include": 1,
+        "prompt": "Use case: compositing. Reference image is the previous walnut door with empty brushed nickel sliding bolt guide on left and keeper on right. Generate ONE isolated rigid horizontal brushed nickel rectangular bolt shaft, no housing, no keeper, no knobs, on REAL transparent alpha background. Straight front-on camera matching reference. Long low rectangular solid steel shaft with subtly bevelled right tip, aspect ratio about 5:1. Satin silver nickel finish with warm upper-left light, cool shadows on underside. Its left end will disappear behind the fixed left housing, and its right end engages the keeper. Generous transparent margins. No screws, no plates, no background, no door, no hands, no text, no logos, no watermarks. No different states, no motion blur. This exact single element will slide LEFT, never morph, with foreground housing composited over it."
+      },
+      "original_file": "exec-7a40b7c1-619f-4f09-9305-a8f1ec07d4c4.png"
+    }
+  ],
+  "request_count": 7,
+  "correction_requests": 0,
+  "original_directory": "Built-in ImageGen session 01a20d06-1fdb-7d63-aed0-760717643d5a; preserved originals: artifacts/genre-pilot-20261124/motion/raw/",
+  "note": "Originals copied to artifacts/genre-pilot-20261124/motion/raw; hashes and actual dimensions in assets.json. No API/CLI fallback."
+}

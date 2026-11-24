@@ -9,7 +9,7 @@
   "uploaded_count": 1,
   "upload_attempt_count": 2,
   "quota_refusals_observed": "2026-11-24 Taipei: second upload (uncanny_mystery) refused in Studio with \"已達每日上傳數量上限\"; one-time verification link offered, not used; no draft left",
-  "browser_error": "Cannot find module 'C:\\Users\\daish\\.codex\\plugins\\cache\\openai-bundled\\browser\\26.1106.51428\\scripts\\browser-service.mjs' imported from C:\\Users\\daish\\AppData\\Local\\Temp\\.tmpfflCWh\\trusted-worker.js",
+  "browser_error": "Cannot find module '<Codex browser plugin cache>/26.1106.51428/scripts/browser-service.mjs' imported from <Owner's temporary folder>/.tmpfflCWh/trusted-worker.js",
   "browser_setup_attempts": 2,
   "browser_recovery": "Repair or reinstall the Browser plugin through the Codex/ChatGPT plugin UI; reconnect the already signed-in Chrome session. No native-host repair, alternate browser, credentials or account changes attempted.",
   "engineering_acceptance": {
