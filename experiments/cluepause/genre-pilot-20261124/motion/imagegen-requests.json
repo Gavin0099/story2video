@@ -73,6 +73,6 @@
   ],
   "request_count": 7,
   "correction_requests": 0,
-  "original_directory": "C:/Users/daish/.codex/generated_images/01a20d06-1fdb-7d63-aed0-760717643d5a",
+  "original_directory": "Built-in ImageGen session 01a20d06-1fdb-7d63-aed0-760717643d5a; preserved originals: artifacts/genre-pilot-20261124/motion/raw/",
   "note": "Originals copied to artifacts/genre-pilot-20261124/motion/raw; hashes and actual dimensions in assets.json. No API/CLI fallback."
 }

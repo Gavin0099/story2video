@@ -1,9 +1,11 @@
 """Real-media checks with local fixtures plus decoded demo evidence; no services."""
 from pathlib import Path
+import argparse
 import json
 import math
 import os
 import struct
+import tempfile
 import wave
 
 from PIL import Image, ImageChops, ImageDraw
@@ -11,10 +13,17 @@ import hybrid_motion as hm
 
 
 def main():
-    tools = hm.Tools(hm.HERE / "tools.lock.json")
-    root = hm.OUTPUTS
-    fixture = root / "verification"
-    fixture.mkdir(exist_ok=False)
+    cli = argparse.ArgumentParser(description=__doc__)
+    cli.add_argument("--tools", type=Path, default=hm.HERE / "tools.lock.json")
+    cli.add_argument("--demo-root", type=Path, default=hm.OUTPUTS)
+    cli.add_argument("--skip-demos", action="store_true", help="Run portable local media fixtures only")
+    cli.add_argument("--reference-media", type=Path,
+                     help="Optional read-only legacy media directory containing timeline.json and cuts/")
+    args = cli.parse_args()
+    tools = hm.Tools(args.tools)
+    root = hm.output_path(args.demo_root)
+    root.mkdir(parents=True, exist_ok=True)
+    fixture = Path(tempfile.mkdtemp(prefix="verification-", dir=root))
     plate = Image.new("RGB", (1080, 1920), (65, 45, 30))
     plate.save(fixture / "plate.png")
     element = Image.new("RGBA", (50, 20))
@@ -72,17 +81,35 @@ def main():
     else:
         raise AssertionError("Mismatched shot length was accepted")
     assert not (fixture / "must-not-exist.mp4").exists()
-    # Real legacy timeline compatibility: generate a local plan only; reference never executes.
-    reference = Path("D:/story2video/artifacts/cluepause-retention-ten/36-v1/media")
-    legacy = hm.legacy_plan(reference / "timeline.json", reference / "cuts", {})
-    assert sum(s["frames"] for s in legacy["shots"]) == 1151
-    hm.save(fixture / "reference-plan.json", legacy)
+    # Portable legacy compatibility fixture: first spoken cue starts at frame 1,
+    # adjacent cues group, a non-adjacent reuse is a separate shot occurrence.
+    for index, clip in enumerate(("first.mp4", "second.mp4", "first.mp4")):
+        (fixture / f"shot-{index:03d}.mp4").write_bytes((fixture / clip).read_bytes())
+    hm.save(fixture / "legacy.json", dict(fps=30, frames=90, cues=[
+        dict(shot=7, start=1, end=15), dict(shot=7, start=15, end=30),
+        dict(shot=9, start=30, end=60), dict(shot=7, start=60, end=90)]))
+    legacy = hm.legacy_plan(fixture / "legacy.json", fixture, {"1": "second.mp4"})
+    assert [s["frames"] for s in legacy["shots"]] == [30, 30, 30]
+    assert Path(legacy["shots"][1]["clip"]) == fixture / "second.mp4"
+    hm.save(fixture / "local-legacy-plan.json", legacy)
+    reference_check = "SKIPPED; optional --reference-media not supplied"
+    if args.reference_media:
+        reference = args.reference_media.resolve(strict=True)
+        legacy = hm.legacy_plan(reference / "timeline.json", reference / "cuts", {})
+        expected = hm.read(reference / "timeline.json")["frames"]
+        assert sum(s["frames"] for s in legacy["shots"]) == expected
+        hm.save(fixture / "reference-plan.json", legacy)
+        reference_check = dict(media=str(reference), frames=expected, result="PASS")
     demos, folders = {}, {}
-    for name in ("handle", "intercom", "latch"):
-        folders[name] = next(p for p in root.glob(name+"-*") if (p / "receipt.json").exists())
+    names = () if args.skip_demos else ("handle", "intercom", "latch")
+    for name in names:
+        clip_hash = hm.digest(root / (name+".mp4"))
+        folders[name] = next(p for p in root.glob(name+"-*") if (p / "receipt.json").exists()
+                             and hm.read(p / "receipt.json")["sha256"] == clip_hash)
+        hm.inspect(tools, root / (name+".mp4"), fixture, 90)
     sample_at = {"handle": .675, "intercom": .8, "latch": 1.9}
     sheet = Image.new("RGB", (1080, 2560))
-    for row, name in enumerate(("handle", "intercom", "latch")):
+    for row, name in enumerate(names):
         directory = folders[name]
         frame = round(sample_at[name]*30)
         tools.run("ffmpeg", hm.ffargs()+["-i", root / (name+".mp4"), "-vf", f"select=eq(n\\,{frame})", "-frames:v", 1, directory / "action-middle.png"], directory)
@@ -99,17 +126,21 @@ def main():
         demos[name] = dict(frames=90, duration_s=3, evidence=str(directory), action_sample_frame=frame,
                            sha256=hm.digest(root / (name+".mp4")), edge_row_column_check="PASS",
                            visual_review="PENDING; machine check is not alignment/text review")
-    sheet.crop((0, 0, 1080, 1920)).save(root / "frame-check-action.jpg", quality=95)
-    hm.save(root / "verification.json", dict(demos=demos, fixture=dict(
+    if names:
+        sheet.crop((0, 0, 1080, 1920)).save(root / "frame-check-action.jpg", quality=95)
+    result = dict(demos=demos, fixture=dict(directory=str(fixture),
         repeat_sha256=hm.digest(fixture / "first.mp4"), deterministic_repeat="identical MP4 SHA-256",
         combined_rotate_translate_fade_shake="PASS; decoded endpoint pixel and hidden-start pixel",
         hostile_path="PASS; pinned binaries and allowlisted child environment",
         narration_sidecar_splice="PASS; 60 frames, original mix reencoded, SRT bytes identical",
-        wrong_length="REJECTED before master output", real_legacy_adapter="PASS; 1151 frames, first cue starts at frame 1"),
-        imagegen_requests=7, imagegen_corrections=0, shared_engine_corrections=1,
+        wrong_length="REJECTED before master output", local_legacy_adapter="PASS; 90 frames, first cue starts at frame 1, repeated/grouped shot IDs",
+        external_legacy_adapter=reference_check),
         engineering_acceptance="PASS for checks above; visual review separately recorded",
-        market_acceptance="NOT_TESTED"))
-    print("PASS: deterministic bytes, compiled primitives, hostile PATH, splice audio/SRT, wrong-length rejection, real legacy adapter, decoded demo edges")
+        market_acceptance="NOT_TESTED")
+    hm.save(fixture / "verification.json", result)
+    hm.save(root / "verification.json", result)
+    print("PASS: deterministic bytes, compiled primitives, hostile PATH, splice audio/SRT, wrong-length rejection, local legacy adapter"
+          + (", decoded demo edges" if names else "") + f"; evidence: {fixture}")
 
 
 if __name__ == "__main__":

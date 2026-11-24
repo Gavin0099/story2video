@@ -1,8 +1,10 @@
 """Measure demo cue timing and bind final local delivery files. No service calls."""
 import array
+import argparse
 import importlib.metadata
 import math
 import platform
+from pathlib import Path
 import sys
 import wave
 
@@ -10,8 +12,12 @@ import hybrid_motion as hm
 
 
 def main():
-    tools = hm.Tools(hm.HERE / "tools.lock.json")
-    root = hm.OUTPUTS
+    cli = argparse.ArgumentParser(description=__doc__)
+    cli.add_argument("--demo-root", type=Path, default=hm.OUTPUTS)
+    cli.add_argument("--tools", type=Path, default=hm.HERE / "tools.lock.json")
+    args = cli.parse_args()
+    tools = hm.Tools(args.tools)
+    root = hm.output_path(args.demo_root)
     audio_checks = {}
     for name, expected in (("latch", 2.3), ("hybrid-demo", 9.3)):
         target = root / (name + "-audio-check.wav")
@@ -34,11 +40,15 @@ def main():
     code = list(p for p in hm.HERE.iterdir() if p.is_file())
     evidence = [p for p in root.rglob("*") if p.is_file() and p.name != "delivery-manifest.json"
                 and not any(part.startswith("pytest-") for part in p.parts)]
-    memory = [hm.REPO / "memory/01_active_task.md", hm.REPO / "memory/02_workflow.md"]
-    files = sorted(set(code + evidence + memory))
-    hm.save(root / "delivery-manifest.json", dict(base_git_sha="a4890685fdba78889f616b558dce930dfc049b7b",
+    memory = [hm.REPO / "memory" / name for name in (
+        "01_active_task.md", "02_workflow.md", "03_knowledge_base.md", "04_review_log.md")]
+    checks = [hm.OUTPUTS / name for name in ("mutation-review/results.json", "pytest-final-review.log",
+        "portable-review/verification.json", "configured-reference-review/verification.json")]
+    checks += list((hm.OUTPUTS / "mutation-review").glob("*.log"))
+    files = sorted(set(code + evidence + memory + [p for p in checks if p.is_file()]))
+    hm.save(root / "delivery-manifest.json", dict(base_git_sha="5253512d18ad15e7a4e3c7f8e84615b0012b077d",
         branch="codex/cluepause-motion-layer-20261124", committed=False,
-        note="Final local implementation/evidence binding; ImageGen originals are not reproducible from prompts alone.",
+        note="Uncommitted review fixes on the committed original delivery; ImageGen originals are not reproducible from prompts alone.",
         files={str(p.relative_to(hm.REPO)): dict(bytes=p.stat().st_size, sha256=hm.digest(p)) for p in files}))
     print(f"PASS: 330-frame master, audio cue timing, final manifest ({len(files)} files)")
 

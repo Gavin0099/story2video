@@ -5,6 +5,7 @@ import json
 import math
 from pathlib import Path
 import subprocess
+import tempfile
 
 import pytest
 
@@ -138,3 +139,112 @@ def test_legacy_adapter_preserves_groups_and_rejects_gaps(tmp_path):
     path.write_text(json.dumps(data))
     with pytest.raises(ValueError, match="contiguous"):
         hm.legacy_plan(path, tmp_path, {})
+
+
+@pytest.fixture
+def media_renderer(monkeypatch):
+    """Exercise parse -> stage -> production filtergraph -> H264 -> decode.
+
+    Only the output dimensions shrink for speed. No mocked tools, expressions,
+    encoder or staging, and no helper math supplies the expected measurements.
+    Evidence stays in the allowed output tree, including on assertion failure.
+    """
+    from PIL import Image, ImageDraw
+    monkeypatch.setattr(hm, "WIDTH", 256)
+    monkeypatch.setattr(hm, "HEIGHT", 256)
+    hm.OUTPUTS.mkdir(parents=True, exist_ok=True)
+    root = Path(tempfile.mkdtemp(prefix="media-test-", dir=hm.OUTPUTS))
+    tools = hm.Tools(hm.HERE / "tools.lock.json")
+    Image.new("RGB", (256, 256), "black").save(root / "plate.png")
+    for name, size, box in (("dot", (21, 21), (6, 6, 14, 14)),
+                            ("arm", (53, 21), (38, 6, 46, 14)),
+                            ("pivot", (21, 21), (8, 8, 12, 12))):
+        image = Image.new("RGBA", size)
+        ImageDraw.Draw(image).rectangle(box, fill="white")
+        image.save(root / f"{name}.png")
+
+    def render(layers, frames, samples):
+        hm.save(root / "spec.json", dict(version=1, frames=frames, background="plate.png", layers=layers))
+        hm.render(root / "spec.json", root / "render.mp4", tools)
+        images = {}
+        for n in samples:
+            path = root / f"frame-{n}.png"
+            tools.run("ffmpeg", hm.ffargs() + ["-i", root / "render.mp4", "-vf",
+                f"select=eq(n\\,{n})", "-frames:v", 1, path], root)
+            with Image.open(path) as image:
+                images[n] = image.convert("L")
+        return images
+    return render
+
+
+def media_layer(name, motions, anchor=(64, 64), image="dot", **extra):
+    return dict(id=name, image=f"{image}.png", size=[53 if image == "arm" else 21, 21],
+                pivot=[10, 10], anchor=list(anchor), motions=motions, **extra)
+
+
+def bright_center(image, box):
+    pixels = [(x, y) for y in range(box[1], box[3]) for x in range(box[0], box[2])
+              if image.getpixel((x, y)) > 120]
+    assert pixels, "Rendered marker disappeared"
+    return tuple(sum(p[axis] for p in pixels)/len(pixels) for axis in (0, 1))
+
+
+def test_rendered_pivot_invariance(media_renderer):
+    frames = media_renderer([media_layer("pivot", [dict(type="rotate", start_s=0, end_s=.4,
+        **{"from": 0, "to": 360})], image="pivot")], 13, [0, 3, 6, 9, 12])
+    for frame in frames.values():
+        # Quarter turns preserve the exact marker center, including the 90deg
+        # case that moved one pixel with the old even-sized staging canvas.
+        assert bright_center(frame, (50, 50, 80, 80)) == pytest.approx((64, 64), abs=.15)
+
+
+@pytest.mark.parametrize("easing,quarters", [
+    ("linear", (.25, .75)), ("smoothstep", (.15625, .84375)),
+    ("ease_in", (.0625, .5625)), ("ease_out", (.4375, .9375)),
+])
+def test_rendered_easing_intermediate(media_renderer, easing, quarters):
+    timing = dict(start_s=.2, end_s=1, easing=easing)
+    frames = media_renderer([
+        media_layer("slide", [dict(type="translate", path=[[0, 0], [128, 0]], **timing)], anchor=(24, 40)),
+        media_layer("turn", [dict(type="rotate", **{"from": 0, "to": 90}, **timing)],
+                    anchor=(128, 160), image="arm")], 37, [12, 24])
+    for n, fraction in zip((12, 24), quarters):
+        assert bright_center(frames[n], (0, 20, 200, 60)) == pytest.approx((24+128*fraction, 40), abs=.75)
+        angle = math.pi/2*fraction
+        assert bright_center(frames[n], (100, 140, 180, 220)) == pytest.approx(
+            (128+32*math.cos(angle), 160+32*math.sin(angle)), abs=1)
+
+
+def test_rendered_unequal_path_segments(media_renderer):
+    frames = media_renderer([media_layer("path", [dict(type="translate", start_s=.2, end_s=1,
+        path=[[0, 0], [0, 0], [24, 0], [24, 72]])])], 37, [12, 18, 24])
+    # 96px total: at 25% the short first segment is complete; 50/75%
+    # are 24/48px down the second segment. Equal time per segment fails.
+    for n, expected in ((12, (88, 64)), (18, (88, 88)), (24, (88, 112))):
+        assert bright_center(frames[n], (40, 40, 120, 140)) == pytest.approx(expected, abs=.75)
+
+
+def test_rendered_shake_intermediate(media_renderer):
+    frames = media_renderer([media_layer("shake", [dict(type="shake", start_s=.2, end_s=1,
+        amplitude=[20, 16], cycles=1)])], 37, [0, 6, 12, 18, 24, 30, 36])
+    expected = {0: (64, 64), 6: (64, 64), 12: (78.142, 64), 18: (64, 48),
+                24: (49.858, 64), 30: (64, 64), 36: (64, 64)}
+    for n, center in expected.items():
+        # overlay rounds down; sine values infinitesimally below zero can also
+        # land one pixel below the nominal integer. A 1px allowance is enough.
+        assert bright_center(frames[n], (30, 30, 100, 100)) == pytest.approx(center, abs=1.01)
+
+
+@pytest.mark.parametrize("kind", ["fade", "glow"])
+def test_rendered_opacity_timing(media_renderer, kind):
+    frames = media_renderer([media_layer(kind, [dict(type=kind, start_s=.2, end_s=1,
+        easing="ease_in", **{"from": .1, "to": .9})], opacity=.8,
+        glow_radius=3 if kind == "glow" else 0)], 37, [0, 6, 12, 24, 30, 36])
+    for n, opacity in ((0, .08), (6, .08), (12, .12), (24, .44), (30, .72), (36, .72)):
+        patch = frames[n].crop((62, 62, 67, 67))
+        mean = sum(patch.getdata())/25
+        assert mean == pytest.approx(255*opacity, abs=4), (kind, n, mean)
+    if kind == "glow":
+        # The staged halo is visible outside the original 9px marker and also
+        # follows the opacity clock, rather than staying at constant brightness.
+        assert frames[30].getpixel((70, 64)) > frames[12].getpixel((70, 64)) + 8

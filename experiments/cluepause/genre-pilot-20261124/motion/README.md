@@ -16,9 +16,11 @@ $out = 'artifacts/genre-pilot-20261124/motion'
 & $py -B "$code/hybrid_motion.py" splice "$out/hybrid-timeline.json" "$out/hybrid-new.mp4"
 ```
 
-Python needs Pillow (tested 12.0.0); math/parser tests need pytest. The existing render venv is read only: do not install into it. CLI help and parser/math tests use the standard library. FFmpeg/ffprobe are pinned by canonical absolute path, byte count and SHA-256 in `tools.lock.json`, verified before output roots and before every launch. On another machine, independently verify the binaries and update that local binding explicitly. Child processes have an allowlisted OS environment and no PATH lookup. All generated writes are restricted to this checkout's `artifacts/genre-pilot-20261124/motion/`; input assets can be read elsewhere. No shell or network calls exist in the module.
+Python needs Pillow (tested 12.0.0); tests need pytest and Pillow, including the rendered regression tests. The existing render venv is read only: do not install into it. CLI help and parser/math tests use the standard library. FFmpeg/ffprobe are pinned by canonical absolute path, byte count and SHA-256 in `tools.lock.json`, verified before output roots and before every launch. On another machine, independently verify the binaries and update that local binding explicitly; `verify_demo.py --tools <local-lock.json>` accepts a separate verified binding. Child processes have an allowlisted OS environment and no PATH lookup. All generated writes are restricted to this checkout's `artifacts/genre-pilot-20261124/motion/`; input assets can be read elsewhere. No shell or network calls exist in the module.
 
-`prepare_demo.py <original-generated-directory>` copies the seven original ImageGen PNGs into `raw/`, preserves their alpha, creates matching `layers/`, three shot JSON specs and a synthetic click. It refuses to overwrite a staged demonstration. The original filenames are in that script and `imagegen-requests.json`. Generate new imagery explicitly if the original PNGs are unavailable; do not pretend the prompts reproduce identical pixels. `build_preview.py` creates the still holds, local mix and montage after the three clips exist. `verify_demo.py` runs real-media checks and creates additional decoded action samples. It uses create-once output names; use a new version directory in code when deliberately repeating the entire experiment.
+`prepare_demo.py <original-generated-directory>` copies the seven original ImageGen PNGs into `raw/`, preserves their alpha, creates matching `layers/`, three shot JSON specs and a synthetic click. It refuses to overwrite a staged demonstration. The original filenames are in that script and `imagegen-requests.json`. Generate new imagery explicitly if the original PNGs are unavailable; do not pretend the prompts reproduce identical pixels. `build_preview.py` creates the still holds, local mix and montage after the three clips exist. `verify_demo.py` runs real-media checks and creates additional decoded action samples. Use `--demo-root artifacts/genre-pilot-20261124/motion/<version>` to verify rerendered clips without replacing old evidence. Each verification run creates a unique fixture directory and binds demo evidence by the clip's hash.
+
+`verify_demo.py --skip-demos` runs portable, synthetic local fixtures without generated demo assets or any external production timeline. It checks deterministic encoded bytes, combined primitives, original audio/SRT splice, wrong-length rejection and a legacy timeline with grouped/repeated shot IDs and its first cue at frame 1. An optional `--reference-media <media-directory>` also adapts that directory's `timeline.json` and `cuts/`, deriving the expected frame count from the supplied timeline. This check only reads the reference and writes its plan locally; it does not execute reference code.
 
 ## Shot contract
 
@@ -46,7 +48,7 @@ Example for a transparent 440×119 element. Paths are relative to the JSON file;
 
 Output is always opaque full-bleed 1080×1920, square pixels, 30 FPS H.264/yuv420p. `frames` is authoritative. Frame `n` samples time `n/30`; animations must end by `(frames-1)/30` to show their final state. The plate is scaled to cover and center-cropped, never fitted, boxed or stretched. Crop/reframe source assets first when a centered cover crop would cut off evidence. Elements require real alpha; flat backgrounds must be removed and inspected before rendering. Unknown fields, nonfinite values and invalid intervals fail closed.
 
-Coordinates are pixels, x right and y down. `size` is the resized element's dimensions; `pivot` is inside that resized element; `anchor` is the pivot's position on the final canvas. Layers composite in list order, last on top. The pivot is padded to the rotation canvas center without integer rounding. Static foreground layers can occlude moving parts; the latch example copies its original plate's housing pixels into a foreground alpha layer.
+Coordinates are pixels, x right and y down. `size` is the resized element's dimensions; `pivot` is inside that resized element; `anchor` is the pivot's position on the final canvas. Layers composite in list order, last on top. The pivot is padded to an odd-sized rotation canvas center without integer rounding, matching FFmpeg's `(size-1)/2` rotation center. Static foreground layers can occlude moving parts; the latch example copies its original plate's housing pixels into a foreground alpha layer.
 
 | Primitive | Motion fields | Meaning |
 | --- | --- | --- |
@@ -97,16 +99,30 @@ For **each key shot**, allow the initial attempt plus **at most two correction a
 
 Each render retains the staged plate/elements, filter graph, exact FFmpeg/ffprobe argv and results in `commands.jsonl`, full decode/probe, source SHA-256 bindings, receipt, and decoded start/middle/end PNGs in its uniquely named evidence directory. `verify_demo.py` adds action-middle PNGs and `frame-check-action.jpg`. Successful masters appear only after format and full-decode checks. Failures leave staging and logs, with no final output. Existing outputs are never overwritten. Sidecar copying can leave partial sidecars on filesystem failure; choose a new output name for recovery.
 
-After the preview and manual decoded-frame inspection, `audit_delivery.py` measures cue timing, checks the final montage and hashes final code, media and evidence into `delivery-manifest.json`. Re-running it refreshes that manifest and its diagnostic WAVs/logs; it does not replace the reviewed clips. `visual-review.json` is the separately recorded agent inspection, not an automatically inferred visual pass.
+After the preview and manual decoded-frame inspection, `audit_delivery.py` measures cue timing, checks the final montage and hashes final code, media and evidence into `delivery-manifest.json`. It accepts the same `--demo-root` and `--tools` options for versioned delivery. Re-running it refreshes that manifest and its diagnostic WAVs/logs; it does not replace the reviewed clips. `visual-review.json` is the separately recorded agent inspection, not an automatically inferred visual pass.
 
 Determinism is demonstrated with identical encoded bytes on this pinned local toolchain; cross-platform/encoder-version byte identity is not claimed. No 3D perspective, relighting, moving reflections, deformation, hand/prop interaction, automatic matte/registration or full-film editorial validation. Shadows/glow are baked/static in prop space. Transparent margins can clip a large glow; inspect the halo before finalizing. The element remains the same bitmap; rotation interpolation/compression change sampled pixels. The source plates are 941×1672, upscaled to delivery resolution. The visible sliding-bolt study illustrates retraction and needs final prop/lock continuity review in H01.
 
 Run local tests explicitly because the repo's default pytest discovery targets only `tests/`:
 
 ```powershell
-uv run --locked pytest tests experiments/cluepause/genre-pilot-20261124/motion/test_hybrid_motion.py `
-  --basetemp=artifacts/genre-pilot-20261124/motion/pytest-all-tmp
+uv run --locked pytest --basetemp=artifacts/genre-pilot-20261124/motion/pytest-core-tmp
+$env:PYTHONPATH='D:/s2v-motion/.venv/Lib/site-packages'
+& $py -B -m pytest "$code/test_hybrid_motion.py" `
+  --basetemp=artifacts/genre-pilot-20261124/motion/pytest-motion-tmp `
+  -o cache_dir=artifacts/genre-pilot-20261124/motion/pytest-cache
 & $py -B "$code/verify_demo.py"
 ```
+
+The rendered tests invoke the real `render()` path on 256×256 synthetic plates,
+then measure decoded H.264 pixels at intermediate times. They cover quarter-turn
+pivot invariance, translation and rotation easing at 25%/75%, unequal path
+segments (including a repeated point), nonzero shake, and fade/glow opacity
+before, during and after their intervals. Run them with a Python environment
+containing both Pillow and pytest. This checkout can use the read-only render
+Python with `$env:PYTHONPATH='D:/s2v-motion/.venv/Lib/site-packages'` to load
+workspace pytest; run the core tests separately with `uv run --locked pytest`
+on the project's supported Python 3.13. No render dependencies are installed
+into the reference checkout.
 
 Engineering checks and visual sample inspection do not establish human appeal, silent-viewer comprehension, rights clearance, the H01 story/genre gates, or market acceptance. No upload, commit, public action or modification to `D:/story2video` is part of this work.

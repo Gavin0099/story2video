@@ -301,7 +301,9 @@ def stage(spec, directory):
         half = math.ceil(radius + layer["glow_radius"] * 3 + 4)
         if half > 4096:
             raise ValueError("Padded layer too large")
-        canvas = Image.new("RGBA", (half * 2, half * 2))
+        # FFmpeg rotate centers on ((width-1)/2, (height-1)/2). An odd
+        # canvas puts that center at the staged pivot pixel (half, half).
+        canvas = Image.new("RGBA", (half * 2 + 1, half * 2 + 1))
         # Subpixel pivot is preserved by an affine translation, rather than rounded paste.
         canvas = image.transform(canvas.size, Image.Transform.AFFINE,
                                  (1, 0, px-half, 0, 1, py-half), Image.Resampling.BICUBIC)
