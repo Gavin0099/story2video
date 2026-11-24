@@ -1,0 +1,30 @@
+{
+  "version": "h01-v2.1-r1",
+  "fps": 30,
+  "frames": 1170,
+  "script_sha256": "83df72c03352d74ceb6977bcc665f0d6a715e37fae0ad10b81f6e1e8720c7bce",
+  "states": [
+    {"start_frame": 0, "end_frame": 840, "state": "standby", "light": "steady green, awaiting first reply"},
+    {"start_frame": 840, "end_frame": 886, "state": "listening", "light": "steady green, live input"},
+    {"start_frame": 886, "end_frame": 1170, "state": "saved", "light": "steady green, retained reply/playback"}
+  ],
+  "off": "No scripted off interval. Out of frame is unobservable, not off.",
+  "cough_pulses": [[540, 546], [549, 555]],
+  "registrations": {
+    "mother-nearby": [752, 900, 4, 6],
+    "covered": [961, 747, 5, 10],
+    "flinch": [961, 747, 5, 10],
+    "hand-slipped": [961, 747, 5, 10],
+    "question-reaction": [961, 747, 5, 10],
+    "listening-hold": [961, 747, 5, 10],
+    "nia-reply": [961, 747, 5, 10],
+    "device-rules": [536, 905, 18, 19],
+    "device-consent": [536, 905, 18, 19],
+    "device-neutral": [536, 905, 18, 19],
+    "device-cough": [536, 905, 18, 19],
+    "device-input-wait": [536, 905, 18, 19],
+    "device-input-prefix": [536, 905, 18, 19],
+    "device-input-full": [536, 905, 18, 19],
+    "device-saved": [536, 905, 18, 19]
+  }
+}

@@ -2,6 +2,8 @@
 
 日期：2026-11-24（Asia/Taipei）；基準 HEAD `e189e294a09120588006885ddbe40ac837928c34`。成片識別見 [freeze.md](freeze.md)。**探索紀錄，非正式驗收；HUMAN_TEST_PENDING。** 沒有生成、修圖、重渲染或更動凍結成片。
 
+本頁原有觀察保留為原始凍結 A/B 的結果；本輪僅燈號的 **r1 前後比對**見文末。原片 C2／T3 的歷史失敗不抹除，r1 只對已驗證的這兩項變更分類。
+
 ## 方法與證據範圍
 
 從 repo 根目錄執行：
@@ -71,3 +73,51 @@ python -B experiments/cluepause/genre-pilot-20261124/h01-viewer-gate/temporal_qa
 市場：**NOT_TESTED / HUMAN_TEST_PENDING**。沒有招募、受試者、觀看數據或正式品質分數。依 [viewer-protocol.md](viewer-protocol.md) 可另行執行探索盲測，不能據本報告宣稱市場接受或可公開。
 
 本次只增文件及本機 QA／分派腳本，沒有改 `src/story2video/`、`video/`、Episode、SQLite 或治理契約；README 的 pytest/npm 全套在本次未重跑，不援用歷史 PASS 冒充本次結果。執行命令、範圍與最終靜態檢查另記於 [freeze.md](freeze.md) 及本次交付結果。
+
+## r1 — 僅聆聽燈的前後比對（無損 MASTER 歷史驗證）
+
+本節的像素完全相同、outside diff zero 及精確合成 equality，均指保留的 r1 無損 MASTER。手機測試使用另一組有損 r1 DELIVERY；其燈號與 outside SSIM／PSNR 驗證見末節，不把母檔的 zero-diff 結論套用到交付檔。
+
+2026-11-24（Asia/Taipei）；本輪基準 HEAD `695d7db4aaee1790a71ceff6e26afa124519be41`。新片雜湊及重跑命令見 [freeze.md](freeze.md) r1 節。共用 [燈號表](light-timeline.md) 的 standby 是等待第一次回覆，listening 是接收 Nia 的回覆，saved 沿用保存後的綠燈；無腳本支持的 off 區間。狀態與脈衝時序兩版一致，不以 B 自己的咳嗽層當作狀態來源。
+
+| finding | 原始凍結 A/B（保留歷史） | r1 實測 | 僅 r1 的分類 |
+| --- | --- | --- | --- |
+| C2 | 兩版 21.6–28 秒黑暗，26–28 秒 hold 與腳本明定狀態矛盾。 | 兩版 f648–839 全部亮；f780–839 的 hold 60/60 格亮。f840 起接收輸入時仍亮，沒有在揭露前突然才啟動。 | **RESOLVED / verified light state**；只解除這一項 breaks story logic。 |
+| T3 | B 在兩次咳嗽脈衝後 f555–599 黑暗；A 保持亮。 | 兩版 f555–599 全部回到相同 standby；兩次脈衝時間共用，燈芯不熄滅。 | **RESOLVED / verified standby return**。 |
+| 其他已知問題 | C1 換形、C3 門閂厚度、C4 髮型、T1 手落下 pose cut、T2 抵門／門板變形、T4 zoom reset、T5 靜嘴、T6 完整拒絕句五格。 | 所有非燈區像素與原片完全相同；上述動作／讀字與構圖均保留。 | **原分類不變**，未修復、未豁免。 |
+
+最終 `revise_light.py verify` exit 0。每版原尺寸全片 1,170 格均檢查全部 decoded Y/U/V 樣本，另保存 17–30 秒 `[f510,f900)` 每個可見燈格的 96×96 crop；該密集窗不是跳格抽樣。每版共 658 個可見燈格、512 個鏡外格。燈芯 Y 最小／最大 158/183，Cb 130/144，Cr 32/57，兩版範圍相同；所有可見格符合亮青綠色門檻，精確預期合成 equality mismatch **0**。共用光暈脈衝的首格是 fade 常亮端點，定義見時間表；不以較亮脈衝取代聆聽狀態。
+
+每格只遮住註冊燈孔和有限 Gaussian halo 的偶數對齊 ROI；遮罩隨原 zoompan 移動，B flinch 隨原 mesh 位移。**燈 ROI 外 changed Y/U/V samples：A=0、B=0**；兩版沒有燈可見的 512 格整格 raw byte-identical。這是全片原生像素證據，不是只看 PSNR 或低解析度縮圖；RGB 播放器的色彩轉換不屬於此量測。TV range／SAR metadata 已恢復為原片值。各版 `qa/frame-checks.csv` 保留每格狀態、pulse、shot、燈位與 outside difference；密集 crops 與 `light-sequence.png` 可核對新燈罩、鏡頭邊界及 B flinch 的位置。兩版序列檢視未見新增燈號熄滅或錯位；燈區外不可能由本次修訂產生新的像素／時序動作變化。
+
+最終 `temporal_qa.py --r1` exit 0：兩版各 1,170 格、39 個逐秒序列頁、全數 PTS、每語言 20 字幕 cues、15 voice events 與 5 個指定咳嗽／尾詞事件對位 PASS。r1 前後 SHA-256 不變，原音軌 AAC packet hash 與全部四個 SRT bytes 完全相同。未把靜態序列或訊號比對當作真人 1× 同步視聽；無損 H.264 profile 的手機播放相容性未測，31–39 秒燈在鏡外也不能宣稱可見 saved 驗收。
+
+工程：局部燈號與差分 PASS；整片 continuity FAIL / action PARTIAL 的其餘結論維持。市場：**NOT_TESTED / HUMAN_TEST_PENDING**。沒有外部動作或新的正式品質／發布授權。
+
+## r1 DELIVERY — 有損編碼後的逐格驗證
+
+2026-11-24（Asia/Taipei）；基準 HEAD `695d7db4aaee1790a71ceff6e26afa124519be41`。本節只適用於 `h01-v2.1-r1-delivery.mp4`，是 [viewer-protocol.md](viewer-protocol.md) 指定的手機測試檔。原無損 `h01-v2.1-r1.mp4` 保留為 MASTER；其 zero-diff 證據維持歷史效力。交付檔的大小、完整 SHA-256、原編碼參數來源與音訊／字幕 hash 見 [freeze.md](freeze.md) DELIVERY 節。
+
+`delivery_encode.py verify` 使用原 `revise_light.py` 的 `position`、`state_at`、`pulse_at`、`opacity_at` 與同一燈芯取樣方法，逐格解碼 MASTER 及 DELIVERY 的原生 YUV420；燈罩／有限光暈 ROI 邊界與原 `masks` 的公式完全相同，沒有擴大燈號取樣範圍。**原亮燈偵測門檻不放寬**：Y>120、70<U<170、V<100。另比較對應 MASTER 中心值與整個 ROI，用來量化有損偏差。最終中心絕對誤差容差為 **Y≤12、U/V≤24 個 8-bit code values**，每平面 ROI MAE≤6；4:2:0 色度的單一取樣點與亮度使用不同容差。時序容差 **0 格**，沒有略過切鏡或脈衝邊界。
+
+初次 `verify` 使用 Y/U/V 各≤12，於 A f45 的 `[3,9,17]` 失敗。隨後 `diagnose-light` 完整掃描兩版：A f45、705、765、825 與 B f45、658、705、765、825 超過該中心差分門檻；沒有任何原亮燈門檻失敗，亦無 ROI MAE 超標。診斷保留在 `delivery-qa/diagnostic-tolerance-12/`。因此保留 Y≤12、將兩個 subsampled 色度通道明訂為≤24，沒有改圖、重編影片或放寬亮燈分類。可用 `delivery_encode.py diagnose-light --center-tolerance 12 12 12` 重現舊容差結果；這段診斷只是像素差分門檻修正，不是把第一次失敗改稱通過。
+
+| DELIVERY | 全片 / 可見 / 鏡外格 | center Y/U/V min–max | 相對 MASTER 的最大中心差 Y/U/V | 每格 ROI MAE 最大值 Y/U/V |
+| --- | --- | --- | --- | --- |
+| A | 1,170 / 658 / 512 | 156–184 / 127–146 / 28–66 | 7 / 10 / 17 | 2.310057 / 1.315476 / 1.886905 |
+| B | 1,170 / 658 / 512 | 158–184 / 127–145 / 28–66 | 7 / 10 / 17 | 2.324425 / 1.315476 / 2.020000 |
+
+最終原偵測門檻、中心容差、ROI MAE **各 0 失敗**。JSON 時間表的 standby f0–839、listening f840–885、saved f886–1169 均按對應格評估；可見格維持青綠常亮，f648–839 與 f780–839 hold 未新增暗格。兩次 `[f540,f546)`／`[f549,f555)` 脈衝及其回待機的光暈也納入逐格 ROI 與 MASTER 的比較。三個狀態本身都畫成綠燈，狀態名稱來自時間表，不能由同色燈芯獨立辨識；脈衝像素容許上述有損誤差，不宣稱合成 byte equality。512 個鏡外格標為 unobservable，尤其 31–39 秒不能宣稱燈可見。
+
+outside 比較基準是各自的**原始凍結交付檔**，不是 r1 MASTER。每個鏡頭取全部追蹤燈罩＋有限光暈 ROI 的最小偶數對齊聯集矩形，排除該 envelope 後，以最多四個互不重疊的外區矩形量測；不見燈的鏡頭使用全畫面。每格至少保留原生 Y/U/V 樣本的 **99.820602%**，每鏡頭的排除座標、外區矩形與逐格結果均存證。聯集矩形較每格瞬時 ROI 略保守，這不是將所有瞬時 ROI 外像素都納入的宣稱。
+
+SSIM 使用 FFmpeg 每個外區矩形的原生 8×8、stride 4 視窗，只彙總完全位於矩形內的有效視窗；跨矩形邊界的視窗不計。按各 Y/U/V 平面的有效視窗數加權成每格 SSIM。PSNR 按同一外區所有 Y/U/V 樣本數加權 MSE，再用 `10*log10(255²/MSE)`；FFmpeg 的逐平面 MSE log 取至 0.01，因此下表 PSNR 報三位小數。**沒有把燈區填成相同黑色再把它計入分數**。所有 mean 均是 1,170 個逐格分數的算術平均，PSNR mean 不是先合併全片 MSE 再換算。
+
+| DELIVERY | outside SSIM min / mean | outside PSNR min / mean（dB） |
+| --- | --- | --- |
+| A | 0.991071 / 0.994804 | 47.819 / 51.198 |
+| B | 0.991019 / 0.994744 | 47.827 / 51.148 |
+
+有損 CRF 18 會再次量化原片已解碼的像素；預測、轉換、量化與去塊濾波也可能將燈附近誤差傳到 ROI 外。因此 DELIVERY 的 outside exact zero diff **不適用／不預期**，不把上表當作像素不變或主觀無差異的證明。影格數、PTS、原片實際 keyframes、音軌與字幕 hash 均通過，可支持時序保持；其他連續性與 partial action 問題仍保留，不由高 SSIM 自動解除。
+
+工程：最終 `python -B experiments/cluepause/genre-pilot-20261124/h01-viewer-gate/delivery_encode.py verify` exit 0，逐格資料位於 `artifacts/genre-pilot-20261124/h01-v2.1-r1/delivery-qa/`。未測實體手機、字幕閱讀與真人 1× 同步視聽；未重跑 README 的 pytest/npm 全套，因未改引擎、video 或治理。市場：**NOT_TESTED / HUMAN_TEST_PENDING**。沒有招募、分派、上傳或公開動作。

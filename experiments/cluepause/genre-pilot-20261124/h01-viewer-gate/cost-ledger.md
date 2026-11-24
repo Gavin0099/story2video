@@ -1,6 +1,6 @@
 # H01 製作成本帳
 
-2026-11-24；**EXPLORATORY ONLY / HUMAN_TEST_PENDING**。本帳不宣稱貨幣成本、ROI 或正式驗收。當前基準 HEAD `e189e294a09120588006885ddbe40ac837928c34`；兩版凍結，這次只盤點、抽幀與寫文件，沒有追加製作。
+2026-11-24；**EXPLORATORY ONLY / HUMAN_TEST_PENDING**。本帳不宣稱貨幣成本、ROI 或正式驗收。原始盤點基準 HEAD `e189e294a09120588006885ddbe40ac837928c34`；兩版凍結，原始盤點只抽幀與寫文件。後續 r1 無損 MASTER 與 DELIVERY 製作另記於下方。
 
 ## Integrator-collected measured data（原值照錄）
 
@@ -19,9 +19,11 @@ Measured from Codex rollout token_count events (total_token_usage at session end
 
 Not measured: human intervention time (owner and integrator), A-only vs B-only split, ImageGen share of the weekly limit.
 
-以上是使用者提供的 integrator-collected 資料，來源定義為 session 結尾累計用量及首末 rollout 時間；本次沒有重新讀取 rollout 來獨立稽核。cached input 是 input 的子集，不能再加一次當成額外 token。wall clock 包含工作等待／工具等時間，不等於模型運算時間或人時。這次 viewer-gate 文件工作的 token／時間不在該表中。
+以上是使用者提供的 integrator-collected 資料，來源定義為 session 結尾累計用量及首末 rollout 時間；本次沒有重新讀取 rollout 來獨立稽核。cached input 是 input 的子集，不能再加一次當成額外 token。wall clock 包含工作等待／工具等時間，不等於模型運算時間或人時。viewer-gate 文件工作及後續修訂的實測另列於下方本輪表格。
 
 ## Derived 算術（不是額外實測）
+
+以下只加總上表原先八個 jobs，不包含下方 viewer-gate 與 r1 jobs。
 
 - Input：2,931,687 + 598,821 + 2,188,778 + 407,413 + 6,771,505 + 243,502 + 1,520,089 + 379,819 = **15,041,614**。
 - Cached input：2,852,608 + 542,208 + 2,110,720 + 363,520 + 6,583,040 + 206,592 + 1,417,472 + 331,392 = **14,407,552**。
@@ -82,3 +84,47 @@ Not measured: human intervention time (owner and integrator), A-only vs B-only s
 這次可以保留「這一組探索實作花了哪些可量測的 Codex 用量、出了哪些重試」的基線，日後配合真人逐題結果，決定是否值得為這個故事安排下一個更受控的小測試。現在真人資料為空，沒有任何 ROI 結論。
 
 這次不能估算 B 相對 A 的邊際成本或每一分喜好提升的成本；不能隔離 animation 效果（B 兩個關鍵動作未完成、連續性有 confound）；不能比較尚未製作的 L3、證明 tier 普遍性、外推廣告收入／訂閱／公開留存或長期產能。既有 90 分 rule 不變；不以腳本分數、/30 問卷或技術 encode PASS 取代好影片與市場證據。
+
+## 本輪 integrator-collected measured data（原值照錄）
+
+Measured from Codex rollout token_count events (total_token_usage at session end) and rollout first/last timestamps, 2026-11-24 (UTC wall clock). Integrator-collected Codex jobs only；以下六列由使用者提供，原值照錄，本次未獨立重讀 rollout 稽核。
+
+| job | wall clock | input | cached input | output |
+| --- | --- | --- | --- | --- |
+| viewer-gate package (freeze, temporal QA, protocol, ledger, asset spec) | 13:31:30-13:54:59 (23.5 min) | 4,537,656 | 4,227,712 | 39,236 |
+| viewer-gate review (REQUEST_CHANGES: public blinding key) | 13:55:34-14:00:42 (5.1 min) | 795,666 | 722,432 | 9,196 |
+| blinding-key fix | 14:01:11-14:08:14 (7.0 min) | 687,452 | 646,272 | 15,855 |
+| r1 light fix, lossless masters | 14:10:24-14:34:49 (24.4 min) | 5,856,798 | 5,751,168 | 40,304 |
+| r1 delivery encodes | 14:35:25-14:49:01 (13.6 min) | 1,665,846 | 1,600,384 | 25,589 |
+| r1 light review (APPROVE) | 14:49:35-14:56:40 (7.1 min) | 1,539,487 | 1,436,288 | 10,231 |
+
+Human intervention time（Owner / integrator）仍為 **NOT MEASURED**。cached input 是 input 的子集，不另加；UTC wall clock 包含工具與等待時間，不代表人時。
+
+### Derived — 一次燈號修訂與原始 A+B render 比較
+
+一次燈號修訂、沒有新增圖片生成，包含無損 MASTER 與其後 DELIVERY 的成本代理量約等於原始 A+B render：
+
+- Input：5,856,798 + 1,665,846 = **7,522,644**；cached input：5,751,168 + 1,600,384 = **7,351,552**（已包含在 input）。
+- Output：40,304 + 25,589 = **65,893**；input + output：7,522,644 + 65,893 = **7,588,537**。
+- 原始 A+B render 的 input + output：6,771,505 + 65,452 = **6,836,957**；7,588,537 / 6,836,957 = **約 1.11 倍**（約多 11.0%）。
+- 表列四捨五入 wall clock：24.4 + 13.6 = **38.0 min**，原始 A+B 為 **35.0 min**；38.0 / 35.0 = **約 1.09 倍**。這是兩個 job 耗時相加，不含 job 間隔。
+
+以上為 **derived 算術**，比較兩邊的製作 jobs；不含各自 review、viewer-gate 文件包或 blinding-key 修正，不能視為完整輪次成本、貨幣價格或人工工時。
+
+## 2026-11-24 — H01 v2.1-r1 聆聽燈修訂 job
+
+Owner 範圍：只修正兩版共用燈號；不生成圖片、不改聲音／字幕／其他影像，不做外部動作。基準 Git HEAD `695d7db4aaee1790a71ceff6e26afa124519be41`；本輪未提交。腳本、成片與驗證識別見 [freeze.md](freeze.md) 的 r1 節。
+
+| 本輪項目 | 數值／狀態 |
+| --- | --- |
+| Codex tokens / UTC job 起訖與 wall clock | integrator-collected 實測見上表的 lossless masters、delivery encodes 與 light review 三列；製作兩個 jobs 的 token 加總見 Derived。 |
+| 人工介入時間、貨幣費用 | **NOT MEASURED**；不以檔案時間或工具等待推算。 |
+| ImageGen / TTS / paid AI request | 0；全部沿用既有素材及音軌。 |
+| 本機完整影片 encode | 4 次成功＝2 次未採用純色燈 draft + 2 次最終燈罩紋理 r1；不是 4 部測試影片。 |
+| 最終 metadata stream-copy remux | 2 次成功；恢復原片 TV range 與 1:1 SAR 標記，不新增影像／音訊 encode。可重跑 renderer 已帶相同 bitstream metadata 設定。 |
+| 無損 MASTER | A r1、B r1 共 2 支 lossless masters；H.264 無損影像 encode，AAC packet stream copy，各 2 個原字幕 sidecars 的 byte copy。 |
+| 後續 DELIVERY job | **52 次 shot encodes（26 A + 26 B）及 2 次 final muxes**；產出 2 支供手機播放的 H.264 High / L4.0、CRF 18 DELIVERY，AAC stream copy。無損 MASTER 保留；真人測試使用 DELIVERY，規格及驗證見 [freeze.md](freeze.md) 的 r1 DELIVERY 節；實體手機播放尚未驗證。 |
+| A-only / B-only tokens 或成本拆分 | **NOT MEASURED**；共用同一 job，不平均分攤。 |
+| 上傳／公開／YouTube 操作 | 0。 |
+
+未採用 draft 保留於 gitignored `artifacts/genre-pilot-20261124/h01-light-draft-01/`，不能供真人測試。該版逐格差分已通過，但視覺檢查發現特寫燈罩被純色覆蓋；改重用既有燈罩紋理後重新編碼兩版。這是確定性本機修訂，沒有新增 ImageGen request。最終版第一次 verify 因舊純色驗證條件 `Cb < 135` 在 A f21 中止；實測該燈芯 Y/Cb/Cr 為 177/137/38，仍為亮青綠色。改用明定的亮度／色度範圍並保留整格預期合成 equality，再重跑全部驗證；不是隱藏渲染失敗或新增圖片。最終結果見時序 QA 與 freeze；QA 抽幀不計入 encode 數。

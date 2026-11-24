@@ -68,7 +68,17 @@ def stamp(s):
     return int(h) * 3600 + int(m) * 60 + float(rest.replace(",", "."))
 
 
-def main():
+def main(revision=False):
+    global OUT
+    cut_media, basename, expected = MEDIA, "h01-v2.1", FROZEN
+    if revision:
+        cut_media = MEDIA.parent / "h01-v2.1-r1"
+        basename = "h01-v2.1-r1"
+        OUT = cut_media / "temporal-qa"
+        light = read(cut_media / "light-measurements.json")
+        expected = {**FROZEN, **{cut: light["cuts"][cut]["sha256"] for cut in ("A", "B")}}
+        for cut in ("A", "B"):
+            assert digest(MEDIA / cut / "h01-v2.1.mp4") == FROZEN[cut]
     OUT.mkdir(parents=True, exist_ok=True)
     lock = read(PILOT / "motion/tools.lock.json")
     tools = {}
@@ -90,9 +100,9 @@ def main():
     assert full[-len(tail):] == tail
     _, cough = wav(MEDIA / "shared/cough.wav")
     for cut in ("A", "B"):
-        clip = MEDIA / cut / "h01-v2.1.mp4"
+        clip = cut_media / cut / f"{basename}.mp4"
         initial_hash = digest(clip)
-        assert initial_hash == FROZEN[cut], "Frozen master differs; do not proceed"
+        assert initial_hash == expected[cut], "Selected master differs; do not proceed"
         dest = OUT / cut
         frames = dest / "frames"
         pages = dest / "sequence"
@@ -142,7 +152,7 @@ def main():
             checks.append({"event":key, "at_s":at, "decoded_master_source_correlation":corr})
         captions = {}
         for lang, column in [("en", "en"), ("zh-Hant", "zh")]:
-            path = MEDIA / cut / f"h01-v2.1.{lang}.srt"
+            path = cut_media / cut / f"{basename}.{lang}.srt"
             assert digest(path) == FROZEN[lang], "Frozen captions differ"
             blocks = path.read_text(encoding="utf-8-sig").strip().split("\n\n")
             assert len(blocks) == len(timeline["cues"]) == 20
@@ -184,8 +194,11 @@ def main():
         logs.append({"path":path.relative_to(REPO).as_posix(), "entries":len(entries), "keys":keys})
     summary["existing_command_logs"] = logs
     save(OUT / "measurements.json", summary)
-    print("Frozen inputs unchanged; measurements.json written; no render invoked.")
+    print("Selected cuts unchanged; measurements.json written; no render invoked.")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--r1", action="store_true", help="QA light-only r1 cuts in a new evidence folder")
+    main(revision=parser.parse_args().r1)
