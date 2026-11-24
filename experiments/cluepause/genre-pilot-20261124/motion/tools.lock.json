@@ -1,0 +1,12 @@
+{
+  "ffmpeg": {
+    "path": "D:\\story2video\\artifacts\\render-tools\\verified\\ffmpeg-9.1-essentials_build\\bin\\ffmpeg.exe",
+    "bytes": 110590976,
+    "sha256": "ed8f66cb877087a96f5bbb40a2944f0e764f2ad8870d5cb647360d912e62bc07"
+  },
+  "ffprobe": {
+    "path": "D:\\story2video\\artifacts\\render-tools\\verified\\ffmpeg-9.1-essentials_build\\bin\\ffprobe.exe",
+    "bytes": 110374912,
+    "sha256": "df0199f606faa88e9ad192732a7c3987acfb647663534c297772e17730611a08"
+  }
+}
