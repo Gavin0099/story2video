@@ -40,4 +40,4 @@
 - Episode 03、07 第二輪編輯複審各 86／100。兩篇仍待改寫與首次分段盲評。10 的兩版原始試讀回覆保存在 PR #5。
 - 按 `experiments/shorts-series/README.md` 紀錄首輪 12 支的製作資料，正式發布後填 D7／D28。
 
-- CluePause release reached 20 Studio-verified public Shorts. <!-- memory_record_projection:active-task-summary:4907ff862fb0bccd2dd5949fed20b6a598075a2b9ee704ad0c2c5f55ecb50aa9 -->
+- CluePause P0 覆核 29 支時間碼與舊 20 支首日基準，新 9 支首日數據另補。 <!-- memory_record_projection:active-task-summary:3fc2594cf61118b385f099e7d332f05d657d65e5e05625b70a4ec8be87f715df -->
