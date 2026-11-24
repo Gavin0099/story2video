@@ -1,6 +1,6 @@
 # CluePause D-a：時間間隔、反轉候選分類與資料缺口
 
-本次授權限資料與分析，以 PR #19 head `a5be360edfbb2b012ae5e373d6a5c01315f1b8f6` 為基底，分支 `codex/cluepause-da-20261124`。輸入為 [首日與時間碼主表](../performance-p0-20261124/first-24h-and-timing.csv) 和 [其他時窗表](../performance-p0-20261124/other-windows.csv)，各 29 列（舊 20、新 9）。既有 CSV、假設和 README 結論維持原樣。本目錄沒有品質分數、門檻或發布判定，未操作已公開影片，未 commit。
+本次授權限資料與分析，以 PR #19 head `a5be360edfbb2b012ae5e373d6a5c01315f1b8f6` 為基底，分支 `codex/cluepause-da-20261124`。輸入為 [首日與時間碼主表](../performance-p0-20261124/first-24h-and-timing.csv) 和 [其他時窗表](../performance-p0-20261124/other-windows.csv)，各 29 列（舊 20、新 9）。既有 CSV、假設和 README 結論維持原樣。本目錄沒有品質分數、門檻或發布判定，未操作已公開影片。
 
 ## 交付與定義
 
