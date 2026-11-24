@@ -1,5 +1,27 @@
 # Genre pilot production — 2026-11-24
 
+## Private upload attempt — blocked before Studio access
+
+2026-11-24 (Asia/Taipei), Owner authorized the three rendered genre pilots for **PRIVATE only** uploads to CluePause (`@CluePause`, `UCG_nXXBzgg54w2zhkZ33Row`), conditional on Studio quota checks, using the already signed-in Chrome plugin session. **0 uploads and 0 upload attempts.** Browser runtime setup failed twice because `C:/Users/daish/.codex/plugins/cache/openai-bundled/browser/26.1106.51428/scripts/browser-service.mjs` is missing; a read-only `Test-Path` also returned `False`. No Studio tab could be inspected. This is a local browser runtime failure, not an observed YouTube quota refusal. No login, account/channel setting, visibility, schedule, playlist, comment or external video action occurred. No commit or push was made.
+
+[upload.json](upload.json) records the authorization, exact error, local metadata drafts and hashes. All remote result fields are null. Based on the previous publication's `master_sha256` bindings and `engineering.md` distinction between masters, selectable-track copies and burned review copies, the prepared upload candidates are the **plain masters**, with English and Traditional Chinese SRTs uploaded separately. Both MP4 variants and both final SRTs for each pilot were hashed: **12/12 match** the manifest referenced above; the three `-cc.mp4` hashes also match this document's delivery table. Prepared settings follow the earlier uploads: English (United States) primary metadata, Traditional Chinese title/description translation, both selectable caption tracks, AI/synthetic disclosure **Yes**, audience **not made for kids**, **Private** visibility. Metadata marks each story as fiction and adds no links or hashtags. These are prepared values, not saved Studio values; script rights and human/genre gates retain their earlier pending status.
+
+Engineering verification at Git SHA `da4bb2cb1abba65baf94e454707efb61f03fd8f6`:
+
+| Command | Result |
+| --- | --- |
+| `python.exe -B -X utf8 artifacts/genre-pilot-20261124/upload-preflight.py` | exit 0; 12 matched hashes, three bilingual metadata drafts, zero upload attempts |
+| `uv sync --locked` | exit 0 |
+| `uv run --locked pytest --basetemp=D:/s2v-gp/artifacts/genre-pilot-20261124/upload-pytest-tmp` | exit 0; 61 passed in 4.51 s; one pytest-cache permission warning |
+| `npm.cmd ci` in `video/` | initial exit -4048: default user npm cache EPERM; following typecheck exit 1 because `tsc` was unavailable |
+| `npm.cmd ci --offline` in `video/`, `npm_config_cache=D:/s2v-gp/artifacts/npm-cache` | exit 0; existing Node 24.13.0 versus required Node 22 warning |
+| `npm.cmd run typecheck` after the workspace-cache install | exit 0 |
+| `python.exe -B -X utf8 artifacts/genre-pilot-20261124/verify-delivery.py` | exit 0; three pilots, 33 bound files consistent |
+
+The Python executable above is `D:/story2video/artifacts/python/cpython-3.13-windows-x86_64-none/python.exe`; uv is `D:/story2video/artifacts/tooling/bin/uv.exe`. Exact environment and initial commands are in [upload-acceptance.ps1](../../../artifacts/genre-pilot-20261124/upload-acceptance.ps1); all initial failures and successful follow-up logs are retained as `artifacts/genre-pilot-20261124/upload-*.log`. No application, renderer, Episode schema or governance source changed.
+
+**Unverified:** signed-in channel, daily quota/verification warnings, remote duplicate/draft state, video IDs, saved Private visibility, metadata translations, caption tracks, AI disclosure, audience, processing and Studio playback. **Market acceptance:** all three remain `HUMAN_TEST_PENDING`; no public or market result is claimed. Resumption requires repairing/reinstalling the Browser plugin through the plugin UI and reconnecting the existing Chrome session, then checking channel, duplicates and quota before any upload.
+
 **Resumed outcome: 3/3 local pilots rendered; runtime blocker resolved. HUMAN_TEST_PENDING for all three. No commit.**
 
 The added base-interpreter access allows the existing read-only render-venv to start. The exact old preflight now imports the packages but exits 1 only because `kokoro_onnx` has no `__version__` attribute. A corrected metadata-based preflight exits 0: Python **3.12.10**, kokoro-onnx **0.6.1**, onnxruntime **1.26.0**, numpy **2.5.5**. A real local Kokoro test produced **56,832 samples at 24 kHz**. This replaces the old access-blocker diagnosis; no environment repair or installation was needed. Exact argv, stdout, stderr, model/tool checks and unchanged reference-file hashes are in [preflight-resume.json](../../../artifacts/genre-pilot-20261124/preflight-resume.json).
