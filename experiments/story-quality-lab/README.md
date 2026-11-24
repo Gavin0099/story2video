@@ -8,6 +8,8 @@
 
 成片首次觀看使用 [Shorts Viewer Gate](shorts-viewer-gate.md)。三種反轉的原創試作見[實驗題卡](viewer-gate-pilots.md)，主持人記錄見[空白試片表](viewer-gate-record.csv)。
 
+選題可使用 [Classic Puzzle Benchmark](classic-puzzle-benchmark/README.md)。作品進入製片前，依 [Story Rights Gate](../../.agents/skills/story2video-shorts-batch/references/story-rights.md) 核對凍結稿及預定用途。
+
 ## 怎麼測
 
 1. 每位第一次接觸故事的讀者，各拿一張窗與一張海報題卡。依序分派 67C → 94N、26M → 41K、73H → 58R 給前三位，下一組用相同配對逆序，之後循環。每張卡開始前先問讀者是否接觸過這則故事。讀過任何版本的人可提供編輯意見，該故事不計入首次盲測。
