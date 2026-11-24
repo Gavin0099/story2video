@@ -46,9 +46,9 @@ def main():
         "portable-review/verification.json", "configured-reference-review/verification.json")]
     checks += list((hm.OUTPUTS / "mutation-review").glob("*.log"))
     files = sorted(set(code + evidence + memory + [p for p in checks if p.is_file()]))
-    hm.save(root / "delivery-manifest.json", dict(base_git_sha="5253512d18ad15e7a4e3c7f8e84615b0012b077d",
-        branch="codex/cluepause-motion-layer-20261124", committed=False,
-        note="Uncommitted review fixes on the committed original delivery; ImageGen originals are not reproducible from prompts alone.",
+    hm.save(root / "delivery-manifest.json", dict(base_git_sha="6270889a9de8cfb056c7009b69ffa01f7e02e474",
+        branch="codex/cluepause-motion-layer-20261124", snapshot_kind="working-tree-pre-commit",
+        note="This is a byte-bound working-tree snapshot, not a claim about which source files are committed. The earlier review fixes are committed in the base SHA; ImageGen originals are not reproducible from prompts alone.",
         files={str(p.relative_to(hm.REPO)): dict(bytes=p.stat().st_size, sha256=hm.digest(p)) for p in files}))
     print(f"PASS: 330-frame master, audio cue timing, final manifest ({len(files)} files)")
 

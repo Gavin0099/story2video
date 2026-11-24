@@ -1,0 +1,44 @@
+{
+  "requests": [
+    {
+      "request": 1,
+      "prompt": "Use case: photorealistic-natural. Create a production photographic contact sheet of FOUR separate vertical 9:16 movie stills in a precise 2 columns x 2 rows grid, no gutters, ideally 2160x3840 total. All four show the SAME 24-year-old woman Nia, medium brown skin, dark curly hair tied back, oatmeal rib knit sweater, in a small realistically lit apartment at midnight. Walnut front door and brushed bronze intercom matching a warm domestic horror aesthetic; warm practical light, readable shadows, realistic cinema photography, not illustration. Top-left: close over Nia's shoulder looking at a wall intercom beside the closed front door, with her 55-year-old mother in muted blue clothing clearly asleep with mouth CLOSED on the sofa only a few feet away in the background. Depth of field sufficient to see Mom asleep. Top-right: tight close-up of Nia covering her mouth with one hand, frightened eyes, free hand hovering well clear of intercom buttons beside her; closed walnut door behind. Bottom-left: extreme close-up of Nia's worried eyes and lips concealed behind fingers. Bottom-right: close-up of Nia with her hand slipped to just below her mouth, uncovered parted lips, frightened eyes, same intercom glowing behind, closed door. Screens must be blank dark teal, NO writing anywhere, no captions, no watermark, no graphic borders. Each cell is composed as its own full bleed portrait scene. Maintain person, clothing, door and lighting continuity. No monster, no injury, no text.",
+      "kind": "initial photographic sheet",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false
+    },
+    {
+      "request": 2,
+      "prompt": "Use case photorealistic-natural. Reference image establishes Nia's face, oatmeal rib knit sweater, her mother's muted blue clothes, warm apartment, walnut door; preserve these identities. Generate a FOUR panel photographic storyboard, 2 columns x 2 rows, no gutters, each cell full bleed portrait 9:16 (overall portrait). Top left: tight profile close-up of Nia's 55 year old mother ASLEEP on grey sofa, eyes firmly shut and MOUTH CLOSED, shoulders and chest visible, blue buttoned blouse, head tipped against cushion, warm lamp. This is the neutral frame to animate two small shoulder coughs; no Nia here. Top right: close detail of closed walnut front door with brushed stainless horizontal sliding bolt engaged in the strike, Nia's oatmeal sleeved hand checking the wood below it; same cinematic warm lighting, no decorative deadbolts. Bottom left: reverse side medium close-up of Nia throwing her shoulder against INSIDE of same walnut front door opened only 3 centimeters, narrow unlit hallway visible in gap along RIGHT edge, her mother still asleep on sofa in the deep background. Nia bracing with back and shoulder against door, frightened straining expression, plausible anatomy; dark gap not a second panel. Bottom right: low angle detail with Nia's planted sneaker in foreground, her sweater shoulder farther above driving the same door nearly shut, narrow dark gap. No writing on any prop, no subtitles, logos, arrows or watermarks. Consistent photorealism, legible warm exposure, no gore or monster.",
+      "kind": "initial photographic sheet",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false
+    },
+    {
+      "request": 3,
+      "prompt": "Edit target Image 1 (four-panel Nia storyboard). Preserve its four compositions and Nia identity exactly. Supporting Image 2 is the authoritative intercom prop design. In each panel replace the mismatching narrow intercom with the exact brushed metal intercom from Image 2: large landscape black/teal glass above one round listening lamp and horizontal slatted grille, no button stack. Scale and perspective realistically to the existing wall. Supporting Image 3 is the authoritative brushed nickel lever handle design, replace the doorknobs visible in image 1 with that same lever. In top-left image only: mother must have closed lips, eyes closed, visibly asleep; no speech posture. Keep the walnut door firmly closed, no daylight, warm readable realistic exposure, no writing, no captions, no watermarks, no new people. Retain exact 2x2 portrait panel layout without borders or gutters, each panel 9:16. This is a continuity correction only.",
+      "kind": "correction 1 of corresponding sheet",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false
+    },
+    {
+      "request": 4,
+      "prompt": "Precise correction of Image 1 four-panel photographic action sheet. Preserve Nia's identity, four exact compositions, clothes, walnut door, cinematic exposure and 2x2 layout. TOP LEFT: close mother's mouth fully so her two lips touch, keep eyes shut and everything else the same. TOP RIGHT: replace ONLY the cylindrical slide bolt with the rectangular brushed-steel retracting bolt housing and rectangular strike in authoritative supporting Image 2. Put a flat rectangular steel tongue spanning the housing to the strike, fully engaged across the closed door seam. Keep Nia's sweater-sleeved hand visibly checking door beneath it, not touching bolt. Supporting Image 3 shows the exact mother/Nia identity and corrected lever hardware. BOTTOM LEFT: Nia uses shoulder against door, include a clearly visible 3-centimeter dark hallway gap on right edge and no extra hand. The sofa mother behind remains asleep, mouth closed. BOTTOM RIGHT: keep planted sneaker and bracing leg, same narrow door gap. No text, no diagram, no watermarks. Do not add knobs or new hardware, no grotesque faces, no gore.",
+      "kind": "correction 1 of corresponding sheet",
+      "tool": "image_gen.imagegen",
+      "transparent_background": false
+    }
+  ],
+  "request_count": 4,
+  "initial_requests": 2,
+  "correction_requests": 2,
+  "source_filenames": [
+    "exec-9b717139-5f19-4f70-aab8-07aac6e7f577.png",
+    "exec-1b6608cd-60e2-4bc2-a7b6-3c08e7e833f3.png",
+    "exec-4ac514b7-d54d-438e-98ab-634145ee626c.png",
+    "exec-dcefcd95-7475-4cb4-bd51-7cdec1c79ccb.png"
+  ],
+  "provenance": "Built-in Codex generated-images folder; copies retained in the AB shared folder. Original filenames identify requests without personal absolute paths.",
+  "reused_demo_imagegen_assets": 7,
+  "reused_demo_requests_this_task": 0
+}
