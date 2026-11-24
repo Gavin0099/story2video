@@ -1,0 +1,152 @@
+{
+  "experiment_id": "grade3-science-carousel-20261124",
+  "authorization_source": "authorization.md",
+  "authorization_date_taipei": "2026-11-24",
+  "base_git_sha": "1f7fdcecfc86f71131210ff4ecedef123f25c9f3",
+  "account": "gavinwu05191023",
+  "display_name": "GavinWu",
+  "time_zone": "Asia/Taipei",
+  "posts": [
+    {
+      "issue": "04-shadow",
+      "topic": "小兔子怎麼投出大影子？",
+      "status": "published_verified",
+      "permalink": "https://threads.com/@gavinwu05191023/post/DgG8ua_k8Wg",
+      "submitted_at_taipei": "2026-11-24T11:05:22+08:00",
+      "direct_post_verified_at_taipei": "2026-11-24T11:08:46+08:00",
+      "caption_path": "04-shadow/caption.txt",
+      "caption_sha256": "745a2f6bb87b9b54bc6f7b221508b083b13cb37b3d65c4ed5fe1bd303a8058e3",
+      "caption_text_paragraphs_verified": true,
+      "source_link_domains_verified": [
+        "ssec.si.edu",
+        "beam.berkeley.edu"
+      ],
+      "composer_image_order_verified": true,
+      "post_image_count_verified": 4,
+      "attachments": [
+        {
+          "position": 1,
+          "path": "04-shadow/cards/01.png",
+          "sha256": "4fef46046dcc8db99a94773ec3e7c2fff91a2a53e156277896afcf72fc0a1103"
+        },
+        {
+          "position": 2,
+          "path": "04-shadow/cards/02.png",
+          "sha256": "66200976cde5fca1f024b457e7bc10f082debaf8feeeb432388768f24f98790b"
+        },
+        {
+          "position": 3,
+          "path": "04-shadow/cards/03.png",
+          "sha256": "50b25fc4d793ff94efe494116133ec03c17732e71f013a92525665e92e9fb791"
+        },
+        {
+          "position": 4,
+          "path": "04-shadow/cards/04.png",
+          "sha256": "2f09ce2fbc1e564e161636cff33d01eafd10d4fd0048a9db7eed6d5f78f1fea4"
+        }
+      ],
+      "signed_out_http_check": {
+        "http": 200,
+        "permalink_matched": true,
+        "author_in_response": false,
+        "caption_opening_in_response": false
+      },
+      "first_24h_due_taipei": "2026-11-25T11:05:22+08:00"
+    },
+    {
+      "issue": "05-sugar",
+      "topic": "攪一攪，白糖跑去哪了？",
+      "status": "published_verified",
+      "permalink": "https://threads.com/@gavinwu05191023/post/DgG864XE9Dj",
+      "submitted_at_taipei": "2026-11-24T11:07:04+08:00",
+      "direct_post_verified_at_taipei": "2026-11-24T11:07:15+08:00",
+      "caption_path": "05-sugar/caption.txt",
+      "caption_sha256": "d1c69776ad87cf2e856e9bbda30b06e3ca0581032da7740f680bf3213d04aa19",
+      "caption_text_paragraphs_verified": true,
+      "source_link_domains_verified": [
+        "edu.rsc.org",
+        "acs.org"
+      ],
+      "composer_image_order_verified": true,
+      "post_image_count_verified": 4,
+      "attachments": [
+        {
+          "position": 1,
+          "path": "05-sugar/cards/01.png",
+          "sha256": "afe3f84886fc9b51dd52644893a3097fd2f1769a8793e528fc4d48cb82d10eb9"
+        },
+        {
+          "position": 2,
+          "path": "05-sugar/cards/02.png",
+          "sha256": "fe9cf647b2a43c243ac49d3ce39eaed27ed2c38abbcb086ca4d6ed2d9e0d2437"
+        },
+        {
+          "position": 3,
+          "path": "05-sugar/cards/03.png",
+          "sha256": "59d8e2e739022bd689c9f73aff5d09f57f01b9a07b18fe236bbdfabd4a240f14"
+        },
+        {
+          "position": 4,
+          "path": "05-sugar/cards/04.png",
+          "sha256": "ca7ab7426ccb70d9bfb5a8e2b8055a1c4b4df2d19d34dbe77a7ff960d67c19bb"
+        }
+      ],
+      "signed_out_http_check": {
+        "http": 200,
+        "permalink_matched": true,
+        "author_in_response": false,
+        "caption_opening_in_response": false
+      },
+      "first_24h_due_taipei": "2026-11-25T11:07:04+08:00"
+    },
+    {
+      "issue": "06-cold-glass",
+      "topic": "冰杯外面的水珠哪來的？",
+      "status": "published_verified",
+      "permalink": "https://threads.com/@gavinwu05191023/post/DgG9B4wE2fd",
+      "submitted_at_taipei": "2026-11-24T11:08:02+08:00",
+      "direct_post_verified_at_taipei": "2026-11-24T11:08:13+08:00",
+      "caption_path": "06-cold-glass/caption.txt",
+      "caption_sha256": "49de10654e9d1bde5bed02f6bd5aa16a26b7f9b0b9b880533039501b3ffdecbf",
+      "caption_text_paragraphs_verified": true,
+      "source_link_domains_verified": [
+        "noaa.gov",
+        "jpl.nasa.gov"
+      ],
+      "composer_image_order_verified": true,
+      "post_image_count_verified": 4,
+      "attachments": [
+        {
+          "position": 1,
+          "path": "06-cold-glass/cards/01.png",
+          "sha256": "4d6c4c885d54858f011f6b044199ea26a1d1dc2b8b3cc3499526ce1f35af71c2"
+        },
+        {
+          "position": 2,
+          "path": "06-cold-glass/cards/02.png",
+          "sha256": "0c5541519e871d3886096018ed6f9ad67c184b9ef4e3b8de07ccc61c58bcbcc9"
+        },
+        {
+          "position": 3,
+          "path": "06-cold-glass/cards/03.png",
+          "sha256": "084ab390b57917bfdc5e4d4bf21d9488ff1a4339cca46a10774985b682480767"
+        },
+        {
+          "position": 4,
+          "path": "06-cold-glass/cards/04.png",
+          "sha256": "b21a72ca909bbbb62af301ae2292a739a3cc925c5040dae455d8d838e518995e"
+        }
+      ],
+      "signed_out_http_check": {
+        "http": 200,
+        "permalink_matched": true,
+        "author_in_response": false,
+        "caption_opening_in_response": false
+      },
+      "first_24h_due_taipei": "2026-11-25T11:08:02+08:00"
+    }
+  ],
+  "engineering_acceptance": "See validation.md.",
+  "unverified": "Signed-out content visibility, physical mobile device, post compression and reader comprehension.",
+  "market_acceptance": "Pending."
+}

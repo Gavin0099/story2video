@@ -1,0 +1,11 @@
+同一隻紙兔，怎麼一下像小兔，一下像大兔？
+
+在暗一點的房間，固定手電筒和白板，只把紙兔沿著光照的方向前後移動。紙兔靠近白板，影子較小。紙兔靠近手電筒，影子較大。白板上被紙兔擋住光的地方，就是影子。
+
+要演一隻越跑越大的兔子，你會把紙兔往哪裡移？
+
+#小三自然
+
+資料來源
+https://ssec.si.edu/sites/default/files/other/lightourway/G1PS-Shadow%20Investigation-.pdf
+https://beam.berkeley.edu/lessons_archive/BEAM_away_the_shadows.pdf
