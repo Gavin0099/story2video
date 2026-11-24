@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "mira",
+      "kind": "character",
+      "invariants": [
+        "invented adult woman, chin-length straight black bob, no bangs",
+        "forest-green ribbed sweater, black trousers",
+        "plain white cotton coat worn in shots 01-03, removed and draped on wall mirror in shots 04-06; sweater never changes"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "phone",
+      "kind": "prop",
+      "invariants": [
+        "plain rectangular black smartphone with rounded corners and small brass wrist loop",
+        "screen lit blank pale grey in shots 01-04, black reflective glass in shots 05-06",
+        "no logos, no icons or text"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "lift",
+      "kind": "set",
+      "invariants": [
+        "small brushed-steel lift with one tall oval brass-framed mirror on rear wall",
+        "warm amber vertical light on right, closed steel sliding entrance",
+        "mirror remains on same rear wall; white coat covers reflective surface from shot 04"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "passenger",
+      "kind": "character",
+      "invariants": [
+        "tall adult human-shaped grey figure behind glass, indistinct face, no wounds",
+        "long narrow grey fingers, charcoal collarless clothing",
+        "exists as reflection before payoff; grey fingers cross phone surface only in shot 06"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0.55,
+          0,
+          0.44,
+          0.52
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-06"
+      ]
+    }
+  ]
+}

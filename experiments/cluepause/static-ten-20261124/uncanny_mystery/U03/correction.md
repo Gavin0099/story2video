@@ -1,0 +1,5 @@
+Single allowed setup-sheet correction. Input 1: canonical reference sheet for identity and set. Input 2: rejected setup sheet, the edit target. Keep six tall cells in the same order.
+
+Preserve cells 2 and 3 (open empty pantry and bare hanger reaction). Replace cells 0, 1, 4 and 5 according to the revised CELL instructions. In cells 0 and 4, crop tightly enough that the colander, towel and rack are outside the frame; keep the man and ambiguous figure. Cell 1 must suggest an ambiguous human figure with only a few subtle bright dots, without recognizable colander handles. Cell 5 shows only a cropped perforated metal surface, not the full head-and-shoulder arrangement. Do not expose the answer before the separate reveal sheet.
+
+Keep the same man, short curly hair, ochre henley, mint wall, cream door, brass knob, frosted glass, and empty pantry with one wooden hanger. No new objects, text, labels or diagrams. No dark crush: retain readable realistic photography. No further corrections will follow this pass.

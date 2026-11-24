@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "story_id": "h04-static-v2",
+  "fiction": "FICTION — original invented story, not a true-event account. Rights: pending_verification.",
+  "genre": "urban_horror",
+  "question": {
+    "en": "Why did erasing her name fail?",
+    "zh": "擦掉名字為何沒用？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a.png",
+      "columns": 3,
+      "rows": 1,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b.png",
+      "columns": 3,
+      "rows": 1,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "Eva signed in. The night porter had already gone.",
+      "zh": "Eva 簽了名。夜班管理員已經離開。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "At midnight, the house visitor came for names left in that book.",
+      "zh": "午夜，屋裡的訪客會來找名字還留在簿上的人。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 5.68,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "One minute left. She rubbed out every trace of her name.",
+      "zh": "剩下一分鐘。她擦掉名字的每一道痕跡。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 11.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "The shape outside disappeared. Eva closed the book and breathed.",
+      "zh": "門外的身影消失了。Eva 合上簿子，鬆了口氣。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 17.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "At the chime, the book fell open to the page underneath.",
+      "zh": "鐘響時，簿子掉落，翻開了底下那一頁。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 23.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "Her name was still there. So was her visitor.",
+      "zh": "她的名字還在。她的訪客也在。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 28.68,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-06.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "close_up",
+      "start": 0,
+      "end": 5.5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "book",
+        "lobby",
+        "visitor"
+      ],
+      "sfx": [],
+      "conveys": "An indistinct person waits beyond wired glass while the signed book remains on the desk.",
+      "prompt": "Close portrait view of same brown guestbook open on dark lobby desk, grey pencil EVA visible, small blue corner beneath top leaf. Behind in soft focus same wired-glass entrance door contains indistinct tall charcoal coat-and-hat silhouette OUTSIDE. Could be a porter. Cream upper walls green tile below. No explanatory text; keep book and doorway visible within portrait crop. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 5.5,
+      "end": 11,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "eva",
+        "book",
+        "pencil",
+        "lobby"
+      ],
+      "sfx": [
+        {
+          "file": "assets/pulse.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Low pulse]",
+          "zh": "[低沉脈衝聲]"
+        }
+      ],
+      "conveys": "She signs EVA; a blue sheet corner protrudes below the cream page.",
+      "prompt": "Top-down portrait close-up of burgundy-sleeved Eva hand signing exact single word EVA in grey pencil on otherwise blank cream guestbook page. Brown cloth binding, plain yellow pencil pink eraser. Small blue carbon sheet corner peeks under cream writing page at lower right. Warm lamp on dark wooden reception desk. No other text, no copied page visible yet. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-03",
+      "function": "reaction",
+      "framing": "close_up",
+      "start": 11,
+      "end": 17,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "eva",
+        "book",
+        "pencil",
+        "lobby"
+      ],
+      "sfx": [],
+      "conveys": "The eraser removes the top name but leaves the blue page corner untouched.",
+      "prompt": "Same book and desk, Eva burgundy-sleeved hand using PINK ERASER end of same yellow pencil to finish removing EVA. Top cream page now visually blank except grey eraser dust and faint rubbed area, NO readable letters on surface. Blue carbon corner remains tucked underneath at lower right; do NOT expose underneath page yet. Brown binding same. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-04",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 17,
+      "end": 23,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "eva",
+        "book",
+        "lobby"
+      ],
+      "sfx": [
+        {
+          "file": "assets/click.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Dry click]",
+          "zh": "[喀一聲]"
+        }
+      ],
+      "conveys": "She closes the book, believing the empty visible page means safety; doorway is empty.",
+      "prompt": "Eva short dark pixie haircut, burgundy cardigan beige blouse, standing at same dark reception desk, pressing CLOSED brown guestbook cover with both hands, relief in face. Wired-glass entrance door behind left is empty. Green lower tiles cream walls same. No pencil in frame, no visitor inside, no letters on cover. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-05",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 23,
+      "end": 28.5,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "book",
+        "lobby"
+      ],
+      "sfx": [
+        {
+          "file": "assets/chime.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Chime]",
+          "zh": "[鐘聲]"
+        }
+      ],
+      "conveys": "The lifted blank writing leaf reveals an untouched blue copy of EVA below.",
+      "prompt": "Unmistakable close-up of same brown cloth guestbook now open after falling onto same dark desk: top cream leaf lifted up and visibly blank rubbed area; blue carbon paper folded back to side; UNDERLYING attached cream duplicate page shows exact word EVA in DARK BLUE at same position. Show physical stacked pages and brown spine clearly. ONLY lettering EVA, large enough to read in centre of portrait crop. No figures, no warning text. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-06",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 28.5,
+      "end": 36,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "eva",
+        "book",
+        "lobby",
+        "visitor"
+      ],
+      "sfx": [],
+      "conveys": "Her intact name is visible in the book; the visitor now stands directly behind her inside the lobby.",
+      "prompt": "Same lobby, medium portrait: terrified Eva recognizable pixie hair burgundy cardigan beige blouse at wooden desk. Open brown book in lower central foreground with dark-blue EVA on cream duplicate page, blank top leaf flipped back, blue copying sheet folded aside. Tall shadow-faced visitor in charcoal coat and brimmed hat stands INSIDE lobby immediately behind Eva, separated visibly from wired-glass entrance at left. Ordinary long hands at sides, no touch or gore. Face, book and visitor all in central portrait safe area. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    }
+  ]
+}

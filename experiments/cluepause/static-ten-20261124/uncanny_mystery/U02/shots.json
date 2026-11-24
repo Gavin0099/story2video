@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "story_id": "uncanny-u02-v1",
+  "fiction": "FICTION — original invented scene; no true-event claim.",
+  "genre": "uncanny_mystery",
+  "question": {
+    "en": "Who Moved This Chair?",
+    "zh": "誰把椅子移過來？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    },
+    "setup": {
+      "file": "assets/setup.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    },
+    "resolution": {
+      "file": "assets/resolution.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "Every morning, her kitchen chair waited in the doorway.",
+      "zh": "每天早上，她的廚房椅都等在門口。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.1,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "Nobody else had a key. The wheels left curved marks.",
+      "zh": "別人沒有鑰匙。輪子留下彎曲的痕跡。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 4,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "A marble rolled toward the door. A sloping floor?",
+      "zh": "彈珠滾向門口。是地板傾斜嗎？",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 8,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "But the chair had crossed the raised rug.",
+      "zh": "可是椅子還越過了隆起的地毯。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 13,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "She put it back, with her apron still on the seat.",
+      "zh": "她把椅子推回去，圍裙仍搭在椅面。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 17,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "That night, she watched the floor.",
+      "zh": "當晚，她盯著地板。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 22,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-06.wav"
+    },
+    {
+      "id": "line-07",
+      "en": "The vacuum caught the apron tie and wound it around its brush.",
+      "zh": "掃地機捲住圍裙帶，纏上滾刷。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 25,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-07.wav"
+    },
+    {
+      "id": "line-08",
+      "en": "Those curves were a towing route.",
+      "zh": "那些彎痕，是拖行的路線。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 30.5,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-08.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "wide",
+      "start": 0,
+      "end": 4,
+      "source": {
+        "sheet": "setup",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "kitchen",
+        "stool",
+        "scuff"
+      ],
+      "sfx": [],
+      "conveys": "A rolling stool with an apron blocks the doorway; its place at the breakfast counter is empty.",
+      "prompt": "Use case: photorealistic-natural. Morning woman facing mustard-apron-draped grey rolling stool centered in kitchen doorway beyond charcoal rug; empty counter place visible behind, subtle curved paired scuffs on pale floor. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 4,
+      "end": 7,
+      "source": {
+        "sheet": "setup",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "stool",
+        "scuff"
+      ],
+      "sfx": [],
+      "conveys": "The stool has free caster wheels and paired curved scuffs end beside them.",
+      "prompt": "Use case: photorealistic-natural. Low close-up of five black caster wheels below grey stool, mustard apron tie hanging from seat to pale wooden floor; thin paired grey curved scuffs end at wheels. No robot pulling yet. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-03",
+      "function": "clue",
+      "framing": "medium",
+      "start": 7,
+      "end": 10,
+      "source": {
+        "sheet": "setup",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "kitchen",
+        "marble"
+      ],
+      "sfx": [],
+      "conveys": "A blue marble is set on the floor toward the doorway, suggesting a slope.",
+      "prompt": "Use case: photorealistic-natural. Woman crouched in sage cardigan, blue marble on pale floor near her fingertips, doorway downframe. Grey low charging dock visible under rear kitchen cabinet, no robot prominent. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-04",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 10,
+      "end": 13,
+      "source": {
+        "sheet": "setup",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "marble"
+      ],
+      "sfx": [],
+      "conveys": "The same marble now rests against the doorway side of the rug.",
+      "prompt": "Use case: photorealistic-natural. Blue glass marble resting just before raised edge of charcoal threshold rug, pale floor slopes slightly toward it. Tight composition of marble and rug, no stool or robot. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-05",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 13,
+      "end": 17,
+      "source": {
+        "sheet": "setup",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "stool",
+        "scuff"
+      ],
+      "sfx": [],
+      "conveys": "The stool’s curved wheel trail continues over the raised rug ridge.",
+      "prompt": "Use case: photorealistic-natural. Close low oblique view of grey stool caster on far side of charcoal raised rug edge; thin paired curved grey scuff path on exposed wood before and after rug; mustard apron tie trails back across ridge. Evidence of crossing, not a floating chair. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-06",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 17,
+      "end": 21,
+      "source": {
+        "sheet": "setup",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "kitchen",
+        "stool",
+        "robot"
+      ],
+      "sfx": [],
+      "conveys": "She resets the stool at the counter; the hanging tie and docked vacuum share the floor.",
+      "prompt": "Use case: photorealistic-natural. Evening woman pushing same grey stool and mustard apron back against counter; one long mustard waist tie hangs to floor near docked charcoal round robot. Woman puzzled, not smiling. No tie wound around robot yet. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-07",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 21,
+      "end": 25,
+      "source": {
+        "sheet": "resolution",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "stool",
+        "robot"
+      ],
+      "sfx": [
+        {
+          "file": "assets/hum.wav",
+          "offset": 0.2,
+          "gain": 0.35,
+          "en": "[vacuum motor]",
+          "zh": "[掃地機馬達聲]"
+        }
+      ],
+      "conveys": "The loose yellow tie lies across the path from the vacuum dock.",
+      "prompt": "Use case: photorealistic-natural. Floor-level nighttime view of mustard apron waist tie hanging from stool seat with loose end across route directly in front of charcoal round vacuum dock. Robot is leaving dock but tie not visibly caught yet. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-08",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 25,
+      "end": 30,
+      "source": {
+        "sheet": "resolution",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "stool",
+        "robot"
+      ],
+      "sfx": [],
+      "conveys": "The apron tie is taut between the stool and the vacuum’s brush intake.",
+      "prompt": "Use case: photorealistic-natural. Strong centered floor-level close view: mustard apron on grey caster stool at left, its single long mustard waist tie stretched TAUT diagonally into underside front brush intake of same round charcoal vacuum moving away to right. Both endpoints visible. Stool caster turned toward robot. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-09",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 30,
+      "end": 33,
+      "source": {
+        "sheet": "resolution",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "kitchen",
+        "stool",
+        "robot"
+      ],
+      "sfx": [
+        {
+          "file": "assets/click.wav",
+          "offset": 0.3,
+          "gain": 0.35,
+          "en": "[motor stops]",
+          "zh": "[馬達停止]"
+        }
+      ],
+      "conveys": "Lifting the vacuum reveals the same yellow tie wound around its black brush roller.",
+      "prompt": "Use case: photorealistic-natural. Sage-sleeved hands tilt same charcoal robot vacuum onto side; underside horizontal black brush roller has several unmistakable mustard yellow apron tie loops wound around it, unbroken tie extends back to mustard apron on grey stool. No extra rope. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-10",
+      "function": "reveal",
+      "framing": "wide",
+      "start": 33,
+      "end": 36,
+      "source": {
+        "sheet": "resolution",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "kitchen",
+        "stool",
+        "robot",
+        "scuff"
+      ],
+      "sfx": [],
+      "conveys": "The freed stool stays at the counter while the vacuum sits alone at the rug crossing.",
+      "prompt": "Use case: photorealistic-natural. Morning woman holding freed mustard apron tie up off floor beside stool at counter, relieved expression; same charcoal robot beyond rug at doorway, curved paired scuffs connect prior route across pale floor. Do not put apron on woman. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    }
+  ]
+}

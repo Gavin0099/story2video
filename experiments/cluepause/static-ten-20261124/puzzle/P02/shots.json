@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "story_id": "puzzle-p02-static-v1",
+  "fiction": "FICTION — original fictional puzzle; rights pending_verification",
+  "genre": "puzzle",
+  "question": {
+    "en": "Why black out her message?",
+    "zh": "為什麼把字全塗黑？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b-v2.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "She covered her message in black. Then invited the visitor closer.",
+      "zh": "她把字全塗黑，還請訪客靠近。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0,
+      "gap_before": 0,
+      "file": "assets/voice/line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "The invitation was for tonight. There was no spare block.",
+      "zh": "邀請是今晚要用的，也沒有備用木板。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 5,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "A chipped corner. Letters facing the wrong way.",
+      "zh": "角落缺了一塊，字母的方向也反了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 10,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "Was she hiding a mistake? She kept the clean paper dry.",
+      "zh": "她是在掩飾錯誤嗎？乾淨的紙一直沒沾墨。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 15,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "Now every letter had vanished into black.",
+      "zh": "現在，每個字都消失在一片黑裡。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 21,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "She pressed the paper onto the raised letters, then peeled it back.",
+      "zh": "她把紙壓在凸字上，再揭開。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 27,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-06.wav"
+    },
+    {
+      "id": "line-07",
+      "en": "The ruined message was the printing surface. This was her first invitation.",
+      "zh": "被毀掉的字其實是印面，這才是第一張邀請。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 32,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-07.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "medium",
+      "start": 0,
+      "end": 5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "block",
+        "kit",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "Maker blacks out a wooden message.",
+      "prompt": "Maker holds red-handled brayer over partially inked pale relief block; raised backward HOME partly black; blank paper beside it. Keep black ink readable."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 5,
+      "end": 10,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "block",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "Envelope and unique nick suggest a one-off invitation.",
+      "prompt": "Close-up cream envelope green ribbon next to pale half-inked maple block with distinctive crescent nick lower right. No printed invitation yet."
+    },
+    {
+      "id": "shot-03",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 10,
+      "end": 15,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "block",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "Backwards raised letters are fair evidence of a print matrix.",
+      "prompt": "Raking-light macro raised relief letters mirror-reversed HOME in maple, ink on top surfaces, crescent nick lower right; side relief height visible; NO correct-direction HOME."
+    },
+    {
+      "id": "shot-04",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 15,
+      "end": 21,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "block",
+        "kit",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "She calmly protects blank paper while ink darkens block.",
+      "prompt": "Maker in mustard cardigan indigo apron holding clean blank cream paper away from black ink tray; half-black relief block and red-handled brayer on table; focused calm expression."
+    },
+    {
+      "id": "shot-05",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 21,
+      "end": 27,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "block",
+        "kit",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "Fully black surface appears ruined, paper remains blank.",
+      "prompt": "Entire raised block surface uniformly black, lettering difficult to distinguish but embossed relief catches side light; clean blank cream paper alongside, red brayer."
+    },
+    {
+      "id": "shot-06",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 27,
+      "end": 30,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "block",
+        "kit",
+        "studio"
+      ],
+      "sfx": [
+        {
+          "file": "assets/tick.wav",
+          "offset": 0.1,
+          "gain": 0.45,
+          "en": "[soft contact]",
+          "zh": "[輕碰聲]"
+        }
+      ],
+      "conveys": "Paper contacts the relief.",
+      "prompt": "Maker hands press BLANK BACK of cream paper onto black relief block with wooden baren; red brayer set aside. No finished print yet."
+    },
+    {
+      "id": "shot-07",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 30,
+      "end": 33,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "block",
+        "kit",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "Peeling reveals a correct-direction printed word.",
+      "prompt": "Hands peel paper off block; underside facing camera carries crisp black correctly oriented HOME; matching raised backward HOME on black block beneath; same crescent nick. Match fully blackened block state from immediately preceding press: background and letters black, relief visible by sheen. HOME on paper must be completely visible within center half-width."
+    },
+    {
+      "id": "shot-08",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 33,
+      "end": 39,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "block",
+        "kit",
+        "studio"
+      ],
+      "sfx": [],
+      "conveys": "Finished invitation differs from apparent destroyed block.",
+      "prompt": "Maker presents cream paper with black HOME above cream envelope green ribbon; black maple printing block with nick and brayer remain below. Bright readable photography. The printing block remains fully BLACK on raised letters and low background. Hold paper smaller so entire HOME fits inside middle half of cell width."
+    }
+  ]
+}

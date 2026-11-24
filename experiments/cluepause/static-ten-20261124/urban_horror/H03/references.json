@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "lea",
+      "kind": "character",
+      "invariants": [
+        "invented adult woman, dark curly hair in a high round bun",
+        "ochre knitted sweater, black trousers",
+        "plain white fabric support wrap on LEFT wrist, no wounds; same appearance for future figure"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "hammer",
+      "kind": "prop",
+      "invariants": [
+        "short hammer with black rubber handle and square silver steel head",
+        "rests on interior sill until shot 05; held in RIGHT hand in shots 05-06",
+        "no logos"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0.25,
+          0.65,
+          0.65
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "room",
+      "kind": "set",
+      "invariants": [
+        "small cream apartment, tall rectangular two-pane white sash window looking across a narrow dark shaft to an identical window",
+        "square grey metal storage trunk near solid cream entrance door, plain horizontal sliding bolt",
+        "small rectangular ceiling vent above door; grey smoke increases from shot 04; no visible flames"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "future",
+      "kind": "set",
+      "invariants": [
+        "opposite white two-pane sash window across narrow shaft duplicates the protagonist room",
+        "future figure wears ochre sweater and left white wrist wrap but face initially obscured by grey smoke and glass glare",
+        "hammer raised in right hand with square head; no additional attacker"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02"
+      ]
+    }
+  ]
+}

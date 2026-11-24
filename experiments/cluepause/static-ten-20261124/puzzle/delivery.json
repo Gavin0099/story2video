@@ -1,0 +1,175 @@
+{
+  "git_sha": "aef24410f8b45c8651fd922343aeb52db11bfc75",
+  "reviewed_at_utc": "2026-11-24T16:14:19.386043+00:00",
+  "videos": [
+    {
+      "id": "P01",
+      "title": "The Thread Under the Scale",
+      "story_id": "puzzle-p01-static-v1",
+      "mp4": "artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v1/puzzle-p01-static-v1.mp4",
+      "duration": 36.0,
+      "sha256": "f806ed777997b2fc6e37d4e7a345b605cba2980ff55ad23491d6ebea82469a8e",
+      "imagegen_calls": 5,
+      "completed_images": 4,
+      "encode_count": 12,
+      "render_wall_seconds": 107.719,
+      "creation_to_qa_seconds": 651.4,
+      "quality_note": "Force-path discontinuity remains; heel/two-hand clues weakened by portrait crop.",
+      "findings": [
+        {
+          "timestamp": "0.0–3.5",
+          "impact": "confusing",
+          "finding": "No visible needle movement or earlier high baseline in first second; opening anomaly depends on narration until the 3.5 s flashback."
+        },
+        {
+          "timestamp": "3.5–7.0; 15.0–19.0",
+          "impact": "confusing",
+          "finding": "Portrait crop prevents a clear simultaneous view of both seller hands, weakening the alternative ballast explanation."
+        },
+        {
+          "timestamp": "19.0–23.0",
+          "impact": "confusing",
+          "finding": "Raised heel clue is outside the crop; silent viewers lose the pre-reveal foot hint."
+        },
+        {
+          "timestamp": "23.0–27.0",
+          "impact": "cosmetic",
+          "finding": "Oval/round gold partly clipped at left; all three pieces can still be counted. Oval is visually round across the sequence."
+        },
+        {
+          "timestamp": "27.0–32.0",
+          "impact": "breaks story logic",
+          "finding": "Thread routing changes: vertical pan-to-hole setup becomes horizontal cylinder pass and a diagonal line apparently attached to the front counter edge at toe reveal. No single continuous force path to the moving pan is demonstrated; a fixed counter attachment would not load the pan."
+        },
+        {
+          "timestamp": "34.0–36.0",
+          "impact": "confusing",
+          "finding": "Cylinder appears at counter height in final background rather than clearly on the under-counter shelf. Confrontation faces cropped."
+        }
+      ],
+      "story_gate": "PENDING",
+      "storyboard_gate": "PENDING",
+      "viewer_gate": "HUMAN_TEST_PENDING",
+      "rights": "pending_verification",
+      "market_acceptance": "NOT_TESTED"
+    },
+    {
+      "id": "P02",
+      "title": "The Blackened Message",
+      "story_id": "puzzle-p02-static-v1",
+      "mp4": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.mp4",
+      "duration": 39.0,
+      "sha256": "7cae43e308ba383dcf62aa683151f95cc2186acf7d1674f3a8f844bdc4931865",
+      "imagegen_calls": 4,
+      "completed_images": 4,
+      "encode_count": 8,
+      "render_wall_seconds": 49.063,
+      "creation_to_qa_seconds": 1193.9,
+      "quality_note": "Readable printed reveal; backwards-letter clue cropped and printing may be predictable.",
+      "findings": [
+        {
+          "timestamp": "5.0–15.0",
+          "impact": "confusing",
+          "finding": "Central cover crop loses the distinctive nick and reversed E; central M/O alone do not establish backwards writing."
+        },
+        {
+          "timestamp": "0.0–27.0",
+          "impact": "confusing",
+          "finding": "Brayer and raised type may expose printing explanation early; lettering remains visible at 21–27 despite narration saying it vanished. No reader evidence measures predictability."
+        },
+        {
+          "timestamp": "30.0–39.0",
+          "impact": "cosmetic",
+          "finding": "Paper dimensions and block nick depiction vary slightly between stills; readable proof and fully black block state are retained after one correction."
+        }
+      ],
+      "story_gate": "PENDING",
+      "storyboard_gate": "PENDING",
+      "viewer_gate": "HUMAN_TEST_PENDING",
+      "rights": "pending_verification",
+      "market_acceptance": "NOT_TESTED"
+    },
+    {
+      "id": "P03",
+      "title": "The Crack That Crossed the Table",
+      "story_id": "puzzle-p03-static-v1",
+      "mp4": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v1/puzzle-p03-static-v1.mp4",
+      "duration": 39.0,
+      "sha256": "f5b62dbca0b8f5a0490b1fbd96cd7a808dd64cb44732e0e925b07d5441ec9ff9",
+      "imagegen_calls": 3,
+      "completed_images": 3,
+      "encode_count": 8,
+      "render_wall_seconds": 63.265,
+      "creation_to_qa_seconds": 1300.4,
+      "quality_note": "Shadow reveal readable; approximate shadow geometry and cropped final tabletop proof.",
+      "findings": [
+        {
+          "timestamp": "0.0–21.0",
+          "impact": "confusing",
+          "finding": "Line has a visibly shadow-like softness and mobile is shown early, so the apparent-crack alternative may not hold. No blinded evidence collected."
+        },
+        {
+          "timestamp": "10.0–16.0; 33.0–39.0",
+          "impact": "confusing",
+          "finding": "Portrait cover reduces tabletop continuation in close-up and removes most final empty-table shadow proof."
+        },
+        {
+          "timestamp": "27.0–30.0",
+          "impact": "confusing",
+          "finding": "Generated hand-shadow geometry is approximate; thin line disappears beyond its darkest silhouette, so exact optical causality is imperfect."
+        },
+        {
+          "timestamp": "30.0–33.0",
+          "impact": "cosmetic",
+          "finding": "Right vase contour clipped; blue dot, clothing and hairstyle remain consistent. No confirmed prop-state contradiction observed."
+        }
+      ],
+      "story_gate": "PENDING",
+      "storyboard_gate": "PENDING",
+      "viewer_gate": "HUMAN_TEST_PENDING",
+      "rights": "pending_verification",
+      "market_acceptance": "NOT_TESTED"
+    },
+    {
+      "id": "P04",
+      "title": "The Rope He Refused to Pull",
+      "story_id": "puzzle-p04-static-v1",
+      "mp4": "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v1/puzzle-p04-static-v1.mp4",
+      "duration": 39.0,
+      "sha256": "dae5314dea81cbb8c002c1e6fa247e34fd7de0768dc1d26d5d03da6100325bb4",
+      "imagegen_calls": 4,
+      "completed_images": 4,
+      "encode_count": 8,
+      "render_wall_seconds": 65.421,
+      "creation_to_qa_seconds": 1695.9,
+      "quality_note": "High flag reveal present; left rope-tail geometry inconsistent and final bag cropped.",
+      "findings": [
+        {
+          "timestamp": "0.0–10.0",
+          "impact": "cosmetic",
+          "finding": "Flag tip cropped at right edge; circle and two eyelets still readable."
+        },
+        {
+          "timestamp": "22.0–27.0",
+          "impact": "confusing",
+          "finding": "Blue snip is readable but relation of loose cream tail to the blue knot is not fully resolved in the still."
+        },
+        {
+          "timestamp": "30.0–39.0",
+          "impact": "breaks story logic",
+          "finding": "After flag rises, left running-rope tail still reaches/appears anchored at original bench cleat. A fixed flag on that same rope should carry its free lower tail upward too. The added/remaining rope length makes the demonstrated counterweight state inconsistent."
+        },
+        {
+          "timestamp": "30.0–39.0",
+          "impact": "confusing",
+          "finding": "Floor bag is outside portrait crop; no final decoded frame shows high pennant and floor bag together. Separate close-up and high-flag cuts carry only part of the intended causal proof."
+        }
+      ],
+      "story_gate": "PENDING",
+      "storyboard_gate": "PENDING",
+      "viewer_gate": "HUMAN_TEST_PENDING",
+      "rights": "pending_verification",
+      "market_acceptance": "NOT_TESTED"
+    }
+  ]
+}

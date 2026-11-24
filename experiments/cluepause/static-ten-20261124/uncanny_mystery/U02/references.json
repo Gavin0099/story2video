@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "woman",
+      "kind": "character",
+      "invariants": [
+        "invented woman age 40, shoulder-length wavy dark brown hair, broad face",
+        "sage green cardigan over plain cream shirt, black trousers"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03",
+        "shot-06",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "kind": "set",
+      "invariants": [
+        "small ordinary kitchen, warm white cabinets, pale wooden floor, dark open doorway",
+        "narrow charcoal rug with raised edge at threshold, low grey robot charging dock under cabinet at rear"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "stool",
+      "kind": "prop",
+      "invariants": [
+        "one light grey backless swivel stool, round padded seat, chrome central stem, five black caster wheels",
+        "mustard yellow apron draped over seat, two long matching waist ties; one tie hangs to floor before reveal; apron never worn"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "robot",
+      "kind": "prop",
+      "invariants": [
+        "one unbranded low round charcoal robot vacuum with pale grey circular top and black bumper",
+        "underside has horizontal black brush roller; no text, no extra robot"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "marble",
+      "kind": "prop",
+      "invariants": [
+        "one small translucent blue glass marble, no other balls"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-03",
+        "shot-04"
+      ]
+    },
+    {
+      "id": "scuff",
+      "kind": "prop",
+      "invariants": [
+        "thin paired curved grey caster scuffs across pale floor, leading from stool position toward doorway"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-05",
+        "shot-10"
+      ]
+    }
+  ]
+}

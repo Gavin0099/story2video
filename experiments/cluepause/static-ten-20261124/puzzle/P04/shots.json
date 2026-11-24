@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "story_id": "puzzle-p04-static-v1",
+  "fiction": "FICTION — original fictional puzzle; rights pending_verification",
+  "genre": "puzzle",
+  "question": {
+    "en": "Why cut it to raise the flag?",
+    "zh": "為什麼剪繩才升旗？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a-v2.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "He wanted the flag higher. So he reached for scissors.",
+      "zh": "他想把旗升高，卻拿起了剪刀。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0,
+      "gap_before": 0
+    },
+    {
+      "id": "line-02",
+      "en": "The red pennant hung low. The rope beside it was tight.",
+      "zh": "紅旗垂在低處，旁邊的繩子卻繃緊了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 5,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-03",
+      "en": "Perhaps the lifting line was jammed. He never pulled it.",
+      "zh": "也許升旗繩卡住了，但他從沒拉它。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 10,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-04",
+      "en": "One pale rope crossed the pulley. A blue tie held its left side down.",
+      "zh": "一條淺色繩穿過滑輪，藍色細繩把左側固定住。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 16,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-05",
+      "en": "He cut only the blue tie.",
+      "zh": "他只剪斷了藍色細繩。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 22,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-06",
+      "en": "Behind the bench, a sandbag dropped. The other side rose.",
+      "zh": "工作檯後的沙袋落下，另一側就升起。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 27,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-07",
+      "en": "He had cut the restraint, and let the weight do the lifting.",
+      "zh": "他剪開的是固定繩，升旗的力來自沙袋。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 32,
+      "gap_before": 0.08
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "medium",
+      "start": 0,
+      "end": 5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "flag",
+        "rig",
+        "tools",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Maker holds scissors beside a low flag.",
+      "prompt": "Teal maker holds orange scissors beside LOW red triangular pennant white circle at chest height on LEFT cream rope. High brass pulley and bench. Sandbag concealed behind bench apron."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 5,
+      "end": 10,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "flag",
+        "rig",
+        "tools",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Taut rope and low pennant suggest jam.",
+      "prompt": "Close-up LOW red pennant white circle attached by two eyelets to taut LEFT cream rope. Separate thin BLUE restraint tied below flag down to bench cleat. No cut yet."
+    },
+    {
+      "id": "shot-03",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 10,
+      "end": 16,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "flag",
+        "rig",
+        "tools",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Maker studies rig rather than pulling.",
+      "prompt": "Teal maker studies low red pennant, orange scissors down at side, both hands away from cream lifting rope; brass pulley above, right rope vanishes behind bench."
+    },
+    {
+      "id": "shot-04",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 16,
+      "end": 22,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "flag",
+        "rig",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Two rope legs run over pulley, blue restraint differs.",
+      "prompt": "Portrait view brass single pulley high on upright with ONE continuous cream rope draped over, left leg down to low red flag and thin blue restraint cleat, right leg descends behind bench apron. Sandbag not visible yet."
+    },
+    {
+      "id": "shot-05",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 22,
+      "end": 27,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "flag",
+        "rig",
+        "tools",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Only blue restraint is cut; cream running rope stays intact.",
+      "prompt": "Close-up orange scissors just cut BLUE restraint near bench cleat, two separated BLUE ends. Thick cream running rope INTACT. Low red flag edge above."
+    },
+    {
+      "id": "shot-06",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 27,
+      "end": 30,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "rig",
+        "bag",
+        "tools",
+        "loft"
+      ],
+      "sfx": [
+        {
+          "file": "assets/tick.wav",
+          "offset": 0.1,
+          "gain": 0.45,
+          "en": "[snip]",
+          "zh": "[剪斷聲]"
+        }
+      ],
+      "conveys": "Opposite end is weighted by falling bag.",
+      "prompt": "TIGHT LOW REVEAL CLOSE-UP only tan rectangular canvas sandbag with black X cross stitching on FLOOR behind bench, attached to RIGHT cream rope descending vertically from above. Bench apron visible overhead. Exclude flag, pulley, blue tie and all people from this cell: only bag resting on floor and its taut cream rope. Do not show low flag after bag fell."
+    },
+    {
+      "id": "shot-07",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 30,
+      "end": 33,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "flag",
+        "rig",
+        "bag",
+        "tools",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Flag has risen as counterweight has fallen.",
+      "prompt": "Wide portrait complete rig: red pennant white circle now HIGH on LEFT leg just below high brass pulley; RIGHT cream rope reaches tan sandbag black cross stitching on floor; both legs single pulley visible, cut blue restraint hangs left cleat."
+    },
+    {
+      "id": "shot-08",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 33,
+      "end": 39,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "maker",
+        "flag",
+        "rig",
+        "bag",
+        "tools",
+        "loft"
+      ],
+      "sfx": [],
+      "conveys": "Maker shows empty hands below raised pennant.",
+      "prompt": "Teal maker shows empty open hands smiling below HIGH red pennant white circle; orange scissors set on bench; cream running rope intact, bag on floor right, severed blue tie on cleat."
+    }
+  ]
+}
