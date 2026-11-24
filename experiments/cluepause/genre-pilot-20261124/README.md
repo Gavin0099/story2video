@@ -2,6 +2,8 @@
 
 日期：2026-11-24（Asia/Taipei）。狀態：**PLANNING + SCRIPTS ONLY / HUMAN_TEST_PENDING**。
 
+H01 凍結兩版的時序 QA、探索盲測問卷、成本帳與下次 reference 規格，見 [h01-viewer-gate/](h01-viewer-gate/)（探索用途，HUMAN_TEST_PENDING）。
+
 本目錄依 Owner 本次提供的 Issue #18 修訂摘要規劃，沒有讀取或改寫線上 issue。起點為 PR #19 head `a5be360edfbb2b012ae5e373d6a5c01315f1b8f6`，分支 `codex/cluepause-genre-pilot-20261124`。本次不 commit。
 
 ## 要回答的決策
