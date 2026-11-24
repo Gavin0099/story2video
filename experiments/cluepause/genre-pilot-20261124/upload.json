@@ -1,0 +1,175 @@
+{
+  "channel_id": "UCG_nXXBzgg54w2zhkZ33Row",
+  "channel_handle": "@CluePause",
+  "authorization": "Owner authorized conditional Chrome-plugin uploads of the three rendered genre pilots to CluePause as PRIVATE only, subject to Studio quota checks; no commit.",
+  "authorization_local_date": "2026-11-24",
+  "recorded_at_taipei": "2026-11-24T15:36:12.537655+08:00",
+  "git_sha": "da4bb2cb1abba65baf94e454707efb61f03fd8f6",
+  "status": "PARTIAL_DAILY_UPLOAD_LIMIT",
+  "uploaded_count": 1,
+  "upload_attempt_count": 2,
+  "quota_refusals_observed": "2026-11-24 Taipei: second upload (uncanny_mystery) refused in Studio with \"已達每日上傳數量上限\"; one-time verification link offered, not used; no draft left",
+  "browser_error": "Cannot find module 'C:\\Users\\daish\\.codex\\plugins\\cache\\openai-bundled\\browser\\26.1106.51428\\scripts\\browser-service.mjs' imported from C:\\Users\\daish\\AppData\\Local\\Temp\\.tmpfflCWh\\trusted-worker.js",
+  "browser_setup_attempts": 2,
+  "browser_recovery": "Repair or reinstall the Browser plugin through the Codex/ChatGPT plugin UI; reconnect the already signed-in Chrome session. No native-host repair, alternate browser, credentials or account changes attempted.",
+  "engineering_acceptance": {
+    "local_hashes": "PASS: 12 media/caption hashes; existing verify-delivery.py also passes 33 bound files",
+    "uv_sync_locked": "exit 0",
+    "pytest": "exit 0: 61 passed, 1 cache-permission warning in 4.51 s; --basetemp=artifacts/genre-pilot-20261124/upload-pytest-tmp",
+    "npm_ci_initial": "exit -4048: EPERM reading default user npm cache; following typecheck exit 1 because tsc was unavailable",
+    "npm_ci_workspace_cache": "exit 0: npm.cmd ci --offline with npm_config_cache=D:/s2v-gp/artifacts/npm-cache",
+    "npm_typecheck_workspace_cache": "exit 0",
+    "remote_upload_verification": "NOT_PERFORMED",
+    "logs": "artifacts/genre-pilot-20261124/upload-*.log"
+  },
+  "market_acceptance": "HUMAN_TEST_PENDING; no public experiment or market acceptance claimed",
+  "committed": false,
+  "videos": [
+    {
+      "pilot": "puzzle",
+      "status": "UPLOADED_PRIVATE",
+      "video_id": "YX8NJR966As",
+      "title": "She Cut a Thread. The Gold Got Lighter. | CluePause",
+      "title_zh_Hant": "她剪斷一條線，金子竟變輕了｜謎底之前",
+      "description": "She snipped a thread beneath a jeweler's scale. Nothing left the tray, but the weight dropped. What was the thread pulling?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她剪斷金店秤下的一條線。秤盤上的金子一點沒少，重量卻下降了。那條線究竟拉著哪裡？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "metadata_status": "APPLIED: EN title/description; zh-Hant title/description translation",
+      "visibility": "private",
+      "requested_visibility": "private",
+      "uploaded_at_taipei": "2026-11-24 (afternoon)",
+      "mp4_path": "D:\\s2v-gp\\artifacts\\genre-pilot-20261124\\puzzle\\puzzle.mp4",
+      "media_variant": "plain master, matching the previous publication master approach; upload SRTs separately",
+      "mp4_sha256": "280a19367f268163591fd30bd1228f84b876929a78a192dfc49dba14caefcf21",
+      "cc_mp4_sha256": "626be86b8276ac7b6344752dd4f48cabb7595c54f146900d0db9c48db968a256",
+      "srt_sha256s": {
+        "en": "c70cb8d0b231aae50c09a23d937cf8d44d54a3942e172b208e7fe30538b16de8",
+        "zh-Hant": "a16a5ed278cf50acfa78aa584895a724ed86819e5d7cd3f7849e813b70a9696c"
+      },
+      "local_hash_verification": "PASS: both MP4 variants and both SRTs match the production-linked manifest; cc hash also matches the production.md table",
+      "primary_language": "English (United States)",
+      "requested_primary_language": "English (United States)",
+      "disclosure": "yes (AI used)",
+      "requested_disclosure": "yes",
+      "audience": {
+        "made_for_kids": false
+      },
+      "requested_audience": {
+        "made_for_kids": false
+      },
+      "captions_present": [
+        "English (United States)",
+        "Chinese (Traditional)"
+      ],
+      "requested_captions": [
+        "English (United States)",
+        "Chinese (Traditional)"
+      ],
+      "quota_check": "first upload accepted",
+      "not_verified": [
+        "HD processing completion",
+        "continuous Studio playback",
+        "caption rendering on phone"
+      ],
+      "uploaded_file": "puzzle.mp4 (plain master)"
+    },
+    {
+      "pilot": "uncanny_mystery",
+      "status": "NOT_UPLOADED_DAILY_LIMIT",
+      "video_id": null,
+      "title": "Her Locked Shoe Cabinet Was Dripping Again | CluePause",
+      "title_zh_Hant": "鎖著的鞋櫃，又在滴水｜謎底之前",
+      "description": "Every morning, the shoes inside her locked cabinet were wet. The laces stayed dry. Was somebody wearing them at night?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "每天早上，鎖著的鞋櫃裡，鞋子都濕了，鞋帶卻還是乾的。難道有人半夜穿出去？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "metadata_status": "LOCAL_DRAFT_NOT_APPLIED",
+      "visibility": null,
+      "requested_visibility": "private",
+      "uploaded_at_taipei": null,
+      "mp4_path": "D:\\s2v-gp\\artifacts\\genre-pilot-20261124\\uncanny_mystery\\uncanny_mystery.mp4",
+      "media_variant": "plain master, matching the previous publication master approach; upload SRTs separately",
+      "mp4_sha256": "58f77743c96a2beaa5f4426cba7c87cb25b68861bd61294b551c6e3c465d286e",
+      "cc_mp4_sha256": "632e7c5ce20aa405fee04f12005a1c50e10131211a11ca878442bb68a65af847",
+      "srt_sha256s": {
+        "en": "012725581786dfb2bd5a8b75d05609078d1daf32b61eacc90f8e12e7b51f562a",
+        "zh-Hant": "84c24baa198a2a65cb94b6c61db9782bec8305bd7310d7028d8cbfa56938ca89"
+      },
+      "local_hash_verification": "PASS: both MP4 variants and both SRTs match the production-linked manifest; cc hash also matches the production.md table",
+      "primary_language": null,
+      "requested_primary_language": "English (United States)",
+      "disclosure": null,
+      "requested_disclosure": "yes",
+      "audience": null,
+      "requested_audience": {
+        "made_for_kids": false
+      },
+      "captions_present": null,
+      "requested_captions": [
+        "English (United States)",
+        "Chinese (Traditional)"
+      ],
+      "quota_check": "Studio daily upload limit reached after the first upload",
+      "not_verified": [
+        "signed-in channel",
+        "daily upload limit or verification warnings",
+        "remote duplicate/draft check",
+        "video ID",
+        "Private visibility",
+        "saved metadata and translation",
+        "saved caption tracks",
+        "AI disclosure",
+        "audience setting",
+        "HD processing",
+        "continuous Studio playback"
+      ]
+    },
+    {
+      "pilot": "urban_horror",
+      "status": "NOT_UPLOADED_DAILY_LIMIT",
+      "video_id": null,
+      "title": "The Intercom Kept Her Last Two Words | CluePause",
+      "title_zh_Hant": "對講機只留下她最後兩個字｜謎底之前",
+      "description": "After midnight, the intercom kept only the last two words of your first reply. Outside, Nia heard her mother's voice. But Mom was upstairs.\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "午夜後，對講機只保留第一句回話的最後兩個英文單字。門外傳來媽媽的聲音，可媽媽明明就在樓上。\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "metadata_status": "LOCAL_DRAFT_NOT_APPLIED",
+      "visibility": null,
+      "requested_visibility": "private",
+      "uploaded_at_taipei": null,
+      "mp4_path": "D:\\s2v-gp\\artifacts\\genre-pilot-20261124\\urban_horror\\urban_horror.mp4",
+      "media_variant": "plain master, matching the previous publication master approach; upload SRTs separately",
+      "mp4_sha256": "fc29ba815c00197e4e10f39c5992348aba3a1f7d39fefdbe87344e5d02a5d5be",
+      "cc_mp4_sha256": "de40ad8af58d5663f1f9ecfc18a2ac76d21530ef9ff5c3e02061111d8d6b823e",
+      "srt_sha256s": {
+        "en": "757468338a320bd9b94cc7a3183bdc38441f90cdb524a2f6d2ab1b9391569172",
+        "zh-Hant": "ae005c7d67f00c7140adb033a6dc2428b2218819de6cc0b861d2df7b75912406"
+      },
+      "local_hash_verification": "PASS: both MP4 variants and both SRTs match the production-linked manifest; cc hash also matches the production.md table",
+      "primary_language": null,
+      "requested_primary_language": "English (United States)",
+      "disclosure": null,
+      "requested_disclosure": "yes",
+      "audience": null,
+      "requested_audience": {
+        "made_for_kids": false
+      },
+      "captions_present": null,
+      "requested_captions": [
+        "English (United States)",
+        "Chinese (Traditional)"
+      ],
+      "quota_check": "Studio daily upload limit reached after the first upload",
+      "not_verified": [
+        "signed-in channel",
+        "daily upload limit or verification warnings",
+        "remote duplicate/draft check",
+        "video ID",
+        "Private visibility",
+        "saved metadata and translation",
+        "saved caption tracks",
+        "AI disclosure",
+        "audience setting",
+        "HD processing",
+        "continuous Studio playback"
+      ]
+    }
+  ],
+  "upload_route": "Claude in Chrome via the Owner's signed-in YouTube Studio (Codex browser plugin files missing); Owner approved this route on 2026-11-24"
+}
