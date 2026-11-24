@@ -1,0 +1,142 @@
+[
+  {
+    "id": "CPB-01",
+    "title": "海龜湯／信天翁湯",
+    "paradox": "平凡的味覺讓人採取突兀的行動。",
+    "hidden_assumption": "當下的刺激只和當下有關。",
+    "clue_sequence": [
+      "指出這次感受違反角色預期",
+      "在揭曉前給一個可核對的既往細節"
+    ],
+    "reveal_mechanism": "感官證據推翻對往事的理解。",
+    "reveal_proof": "用同一個細節連起眼前場景與回憶。",
+    "visual_spoiler_risk": "若回憶畫面先確認過往真相，味覺失去推理用途。",
+    "shorts_suitability": "需要背景較多，只有前情能壓成一條線索時才適合。",
+    "source_and_rights": {
+      "source_url": "https://search.worldcat.org/title/1000503973",
+      "edition_note": "經典選集的書目紀錄。未核對特定題文或首刊。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  },
+  {
+    "id": "CPB-02",
+    "title": "酒吧的一杯水",
+    "paradox": "表面帶有敵意的應對卻使對方感謝。",
+    "hidden_assumption": "表面動作的含義就是行動目的。",
+    "clue_sequence": [
+      "讓求助者先有可聽見的異常",
+      "讓相同異常在應對後消失"
+    ],
+    "reveal_mechanism": "反常動作直接處理一個未說出口的問題。",
+    "reveal_proof": "以同一聲音的出現與消失證明前後因果。",
+    "visual_spoiler_risk": "如果表明求助的真正原因，解答會在揭曉前明朗。",
+    "shorts_suitability": "可用單一場景建立矛盾，音效須清楚。",
+    "source_and_rights": {
+      "source_url": "https://www.rec-puzzles.org/logic/lateral.html",
+      "edition_note": "題目索引 The Man in the Bar。流傳版本。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  },
+  {
+    "id": "CPB-03",
+    "title": "電梯裡的男人",
+    "paradox": "固定行為只在某個日常條件改變時例外。",
+    "hidden_assumption": "角色每次都有同樣的可用選項。",
+    "clue_sequence": [
+      "並排同一行為的兩次結果",
+      "讓觀眾看見只在例外時存在的條件"
+    ],
+    "reveal_mechanism": "環境或工具改變角色可完成的動作。",
+    "reveal_proof": "用同一機位捕捉操作範圍的差異。",
+    "visual_spoiler_risk": "開場直接拍對比中的操作細節可能先露出解法。",
+    "shorts_suitability": "適合同機位對照與短篇揭曉。",
+    "source_and_rights": {
+      "source_url": "https://www.rec-puzzles.org/logic/lateral.html",
+      "edition_note": "題目索引 The man in the Elevator。流傳版本。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  },
+  {
+    "id": "CPB-04",
+    "title": "推車到旅館",
+    "paradox": "一個看似普通的移動立即觸發重大後果。",
+    "hidden_assumption": "名詞和動作都處在觀眾第一時間想像的生活場景。",
+    "clue_sequence": [
+      "給一個合理對應兩種情境的細節",
+      "用另一個公平的線索提示尺寸或規則"
+    ],
+    "reveal_mechanism": "同一事件置於另一個早有線索支持的情境。",
+    "reveal_proof": "拉遠畫面，展示先前動作與後果所在的完整環境。",
+    "visual_spoiler_risk": "全景若太早出現，新情境會直接暴露。",
+    "shorts_suitability": "揭曉可很短，須保留公平的雙重解讀線索。",
+    "source_and_rights": {
+      "source_url": "https://www.rec-puzzles.org/logic/lateral.html",
+      "edition_note": "題目索引 Push that Car。流傳版本。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  },
+  {
+    "id": "CPB-05",
+    "title": "羅密歐與茱麗葉",
+    "paradox": "看似涉及熟悉人物的事件留下不合常理的痕跡。",
+    "hidden_assumption": "名字指向某種已知身分。",
+    "clue_sequence": [
+      "安排不依賴名字也看得見的痕跡",
+      "留一個能重新判定身分的環境異常"
+    ],
+    "reveal_mechanism": "重新分類名字指涉的對象。",
+    "reveal_proof": "揭曉時把身分與早先痕跡放進同一畫面。",
+    "visual_spoiler_risk": "需避免旁白或角色分鏡先確認錯誤身分。",
+    "shorts_suitability": "題面可短，線索需兼顧身份重判後的因果。",
+    "source_and_rights": {
+      "source_url": "https://www.rec-puzzles.org/logic/lateral.html",
+      "edition_note": "Anthony and Cleopatra 為同機制的近似版本。此索引未核對羅密歐與茱麗葉的特定版本。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  },
+  {
+    "id": "CPB-06",
+    "title": "田野中的未拆包裹",
+    "paradox": "一件看似無關的大物件停在異常現場。",
+    "hidden_assumption": "物件的日常稱呼也正確描述了它的用途。",
+    "clue_sequence": [
+      "展示一個尋常包裝無法解釋的部件",
+      "把部件連到現場可以證明的結果"
+    ],
+    "reveal_mechanism": "重新辨識物件功能，以及它原先應完成的動作。",
+    "reveal_proof": "用清楚的動作對照展示物件原來如何運作。",
+    "visual_spoiler_risk": "一開始就給出辨識性輪廓可能劇透。",
+    "shorts_suitability": "道具易識別，適合近拍。因果涉及專門知識時需先驗。",
+    "source_and_rights": {
+      "source_url": "https://www.rec-puzzles.org/logic/lateral.html",
+      "edition_note": "題目索引 Death in a Field。流傳版本。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  },
+  {
+    "id": "CPB-07",
+    "title": "現場的一灘水",
+    "paradox": "現場只留下少量液體，原本存在的東西消失。",
+    "hidden_assumption": "眼前的痕跡和先前的物件屬不同來源。",
+    "clue_sequence": [
+      "給液體位置與時間的可觀察資訊",
+      "留能核對原物件曾占用空間的痕跡"
+    ],
+    "reveal_mechanism": "物態或形狀隨時間改變，殘跡可以還原先前狀態。",
+    "reveal_proof": "用連續動作或匹配鏡頭連起原物件與殘跡。",
+    "visual_spoiler_risk": "旁白提前說出正在發生的狀態變化會直接解答。",
+    "shorts_suitability": "容易用實拍驗證，尤其適合先做視覺因果樣片。",
+    "source_and_rights": {
+      "source_url": "https://www.rec-puzzles.org/logic/lateral.html",
+      "edition_note": "索引列有水灘線索的變體和相變近似題。未核對特定空倉庫版本。",
+      "rights_status": "pending_verification",
+      "permitted_use": "research_only"
+    }
+  }
+]
