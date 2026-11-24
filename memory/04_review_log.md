@@ -162,3 +162,14 @@
 - Validation boundary: PASS: artifacts/worktrees/shorts-12-story-review/artifacts/evidence/test-results/story-quality-autoloop-qualified-04-v7.json -> exit_code=0
 - Next action: 等待使用者核准製作。
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:3fc2594cf61118b385f099e7d332f05d657d65e5e05625b70a4ec8be87f715df -->
+### Canonical memory checkpoint — 01a1fcd6-e0c5-7b41-943c-6c6980134172
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `3fc2594cf61118b385f099e7d332f05d657d65e5e05625b70a4ec8be87f715df`
+- Commit binding: `15e5f8a4b0518904d314b84ef14afb895850729f` (bound)
+- Record: 整理 CluePause 29 支公開 Shorts 的首日與其他時窗資料、成片時間碼及三項驗證假設。Owner 核准先開階段性 PR。獨立審查重算影片數與首日合計，確認 Hook v2 實驗涵蓋整體開場，無未修 P0/P1。市場驗收仍待新 9 支同窗報表與首看。
+- Validation boundary: PASS: artifacts/evidence/cluepause-p0-csv-verification.json -> exit_code=0; git diff --check; uv sync --locked --group governance; uv run --locked --group governance pytest: 61 passed; video npm.cmd ci and npm.cmd run typecheck: PASS on local Node 24 with Node 22 engine warning.
+- Next action: 依 Owner 範圍先送 P0 階段性 PR。後續如補資料，按相同首日時窗更新。
+- PLAN reconciliation: `not_applicable`
