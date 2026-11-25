@@ -2,7 +2,7 @@
 
 ## Current delivery — v2, 2026-11-25 Asia/Taipei
 
-**FIX-CANDIDATE pending independent review, not uploaded.** The former blocking reveal changed the thread from a vertical pan connection to a horizontal cylinder pass and a fixed-looking counter-edge attachment. v2 replaces that reveal with one complete vertical force path held on screen, followed by a matched severed state: the pan rises and the needle drops while the three gold pieces remain. This is primary-agent evidence, not independent approval or a tested physical prototype.
+**REVIEWED: UPLOAD-OK private review copy, not uploaded yet.** The former blocking reveal changed the thread from a vertical pan connection to a horizontal cylinder pass and a fixed-looking counter-edge attachment. v2 replaces that reveal with one complete vertical force path held on screen, followed by a matched severed state: the pan rises and the needle drops while the three gold pieces remain. Independent review supports this fictional still-state mechanism for private review; it is not a tested physical prototype or a human quality-gate pass.
 
 - New master: `artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2.mp4`
 - SHA-256: `36c2edfdc6ed5a0613edc3bc5ac6d995558b04b6105f043f24b43dadba982b09`
@@ -12,6 +12,14 @@
 - Revision inputs: [revisions/v2/](revisions/v2/); next free id was v2. Original v1 inputs/assets/master are unchanged (hash-verified); this record is the authorized exception. No master replacement.
 - Source Git SHA: `b7801291cf7af830272070e416130125ed0df7b5`; branch `codex/cluepause-static-ten-20261124`. Changes remain uncommitted; input/pipeline/asset hashes bind the actual worktree bytes.
 - Story Quality Gate **PENDING**; Storyboard Quality Gate **PENDING**; Viewer Gate **HUMAN_TEST_PENDING**. Rights **pending_verification**. Market acceptance **NOT_TESTED**.
+
+### Independent v2 review disposition — 2026-11-25
+
+[Independent review](../../../../../artifacts/independent-review-p01-v2-20261125/review.md): **UPLOAD-OK private review copy; BLOCKING: none**. The review's original records/inputs verdict was **REQUEST_CHANGES**. Its two SHOULD-FIX record/helper corrections and two NIT input corrections were already applied in commit `e6295316929624c10d1a60f11f631dca7fd5ebc7`: environment-supplied tools are honored without embedded local paths, incompatible post-cut thread lengths are explicitly disclosed, the invariant says round disc, and the final storyboard row holds the cut assembly. This records update does not claim a fresh independent records approval.
+
+The post-cut continuity residual remains: bare eyelet in shot 02, short stump above G in shot 08, and long upper end below G in shots 11/12 cannot depict one unchanged cut without another unshown step. Opening motion, cropped hand/heel clues, clipped disc and phone readability limits remain as detailed below. The reviewed master is unchanged; the separate upload derivative and its checks are documented in [upload-copy.md](../../../../../artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/upload-copy.md). `uploaded_file_*` fields in the metadata draft identify that prepared derivative only; no upload has occurred.
+
+This recommendation is for private review only, without Owner upload/publication authorization or a Story/Storyboard/Viewer gate pass. Engineering media acceptance is separate from market acceptance **NOT_TESTED**; Story/Storyboard Gates remain **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**.
 
 ### Canonical mechanism, defined before generation
 
@@ -72,7 +80,7 @@ The wrapper honors supplied `S2V_FFMPEG` / `S2V_FFPROBE`, otherwise discovers ea
 
 ### Residuals and acceptance limits
 
-- Blocking 27–32 s route discontinuity is addressed in the candidate; independent review still needs to decide whether the full-height line and pan rebound read clearly at phone size. Thin thread and small needle need that check. The top spring is more explicit in regenerated inserts than in the old close-ups; casing proportions/perspective differ slightly across old/new images.
+- Blocking 27–32 s route discontinuity is resolved for the independent private-copy review. Actual phone readability of the full-height line, pan rebound, thin thread and small needle remains untested. The top spring is more explicit in regenerated inserts than in the old close-ups; casing proportions/perspective differ slightly across old/new images.
 - Existing 0–3.5 s opening is a static post-cut state with no first-second high→low needle motion. Shot 02 has no visible tied thread stump. Flashback/replay order (03 and 09) still relies partly on narration.
 - **Impact class: confusing — residual post-cut thread-length continuity.** Shot 02 (0.5–3.5 s) shows a bare eyelet; shot 08 (23–27 s) shows a short stump ending above G; shots 11/12 (32–36 s) show a long A → G → free end below the countertop. These cannot all depict the same single cut without an unshown removal/shortening step. This weakens continuity of the repeated post-cut result. The loaded route remains A → G → B and the matched reveal pair still demonstrates force release; the former loaded-path failure is not reintroduced. This visual residual remains unresolved.
 - Existing shots 03/06 crop the second seller hand; shot 07 loses the raised-heel clue; shot 08 partly clips the disc. All three pieces can still be counted in 08. The “oval” is actually a round disc. These are inherited limitations, not claimed fixed.

@@ -1,0 +1,181 @@
+{
+  "sheet": "shots-b",
+  "purpose": "shot_sheet",
+  "prompt": "Use case: precise-object-edit. Asset: one photographic shot sheet for P04 revision v2.\nInputs: image 1 is the canonical reference for the same man, red pennant, brass pulley, cream rope, tan X-stitched canvas sandbag, orange scissors, sunlit white brick sail loft and wooden bench. Image 2 is the old edit target sheet: its FIRST TWO cells have the incorrect rope geometry. Preserve those subjects and style but replace their mechanism states as specified. Reference scenes contain erroneous mechanics; use them for visual identities only.\nOutput ONE 2 column x 1 row contact sheet, two equal portrait 9:16 photographs side by side (overall 9:8 aspect ratio, preferably 2304x2048). No other cells, no borders, no letters, arrows, diagrams, captions or watermarks.\nCRITICAL PHYSICAL FIX, both cells: this is ONE open-ended continuous cream rope bent over ONE fixed brass pulley on the upright (inverted U route, not a closed endless loop). Left leg carries the red triangular pennant by two brass eyelets FIXED to that rope. Below the lower eyelet is a SHORT cream tail of about 10 cm ending in a visible free tip, with a short cut blue stub tied to that tip. That cream tip has risen WITH the flag and is now HIGH ABOVE the bench, leaving a conspicuous empty air gap to the silver bench cleat. NO cream rope whatsoever below that tip. The cleat holds ONLY a dangling cut BLUE stub; no cream rope touches cleat, bench or man's hands. The right cream leg runs uninterrupted down from pulley to the handle of the ONLY tan sandbag, which rests fully on the FLOOR. No extra cream lines or branches. Flag cannot slide independently on rope.\nGeometry for conservation of rope length: pulley roughly 2.4 m above floor; cleat 0.9 m; initial flag lower eyelet roughly 1.05 m and cream tip 0.95 m. The hidden bag has dropped about 0.6 m to floor, so flag and tip BOTH rise about 0.6 m: final lower eyelet 1.65 m, free tip 1.55 m. Final bag top/handle about 0.25 m. Keep these relationships credible. This is the settled AFTER state in both photographs.\nComposition: camera pulled back to show the COMPLETE pulley at top, the flag and its BOTH eyelets, the high free cream tip against a plain contrasting wall, the conspicuous empty gap, cleat with only severed blue string, full uninterrupted right rope and entire floor-resting sandbag and floor beneath it. Put pulley around 10% of frame height and bag bottom around 90%. Keep all proof safely within each portrait panel, with breathing room all four sides. Bench must not occlude the right rope. Short flag points right, WHITE CIRCLE patch clear. Scissors on bench. Same bench/upright/set in both.\nCELL 0 LEFT: complete rig alone in this settled state; no person or hands. This is the decisive causal proof.\nCELL 1 RIGHT: exact SAME settled rig and same viewpoint, plus canonical teal-shirt, beige-trouser wavy dark-haired maker standing to left. His BOTH hands open and empty, away from rig; no hands support or pull either rope. Keep all rig proof visible. Orange scissors remain on bench. Maker may be slightly farther back so entire rig fits.\nAvoid: old erroneous long left tail reaching cleat, rope extensions beneath flag, flag sliding on a stationary rope, bag hanging above floor, more than one weight, hidden floor bag, clipped flag, mismatched bag height between panels.",
+  "reference_items": [
+    {
+      "id": "maker",
+      "kind": "character",
+      "invariants": [
+        "man about 40",
+        "wavy short black hair",
+        "teal work shirt sleeves rolled",
+        "beige trousers",
+        "no hat"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          0.65,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "flag",
+      "kind": "prop",
+      "invariants": [
+        "small triangular RED cloth pennant with WHITE circular patch near broad hoist edge",
+        "attached by TWO eyelets to left vertical running rope",
+        "first low then high"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0.55,
+          0.5,
+          0.4,
+          0.3
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "rig",
+      "kind": "prop",
+      "invariants": [
+        "one brass pulley on top of wooden upright",
+        "single continuous cream running rope through pulley",
+        "left leg holds pennant",
+        "right leg tied to tan canvas sandbag",
+        "separate thin BLUE restraint ties LEFT running-rope leg downward to bench cleat"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0.55,
+          0,
+          0.45,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "bag",
+      "kind": "prop",
+      "invariants": [
+        "tan rectangular canvas sandbag with black cross stitching",
+        "tied to right cream rope",
+        "initially raised behind bench front apron, later on floor",
+        "no other weight",
+        "before cut freely suspended behind apron, never supported on tabletop; after cut on floor"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0.65,
+          0.45,
+          0.3,
+          0.3
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "tools",
+      "kind": "prop",
+      "invariants": [
+        "small orange-handled utility scissors",
+        "thin blue restraint intact then cut with two loose ends"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0.25,
+          0.45,
+          0.4,
+          0.4
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "loft",
+      "kind": "set",
+      "invariants": [
+        "sunlit sail repair loft",
+        "whitewashed brick wall",
+        "wooden workbench with tall upright and high brass pulley",
+        "bench front apron partly occludes raised sandbag",
+        "no branding"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    }
+  ],
+  "reference_images": [
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/assets/reference.png",
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/assets/shots-b.png"
+  ],
+  "prompt_sha256": "ba693dfcf00861f73991e3f7fae7888c15c594ff5003140fc84af591ed57f125"
+}

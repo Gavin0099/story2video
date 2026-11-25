@@ -1,0 +1,13 @@
+{
+  "sheet": "shots-b-v4",
+  "attempt": 1,
+  "purpose": "shot_sheet",
+  "tool": "built-in ImageGen",
+  "prompt": "Use case: precise-object-edit.\nMake ONE two-column, one-row photographic contact sheet, each cell a complete 9:16 portrait. No border or text. Input 1 is the CANONICAL FLAG/KNOT assembly; input 2 is the CUT edit target; input 3 is the FINAL RIG edit target.\nCRITICAL: The red triangular flag, white circle, TWO brass eyelets, cream rope segment below the lower eyelet, and blue knot at its endpoint are ONE FIXED ASSEMBLY. Match input 1 proportions exactly. Lower eyelet center to blue-knot center must be 0.49 times upper-to-lower eyelet center spacing. Do NOT move eyelets relative to flag, do not lengthen or shorten this segment across panels. Copy the canonical assembly rather than redesigning it.\nLEFT CELL: edit input 2 only by shortening cream tail to canonical 0.49 eyelet spacings (currently about 1.10). Keep both eyelets and the full red pennant visible. The blue knot terminates the cream rope only HALF an eyelet-spacing below the lower eyelet. A tiny severed blue stub hangs from that knot; another blue stub remains on silver cleat with CLEAR AIR GAP. Scissors immediately beside the severed blue gap, not touching cream rope. Hand holds orange scissors, does not support rope. Low flag, release instant. Preserve set and bench.\nRIGHT CELL: edit input 3 only by shortening cream tail to canonical 0.49 eyelet spacings (currently 1.48). Keep flag elevated, entire open running rope path from short free left tip through two eyelets, over brass pulley and down right leg to black-X tan sandbag on floor. Blue knot must be just HALF an eyelet-spacing below lower eyelet, not one or 1.5 spacings. Keep a tiny blue stub on moving free tip, separate loose blue remnant on bench cleat, large air gap. Preserve pulley, floor bag, bench, right leg, lighting, camera, scissors on bench and no people.\nDo not change flag size, eyelet spacing, white circle identity, knot count, rope topology or any other state. Entire essential assembly and complete floor-bag rig must survive the central portrait crop. Photo edit, no diagrams, labels, arrows, captions or watermarks.",
+  "actual_reference_attachments": [
+    "assets/canonical-assembly.png",
+    "assets/edit-cut.png",
+    "assets/edit-final.png"
+  ],
+  "status": "requested"
+}

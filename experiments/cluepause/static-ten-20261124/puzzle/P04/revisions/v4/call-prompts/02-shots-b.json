@@ -1,0 +1,12 @@
+{
+  "sheet": "shots-b-v4",
+  "attempt": 2,
+  "purpose": "shot_sheet",
+  "tool": "built-in ImageGen",
+  "prompt": "Use case: precise-object-edit. ONE correction to input 1, the existing two-panel sheet. Input 2 is the canonical assembly.\nPreserve the entire sheet, resolution, photography and all objects, especially left panel, flag positions, pulley and bag. CRITICAL SINGLE CHANGE in RIGHT PANEL ONLY: shorten the cream free tail below the lower brass eyelet by HALF. The blue knot is currently at approximately pixel (864,452) with upper/lower eyelets (864,288)/(864,371) in a 1238x1269 sheet. Move the blue knot UP to (864,411), and its small dangling blue stub to just below that. Remove the obsolete lower tail/knot; replace that area with matching wall. Keep the lower eyelet at (864,371) and upper at (864,288) UNCHANGED. Then lower-eyelet-to-blue-knot spacing is 40 pixels, compared to 83 pixels between eyelets = 0.49, matching canonical and LEFT PANEL (left already correct: 0.50).\nRIGHT panel cream rope must end at this raised knot just HALF one eyelet-spacing below lower eyelet. It must NOT extend a full eyelet-spacing below it. Nothing else changes, including flag, white circle, right rope, cleat remnant, scissors, floor bag and framing. LEFT PANEL is already correct: do not lengthen or change its rope, eyelets or blue knot. No text or annotation.",
+  "actual_reference_attachments": [
+    "assets/shots-b-v4-attempt1.png",
+    "assets/canonical-assembly.png"
+  ],
+  "status": "requested"
+}

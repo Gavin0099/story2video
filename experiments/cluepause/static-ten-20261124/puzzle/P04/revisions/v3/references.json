@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "maker",
+      "kind": "character",
+      "invariants": [
+        "man about 40",
+        "wavy short black hair",
+        "teal work shirt sleeves rolled",
+        "beige trousers",
+        "no hat"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          0.65,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03"
+      ]
+    },
+    {
+      "id": "flag",
+      "kind": "prop",
+      "invariants": [
+        "small triangular RED cloth pennant with WHITE circular patch near broad hoist edge",
+        "attached by TWO eyelets to left vertical running rope",
+        "first low then high"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0.55,
+          0.5,
+          0.4,
+          0.3
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "rig",
+      "kind": "prop",
+      "invariants": [
+        "one brass pulley on top of wooden upright",
+        "single continuous cream running rope through pulley",
+        "left leg holds pennant",
+        "right leg tied to tan canvas sandbag",
+        "separate thin BLUE restraint ties LEFT running-rope leg downward to bench cleat"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0.55,
+          0,
+          0.45,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "bag",
+      "kind": "prop",
+      "invariants": [
+        "tan rectangular canvas sandbag with black cross stitching",
+        "tied to right cream rope",
+        "initially raised behind bench front apron, later on floor",
+        "no other weight",
+        "before cut freely suspended behind apron, never supported on tabletop; after cut on floor"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0.65,
+          0.45,
+          0.3,
+          0.3
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "tools",
+      "kind": "prop",
+      "invariants": [
+        "small orange-handled utility scissors",
+        "thin blue restraint intact then cut with two loose ends"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0.25,
+          0.45,
+          0.4,
+          0.4
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "loft",
+      "kind": "set",
+      "invariants": [
+        "sunlit sail repair loft",
+        "whitewashed brick wall",
+        "wooden workbench with tall upright and high brass pulley",
+        "bench front apron partly occludes raised sandbag",
+        "no branding"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    }
+  ]
+}

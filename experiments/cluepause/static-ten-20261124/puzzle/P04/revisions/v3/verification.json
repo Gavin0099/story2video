@@ -1,0 +1,71 @@
+{
+  "source_git_sha": "435f4ab3dfec21526358bd3bed3b175ab1a914af",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/cluepause/static-ten-20261124/puzzle/run.py",
+        "validate",
+        "experiments/cluepause/static-ten-20261124/puzzle/P04/revisions/v3"
+      ],
+      "exit_code": 0,
+      "stdout": "VALID",
+      "stderr_scope": "Git environment warnings omitted; no personal paths persisted."
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "pytest",
+        "experiments/cluepause/static-ten-20261124/pipeline/tests",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/static-ten-20261124/puzzle/p04-fix/pytest-cache",
+        "--basetemp",
+        "artifacts/static-ten-20261124/puzzle/p04-fix/pytest-temp"
+      ],
+      "exit_code": 0,
+      "stdout": ".................................                                        [100%]\n33 passed in 0.49s",
+      "stderr_scope": "Git environment warnings omitted; no personal paths persisted."
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/cluepause/static-ten-20261124/puzzle/P04/revisions/v3/verify_revision.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"integrity\": \"PASS\", \"master_sha256\": \"ff4e5de88c62c09b9c01886bde01eeaacc62bc421f145154a326e1c48c7cfd78\", \"decoded_samples\": 178, \"sample_fps\": 4.285714285714286, \"unchanged_narration_wavs\": 7, \"unchanged_v1_plates\": [1, 2, 3, 4, 6], \"identical_final_rig_plates\": true, \"unique_imagegen_calls\": 2, \"p04_v1_inputs_assets_outputs_unchanged\": true, \"readmes_only_p04_rows_changed\": true, \"out_of_scope_concurrent_differences\": [\"experiments/cluepause/static-ten-20261124/puzzle/P03/record.md\", \"experiments/cluepause/static-ten-20261124/puzzle/P03/upload-metadata-draft.json\", \"experiments/cluepause/static-ten-20261124/uncanny_mystery/U03/record.md\"], \"personal_path_files_scanned\": 157, \"personal_path_hits\": 0, \"trailing_whitespace_hits\": 0}",
+      "stderr_scope": "Git environment warnings omitted; no personal paths persisted."
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr_scope": "Git environment warnings omitted; no personal paths persisted."
+    }
+  ],
+  "primary_visual_review": {
+    "v2_strips": 8,
+    "v3_strips": 8,
+    "v3_samples": 178,
+    "fps": 4.285714285714286,
+    "silent_storyboards_inspected": 2,
+    "scope": "AI inspection, not independent review or human testing"
+  },
+  "gates": {
+    "story": "PENDING",
+    "storyboard": "PENDING",
+    "viewer": "HUMAN_TEST_PENDING",
+    "market": "NOT_TESTED"
+  },
+  "new_unique_imagegen_calls": 2,
+  "imagegen_correction_count": 1,
+  "v3_new_imagegen_calls": 0
+}
