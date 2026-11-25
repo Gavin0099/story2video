@@ -237,6 +237,46 @@
         ],
         "auto_generated_english_us_track": "left in place; not deleted"
       }
+    },
+    {
+      "id": "P03",
+      "title": "She Insisted on the Vase with a Black Crack | CluePause",
+      "title_zh_Hant": "她堅持要有黑色裂痕的花瓶｜謎底之前",
+      "description": "She insisted on the vase with a black crack. Why did she refuse a perfect one?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她堅持要那只有黑色裂痕的花瓶。她為什麼拒絕完美無瑕的那一只？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.mp4",
+      "mp4_sha256": "b30a0b8f62b29fabe83333152211f11e9b164d1902dd99815bbe0155d7a01f80",
+      "uploaded_file_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.mp4",
+      "uploaded_file_sha256": "b30a0b8f62b29fabe83333152211f11e9b164d1902dd99815bbe0155d7a01f80",
+      "video_id": "DyJQGUIlH0E",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.zh-Hant.srt",
+            "srt_sha256": "bbddd460dbc7098a6352d7b1f7f14945e478c8654500a0e32225ed4209447854",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.en.srt",
+            "srt_sha256": "bb9df5e6cf8a80decf4a0ac9a3f0ac12c5abce286c946d86511784829fe453d6",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
     }
   ]
 }
