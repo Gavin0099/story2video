@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "buyer",
+      "kind": "character",
+      "invariants": [
+        "woman about 30",
+        "straight chin-length black bob",
+        "olive jacket over cream shirt",
+        "brown shoulder bag"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-03",
+        "shot-06",
+        "shot-07",
+        "shot-12"
+      ]
+    },
+    {
+      "id": "seller",
+      "kind": "character",
+      "invariants": [
+        "man about 50",
+        "short gray hair",
+        "clean shaven",
+        "burgundy sweater",
+        "charcoal trousers",
+        "plain black leather lace-up shoes"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-03",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-10",
+        "shot-12"
+      ]
+    },
+    {
+      "id": "scale",
+      "kind": "prop",
+      "invariants": [
+        "brass mechanical spring scale",
+        "cream unnumbered dial with black needle",
+        "shallow moving silver pan with dent on front rim",
+        "exactly three gold pieces: oval, triangle, rectangle",
+        "one black thread knotted to eyelet under moving pan, never housing"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-08",
+        "shot-09",
+        "shot-10",
+        "shot-11",
+        "shot-12"
+      ]
+    },
+    {
+      "id": "cylinder",
+      "kind": "prop",
+      "invariants": [
+        "one cylindrical brass calibration weight with empty lifting ring",
+        "sits independently on a low wooden shelf",
+        "thread passes BEHIND it and is never attached to its ring"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-05",
+        "shot-07",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "tools",
+      "kind": "prop",
+      "invariants": [
+        "small silver scissors",
+        "brown rectangular clasp purse",
+        "intact or severed black thread only as scripted"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-04",
+        "shot-07",
+        "shot-12"
+      ]
+    },
+    {
+      "id": "shop",
+      "kind": "set",
+      "invariants": [
+        "warm daylight jeweler shop",
+        "dark wooden counter with small thread hole and low shelf",
+        "no brands or readable lettering"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10",
+        "shot-11",
+        "shot-12"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "eva",
+      "kind": "character",
+      "invariants": [
+        "invented adult woman, short dark-brown pixie haircut",
+        "burgundy cardigan over plain beige blouse, dark trousers",
+        "no jewellery, no wounds"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "book",
+      "kind": "prop",
+      "invariants": [
+        "large brown cloth-bound guestbook with cream pages and attached blue carbon-copy sheet beneath top writing leaf",
+        "the ONLY text is EVA: grey pencil top page initially, erased on top at shot 03, intact dark-blue copy underneath at shots 05-06",
+        "same brown spine and cream paper; carbon blue corner visible from first shot; no headings or warning text"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "pencil",
+      "kind": "prop",
+      "invariants": [
+        "plain yellow hexagonal pencil with pink eraser and silver ferrule",
+        "used graphite tip to sign first, pink eraser in shot 03",
+        "no logos or printed marks"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-03"
+      ]
+    },
+    {
+      "id": "lobby",
+      "kind": "set",
+      "invariants": [
+        "old apartment lobby with cream plaster, green tiled lower walls, small dark wooden reception desk",
+        "wired-glass entrance door behind desk at left; no signage or brands",
+        "warm overhead lamp, sufficient readable exposure"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06"
+      ]
+    },
+    {
+      "id": "visitor",
+      "kind": "character",
+      "invariants": [
+        "tall charcoal overcoat and brimmed dark hat, face a featureless shadow",
+        "ordinary adult human outline, long arms, no wounds or gore",
+        "only indistinct outside wired glass before payoff, unmistakably inside lobby behind Eva in final shot"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0.01,
+          0.01,
+          0.4,
+          0.65
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-06"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "version": 1,
+  "story_id": "uncanny-u01-v1",
+  "fiction": "FICTION — original invented scene; no true-event claim.",
+  "genre": "uncanny_mystery",
+  "question": {
+    "en": "Why Wet Inside?",
+    "zh": "鎖著怎麼還會濕？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    },
+    "setup": {
+      "file": "assets/setup.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    },
+    "resolution": {
+      "file": "assets/resolution.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "The locked cabinet dripped. Her shoes were wet again.",
+      "zh": "鎖著的鞋櫃滴下水。她的鞋又濕了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.1,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "She'd put them away dry. Only she had the key.",
+      "zh": "她放進去時鞋是乾的。只有她有鑰匙。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 3.5,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "Dry laces. Wet soles.",
+      "zh": "鞋帶乾的，鞋底卻濕了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 7,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "A white tide mark ringed the plant saucer.",
+      "zh": "花盆底盤內緣，留著一圈白色水痕。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 10,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "A streak ran down the back. The hallway was dry.",
+      "zh": "櫃背有一道水漬。走道是乾的。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 14,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "That evening, she put paper under the pot and dried the tray.",
+      "zh": "當晚，她在花盆下墊紙，再把鞋盤擦乾。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 18,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-06.wav"
+    },
+    {
+      "id": "line-07",
+      "en": "Where was the water getting in?",
+      "zh": "水究竟從哪裡進去？",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 25,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-07.wav"
+    },
+    {
+      "id": "line-08",
+      "en": "At six, the pump started. That connector leaked inside the cabinet.",
+      "zh": "六點，水泵啟動。那個接頭在鞋櫃裡漏水。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 29,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-08.wav"
+    },
+    {
+      "id": "line-09",
+      "en": "The paper stayed dry. The leak was already inside.",
+      "zh": "紙一直是乾的。漏水處早就在櫃子裡。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 33.5,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-09.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "close_up",
+      "start": 0,
+      "end": 3.5,
+      "source": {
+        "sheet": "setup",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cabinet"
+      ],
+      "sfx": [
+        {
+          "file": "assets/drop.wav",
+          "offset": 0.3,
+          "gain": 0.35,
+          "en": "[water drop]",
+          "zh": "[滴水聲]"
+        }
+      ],
+      "conveys": "Water beads beneath the closed padlocked cabinet while the surrounding tile is dry.",
+      "prompt": "Use case: photorealistic-natural. Floor-level view of pale oak cabinet, brass padlock above centered bottom seam, one hanging water droplet and small puddle, dry surrounding grey tiles. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "medium",
+      "start": 3.5,
+      "end": 7,
+      "source": {
+        "sheet": "setup",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "shoes",
+        "watering",
+        "key"
+      ],
+      "sfx": [],
+      "conveys": "She opens the lock and lifts the shoes; the pale connector is already present in the rear hose loop.",
+      "prompt": "Use case: photorealistic-natural. Woman holding brass key beside unlocked padlock and opening cabinet. Grey canvas shoes in shallow black tray; ivory ribbed inline connector on black hose against inner rear wall below broad vent. Connector dry, no active stream. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-03",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 7,
+      "end": 10,
+      "source": {
+        "sheet": "setup",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "shoes"
+      ],
+      "sfx": [
+        {
+          "file": "assets/drop.wav",
+          "offset": 0.4,
+          "gain": 0.35,
+          "en": "[water drop]",
+          "zh": "[滴水聲]"
+        }
+      ],
+      "conveys": "Water clings to the rubber sole, while canvas and laces are dry.",
+      "prompt": "Use case: photorealistic-natural. Close side profile of woman tilting one grey canvas shoe above shallow black tray; clear beads below dark rubber sole; dry pale canvas and white laces. Water pooled just below tray low front lip. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-04",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 10,
+      "end": 14,
+      "source": {
+        "sheet": "setup",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cabinet",
+        "watering"
+      ],
+      "sfx": [],
+      "conveys": "The plant saucer has a white tide ring; watering equipment sits beside it.",
+      "prompt": "Use case: photorealistic-natural. Cabinet top, terracotta plant in beige saucer with unmistakable white mineral ring along inner rim; clear reservoir and black pump beside it; thin black hose disappears behind pot. No water flowing. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-05",
+      "function": "clue",
+      "framing": "medium",
+      "start": 14,
+      "end": 18,
+      "source": {
+        "sheet": "setup",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "watering"
+      ],
+      "sfx": [],
+      "conveys": "A dry exterior streak leads down the cabinet back; the hallway remains dry except near its base.",
+      "prompt": "Use case: photorealistic-natural. Oblique side view of same woman touching a chalky dried exterior streak below top rear corner of oak cabinet; plant and pump atop it, dry grey hallway beside small base puddle. Do not show active exterior water. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-06",
+      "function": "clue",
+      "framing": "medium",
+      "start": 18,
+      "end": 22,
+      "source": {
+        "sheet": "setup",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "watering",
+        "paper"
+      ],
+      "sfx": [
+        {
+          "file": "assets/brush.wav",
+          "offset": 0.3,
+          "gain": 0.35,
+          "en": "[paper rustles]",
+          "zh": "[紙張窸窣]"
+        }
+      ],
+      "conveys": "She places a white sheet beneath the entire saucer and rear top edge.",
+      "prompt": "Use case: photorealistic-natural. Evening warm light, woman placing a clean plain white rectangular sheet under entire plant saucer footprint, paper extending fully over rear top edge beneath the possible overflow route. Same reservoir pump beside it, no drip. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-07",
+      "function": "transition",
+      "framing": "medium",
+      "start": 22,
+      "end": 25,
+      "source": {
+        "sheet": "resolution",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "shoes",
+        "watering",
+        "paper",
+        "key"
+      ],
+      "sfx": [],
+      "conveys": "The tray and shoes are dry before the cabinet is closed for the night.",
+      "prompt": "Use case: photorealistic-natural. Evening woman holds dry cloth beside open cabinet after wiping tray dry. Dry grey shoes back in dry black shallow tray. Same dry pale ribbed connector on rear hose loop above shoes; white paper beneath plant on cabinet top. Brass padlock and key in her other hand. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-08",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 25,
+      "end": 27,
+      "source": {
+        "sheet": "resolution",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "watering",
+        "paper",
+        "key"
+      ],
+      "sfx": [],
+      "conveys": "She leaves the key beside her bed; the closed locked cabinet remains visible.",
+      "prompt": "Use case: photorealistic-natural. Woman in rust pullover placing small brass key on bedside table, concerned profile; through open bedroom doorway same oak cabinet closed and brass padlocked, plant saucer on white sheet on top. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-09",
+      "function": "transition",
+      "framing": "medium",
+      "start": 27,
+      "end": 29,
+      "source": {
+        "sheet": "resolution",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cabinet",
+        "watering",
+        "paper"
+      ],
+      "sfx": [],
+      "conveys": "The planted white paper and closed padlock remain undisturbed before morning.",
+      "prompt": "Use case: photorealistic-natural. Quiet close portrait view down oak cabinet: plant saucer on white sheet at top, brass padlock closed below. Muted pre-dawn light. Paper flat and dry, hose route behind pot. No flowing water. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-10",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 29,
+      "end": 33.5,
+      "source": {
+        "sheet": "resolution",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cabinet",
+        "watering",
+        "shoes"
+      ],
+      "sfx": [
+        {
+          "file": "assets/hum.wav",
+          "offset": 0.1,
+          "gain": 0.35,
+          "en": "[pump clicks and hums]",
+          "zh": "[水泵啟動低鳴]"
+        }
+      ],
+      "conveys": "The same pale ribbed connector now leaks down the inside wall into the shoe tray.",
+      "prompt": "Use case: photorealistic-natural. Morning inside now-open cabinet, close-up of identical ivory short ribbed connector on black hose below broad rear vent. A bead and thin trickle emerge from hairline split on connector underside, run visibly down inner rear oak wall into shallow tray beneath grey shoes. Dry white laces. Small unnumbered analog clock at edge points to six. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-11",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 33.5,
+      "end": 35.5,
+      "source": {
+        "sheet": "resolution",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "cabinet",
+        "watering",
+        "paper"
+      ],
+      "sfx": [],
+      "conveys": "Lifting the plant saucer exposes completely dry paper across the tested route.",
+      "prompt": "Use case: photorealistic-natural. Morning close-up of rust-sleeved hands lifting beige saucer and terracotta pot above entire plain white sheet, sheet visibly pristine dry and flat across saucer footprint and over rear edge. Reservoir pump beside it. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-12",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 35.5,
+      "end": 38,
+      "source": {
+        "sheet": "resolution",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cabinet",
+        "shoes"
+      ],
+      "sfx": [
+        {
+          "file": "assets/drop.wav",
+          "offset": 0.3,
+          "gain": 0.35,
+          "en": "[water drop]",
+          "zh": "[滴水聲]"
+        }
+      ],
+      "conveys": "After the cycle, water crosses the low tray lip and cabinet floor to the same bottom seam; the laces stay dry.",
+      "prompt": "Use case: photorealistic-natural. Low cutaway view through open cabinet: grey canvas shoes with dry white laces stand in shallow water in black tray; water overtops LOW FRONT LIP, visibly crosses oak cabinet floor and escapes same bottom seam onto grey tile. This is after a full pump cycle, not one instantaneous drop. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "story_id": "h02-static-v1",
+  "fiction": "FICTION — original invented story, not a true-event account. Rights: pending_verification.",
+  "genre": "urban_horror",
+  "question": {
+    "en": "Why is she covering the mirror?",
+    "zh": "她為何遮住鏡子？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a.png",
+      "columns": 3,
+      "rows": 1,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b.png",
+      "columns": 3,
+      "rows": 1,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "Mira was alone. The other passenger was behind the mirror.",
+      "zh": "Mira 獨自在電梯裡。另一名乘客卻在鏡子後面。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "When the doors closed, it could cross through an uncovered reflection.",
+      "zh": "門一關，它就能穿過沒有遮住的反射面。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 5.68,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "She held the doors open and pulled off her coat.",
+      "zh": "她按住開門鍵，脫下外套。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 11.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "She covered the glass. Something kept pressing underneath.",
+      "zh": "她遮住鏡面。底下仍有東西頂著布。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 17.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "Her phone went dark. She finally let the doors close.",
+      "zh": "手機螢幕暗了。她終於鬆手讓門關上。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 23.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "The fingers came through the smallest mirror.",
+      "zh": "手指穿過了最小的那面鏡子。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 28.68,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-06.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "medium",
+      "start": 0,
+      "end": 5.5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "mira",
+        "phone",
+        "lift",
+        "passenger"
+      ],
+      "sfx": [],
+      "conveys": "A lone woman faces a mirror containing an extra grey passenger; her lit phone is already in hand.",
+      "prompt": "Mira in white coat over green sweater inside the canonical lift. Black phone with lit blank screen in left hand at waist, brass wrist loop visible. In oval rear mirror a separate grey figure stands beside her reflection although no such person stands in cabin. Readable bright steel and amber light; show ordinary woman and abnormal reflection together. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 5.5,
+      "end": 11,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "lift",
+        "passenger"
+      ],
+      "sfx": [
+        {
+          "file": "assets/pulse.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Low pulse]",
+          "zh": "[低沉脈衝聲]"
+        }
+      ],
+      "conveys": "Grey fingers press from behind the wall mirror, identifying glass as the boundary.",
+      "prompt": "Tight portrait close-up of oval brass-framed wall mirror inside canonical lift. Five narrow grey fingertips press against the far side of the glass from the grey passenger; no fingers outside glass. Amber light right. No woman or phone in this insert. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-03",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 11,
+      "end": 17,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "mira",
+        "phone",
+        "lift"
+      ],
+      "sfx": [],
+      "conveys": "She holds the door button while starting to remove her white coat.",
+      "prompt": "Same Mira, same bob and green sweater, white coat slipping off right shoulder. Right index finger holding a plain unlabelled door-open button near entrance, left hand still holds lit blank phone. Frightened glance toward rear mirror outside crop. Lift entrance held open, no extra people. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-04",
+      "function": "clue",
+      "framing": "medium",
+      "start": 17,
+      "end": 23,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "mira",
+        "phone",
+        "lift"
+      ],
+      "sfx": [
+        {
+          "file": "assets/click.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Dry click]",
+          "zh": "[喀一聲]"
+        }
+      ],
+      "conveys": "The white coat hides the large mirror; one raised fold suggests the threat is still there.",
+      "prompt": "Same lift rear wall with white coat draped securely over entire oval mirror reflective area, brass rim peeking around cloth. Small tension fold at centre of cloth, no visible limb or face. Mira in green sweater foreground left holds lit phone, looking at cloth. Steel doors open at edge. No writing. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-05",
+      "function": "reaction",
+      "framing": "close_up",
+      "start": 23,
+      "end": 28.5,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "mira",
+        "phone",
+        "lift"
+      ],
+      "sfx": [
+        {
+          "file": "assets/chime.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Chime]",
+          "zh": "[鐘聲]"
+        }
+      ],
+      "conveys": "The phone screen goes black while the large mirror remains covered and the doors close.",
+      "prompt": "Close-up of Mira green sleeve and hand holding canonical black phone with small brass loop. Screen OFF and glossy black, reflects only amber light, ABSOLUTELY NO grey fingers or figure yet. White coat fully covering oval mirror softly visible behind, steel entrance doors now meeting closed. Central phone safely framed for portrait crop. No lettering, no gore, realistic readable photography."
+    },
+    {
+      "id": "shot-06",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 28.5,
+      "end": 36,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "mira",
+        "phone",
+        "lift",
+        "passenger"
+      ],
+      "sfx": [],
+      "conveys": "Grey fingers physically emerge from the black phone; the covered mirror is no longer the apparent source.",
+      "prompt": "Unmistakable horror payoff close-up: same black phone held by Mira green-sleeved hand, small brass loop; FIVE narrow grey fingers protrude out through the middle of black screen into cabin, casting real shadows onto phone rim. No wounds, no gore, no shattered glass. In background same white coat still completely covers oval wall mirror and steel doors closed. Fingers occupy central portrait safe area. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "version": 1,
+  "story_id": "uncanny-u03-v1",
+  "fiction": "FICTION — original invented scene; no true-event claim.",
+  "genre": "uncanny_mystery",
+  "question": {
+    "en": "Who Is Behind the Glass?",
+    "zh": "玻璃後面是誰？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    },
+    "setup": {
+      "file": "assets/setup.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    },
+    "resolution": {
+      "file": "assets/resolution.png",
+      "columns": 3,
+      "rows": 2,
+      "edge_px": 3
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "Every evening, someone seemed to stand behind his pantry door.",
+      "zh": "每天傍晚，儲藏室門後好像都站著人。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.1,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "There were tiny bright holes in the head.",
+      "zh": "那顆頭裡，有幾個細小亮點。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 4,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "Inside: empty shelves, and a hanger. No coat.",
+      "zh": "裡面只有空架和衣架，沒有外套。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 7.5,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "He closed the door. The figure came back.",
+      "zh": "他關上門。人影又回來了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 14,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "Then he looked at what stood in front of the glass.",
+      "zh": "接著，他看向玻璃前方的東西。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 19,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "He lifted the colander. The head moved away from the shoulders.",
+      "zh": "他拿起濾盆，頭就離開了肩膀。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 26,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-06.wav"
+    },
+    {
+      "id": "line-07",
+      "en": "The lamp had joined two ordinary shadows into one visitor.",
+      "zh": "燈光把兩個普通影子，拼成了一位訪客。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 30.2,
+      "gap_before": 0.1,
+      "file": "assets/voice-line-07.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "wide",
+      "start": 0,
+      "end": 4,
+      "source": {
+        "sheet": "setup",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "rack",
+        "colander",
+        "lamp"
+      ],
+      "sfx": [],
+      "conveys": "A person-like silhouette appears on a frosted pantry door in an otherwise ordinary kitchen.",
+      "prompt": "Use case: photorealistic-natural. Evening man in ochre henley facing closed mint-wall cream pantry door. Tall frosted pane shows dark head-and-shoulders silhouette, not a real person. In foreground on opposite counter small black task lamp behind upright chrome rack with navy tea towel and round metal colander; objects natural background, not highlighted. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 4,
+      "end": 7,
+      "source": {
+        "sheet": "setup",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen"
+      ],
+      "sfx": [],
+      "conveys": "The apparent head has tiny bright pinholes, and its shoulders have a straight lower edge.",
+      "prompt": "Use case: photorealistic-natural. Tight portrait of frosted pantry glass with ambiguous human head-and-shoulders shadow. Round head has tiny constellation of bright pinholes, soft side projections from colander handles. Shoulder shadow from navy towel ends in straight horizontal edge. No eyes, face, hands or actual person. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-03",
+      "function": "clue",
+      "framing": "medium",
+      "start": 7,
+      "end": 11,
+      "source": {
+        "sheet": "setup",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "hanger"
+      ],
+      "sfx": [
+        {
+          "file": "assets/click.wav",
+          "offset": 0.2,
+          "gain": 0.35,
+          "en": "[door latch]",
+          "zh": "[門閂聲]"
+        }
+      ],
+      "conveys": "Opening the door reveals empty shelves and a bare hanger.",
+      "prompt": "Use case: photorealistic-natural. Man in ochre henley holding cream frosted pantry door open, empty pantry shelves plainly visible and bare triangular wooden hanger on back hook. Warm kitchen, nobody inside pantry. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-04",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 11,
+      "end": 14,
+      "source": {
+        "sheet": "setup",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "hanger"
+      ],
+      "sfx": [],
+      "conveys": "He checks the bare hanger, puzzled that there is no coat.",
+      "prompt": "Use case: photorealistic-natural. Man looking directly at one bare wooden hanger on pantry back hook, empty shelves behind. Puzzled raised eyebrows. Ochre henley, same short curls and stubble. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-05",
+      "function": "clue",
+      "framing": "medium",
+      "start": 14,
+      "end": 18,
+      "source": {
+        "sheet": "setup",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "rack",
+        "colander",
+        "lamp"
+      ],
+      "sfx": [],
+      "conveys": "With the door closed, the silhouette returns while all objects remain in place outside.",
+      "prompt": "Use case: photorealistic-natural. Man standing next to closed cream frosted pantry door, head-and-shoulders shadow again visible. Foreground black lamp behind chrome rack, navy towel and upright round metal colander visible, identical arrangement. No ghost body. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-06",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 18,
+      "end": 22,
+      "source": {
+        "sheet": "setup",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "colander",
+        "rack",
+        "lamp"
+      ],
+      "sfx": [],
+      "conveys": "The colander’s perforations echo the pinholes in the shadow; its relationship to the lamp is visible.",
+      "prompt": "Use case: photorealistic-natural. Shallow oblique close-up across counter: warm black directional task lamp BEHIND round perforated stainless colander upright over navy towel on chrome rack, frosted pantry door at far end of light path. Hole pattern easy to see. Do not show explanatory beam graphics or arrows. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-07",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 22,
+      "end": 26,
+      "source": {
+        "sheet": "resolution",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "lamp",
+        "rack",
+        "colander"
+      ],
+      "sfx": [],
+      "conveys": "He reaches toward the colander, looking from it to the silhouette.",
+      "prompt": "Use case: photorealistic-natural. Man in ochre henley looking from round colander to shadow on closed frosted door, his hand approaching colander handle without moving it yet. Lamp behind rack keeps shadow intact; no answer lettering. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-08",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 26,
+      "end": 30,
+      "source": {
+        "sheet": "resolution",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "rack",
+        "colander",
+        "lamp"
+      ],
+      "sfx": [],
+      "conveys": "Lifting the colander away separates the shadow’s head from its towel-shaped shoulders.",
+      "prompt": "Use case: photorealistic-natural. Decisive single photographic reveal: man lifting round stainless perforated colander sideways away from chrome rack; on frosted pantry pane its ROUND HEAD SHADOW visibly displaced sideways away from still shoulder-shaped navy towel shadow. Lamp remains on counter behind rack. Show lifted object and matching detached shadow in same composition. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-09",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 30,
+      "end": 33,
+      "source": {
+        "sheet": "resolution",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "kitchen",
+        "rack",
+        "colander",
+        "lamp"
+      ],
+      "sfx": [],
+      "conveys": "The physical line from lamp through colander and towel to the matching shadows is visible.",
+      "prompt": "Use case: photorealistic-natural. Oblique portrait looking along counter toward frosted door: black lamp behind rack shines past lifted colander at side and navy towel on rack; detached round perforated head shadow to side of triangular shoulder shadow on pane. All clear, photographic light, no diagram. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    },
+    {
+      "id": "shot-10",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 33,
+      "end": 36,
+      "source": {
+        "sheet": "resolution",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.005,
+          1.025
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "man",
+        "kitchen",
+        "rack",
+        "lamp"
+      ],
+      "sfx": [
+        {
+          "file": "assets/brush.wav",
+          "offset": 0.2,
+          "gain": 0.35,
+          "en": "[cloth rustles]",
+          "zh": "[布料窸窣]"
+        }
+      ],
+      "conveys": "Removing the towel leaves a bare rack and no human-shaped silhouette.",
+      "prompt": "Use case: photorealistic-natural. Man in ochre shirt holds navy towel away from now-bare chrome dish rack; black task lamp still on, closed frosted pantry glass now has only thin rack shadows and NO HUMAN SILHOUETTE. Relieved small smile, readable exposure. All essential evidence centered inside the middle 85% of this portrait cell. No lettering, no arrows, no diagram, no gore. Freeze one photographed moment; no sequential montage inside a cell."
+    }
+  ]
+}

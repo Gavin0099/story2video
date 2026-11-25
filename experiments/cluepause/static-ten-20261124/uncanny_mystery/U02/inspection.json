@@ -1,0 +1,24 @@
+{
+  "shots": [
+    "Same grey rolling stool and mustard apron wait at the dark doorway, woman looking toward them; curved floor marks visible. Movement and recurrence are supplied by subsequent frames and speech, not this still alone.",
+    "Free black casters, chrome stem, long mustard tie and paired curved scuffs visible in a clear low close-up.",
+    "Woman crouches with a blue marble near her fingers; dock is visible below the cabinet. No rolling animation, as intended for stills.",
+    "Blue marble now rests beside the raised charcoal rug edge; before/after placement supports the slope hypothesis but does not measure a slope.",
+    "Stool caster is on the far side of the rug ridge; paired scuffs and yellow tie lead across the foreground. Crossing reads, but a still is not a proof that gravity could never carry it there.",
+    "Woman resets the apron-draped stool at the counter; the charcoal/grey vacuum sits at its dock beside the hanging tie. Expression is visibly puzzled.",
+    "Long tie lies loose on the floor in front of vacuum dock. Stool and vacuum remain separate, with no taut connection yet.",
+    "Mustard tie is taut between apron/stool at the left edge and vacuum intake at the right. Both materials match; stool seat/apron origin is near the left crop edge and is less clear than intended.",
+    "Sage-sleeved hands lift the same vacuum; multiple yellow loops around the black underside roller supply a clear physical explanation.",
+    "Stool is back at counter; woman holds yellow ties off the floor, vacuum sits at doorway, scuffs remain. Tie attachment passes behind her body and is not directly traceable in this closing view."
+  ],
+  "silent_conclusion":"The silent sequence carries the visible core: displaced wheeled stool, a tentative slope/rug test, a loose apron tie near a vacuum, a taut connection, and the same tie wrapped around the brush. The reveal reassigns the curved marks from passive rolling to a towing route. Exact recurrence, exclusive key ownership and the inference of a slight floor slope still rely partly on speech. Silent human comprehension has not been tested.",
+  "findings": [
+    {"time":"17–25 s","impact":"cosmetic","finding":"Evening/night separation is modest; under-counter lighting changes but not a strong time-of-day transition. Narration supplies the overnight chronology."},
+    {"time":"25–30 s","impact":"confusing","finding":"Stool seat and apron origin are close to the left crop edge, so the taut tie is clear while its upper attachment is less explicit. The following underside insert resolves the brush mechanism."},
+    {"time":"33–36 s","impact":"confusing","finding":"Held tie lengths pass behind the woman rather than remaining fully traceable to the apron. Could briefly look detached, though no visible cutting or changed prop is shown."}
+  ],
+  "continuity_summary":"Inspected silent export and all ten dense decoded strips. No observed hair, face, sage/cream wardrobe, grey stool, mustard apron, blue marble, vacuum-shell or set-state change that breaks the causal story. The loading roller is new reveal detail of the already-established vacuum, not a new device. No active coupling is shown before 25 s. Modest camera zoom preserves the marble, rug ridge, taut tie and roller loops in the sampled frames. Robot towing force and rug crossing were not physically bench-tested.",
+  "fix_passes":0,
+  "fix_note":"No visual correction or re-encode pass was used; the two source shot sheets are the first generated versions. Remaining crop/occlusion issues are documented instead of adding an optional loop.",
+  "quality_note":"Visible towing mechanism and broadly consistent references; tie origin is edge-cropped and final tie attachment is occluded. Human comprehension untested."
+}

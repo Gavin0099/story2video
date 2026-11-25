@@ -1,0 +1,8 @@
+{
+  "type": "imagegen_tool_validation_rejection",
+  "sheet": "setup",
+  "error": "referenced_image_paths must contain at most 5 paths",
+  "generated_image": false,
+  "billable_cost": "UNKNOWN",
+  "remedy": "Attach the single complete canonical sheet containing all six registered reference cells."
+}

@@ -1,0 +1,39 @@
+{
+  "integrity": "PASS",
+  "git_base_sha": "b7801291cf7af830272070e416130125ed0df7b5",
+  "master_sha256": "ff01d6c8c0c02e5a50bd768c1a323360df9333e9db7cc111b12aefa220c0ef4a",
+  "decoded_samples": 178,
+  "minimum_sample_fps": 4.285714285714286,
+  "unchanged_narration_wavs": 7,
+  "narration_schedule_unchanged": true,
+  "mix_changes_only_in_old_and_new_snip_windows": true,
+  "sfx_seconds": [
+    22,
+    22.2
+  ],
+  "imagegen_calls": 2,
+  "corrections": 1,
+  "protected_files": 777,
+  "protected_changes": [
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/record.md"
+  ],
+  "v1_v3_and_readmes_unchanged": true,
+  "landmark_ratio_range": [
+    0.48525942552510265,
+    0.5354330708661418
+  ],
+  "personal_path_text_files_scanned": 36,
+  "personal_path_hits": [],
+  "trailing_whitespace_hits": [],
+  "provenance": {
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/revisions/v4/render_revision.py": "5bdcfddda2e19aa64719bfe87e638d9b0a8fae0f5eb41d0bc8e0f24b9cec6a67",
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/revisions/v4/verify_revision.py": "18bb19725064dfd5dacfb764874d99c54b0e78e11ce43c867b8f1369584b7c0b",
+    "experiments/cluepause/static-ten-20261124/pipeline/static_storyboard.py": "61da19fa6723e9e090b69255ce08b3b8a4c6872e584dfa8aff25014952ae86f3",
+    "experiments/cluepause/static-ten-20261124/puzzle/run.py": "cb27f7d058f898015407aad1d8f19c950364179d19e720de7e32f44db71fdf21",
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/revisions/v4/images.jsonl": "653c27461ad87206a59b82118fd52e447ca692d45f056f5a77d94829e5a90d89",
+    "artifacts/static-ten-20261124/puzzle/p04-v4-fix/landmarks.json": "169cd25c194dd10e9ad9301419c45affe500819883d117f744f2a7b5df322cd4",
+    "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v4/manifest.json": "1be510c463ac59663d5cfa594fda041caa8613ef9bb3759420727d123bbbfeec"
+  },
+  "independent_review": "PENDING",
+  "market_acceptance": "NOT_TESTED"
+}

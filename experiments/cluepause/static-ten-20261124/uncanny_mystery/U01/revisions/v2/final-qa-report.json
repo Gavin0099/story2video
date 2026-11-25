@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "video": true,
+    "frames": true,
+    "duration": true,
+    "audio": true,
+    "no_embedded_subtitles": true,
+    "faststart": true,
+    "full_decode": true,
+    "captions_en": true,
+    "captions_zh-Hant": true,
+    "caption_bounds": true
+  },
+  "engineering": "PASS",
+  "master_sha256": "146f6f92fa651d07818f9b4bddda5a2819db5919a7a1a9116e4194f2bdff06d4",
+  "dense_sampling_fps": 4.285714285714286,
+  "alignment_method": "Measured source PCM boundaries; generated SRT exact comparison, not ASR",
+  "human_review": {
+    "continuity": "PENDING",
+    "phone_readability": "PENDING",
+    "silent_story": "PENDING",
+    "listening": "PENDING"
+  },
+  "market_acceptance": "NOT_TESTED"
+}

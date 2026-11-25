@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "story_id": "h03-static-v1",
+  "fiction": "FICTION — original invented story, not a true-event account. Rights: pending_verification.",
+  "genre": "urban_horror",
+  "question": {
+    "en": "Who is hitting that window?",
+    "zh": "誰在敲那扇窗？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a-fix.png",
+      "columns": 3,
+      "rows": 1,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b.png",
+      "columns": 3,
+      "rows": 1,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "Across the shaft, a woman raised a hammer inside her room.",
+      "zh": "天井對面，一個女人在房裡舉起鐵鎚。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "That window showed Lea her own room, just before things happened.",
+      "zh": "那扇窗會提早映出 Lea 自己房裡將發生的事。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 5.68,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "She bolted the door and shoved the heavy trunk against it.",
+      "zh": "她閂上門，把沉重的箱子推去抵門。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 11.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "Then smoke poured from the vent. The blocked door would not open.",
+      "zh": "接著煙從通風口湧出。被堵住的門打不開。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 17.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "Lea grabbed the hammer from her sill. The woman was not breaking in.",
+      "zh": "Lea 抓起窗台上的鐵鎚。那女人不是要闖進來。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 23.18,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "She was trying to get out.",
+      "zh": "她是要逃出去。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 28.68,
+      "gap_before": 0.08,
+      "file": "assets/voice/line-06.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "medium",
+      "start": 0,
+      "end": 5.5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "hammer",
+        "room",
+        "future"
+      ],
+      "sfx": [],
+      "conveys": "Across a shaft, a smoky figure raises a hammer at a window; a matching hammer rests on the near sill.",
+      "prompt": "View from inside canonical cream room across narrow dark shaft. Opposite white sash window fills central portrait area; behind it smoky silhouette of woman in ochre raising black-handled silver hammer in RIGHT hand. Face obscured by grey smoke and glare, LEFT wrist white wrap barely visible. Near sill bottom foreground holds identical real hammer. No threatening figure in near room. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 5.5,
+      "end": 11,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "lea",
+        "room",
+        "future"
+      ],
+      "sfx": [
+        {
+          "file": "assets/pulse.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Low pulse]",
+          "zh": "[低沉脈衝聲]"
+        }
+      ],
+      "conveys": "A close-up of the smoky future figure shows a white left wrist wrap that later matches Lea.",
+      "prompt": "Across a narrow dark open-air shaft, tight portrait telephoto view of the OPPOSITE window seen in CELL 0. Its black-brick outer jamb is visible. Behind its glass a single ochre-sleeved LEFT palm with white fabric wrist wrap is raised, smoke behind the glass, face outside crop. Only ONE hand in entire frame. ABSOLUTELY NO foreground hand, no near glass, no mirror or reflection of a hand. The wrist wrap is the fair clue that matches Lea in cell 2. White frame, readable realistic photography, no letters."
+    },
+    {
+      "id": "shot-03",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 11,
+      "end": 17,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "lea",
+        "room"
+      ],
+      "sfx": [],
+      "conveys": "She barricades her own exit because she reads the figure as an incoming threat.",
+      "prompt": "Inside cream apartment: Lea high dark curly bun, ochre sweater, black trousers, LEFT white wrist wrap, pushes square heavy grey metal storage trunk firmly against cream entrance door with horizontal bolt visibly shut. Strained frightened expression. Window and hammer outside crop, no smoke yet in this near room. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-04",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 17,
+      "end": 23,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "lea",
+        "room"
+      ],
+      "sfx": [
+        {
+          "file": "assets/click.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Dry click]",
+          "zh": "[喀一聲]"
+        }
+      ],
+      "conveys": "Smoke comes from above her blocked doorway; the barricade is now a danger.",
+      "prompt": "Same Lea recoils toward camera as visible grey smoke pours from small ceiling vent above same cream entrance door. Horizontal bolt shut; same square grey metal trunk tight against door. Lea left white wrist wrap clear as she tugs trunk, concern and urgency, no flames or burns. Readable exposure and cream room geometry. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-05",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 23,
+      "end": 28.5,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "lea",
+        "hammer",
+        "room"
+      ],
+      "sfx": [
+        {
+          "file": "assets/chime.wav",
+          "offset": 0,
+          "gain": 0.5,
+          "en": "[Chime]",
+          "zh": "[鐘聲]"
+        }
+      ],
+      "conveys": "The smoky hammer figure is recognizably Lea, using her own hammer to escape her room.",
+      "prompt": "From exterior shaft looking directly at Lea OWN white sash window. Smoke behind glass. Lea with identical high dark curly bun, ochre sweater and LEFT white wrist wrap clearly recognizable; RIGHT hand raises canonical black-handled silver square hammer against inside of intact glass, matching pose of first shot figure. Fear and need for air, not aggression. This is the SAME room, not another intruder. Central face, wrap, hammer and window readable. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    },
+    {
+      "id": "shot-06",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 28.5,
+      "end": 36,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.0,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "lea",
+        "hammer",
+        "room"
+      ],
+      "sfx": [],
+      "conveys": "Broken window gives her air; the hammer was an escape tool.",
+      "prompt": "Same exterior view into same white sash window: upper glass now broken open with safe edge fragments, no wounds; Lea ochre sweater, high curly bun and left white wrap leaning face toward fresh air through opening. Right hand lowers same hammer safely inside below chest. Grey smoke stays behind her in room. Relief mixed with fear, fully readable window frame and match to preceding shot, no flames or gore. Full-bleed realistic staged fictional photography, readable exposure. Each cell portrait 9:16 with all essential evidence centrally framed. No captions, no added explanatory lettering, no gore, no real brands."
+    }
+  ]
+}

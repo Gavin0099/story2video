@@ -1,0 +1,182 @@
+{
+  "sheet": "shots-b",
+  "purpose": "shot_sheet",
+  "prompt": "Use case: precise-object-edit. P04 revision v2, ONE FINAL correction pass.\nInputs: image 1 canonical reference (appearance of maker, flag, rig, sandbag, scissors and loft ONLY; some old reference mechanics are incorrect). Image 2 previous generated sheet to correct (preserve realistic style, full visible right rope, floor bag, empty cleat gap). Image 3 original pre-release rig closeup to match the short tail-to-flag proportions.\nOUTPUT ONE photographic contact sheet, THREE columns by ONE row, three equal portrait 9:16 images side by side, overall 27:16 aspect ratio, preferably 2304x1360. All three cells have same scale of props. No borders, text, letters, labels, arrows, diagram, watermark.\nPHYSICAL INVARIANTS: one brass pulley fixed high on one upright, one continuous cream rope passes over it in inverted U, LEFT rope has red triangular white-circle pennant fixed at TWO brass eyelets (never sliding), RIGHT rope tied to single tan rectangular X-stitched sandbag. Below flag's lower eyelet the cream rope terminates in a free TIP. That remaining tail length must equal approximately ONE hoist-height of the flag (distance between the two flag eyelets) in all cells, no more. Never add rope, white knots or extensions beneath this tip. A separate BLUE string connects this tip to the bench cleat BEFORE release; it is CUT in all three new images. The cream rope itself is NEVER cut, tied or attached to the cleat. The cut has one blue stub still knotted to the cream tip and another blue stub attached to cleat.\nCELL 0 LEFT, replacement shot-05: tight readable closeup showing ENTIRE low pennant including its circle and BOTH brass eyelets, the short cream tail beneath it (ONE flag hoist-height), cream free tip immediately above bench cleat, two CUT separated blue string ends, and orange scissors in maker's hand adjacent to the severed BLUE string. Other hand out of frame and not holding rope. This is the instant just after cutting blue restraint, before appreciable displacement; no person supports cream rope. Cream running rope remains intact. Right rope continues down behind bench, weight concealed. No bag or high flag in this pre-reveal cell. Show only relevant hand/teal sleeve, not face. Make blue stub on cream tip distinguishable from blue stub at cleat by an air gap.\nCELL 1 MIDDLE, corrected shot-07: complete settled rig alone, no person. Pulley near 10% frame height, high pennant upper eyelet near 25%, lower eyelet near 34%, cream free TIP near 43% (ONE flag-height below lower eyelet), tiny blue cut stub at tip. REMOVE the previous mid-tail white knot. Bench cleat near 64%, ONLY BLUE cut string attached, conspicuous EMPTY AIR between cream tip and cleat. RIGHT cream rope descends uninterrupted visibly in front of bench to bag handle. Entire tan X-stitched bag resting ON FLOOR, bottom near 90%, no hovering. Full pulley, flag, both eyelets, free tip, empty gap, cleat, both rope legs and entire bag inside portrait frame. Orange scissors on bench.\nCELL 2 RIGHT, corrected shot-08: exact same settled rig and camera height as cell 1. Canonical teal-shirt beige-trouser maker at left with BOTH hands open and empty, away from rope and tip. Orange scissors on bench. Keep ALL mechanism evidence visible like cell 1, including the short free tail and full bag on floor.\nLength conservation: as the bag falls from behind bench to floor the left cream tail and fixed flag move upward TOGETHER. No cream tail may remain at old cleat. Flag-to-tail distance does not change. These are cuts between still states, not multiple exposures or motion blur.\nUse same sunlit white brick sail loft, timber workbench, worn silver cleat, brass pulley, cream thick rope, red triangular pennant WHITE CIRCLE, orange scissors, tan canvas sandbag black X stitching, as canonical. Keep safety margin within EACH portrait cell around essential proof. Do not copy the old sheet's long tail or an extra knot. No extra rope, pulley, weight or support, no high-flag/raised-bag pairing.",
+  "reference_items": [
+    {
+      "id": "maker",
+      "kind": "character",
+      "invariants": [
+        "man about 40",
+        "wavy short black hair",
+        "teal work shirt sleeves rolled",
+        "beige trousers",
+        "no hat"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          0.65,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "flag",
+      "kind": "prop",
+      "invariants": [
+        "small triangular RED cloth pennant with WHITE circular patch near broad hoist edge",
+        "attached by TWO eyelets to left vertical running rope",
+        "first low then high"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0.55,
+          0.5,
+          0.4,
+          0.3
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "rig",
+      "kind": "prop",
+      "invariants": [
+        "one brass pulley on top of wooden upright",
+        "single continuous cream running rope through pulley",
+        "left leg holds pennant",
+        "right leg tied to tan canvas sandbag",
+        "separate thin BLUE restraint ties LEFT running-rope leg downward to bench cleat"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0.55,
+          0,
+          0.45,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "bag",
+      "kind": "prop",
+      "invariants": [
+        "tan rectangular canvas sandbag with black cross stitching",
+        "tied to right cream rope",
+        "initially raised behind bench front apron, later on floor",
+        "no other weight",
+        "before cut freely suspended behind apron, never supported on tabletop; after cut on floor"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0.65,
+          0.45,
+          0.3,
+          0.3
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "tools",
+      "kind": "prop",
+      "invariants": [
+        "small orange-handled utility scissors",
+        "thin blue restraint intact then cut with two loose ends"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0.25,
+          0.45,
+          0.4,
+          0.4
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "loft",
+      "kind": "set",
+      "invariants": [
+        "sunlit sail repair loft",
+        "whitewashed brick wall",
+        "wooden workbench with tall upright and high brass pulley",
+        "bench front apron partly occludes raised sandbag",
+        "no branding"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    }
+  ],
+  "reference_images": [
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/assets/reference.png",
+    "experiments/cluepause/static-ten-20261124/puzzle/P04/revisions/v2/assets/shots-b-attempt1.png",
+    "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v1/cache/shot-04.png"
+  ],
+  "prompt_sha256": "37ba7a666d9828db7e3da210d78da7ef65e66f88bd60737d242c55ac6a7d7d1b"
+}

@@ -1,0 +1,22 @@
+{
+  "base_git_sha": "c99491c411fe42988eb9876be26392d5f2701368",
+  "baseline_files_checked": 938,
+  "changed_baseline_files": [
+    "experiments/cluepause/static-ten-20261124/README.md",
+    "experiments/cluepause/static-ten-20261124/uncanny_mystery/README.md",
+    "experiments/cluepause/static-ten-20261124/uncanny_mystery/U01/record.md",
+    "experiments/cluepause/static-ten-20261124/uncanny_mystery/U01/revisions/v2/inspection.json",
+    "experiments/cluepause/static-ten-20261124/uncanny_mystery/U01/revisions/v2/mechanism.md",
+    "experiments/cluepause/static-ten-20261124/uncanny_mystery/U01/revisions/v2/pipeline-pytest.txt",
+    "experiments/cluepause/static-ten-20261124/uncanny_mystery/U01/revisions/v2/record.md"
+  ],
+  "full_text_files_checked": 43,
+  "untracked_u01_no_index_checks": 26,
+  "git_diff_check": "PASS",
+  "whitespace_path_syntax_checks": "PASS",
+  "metadata_hash_style_spoiler_checks": "PASS",
+  "unchanged_other_inputs_masters_sidecars_and_metadata": "PASS",
+  "readme_u01_rows_only": "PASS",
+  "derivative_provenance_format_duration": "PASS",
+  "market_acceptance": "NOT_TESTED"
+}

@@ -1,0 +1,8 @@
+{
+  "imagegen_calls": 4,
+  "imagegen_cost": "UNKNOWN",
+  "encode_count": 12,
+  "wall_seconds": 55.421,
+  "result": "PASS",
+  "encode_definition": "libx264 invocations; final stream-copy/AAC mux is separate in commands.jsonl"
+}

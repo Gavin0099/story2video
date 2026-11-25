@@ -1,0 +1,513 @@
+{
+  "upload_session": {
+    "date": "2026-11-25",
+    "timezone": "Asia/Taipei",
+    "channel": "CluePause",
+    "method": "manual_youtube_studio",
+    "title_source": "title",
+    "description_source": "description",
+    "zh_Hant_title_description_applied": true,
+    "captions_uploaded": true,
+    "processing_checks_result": "NOT_CONFIRMED_AT_UPLOAD",
+    "story_quality_gate": "PENDING",
+    "storyboard_quality_gate": "PENDING",
+    "viewer_gate": "HUMAN_TEST_PENDING",
+    "private_upload_is_quality_gate_pass": false,
+    "private_upload_is_publication_approval": false,
+    "zh_Hant_metadata_upload": {
+      "date": "2026-11-25",
+      "timezone": "Asia/Taipei",
+      "method": "manual_youtube_studio",
+      "mechanism": "YouTube Studio translation: 中文（繁體） title and description",
+      "title_source": "title_zh_Hant",
+      "description_source": "description_zh_Hant",
+      "evidence_source": "Integrator readback in YouTube Studio editor before publishing"
+    },
+    "caption_upload": {
+      "date": "2026-11-25",
+      "timezone": "Asia/Taipei",
+      "method": "manual_youtube_studio",
+      "evidence_source": "User report of manual caption uploads in YouTube Studio"
+    }
+  },
+  "videos": [
+    {
+      "id": "P02",
+      "title": "She Blacked Out Her Message | CluePause",
+      "title_zh_Hant": "她把字全塗黑，卻請訪客靠近｜謎底之前",
+      "description": "She covered her message in black, then invited the visitor closer. Why hide the words she wanted someone to see?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她把字全塗黑，卻請訪客靠近。想讓對方看的話，為什麼反而要遮住？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.mp4",
+      "mp4_sha256": "7cae43e308ba383dcf62aa683151f95cc2186acf7d1674f3a8f844bdc4931865",
+      "uploaded_file_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1-upload.mp4",
+      "uploaded_file_sha256": "dd89bcb2033ec312b7a06fa98670766788636c3af63bfabea65566dc165374a1",
+      "uploaded_file_bytes": 9358260,
+      "uploaded_file_reason": "Upload copy used because the browser upload tool caps files at 10 MB.",
+      "uploaded_file_ssim_vs_master": {
+        "mean": 0.994005,
+        "min": 0.991581
+      },
+      "video_id": "ywcvdupwbFQ",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.zh-Hant.srt",
+            "srt_sha256": "20caec8f3a603b7eff68ea06eec3ba1804e9a08a04f900262c3c7140dc9afc98",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.en.srt",
+            "srt_sha256": "f67688a672994f14c62e8df892dc0a3759a2fbaaebf3d5b122e428c5723d1625",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted",
+        "timing": {
+          "reference": "master MP4",
+          "applies_to_uploaded_copy": true,
+          "master_duration_seconds": 39.0,
+          "upload_copy_duration_seconds": 39.0,
+          "absolute_difference_seconds": 0.0,
+          "tolerance_seconds": 0.05,
+          "evidence_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/upload-copy.md"
+        }
+      },
+      "visibility_at_upload": "private",
+      "observed_visibility": "public",
+      "observed_visibility_date": "2026-11-25",
+      "observed_visibility_timezone": "Asia/Taipei",
+      "observed_visibility_source": "integrator observation in Studio content list",
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
+    },
+    {
+      "id": "U02",
+      "title": "Every Morning, Her Chair Was in the Doorway | CluePause",
+      "title_zh_Hant": "每天早上，她的椅子都在門口｜謎底之前",
+      "description": "Every morning, her kitchen chair waited in the doorway. Nobody else had a key, so who kept moving it?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "每天早上，她的廚房椅都等在門口。別人沒有鑰匙，究竟是誰一直移動它？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.mp4",
+      "mp4_sha256": "621fef7371db356fb6c16ecfb85772158d2200e9bd8ac72896c51a5501e446e2",
+      "uploaded_file_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.mp4",
+      "uploaded_file_sha256": "621fef7371db356fb6c16ecfb85772158d2200e9bd8ac72896c51a5501e446e2",
+      "video_id": "S34P69d9R7w",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.zh-Hant.srt",
+            "srt_sha256": "bd10e2289c70f329c01441c118d7ab9d412771322a29bfeb33c81d64ffe062b8",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.en.srt",
+            "srt_sha256": "28c15bce340a4dae837c570c389528f106e4a47f75d71df4b99bd0d31584442f",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      },
+      "visibility_at_upload": "private",
+      "observed_visibility": "public",
+      "observed_visibility_date": "2026-11-25",
+      "observed_visibility_timezone": "Asia/Taipei",
+      "observed_visibility_source": "integrator observation in Studio content list",
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
+    },
+    {
+      "id": "H02",
+      "title": "She Was Alone. The Mirror Had Another Passenger. | CluePause",
+      "title_zh_Hant": "她獨自在電梯裡，鏡中卻多了一名乘客｜謎底之前",
+      "description": "Mira was alone in the elevator, but the mirror showed another passenger. Why was she desperate to cover the glass?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "Mira 獨自在電梯裡，鏡中卻多了一名乘客。她為什麼急著遮住鏡面？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.mp4",
+      "mp4_sha256": "13738ce313dc48e76f0f22dc050d713228e5d9c0d5ab8d54e82fc686f6258ebb",
+      "uploaded_file_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.mp4",
+      "uploaded_file_sha256": "13738ce313dc48e76f0f22dc050d713228e5d9c0d5ab8d54e82fc686f6258ebb",
+      "video_id": "QIftXOzmkQc",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.zh-Hant.srt",
+            "srt_sha256": "ecad7e1403a63d549399447c57aedc3d02fd2551982c6a942876a749629de509",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.en.srt",
+            "srt_sha256": "b71a8876fc2a6aa61e4a72b5ad68baa9423219c7f0133904a0117ddd96708163",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      },
+      "visibility_at_upload": "private",
+      "observed_visibility": "public",
+      "observed_visibility_date": "2026-11-25",
+      "observed_visibility_timezone": "Asia/Taipei",
+      "observed_visibility_source": "integrator observation in Studio content list",
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
+    },
+    {
+      "id": "H03",
+      "title": "A Woman Raised a Hammer in the Opposite Window | CluePause",
+      "title_zh_Hant": "對面窗裡的女人舉起了鐵鎚｜謎底之前",
+      "description": "Across the shaft, Lea saw a woman raise a hammer inside the opposite room. Who was behind that window?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "天井對面，Lea 看見一個女人在房裡舉起鐵鎚。那扇窗後的人究竟是誰？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.mp4",
+      "mp4_sha256": "2cd17a849dffc5184769e11d5d18bffaa4470a24390c48f34fae8df9da9e7d85",
+      "uploaded_file_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.mp4",
+      "uploaded_file_sha256": "2cd17a849dffc5184769e11d5d18bffaa4470a24390c48f34fae8df9da9e7d85",
+      "video_id": "ou7vZTG66Sg",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.zh-Hant.srt",
+            "srt_sha256": "9e9a93d30bc093df5934cccd322145ad7289eeae9d553117adbdb1728b0b3bae",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.en.srt",
+            "srt_sha256": "16cb3166a217638f84c7c70c5c4caaed315574b9d85b94b413cc1f4468fd8f96",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      },
+      "visibility_at_upload": "private",
+      "observed_visibility": "public",
+      "observed_visibility_date": "2026-11-25",
+      "observed_visibility_timezone": "Asia/Taipei",
+      "observed_visibility_source": "integrator observation in Studio content list",
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
+    },
+    {
+      "id": "H04",
+      "title": "She Signed the Guestbook at Midnight | CluePause",
+      "title_zh_Hant": "她在午夜簽了訪客簿｜謎底之前",
+      "description": "She signed the guestbook at midnight. Why was she erasing her name?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "午夜，她在訪客簿上簽了名。她為什麼要擦掉自己的名字？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.mp4",
+      "mp4_sha256": "6c3c636fe7f8ead19575aab1c20698f4bfd16e389513c1ecb844724c97a03469",
+      "uploaded_file_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.mp4",
+      "uploaded_file_sha256": "6c3c636fe7f8ead19575aab1c20698f4bfd16e389513c1ecb844724c97a03469",
+      "video_id": "1dziLaHqEdk",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.zh-Hant.srt",
+            "srt_sha256": "14ecbfcefac18172b269e1dfeb62e3f9037c5372f662a6be14e917a5c3b6a2f1",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.en.srt",
+            "srt_sha256": "e5260240fea9f56ff8ab11aedf68b9b3919237f0f20e47dfc6a8d9513fc0472b",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      },
+      "visibility_at_upload": "private",
+      "observed_visibility": "public",
+      "observed_visibility_date": "2026-11-25",
+      "observed_visibility_timezone": "Asia/Taipei",
+      "observed_visibility_source": "integrator observation in Studio content list",
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
+    },
+    {
+      "id": "P03",
+      "title": "She Insisted on the Vase with a Black Crack | CluePause",
+      "title_zh_Hant": "她堅持要有黑色裂痕的花瓶｜謎底之前",
+      "description": "She insisted on the vase with a black crack. Why did she refuse a perfect one?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她堅持要那只有黑色裂痕的花瓶。她為什麼拒絕完美無瑕的那一只？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.mp4",
+      "mp4_sha256": "b30a0b8f62b29fabe83333152211f11e9b164d1902dd99815bbe0155d7a01f80",
+      "uploaded_file_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.mp4",
+      "uploaded_file_sha256": "b30a0b8f62b29fabe83333152211f11e9b164d1902dd99815bbe0155d7a01f80",
+      "video_id": "DyJQGUIlH0E",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.zh-Hant.srt",
+            "srt_sha256": "bbddd460dbc7098a6352d7b1f7f14945e478c8654500a0e32225ed4209447854",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p03-static-v2/puzzle-p03-static-v2.en.srt",
+            "srt_sha256": "bb9df5e6cf8a80decf4a0ac9a3f0ac12c5abce286c946d86511784829fe453d6",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      },
+      "visibility_at_upload": "private"
+    },
+    {
+      "id": "U03",
+      "title": "A Man Seemed to Stand in the Pantry Door Glass | CluePause",
+      "title_zh_Hant": "儲藏室門的玻璃裡，好像站著一個男人｜謎底之前",
+      "description": "Every evening, a man seemed to stand in the glass of his pantry door. Who was he seeing?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "每天傍晚，他家儲藏室門的玻璃裡好像都站著一個男人。他看見的究竟是誰？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.mp4",
+      "mp4_sha256": "4a912d85fd66d85dbd050a900dc1298c8f06b823752423e5c9b8f715c6c94b3e",
+      "uploaded_file_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.mp4",
+      "uploaded_file_sha256": "4a912d85fd66d85dbd050a900dc1298c8f06b823752423e5c9b8f715c6c94b3e",
+      "video_id": "MgCZsP25fOM",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.zh-Hant.srt",
+            "srt_sha256": "598979909eb3e53b3fc95700466667c6f61c6f253a22a6323a6eef315f8f99de",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.en.srt",
+            "srt_sha256": "43e0206122d0fefac64dbec5268c4a6254a87863d98f51823cb67f5c17a3a061",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      },
+      "visibility_at_upload": "private"
+    },
+    {
+      "id": "P01",
+      "title": "She Made One Snip. The Gold Suddenly Weighed Less. | CluePause",
+      "title_zh_Hant": "她剪了一下，金子突然變輕了｜謎底之前",
+      "description": "At the gold counter, a buyer made one snip and the gold suddenly weighed less. How could a single cut change its weight?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "在黃金櫃檯前，一位買家剪了一下，金子突然變輕了。為什麼剪一下就能改變它的重量？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2.mp4",
+      "mp4_sha256": "36c2edfdc6ed5a0613edc3bc5ac6d995558b04b6105f043f24b43dadba982b09",
+      "uploaded_file_path": "artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2-upload.mp4",
+      "uploaded_file_sha256": "205c53214f52c705d7dd4a8e8b0562517c97fa1e5367e1a76e91f18643937fd0",
+      "uploaded_file_bytes": 8564060,
+      "uploaded_file_reason": "Upload copy used because the browser upload tool caps files at 10 MB.",
+      "uploaded_file_ssim_vs_master": {
+        "mean": 0.99418,
+        "min": 0.989564
+      },
+      "video_id": "i0A1tyP91bc",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "visibility_at_upload": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "NOT_CONFIRMED_AT_UPLOAD",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: at save time the dialog still showed 即將開始處理; checks were not finished. The later restrictions observation does not confirm the save-time checks result.",
+      "restrictions_observation": {
+        "value": "—",
+        "date": "2026-11-25",
+        "timezone": "Asia/Taipei",
+        "source": "integrator observation in Studio content list"
+      },
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2.zh-Hant.srt",
+            "srt_sha256": "015a45f36e01661f23e13d354422de6f718efc96b78db71595564e00e7d68f6f",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2.en.srt",
+            "srt_sha256": "9aa53a410ce872b3b728323e23afd513d706f7239b4b3bda57b4b8fb16965224",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted",
+        "timing": {
+          "reference": "master MP4",
+          "applies_to_uploaded_copy": true,
+          "master_duration_seconds": 36.0,
+          "upload_copy_duration_seconds": 36.0,
+          "absolute_difference_seconds": 0.0,
+          "tolerance_seconds": 0.05,
+          "evidence_path": "artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/upload-copy.md"
+        }
+      }
+    },
+    {
+      "id": "P04",
+      "title": "He Refused to Pull the Rope. The Flag Went Up. | CluePause",
+      "title_zh_Hant": "他不肯拉繩，旗卻升了起來｜謎底之前",
+      "description": "He refused to pull the rope, yet the flag went up. How did it rise?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "他不肯拉繩，旗卻升了起來。這是怎麼回事？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v4/puzzle-p04-static-v4.mp4",
+      "mp4_sha256": "ff01d6c8c0c02e5a50bd768c1a323360df9333e9db7cc111b12aefa220c0ef4a",
+      "uploaded_file_path": "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v4/puzzle-p04-static-v4.mp4",
+      "uploaded_file_sha256": "ff01d6c8c0c02e5a50bd768c1a323360df9333e9db7cc111b12aefa220c0ef4a",
+      "video_id": "SNYc8ilcGkY",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "visibility_at_upload": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v4/puzzle-p04-static-v4.zh-Hant.srt",
+            "srt_sha256": "805afd05600fa2a284f6f368872a528b7a58f957d8a8e59300ec177757aca1e3",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v4/puzzle-p04-static-v4.en.srt",
+            "srt_sha256": "0b42d4b82f6e4ea0956ef8acdf047675fc07124062a79e939ee5d30015af3c30",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
+    },
+    {
+      "id": "U01",
+      "title": "Her Shoes Kept Getting Wet in a Locked Cabinet | CluePause",
+      "title_zh_Hant": "她的鞋一直濕，卻看不見有水滴在鞋上｜謎底之前",
+      "description": "Her shoes kept getting wet inside a locked cabinet, though nothing seemed to drip on them. Where was the water coming from?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她的鞋放在鎖著的鞋櫃裡卻一再變濕，看起來也沒有水滴在鞋上。水究竟從哪裡來？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.mp4",
+      "mp4_sha256": "146f6f92fa651d07818f9b4bddda5a2819db5919a7a1a9116e4194f2bdff06d4",
+      "uploaded_file_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2-upload.mp4",
+      "uploaded_file_sha256": "79b04a066320d7401ed07a968de812f34718347ba7c543c57ef723576fcdc666",
+      "uploaded_file_bytes": 9177244,
+      "uploaded_file_reason": "Upload copy used because the browser upload tool caps files at 10 MB.",
+      "uploaded_file_ssim_vs_master": {
+        "mean": 0.994366,
+        "min": 0.989576
+      },
+      "video_id": "tdpt2le3S68",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "visibility_at_upload": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: the dialog showed 檢查完畢，未發現任何問題 at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.zh-Hant.srt",
+            "srt_sha256": "2d482ea59756f3f687335e9a0b3d11a5bd78d274cac5c6bdfc22e9539ab42e4b",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.en.srt",
+            "srt_sha256": "780251a220d5a4c11c55a078e3a7a8867ce9b11086f0e627d51ca7e65b9a35ea",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted",
+        "timing": {
+          "reference": "master MP4",
+          "applies_to_uploaded_copy": true,
+          "master_duration_seconds": 38.0,
+          "upload_copy_duration_seconds": 38.0,
+          "absolute_difference_seconds": 0.0,
+          "tolerance_seconds": 0.05,
+          "evidence_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/upload-copy.md"
+        }
+      }
+    }
+  ]
+}

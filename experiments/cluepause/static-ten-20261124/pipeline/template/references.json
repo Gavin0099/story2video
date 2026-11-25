@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "woman",
+      "kind": "character",
+      "invariants": [
+        "short black bob haircut",
+        "green wool coat",
+        "silver stud earrings"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04"
+      ]
+    },
+    {
+      "id": "key",
+      "kind": "prop",
+      "invariants": [
+        "one brass key",
+        "distinctive split tip",
+        "plain circular bow"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04"
+      ]
+    },
+    {
+      "id": "hall",
+      "kind": "set",
+      "invariants": [
+        "cream apartment door",
+        "brass lock with split-shaped scratch",
+        "green hallway walls"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "maker",
+      "kind": "character",
+      "invariants": [
+        "woman about 40",
+        "curly auburn hair tied low",
+        "mustard cardigan",
+        "indigo canvas apron",
+        "no jewelry"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-04",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "block",
+      "kind": "prop",
+      "invariants": [
+        "one palm-size rectangular pale maple relief block",
+        "raised mirror-reversed word HOME only",
+        "one crescent nick in lower right wood edge",
+        "ink state goes pale to fully black"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "kit",
+      "kind": "prop",
+      "invariants": [
+        "short black rubber brayer with red wooden handle",
+        "shallow black ink tray",
+        "cream blank cotton paper",
+        "small wooden baren"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "studio",
+      "kind": "set",
+      "invariants": [
+        "sunny small print studio",
+        "honey wood table",
+        "sage wall",
+        "cream envelope with green ribbon, no other readable writing"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    }
+  ]
+}

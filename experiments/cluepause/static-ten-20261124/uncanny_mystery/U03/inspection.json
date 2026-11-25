@@ -1,0 +1,27 @@
+{
+  "shots": [
+    "Same curly-haired man and ochre shirt face a dark head-and-shoulders silhouette on closed frosted glass. Complete source objects stay outside the frame; a few faint bright points are present.",
+    "Soft human-like shadow fills the pane; tiny pinpoints are visible but low-contrast against the frosted grain. No recognizable colander handles remain in the accepted setup.",
+    "Door opens to empty shelves and one bare wooden hanger; no person or coat inside. Man and door/knob remain recognizable.",
+    "Closer puzzled reaction to bare hanger and empty shelves, maintaining the coat hypothesis as an idea rather than an actual hidden coat.",
+    "Closed door again carries the same soft figure. Counter objects remain below this crop, so no full cause is demonstrated yet.",
+    "Macro of curved perforated steel with navy towel edge and defocused black lamp. Pattern supplies a fair hint, though viewers may already infer projection here.",
+    "Initial reaction crop shows his concentrated face and door frame; complete object combination stays below frame. Most of the figure is also outside the crop. It is a reaction beat rather than new evidence.",
+    "He lifts the colander beside the towel on rack; round perforated head shadow is displaced toward the left edge of the pane while shoulder shadow remains. The split is visible, though part of the head is clipped by the pane edge.",
+    "Colander now rests low on the counter at the right, but detached round head shadow remains high at the left of the pane. Lamp, rack and towel remain visible; shadow height does not follow the lowered object.",
+    "He holds navy towel away from bare chrome rack. Glass now shows the thin rack grid and no human-shaped figure; colander is outside the frame. Relieved expression, same hair and clothing."
+  ],
+  "silent_conclusion":"The silent sequence offers a figure, empty pantry, a bare hanger as a competing explanation, a perforated steel clue, then a visible head/shoulder split and removal of the figure. It can communicate the intended ordinary-object explanation, but the contour change and the high head shadow after the colander is lowered prevent a clean physical demonstration. This is not a verified optical simulation or observed human comprehension result.",
+  "findings": [
+    {"time":"0–7 and 14–18 s","impact":"confusing","finding":"Tiny bright holes are subtle against frosted grain. The fair clue may be missed on a phone; human readability is untested."},
+    {"time":"18–22 s","impact":"confusing","finding":"The macro metal perforations plus lamp/towel context strongly suggest projection before the reveal. Complete arrangement is withheld, but remaining predictability is not resolved by blind readers this round."},
+    {"time":"22–26 s","impact":"cosmetic","finding":"Tight initial reaction crop is softer and cuts part of the face/figure. It preserves expression and avoids showing the entire answer early, but adds no new physical observation."},
+    {"time":"26–30 s, compared with 0–18 s","impact":"confusing","finding":"Earlier shadow has a more elongated human contour; reveal shadow is rounder and crisply perforated. Blur could conceal some differences, but the mismatch may feel like a restaged silhouette rather than an exact re-reading."},
+    {"time":"26–30 s","impact":"confusing","finding":"Displaced round head reaches the pane's left edge and is partially clipped; separation remains visible but the complete matching shape is not shown."},
+    {"time":"30–33 s","impact":"breaks story logic","finding":"Colander has been set low on the counter while its supposed head shadow remains high on the glass at nearly the previous height. The pictured projection does not track the changed source state, undermining the ordinary optical explanation."}
+  ],
+  "continuity_summary":"Inspected silent export and all ten dense decoded strips. Man's curls, face, ochre/charcoal wardrobe, mint wall, cream door, brass knob, chrome rack, navy towel and metal colander are broadly recognizable. No further camera-driven state change appears within a shot. The important discontinuity is the object-to-shadow geometry across the reveal cuts, rather than a wardrobe change. The final rack-only shadow resolves the visitor visually, but does not repair the preceding geometric error.",
+  "fix_passes":1,
+  "fix_note":"One setup-sheet correction replaced the full early colander/towel display with a tighter figure shot and isolated perforation detail. Original sheet and pre-revision storyboard are preserved. Before the first encode, shot-07 received its initial face/reaction crop, recorded in shots.json and story.md. Only one master was encoded. No second correction was used for the remaining reveal geometry error.",
+  "quality_note":"Readable shadow split and stable character/props; a high head shadow persists after the colander is lowered, breaking projection logic."
+}

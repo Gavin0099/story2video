@@ -1,0 +1,26 @@
+{
+  "original_files": {
+    "story.md": "7d364321fd1c11cadb2ec11ada68f9eef4c419fd415b92719b1d5f2b2ae18f10",
+    "shots.json": "699e6d96dedb0e90325571ec47a0dd0c95bb6e0aec47497acd9b51540ad47d95",
+    "references.json": "87047b48c6b6fe3ba441080d69cbb28b1d1a09cd6d3a2e8ee756a1a00f41ebb0",
+    "source-v3.md": "a94ba8d9f71722870e13d74feead58fdd3f0734a5c1b3d92d9bbf074b65cc1d6",
+    "assets/brush.wav": "d06ea3b694a8c72a985208916946eb9f396df4c5320c5c235f2fdc196d612458",
+    "assets/drop.wav": "3b74a15033a225d14064484b79688599784d4ccffe226ddf9517d394108641ce",
+    "assets/hum.wav": "9bf5a03a9696d9c1e2ae5838aa915860e1482b929b914e49e9c708347b7241ef",
+    "assets/reference.png": "3808b3b8a0090bf9f4ab6efc679d028ee497165fe0cde6088c16f474fb1f636a",
+    "assets/resolution.png": "43264fa3874f7b36e62038e7b631b68b4d8399dcfe85e931e3899580fd9a5e8c",
+    "assets/setup.png": "c534413d2eac2fc27d10ddd40bf4f1fa3dcb63725814ebe39195175188485cb2",
+    "assets/voice-line-01.wav": "cfe6cf9eb0e1fd8e0da4f69f86a566ea4978641ab741df13c05e0f0ca2754bba",
+    "assets/voice-line-02.wav": "27945b9cd7e58cbce05408ca54510aba0af50bac4bc84df3bcd6ebfd5d96c018",
+    "assets/voice-line-03.wav": "6c24043a375da361622976976df8805c4cfeeb7bff52c0aff762216291856223",
+    "assets/voice-line-04.wav": "2702018c73104d3e273519fba6c2616d5b78db53e8eedbb8cd7d92c23c01b1f1",
+    "assets/voice-line-05.wav": "9bfd6e3663a242232ef7097b3584ed0722aee6b2fa1eadb41fd555cafcaa1cb4",
+    "assets/voice-line-06.wav": "e1dde0bc786cddc0106c9997a89b4efffa7d37ebd45f0e9d0bf80814f9b8b3e7",
+    "assets/voice-line-07.wav": "b64e6a09d4642cb6247e35be36e159a84d47cbb835b8a60639bf0fb4a156b86c",
+    "assets/voice-line-08.wav": "b2434aaad654de3213d32a89813d0547fadb1ccc928c9363a5efe122b1facb03",
+    "assets/voice-line-09.wav": "0c4196a45c4a1ba2dc1f9fa97f3e174cb79b99025049996e13c2531d9c919bee"
+  },
+  "v1_master_sha256": "e075afa52d9e4a6d687076c46f8b0919375785efcca2d57591b37ed61b12fb77",
+  "original_revision": "uncanny-u01-v1",
+  "v1_record_snapshot_sha256": "b3053d083ca9493836ed316ae3760ff5ec95cd14fb1ba31adbf891c55146d7ed"
+}

@@ -1,0 +1,30 @@
+{
+  "shots": [
+    "A hanging drip and small puddle beneath a closed brass-padlocked oak cabinet are visible. Wider than intended macro, but the event reads; question appears only during the opening interval.",
+    "Same bob-haired woman and rust pullover beside open cabinet; key, grey shoes, black tray and pale rear connector visible. Pose is toward camera rather than actively lifting shoes.",
+    "Tilted grey shoe has sole droplets; white laces and canvas look dry; pooled tray water visible. Connector has an attached lower hose and no active leak yet.",
+    "Plant, saucer, reservoir and pump readable. The conspicuous white mineral band is on the pot exterior, not clearly around the saucer inner rim.",
+    "She points at a dried white streak on the cabinet side/front corner, not clearly the back. Surrounding tile is dry outside the small puddle.",
+    "She places white paper under the saucer. The paper covers the footprint but does not visibly seal or cover the complete rear-edge route.",
+    "Cloth, dry tray, shoes and key/lock visible. White paper has disappeared from under the pot, contradicting the preceding placement.",
+    "She places the key beside the bed; cabinet remains closed in the doorway. The already-placed paper is absent in the distant cabinet view.",
+    "Closed padlock and flat paper reappear with morning/pre-dawn lighting. This restores the intended state without explaining its prior absence.",
+    "Water visibly exits the pale connector, but its lower black hose is missing; it resembles an open outlet rather than the scripted split in an inline connector. Clock has a single prominent downward hand and no numerals.",
+    "Lifting pot and saucer reveals pristine dry paper. The entire rear-edge route is still not visibly covered. White mineral band remains on pot exterior.",
+    "Shallow tray overflow and water crossing cabinet floor to base drops are visible. Same shoes and dry-looking uppers persist; lower hose is connected again, contradicting the previous connector close-up."
+  ],
+  "silent_conclusion": "The broad silent sequence conveys locked wet storage, an apparent plant source, a paper test, inside watering hardware and overflow. It does not faithfully carry the exact v3 split-connector mechanism or a decisive rear-route exclusion. Those failures cannot be repaired by the unchanged narration. Recurrence and exclusive key ownership remain spoken context.",
+  "findings": [
+    {"time":"3.5–7 and 22–25 s","impact":"cosmetic","finding":"The woman looks toward the camera with a nearly neutral smile instead of reacting to the evidence. Hair, face and rust/navy wardrobe remain visually consistent."},
+    {"time":"10–14 and 33.5–35.5 s","impact":"confusing","finding":"White mineral band is primarily on the pot exterior, rather than the scripted saucer inner rim; the spoken clue is visually imprecise."},
+    {"time":"14–18 s","impact":"confusing","finding":"Old streak appears on a side/front corner instead of clearly on the exterior back, weakening the proposed top-to-rear overflow route."},
+    {"time":"18–22 and 33.5–35.5 s","impact":"breaks story logic","finding":"Paper does not visibly cover the entire rear-edge entry route. Its dryness therefore cannot visually exclude all of the proposed overhead overflow path as required by U01 v3."},
+    {"time":"22–27 s","impact":"breaks story logic","finding":"Paper disappears after it was placed at 18–22 s, then reappears at 27 s. This breaks the test-state continuity despite the one correction request."},
+    {"time":"29–33.5 s (compare 7–10 and 35.5–38 s)","impact":"breaks story logic","finding":"Lower hose vanishes in the leak close-up and reappears in the final shot. Water comes from the open connector end rather than a fine side split; generated imagery misrepresents the retained causal story."},
+    {"time":"29–33.5 s","impact":"confusing","finding":"The unnumbered clock has one prominent downward hand; exact six o'clock relies on narration, rather than two clearly readable hands."}
+  ],
+  "continuity_summary":"Inspected silent export and every dense strip, shots 01–12. No additional camera-driven clipping, seam exposure, wardrobe/hair change or shoe-shape jump was observed in these samples. Still photographs keep droplets frozen; SFX imply the event, with no animated water. Tray, shoes, reservoir and plant remain broadly recognizable, but the paper and hose-state failures are material.",
+  "fix_passes":1,
+  "fix_note":"One resolution-sheet correction was requested before the first encode, targeting paper persistence, a connected inline hose, dry paper coverage and a smaller overflow. It improved the unnumbered clock and reduced the flood appearance but did not repair the important geometry/state defects. The rejected original is preserved. No second correction or second master was made.",
+  "quality_note":"Technically complete; unresolved paper-test and connector-state errors break the intended v3 visual logic. Not a qualified storyboard."
+}

@@ -1,0 +1,594 @@
+{
+  "version": 1,
+  "story_id": "puzzle-p01-static-v1",
+  "fiction": "FICTION — original fictional puzzle; rights pending_verification",
+  "genre": "puzzle",
+  "question": {
+    "en": "Why did the weight drop?",
+    "zh": "重量為什麼下降？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a-v2.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "One snip. The gold suddenly weighed less.",
+      "zh": "剪了一下。金子的讀值突然變輕了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0,
+      "gap_before": 0
+    },
+    {
+      "id": "line-02",
+      "en": "Earlier, he charged for the higher reading. Both hands were here.",
+      "zh": "剪線前，他按較高的讀值收費。兩隻手都在檯面上。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 3.5,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-03",
+      "en": "She dropped her purse beside the counter.",
+      "zh": "她的錢包掉在櫃檯旁。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 7,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-04",
+      "en": "Under the scale: a brass weight, right beneath the thread.",
+      "zh": "秤下面有個黃銅砝碼，就在細線正下方。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 11,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-05",
+      "en": "The needle held steady as he slid her the bill.",
+      "zh": "他把帳單推給她，指針一直停在高處。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 15,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-06",
+      "en": "Where had the extra weight come from?",
+      "zh": "多出來的重量，究竟從哪裡來？",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 23,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-07",
+      "en": "The brass weight stood on a shelf. His foot pulled the thread.",
+      "zh": "黃銅砝碼放在架子上。是他的腳在拉線。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 27,
+      "gap_before": 0.08
+    },
+    {
+      "id": "line-08",
+      "en": "She cut away his pull, not any gold.",
+      "zh": "她剪掉的是他的拉力，金子一塊都沒少。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 32,
+      "gap_before": 0.08
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 0,
+      "end": 0.5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "tools",
+        "shop"
+      ],
+      "sfx": [
+        {
+          "file": "assets/tick.wav",
+          "offset": 0.1,
+          "gain": 0.45,
+          "en": "[snip]",
+          "zh": "[剪斷聲]"
+        }
+      ],
+      "conveys": "Scissors and separated thread ends show a snip.",
+      "prompt": "Extreme close-up under counter, silver scissors just CLOSED after cutting black thread. Two separated thread ends clear. No foot loop in frame."
+    },
+    {
+      "id": "shot-02",
+      "function": "establish",
+      "framing": "close_up",
+      "start": 0.5,
+      "end": 3.5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Needle is lower, all three gold pieces remain.",
+      "prompt": "POST CUT scale dial needle at lower-left position, all three distinctive gold pieces remain on dented silver moving pan. Readable close view."
+    },
+    {
+      "id": "shot-03",
+      "function": "establish",
+      "framing": "medium",
+      "start": 3.5,
+      "end": 7,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "seller",
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Both hands are visible above a high-reading scale.",
+      "prompt": "BEFORE CUT over buyer shoulder: scale needle high upper-right, unchanged three gold pieces on dented pan, seller with BOTH hands clearly above wooden counter, one pointing dial other smoothing blank receipt."
+    },
+    {
+      "id": "shot-04",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 7,
+      "end": 11,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "tools",
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Purse has fallen; thread is tied to moving pan.",
+      "prompt": "Low side view: brown clasp purse on floor foreground. Above it visible eyelet UNDER MOVING PAN with knotted thin black thread descending through counter hole. No toe loop visible. CRITICAL: the brown purse is on the FLOOR below the counter, not sitting on counter; frame must include floor below edge."
+    },
+    {
+      "id": "shot-05",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 11,
+      "end": 15,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cylinder",
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Thread appears to lead behind a brass weight.",
+      "prompt": "Tight low view of brass cylinder top and empty lifting ring beneath descending thread. Thread disappears BEHIND cylinder, never through ring. Bottom of cylinder and support contact OUTSIDE crop. CRITICAL: empty ring is visibly isolated from thread by a wide gap; black thread runs down the RIGHT SIDE of the ring, behind cylinder, never touching ring or cylinder. Show no connection."
+    },
+    {
+      "id": "shot-06",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 15,
+      "end": 19,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "seller",
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Seller offers receipt while high reading persists.",
+      "prompt": "Counter-height profile buyer suspicious, seller sliding blank receipt with one hand, other hand beside scale; BOTH above counter. Needle high, same three gold pieces."
+    },
+    {
+      "id": "shot-07",
+      "function": "clue",
+      "framing": "medium",
+      "start": 19,
+      "end": 23,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "seller",
+        "tools",
+        "cylinder",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Scissors are ready; seller heel is raised.",
+      "prompt": "Low reverse: buyer takes small scissors from brown open bag. Seller black shoe heel slightly raised behind brass cylinder, toe occluded by cylinder; NO visible toe loop yet."
+    },
+    {
+      "id": "shot-08",
+      "function": "reaction",
+      "framing": "close_up",
+      "start": 23,
+      "end": 27,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "seller",
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Unchanged gold contradicts the lower reading.",
+      "prompt": "POST CUT close view, same oval triangle rectangle gold on dented pan, needle lower-left; seller hands above counter in background."
+    },
+    {
+      "id": "shot-09",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 27,
+      "end": 29,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "cylinder",
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Brass weight is supported and its ring is empty.",
+      "prompt": "REVEAL side angle: entire brass cylinder firmly resting on wooden shelf, lifting ring EMPTY, black thread passes behind cylinder. No floating weight."
+    },
+    {
+      "id": "shot-10",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 29,
+      "end": 32,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "seller",
+        "scale",
+        "cylinder",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Toe loop is the hidden source of tension.",
+      "prompt": "BEFORE CUT replay low floor view of seller black lace-up shoe, black thread loop around TOE stretched upward behind independently supported brass cylinder to counter hole. Heel raised. Single continuous taut thread."
+    },
+    {
+      "id": "shot-11",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 32,
+      "end": 34,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "scale",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Post-cut lower reading and same gold resolve the opening.",
+      "prompt": "POST CUT matched close view of cream dial lower-left needle and same three gold pieces on dented pan; separated thread end dangling from pan eyelet."
+    },
+    {
+      "id": "shot-12",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 34,
+      "end": 36,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "seller",
+        "scale",
+        "tools",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Buyer confronts seller with the evidence.",
+      "prompt": "Buyer olive jacket holds silver scissors and looks directly at burgundy seller, both beside same scale and three gold pieces, seller hands still on counter."
+    }
+  ]
+}

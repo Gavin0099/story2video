@@ -1,0 +1,394 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "story_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{0,63}$"
+    },
+    "fiction": {
+      "type": "string",
+      "pattern": "^FICTION"
+    },
+    "genre": {
+      "enum": [
+        "puzzle",
+        "uncanny_mystery",
+        "urban_horror"
+      ]
+    },
+    "question": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zh": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "en",
+        "zh"
+      ],
+      "additionalProperties": false
+    },
+    "sheets": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]{0,63}$"
+      },
+      "minProperties": 1,
+      "maxProperties": 5,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "columns": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "rows": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "edge_px": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "required": [
+          "file",
+          "columns",
+          "rows",
+          "edge_px"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "narration": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,63}$"
+          },
+          "en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "zh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "voice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "speed": {
+            "type": "number",
+            "minimum": 0.8,
+            "maximum": 1.25
+          },
+          "reveal": {
+            "type": "boolean"
+          },
+          "not_before": {
+            "type": "number",
+            "minimum": 0
+          },
+          "gap_before": {
+            "type": "number",
+            "minimum": 0
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "en",
+          "zh",
+          "voice",
+          "speed",
+          "reveal"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,63}$"
+          },
+          "function": {
+            "enum": [
+              "establish",
+              "clue",
+              "reaction",
+              "reveal",
+              "transition"
+            ]
+          },
+          "framing": {
+            "enum": [
+              "wide",
+              "medium",
+              "close_up"
+            ]
+          },
+          "start": {
+            "oneOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "cue": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                  },
+                  "edge": {
+                    "enum": [
+                      "start",
+                      "end"
+                    ]
+                  },
+                  "offset": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "cue",
+                  "edge"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "end": {
+            "oneOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "cue": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{0,63}$"
+                  },
+                  "edge": {
+                    "enum": [
+                      "start",
+                      "end"
+                    ]
+                  },
+                  "offset": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "cue",
+                  "edge"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "sheet": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{0,63}$"
+              },
+              "cell": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "crop": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 1
+                  }
+                ],
+                "items": false,
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "sheet",
+              "cell",
+              "crop"
+            ],
+            "additionalProperties": false
+          },
+          "camera": {
+            "type": "object",
+            "properties": {
+              "zoom": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 1.25
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "from": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "to": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "zoom",
+              "from",
+              "to"
+            ],
+            "additionalProperties": false
+          },
+          "required_references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            },
+            "uniqueItems": true
+          },
+          "sfx": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "offset": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "gain": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "file",
+                "offset",
+                "gain",
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "conveys": {
+            "type": "string",
+            "minLength": 1
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "function",
+          "framing",
+          "start",
+          "end",
+          "source",
+          "camera",
+          "required_references",
+          "sfx",
+          "conveys",
+          "prompt"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 3
+    }
+  },
+  "required": [
+    "version",
+    "story_id",
+    "fiction",
+    "genre",
+    "question",
+    "sheets",
+    "narration",
+    "shots"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Static storyboard v1 (isolated experiment; not Episode v1)"
+}

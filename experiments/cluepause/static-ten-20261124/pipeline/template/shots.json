@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "story_id": "template",
+  "fiction": "FICTION — original invented scene; no true-event claim.",
+  "genre": "puzzle",
+  "question": {
+    "en": "Who used her key?",
+    "zh": "誰用過她的鑰匙？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots": {
+      "file": "assets/shots.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "setup",
+      "en": "She had never entered this apartment.",
+      "zh": "她從未走進這間公寓。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0.1,
+      "gap_before": 0
+    },
+    {
+      "id": "answer",
+      "en": "The mark was on the inside.",
+      "zh": "痕跡卻留在門內。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 6,
+      "gap_before": 0.1
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "wide",
+      "start": 0,
+      "end": 2,
+      "source": {
+        "sheet": "shots",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "key",
+        "hall"
+      ],
+      "sfx": [],
+      "conveys": "A woman waits beside a closed apartment door.",
+      "prompt": "Woman in green coat beside an old apartment door, looking at the latch."
+    },
+    {
+      "id": "shot-02",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 2,
+      "end": 4,
+      "source": {
+        "sheet": "shots",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "key",
+        "hall"
+      ],
+      "sfx": [],
+      "conveys": "The brass key has a distinctive split tip.",
+      "prompt": "Extreme close-up of a brass key with a split tip held in the woman's hand."
+    },
+    {
+      "id": "shot-03",
+      "function": "reaction",
+      "framing": "close_up",
+      "start": 4,
+      "end": 6,
+      "source": {
+        "sheet": "shots",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "key",
+        "hall"
+      ],
+      "sfx": [],
+      "conveys": "She recognizes the matching mark.",
+      "prompt": "Close-up of the same woman noticing a split-shaped scratch, alarm visible in her face."
+    },
+    {
+      "id": "shot-04",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 6,
+      "end": 8,
+      "source": {
+        "sheet": "shots",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.035
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "woman",
+        "key",
+        "hall"
+      ],
+      "sfx": [],
+      "conveys": "The split key matches the scratch inside the door.",
+      "prompt": "Close view of the same brass key beside an identical split-shaped scratch on the inside door lock."
+    }
+  ]
+}

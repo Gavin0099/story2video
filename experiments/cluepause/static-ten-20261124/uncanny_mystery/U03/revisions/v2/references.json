@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "man",
+      "kind": "character",
+      "invariants": [
+        "invented man age 35, short tightly curled black hair, light stubble, rectangular face",
+        "plain ochre long-sleeve henley shirt, charcoal trousers, no glasses"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-07",
+        "shot-08",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "kind": "set",
+      "invariants": [
+        "compact kitchen, pale mint wall, cream pantry door with one tall frosted glass pane, plain round brass knob",
+        "counter opposite pantry door, small black directional task lamp aimed across counter toward frosted pane",
+        "inside pantry: pale shelves and one bare wooden hanger on back hook; no person or coat inside"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "rack",
+      "kind": "prop",
+      "invariants": [
+        "small upright unbranded chrome dish drying rack on counter opposite door",
+        "navy blue tea towel draped over rack in shoulder-like triangular shape; stays in place until final shot"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-08",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "colander",
+      "kind": "prop",
+      "invariants": [
+        "one round small stainless steel perforated colander with two short side handles",
+        "stored upright on dish rack above navy towel, round silhouette resembles head; hole constellation must match shadow"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-08",
+        "shot-09"
+      ]
+    },
+    {
+      "id": "lamp",
+      "kind": "prop",
+      "invariants": [
+        "small matte black directional task lamp with warm exposed inner shade",
+        "stands on same counter BEHIND rack, aimed THROUGH colander and towel toward frosted door; never located inside pantry"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-08",
+        "shot-09",
+        "shot-10"
+      ]
+    },
+    {
+      "id": "hanger",
+      "kind": "prop",
+      "invariants": [
+        "one plain bare triangular wooden clothes hanger on hook inside pantry, no clothing"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-03",
+        "shot-04"
+      ]
+    }
+  ]
+}

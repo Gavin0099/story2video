@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "woman",
+      "kind": "character",
+      "invariants": [
+        "invented woman age 32, straight chin-length black bob, oval face",
+        "rust-orange long-sleeve pullover, dark navy trousers, no jewelry"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-03",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-11"
+      ]
+    },
+    {
+      "id": "cabinet",
+      "kind": "set",
+      "invariants": [
+        "small pale oak shoe cabinet with two doors, broad rear horizontal vent",
+        "single brass padlock centered on front hasp; light grey tiled hallway; cream wall; open bedroom doorway nearby",
+        "inside: black shallow rectangular shoe tray with low front lip on bottom shelf"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10",
+        "shot-11",
+        "shot-12"
+      ]
+    },
+    {
+      "id": "shoes",
+      "kind": "prop",
+      "invariants": [
+        "one pair light grey canvas low-top shoes, white dry laces, dark grey rubber soles",
+        "uppers and laces stay dry; only soles contact tray water; never worn outdoors in this story"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-03",
+        "shot-07",
+        "shot-10",
+        "shot-12"
+      ]
+    },
+    {
+      "id": "watering",
+      "kind": "prop",
+      "invariants": [
+        "terracotta plant pot on beige round saucer with white mineral tide ring, green oval leaves",
+        "clear rectangular reservoir and compact black timer pump beside pot on cabinet top",
+        "one black thin hose loops down through rear vent and back up; same ivory short ribbed cylindrical inline connector on inner rear wall above tray; no drip before reveal"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-10",
+        "shot-11"
+      ]
+    },
+    {
+      "id": "paper",
+      "kind": "prop",
+      "invariants": [
+        "single plain white rectangular sheet, no text",
+        "introduced only in evening; covers entire saucer footprint and rear top-edge route; remains dry"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-06",
+        "shot-07",
+        "shot-08",
+        "shot-09",
+        "shot-11"
+      ]
+    },
+    {
+      "id": "key",
+      "kind": "prop",
+      "invariants": [
+        "one small brass padlock key with round bow, no keyring"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 5,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-02",
+        "shot-07",
+        "shot-08"
+      ]
+    }
+  ]
+}
