@@ -3,7 +3,11 @@
 FICTION — original invented urban-horror candidate. Rights: pending_verification.
 Revision validation base Git SHA: `79e9afc0e05f1143a4aeaaab56c116eaaff8dd3b`. Working files are uncommitted. No publication authorization is implied.
 
-Status: **FIX-CANDIDATE pending independent review, not uploaded**. On 2026-11-25, v3 replaces the blocking early outcome disclosure identified in v2's opening question. This author verification does not constitute independent approval.
+Status: **UPLOADED_PRIVATE**. Per the integrator's manual report on 2026-11-25 (Asia/Taipei), the unchanged v3 master was uploaded in YouTube Studio on CluePause as video `1dziLaHqEdk`. Independent v3 review returned **UPLOAD-OK (private review copy)** with **BLOCKING: none**; see `artifacts/independent-review-h04-v3-20261125/REVIEW.md`. Story/Storyboard Gates remain **PENDING**; Viewer Gate remains **HUMAN_TEST_PENDING**. Private upload and the review recommendation do not establish quality-gate passage or public-release approval.
+
+Upload facts: visibility private; made_for_kids false; altered/synthetic content (AI) yes. English title/description came from the H04 draft, now consolidated into `experiments/cluepause/static-ten-20261124/upload-metadata.json`. Studio's upload dialog showed **檢查完畢，未發現任何問題** at save time. Both timed caption tracks, **中文（繁體）** from `h04-static-v3.zh-Hant.srt` and **英文** from `h04-static-v3.en.srt`, were published; the auto-generated English (US) track was left in place. The Traditional Chinese title/description translation was published from the draft's zh fields after editor readback. These Studio facts are integrator-reported, not independently reverified in this records update.
+
+Records-only engineering validation (2026-11-25 Asia/Taipei), base Git SHA `7a65c6cb9ac74a022acda159ce569885fcf20e45`: `python -B -` JSON parsing, exact upload-fact assertions, master/two-SRT SHA-256 comparisons, draft-removal assertion, unchanged existing four videos/session assertions, unchanged non-H04 table rows (including working-tree P03), puzzle/memory hash comparisons and personal-path/whitespace scan passed. `git diff --check` and PowerShell `Select-String` personal-path grep passed. Root README `uv sync --locked`, core pytest and video npm acceptance were not rerun for this records-only change; no source/video/governance code changed. Media playback and live Studio state were not independently reverified. Market acceptance remains **NOT_TESTED**. This update performed no commit, push, upload or memory edit.
 
 ## Story and rule
 At midnight the house visitor comes for every name left in the guestbook. Marks copied onto a bound duplicate page are still names in that same book.
@@ -39,7 +43,7 @@ Caption alignment: measured trimmed source PCM, exact SRT-content comparison and
 QA and hash evidence: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/qa/report.json`, `qa/probe.json`, `timeline.json` and `manifest.json` beside the v3 master. The ten checks were rerun for v3; the earlier dense continuity inspection remains supported by identical source plates and pixel-identical shots 02–06.
 
 ## v3 spoiler audit and comparison
-Reviewed every EN/zh narration line and timed sidecar cue, plus story.md, shots.json, references.json and this production record. The title "The Name Underneath" raises a question without asserting erasure failure. No H04 entry exists in batch upload-metadata.json; that file is unchanged. Production notes describe the answer for reviewers, but are not audience captions or early on-screen text.
+Reviewed every EN/zh narration line and timed sidecar cue, plus story.md, shots.json, references.json and this production record. The title "The Name Underneath" raises a question without asserting erasure failure. At the v3 revision audit, no H04 entry existed in batch upload-metadata.json. The later manual private-upload facts are now consolidated there. Production notes describe the answer for reviewers, but are not audience captions or early on-screen text.
 
 Lines 01–03 establish the signed book, visitor rule and attempted erasure. Line 04 preserves false relief: "The shape outside disappeared. Eva closed the book and breathed." Reveal lines start at 23.180 s and 28.680 s. No additional pre-23 s outcome disclosure was found in narration or sidecars; no baked-audio issue was identified. All six narration WAVs and three SFX are reused with no synthesis. Both SRTs were regenerated from measured cues and are byte-identical to v2, including all nine speech/SFX cues; neither includes the editorial question.
 
@@ -50,13 +54,13 @@ Decoded frames 29, 30, 45, 60, 75, 90, 104 and 105 were inspected: the correct b
 ## Continuity and story-logic findings
 | Timestamps | Impact class | Observed finding |
 |---|---|---|
-| 1.000–3.500 | early outcome disclosure (spoiler), corrected candidate | v2's question asserted failure before the false relief. v3 now asks "Will erasing her name save her?" / 「擦掉名字，就能救她嗎？」 without asserting the outcome. Decoded text confirmed; independent review remains pending. |
+| 1.000–3.500 | early outcome disclosure (spoiler), corrected candidate | v2's question asserted failure before the false relief. v3 now asks "Will erasing her name save her?" / 「擦掉名字，就能救她嗎？」 without asserting the outcome. Decoded text confirmed; subsequent independent v3 review found no BLOCKING issue for a private review copy. |
 | 28.500–35.967 | cosmetic | Right edge trims Eva outer cheek/shoulder. Both eyes and mouth remain visible; the visitor and blue name are retained through the move. |
 | 0.000–16.967 | confusing | Blue copying-sheet edge is small on a phone-sized view. It is present but may not be noticed as a fair clue without replay. |
 
 No additional confirmed causal rule violation was identified in this author inspection. This is a limited observation, not proof of a passed story gate. The cosmetic and confusing findings remain unchanged in v3.
 
-The previously requested question fix is now implemented as v3; it remains a fix candidate until independent review. Story/Storyboard Gates remain PENDING; Viewer Gate remains HUMAN_TEST_PENDING.
+The question fix in v3 subsequently received independent UPLOAD-OK for a private review copy and was uploaded privately as reported above. Story/Storyboard Gates remain PENDING; Viewer Gate remains HUMAN_TEST_PENDING.
 
 ## Calls, corrections, encodes and wall time
 Built-in ImageGen: 3 calls; one canonical sheet first, then two canonical-conditioned shot sheets.
@@ -78,4 +82,4 @@ v3 engineering commands at the base SHA above (all use existing dependencies):
 - `python -B -m pytest experiments/cluepause/static-ten-20261124/pipeline/tests -q -o cache_dir=artifacts/static-ten-20261124/urban_horror/h04-static-v3/pytest-cache --basetemp artifacts/static-ten-20261124/urban_horror/h04-static-v3/pytest-temp` → **33 passed in 0.75 s**.
 - `git diff --check` and personal-path/whitespace scan of all changed tracked files and v3 portable text evidence → PASS; details in v3 delivery-checks.json.
 Root README installation/core/video commands were not run: no core/video changes, uv is absent from PATH, and rebuilding shared environments would violate the job-only write boundary. This is isolated pipeline/media engineering verification, not full core-engine acceptance.
-No commit, push, upload, YouTube action, ImageGen, new TTS or memory edit. No core/video/pipeline/governance source changed; no independent review, human listening/phone playback or market acceptance is claimed. The v3 work writes H04 inputs/record, batch summary records and H04 revision artifacts only; tool files in the other checkout were read only.
+The historical v3 revision performed no commit, push, upload, YouTube action, ImageGen, new TTS or memory edit. No core/video/pipeline/governance source changed; that revision did not itself perform independent review, human listening/phone playback or market acceptance. Subsequent independent review and integrator-reported private upload are recorded above. The v3 work writes H04 inputs/record, batch summary records and H04 revision artifacts only; tool files in the other checkout were read only.

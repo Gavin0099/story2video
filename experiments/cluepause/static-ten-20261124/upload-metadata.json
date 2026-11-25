@@ -197,6 +197,46 @@
         ],
         "auto_generated_english_us_track": "left in place; not deleted"
       }
+    },
+    {
+      "id": "H04",
+      "title": "She Signed the Guestbook at Midnight | CluePause",
+      "title_zh_Hant": "她在午夜簽了訪客簿｜謎底之前",
+      "description": "She signed the guestbook at midnight. Why was she erasing her name?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "午夜，她在訪客簿上簽了名。她為什麼要擦掉自己的名字？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.mp4",
+      "mp4_sha256": "6c3c636fe7f8ead19575aab1c20698f4bfd16e389513c1ecb844724c97a03469",
+      "uploaded_file_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.mp4",
+      "uploaded_file_sha256": "6c3c636fe7f8ead19575aab1c20698f4bfd16e389513c1ecb844724c97a03469",
+      "video_id": "1dziLaHqEdk",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.zh-Hant.srt",
+            "srt_sha256": "14ecbfcefac18172b269e1dfeb62e3f9037c5372f662a6be14e917a5c3b6a2f1",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.en.srt",
+            "srt_sha256": "e5260240fea9f56ff8ab11aedf68b9b3919237f0f20e47dfc6a8d9513fc0472b",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
     }
   ]
 }
