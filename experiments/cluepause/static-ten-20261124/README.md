@@ -19,11 +19,26 @@ All HOLD videos remain not uploaded. UPLOAD-CANDIDATE private means a candidate 
 
 ## Upload results
 
-On 2026-11-25 (Asia/Taipei), four videos were uploaded by hand in YouTube Studio on CluePause: U02 `S34P69d9R7w`, H02 `QIftXOzmkQc`, H03 `ou7vZTG66Sg`, P02 `ywcvdupwbFQ`. All are **UPLOADED_PRIVATE**, private, not made for kids, with "altered or synthetic content / AI used" set to yes. The metadata's English titles and descriptions were applied; zh-Hant titles/descriptions were not applied and no captions have been uploaded yet.
+On 2026-11-25 (Asia/Taipei), four videos were uploaded by hand in YouTube Studio on CluePause: U02 `S34P69d9R7w`, H02 `QIftXOzmkQc`, H03 `ou7vZTG66Sg`, P02 `ywcvdupwbFQ`. All are **UPLOADED_PRIVATE**, private, not made for kids, with "altered or synthetic content / AI used" set to yes. The metadata's English titles and descriptions were applied; zh-Hant titles/descriptions were **not applied**.
+
+Per the user's report, on 2026-11-25 (Asia/Taipei) each of P02, U02, H02 and H03 had two caption tracks uploaded by hand in YouTube Studio and **published**, using **"with timing"** from the sidecar SRT next to its master MP4: YouTube language **"中文（繁體）" (zh-Hant)** and **"英文" (generic English, en)**. The YouTube auto-generated **English (US)** track was left in place, not deleted, for each video. `upload_session.captions_uploaded` is now `true`.
+
+| Video | Language code | SRT path (repo-relative) | SHA-256 |
+| --- | --- | --- | --- |
+| P02 | zh-Hant | `artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.zh-Hant.srt` | `20caec8f3a603b7eff68ea06eec3ba1804e9a08a04f900262c3c7140dc9afc98` |
+| P02 | en | `artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.en.srt` | `f67688a672994f14c62e8df892dc0a3759a2fbaaebf3d5b122e428c5723d1625` |
+| U02 | zh-Hant | `artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.zh-Hant.srt` | `bd10e2289c70f329c01441c118d7ab9d412771322a29bfeb33c81d64ffe062b8` |
+| U02 | en | `artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.en.srt` | `28c15bce340a4dae837c570c389528f106e4a47f75d71df4b99bd0d31584442f` |
+| H02 | zh-Hant | `artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.zh-Hant.srt` | `ecad7e1403a63d549399447c57aedc3d02fd2551982c6a942876a749629de509` |
+| H02 | en | `artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.en.srt` | `b71a8876fc2a6aa61e4a72b5ad68baa9423219c7f0133904a0117ddd96708163` |
+| H03 | zh-Hant | `artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.zh-Hant.srt` | `9e9a93d30bc093df5934cccd322145ad7289eeae9d553117adbdb1728b0b3bae` |
+| H03 | en | `artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.en.srt` | `16cb3166a217638f84c7c70c5c4caaed315574b9d85b94b413cc1f4468fd8f96` |
+
+P02 captions are timed to the master MP4. Its [upload-copy evidence](../../../../artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/upload-copy.md) records master and upload-copy durations of 39.000000 s each: difference 0.000000 s, within 0.05 s, so the caption timings apply to the uploaded copy.
 
 U02/H02/H03 used their unchanged master MP4s. P02 used `artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1-upload.mp4` because the browser upload tool caps files at 10 MB: 9,358,260 bytes, SSIM versus master mean 0.994005 / min 0.991581. Uploaded paths and SHA-256 values are recorded in [upload-metadata.json](upload-metadata.json). YouTube processing/checks results were not confirmed at upload time. Story and Storyboard Quality Gates remain **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**; private upload is neither a quality-gate pass nor publication approval. Market acceptance remains **NOT_TESTED**.
 
-Records-only engineering validation at base Git SHA `103e47eda11c0137f1d96e2857e4d3cd92eb6ff8`: `python -B -` JSON/fact assertions and trailing-whitespace scan, plus `git diff --check`, passed. Media, core-engine acceptance and YouTube processing/checks were not reverified.
+Records-only engineering validation for the caption update at base Git SHA `2badd0ade509de8fd8e71466cee9204a5eb11077`: `python -B -` JSON parsing, eight SRT SHA-256 comparisons, caption fact assertions, unchanged-existing-field assertions and trailing-whitespace scan, plus `git diff --check`, passed. Media, core-engine acceptance, Studio caption playback/publication and YouTube processing/checks were not independently reverified; caption publication is recorded from the user's report. Market acceptance remains **NOT_TESTED**. No commit, push, upload or memory edit was performed.
 
 ## Independent review and acceptance
 

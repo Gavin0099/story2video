@@ -7,13 +7,19 @@
     "title_source": "title",
     "description_source": "description",
     "zh_Hant_title_description_applied": false,
-    "captions_uploaded": false,
+    "captions_uploaded": true,
     "processing_checks_result": "NOT_CONFIRMED_AT_UPLOAD",
     "story_quality_gate": "PENDING",
     "storyboard_quality_gate": "PENDING",
     "viewer_gate": "HUMAN_TEST_PENDING",
     "private_upload_is_quality_gate_pass": false,
-    "private_upload_is_publication_approval": false
+    "private_upload_is_publication_approval": false,
+    "caption_upload": {
+      "date": "2026-11-25",
+      "timezone": "Asia/Taipei",
+      "method": "manual_youtube_studio",
+      "evidence_source": "User report of manual caption uploads in YouTube Studio"
+    }
   },
   "videos": [
     {
@@ -36,7 +42,37 @@
       "visibility": "private",
       "made_for_kids": false,
       "altered_or_synthetic_content": true,
-      "status": "UPLOADED_PRIVATE"
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.zh-Hant.srt",
+            "srt_sha256": "20caec8f3a603b7eff68ea06eec3ba1804e9a08a04f900262c3c7140dc9afc98",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.en.srt",
+            "srt_sha256": "f67688a672994f14c62e8df892dc0a3759a2fbaaebf3d5b122e428c5723d1625",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted",
+        "timing": {
+          "reference": "master MP4",
+          "applies_to_uploaded_copy": true,
+          "master_duration_seconds": 39.0,
+          "upload_copy_duration_seconds": 39.0,
+          "absolute_difference_seconds": 0.0,
+          "tolerance_seconds": 0.05,
+          "evidence_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/upload-copy.md"
+        }
+      }
     },
     {
       "id": "U02",
@@ -52,7 +88,28 @@
       "visibility": "private",
       "made_for_kids": false,
       "altered_or_synthetic_content": true,
-      "status": "UPLOADED_PRIVATE"
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.zh-Hant.srt",
+            "srt_sha256": "bd10e2289c70f329c01441c118d7ab9d412771322a29bfeb33c81d64ffe062b8",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.en.srt",
+            "srt_sha256": "28c15bce340a4dae837c570c389528f106e4a47f75d71df4b99bd0d31584442f",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
     },
     {
       "id": "H02",
@@ -68,7 +125,28 @@
       "visibility": "private",
       "made_for_kids": false,
       "altered_or_synthetic_content": true,
-      "status": "UPLOADED_PRIVATE"
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.zh-Hant.srt",
+            "srt_sha256": "ecad7e1403a63d549399447c57aedc3d02fd2551982c6a942876a749629de509",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.en.srt",
+            "srt_sha256": "b71a8876fc2a6aa61e4a72b5ad68baa9423219c7f0133904a0117ddd96708163",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
     },
     {
       "id": "H03",
@@ -84,7 +162,28 @@
       "visibility": "private",
       "made_for_kids": false,
       "altered_or_synthetic_content": true,
-      "status": "UPLOADED_PRIVATE"
+      "status": "UPLOADED_PRIVATE",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.zh-Hant.srt",
+            "srt_sha256": "9e9a93d30bc093df5934cccd322145ad7289eeae9d553117adbdb1728b0b3bae",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.en.srt",
+            "srt_sha256": "16cb3166a217638f84c7c70c5c4caaed315574b9d85b94b413cc1f4468fd8f96",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
     }
   ]
 }
