@@ -1,0 +1,49 @@
+{
+  "sheet_size": [
+    1151,
+    1366
+  ],
+  "method": "Measured actual photographic cell boundaries; exclude generated white gutters, use normalized whole-sheet crops instead of assuming equal widths. No image content painted or composited.",
+  "boxes_ltrb": {
+    "shot-07": [
+      1,
+      1,
+      373,
+      679
+    ],
+    "shot-08": [
+      380,
+      1,
+      745,
+      679
+    ],
+    "shot-09": [
+      751,
+      1,
+      1150,
+      679
+    ],
+    "shot-10": [
+      1,
+      689,
+      373,
+      1365
+    ],
+    "shot-11": [
+      380,
+      689,
+      745,
+      1365
+    ],
+    "shot-12": [
+      751,
+      689,
+      1150,
+      1365
+    ]
+  },
+  "shot_11_zoom": [
+    1,
+    1
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "base_git_sha": "b7801291cf7af830272070e416130125ed0df7b5",
+  "master": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.mp4",
+  "sha256": "146f6f92fa651d07818f9b4bddda5a2819db5919a7a1a9116e4194f2bdff06d4",
+  "duration_seconds": 38,
+  "technical_qa": "PASS",
+  "original_v1_inputs_unchanged": true,
+  "v1_master_unchanged": true,
+  "nine_bilingual_narration_lines_unchanged": true,
+  "nine_wavs_reused_byte_for_byte": true,
+  "reveal_start": 29.0,
+  "reveal_cues": [
+    {
+      "id": "line-08",
+      "start": 29.0,
+      "end": 32.610625
+    },
+    {
+      "id": "line-09",
+      "start": 33.5,
+      "end": 36.26645833333333
+    }
+  ],
+  "question_and_sidecars_early_answer_disclosure": false,
+  "exact_srt_pcm_schedule": "MATCH; no ASR/listening claim",
+  "dense_frames": 177,
+  "sampling_fps": 4.285714285714286,
+  "imagegen_calls": 4,
+  "conditioned_input_and_prompt_hashes": "MATCH",
+  "personal_path_grep": "PASS",
+  "scanned_revision_and_artifact_text_files": 175,
+  "story_quality_gate": "PENDING",
+  "storyboard_quality_gate": "PENDING",
+  "viewer_gate": "HUMAN_TEST_PENDING",
+  "market_acceptance": "NOT_TESTED",
+  "independent_review": "PENDING",
+  "upload_status": "NOT_UPLOADED",
+  "rights_status": "pending_verification"
+}
