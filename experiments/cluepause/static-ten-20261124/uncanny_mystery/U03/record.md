@@ -1,3 +1,74 @@
+# U03 - The Man in the Pantry Door - current v2
+
+**FIX-CANDIDATE pending independent review, not uploaded.** The blocking v1 frame kept a high round head shadow after its colander was lowered. v2 replaces only shot-09: the colander now lies flat on the low foreground counter outside the directional beam, and the detached high head shadow disappears. The unchanged towel still casts shoulders; removing it in shot-10 leaves only rack lines. This repairs the visible source/shadow state contradiction in the producing agent's inspection. It is not an optical simulation or an independent acceptance decision.
+
+Story Quality Gate **PENDING**. Storyboard Quality Gate **PENDING**. Viewer Gate **HUMAN_TEST_PENDING**. Rights **pending_verification**. Market acceptance **NOT_TESTED**.
+
+Revision date: **2026-11-25 Asia/Taipei**. Base Git SHA: `1e3c4f40c92eabfbe5cc66b54b777418e7a169f2`, branch `codex/cluepause-static-ten-20261124`. This SHA is the starting checkout, not a commit of this revision. v2 was the next free source/output revision id. Inputs: `U03/revisions/v2/`; original v1 story, shots, references, assets and all v1 artifact bytes are preserved. The original record is retained verbatim at `revisions/v2/record-v1.md` and below; `revisions/v2/v1-preservation.json` binds their hashes.
+
+Master: `artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.mp4`.
+Duration **36.000 s**, 1080 frames. SHA-256 `4a912d85fd66d85dbd050a900dc1298c8f06b823752423e5c9b8f715c6c94b3e`.
+Sidecars: `uncanny-u03-v2.en.srt` and `uncanny-u03-v2.zh-Hant.srt` beside the master. Silent storyboard: `silent-storyboard.jpg` and `silent-storyboard.json` beside the master. Full QA, dense strips, portable commands and verification are in that same output directory.
+
+## v2 per-shot changes and mechanism state
+
+**L** means the same fixed warm black task lamp on the kitchen counter, behind the rack and outside the pantry, shining through the object plane toward the outside of the frosted pane. In reveal views it is screen-right, aimed left across the rack. Lamp height, aim and rack/towel placement do not change across the reveal. **Inferred** states are outside a crop and are continuity assumptions, not directly observed coordinates. Image size changes from close-ups are camera framing, not asserted changes of physical magnification. All rows were checked against decoded frames, not just prompts.
+
+| Shot / time / change | Light source position | Colander position | Shadow position / size on glass | Door / pantry state | Character | Transition consistency |
+| --- | --- | --- | --- | --- | --- | --- |
+| 01 / 0-4 / reused | L, offscreen inferred | Upright above towel on rack, below crop inferred | Soft head over broad shoulders, upper/middle pane; small faint holes | Closed; empty interior hidden | Ochre henley, curls, back/side to camera | Establishes combined shadow; source objects withheld |
+| 02 / 4-7 / reused | L, offscreen inferred | Same rack position, offscreen inferred | Same soft joined contour; enlarged by glass close-up, faint holes | Closed; interior hidden | Outside crop | 01 -> 02 changes framing only; no implied object motion |
+| 03 / 7-11 / reused | L at frame edge; stays on kitchen counter | Same rack state offscreen inferred | No joined figure visible on swung-away pane; original receiving plane is displaced | Open; empty shelves and one bare hanger, no coat/person | Holds brass knob | 02 -> 03 rotates the receiving surface out of its closed-door beam intersection; no claim of a figure inside |
+| 04 / 11-14 / reused | L offscreen inferred | Same rack state offscreen inferred | Receiving glass outside this interior close view; no figure asserted there | Open; same empty shelves/hanger | Looks at hanger, puzzled | 03 -> 04 stays in open-door state |
+| 05 / 14-18 / reused | L offscreen inferred | Same rack state below crop inferred | Joined soft head/shoulders return at prior region/scale | Closed; empty interior hidden | Looks toward silhouette | 04 -> 05 returns pane to beam; unchanged sources restore figure |
+| 06 / 18-22 / reused | Defocused L behind metal/towel | Macro curved patch of still-upright perforated metal; whole position cropped | Glass outside macro crop; joined projection inferred unchanged | Closed, outside crop inferred | Outside crop | 05 -> 06 only changes framing; no shown source move |
+| 07 / 22-26 / reused | L below crop inferred | Still on rack, below crop inferred | Most pane/figure outside face crop; no new shadow state claimed | Closed frame visible; pantry hidden | Looks down, concentrated | 06 -> 07 reaction only, before lifting |
+| 08 / 26-30 / reused | L visible at right, behind rack, toward pane | Lifted off rack and held left of towel, still in beam | Round perforated head displaced left of stationary broad shoulders; medium disk partly clipped at left pane edge | Closed; pantry hidden | Holds steel handle in ochre shirt | 07 -> 08 lateral source displacement has matching lateral projection separation; clipping retained as residual |
+| 09 / 30-33 / NEW still | L remains at right behind rack, same aim | Flat, low on foreground counter below/outside lamp -> towel -> pane beam | **No detached high head or pinpoints**; broad towel-only shoulder patch stays lower/middle pane, larger in frame due tighter camera | Closed; pantry hidden | Outside crop | 08 -> 09 lowers/rotates source out of beam, so round head disappears; towel shadow remains rather than moving with colander |
+| 10 / 33-36 / reused | L remains on counter at right | Still out of beam, now outside crop inferred | Shoulder patch gone; only thin rectangular rack lines low on glass; no head | Closed; pantry hidden | Holds towel away from beam, relieved | 09 -> 10 removes second occluder, leaving rack projection only |
+
+The critical 08 -> 09 -> 10 cuts now read: lifted colander / detached head, lowered out-of-beam colander / no head but shoulders, removed towel / no shoulders. No independently floating head survives the lowered source. These are three static photographed states with gentle camera zoom; the intervening hand motion is not animated. All nine transitions are qualitatively compatible with the stated light direction. Hidden setup geometry, exact magnification and matching individual hole rays remain unmeasured. The earlier human-like contour is softer/longer than the round reveal contour; v2 does not certify pixel-exact optical reconstruction.
+
+## v2 ImageGen evidence and budget
+
+Built-in ImageGen / `precise-object-edit`; **1 call, 1 generated bitmap, 0 correction calls, 0 tool-validation rejections** for this fix. It edits the extracted original shot-09 and is conditioned on the unchanged canonical reference sheet. No new reference/setup/resolution sheet was generated. Original v1 history remains **4 requests / 4 bitmaps**, including its earlier setup correction; lifetime U03 total is now **5 / 5**. ImageGen cost **UNKNOWN**.
+
+Exact prompt, input roles and prompt hash: `revisions/v2/image-prompts-used.json` and output `prompts/repair.json`. Every new call has a receipt in both `revisions/v2/images.jsonl` and output `images.jsonl`; result `assets/shot09-fixed.png` has its SHA bound there. Accepted after inspecting the full still, then all rendered shot-09 samples. No second image call or post-render image correction was necessary. The prompt specifically requests a low flat colander outside the beam, removal of the entire high round shadow, and preservation of the lamp/towel/shoulder state.
+
+## v2 decoded inspection and answer-disclosure audit
+
+The primary agent inspected **all 10 decoded strips / 164 sampled frames**, every seventh 30-fps frame (**4.286 fps**) plus every shot's final frame, and the complete silent storyboard. `qa/shot-01-strip.jpg` through `qa/shot-10-strip.jpg` and their `samples.json` files retain the evidence. In all 14 shot-09 samples (30.000-32.967 s), the low flat colander is visible and the high glass has no round perforated head. Its shoulder-only patch remains; all 14 shot-10 samples show rack lines without the human figure. No camera-driven shadow/source change appears within a shot.
+
+Opening question remains "Who Is Behind the Glass?" / "玻璃後面是誰？" only at 1.0-3.5 s. It does not name a colander, lamp, towel or shadow mechanism. Source narration text, all seven narration WAVs, SFX, measured timing, question plate and both language sidecars are unchanged. Explicit spoken/captioned identification starts with the colander at **26.000 s**, coinciding with the first reveal; the lamp explanation starts **30.200 s**. The pre-reveal lines mention holes, an empty hanger, recurrence and looking in front of the glass, without naming the cause. Exact SRT/cue comparisons and first-reveal bounds pass; no earlier answer was added in v2.
+
+Residual disclosure risk remains **confusing / predictability**: the metal-perforation macro with navy cloth and defocused lamp at 18-22 s can let a viewer infer projection before 26 s. Full object-to-glass alignment is withheld until the reveal. This has not been resolved by blind readers or phone tests, and is not claimed as an objectively spoiler-free story.
+
+## v2 engineering acceptance, commands and limits
+
+Job validation via the existing genre-local entry point: **VALID**. Full machine media QA: **PASS**, all 10 checks true (video, frames, duration, audio, no embedded subtitles, faststart, full decode, both captions, caption bounds). H.264 High/yuv420p, 1080x1920 at 30 fps, AAC 48 kHz stereo. One render invocation; 10 cut encodes and final stream-copy/AAC mux; measured pipeline wall time **44.172 s**. Source/model downloads and TTS calls: **0**. Existing external tool files were read-only and verified against the pipeline's executable size/SHA pins; bindings were supplied only through environment variables.
+
+The U03-only verification additionally confirms v1 source/artifact hash preservation, nine unchanged encoded cuts, the changed shot-09 cut, all seven original WAV hashes, identical mixed WAV, identical decoded master audio, identical question plate, both SRTs byte-identical to v1 and exact against measured cues, prompt/result hashes, dense sample count and pending gates. Source input hashes and starting Git SHA are in the manifest. Portable encode/decode/probe/loudness/audio-hash argv, exits and timing are in `commands.jsonl`.
+
+Commands executed from repository root (tool paths supplied externally, not stored in inputs):
+
+```text
+python -B experiments/cluepause/static-ten-20261124/uncanny_mystery/run_local.py validate experiments/cluepause/static-ten-20261124/uncanny_mystery/U03/revisions/v2
+python -B experiments/cluepause/static-ten-20261124/uncanny_mystery/run_local.py run experiments/cluepause/static-ten-20261124/uncanny_mystery/U03/revisions/v2
+python -B -m pytest experiments/cluepause/static-ten-20261124/pipeline/tests -q -o cache_dir=artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/pytest-cache --basetemp artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/pytest-temp
+python -B experiments/cluepause/static-ten-20261124/uncanny_mystery/U03/revisions/v2/verify_revision.py
+git diff --check
+```
+
+Pipeline pytest: **33 passed in 0.54 s** using U03-specific cache/basetemp. U03 verification (including personal-path regex grep and text whitespace checks): **PASS**, evidence in output `verification.json`. `git diff --check`: **PASS**. No source/video/governance code changed; root engine pytest/npm/governance acceptance was not rerun. No framework update. The verification script is delivery evidence, not a production-engine change.
+
+Residuals: subtle opening pinholes; potentially revealing 18-second macro; soft/cropped shot-07 reaction; early elongated contour versus rounder/crisper reveal head; left-edge clipping of the displaced head in shot-08; exact ray geometry and individual hole-constellation correspondence unmeasured. The repaired low-colander/high-head contradiction was not observed in v2. Independent review, full listening, phone playback in both caption languages/on/off, human silent-story comprehension, rights/originality checks and market results remain **unverified**. Engineering PASS does not advance story/storyboard/viewer gates or market acceptance.
+
+No commit, push, upload, YouTube access or memory edit. No puzzle/P03 file was modified. Only U03, the uncanny README and the batch README's U03 row were changed; unrelated existing work was preserved.
+
+---
+
+## Archived v1 record - historical findings below apply to v1
+
 # U03 — The Man in the Pantry Door
 
 FICTION. Genre: uncanny_mystery. Rights: **pending_verification**.

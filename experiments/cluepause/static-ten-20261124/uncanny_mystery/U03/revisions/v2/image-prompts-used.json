@@ -1,0 +1,17 @@
+[
+  {
+    "sheet": "repair",
+    "purpose": "U03 v2 shot-09 optical-state repair",
+    "prompt": "Use case: precise-object-edit. One single full-bleed portrait 9:16 photographic still, no collage.\nInput image 1 is the EDIT TARGET: original shot-09. Input image 2 is the CANONICAL REFERENCE sheet: identity, kitchen, steel colander, navy towel/chrome rack and black lamp only, do not reproduce its collage.\nFix the optical story-logic error with a minimal edit. Preserve the edit target camera, closed cream frosted pantry door, mint walls, warm exposure, rack, navy towel and its shoulder-shaped shadow, and black lamp position and direction. The lamp is on the counter to the right, aimed across the rack toward the pane. Keep the physical colander in the low foreground but lay it almost flat, face upwards, on the counter BELOW AND OUTSIDE the directional lamp beam, not standing upright. It no longer intercepts the rays that reach the glass. On the frosted pane REMOVE THE ENTIRE detached circular perforated head shadow at the upper left, replacing that area with naturally illuminated frosted glass consistent with its surroundings. The navy towel remains fixed on the rack and still casts its existing shoulder-only dark shadow in the lower central pane. The area above those shoulders is clear, with no round head, no perforated circle or pinpoints, no residual ghost circle, no moved or duplicate shadow. This is the state AFTER lowering the colander out of the beam, BEFORE moving the towel. Physically consistent lamp-object-glass geometry. No people, no extra objects, no text, arrows, diagrams, border or lettering. Preserve materials and scale from canonical references. Do not alter the towel/rack geometry or move the light source.",
+    "prompt_sha256": "95c789f07770e4fc13cad7d1cc66a2b05440e3eb420147e28f02324e3db1b9eb",
+    "reference_images": [
+      "assets/shot09-before.png",
+      "assets/reference.png"
+    ],
+    "roles": [
+      "edit target",
+      "canonical reference"
+    ],
+    "budget": "one initial request, at most one correction; log every call; HOLD if inconsistent"
+  }
+]
