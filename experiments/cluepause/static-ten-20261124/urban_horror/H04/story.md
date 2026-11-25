@@ -4,7 +4,7 @@ Genre: urban_horror
 Rights: pending_verification
 Original invented fiction; no real people, events, brands, or source-work recreation. No gore.
 Target: 36.0 seconds; English narration, English and Traditional Chinese sidecars.
-Opening question only at 1.0–3.5 seconds: Why did erasing her name fail? / 擦掉名字為何沒用？
+Opening question only at 1.0–3.5 seconds: Will erasing her name save her? / 擦掉名字，就能救她嗎？
 
 ## World rule
 At midnight the house visitor comes for every name left in the guestbook. Marks copied onto a bound duplicate page are still names in that same book.
@@ -60,4 +60,6 @@ Pre-generation revision: use explicit paired before/after object states and the 
 ## Gate status
 Story Quality Gate PENDING; Storyboard Quality Gate PENDING; Viewer Gate HUMAN_TEST_PENDING. No blind readers this round. Market acceptance NOT_TESTED.
 
-One fix pass after v1 QA: swap the first two photographic cells so the outside figure and signed book are visible at 0 seconds. The following close-up shows the signing detail and blue corner. Narration and duration unchanged. v1 master and its inputs preserved; final story id h04-static-v2.
+One fix pass after v1 QA: swap the first two photographic cells so the outside figure and signed book are visible at 0 seconds. The following close-up shows the signing detail and blue corner. Narration and duration unchanged. v1 master and its inputs preserved; retained story id h04-static-v2.
+
+Second fix pass: h04-static-v3 replaces only the bilingual opening question at 1.0-3.5 seconds to avoid disclosing erasure failure before the 17-23 second false relief. Existing image sheets, all six narration WAVs, three SFX, cuts and camera moves are reused unchanged. v1/v2 outputs remain preserved. FIX-CANDIDATE pending independent review; not uploaded.

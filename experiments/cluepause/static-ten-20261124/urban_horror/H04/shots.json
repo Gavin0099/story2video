@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "story_id": "h04-static-v2",
+  "story_id": "h04-static-v3",
   "fiction": "FICTION — original invented story, not a true-event account. Rights: pending_verification.",
   "genre": "urban_horror",
   "question": {
-    "en": "Why did erasing her name fail?",
-    "zh": "擦掉名字為何沒用？"
+    "en": "Will erasing her name save her?",
+    "zh": "擦掉名字，就能救她嗎？"
   },
   "sheets": {
     "reference": {

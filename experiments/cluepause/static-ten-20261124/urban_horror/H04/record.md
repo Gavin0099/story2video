@@ -1,9 +1,9 @@
 # H04 — The Name Underneath production record
 
 FICTION — original invented urban-horror candidate. Rights: pending_verification.
-Git SHA: `aef24410f8b45c8651fd922343aeb52db11bfc75`. Working files are uncommitted. No publication authorization is implied.
+Revision validation base Git SHA: `79e9afc0e05f1143a4aeaaab56c116eaaff8dd3b`. Working files are uncommitted. No publication authorization is implied.
 
-Status: **HOLD (not uploaded)**. Independent review on 2026-11-25 identified a blocking early outcome disclosure (spoiler) in the retained opening question.
+Status: **FIX-CANDIDATE pending independent review, not uploaded**. On 2026-11-25, v3 replaces the blocking early outcome disclosure identified in v2's opening question. This author verification does not constitute independent approval.
 
 ## Story and rule
 At midnight the house visitor comes for every name left in the guestbook. Marks copied onto a bound duplicate page are still names in that same book.
@@ -11,11 +11,13 @@ Eva believes the pencil entry is the only entry and the shape outside is the nig
 A blue copying sheet corner is visible below the writing page from the first close-up. Pencil pressure leaves a second entry; erasing the surface does not remove it. No warning text explains this before payoff.
 
 ## Delivered files
-Master: `artifacts/static-ten-20261124/urban_horror/h04-static-v2/h04-static-v2.mp4`
-Duration: 36.000 s; SHA-256: `abc02c1c7fc46a136d1a75782691cf23b93ac4c36f254fa5b2e962ed08883a81`.
-EN sidecar: `artifacts/static-ten-20261124/urban_horror/h04-static-v2/h04-static-v2.en.srt`
-Traditional Chinese sidecar: `artifacts/static-ten-20261124/urban_horror/h04-static-v2/h04-static-v2.zh-Hant.srt`
-Silent storyboard: `artifacts/static-ten-20261124/urban_horror/h04-static-v2/silent-storyboard.jpg`; timestamped strips: `artifacts/static-ten-20261124/urban_horror/h04-static-v2/qa/shot-01-strip.jpg` through `shot-06-strip.jpg`.
+Master: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.mp4`
+Duration: 36.000 s; SHA-256: `6c3c636fe7f8ead19575aab1c20698f4bfd16e389513c1ecb844724c97a03469`.
+EN sidecar: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.en.srt`
+Traditional Chinese sidecar: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/h04-static-v3.zh-Hant.srt`
+Silent storyboard: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/silent-storyboard.jpg`; timestamped strips: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/qa/shot-01-strip.jpg` through `shot-06-strip.jpg`.
+
+Opening question: **Will erasing her name save her? / 擦掉名字，就能救她嗎？** Only the bilingual question and revision id changed in shots.json; story.md matches. The question is editorial picture text, not spoken narration or a sidecar cue.
 
 ## Shot table: silent intent versus decoded result
 | Shot | Seconds | Narrative function | Silent intent | What the frames show |
@@ -34,31 +36,46 @@ Pipeline validator: VALID. Final technical QA: all 10 checks true. 1080×1920, 3
 Dense output: 162 decoded samples across six shots at 30/7 fps plus each final frame. All six timestamped strips were visually inspected for face, hair, clothing, prop geometry/state, set, crop and camera continuity.
 Opening editorial question is visible only at 1.0–3.5 s. No burned narration captions or fiction labels. In-world text is limited to the declared evidence. Six measured narration WAVs and three synthesized nonverbal SFX are represented in both sidecars.
 Caption alignment: measured trimmed source PCM, exact SRT-content comparison and bounds checks; no ASR/listening claim. Mix peak: -3.83 dBFS. Audio loudness/peak diagnostics are in commands.jsonl.
-QA and hash evidence: `artifacts/static-ten-20261124/urban_horror/h04-static-v2/qa/report.json`, `artifacts/static-ten-20261124/urban_horror/h04-static-v2/qa/probe.json`, `artifacts/static-ten-20261124/urban_horror/h04-static-v2/timeline.json`, `artifacts/static-ten-20261124/urban_horror/h04-static-v2/manifest.json`.
+QA and hash evidence: `artifacts/static-ten-20261124/urban_horror/h04-static-v3/qa/report.json`, `qa/probe.json`, `timeline.json` and `manifest.json` beside the v3 master. The ten checks were rerun for v3; the earlier dense continuity inspection remains supported by identical source plates and pixel-identical shots 02–06.
+
+## v3 spoiler audit and comparison
+Reviewed every EN/zh narration line and timed sidecar cue, plus story.md, shots.json, references.json and this production record. The title "The Name Underneath" raises a question without asserting erasure failure. No H04 entry exists in batch upload-metadata.json; that file is unchanged. Production notes describe the answer for reviewers, but are not audience captions or early on-screen text.
+
+Lines 01–03 establish the signed book, visitor rule and attempted erasure. Line 04 preserves false relief: "The shape outside disappeared. Eva closed the book and breathed." Reveal lines start at 23.180 s and 28.680 s. No additional pre-23 s outcome disclosure was found in narration or sidecars; no baked-audio issue was identified. All six narration WAVs and three SFX are reused with no synthesis. Both SRTs were regenerated from measured cues and are byte-identical to v2, including all nine speech/SFX cues; neither includes the editorial question.
+
+Full-resolution decoded comparison against v2 covers all 1080 frames. Outside [1.000, 3.500), 1005 frames have SSIM mean **0.999448432**, minimum **0.992466**. Shots 02–06 (5.500–36.000 s), 915 frames, are pixel-identical (SSIM 1.0). The remaining 90 outside-window frames in shot 01 differ after H.264 re-encoding: before the question mean/min 0.995361300/0.994531; after it until 5.500 s mean/min 0.993080583/0.992466. Thus literal pixel equality outside the window is not claimed. Input comparison confirms identical shots, crops, camera moves, timings and narration; extracted plate provenance, full timeline, mix WAV and decoded AAC audio also match v2 exactly.
+
+Decoded frames 29, 30, 45, 60, 75, 90, 104 and 105 were inspected: the correct bilingual text is readable at 1.000–3.467 s and absent at 0.967/3.500 s. Evidence: v3 `qa/question-boundaries.png`, full-size `qa/question-frame-*.png`, `qa/revision-comparison.json`, per-frame SSIM log and both decoded framemd5 files. All 453 snapshotted files across v1/v2, H04 source assets and upload metadata remain hash-identical.
 
 ## Continuity and story-logic findings
 | Timestamps | Impact class | Observed finding |
 |---|---|---|
-| 1.000–3.500 | early outcome disclosure (spoiler) | BLOCKING: the opening question "Why did erasing her name fail?" explicitly discloses that erasing fails before the false relief at 17–23 s. It does not disclose the carbon-copy mechanism, but it crosses the brief's spoiler boundary. Source: shots.json question; the same question is in the rendered master. |
+| 1.000–3.500 | early outcome disclosure (spoiler), corrected candidate | v2's question asserted failure before the false relief. v3 now asks "Will erasing her name save her?" / 「擦掉名字，就能救她嗎？」 without asserting the outcome. Decoded text confirmed; independent review remains pending. |
 | 28.500–35.967 | cosmetic | Right edge trims Eva outer cheek/shoulder. Both eyes and mouth remain visible; the visitor and blue name are retained through the move. |
 | 0.000–16.967 | confusing | Blue copying-sheet edge is small on a phone-sized view. It is present but may not be noticed as a fair clue without replay. |
 
-No additional confirmed causal rule violation was identified in this author inspection. This is a limited observation, not proof of a passed story gate. All listed residual issues remain in the delivered master.
+No additional confirmed causal rule violation was identified in this author inspection. This is a limited observation, not proof of a passed story gate. The cosmetic and confusing findings remain unchanged in v3.
 
-Future revision: ask whether erasing the name will save her without asserting failure, and check the question against the false-relief/reveal boundary before rendering. The current shots.json, story and master remain unchanged so the inputs still match the rendered video; this records-only correction does not clear HOLD.
+The previously requested question fix is now implemented as v3; it remains a fix candidate until independent review. Story/Storyboard Gates remain PENDING; Viewer Gate remains HUMAN_TEST_PENDING.
 
 ## Calls, corrections, encodes and wall time
 Built-in ImageGen: 3 calls; one canonical sheet first, then two canonical-conditioned shot sheets.
 Every completed call has a receipt in `artifacts/static-ten-20261124/urban_horror/h04-static-v2/images.jsonl`. Exported prompts and their hashes are in `artifacts/static-ten-20261124/urban_horror/h04-static-v2/prompts/`. Original generated sheets are retained in assets; no external paid TTS call. Image billed cost UNKNOWN; no invented dollar figure.
 Six narration lines synthesized once with the existing local Kokoro model, voice af_heart, speed 1.08; trimmed PCM reused by all renders. Three local mathematical SFX WAVs (pulse/click/chime), no downloaded recordings.
-Final render: 6 libx264 shot encodes + one stream-copy/AAC mux; 37.281 s. Cumulative production: 12 shot encodes, 74.562 s of render invocations.
+Historical v2 render: 6 libx264 shot encodes + one stream-copy/AAC mux; 37.281 s. Historical v1/v2 cumulative production: 12 shot encodes, 74.562 s of render invocations.
 Observed production wall span: 1188.790 s, from 2026-11-24T15:38:56.489176+00:00 to 2026-11-24T15:58:45.278685+00:00. Boundary is initial story-file creation through final QA; includes queue time and other-story work, excludes initial repository reading. Do not sum overlapping story spans. See production-cost.json for the machine-readable cost record.
-Fix passes: 1 after v1 QA; first two source cells swapped to show the figure immediately, with no new ImageGen/TTS. Original h04-static-v1 master, QA, cost, and input-archive preserved; final h04-static-v2 reuses the three historical image receipts, documented in image-reuse.json. Cumulative encode count includes both renders.
+Fix passes: v2 swapped the first two source cells; v3 changes only the opening question. v1/v2 outputs remain untouched. v3 image-reuse.json binds every reused source asset and distinguishes three historical ImageGen calls from zero new ImageGen/TTS calls; copied receipts/prompts are historical evidence. Final v3 render: 6 shot encodes + one mux, 35.282 s. An earlier attempt was caught by exact question assertions with the old zh text still present after a shell encoding replacement failed. Its master/logs are preserved separately under `artifacts/static-ten-20261124/urban_horror/h04-static-v3-attempt01-failed-text/`; it is not the candidate. No existing master was overwritten. This extra attempt used another six shot encodes + one mux; see its cost.json. Prior v2 inputs are archived in v3 previous-inputs-v2/ and final v3 inputs in input-archive/.
 
 ## Acceptance and unverified scope
 Story Quality Gate PENDING (no blind readers this round). Storyboard Quality Gate PENDING. Viewer Gate HUMAN_TEST_PENDING. Market acceptance NOT_TESTED; no retention, viewer preference, public data, or revenue evidence.
 Not verified: human listening, EN/zh-Hant phone playback, independent silent comprehension, emotional effect, external originality and commercial-rights review. Technical QA cannot establish these.
 Reproducible validation: `python -B experiments/cluepause/static-ten-20261124/urban_horror/job.py validate H04`. Production invocation: same entry point with `run H04`; existing master protection refuses overwriting, so a future rerender needs a new revision id.
-Shared pipeline regression: `python -B -m pytest experiments/cluepause/static-ten-20261124/pipeline/tests -q -o cache_dir=artifacts/static-ten-20261124/urban_horror/pytest-cache --basetemp artifacts/static-ten-20261124/urban_horror/pytest-temp` → 33 passed. `git diff --check` → exit 0.
+v3 engineering commands at the base SHA above (all use existing dependencies):
+
+- `python -B experiments/cluepause/static-ten-20261124/urban_horror/job.py validate H04` → VALID.
+- `python -B experiments/cluepause/static-ten-20261124/urban_horror/job.py run H04` → technical PASS, all ten checks true; environment tool/font bindings match v2 hashes.
+- `python -B artifacts/static-ten-20261124/urban_horror/h04-static-v3/verify_revision.py` → comparison, preservation, audio and caption assertions passed.
+- `python -B -m pytest experiments/cluepause/static-ten-20261124/pipeline/tests -q -o cache_dir=artifacts/static-ten-20261124/urban_horror/h04-static-v3/pytest-cache --basetemp artifacts/static-ten-20261124/urban_horror/h04-static-v3/pytest-temp` → **33 passed in 0.75 s**.
+- `git diff --check` and personal-path/whitespace scan of all changed tracked files and v3 portable text evidence → PASS; details in v3 delivery-checks.json.
 Root README installation/core/video commands were not run: no core/video changes, uv is absent from PATH, and rebuilding shared environments would violate the job-only write boundary. This is isolated pipeline/media engineering verification, not full core-engine acceptance.
-No commit, push, upload, YouTube action or memory edit. Only the two authorized urban_horror trees were written.
+No commit, push, upload, YouTube action, ImageGen, new TTS or memory edit. No core/video/pipeline/governance source changed; no independent review, human listening/phone playback or market acceptance is claimed. The v3 work writes H04 inputs/record, batch summary records and H04 revision artifacts only; tool files in the other checkout were read only.
