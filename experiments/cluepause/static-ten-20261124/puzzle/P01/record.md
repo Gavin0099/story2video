@@ -2,7 +2,7 @@
 
 ## Current delivery — v2, 2026-11-25 Asia/Taipei
 
-**REVIEWED: UPLOAD-OK private review copy, not uploaded yet.** The former blocking reveal changed the thread from a vertical pan connection to a horizontal cylinder pass and a fixed-looking counter-edge attachment. v2 replaces that reveal with one complete vertical force path held on screen, followed by a matched severed state: the pan rises and the needle drops while the three gold pieces remain. Independent review supports this fictional still-state mechanism for private review; it is not a tested physical prototype or a human quality-gate pass.
+**UPLOADED_PRIVATE** — v2, video_id `i0A1tyP91bc`, per the integrator's manual report on 2026-11-25 Asia/Taipei. Independent verdict: **UPLOAD-OK private review copy; BLOCKING: none**. The former blocking reveal changed the thread from a vertical pan connection to a horizontal cylinder pass and a fixed-looking counter-edge attachment. v2 replaces that reveal with one complete vertical force path held on screen, followed by a matched severed state: the pan rises and the needle drops while the three gold pieces remain. Independent review supports this fictional still-state mechanism for private review; it is not a tested physical prototype or a human quality-gate pass.
 
 - New master: `artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2.mp4`
 - SHA-256: `36c2edfdc6ed5a0613edc3bc5ac6d995558b04b6105f043f24b43dadba982b09`
@@ -13,11 +13,19 @@
 - Source Git SHA: `b7801291cf7af830272070e416130125ed0df7b5`; branch `codex/cluepause-static-ten-20261124`. Changes remain uncommitted; input/pipeline/asset hashes bind the actual worktree bytes.
 - Story Quality Gate **PENDING**; Storyboard Quality Gate **PENDING**; Viewer Gate **HUMAN_TEST_PENDING**. Rights **pending_verification**. Market acceptance **NOT_TESTED**.
 
+### Private upload result — 2026-11-25 Asia/Taipei
+
+Per the integrator's manual report in YouTube Studio on CluePause, P01 v2 was uploaded **PRIVATE** as `i0A1tyP91bc`, made_for_kids **false**, altered/synthetic content (AI) **yes**. The actual file was `artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/puzzle-p01-static-v2-upload.mp4`, SHA-256 `205c53214f52c705d7dd4a8e8b0562517c97fa1e5367e1a76e91f18643937fd0`, 8,564,060 bytes. The unchanged master and upload-copy provenance remain separately recorded in [upload-metadata.json](../../upload-metadata.json).
+
+EN title/description came from the former P01 metadata draft, now consolidated into that JSON and removed. The zh-Hant title/description were published from the same draft after editor readback. Captions **中文（繁體）** (`puzzle-p01-static-v2.zh-Hant.srt`) and **英文** (`puzzle-p01-static-v2.en.srt`) were published **with timing**; auto English (US) was left in place. Both sidecars are beside the master. Their master-based timing applies to the upload copy: [upload-copy.md](../../../../../artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/upload-copy.md) verifies both durations at 36.000000 s, difference 0.000000 s within 0.05 s.
+
+At save time the dialog still showed **即將開始處理**, so `processing_checks_result` remains **NOT_CONFIRMED_AT_UPLOAD**. Later on 2026-11-25 the Studio content list showed restrictions **—**; this is a separate integrator observation, not confirmation that checks had finished at upload time. No gate pass or publication approval is recorded. Story/Storyboard Gates **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**, market acceptance **NOT_TESTED**. This records update performed no YouTube action.
+
 ### Independent v2 review disposition — 2026-11-25
 
 [Independent review](../../../../../artifacts/independent-review-p01-v2-20261125/review.md): **UPLOAD-OK private review copy; BLOCKING: none**. The review's original records/inputs verdict was **REQUEST_CHANGES**. Its two SHOULD-FIX record/helper corrections and two NIT input corrections were already applied in commit `e6295316929624c10d1a60f11f631dca7fd5ebc7`: environment-supplied tools are honored without embedded local paths, incompatible post-cut thread lengths are explicitly disclosed, the invariant says round disc, and the final storyboard row holds the cut assembly. This records update does not claim a fresh independent records approval.
 
-The post-cut continuity residual remains: bare eyelet in shot 02, short stump above G in shot 08, and long upper end below G in shots 11/12 cannot depict one unchanged cut without another unshown step. Opening motion, cropped hand/heel clues, clipped disc and phone readability limits remain as detailed below. The reviewed master is unchanged; the separate upload derivative and its checks are documented in [upload-copy.md](../../../../../artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/upload-copy.md). `uploaded_file_*` fields in the metadata draft identify that prepared derivative only; no upload has occurred.
+The post-cut continuity residual remains: bare eyelet in shot 02, short stump above G in shot 08, and long upper end below G in shots 11/12 cannot depict one unchanged cut without another unshown step. Opening motion, cropped hand/heel clues, clipped disc and phone readability limits remain as detailed below. The reviewed master is unchanged; the separate upload derivative and its checks are documented in [upload-copy.md](../../../../../artifacts/static-ten-20261124/puzzle/puzzle-p01-static-v2/upload-copy.md). `uploaded_file_*` fields in [upload-metadata.json](../../upload-metadata.json) identify the derivative actually uploaded; the master remains unchanged.
 
 This recommendation is for private review only, without Owner upload/publication authorization or a Story/Storyboard/Viewer gate pass. Engineering media acceptance is separate from market acceptance **NOT_TESTED**; Story/Storyboard Gates remain **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**.
 

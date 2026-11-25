@@ -2,7 +2,13 @@
 
 The v3 review found a real mechanical contradiction: the rope between the fixed flag and its blue endpoint knot grew roughly threefold. v4 reuses the shot-04 setup assembly, removes alternate setup assemblies from the maker portraits, and edits only the cut/final sheet against one canonical assembly close-up. Decoded measurements now stay between 0.4853 and 0.5354 eyelet spacings, an across-shot range of 0.0502 within the declared 0.06 visual tolerance. This supports a visually fixed assembly; it is not pixel identity, calibrated length measurement or independent approval.
 
-Status: **REVIEWED: UPLOAD-OK private review copy, not uploaded yet**. Story Quality Gate PENDING; Storyboard Quality Gate PENDING; Viewer Gate HUMAN_TEST_PENDING. Engineering media acceptance PASS; market acceptance NOT_TESTED. FICTION; rights pending_verification.
+Status: **UPLOADED_PRIVATE** — v4, video_id `SNYc8ilcGkY`, per the integrator's manual report on 2026-11-25 Asia/Taipei. Independent verdict: **UPLOAD-OK private review copy; BLOCKING: none**. Story Quality Gate PENDING; Storyboard Quality Gate PENDING; Viewer Gate HUMAN_TEST_PENDING. Engineering media acceptance PASS; market acceptance NOT_TESTED. FICTION; rights pending_verification.
+
+## Private upload result — 2026-11-25 Asia/Taipei
+
+Per the integrator's manual report in YouTube Studio on CluePause, the unchanged v4 master `artifacts/static-ten-20261124/puzzle/puzzle-p04-static-v4/puzzle-p04-static-v4.mp4`, SHA-256 `ff01d6c8c0c02e5a50bd768c1a323360df9333e9db7cc111b12aefa220c0ef4a`, was uploaded **PRIVATE** as `SNYc8ilcGkY`, made_for_kids **false**, altered/synthetic content (AI) **yes**. At save time the dialog showed **檢查完畢，未發現任何問題**.
+
+EN title/description came from the former P04 metadata draft, now consolidated into [upload-metadata.json](../../upload-metadata.json) and removed. The zh-Hant title/description translation was published. Captions **中文（繁體）** (`puzzle-p04-static-v4.zh-Hant.srt`) and **英文** (`puzzle-p04-static-v4.en.srt`), beside the master, were published **with timing**; the auto track was left in place. Private upload and completed Studio checks do not pass quality gates or record publication approval. Story/Storyboard Gates **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**, market acceptance **NOT_TESTED**. This records update performed no YouTube action.
 
 ## Independent v4 review disposition — 2026-11-25
 
@@ -14,7 +20,7 @@ Status: **REVIEWED: UPLOAD-OK private review copy, not uploaded yet**. Story Qua
 
 The records-only story correction intentionally changes `revisions/v4/story.md` after rendering. The frozen output manifest's original story SHA-256 is `1785600882c72832d8857e9ffc8a91219ff260e526bc5269202dced7a243d0b8`; original manifest/provenance/QA input assertions describe those render-time bytes and were not rewritten or rerun against the corrected prose. The master remains `ff01d6c8c0c02e5a50bd768c1a323360df9333e9db7cc111b12aefa220c0ef4a`.
 
-Private-copy suitability is not upload/publication authorization, human comprehension or a gate pass. Story/Storyboard Gates remain **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**, rights **pending_verification**, market acceptance **NOT_TESTED**. No upload occurred.
+Private-copy suitability is not upload/publication authorization, human comprehension or a gate pass. Story/Storyboard Gates remain **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**, rights **pending_verification**, market acceptance **NOT_TESTED**. The subsequent private upload is recorded above; this records integration performed no upload.
 
 ## v4 deliverables and engineering acceptance
 
