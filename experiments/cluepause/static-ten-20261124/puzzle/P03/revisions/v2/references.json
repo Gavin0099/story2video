@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "buyer",
+      "kind": "character",
+      "invariants": [
+        "woman about 35",
+        "dark brown pixie haircut",
+        "navy turtleneck",
+        "tan canvas tote"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "potter",
+      "kind": "character",
+      "invariants": [
+        "man about 45",
+        "shaved head",
+        "short dark beard",
+        "light gray shirt",
+        "rust apron"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "vase",
+      "kind": "prop",
+      "invariants": [
+        "single matte ivory pear-shaped vase",
+        "narrow short neck",
+        "small cobalt-blue circular dot near foot",
+        "structurally unbroken smooth surface throughout",
+        "no handles"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 2,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "wire",
+      "kind": "prop",
+      "invariants": [
+        "thin straight black hanging wire belonging to small circular wire mobile above table",
+        "strong single side light casts thin diagonal dark shadow across vase and tabletop",
+        "no physical black mark on vase",
+        "canonical mobile has one small round brass disk at the bottom of its straight wire"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-08"
+      ]
+    },
+    {
+      "id": "shop",
+      "kind": "set",
+      "invariants": [
+        "bright pottery shop",
+        "pale oak display table",
+        "one square side window upper left",
+        "warm cream wall",
+        "pottery tools, no signs or brands"
+      ],
+      "canonical": {
+        "sheet": "reference",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "appears_in": [
+        "shot-01",
+        "shot-02",
+        "shot-03",
+        "shot-04",
+        "shot-05",
+        "shot-06",
+        "shot-07",
+        "shot-08"
+      ]
+    }
+  ]
+}

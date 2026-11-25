@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "story_id": "puzzle-p03-static-v2",
+  "fiction": "FICTION — original fictional puzzle; rights pending_verification",
+  "genre": "puzzle",
+  "question": {
+    "en": "Why buy the cracked vase?",
+    "zh": "為什麼買有裂痕的花瓶？"
+  },
+  "sheets": {
+    "reference": {
+      "file": "assets/reference.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-a": {
+      "file": "assets/shots-a.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "shots-b": {
+      "file": "assets/shots-b.png",
+      "columns": 2,
+      "rows": 3,
+      "edge_px": 2
+    },
+    "repair": {
+      "file": "assets/repair.png",
+      "columns": 2,
+      "rows": 1,
+      "edge_px": 2
+    }
+  },
+  "narration": [
+    {
+      "id": "line-01",
+      "en": "She chose the vase with a black crack. The potter offered another.",
+      "zh": "她挑了有黑色裂痕的花瓶，陶匠提議換一個。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 0,
+      "gap_before": 0,
+      "file": "assets/line-01.wav"
+    },
+    {
+      "id": "line-02",
+      "en": "No discount. No glue. She still wanted this one.",
+      "zh": "沒有折扣，也沒有膠，她還是要這一個。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 5,
+      "gap_before": 0.08,
+      "file": "assets/line-02.wav"
+    },
+    {
+      "id": "line-03",
+      "en": "The thin line ran past the blue dot and across the table.",
+      "zh": "細線經過藍點，還一路延伸到桌面。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 10,
+      "gap_before": 0.08,
+      "file": "assets/line-03.wav"
+    },
+    {
+      "id": "line-04",
+      "en": "Above it hung a wire mobile, turning in the window light.",
+      "zh": "上方的鐵絲吊飾，在窗光裡轉動。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 16,
+      "gap_before": 0.08,
+      "file": "assets/line-04.wav"
+    },
+    {
+      "id": "line-05",
+      "en": "She moved her hand toward the line, without touching the vase.",
+      "zh": "她把手伸向細線，卻沒碰到花瓶。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": false,
+      "not_before": 21,
+      "gap_before": 0.08,
+      "file": "assets/line-05.wav"
+    },
+    {
+      "id": "line-06",
+      "en": "Her hand blocked the light. The crack disappeared.",
+      "zh": "她的手擋住光，裂痕消失了。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 27,
+      "gap_before": 0.08,
+      "file": "assets/line-06.wav"
+    },
+    {
+      "id": "line-07",
+      "en": "She had bought an unbroken vase, with somebody else’s shadow.",
+      "zh": "她買的是完整的花瓶，裂痕只是吊飾的影子。",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "reveal": true,
+      "not_before": 32,
+      "gap_before": 0.08,
+      "file": "assets/line-07.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "function": "establish",
+      "framing": "medium",
+      "start": 0,
+      "end": 5,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "potter",
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Buyer selects apparently cracked vase.",
+      "prompt": "Navy buyer points to ivory pear vase cobalt dot; thin sharp diagonal BLACK SHADOW resembles crack, crossing vase and table. Rust apron potter offers empty hands, concerned."
+    },
+    {
+      "id": "shot-02",
+      "function": "reaction",
+      "framing": "medium",
+      "start": 5,
+      "end": 10,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "potter",
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Buyer confidently insists without repair.",
+      "prompt": "Buyer tan tote at hip confidently holds out open hand toward selected vase; potter rust apron puzzled, same ivory vase and diagonal shadow on table. NO money text or glue."
+    },
+    {
+      "id": "shot-03",
+      "function": "clue",
+      "framing": "close_up",
+      "start": 10,
+      "end": 16,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 2,
+        "crop": [
+          0.2,
+          0,
+          0.8,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Line continues seamlessly off vase onto tabletop.",
+      "prompt": "Close-up lower half unbroken ivory vase with cobalt dot: thin diagonal shadow crosses ceramic and continues across pale oak tabletop, same light direction upper left. Clearly shadow, no physical fracture."
+    },
+    {
+      "id": "shot-04",
+      "function": "clue",
+      "framing": "medium",
+      "start": 16,
+      "end": 21,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 3,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Wire mobile sits between window and vase.",
+      "prompt": "Vertical composition shows thin black circular wire mobile suspended above pale oak table; bright square side window upper left; its single straight wire casts thin shadow onto ivory vase below."
+    },
+    {
+      "id": "shot-05",
+      "function": "reaction",
+      "framing": "close_up",
+      "start": 21,
+      "end": 27,
+      "source": {
+        "sheet": "shots-a",
+        "cell": 4,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Hand approaches light beam without touching ceramic.",
+      "prompt": "Navy sleeve buyer hand reaches into sunlight beside vase, fingertips do NOT touch ivory surface; black diagonal shadow still visible across cobalt dot and table; anticipatory."
+    },
+    {
+      "id": "shot-06",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 27,
+      "end": 30,
+      "source": {
+        "sheet": "repair",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1,
+          1
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [
+        {
+          "file": "assets/tick.wav",
+          "offset": 0.1,
+          "gain": 0.45,
+          "en": "[soft contact]",
+          "zh": "[輕碰聲]"
+        }
+      ],
+      "conveys": "Whole vase is inside broad hand shadow; thin wire shadow continues ONLY on the directly lit tabletop beyond its edge.",
+      "prompt": "Same ivory pear vase with blue dot stands centered on oak table. Broad enlarged soft hand shadow blankets ENTIRE vase from lip through neck, shoulders, both contours and foot. No directly sunlit patch of vase. Smooth readable shaded ceramic, no thin line inside hand shadow. Navy-sleeved buyer holds palm upstream between upper-left window and hanging wire, well away from vase. Hand is closer to window than wire; its enlarged projected shadow covers the entire vase and a small area of table. Wire mobile with brass disk remains in place. Crucial thin diagonal wire shadow remains clearly visible on the bright tabletop AFTER the broad hand-shadow edge, in lower central portrait area. Show window upper left and hand-to-wire-to-vase optical order. All essentials in central 50% width; photograph vase smaller to include tabletop."
+    },
+    {
+      "id": "shot-07",
+      "function": "reveal",
+      "framing": "close_up",
+      "start": 30,
+      "end": 33,
+      "source": {
+        "sheet": "shots-b",
+        "cell": 0,
+        "crop": [
+          0.2,
+          0,
+          0.8,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1.015,
+          1.045
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "vase",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Smooth vase shows no repair or break.",
+      "prompt": "Close-up buyer hand lifts ivory pear vase into diffuse light away from wire shadow. Smooth perfectly intact surface, same cobalt blue dot, no cracks, no repair."
+    },
+    {
+      "id": "shot-08",
+      "function": "reveal",
+      "framing": "medium",
+      "start": 33,
+      "end": 39,
+      "source": {
+        "sheet": "repair",
+        "cell": 1,
+        "crop": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "camera": {
+        "zoom": [
+          1,
+          1
+        ],
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ]
+      },
+      "required_references": [
+        "buyer",
+        "potter",
+        "vase",
+        "wire",
+        "shop"
+      ],
+      "sfx": [],
+      "conveys": "Vase lifted aside; uninterrupted thin wire shadow crosses the empty, sunlit tabletop where the vase stood, centrally visible in portrait.",
+      "prompt": "Same shop and upper-left window. Buyer in navy holds same intact ivory blue-dot vase lifted clear of table, off to upper left of central proof area, potter rust apron behind. No blocking hand between window and wire. Wire ring and small brass disk remain above. Camera looks DOWN enough that pale oak tabletop fills LOWER TWO THIRDS. In center, empty former vase position under wire is conspicuous and fully visible; thin dark diagonal wire SHADOW runs continuously across this empty sunlit patch toward bottom center. No vase or hand covers proof. Clear air gap between lifted vase and tabletop. Do not put proof below frame; central 50% width contains empty tabletop line, whole lifted vase, and wire. No lettering."
+    }
+  ]
+}
