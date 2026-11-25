@@ -1,6 +1,6 @@
 # U01 v2 — The Shoes That Stayed Wet
 
-**REVIEWED: UPLOAD-OK private review copy, not uploaded yet.** This is a new visual revision of U01, not an acceptance of v1. The original v1 story, shots, references, assets, narration and master are unchanged, verified by hashes. The original record is retained byte-for-byte at `revisions/v2/v1-record-snapshot.md`; its findings below remain historical v1 findings.
+**UPLOADED_PRIVATE** (`tdpt2le3S68`; U01 v2 upload copy). This is a new visual revision of U01, not an acceptance of v1. The original v1 story, shots, references, assets, narration and master are unchanged, verified by hashes. The original record is retained byte-for-byte at `revisions/v2/v1-record-snapshot.md`; its findings below remain historical v1 findings.
 
 The new rear camera views show a continuous dry paper apron above the entire rear vent entry width. The sheet visibly persists on top through the intervening exterior/front shots. The leak close-up retains both black hose attachments and shows a jet from the ivory connector's side wall; the final view retains that assembly. These observations support the intended mechanism, subject to the residuals and independent review below.
 
@@ -14,11 +14,17 @@ Base Git SHA: `b7801291cf7af830272070e416130125ed0df7b5` on `codex/cluepause-sta
 
 Story Quality Gate **PENDING**. Storyboard Quality Gate **PENDING**. Viewer Gate **HUMAN_TEST_PENDING**. Independent media review **UPLOAD-OK private review copy; BLOCKING: none**. Market acceptance **NOT_TESTED**. Rights **pending_verification**. No status here grants upload/publication authority.
 
+## Private upload record - 2026-11-25 (Asia/Taipei)
+
+Per the integrator's manual report on **2026-11-25 (Asia/Taipei)** in YouTube Studio on CluePause, U01 v2 was **UPLOADED_PRIVATE** as `tdpt2le3S68`, using upload copy `artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2-upload.mp4`, SHA-256 `79b04a066320d7401ed07a968de812f34718347ba7c543c57ef723576fcdc666`, **9,177,244 bytes**. It is **PRIVATE**, made_for_kids false, AI/altered content yes. EN title/description were applied from the U01 draft; zh-Hant title/description were published from its zh fields after editor readback. Both **中文（繁體）** `uncanny-u01-v2.zh-Hant.srt` and **英文** `uncanny-u01-v2.en.srt` were published **with timing**; auto-generated English (US) was left in place. Master and upload copy are both **38.000000 s**, so master-timed captions apply to the copy. The save-time dialog showed **檢查完畢，未發現任何問題**. These facts and upload-copy fields are consolidated into [batch upload-metadata.json](../../upload-metadata.json); the U01 draft is removed. Independent master review: **UPLOAD-OK private review copy, BLOCKING: none** (`artifacts/independent-review-u01-v2-20261125/review.md`). Story/Storyboard Gates **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**, market acceptance **NOT_TESTED**.
+
+This records update performed no YouTube action. Clock disappearance and mineral-ring/streak mismatch remain disclosed; private upload does not pass quality gates or record publication approval.
+
 ## Independent review integration - 2026-11-25 (Asia/Taipei)
 
 The [independent U01 v2 review](../../../../../artifacts/independent-review-u01-v2-20261125/review.md) returned **UPLOAD-OK (private review copy only), BLOCKING: none**, with **REQUEST_CHANGES for the supplied records**. The clock residual is now recorded below, in mechanism.md and in inspection.json; the inherited mineral-ring/streak mismatch remains disclosed. The CR-CR-LF pytest transcript and extra EOF blank line are normalized, and the copied mechanism link is corrected. These edits address the record findings without new media generation; they do not claim fresh independent approval of the edited records or upload derivative.
 
-Status: **REVIEWED: UPLOAD-OK private review copy, not uploaded yet**. This media recommendation grants no upload/public-release authority, story/viewer-gate pass or rights clearance. Engineering checks and the separate upload-copy evidence are recorded in the integration acceptance below; market acceptance remains **NOT_TESTED**.
+Historical review-integration status: **REVIEWED: UPLOAD-OK private review copy, not uploaded yet**; subsequently **UPLOADED_PRIVATE** as recorded above. This media recommendation grants no upload/public-release authority, story/viewer-gate pass or rights clearance. Engineering checks and the separate upload-copy evidence are recorded in the integration acceptance below; market acceptance remains **NOT_TESTED**.
 
 ## Review integration engineering acceptance - 2026-11-25 (Asia/Taipei)
 
@@ -36,7 +42,7 @@ git -c core.excludesFile=NUL -c core.autocrlf=false -c core.safecrlf=false diff 
 
 The [upload-copy evidence](../../../../../artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/upload-copy.md) records the unchanged master and the separate `artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2-upload.mp4`: **9,177,244 bytes**, SHA-256 `79b04a066320d7401ed07a968de812f34718347ba7c543c57ef723576fcdc666`. P01's two-pass method preserves 1080x1920, 30 fps, H.264 High/yuv420p, AAC 48 kHz stereo and **38.000000 s**; duration delta **0.000000 s**. Full audio/video decode and faststart pass. SSIM over all 1,140 frames: mean **0.994366**, minimum **0.989576**. No independent derivative review or human playback is claimed.
 
-[upload-metadata-draft.json](upload-metadata-draft.json) contains the four audience-facing EN/zh-Hant fields, master/copy provenance and both unchanged timed SRT paths/hashes. The unnamed woman uses she/her; the hook states only the wet-shoes situation and withholds the cause and test. Its five `uploaded_file_*` fields follow P01's names and describe a prepared copy, **not a completed upload**.
+The former U01 upload-metadata draft contained the four audience-facing EN/zh-Hant fields, master/copy provenance and both unchanged timed SRT paths/hashes; these are now consolidated in [batch upload-metadata.json](../../upload-metadata.json). The unnamed woman uses she/her; the hook states only the wet-shoes situation and withholds the cause and test. At review integration, its five `uploaded_file_*` fields followed P01's names and described a prepared copy. The subsequent completed upload is recorded above.
 
 Market acceptance **NOT_TESTED**; Story/Storyboard Gates **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**, rights **pending_verification**. Human playback/listening, phone/caption-toggle acceptance, rights clearance, browser/YouTube processing and market measurement remain unverified. Root README `uv run --locked pytest`, `npm ci` / `npm run typecheck`, and governance verification were not rerun: no application, video project or governance code changed. No commit, push, upload, memory edit, master rerender or ImageGen was performed.
 

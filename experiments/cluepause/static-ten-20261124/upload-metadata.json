@@ -88,7 +88,7 @@
       "observed_visibility_date": "2026-11-25",
       "observed_visibility_timezone": "Asia/Taipei",
       "observed_visibility_source": "integrator observation in Studio content list",
-      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The actor was not verified. This observation records neither a quality-gate pass nor publication approval by this workflow."
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
     },
     {
       "id": "U02",
@@ -132,7 +132,7 @@
       "observed_visibility_date": "2026-11-25",
       "observed_visibility_timezone": "Asia/Taipei",
       "observed_visibility_source": "integrator observation in Studio content list",
-      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The actor was not verified. This observation records neither a quality-gate pass nor publication approval by this workflow."
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
     },
     {
       "id": "H02",
@@ -176,7 +176,7 @@
       "observed_visibility_date": "2026-11-25",
       "observed_visibility_timezone": "Asia/Taipei",
       "observed_visibility_source": "integrator observation in Studio content list",
-      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The actor was not verified. This observation records neither a quality-gate pass nor publication approval by this workflow."
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
     },
     {
       "id": "H03",
@@ -220,7 +220,7 @@
       "observed_visibility_date": "2026-11-25",
       "observed_visibility_timezone": "Asia/Taipei",
       "observed_visibility_source": "integrator observation in Studio content list",
-      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The actor was not verified. This observation records neither a quality-gate pass nor publication approval by this workflow."
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
     },
     {
       "id": "H04",
@@ -266,7 +266,7 @@
       "observed_visibility_date": "2026-11-25",
       "observed_visibility_timezone": "Asia/Taipei",
       "observed_visibility_source": "integrator observation in Studio content list",
-      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The actor was not verified. This observation records neither a quality-gate pass nor publication approval by this workflow."
+      "observed_visibility_note": "Uploaded private by the integrator; visibility changed outside this workflow. The channel owner confirmed in chat on 2026-11-25 (Asia/Taipei) that they personally changed this video to public. This owner confirmation records neither a quality-gate pass nor publication approval by this workflow."
     },
     {
       "id": "P03",
@@ -451,6 +451,62 @@
           }
         ],
         "auto_generated_english_us_track": "left in place; not deleted"
+      }
+    },
+    {
+      "id": "U01",
+      "title": "Her Shoes Kept Getting Wet in a Locked Cabinet | CluePause",
+      "title_zh_Hant": "她的鞋一直濕，卻看不見有水滴在鞋上｜謎底之前",
+      "description": "Her shoes kept getting wet inside a locked cabinet, though nothing seemed to drip on them. Where was the water coming from?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她的鞋放在鎖著的鞋櫃裡卻一再變濕，看起來也沒有水滴在鞋上。水究竟從哪裡來？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.mp4",
+      "mp4_sha256": "146f6f92fa651d07818f9b4bddda5a2819db5919a7a1a9116e4194f2bdff06d4",
+      "uploaded_file_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2-upload.mp4",
+      "uploaded_file_sha256": "79b04a066320d7401ed07a968de812f34718347ba7c543c57ef723576fcdc666",
+      "uploaded_file_bytes": 9177244,
+      "uploaded_file_reason": "Upload copy used because the browser upload tool caps files at 10 MB.",
+      "uploaded_file_ssim_vs_master": {
+        "mean": 0.994366,
+        "min": 0.989576
+      },
+      "video_id": "tdpt2le3S68",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "visibility_at_upload": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: the dialog showed 檢查完畢，未發現任何問題 at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.zh-Hant.srt",
+            "srt_sha256": "2d482ea59756f3f687335e9a0b3d11a5bd78d274cac5c6bdfc22e9539ab42e4b",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/uncanny-u01-v2.en.srt",
+            "srt_sha256": "780251a220d5a4c11c55a078e3a7a8867ce9b11086f0e627d51ca7e65b9a35ea",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted",
+        "timing": {
+          "reference": "master MP4",
+          "applies_to_uploaded_copy": true,
+          "master_duration_seconds": 38.0,
+          "upload_copy_duration_seconds": 38.0,
+          "absolute_difference_seconds": 0.0,
+          "tolerance_seconds": 0.05,
+          "evidence_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u01-v2/upload-copy.md"
+        }
       }
     }
   ]
