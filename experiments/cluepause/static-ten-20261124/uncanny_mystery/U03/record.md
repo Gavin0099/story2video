@@ -1,6 +1,6 @@
 # U03 - The Man in the Pantry Door - current v2
 
-**FIX-CANDIDATE pending independent review, not uploaded.** The blocking v1 frame kept a high round head shadow after its colander was lowered. v2 replaces only shot-09: the colander now lies flat on the low foreground counter outside the directional beam, and the detached high head shadow disappears. The unchanged towel still casts shoulders; removing it in shot-10 leaves only rack lines. This repairs the visible source/shadow state contradiction in the producing agent's inspection. It is not an optical simulation or an independent acceptance decision.
+**UPLOADED_PRIVATE** - video_id `MgCZsP25fOM`, CluePause, integrator manual report dated 2026-11-25 Asia/Taipei. The blocking v1 frame kept a high round head shadow after its colander was lowered. v2 replaces only shot-09: the colander now lies flat on the low foreground counter outside the directional beam, and the detached high head shadow disappears. The unchanged towel still casts shoulders; removing it in shot-10 leaves only rack lines. This repairs the visible source/shadow state contradiction in the producing agent's inspection. Exact optical geometry remains unmeasured; the independent private-copy review is recorded below.
 
 Story Quality Gate **PENDING**. Storyboard Quality Gate **PENDING**. Viewer Gate **HUMAN_TEST_PENDING**. Rights **pending_verification**. Market acceptance **NOT_TESTED**.
 
@@ -9,6 +9,16 @@ Revision date: **2026-11-25 Asia/Taipei**. Base Git SHA: `1e3c4f40c92eabfbe5cc66
 Master: `artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.mp4`.
 Duration **36.000 s**, 1080 frames. SHA-256 `4a912d85fd66d85dbd050a900dc1298c8f06b823752423e5c9b8f715c6c94b3e`.
 Sidecars: `uncanny-u03-v2.en.srt` and `uncanny-u03-v2.zh-Hant.srt` beside the master. Silent storyboard: `silent-storyboard.jpg` and `silent-storyboard.json` beside the master. Full QA, dense strips, portable commands and verification are in that same output directory.
+
+## Private upload record - 2026-11-25 Asia/Taipei
+
+Integrator-reported fact: the unchanged v2 master above was manually uploaded in YouTube Studio on CluePause as `MgCZsP25fOM`, visibility **private**, made_for_kids **false**, AI/altered content **yes** (checked in the upload dialog). At save time the upload dialog showed "檢查完畢，未發現任何問題". This records the integrator's report; no YouTube access was performed for this update.
+
+English title/description were applied from `upload-metadata-draft.json`; their exact values and published Traditional Chinese translation are now retained in `../../upload-metadata.json`, in the U03 entry using the same schema as H04. The integrator read back the draft's zh-Hant title/description in Studio before publishing the translation. Both caption tracks were published **with timing**: Chinese (Traditional), language code `zh-Hant`, from `uncanny-u03-v2.zh-Hant.srt` (SHA-256 `598979909eb3e53b3fc95700466667c6f61c6f253a22a6323a6eef315f8f99de`), and English, language code `en`, from `uncanny-u03-v2.en.srt` (SHA-256 `43e0206122d0fefac64dbec5268c4a6254a87863d98f51823cb67f5c17a3a061`). The auto-generated English (US) track was left in place. The draft was removed after consolidation and validation.
+
+Independent local review: **UPLOAD-OK (private review copy)**, **BLOCKING: none**, per `artifacts/independent-review-u03-v2-20261125/review.md`. Its residual predictability, reveal correspondence/readability and framing findings remain applicable. This private upload does not pass the Story/Storyboard gates (**PENDING**), Viewer Gate (**HUMAN_TEST_PENDING**), rights verification (**pending_verification**) or market acceptance (**NOT_TESTED**), and does not authorize public release.
+
+Engineering verification for this metadata-only update: starting Git SHA `435f4ab3dfec21526358bd3bed3b175ab1a914af`. `python -B` checks parsed both JSON inputs, matched U03's keys/nested schema to H04, preserved all existing video entries/session fields, and recomputed the master and both SRT SHA-256 values against the draft. Post-edit JSON/schema/hash and personal-path regex checks, plus `git diff --check`, passed. Only the shared metadata, this record and the removed U03 draft were written. No commit, push, upload or memory edit was performed. Root README engine/npm/governance acceptance commands were not rerun for this record-only change within the three-file write scope. Platform settings/caption publication are integrator-reported, not independently rechecked here. Market acceptance remains **NOT_TESTED**; human listening, phone playback, silent-story comprehension, rights/originality and exact optical reconstruction remain unverified.
 
 ## v2 per-shot changes and mechanism state
 
@@ -61,9 +71,9 @@ git diff --check
 
 Pipeline pytest: **33 passed in 0.54 s** using U03-specific cache/basetemp. U03 verification (including personal-path regex grep and text whitespace checks): **PASS**, evidence in output `verification.json`. `git diff --check`: **PASS**. No source/video/governance code changed; root engine pytest/npm/governance acceptance was not rerun. No framework update. The verification script is delivery evidence, not a production-engine change.
 
-Residuals: subtle opening pinholes; potentially revealing 18-second macro; soft/cropped shot-07 reaction; early elongated contour versus rounder/crisper reveal head; left-edge clipping of the displaced head in shot-08; exact ray geometry and individual hole-constellation correspondence unmeasured. The repaired low-colander/high-head contradiction was not observed in v2. Independent review, full listening, phone playback in both caption languages/on/off, human silent-story comprehension, rights/originality checks and market results remain **unverified**. Engineering PASS does not advance story/storyboard/viewer gates or market acceptance.
+Residuals: subtle opening pinholes; potentially revealing 18-second macro; soft/cropped shot-07 reaction; early elongated contour versus rounder/crisper reveal head; left-edge clipping of the displaced head in shot-08; exact ray geometry and individual hole-constellation correspondence unmeasured. The repaired low-colander/high-head contradiction was not observed in v2. Full listening, phone playback in both caption languages/on/off, human silent-story comprehension, rights/originality checks and market results remain **unverified**. Engineering PASS does not advance story/storyboard/viewer gates or market acceptance.
 
-No commit, push, upload, YouTube access or memory edit. No puzzle/P03 file was modified. Only U03, the uncanny README and the batch README's U03 row were changed; unrelated existing work was preserved.
+During v2 production, no commit, push, upload, YouTube access or memory edit was performed. The later private upload is recorded above. No puzzle/P03 file was modified. Only U03, the uncanny README and the batch README's U03 row were changed; unrelated existing work was preserved.
 
 ---
 

@@ -277,6 +277,46 @@
         ],
         "auto_generated_english_us_track": "left in place; not deleted"
       }
+    },
+    {
+      "id": "U03",
+      "title": "A Man Seemed to Stand in the Pantry Door Glass | CluePause",
+      "title_zh_Hant": "儲藏室門的玻璃裡，好像站著一個男人｜謎底之前",
+      "description": "Every evening, a man seemed to stand in the glass of his pantry door. Who was he seeing?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "每天傍晚，他家儲藏室門的玻璃裡好像都站著一個男人。他看見的究竟是誰？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.mp4",
+      "mp4_sha256": "4a912d85fd66d85dbd050a900dc1298c8f06b823752423e5c9b8f715c6c94b3e",
+      "uploaded_file_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.mp4",
+      "uploaded_file_sha256": "4a912d85fd66d85dbd050a900dc1298c8f06b823752423e5c9b8f715c6c94b3e",
+      "video_id": "MgCZsP25fOM",
+      "zh_Hant_metadata_status": "published",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE",
+      "processing_checks_result": "檢查完畢，未發現任何問題",
+      "processing_checks_note": "Integrator manual report, 2026-11-25 Asia/Taipei, YouTube Studio on CluePause: upload dialog showed this result at save time.",
+      "captions": {
+        "tracks": [
+          {
+            "youtube_language": "中文（繁體）",
+            "language_code": "zh-Hant",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.zh-Hant.srt",
+            "srt_sha256": "598979909eb3e53b3fc95700466667c6f61c6f253a22a6323a6eef315f8f99de",
+            "upload_option": "with timing",
+            "status": "published"
+          },
+          {
+            "youtube_language": "英文",
+            "language_code": "en",
+            "srt_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u03-v2/uncanny-u03-v2.en.srt",
+            "srt_sha256": "43e0206122d0fefac64dbec5268c4a6254a87863d98f51823cb67f5c17a3a061",
+            "upload_option": "with timing",
+            "status": "published"
+          }
+        ],
+        "auto_generated_english_us_track": "left in place; not deleted"
+      }
     }
   ]
 }
