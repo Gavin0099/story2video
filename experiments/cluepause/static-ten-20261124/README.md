@@ -17,6 +17,14 @@ Ten local fictional videos: four puzzles, three uncanny mysteries and three urba
 
 All HOLD videos remain not uploaded. UPLOAD-CANDIDATE private means a candidate for a private review copy, not Owner authorization or completed upload. This update performed no upload or other YouTube action.
 
+## Upload results
+
+On 2026-11-25 (Asia/Taipei), four videos were uploaded by hand in YouTube Studio on CluePause: U02 `S34P69d9R7w`, H02 `QIftXOzmkQc`, H03 `ou7vZTG66Sg`, P02 `ywcvdupwbFQ`. All are **UPLOADED_PRIVATE**, private, not made for kids, with "altered or synthetic content / AI used" set to yes. The metadata's English titles and descriptions were applied; zh-Hant titles/descriptions were not applied and no captions have been uploaded yet.
+
+U02/H02/H03 used their unchanged master MP4s. P02 used `artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1-upload.mp4` because the browser upload tool caps files at 10 MB: 9,358,260 bytes, SSIM versus master mean 0.994005 / min 0.991581. Uploaded paths and SHA-256 values are recorded in [upload-metadata.json](upload-metadata.json). YouTube processing/checks results were not confirmed at upload time. Story and Storyboard Quality Gates remain **PENDING**, Viewer Gate **HUMAN_TEST_PENDING**; private upload is neither a quality-gate pass nor publication approval. Market acceptance remains **NOT_TESTED**.
+
+Records-only engineering validation at base Git SHA `103e47eda11c0137f1d96e2857e4d3cd92eb6ff8`: `python -B -` JSON/fact assertions and trailing-whitespace scan, plus `git diff --check`, passed. Media, core-engine acceptance and YouTube processing/checks were not reverified.
+
 ## Independent review and acceptance
 
 The [2026-11-25 independent review](../../../artifacts/independent-review-static-ten-20261125/REVIEW.md) returned **REQUEST_CHANGES** for the records. Its six-film inspection recommended private review copies for P02/U02/H02/H03 and HOLD for P03/H04; the other four exclusions were checked for candid records rather than independently re-reviewed from MP4. The P03 severity correction and H04 omitted spoiler are now recorded. This is not a new independent approval verdict and does not fix either film.

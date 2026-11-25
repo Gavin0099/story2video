@@ -1,0 +1,90 @@
+{
+  "upload_session": {
+    "date": "2026-11-25",
+    "timezone": "Asia/Taipei",
+    "channel": "CluePause",
+    "method": "manual_youtube_studio",
+    "title_source": "title",
+    "description_source": "description",
+    "zh_Hant_title_description_applied": false,
+    "captions_uploaded": false,
+    "processing_checks_result": "NOT_CONFIRMED_AT_UPLOAD",
+    "story_quality_gate": "PENDING",
+    "storyboard_quality_gate": "PENDING",
+    "viewer_gate": "HUMAN_TEST_PENDING",
+    "private_upload_is_quality_gate_pass": false,
+    "private_upload_is_publication_approval": false
+  },
+  "videos": [
+    {
+      "id": "P02",
+      "title": "She Blacked Out Her Message | CluePause",
+      "title_zh_Hant": "她把字全塗黑，卻請訪客靠近｜謎底之前",
+      "description": "She covered her message in black, then invited the visitor closer. Why hide the words she wanted someone to see?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "她把字全塗黑，卻請訪客靠近。想讓對方看的話，為什麼反而要遮住？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1.mp4",
+      "mp4_sha256": "7cae43e308ba383dcf62aa683151f95cc2186acf7d1674f3a8f844bdc4931865",
+      "uploaded_file_path": "artifacts/static-ten-20261124/puzzle/puzzle-p02-static-v1/puzzle-p02-static-v1-upload.mp4",
+      "uploaded_file_sha256": "dd89bcb2033ec312b7a06fa98670766788636c3af63bfabea65566dc165374a1",
+      "uploaded_file_bytes": 9358260,
+      "uploaded_file_reason": "Upload copy used because the browser upload tool caps files at 10 MB.",
+      "uploaded_file_ssim_vs_master": {
+        "mean": 0.994005,
+        "min": 0.991581
+      },
+      "video_id": "ywcvdupwbFQ",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE"
+    },
+    {
+      "id": "U02",
+      "title": "Every Morning, Her Chair Was in the Doorway | CluePause",
+      "title_zh_Hant": "每天早上，她的椅子都在門口｜謎底之前",
+      "description": "Every morning, her kitchen chair waited in the doorway. Nobody else had a key, so who kept moving it?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "每天早上，她的廚房椅都等在門口。別人沒有鑰匙，究竟是誰一直移動它？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.mp4",
+      "mp4_sha256": "621fef7371db356fb6c16ecfb85772158d2200e9bd8ac72896c51a5501e446e2",
+      "uploaded_file_path": "artifacts/static-ten-20261124/uncanny_mystery/uncanny-u02-v1/uncanny-u02-v1.mp4",
+      "uploaded_file_sha256": "621fef7371db356fb6c16ecfb85772158d2200e9bd8ac72896c51a5501e446e2",
+      "video_id": "S34P69d9R7w",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE"
+    },
+    {
+      "id": "H02",
+      "title": "She Was Alone. The Mirror Had Another Passenger. | CluePause",
+      "title_zh_Hant": "她獨自在電梯裡，鏡中卻多了一名乘客｜謎底之前",
+      "description": "Mira was alone in the elevator, but the mirror showed another passenger. Why was she desperate to cover the glass?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "Mira 獨自在電梯裡，鏡中卻多了一名乘客。她為什麼急著遮住鏡面？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.mp4",
+      "mp4_sha256": "13738ce313dc48e76f0f22dc050d713228e5d9c0d5ab8d54e82fc686f6258ebb",
+      "uploaded_file_path": "artifacts/static-ten-20261124/urban_horror/h02-static-v1/h02-static-v1.mp4",
+      "uploaded_file_sha256": "13738ce313dc48e76f0f22dc050d713228e5d9c0d5ab8d54e82fc686f6258ebb",
+      "video_id": "QIftXOzmkQc",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE"
+    },
+    {
+      "id": "H03",
+      "title": "A Woman Raised a Hammer in the Opposite Window | CluePause",
+      "title_zh_Hant": "對面窗裡的女人舉起了鐵鎚｜謎底之前",
+      "description": "Across the shaft, Lea saw a woman raise a hammer inside the opposite room. Who was behind that window?\n\nA fictional story with AI-generated visuals and synthesized English narration. English and Traditional Chinese captions.",
+      "description_zh_Hant": "天井對面，Lea 看見一個女人在房裡舉起鐵鎚。那扇窗後的人究竟是誰？\n\n虛構故事，使用 AI 生成畫面及英文合成旁白，提供繁中與英文字幕。",
+      "mp4_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.mp4",
+      "mp4_sha256": "2cd17a849dffc5184769e11d5d18bffaa4470a24390c48f34fae8df9da9e7d85",
+      "uploaded_file_path": "artifacts/static-ten-20261124/urban_horror/h03-static-v1/h03-static-v1.mp4",
+      "uploaded_file_sha256": "2cd17a849dffc5184769e11d5d18bffaa4470a24390c48f34fae8df9da9e7d85",
+      "video_id": "ou7vZTG66Sg",
+      "visibility": "private",
+      "made_for_kids": false,
+      "altered_or_synthetic_content": true,
+      "status": "UPLOADED_PRIVATE"
+    }
+  ]
+}
