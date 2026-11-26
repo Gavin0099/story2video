@@ -7,7 +7,7 @@ description: Plan and deliver a batch of original or rights-cleared classic Clue
 
 先讀 story2video 的 `AGENTS.md`、`PLAN.md`、最新批次交付與發布紀錄。以本次指定的頻道、作品及授權執行。續做前從同一批的證據和影片 ID 恢復。
 
-若同時發現 repo 與個人同名 skill，Issue #32 使用目前 worktree 的 `.agents/skills/story2video-shorts-batch/SKILL.md`。記錄 Git SHA 與實際入口 SHA-256。選題、雙語編輯、開場、分鏡、Owner 看片或小批交接，從 [創作與製片交接](references/content-workflow.md) 開始。只核對數量或有獨立發布授權時，依下方原先對應的步驟。
+在 story2video 製作批次時，優先讀製片工作樹的 `.agents/skills/story2video-shorts-batch/SKILL.md`。若該分支缺此入口或版本早於已選定的流程，可從另有明確 Git 版本的來源工作樹讀取，並從同一來源解析相對連結。記錄所用來源的 Git SHA 和實際入口 SHA-256。治理、job 狀態及輸出一律以實際製片工作樹為準。從 [創作與製片交接](references/content-workflow.md) 開始，有同頻道前批紀錄時在選題前讀其收尾，交付後把已確認的修正和仍待驗的問題留給下一批。只核對數量或有獨立發布授權時，依下方對應步驟。
 
 開始各階段前，先讀取該階段引用的 skill。按名稱從專案或使用者已安裝的 skills 尋找。缺少所需 skill 或隔離評分程式時，先完成可獨立驗證的階段，記下待補項目和該階段狀態。
 
@@ -18,10 +18,12 @@ description: Plan and deliver a batch of original or rights-cleared classic Clue
 
 ## 從題面到可播放成片
 
+以下第 1–3 步適用正式 CluePause。WhyNest 與另獲 Owner 授權的內部探索依 [S07 權利與模式](references/content-workflow.md) 辦理。
+
 1. 委託 Writer subagent 構思原創稿。優先挑一眼可理解的反常動作、一個能改變解釋的前提，以及揭曉前在畫面或聲音能辨認的關鍵線索。情感誤解、逐步升級懸疑、純推理可當比較組。異常升級用場景或動作改變，情感則在解答後用可見的選擇收尾。可研究別片的節奏與公開成效，故事、人物及道具設計自行創作。若使用 Story Quality Lab 的 Classic Puzzle Benchmark，只把抽象機制交給原創稿 Writer。若是經典特別企劃，先查證特定來源版本的公共領域或商業改作授權。
 2. 依 `story-quality-autoloop` 隔離三位新讀者分段盲評。每位至少 90 分、核心均有線索支持且無關鍵缺陷，才通過故事品質。製作批可使用多個編輯輪次，各自遵守 AutoLoop 的回合、讀者及單篇上限。每篇沿用原本的凍結稿、逐輪讀者紀錄與雜湊，達到單篇上限就換故事。作者自評單獨保留。當次只要求寫稿或評分時，交付候選稿。
-3. 製片前完成 [Story Rights Gate](references/story-rights.md)，逐篇對應凍結稿 SHA-256。權利待授權、待確認或拒絕的題目限內部研究。使用者已要求製片時，將同時通過故事品質與權利查核的凍結稿移交製作。
-4. 依 `shorts-viewer-gate` 製作。將一句鉤子對到開場鏡頭，讓證據和結果可以直接被看見或聽見。用實際英文配音排時間軸，保留思考節拍。依 PLAN 輸出 9:16、1080×1920、30 FPS、30–60 秒。交付英文旁白母片、英／繁中 SRT 及方便試看的繁中燒錄版或雙字幕 MP4。逐集核對變化前後的角色、重要道具、音效與字幕。保留素材、成本、版本雜湊、命令和驗收。
+3. 正式 CluePause 製片前完成 [Story Rights Gate](references/story-rights.md)，逐篇對應凍結稿 SHA-256。權利待授權、待確認或拒絕的題目限內部研究。使用者已要求製片時，將同時通過故事品質與權利查核的凍結稿移交製作。
+4. 依 `shorts-viewer-gate` 與[製片、剪輯和看片流程](references/content-workflow.md) 製作。依 PLAN 輸出 9:16、1080×1920、30 FPS、30–60 秒。交付英文旁白母片、英／繁中 SRT 及方便試看的繁中燒錄版或雙字幕 MP4。保留素材、成本、版本雜湊、命令和驗收。
 5. 文字分數、媒體 QA、真人單次首看、公開後觀看數據各有自己的證據。首看測試只給從未接觸同稿的觀眾對應 MP4，保留原話與版本。照已有門檻判斷，沒有足夠真人樣本就記待驗。
 
 ## 上傳與重新核對

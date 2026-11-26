@@ -11,15 +11,27 @@
 | CluePause 分鏡與渲染 | [Static Storyboard 3170e0bab567007c6c5fc1fccf97e10fb02c3af1](https://github.com/Gavin0099/story2video/tree/3170e0bab567007c6c5fc1fccf97e10fb02c3af1/experiments/cluepause/static-ten-20261124/pipeline) | 按 pipeline 合約備 `story.md`、`shots.json`、`references.json`，使用 canonical 角色／道具／場景和 9:16 裁切。先執行 `python -B "<pipeline>/static_storyboard.py" validate "<job>"`，圖像和本機音訊就緒後用同工具 `run "<job>"`。參考 git 版本中的 tools lock 及 README 綁定 FFmpeg、ffprobe、字型、本機 Kokoro 或既有規格 WAV。輸出記實際 cue／切鏡時間及解碼結果。 |
 | WhyNest 分鏡與渲染 | WhyNest 批次的各集「製片交接」及既有本機 Remotion／向量圖解 | 交付 EN／zh-Hant cue、逐鏡因果、示意限制、畫面標籤和控制條件。保留可編輯圖層供事實及圖解查核。先確認相容 composition 與素材，缺相容渲染入口就記 HOLD。 |
 
-## 從外部研究採用的三個改動
+## 選題、開場與分鏡方法
 
-這三項以文字編輯採用，沿用上表的品質、權利與製作工具。其他候選與各項採用判定見 [Issue #32 來源紀錄](../../../../experiments/issue-32/external-methods.md)。
+按題型將下列方法填進既有選題表、線索圖及分鏡。方法來源、採用理由與限制見 [Issue #32 來源紀錄](../../../../experiments/issue-32/external-methods.md) 與 [S09 方法複核](../../../../experiments/issue-32/s09-method-evidence.md)。
 
 | 新增的寫法 | 消費階段 | 正例與不適用情境 |
 | --- | --- | --- |
+| 把題材同行和可借鏡的呈現形式各自記錄，以一般案例對照突出的公開樣本。 | S03 有公開樣本時填入現有選題表。 | 錯視示範可提供固定鏡位的做法，同類日常詭異故事才用來比較敘事。候選理由寫成可測的呈現假設。 [Video Agent Skills 公開樣本發現方法](https://github.com/Melvynx/video-agent-skills/blob/f4542923f7f796a1fa0e544cbfc1109d5eec87d8/skills/outliers/references/discovery.md) |
 | 用首畫面、旁白、必要字幕或標示交付同一觀眾問題。 | S05 編輯開場，以原有 viewer 方法檢查。 | 《第二個敲門聲》用手離開門把和兩個同步字幕交付同一異常；純視覺反差已足夠清楚時，可省重複的螢幕標題。 [Vyral 開場三層](https://github.com/vyralcontent/content-skills/blob/349e495d97029a3e6303a7510e3f39c73f36d8fe/skills/viral-hooks/references/three-layer-hook.md) |
 | 每個必要答案都連到可辨認的提前線索和一個要排除的替代解釋。 | S04 寫進海龜湯與日常詭異的線索圖，S06 對實際分鏡。 | 先拍到玻璃裡的亮燈以排除熄燈；都市怪談的情緒結尾可以回扣角色抉擇，無須強套唯一謎底。 [Story Skills 謎題公平性](https://github.com/danjdewhurst/story-skills/blob/929d6a598de2d9ca9ae30bf85051b78a31d0a81b/skills/genre-craft/references/mystery-fair-play.md) |
 | 用角色看到的證據改變他的下一個動作，鏡頭寫出前後狀態。 | S04 檢查動機，S06 寫進 shot 與 reference 交接。 | 閉館員看到反射裡的動靜才改變方向；科普對照實驗應依控制條件安排，無須虛構角色動機。 [Screenwriting Skills 場景](https://github.com/jtydhr88/screenwriting-skills/blob/81110874ee98d4415f86efb8310e06b0e778e2d9/plugins/screenwriting/skills/sw-scene-craft/reference.md) |
+
+## 成片診斷與剪輯方法
+
+製作與診斷沿用已驗證的本機路徑。用 FFmpeg／ffprobe 查檔案、聲軌和切點，以 Kokoro 或既有合規 WAV 排實際語音節拍。需要核對成片的配音與字幕時，可用已有的本機 ASR 從實際聲軌轉錄，對照 EN 逐字稿及繁中語意。外部 Skills 下列連結只供閱讀公開文字方法，不需安裝套件、執行上游腳本、上傳檔案或呼叫付費服務。
+
+| 何時使用 | 把什麼寫進現有審片或剪輯紀錄 |
+| --- | --- |
+| 想定位成片何時缺少線索或證據，或核查新版是否真的修到。 | 用 Video Analysis 的逐段拉片方式對首畫面、中段轉折、揭曉截取實際畫面並記時間碼，再看片段與完整播放。分開描述可見狀態與對觀眾理解的推測。觀眾何時離開須有實際留存數據。 [逐段拉片](https://github.com/zhenwusw/video-analysis-skill/blob/4368b001b08f0caac369733ce2d2c8177d9a2059/references/workflow.md) |
+| 開場動作或科普圖解似乎被景別、字幕或畫面元素蓋過。 | 借 Novoads `analyze-video` 的鏡頭欄位，針對問題鏡頭記切點、景別、主體動作、口白、螢幕文字及先後節拍，找出手機上應先看見的證據。 [Novoads 分析方法](https://github.com/novoads/agent-skills/blob/82e6d0628d848d36fcf441549d7d77c7b399396e/skills/analyze-video/SKILL.md) |
+| 切鏡、留白、重複動作或音效讓線索難讀。 | 用 `short-drama-breakdown` 把實際鏡頭時長和轉場對到其敘事功能，先分辨必要讀圖時間、反應及重複資訊。用剪輯單標記移動、縮短或替換的位置，實際修片走原剪輯工具。 [鏡頭量測與解讀](https://github.com/zenstory-ai/drama-skills/blob/82a1ce5750138ada79be6904d1ec72d6a285105d/skills/short-drama-breakdown/references/measure-and-read.md) · [剪輯方法](https://github.com/zenstory-ai/drama-skills/blob/82a1ce5750138ada79be6904d1ec72d6a285105d/skills/short-drama-edit/references/editing-guide.md) |
+| 角色、道具、空間或圖解跨鏡跳變，或需決定如何返工。 | 用 `short-drama-review` 查接點前後的同一參照。定位時間碼後標需重做素材、修剪或重排字幕，回驗時重看相鄰鏡頭與片尾。 [成片瑕疵與返工](https://github.com/zenstory-ai/drama-skills/blob/82a1ce5750138ada79be6904d1ec72d6a285105d/skills/short-drama-review/references/generated-media.md) |
 
 ## 最小適用範例與回退
 
