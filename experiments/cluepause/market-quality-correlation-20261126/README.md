@@ -11,7 +11,11 @@
 | [score-index.csv](score-index.csv) | 160 筆盲評紀錄，含 story SHA-256、讀者人數與 clear 旗標、評分規約版本、來源 commit 與證據檔雜湊 |
 | [score-granularity.txt](score-granularity.txt) | **為什麼 92.9% 的合格影片剛好 91 分**，由 383 筆逐維度評分推導 |
 | [market-schema.json](market-schema.json) | 市場欄位的統一契約：來源、時間窗、型別與衍生規則 |
-| [reader-reliability-experiment.md](reader-reliability-experiment.md) · [reliability-sample.csv](reliability-sample.csv) | AI 評審穩定性實驗設計與選稿（**未執行**） |
+| [reliability-findings.md](reliability-findings.md) · [reliability-report.txt](reliability-report.txt) · [reliability-results.csv](reliability-results.csv) · [evidence/](evidence/) | AI 評審穩定性基準：36 次盲評，6 篇中 2 篇 Gate 翻轉。**狀態 PAUSED** |
+| [reader-reliability-experiment.md](reader-reliability-experiment.md) · [reliability-sample.csv](reliability-sample.csv) | 該實驗的設計與選稿 |
+| [cores-divergence.md](cores-divergence.md) | 五筆 `cores=partial` 的原因（只讀既有證據，無模型呼叫） |
+| [studio-collection-sheet.csv](studio-collection-sheet.csv) | **54 列待填的 Studio 數據**，依優先序排欄位 |
+| [human-test/](human-test/) | 真人盲測材料與記錄表（**未執行**，受測者包不含任何分數或判定） |
 | [quality-vs-market.csv](quality-vs-market.csv) | 29 支影片的盲評、版本核對、分鏡時間軸與各時間窗市場數據 |
 | [correlations.txt](correlations.txt) | 相關係數，附 n、兩側缺值、相異值數、離群值與去除離群值後的敏感度 |
 | [data-gaps.csv](data-gaps.csv) | 97 列缺漏，**由程式產生**，不手工維護 |
@@ -25,6 +29,9 @@ python -I build_table.py
 python build_gaps.py
 python -I analyze_rubric.py
 python -I select_reliability_sample.py
+python -I analyze_cores.py
+python -I build_collection_sheet.py
+python -I build_human_test_kit.py
 python -m unittest test_pipeline -v
 ```
 
