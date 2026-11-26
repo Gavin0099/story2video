@@ -1,0 +1,79 @@
+# Correlations over the published CluePause videos in media-map.json.
+# Every line reports n, how many values were missing on each side, and
+# how many distinct predictor values the used pairs actually contain.
+# D1, D3, D7 and lifetime never appear in the same line.
+
+# Retention is reported three ways so the effect of each exclusion is
+# auditable rather than asserted:
+#   _raw   - as Studio printed it, including rows with 0 engaged views
+#   _valid - rows with 0 engaged views treated as MISSING, not as 0%
+#   _valid minus repeat-play - also drops values above 100%, which come
+#            from replays and are not on the same scale as sub-100 values
+
+PREDICTOR RANGE RESTRICTION
+  published videos with a score: 28 of 29
+  ai_min observed values: [91.0, 92.0, 95.0]
+  the 90 gate filters before publication, so no published video scores
+  below it. Any coefficient against ai_min is computed inside a 4 point band
+  and cannot establish or refute the gate's predictive value.
+
+ANALYSIS SET: rows with both a traceable score and a D1 row: 19
+
+D1 views  [d1_views]
+  rows with this target: 19   outliers(>Q3+3IQR): 04-v7, V09, V12, V13
+  ~ AI min reader score    n=19 missing_x=0 missing_y= 0 distinct_x=3 pearson=-0.121 spearman=+0.105  <- predictor takes only 3 distinct values
+  ~ duration s             n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.022 spearman=+0.077
+  ~ first anomaly s        n=18 missing_x=1 missing_y= 0 distinct_x=8 pearson=-0.163 spearman=-0.414
+  ~ key clue s             n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.125 spearman=+0.131
+  ~ reveal s               n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.270 spearman=+0.062
+
+D1 views, outliers removed (04-v7, V09, V12, V13)  [d1_views]
+  rows with this target: 15   outliers(>Q3+3IQR): V11
+  ~ AI min reader score    n=15 missing_x=0 missing_y= 0 distinct_x=3 pearson=+0.087 spearman=+0.352  <- predictor takes only 3 distinct values
+  ~ duration s             n=15 missing_x=0 missing_y= 0 distinct_x=15 pearson=-0.129 spearman=+0.089
+  ~ first anomaly s        n=14 missing_x=1 missing_y= 0 distinct_x=6 pearson=-0.279 spearman=-0.630
+  ~ key clue s             n=15 missing_x=0 missing_y= 0 distinct_x=15 pearson=+0.208 spearman=+0.308
+  ~ reveal s               n=15 missing_x=0 missing_y= 0 distinct_x=15 pearson=+0.123 spearman=+0.267
+
+D1 engaged views  [d1_engaged_views]
+  rows with this target: 19   outliers(>Q3+3IQR): 04-v7, V12, V13
+  ~ AI min reader score    n=19 missing_x=0 missing_y= 0 distinct_x=3 pearson=-0.100 spearman=+0.015  <- predictor takes only 3 distinct values
+  ~ duration s             n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.153 spearman=+0.025
+  ~ first anomaly s        n=18 missing_x=1 missing_y= 0 distinct_x=8 pearson=-0.157 spearman=-0.280
+  ~ key clue s             n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.168 spearman=+0.097
+  ~ reveal s               n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.398 spearman=+0.069  <- Pearson driven by outliers, rank order flat
+
+D1 avg % viewed, raw  [d1_avg_viewed_pct_raw]  <- includes rows whose engaged views are 0; kept only for comparison
+  rows with this target: 17   outliers(>Q3+3IQR): none
+  smallest engaged-view denominator behind a retention value: 0
+  ~ AI min reader score    n=17 missing_x=0 missing_y= 2 distinct_x=3 pearson=-0.132 spearman=-0.109  <- predictor takes only 3 distinct values
+  ~ duration s             n=17 missing_x=0 missing_y= 2 distinct_x=17 pearson=-0.074 spearman=+0.066
+  ~ first anomaly s        n=16 missing_x=1 missing_y= 2 distinct_x=8 pearson=-0.415 spearman=-0.410
+  ~ key clue s             n=17 missing_x=0 missing_y= 2 distinct_x=17 pearson=-0.055 spearman=+0.011
+  ~ reveal s               n=17 missing_x=0 missing_y= 2 distinct_x=17 pearson=-0.114 spearman=-0.013
+
+D1 avg % viewed, valid  [d1_avg_viewed_pct_valid]
+  rows with this target: 8   outliers(>Q3+3IQR): none
+  smallest engaged-view denominator behind a retention value: 1
+  ~ AI min reader score    n= 8 missing_x=0 missing_y=11 distinct_x=2 pearson=-0.545 spearman=-0.577  <- predictor takes only 2 distinct values
+  ~ duration s             n= 8 missing_x=0 missing_y=11 distinct_x=8 pearson=-0.355 spearman=-0.690
+  ~ first anomaly s        n= 8 missing_x=0 missing_y=11 distinct_x=3 pearson=+0.389 spearman=+0.405  <- predictor takes only 3 distinct values
+  ~ key clue s             n= 8 missing_x=0 missing_y=11 distinct_x=8 pearson=-0.596 spearman=-0.524
+  ~ reveal s               n= 8 missing_x=0 missing_y=11 distinct_x=8 pearson=-0.560 spearman=-0.619
+
+D1 avg % viewed, valid minus repeat-play  [d1_avg_viewed_pct_valid]
+  rows with this target: 7   outliers(>Q3+3IQR): none
+  smallest engaged-view denominator behind a retention value: 1
+  ~ AI min reader score    n= 7 missing_x=0 missing_y=11 distinct_x=2 pearson=-0.578 spearman=-0.612  <- predictor takes only 2 distinct values
+  ~ duration s             n= 7 missing_x=0 missing_y=11 distinct_x=7 pearson=-0.283 spearman=-0.571
+  ~ first anomaly s        n= 7 missing_x=0 missing_y=11 distinct_x=3 pearson=+0.654 spearman=+0.668  <- predictor takes only 3 distinct values
+  ~ key clue s             n= 7 missing_x=0 missing_y=11 distinct_x=7 pearson=-0.715 spearman=-0.536
+  ~ reveal s               n= 7 missing_x=0 missing_y=11 distinct_x=7 pearson=-0.590 spearman=-0.536
+
+lifetime stayed %  [lifetime_stayed_pct]
+  rows with this target: 19   outliers(>Q3+3IQR): V11
+  ~ AI min reader score    n=19 missing_x=0 missing_y= 0 distinct_x=3 pearson=+0.084 spearman=+0.307  <- predictor takes only 3 distinct values
+  ~ duration s             n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.088 spearman=+0.053
+  ~ first anomaly s        n=18 missing_x=1 missing_y= 0 distinct_x=8 pearson=-0.152 spearman=-0.211
+  ~ key clue s             n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=+0.049 spearman=+0.002
+  ~ reveal s               n=19 missing_x=0 missing_y= 0 distinct_x=19 pearson=-0.045 spearman=-0.009
