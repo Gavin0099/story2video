@@ -8,22 +8,27 @@
 
 | 檔案 | 內容 |
 | --- | --- |
-| [score-index.csv](score-index.csv) | 160 筆盲評紀錄，含 story SHA-256、評分規約版本與來源 commit |
+| [score-index.csv](score-index.csv) | 160 筆盲評紀錄，含 story SHA-256、讀者人數與 clear 旗標、評分規約版本、來源 commit 與證據檔雜湊 |
+| [score-granularity.txt](score-granularity.txt) | **為什麼 92.9% 的合格影片剛好 91 分**，由 383 筆逐維度評分推導 |
+| [market-schema.json](market-schema.json) | 市場欄位的統一契約：來源、時間窗、型別與衍生規則 |
+| [reader-reliability-experiment.md](reader-reliability-experiment.md) · [reliability-sample.csv](reliability-sample.csv) | AI 評審穩定性實驗設計與選稿（**未執行**） |
 | [quality-vs-market.csv](quality-vs-market.csv) | 29 支影片的盲評、版本核對、分鏡時間軸與各時間窗市場數據 |
 | [correlations.txt](correlations.txt) | 相關係數，附 n、兩側缺值、相異值數、離群值與去除離群值後的敏感度 |
 | [data-gaps.csv](data-gaps.csv) | 97 列缺漏，**由程式產生**，不手工維護 |
-| [build_index.py](build_index.py) · [build_table.py](build_table.py) · [build_gaps.py](build_gaps.py) | 可重跑的蒐集、join 與缺口盤點 |
-| [test_pipeline.py](test_pipeline.py) | 34 項測試 |
+| [build_index.py](build_index.py) · [build_table.py](build_table.py) · [build_gaps.py](build_gaps.py) · [analyze_rubric.py](analyze_rubric.py) · [select_reliability_sample.py](select_reliability_sample.py) | 可重跑的蒐集、join、缺口盤點、量尺分析與選稿 |
+| [test_pipeline.py](test_pipeline.py) | 43 項測試 |
 
 ```powershell
 cd D:\story2video\experiments\cluepause\market-quality-correlation-20261126
 python -I build_index.py
 python -I build_table.py
 python build_gaps.py
+python -I analyze_rubric.py
+python -I select_reliability_sample.py
 python -m unittest test_pipeline -v
 ```
 
-`build_index.py` 與 `build_table.py` 的輸出可逐位元重現；`build_gaps.py` 的輸出含「跑的當下」時間，窗口狀態會隨日期改變。`test_pipeline.py` 的整合測試在缺少本機 `artifacts/` 或 `D:\s2v-gp` 時會 skip，所以「34 項通過」只在兩者俱在時才有意義。
+`build_index.py` 與 `build_table.py` 的輸出可逐位元重現；`build_gaps.py` 的輸出含「跑的當下」時間，窗口狀態會隨日期改變。`test_pipeline.py` 的整合測試在缺少本機 `artifacts/` 或 `D:\s2v-gp` 時會 skip，所以「43 項通過」只在兩者俱在時才有意義。
 
 ### 內容主鍵
 
@@ -117,6 +122,63 @@ story_sha256 = sha256( first | second | reveal | english )
 
 D1 觀看的離群值是 04-v7、V09、V12、V13。`correlations.txt` 另外輸出一個**去除這四支後**的區塊：異常秒數的 Spearman 變成 −0.630（n=14），AI 最低分變成 +0.352。方向沒翻轉但數值變動很大，所以這條只能當待驗假設。
 
+## 二之二、為什麼 92.9% 的合格影片剛好是 91 分
+
+由 383 筆逐維度評分推導，完整輸出在 [score-granularity.txt](score-granularity.txt)。答案是**量尺結構**加上**停止條件**，不是評審寬鬆或串通。
+
+### 分數是離散的，而且實際只用到幾個階
+
+```
+total = 4·suspense + 5·reframe + 4·motivation + 3·causality + 2·fairness + 2·visuals
+```
+
+383 筆評分的實際用值：
+
+| 維度 | 權重 | 給 5 分 | 給 4 分 |
+| --- | ---: | ---: | ---: |
+| visuals | 10% | 99.0% | 1.0% |
+| causality | 15% | 91.4% | 7.8% |
+| fairness | 10% | 66.8% | 21.1% |
+| motivation | 20% | 43.1% | 55.9% |
+| suspense | 20% | 26.4% | 72.6% |
+| **reframe** | **25%** | **5.5%** | **84.6%** |
+
+**權重最大的 `reframe` 幾乎永遠是 4 分。** 它一落 4，總分天花板就被壓到 95。
+
+### 門檻 90 掉在階與階之間的空隙裡
+
+固定最常見的 `reframe=4、causality=5、fairness=5、visuals=5`，只剩 suspense 與 motivation 可動，各值 4 分：
+
+| suspense / motivation | 總分 |
+| --- | ---: |
+| 4 / 4 | **87** |
+| 4 / 5 或 5 / 4 | **91** |
+| 5 / 5 | **95** |
+
+**這條階梯上沒有 88、89、90。** 門檻訂在 90，但 90 不在階上，所以實質門檻是 91，而 **91 是能通過的最低一階**。
+
+實際分佈完全吻合：383 筆裡 **87 分 96 次、91 分 113 次**，兩座峰剛好夾著門檻；**90 分只出現 2 次**。所有維度不低於 3 分且總分恰為 90 的組合有 18 種，其中 15 種需要 `reframe=5`（只佔 5.5%），其餘需要某處給 3 分 — 90 分在理論上可達，實務上幾乎不可能。
+
+### 停止條件把質量堆在最低那一階
+
+`autoloop.py`：
+
+```python
+PASS_SCORE, FINAL_READERS = 90, 3
+passed = (len(valid) == FINAL_READERS
+          and all(row["score"] >= PASS_SCORE and row["clear"] for row in valid))
+```
+
+加上「已合格的故事不得再修」（`this story already qualified`）與 `RUN_LIMIT = 4`：**改稿改到第一次通過就停**，而第一個通過的階就是 91。
+
+### 這代表什麼
+
+你的兩個懷疑都成立，但成因是設計而非評審行為：**分數確實集中，自動修稿確實在剛好通過時停止**，而兩者相乘的結果就是 92.9% 落在 91。
+
+更值得注意的是衍生的問題：**在通過區間裡，這個「100 分制」只有約三階可用（91／95／96+）**。91 分與 87 分的差距是「某一個維度差一格」。這個數字承載的資訊遠少於它的刻度看起來的樣子，而權重最高的 `reframe` 因為幾乎不變，實際上不提供任何區辨力。
+
+這是量尺的性質，不是市場發現。**同一份稿換一批評審是否還得到相近分數，仍然未知** — 160 筆紀錄對應 160 份相異文字，沒有任何一份被評過兩次。設計與選稿見 [reader-reliability-experiment.md](reader-reliability-experiment.md)。
+
 ## 三、90 分 gate：具備篩選能力，但現有資料無法驗證市場預測能力
 
 29 支中 28 支有可追溯評分、全部 `TEXT_MATCHES_MASTER_SOURCE`、全部使用 `story-quality-autoloop/v2`（整個 index 則是混合的：145 筆 v2、15 筆 v1）。這 28 支的最低讀者分數：
@@ -143,7 +205,9 @@ D1 觀看的離群值是 04-v7、V09、V12、V13。`correlations.txt` 另外輸�
 
 依你的提醒，**201% 不等於每位留下的觀眾都看了兩遍** — 它是平均值，可能由少數高重播觀眾或部分片段的反覆重播拉高。
 
-V08（208.95%）、V10（106.63%）同樣破百。這些值與未破百的值不同尺度，所以 `quality-vs-market.csv` 多了一欄 `d1_repeat_play` 標記，`correlations.txt` 也額外輸出「去掉破百」的敏感度區塊。
+V08（208.95%）、V10（106.63%）同樣破百。
+
+> **立場更正**：先前版本寫「這些值不能與未破百的值放在同一欄比較」。那是錯的 — **重播是真實觀看行為，破百是有效數據，應留在主要分析中**。`quality-vs-market.csv` 以 `d1_repeat_play` 標記它們，`correlations.txt` 的主要留存區塊**包含**它們；「去掉破百」只作為敏感度對照輸出，不是認定它們無效。
 
 ## 五、兩條留存曲線（n=2，列為假設不列為結論）
 
@@ -186,13 +250,16 @@ old cohort 20 支 D1 總觀看 **2,355**，其中 04-v7、V12、V13 三支合計
 
 公開 82–87 分影片的方案**降為第 5 順位候選**，本輪不執行。
 
-| 順位 | 實驗 | 驗證目標 | 前置條件 |
-| ---: | --- | --- | --- |
-| 1 | 不同 AI 分數區間的真人盲測 | 評分能否反映真人的理解與娛樂感受 | 無，現在就能做 |
-| 2 | 相同故事、不同開場 | 開場是否影響續看意願 | 需要開始抓 `stayed_to_watch` |
-| 3 | 相同故事、不同線索時間 | 線索時機是否影響留存 | 需要逐秒留存，等於需要足夠分發量 |
-| 4 | 不同故事類型 | 海龜湯 vs 都市怪談 | 目前 3:1:1 且同日公開，樣本不足 |
-| 5 | 不同評分區間的公開影片 | gate 的市場預測能力 | 承擔公開品質風險，需 Owner 另行授權 |
+驗證分三層：**Reliability**（評審自己穩不穩）→ **Human Validity**（評分合不合真人感受）→ **Market Validity**（品質能不能轉換成留存與收益）。三層目前都未完整驗證，且後一層的結論在前一層成立前沒有意義。
+
+| 順位 | 實驗 | 層級 | 驗證目標 | 前置條件 |
+| ---: | --- | --- | --- | --- |
+| 0 | **AI 評審穩定性複評** | Reliability | 同稿換評審是否得到相近分數與相同 gate 判定 | 選稿已完成；需你決定 runtime 並授權 |
+| 1 | 不同 AI 分數區間的真人盲測 | Human Validity | 評分能否反映真人的理解與娛樂感受 | 無，現在就能做 |
+| 2 | 相同故事、不同開場 | Market | 開場是否影響續看意願 | 需要開始抓 `stayed_to_watch` |
+| 3 | 相同故事、不同線索時間 | Market | 線索時機是否影響留存 | 需要逐秒留存，等於需要足夠分發量 |
+| 4 | 不同故事類型 | Market | 海龜湯 vs 都市怪談 | 目前 3:1:1 且同日公開，樣本不足 |
+| 5 | 不同評分區間的公開影片 | Market | gate 的市場預測能力 | 承擔公開品質風險，需 Owner 另行授權 |
 
 **實驗 1 現在就能選稿**：`score-index.csv` 的單一讀者分數涵蓋 72–100，`reader_min` 在 82–87 的紀錄有 **94 筆**，高分帶（≥91 且 cores supported）也充足。真人盲測只讀文字，不製作影片，是目前成本最低、且不需要任何新授權的驗證。
 
@@ -225,6 +292,18 @@ old cohort 20 支 D1 總觀看 **2,355**，其中 04-v7、V12、V13 三支合計
 | 14 | 「29 支公開影片」讀起來像全集 | 加註範圍，並說明 11/25 的五支不在表內 |
 | 15 | 92.3% 的分母未說明 | 已標明 old cohort 20 支，並附 n=19 分析集的 93.7% |
 | 16 | 測試在缺檔時 skip，「全過」可能什麼都沒測 | 已於執行說明中寫明 |
+
+### Owner 第二輪 review 指出並已修正（2026-11-26）
+
+| # | 問題 | 處置 |
+| ---: | --- | --- |
+| 17 | `gate_state()` 只看最低分與 cores，沒檢查讀者是否滿三位，也沒檢查每位讀者的 `clear` | 改為逐字對應 `autoloop.py` 的契約：`len(valid)==3 and all(score>=90 and clear)` 加上 cores supported。索引新增 `readers_clear`／`all_readers_clear` 欄 |
+| 18 | 128／160 筆評分證據只存在本機 `artifacts/`，他人無法驗證 | 索引每列新增 `evidence_sha256`（該 `final-report.json` 的檔案雜湊），連同 `story_sha256`、來源 kind／分支／commit／路徑一併落版 |
+| 19 | 來源讀取失敗時程式回傳空集合，會被誤讀為沒有缺漏 | `build_gaps.py` 改為產生 `SOURCE_UNAVAILABLE` 列並附失敗原因 |
+| 20 | D3／D7 沒有資料匯入介面，每加一個欄位就要改分析程式 | 新增 [market-schema.json](market-schema.json)，`build_table.py` 由 schema 產生市場欄位；新增欄位只需改 schema |
+| 21 | 破百的平均觀看比例被當成無效值排除 | **立場更正**：破百是有效數據，保留在主要分析，排除只作敏感度對照（見 §四） |
+
+其中 #17 目前**不改變這 28 支的判定**（寬鬆檢查與完整契約的通過集合都是 29 筆），但漏洞是真的：索引裡有 3 筆只有 1–2 位讀者、66 筆存在未標 clear 的讀者，日後擴充資料就會分類錯誤。
 
 Review 另確認：pearson／spearman／ranked 三個函式的實作正確（獨立重算 10 組皆吻合至小數三位）；輸出可逐位元重現；三個 `.py` 無任何網路呼叫；`D:\s2v-gp` 除本目錄外無任何變更（`git diff` 對基底分支為空）。
 

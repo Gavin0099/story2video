@@ -48,19 +48,33 @@ def cluepause_rows(rows, now):
     return out
 
 
+def unavailable(slic, scope, detail):
+    """A source we could not read is a gap in its own right, never an empty list."""
+    return [{
+        "slice": slic, "scope": scope, "code": "-", "video_id": "", "window": "-",
+        "closes_taipei": "", "state": "SOURCE_UNAVAILABLE",
+        "what_to_read": "restore access to this source, then re-run build_gaps.py",
+        "note": detail,
+    }]
+
+
 def static_ten_rows(now):
     """The five videos made public on 2026-11-25, absent from media-map.json."""
-    meta = bt.read_gp_csv  # not a CSV; read the json through git instead
     import json
     import subprocess
-    r = subprocess.run(
-        ["git", "show", "origin/codex/cluepause-static-ten-20261124:"
-         "experiments/cluepause/static-ten-20261124/upload-metadata.json"],
-        cwd=bt.GP, capture_output=True, text=True, encoding="utf-8")
+    ref = ("origin/codex/cluepause-static-ten-20261124:"
+           "experiments/cluepause/static-ten-20261124/upload-metadata.json")
+    r = subprocess.run(["git", "show", ref], cwd=bt.GP, capture_output=True,
+                       text=True, encoding="utf-8")
     if r.returncode:
-        return []
-    del meta
-    data = json.loads(r.stdout)
+        return unavailable("S2", "static-ten public five",
+                           "git show failed for " + ref + ": "
+                           + (r.stderr or "").strip()[:120])
+    try:
+        data = json.loads(r.stdout)
+    except Exception as exc:
+        return unavailable("S2", "static-ten public five",
+                           "upload-metadata.json did not parse: %s" % exc)
     out = []
     for v in data.get("videos", []):
         if v.get("observed_visibility") != "public":
@@ -86,10 +100,12 @@ def static_ten_rows(now):
 
 def whynest_rows(now):
     out = []
+    path = "experiments/science-shorts/public-20-20261122/d1.csv"
     try:
-        rows = bt.read_gp_csv("experiments/science-shorts/public-20-20261122/d1.csv")
-    except SystemExit:
-        return out
+        rows = bt.read_gp_csv(path)
+    except SystemExit as exc:
+        return unavailable("S3", "WhyNest Lab public ten",
+                           "could not read %s on %s: %s" % (path, bt.GPB, exc))
     for r in rows:
         if (r.get("data_status") or "").strip() not in ("", "waiting"):
             continue

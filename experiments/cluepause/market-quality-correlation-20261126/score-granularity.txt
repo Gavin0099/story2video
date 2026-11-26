@@ -1,0 +1,90 @@
+# Why the qualified scores pile up on 91
+
+reader score objects found under artifacts/: 383
+
+OBSERVED TOTAL DISTRIBUTION
+
+   72     1  #
+   74     1  #
+   75     2  ##
+   78     4  ####
+   79     1  #
+   80     5  #####
+   82    27  ###########################
+   83     8  ########
+   84     7  #######
+   85    26  ##########################
+   86     2  ##
+   87    96  ############################################################
+   88    10  ##########
+   89    38  ######################################
+   90     2  ##  <- pass threshold is >= 90
+   91   113  ############################################################
+   92     6  ######
+   93     4  ####
+   94     3  ###
+   95    18  ##################
+   96     5  #####
+   98     3  ###
+  100     1  #
+
+PER-DIMENSION VALUES ACTUALLY USED
+
+  suspense    weight 20%   {3: 4, 4: 278, 5: 101}   5:26.4%  4:72.6%
+  reframe     weight 25%   {3: 38, 4: 324, 5: 21}   5: 5.5%  4:84.6%
+  motivation  weight 20%   {3: 4, 4: 214, 5: 165}   5:43.1%  4:55.9%
+  causality   weight 15%   {3: 3, 4: 30, 5: 350}   5:91.4%  4: 7.8%
+  fairness    weight 10%   {2: 2, 3: 44, 4: 81, 5: 256}   5:66.8%  4:21.1%
+  visuals     weight 10%   {4: 4, 5: 379}   5:99.0%  4: 1.0%
+
+THE BINDING DIMENSION
+
+  reframe carries the largest weight (25%) and is the one dimension
+  readers almost never award a 5. With reframe fixed at 4 the score
+  cannot exceed 95 no matter how good everything else is.
+
+THE LADDER IN THE DOMINANT FAMILY
+
+  Fixing the values readers use most often:
+    causality=5, fairness=5, reframe=4, visuals=5
+  leaves only suspense and motivation free, each worth 4 points,
+  so the reachable totals are spaced 4 apart:
+
+    79  83  87  91  95
+
+  There is no 88, 89 or 90 on this ladder. The 90 threshold falls in
+  a gap, so the effective threshold is 91 and 91 is the LOWEST rung a
+  script can land on and still pass.
+
+  reads that scored exactly 90: 2 of 383
+    suspense=5, reframe=4, motivation=5, causality=4, fairness=4, visuals=5
+    suspense=5, reframe=4, motivation=5, causality=4, fairness=4, visuals=5
+
+  18 dimension combinations with no value below 3 total exactly 90.
+  15 of them require reframe=5, which appears in only 5.5% of reads;
+  the rest require a 3 somewhere, which readers rarely give.
+  So 90 is reachable in principle and almost never reachable in practice.
+
+THE STOPPING RULE ADDS THE REST
+
+  autoloop.py: PASS_SCORE, FINAL_READERS = 90, 3
+    passed = (len(valid) == FINAL_READERS
+              and all(row['score'] >= PASS_SCORE and row['clear'] ...))
+  and a story that has qualified may not be revised again
+  ('this story already qualified'), with RUN_LIMIT = 4 revisions.
+
+  Revision therefore stops at the first passing draft, and the first
+  passing rung is 91. Concentration at 91 is what this design produces;
+  it is not evidence that the readers are lenient or colluding.
+
+WHAT THIS MEANS FOR THE GATE
+
+  In the passing region the 100-point scale has about three usable
+  rungs (91 / 95 / 96+). A script scoring 91 and a script scoring 87
+  differ by one notch on one dimension. The number carries far less
+  information than its scale suggests, and reframe - the heaviest
+  weight - is nearly constant, so it discriminates almost nothing.
+
+  This is a measurement property, not a market finding. Whether the
+  gate is also unstable across independent panels is untested: see
+  reader-reliability-experiment.md.

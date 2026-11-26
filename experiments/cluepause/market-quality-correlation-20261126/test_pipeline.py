@@ -50,8 +50,35 @@ class StoryKey(unittest.TestCase):
 
 
 class GateState(unittest.TestCase):
-    def rec(self, minimum, cores="supported"):
-        return {"reader_min": str(minimum), "cores": cores}
+    """The contract lives in autoloop.py:
+        passed = (len(valid) == 3 and all(score >= 90 and clear))
+    All three conditions must be reproduced, not just the score."""
+
+    def rec(self, minimum, cores="supported", count=3, clear="yes"):
+        return {"reader_min": str(minimum), "cores": cores,
+                "reader_count": str(count), "all_readers_clear": clear}
+
+    def test_fewer_than_three_readers_cannot_pass(self):
+        self.assertEqual(build_table.gate_state([self.rec(95, count=1)]),
+                         "BELOW_GATE")
+        self.assertEqual(build_table.gate_state([self.rec(95, count=2)]),
+                         "BELOW_GATE")
+
+    def test_more_than_three_readers_cannot_pass(self):
+        self.assertEqual(build_table.gate_state([self.rec(95, count=4)]),
+                         "BELOW_GATE")
+
+    def test_a_reader_who_did_not_mark_it_clear_blocks_the_pass(self):
+        self.assertEqual(build_table.gate_state([self.rec(98, clear="no")]),
+                         "BELOW_GATE")
+
+    def test_missing_clear_flag_is_not_silently_treated_as_pass_or_fail(self):
+        self.assertEqual(build_table.gate_state([self.rec(95, clear="")]),
+                         "CORES_NOT_RECORDED")
+
+    def test_missing_reader_count_is_not_judged(self):
+        rec = {"reader_min": "95", "cores": "supported", "all_readers_clear": "yes"}
+        self.assertEqual(build_table.gate_state([rec]), "CORES_NOT_RECORDED")
 
     def test_no_record_is_not_tested_not_a_failure(self):
         self.assertEqual(build_table.gate_state([]), "NOT_TESTED")
@@ -240,6 +267,36 @@ class RepoIntegration(unittest.TestCase):
                 row = table.get(g["code"])
                 if row:
                     self.assertEqual(row["ai_gate_state"], "NOT_TESTED", g["code"])
+
+    def test_every_score_record_carries_its_evidence_hash(self):
+        """128 of 160 records live only in untracked artifacts/, so the hash is
+        the only way another machine can check it read the same file."""
+        for r in self.read("score-index.csv"):
+            self.assertEqual(len(r["evidence_sha256"]), 64, r["source_path"])
+            self.assertIn(r["all_readers_clear"], ("yes", "no"), r["source_path"])
+
+    def test_an_unreadable_source_becomes_a_gap_not_an_empty_list(self):
+        import build_gaps
+        rows = build_gaps.unavailable("S9", "a source", "it was not readable")
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["state"], "SOURCE_UNAVAILABLE")
+        self.assertIn("not readable", rows[0]["note"])
+
+    def test_market_columns_come_from_the_schema(self):
+        schema = build_table.load_schema()
+        rows = self.read("quality-vs-market.csv")
+        for spec in schema["fields"]:
+            self.assertIn(spec["field"], rows[0], spec["field"])
+        for spec in schema["derived"]:
+            self.assertIn(spec["field"], rows[0], spec["field"])
+
+    def test_repeat_play_rows_stay_in_the_main_retention_set(self):
+        """Replays are real viewing: flagged, not excluded."""
+        rows = self.read("quality-vs-market.csv")
+        over = [r for r in rows if r["d1_repeat_play"] == "yes"]
+        self.assertTrue(over, "expected at least one replayed row")
+        for r in over:
+            self.assertNotEqual(r["d1_avg_viewed_pct_valid"], "")
 
     def test_gaps_cover_every_uncollected_window(self):
         gaps = self.read("data-gaps.csv")

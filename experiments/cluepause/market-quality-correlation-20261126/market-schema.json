@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Declares the market fields the analysis carries, where each one comes from, and which observation window it belongs to. build_table.py reads this file instead of hardcoding column names, so adding a metric is a schema edit, not a code edit.",
+  "windows": {
+    "d1": "first 24 hours after publication",
+    "d3": "first 72 hours",
+    "d7": "first 7 days",
+    "lifetime": "publication to the observation timestamp",
+    "export": "the Studio advanced-export date range named in export_window",
+    "static": "not a time window: a property of the video or the script"
+  },
+  "sources": {
+    "d1_csv": {
+      "repo": "D:\\s2v-gp",
+      "ref": "origin/codex/cluepause-performance-p0-20261124",
+      "path": "experiments/cluepause/performance-p0-20261124/first-24h-and-timing.csv",
+      "key": "code"
+    },
+    "windows_csv": {
+      "repo": "D:\\s2v-gp",
+      "ref": "origin/codex/cluepause-performance-p0-20261124",
+      "path": "experiments/cluepause/performance-p0-20261124/other-windows.csv",
+      "key": "code"
+    }
+  },
+  "fields": [
+    {"field": "published_at_taipei", "window": "static", "source": "d1_csv", "column": "published_at_taipei", "type": "timestamp",
+     "note": "window boundaries are computed from this; a date without a time yields UNKNOWN_PUBLISH_TIME"},
+    {"field": "anomaly_s", "window": "static", "source": "d1_csv", "column": "first_visible_anomaly_s", "type": "number"},
+    {"field": "key_clue_s", "window": "static", "source": "d1_csv", "column": "key_clue_s", "type": "number"},
+    {"field": "reveal_s", "window": "static", "source": "d1_csv", "column": "reveal_s", "type": "number"},
+
+    {"field": "d1_views", "window": "d1", "source": "d1_csv", "column": "views_d1", "type": "count"},
+    {"field": "d1_engaged_views", "window": "d1", "source": "d1_csv", "column": "engaged_views_d1", "type": "count"},
+    {"field": "d1_avg_viewed_pct_raw", "window": "d1", "source": "d1_csv", "column": "avg_viewed_d1_pct", "type": "percent",
+     "note": "may exceed 100 when the Short is replayed; replays are real viewing, so this stays in the main analysis"},
+    {"field": "d1_likes", "window": "d1", "source": "d1_csv", "column": "likes_d1", "type": "count"},
+    {"field": "d1_thumbnail_impressions", "window": "d1", "source": "d1_csv", "column": "thumbnail_impressions_d1", "type": "count"},
+    {"field": "d1_source_note", "window": "d1", "source": "d1_csv", "column": "d1_status", "type": "text"},
+    {"field": "d1_shorts_feed_shown", "window": "d1", "source": "d1_csv", "column": "shorts_feed_shown_d1", "type": "count",
+     "note": "column exists but is empty for every row; never captured"},
+    {"field": "d1_stayed_to_watch_pct", "window": "d1", "source": "d1_csv", "column": "stayed_to_watch_d1_pct", "type": "percent",
+     "note": "column exists but is empty for every row; never captured. This is the opening-appeal metric"},
+
+    {"field": "lifetime_views", "window": "lifetime", "source": "windows_csv", "column": "lifetime_views", "type": "count"},
+    {"field": "lifetime_stayed_pct", "window": "lifetime", "source": "windows_csv", "column": "lifetime_stayed_pct", "type": "percent"},
+    {"field": "lifetime_observed_at", "window": "lifetime", "source": "windows_csv", "column": "lifetime_views_observed_taipei", "type": "timestamp"},
+
+    {"field": "export_avg_viewed_pct", "window": "export", "source": "windows_csv", "column": "export_avg_viewed_pct", "type": "percent"},
+    {"field": "export_window", "window": "export", "source": "windows_csv", "column": "advanced_export_studio_date_range", "type": "text"}
+  ],
+  "derived": [
+    {"field": "d1_avg_viewed_pct_valid", "from": "d1_avg_viewed_pct_raw",
+     "rule": "blank when d1_engaged_views is 0 or missing: a percentage printed against no engaged views is an absent observation, not a 0% one"},
+    {"field": "d1_repeat_play", "from": "d1_avg_viewed_pct_valid",
+     "rule": "yes when above 100, no when at or below, blank when there is no valid value. A flag only: these rows stay in the main analysis and are removed only in the sensitivity block"},
+    {"field": "d1_window", "from": "published_at_taipei + d1_views",
+     "rule": "COLLECTED / CLOSED_NOT_COLLECTED / PENDING_WINDOW / UNKNOWN_PUBLISH_TIME"},
+    {"field": "d3_window", "from": "published_at_taipei", "rule": "as d1_window; no data column exists yet"},
+    {"field": "d7_window", "from": "published_at_taipei", "rule": "as d1_window; no data column exists yet"}
+  ],
+  "not_yet_sourced": [
+    {"window": "d3", "note": "no D3 column exists in any source file; the window state is computed but there is nowhere to put the numbers"},
+    {"window": "d7", "note": "studio-windows.csv has empty 168h rows for R01-R09 only; the old cohort has no D7 destination"},
+    {"field": "shares", "note": "not captured anywhere"},
+    {"field": "subscribers_delta", "note": "captured for WhyNest d1.csv only, not for CluePause"},
+    {"field": "per_second_retention", "note": "only two PNG cards exist; no machine-readable curve"}
+  ]
+}

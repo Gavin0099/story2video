@@ -54,12 +54,23 @@ def git(repo, *args):
     return r.stdout if r.returncode == 0 else None
 
 
-def parse_report(data, rubric, src_kind, src_ref, src_commit, src_path, sha_lookup):
-    """Yield one row per scored version inside a final-report.json."""
+def parse_report(data, rubric, src_kind, src_ref, src_commit, src_path,
+                 evidence_sha, sha_lookup):
+    """Yield one row per scored version inside a final-report.json.
+
+    The gate contract lives in autoloop.py:
+        PASS_SCORE, FINAL_READERS = 90, 3
+        passed = (len(valid) == FINAL_READERS
+                  and all(row["score"] >= PASS_SCORE and row["clear"] ...))
+    so the per-reader `clear` flag and the reader count are part of the
+    verdict, not decoration, and both are carried through here.
+    """
     for ver, v in (data.get("versions") or {}).items():
-        readers = [r.get("score") for r in (v.get("readers") or [])]
+        entries = v.get("readers") or []
+        readers = [r.get("score") for r in entries]
         readers = [x for x in readers if isinstance(x, (int, float))]
-        cores = sorted({str(val) for r in (v.get("readers") or [])
+        clears = [bool(r.get("clear")) for r in entries]
+        cores = sorted({str(val) for r in entries
                         for val in (r.get("cores") or {}).values()})
         yield {
             "story_sha256": sha_lookup(ver) or "",
@@ -68,6 +79,8 @@ def parse_report(data, rubric, src_kind, src_ref, src_commit, src_path, sha_look
             "readers": ",".join(str(int(x)) for x in readers),
             "reader_min": min(readers) if readers else "",
             "reader_count": len(readers),
+            "readers_clear": ",".join("1" if c else "0" for c in clears),
+            "all_readers_clear": "yes" if (clears and all(clears)) else "no",
             "cores": "/".join(cores),
             "run_status": v.get("status", ""),
             "rubric_version": rubric,
@@ -75,6 +88,7 @@ def parse_report(data, rubric, src_kind, src_ref, src_commit, src_path, sha_look
             "source_ref": src_ref,
             "source_commit": src_commit,
             "source_path": src_path,
+            "evidence_sha256": evidence_sha,
         }
 
 
@@ -112,7 +126,9 @@ def scan_git(repo):
                 except Exception:
                     return None
 
-            rows += list(parse_report(data, rubric, "git", br, commit, path, lookup))
+            rows += list(parse_report(data, rubric, "git", br, commit, path,
+                                      hashlib.sha256(blob.encode("utf-8")).hexdigest(),
+                                      lookup))
     return rows
 
 
@@ -124,7 +140,9 @@ def scan_local():
         if "worktrees" in rel:
             continue
         try:
-            data = json.load(open(p, encoding="utf-8"))
+            with open(p, "rb") as f:
+                raw = f.read()
+            data = json.loads(raw.decode("utf-8"))
         except Exception:
             continue
         d = os.path.dirname(p)
@@ -138,6 +156,7 @@ def scan_local():
         family = rel.split("/")[1] if rel.startswith("artifacts/") else ""
         rows += list(parse_report(
             data, rubric, "local", "artifacts/" + family, "", rel,
+            hashlib.sha256(raw).hexdigest(),
             lambda ver, _d=d: sha_of_file(os.path.join(_d, ver + ".json"))))
     return rows
 

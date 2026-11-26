@@ -104,19 +104,44 @@ def window_state(published, days, has_data, now):
     return "CLOSED_NOT_COLLECTED" if closes <= now else "PENDING_WINDOW"
 
 
+# The gate contract, from autoloop.py on codex/story-quality-autoloop:
+#     PASS_SCORE, FINAL_READERS = 90, 3
+#     passed = (len(valid) == FINAL_READERS
+#               and all(row["score"] >= PASS_SCORE and row["clear"] for row in valid))
+# All three conditions are reproduced below. Checking only the minimum score
+# would pass a record that had a single reader, or readers who did not mark the
+# story clear.
+PASS_SCORE = 90
+FINAL_READERS = 3
+
+
+def record_passes(rec):
+    """True / False, or None when the record cannot be judged."""
+    if not rec.get("cores"):
+        return None
+    count = num(rec.get("reader_count"))
+    if count is None:
+        return None
+    low = num(rec.get("reader_min"))
+    if low is None:
+        return False
+    if int(count) != FINAL_READERS:
+        return False
+    clear = rec.get("all_readers_clear")
+    if clear not in ("yes", "no"):
+        return None
+    return low >= PASS_SCORE and clear == "yes" and rec["cores"] == "supported"
+
+
 def gate_state(recs):
-    """GATE_PASS needs every reader >= 90 on the published text, cores supported."""
     if not recs:
         return "NOT_TESTED"
-    if any(not r.get("cores") for r in recs):
+    verdicts = [record_passes(r) for r in recs]
+    if any(v is None for v in verdicts):
         return "CORES_NOT_RECORDED"
-    ok = []
-    for r in recs:
-        m = num(r["reader_min"])
-        ok.append(m is not None and m >= 90 and r["cores"] == "supported")
-    if all(ok):
+    if all(verdicts):
         return "GATE_PASS"
-    if any(ok):
+    if any(verdicts):
         return "CONFLICTING_RUNS"
     return "BELOW_GATE"
 
@@ -133,15 +158,23 @@ def load_index():
     return by_sha
 
 
+def load_schema():
+    """Market columns are declared in market-schema.json, not hardcoded here,
+    so adding a metric is a schema edit rather than a code edit."""
+    return load_json(os.path.join(OUT, "market-schema.json"))
+
+
 def build_rows(now=None):
     now = now or dt.datetime.now(TAIPEI)
+    schema = load_schema()
     by_sha = load_index()
     media = load_json(os.path.join(S2V, "artifacts", "cluepause-performance-lab",
                                    "media-map.json"))
-    d1 = {r["code"]: r for r in read_gp_csv(
-        "experiments/cluepause/performance-p0-20261124/first-24h-and-timing.csv")}
-    lf = {r["code"]: r for r in read_gp_csv(
-        "experiments/cluepause/performance-p0-20261124/other-windows.csv")}
+    tables = {}
+    for name, src in schema["sources"].items():
+        tables[name] = {r[src["key"]]: r for r in read_gp_csv(src["path"])}
+    d1 = tables["d1_csv"]
+    lf = tables["windows_csv"]
 
     rows = []
     for m in media:
@@ -193,27 +226,19 @@ def build_rows(now=None):
             "score_source_commit": " ; ".join(sorted({r["source_commit"] for r in recs
                                                       if r["source_commit"]})),
             "score_source_path": " ; ".join(sorted({r["source_path"] for r in recs})),
-            "anomaly_s": a.get("first_visible_anomaly_s", ""),
-            "key_clue_s": a.get("key_clue_s", ""),
-            "reveal_s": a.get("reveal_s", ""),
-            "d1_views": a.get("views_d1", ""),
-            "d1_engaged_views": a.get("engaged_views_d1", ""),
-            "d1_avg_viewed_pct_raw": a.get("avg_viewed_d1_pct", ""),
-            "d1_avg_viewed_pct_valid": "" if avg_valid is None else avg_valid,
-            "d1_repeat_play": repeat,
-            "d1_likes": a.get("likes_d1", ""),
-            "d1_thumbnail_impressions": a.get("thumbnail_impressions_d1", ""),
-            "d1_window": window_state(published, 1, num(a.get("views_d1")) is not None,
-                                      now),
-            "d1_source_note": a.get("d1_status", "") or ("NO_ROW" if not a else ""),
-            "d3_window": window_state(published, 3, False, now),
-            "d7_window": window_state(published, 7, False, now),
-            "lifetime_views": b.get("lifetime_views", ""),
-            "lifetime_stayed_pct": b.get("lifetime_stayed_pct", ""),
-            "lifetime_observed_at": b.get("lifetime_views_observed_taipei", ""),
-            "export_avg_viewed_pct": b.get("export_avg_viewed_pct", ""),
-            "export_window": b.get("advanced_export_studio_date_range", ""),
         })
+        # Market columns come from the schema, in its declared order.
+        for spec in schema["fields"]:
+            src = a if spec["source"] == "d1_csv" else b
+            rows[-1][spec["field"]] = src.get(spec["column"], "")
+        rows[-1]["d1_avg_viewed_pct_valid"] = "" if avg_valid is None else avg_valid
+        rows[-1]["d1_repeat_play"] = repeat
+        rows[-1]["d1_window"] = window_state(
+            published, 1, num(a.get("views_d1")) is not None, now)
+        rows[-1]["d3_window"] = window_state(published, 3, False, now)
+        rows[-1]["d7_window"] = window_state(published, 7, False, now)
+        if not a:
+            rows[-1]["d1_source_note"] = "NO_ROW"
     return rows
 
 
