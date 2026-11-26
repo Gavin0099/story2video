@@ -25,3 +25,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/issue32-consumer-tests.json -> exit_code=0 (80 tests). Node 22.16.0 npm ci and typecheck passed. Governance verifier passed 3 cases. Public CSV checked for 60 unique IDs and correct source URLs. Independent review tree ea9d3efa2224af2489a4ac3b6e2abbf6f86b5f70.
 - Next action: Submit the reviewed public workflow for Owner review. Owner decides release for each exact film version separately. Seven-day capacity and market outcomes await observation.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:75cef6bf082d3b6183fcb36e26ca60d0c1494730aec72193cd64c385f57ad043 -->
+### Canonical memory checkpoint — cli-20261126-165239
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `75cef6bf082d3b6183fcb36e26ca60d0c1494730aec72193cd64c385f57ad043`
+- Commit binding: `1450e5ffa7910c5f188ea13a0a98062f1f04cfd3` (bound)
+- Record: Documented public evidence from 16 skill sources and 30 comparable Shorts, and incorporated four testable editing methods into the existing production skill.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-final-methods.json -> exit_code=0 (80 tests). Local video typecheck and governance verification passed. Independent review completed for implementation tree 1005c59c0caf43c90882ed9c82341947fc4d6197.
+- Next action: Compare one edit at a time in Owner previews and record outcomes after individually authorized publication.
+- PLAN reconciliation: `not_applicable`

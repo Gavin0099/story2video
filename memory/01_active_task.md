@@ -8,4 +8,4 @@
 
 - Update this file when task state changes.
 
-- Issue #32 的公開製片工作流、來源及 60 支公開片清單已通過獨立審查。 <!-- memory_record_projection:active-task-summary:95d91f11b454b1e266c6fc302bf9b909d5fd2f91f4288a1a8ccb074e7cf40cfc -->
+- Issue 32 S09 content methods reviewed in a stacked worktree. Owner evaluation and market follow-up are pending. <!-- memory_record_projection:active-task-summary:75cef6bf082d3b6183fcb36e26ca60d0c1494730aec72193cd64c385f57ad043 -->
