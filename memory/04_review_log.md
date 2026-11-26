@@ -69,3 +69,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-private-receipts.json -> exit_code=0 (20 reopened Private receipts, matching local watch links and public record privacy scan). Independent review approved all 20 evidence rows, file scope and authorization. At base 54cc1e819281ad8678002efc07b8697ecf71e758, uv sync --locked and uv run --locked pytest passed (80 tests), as did npm ci and npm run typecheck under Node 22.16.0. Studio playback and public market response are outside the recorded checks.
 - Next action: Owner continues private viewing. Public market observation starts only after a separately authorized publication.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:1c1b0b0f106bf5e6de7c093171826b11cd1cad77a7e12ac53e3f23085e24ce9f -->
+### Canonical memory checkpoint — cli-20261126-s09-private-review-v4
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `1c1b0b0f106bf5e6de7c093171826b11cd1cad77a7e12ac53e3f23085e24ce9f`
+- Commit binding: `e20c41a71caa80cc27fa93b61bfe14c7a724586d` (bound)
+- Record: Recorded the separate Owner Private-only authorization and Studio upload attempt for a supplemental v4. Studio reached its daily upload limit before returning a video ID or confirming Private visibility.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-private-v4-attempt.json -> exit_code=0 (exact approved artifact and package hashes matched the same-day quota receipt, and disclosure checks passed). Independent review approved the complete record. At prior branch head 5bf8331aaec4a6ab3c327d0d5671a0c51868ee0f, uv sync --locked and uv run --locked pytest passed (80 tests), as did npm ci and npm run typecheck on Node 22.16.0. Studio Private visibility and playback remain unverified. Public market observation is pending a separately authorized release.
+- Next action: Resume only when Studio accepts another upload and the Owner authorizes the action.
+- PLAN reconciliation: `not_applicable`
