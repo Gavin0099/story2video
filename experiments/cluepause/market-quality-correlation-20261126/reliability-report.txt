@@ -1,0 +1,139 @@
+# Reader reliability benchmark, reduced run
+
+RUNTIME
+  codex: codex-cli 0.163.0  sha256=2692c8c7bb2cf8b0
+  same binary as the original 160 records: False
+  model / reasoning effort: CLI default; autoloop.py pins no model and the original runs recorded none, so it cannot be matched to the original
+  autoloop.py: origin/codex/story-quality-autoloop:.agents/skills/story-quality-autoloop/scripts/autoloop.py  sha256=436393a8a5f1d210
+  protocol: story-quality-autoloop/v2
+
+  NOTE: the CLI binary differs from the original run, and no
+  record of the original model survives, so ONLY the A-vs-B
+  comparison isolates run-to-run variance. Any difference from
+  the original score also contains the runtime change.
+
+PER SCRIPT
+
+04-v7  band=borderline  original=91,91,93 (min 91.0)
+  panel A: 91,91,93             PASS  (70s)
+      reader-01.json total= 91  susp=5 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported
+      reader-02.json total= 91  susp=5 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported
+      reader-03.json total= 93  susp=5 refr=5 moti=4 caus=4 fair=5 visu=5  cores: supported
+  panel B: 91,91,91             FAIL  (71s)
+      reader-01.json total= 91  susp=5 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported
+      reader-02.json total= 91  susp=5 refr=5 moti=4 caus=4 fair=4 visu=5  cores: partial
+      reader-03.json total= 91  susp=5 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported
+  >>> GATE FLIP between panels: A=PASS B=FAIL
+  spread: A min=91 max=93 | B min=91 max=91 | min-to-min gap=0
+  dimensions that moved: fairness 5.00->4.67
+
+07-v5  band=borderline  original=91,91,95 (min 91.0)
+  panel A: 89,87,85             FAIL  (72s)
+      reader-01.json total= 89  susp=5 refr=4 moti=4 caus=5 fair=4 visu=5  cores: supported supported
+      reader-02.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+      reader-03.json total= 85  susp=4 refr=4 moti=4 caus=5 fair=4 visu=5  cores: supported supported
+  panel B: 82,85,85             FAIL  (72s)
+      reader-01.json total= 82  susp=4 refr=4 moti=4 caus=4 fair=4 visu=5  cores: supported supported
+      reader-02.json total= 85  susp=4 refr=4 moti=4 caus=5 fair=4 visu=5  cores: supported supported
+      reader-03.json total= 85  susp=4 refr=4 moti=4 caus=5 fair=4 visu=5  cores: supported supported
+  spread: A min=85 max=89 | B min=82 max=85 | min-to-min gap=3
+  dimensions that moved: suspense 4.33->4.00; causality 5.00->4.67; fairness 4.33->4.00
+
+05-v6  band=high  original=100,96,95 (min 95.0)
+  panel A: 92,91,92             PASS  (84s)
+      reader-01.json total= 92  susp=4 refr=5 moti=4 caus=5 fair=5 visu=5  cores: supported supported supported
+      reader-02.json total= 91  susp=4 refr=4 moti=5 caus=5 fair=5 visu=5  cores: supported supported supported
+      reader-03.json total= 92  susp=4 refr=5 moti=4 caus=5 fair=5 visu=5  cores: supported supported supported
+  panel B: 96,87,91             FAIL  (79s)
+      reader-01.json total= 96  susp=4 refr=5 moti=5 caus=5 fair=5 visu=5  cores: supported supported supported
+      reader-02.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported supported
+      reader-03.json total= 91  susp=4 refr=4 moti=5 caus=5 fair=5 visu=5  cores: supported supported supported
+  >>> GATE FLIP between panels: A=PASS B=FAIL
+  spread: A min=91 max=92 | B min=87 max=96 | min-to-min gap=4
+  dimensions that moved: reframe 4.67->4.33; motivation 4.33->4.67
+
+06-v7  band=high  original=92,92,92 (min 92.0)
+  panel A: 89,89,84             FAIL  (72s)
+      reader-01.json total= 89  susp=4 refr=5 moti=4 caus=4 fair=5 visu=5  cores: supported
+      reader-02.json total= 89  susp=4 refr=5 moti=4 caus=4 fair=5 visu=5  cores: supported
+      reader-03.json total= 84  susp=4 refr=4 moti=4 caus=4 fair=5 visu=5  cores: supported
+  panel B: 82,80,89             FAIL  (71s)
+      reader-01.json total= 82  susp=4 refr=4 moti=4 caus=4 fair=4 visu=5  cores: supported
+      reader-02.json total= 80  susp=4 refr=4 moti=4 caus=4 fair=3 visu=5  cores: partial
+      reader-03.json total= 89  susp=4 refr=5 moti=4 caus=4 fair=5 visu=5  cores: supported
+  spread: A min=84 max=89 | B min=80 max=89 | min-to-min gap=4
+  dimensions that moved: reframe 4.67->4.33; fairness 5.00->4.00
+
+01-v5  band=low  original=87,84,84 (min 84.0)
+  panel A: 87,87,87             FAIL  (74s)
+      reader-01.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+      reader-02.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+      reader-03.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+  panel B: 84,87,84             FAIL  (75s)
+      reader-01.json total= 84  susp=4 refr=4 moti=4 caus=4 fair=5 visu=5  cores: supported supported
+      reader-02.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+      reader-03.json total= 84  susp=4 refr=4 moti=4 caus=4 fair=5 visu=5  cores: supported supported
+  spread: A min=87 max=87 | B min=84 max=87 | min-to-min gap=3
+  dimensions that moved: causality 5.00->4.33
+
+02-v3  band=low  original=89,87,85 (min 85.0)
+  panel A: 82,82,87             FAIL  (75s)
+      reader-01.json total= 82  susp=4 refr=4 moti=4 caus=4 fair=4 visu=5  cores: supported partial
+      reader-02.json total= 82  susp=4 refr=4 moti=4 caus=4 fair=4 visu=5  cores: supported partial
+      reader-03.json total= 87  susp=4 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+  panel B: 91,92,86             FAIL  (75s)
+      reader-01.json total= 91  susp=5 refr=4 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+      reader-02.json total= 92  susp=4 refr=5 moti=4 caus=5 fair=5 visu=5  cores: supported supported
+      reader-03.json total= 86  susp=5 refr=4 moti=4 caus=4 fair=4 visu=5  cores: supported partial
+  spread: A min=82 max=87 | B min=86 max=92 | min-to-min gap=4
+  dimensions that moved: suspense 4.00->4.67; reframe 4.00->4.33; causality 4.33->4.67; fairness 4.33->4.67
+
+SUMMARY
+
+  scripts with two comparable panels: 6
+  gate verdict identical across panels: 4
+  GATE FLIPS: 2
+  failed or invalid invocations: 0
+
+WHAT CHANGED THE VERDICT
+
+  04-v7: reader-02.json marked a core partial; reader-02.json did not mark it clear
+  05-v6: reader-02.json scored 87, below 90
+
+PER-DIMENSION STABILITY (panel mean, A vs B)
+
+  suspense    identical on 4/6 scripts   mean |diff| = 0.17
+  reframe     identical on 3/6 scripts   mean |diff| = 0.17
+  motivation  identical on 5/6 scripts   mean |diff| = 0.06
+  causality   identical on 3/6 scripts   mean |diff| = 0.22
+  fairness    identical on 2/6 scripts   mean |diff| = 0.33
+  visuals     identical on 6/6 scripts   mean |diff| = 0.00
+
+CORES
+
+  valid reads: 36
+  reads marking at least one core not supported: 5
+
+ALL 36 TOTALS
+
+  80 82 82 82 82 84 84 84 85 85 85 86 87 87 87 87 87 87 87 89 89 89 89 91 91 91 91 91 91 91 91 92 92 92 93 96
+  at or above 90: 13 of 36
+
+AGAINST THE ORIGINAL VERDICT (confounded by the runtime change)
+
+  04-v7   original=PASS  A=PASS  B=FAIL
+  07-v5   original=PASS  A=FAIL  B=FAIL
+  05-v6   original=PASS  A=PASS  B=FAIL
+  06-v7   original=PASS  A=FAIL  B=FAIL
+  01-v5   original=FAIL  A=FAIL  B=FAIL
+  02-v3   original=FAIL  A=FAIL  B=FAIL
+
+COST
+  blind reads recorded: 36
+  input tokens: 1326375   output tokens: 41843
+  wall clock across invocations: 890 s
+  (token counts are what the CLI reported; no price is applied)
+
+This is an exploratory benchmark. Six scripts and two panels cannot
+establish the reliability of the scoring system, and nothing here
+says whether the gate predicts market performance.

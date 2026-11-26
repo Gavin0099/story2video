@@ -1,0 +1,17 @@
+{
+  "title": "二十七號夾在媽媽身上",
+  "first": "媽媽一把扯下「可取餐」白板上的 27 號牌，夾在自己圍裙胸口。我手上那碗麵才遞到一半，客人也還捏著取餐單。這台餐車一向是媽媽煮麵、我顧窗口。剛才我想接她手上的麵勺，她還把勺子往身後藏。",
+  "second": "客人把單子貼在窗口玻璃上，指著上面圈起來的「不要蔥」。我低頭一看，媽媽剛撒的蔥花還浮在湯上。我把那碗麵端回來，伸手去拿麵勺。媽媽又比我早一步拿到。我以為她要自己重煮，可她拿著勺子往窗口走。她幹嘛把 27 號夾在自己身上？",
+  "reveal": "媽媽站到我原本的位置，把麵勺柄朝我遞過來，再指指自己胸口的 27 號，朝客人鞠了個躬。她從收銀盒退了那碗的錢，客人收下，往旁邊挪一步等。我這才走進她平常站的位置，把那張圈了「不要蔥」的單子夾在鍋邊。等我端出新的一碗，媽媽還站在窗口，等客人低頭看過碗裡，才把 27 號牌解下來。",
+  "english": "Mom snatched number 27 off the pickup board and clipped it to her apron. I was halfway through handing over the bowl. At our food truck, Mom cooked and I worked the window. Earlier, she’d pulled the noodle strainer out of my reach.\n\nThe customer pressed their ticket to the glass and pointed to “no scallions.” Mom’s scallions were floating in the broth. I reached for the strainer. She got there first, then walked toward the window. Why was she wearing number 27?\n\nShe handed me the strainer, tapped the number on her apron, and bowed to the customer. She gave them their money back. While they waited, I clipped their ticket beside the pot and made them a fresh bowl.",
+  "cores": {
+    "27 號為什麼得重做": "客人的取餐單圈了「不要蔥」，媽媽煮的那碗卻撒了蔥花。女兒在交餐前把碗收了回來。",
+    "母女原本怎麼分工": "媽媽掌勺，女兒顧窗口。女兒想接手煮麵，媽媽先前把麵勺收走了。"
+  },
+  "hypothesis": "靜音看到第二段結尾時，至少五位初看者中有四位能指出蔥花下錯了，且至多兩位猜到媽媽會把麵勺交給女兒、自己留在窗口處理客人的退款。",
+  "change": "把舊稿的隊尾錄音改成一次出錯的交餐。用白板上的號碼牌、客人的取餐單和麵勺呈現撤下餐點、確認錯單與交換站位。餐車退掉這筆收入，並多出一碗麵。",
+  "belief_shift": "女兒以為媽媽又要把修正錯單的工作攬回去。看到媽媽戴著 27 號向客人低頭、退款，再把麵勺遞過來，才明白媽媽接手的是自己那碗麵的客訴，也願意讓女兒掌勺。",
+  "story": "07",
+  "version": "v5",
+  "parent": "063cc51d1d81f33ff3c7801a4af481740ef33778"
+}

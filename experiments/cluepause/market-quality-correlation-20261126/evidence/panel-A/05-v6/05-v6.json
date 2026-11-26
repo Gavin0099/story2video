@@ -1,0 +1,18 @@
+{
+  "title": "門縫裡的末頁｜05-v6",
+  "first": "開演前，姊姊趴在道具門邊，把一張紙折了又折，塞進門底。我翻到劇本最後，只剩一排撕破的紙邊。台上亮起姊姊謝幕用的圓燈。她等一下得在圓燈熄掉前走出去，單獨鞠躬。",
+  "second": "昨天彩排，門一摔上，我就卡在最後一句。姊姊替我說了。我拉開門，看著她，自己重說一遍。現在她把門一推，門底咬住紙楔，留下一掌寬的縫。露出來的紙角上，還有我用紅筆圈起來的「摔門」。開演鈴響了。我想親口說完那句，可是門縫正對著姊姊藏身的側台，她一走去謝幕，我就看不見她了。姊姊用我的末頁留住了門縫，等她走進圓燈裡，門縫還能留住什麼？",
+  "reveal": "演到最後，門撞上紙楔，停住了。圓燈亮起來，姊姊朝它跨了一步，又把腳收回來。她蹲回門縫後，讓我看見她的臉。我吸了一口氣。圓燈照著空台板，熄了。她還蹲在那裡，等我自己說完：「我還在這裡。」",
+  "english": "My sister folded a page and shoved it under the stage door. My script ended in a ragged edge. Her spotlight came on for a test. Tonight she'd have just seconds to take her solo bow.\n\nYesterday the door slammed and I froze. She said my last line. I opened the door, looked at her, and said it myself. Now the door caught on the folded page. My red circle around SLAM peeked out. What good was the gap once she left for her bow?\n\nThat night, the door caught. She stepped toward her light, then crouched where I could see her. The spotlight went out on bare boards. She stayed until I said, “I’m still here.”",
+  "cores": {
+    "末頁卡住門": "紙楔上露出我圈過的「摔門」，讓觀眾認出那是被撕下的末頁，也看見它把門停在同一個位置。",
+    "門縫要看得到姊姊": "彩排時，我看著姊姊才自己說完末句。門縫對著她所在的側台，她走去謝幕就會離開我的視線。",
+    "謝幕有時限": "姊姊得趁圓燈亮著走到台上，才有自己的謝幕。"
+  },
+  "hypothesis": "靜音試看在第二段末暫停，多數觀眾能從紙角和門的動作認出末頁的用途，並指出姊姊去謝幕就會離開門縫。看完後，再請他們說出誰放棄了什麼，以及她為什麼留下。",
+  "change": "保留末頁折成紙楔的物理解法，用劇本的撕痕和紙楔露出的紅圈連起失蹤的末頁，再用限時亮起的謝幕燈，讓姊姊在演出當下做出有代價的選擇。",
+  "belief_shift": "第二段讓觀眾以為門縫只能在姊姊離開前幫上忙。空著的圓燈熄滅後，觀眾才看懂，姊姊留出那道縫，也願意放掉自己的謝幕，一直蹲在那裡等妹妹親口說完。",
+  "story": "05",
+  "version": "v6",
+  "parent": "063cc51d1d81f33ff3c7801a4af481740ef33778"
+}

@@ -33,8 +33,13 @@ def cluepause_rows(rows, now):
         slic = "S1" if r["cohort"] == "new" else "S4"
         scope = ("CluePause retention ten (new cohort)" if r["cohort"] == "new"
                  else "CluePause old cohort")
+        # Only D1 has a data column upstream; D3 and D7 have nowhere to land,
+        # so they can never read as collected. Keyed by window so adding a
+        # column later is a one-line change here.
+        collected = {"D1": bt.num(r["d1_views"]) is not None,
+                     "D3": False, "D7": False}
         for days, name in ((1, "D1"), (3, "D3"), (7, "D7")):
-            has = (name == "D1" and bt.num(r["d1_views"]) is not None)
+            has = collected[name]
             state = bt.window_state(published, days, has, now)
             if state == "COLLECTED":
                 continue

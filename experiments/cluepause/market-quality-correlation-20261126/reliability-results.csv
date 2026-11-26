@@ -1,0 +1,37 @@
+version_id,band,panel,reader,valid,total,clear,cores,critical_issues,input_tokens,output_tokens,suspense,reframe,motivation,causality,fairness,visuals
+01-v5,low,A,reader-01.json,True,87,True,店家週週用無薪試工頂班=supported ; 讓已做過的人回來留下紀錄=supported,0,37002,1269,4,4,4,5,5,5
+01-v5,low,A,reader-02.json,True,87,True,店家週週用無薪試工頂班=supported ; 讓已做過的人回來留下紀錄=supported,0,36999,1258,4,4,4,5,5,5
+01-v5,low,A,reader-03.json,True,87,True,店家週週用無薪試工頂班=supported ; 讓已做過的人回來留下紀錄=supported,0,36956,1114,4,4,4,5,5,5
+01-v5,low,B,reader-01.json,True,84,True,店家週週用無薪試工頂班=supported ; 讓已做過的人回來留下紀錄=supported,0,37004,1180,4,4,4,4,5,5
+01-v5,low,B,reader-02.json,True,87,True,店家週週用無薪試工頂班=supported ; 讓已做過的人回來留下紀錄=supported,0,36923,1258,4,4,4,5,5,5
+01-v5,low,B,reader-03.json,True,84,True,店家週週用無薪試工頂班=supported ; 讓已做過的人回來留下紀錄=supported,0,36987,1207,4,4,4,4,5,5
+02-v3,low,A,reader-01.json,True,82,False,燈改為照退款公告=supported ; 父親獨自出面退款=partial,0,36973,1266,4,4,4,4,4,5
+02-v3,low,A,reader-02.json,True,82,False,燈改為照退款公告=supported ; 父親獨自出面退款=partial,0,37013,1106,4,4,4,4,4,5
+02-v3,low,A,reader-03.json,True,87,True,燈改為照退款公告=supported ; 父親獨自出面退款=supported,0,37040,1237,4,4,4,5,5,5
+02-v3,low,B,reader-01.json,True,91,True,燈改為照退款公告=supported ; 父親獨自出面退款=supported,0,37087,1217,5,4,4,5,5,5
+02-v3,low,B,reader-02.json,True,92,True,燈改為照退款公告=supported ; 父親獨自出面退款=supported,0,37030,1124,4,5,4,5,5,5
+02-v3,low,B,reader-03.json,True,86,False,燈改為照退款公告=supported ; 父親獨自出面退款=partial,0,37010,1093,5,4,4,4,4,5
+04-v7,borderline,A,reader-01.json,True,91,True,重錄是為了去除哥哥提前搶進的聲音=supported,0,36604,988,5,4,4,5,5,5
+04-v7,borderline,A,reader-02.json,True,91,True,重錄是為了去除哥哥提前搶進的聲音=supported,0,36591,1045,5,4,4,5,5,5
+04-v7,borderline,A,reader-03.json,True,93,True,重錄是為了去除哥哥提前搶進的聲音=supported,0,36601,1067,5,5,4,4,5,5
+04-v7,borderline,B,reader-01.json,True,91,True,重錄是為了去除哥哥提前搶進的聲音=supported,0,36646,1185,5,4,4,5,5,5
+04-v7,borderline,B,reader-02.json,True,91,False,重錄是為了去除哥哥提前搶進的聲音=partial,0,36572,1131,5,5,4,4,4,5
+04-v7,borderline,B,reader-03.json,True,91,True,重錄是為了去除哥哥提前搶進的聲音=supported,0,36572,928,5,4,4,5,5,5
+05-v6,high,A,reader-01.json,True,92,True,末頁卡住門=supported ; 謝幕有時限=supported ; 門縫要看得到姊姊=supported,0,36995,1335,4,5,4,5,5,5
+05-v6,high,A,reader-02.json,True,91,True,末頁卡住門=supported ; 謝幕有時限=supported ; 門縫要看得到姊姊=supported,0,36990,1313,4,4,5,5,5,5
+05-v6,high,A,reader-03.json,True,92,True,末頁卡住門=supported ; 謝幕有時限=supported ; 門縫要看得到姊姊=supported,0,37100,1473,4,5,4,5,5,5
+05-v6,high,B,reader-01.json,True,96,True,末頁卡住門=supported ; 謝幕有時限=supported ; 門縫要看得到姊姊=supported,0,37048,1253,4,5,5,5,5,5
+05-v6,high,B,reader-02.json,True,87,True,末頁卡住門=supported ; 謝幕有時限=supported ; 門縫要看得到姊姊=supported,0,37007,1249,4,4,4,5,5,5
+05-v6,high,B,reader-03.json,True,91,True,末頁卡住門=supported ; 謝幕有時限=supported ; 門縫要看得到姊姊=supported,0,37015,1352,4,4,5,5,5,5
+06-v7,high,A,reader-01.json,True,89,True,爸爸配的是舊家的門鑰匙=supported,0,36543,1013,4,5,4,4,5,5
+06-v7,high,A,reader-02.json,True,89,True,爸爸配的是舊家的門鑰匙=supported,0,36588,981,4,5,4,4,5,5
+06-v7,high,A,reader-03.json,True,84,True,爸爸配的是舊家的門鑰匙=supported,0,36600,1149,4,4,4,4,5,5
+06-v7,high,B,reader-01.json,True,82,True,爸爸配的是舊家的門鑰匙=supported,0,36564,1131,4,4,4,4,4,5
+06-v7,high,B,reader-02.json,True,80,False,爸爸配的是舊家的門鑰匙=partial,0,36613,1085,4,4,4,4,3,5
+06-v7,high,B,reader-03.json,True,89,True,爸爸配的是舊家的門鑰匙=supported,0,36618,1171,4,5,4,4,5,5
+07-v5,borderline,A,reader-01.json,True,89,True,27 號為什麼得重做=supported ; 母女原本怎麼分工=supported,0,36837,1009,5,4,4,5,4,5
+07-v5,borderline,A,reader-02.json,True,87,True,27 號為什麼得重做=supported ; 母女原本怎麼分工=supported,0,36845,1154,4,4,4,5,5,5
+07-v5,borderline,A,reader-03.json,True,85,True,27 號為什麼得重做=supported ; 母女原本怎麼分工=supported,0,36839,1184,4,4,4,5,4,5
+07-v5,borderline,B,reader-01.json,True,82,True,27 號為什麼得重做=supported ; 母女原本怎麼分工=supported,0,36858,1075,4,4,4,4,4,5
+07-v5,borderline,B,reader-02.json,True,85,True,27 號為什麼得重做=supported ; 母女原本怎麼分工=supported,0,36886,1173,4,4,4,5,4,5
+07-v5,borderline,B,reader-03.json,True,85,True,27 號為什麼得重做=supported ; 母女原本怎麼分工=supported,0,36819,1070,4,4,4,5,4,5
