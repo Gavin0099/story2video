@@ -36,3 +36,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-final-methods.json -> exit_code=0 (80 tests). Local video typecheck and governance verification passed. Independent review completed for implementation tree 1005c59c0caf43c90882ed9c82341947fc4d6197.
 - Next action: Compare one edit at a time in Owner previews and record outcomes after individually authorized publication.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:720ecc13402b7e03815e2b86439b7256ff40f26a1f152b25fa8425edb8450d16 -->
+### Canonical memory checkpoint — cli-20261126-172216
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `720ecc13402b7e03815e2b86439b7256ff40f26a1f152b25fa8425edb8450d16`
+- Commit binding: `20313b77fb1808134b3d7f10f5e68a2bec1ba4bc` (bound)
+- Record: Added a timecoded post-encode review and revision procedure to the existing batch skill. Scoped the S09 production upper bound to ten per channel.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-final-director-review.json -> exit_code=0 (80 tests). Independent review covered the exact content workflow blob 222b2f7b40e0e5b61fa7f7bd1febbf81e9d12427.
+- Next action: Owner views rendered cuts and decides whether to authorize any further release work.
+- PLAN reconciliation: `not_applicable`
