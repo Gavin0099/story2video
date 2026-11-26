@@ -47,3 +47,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-final-director-review.json -> exit_code=0 (80 tests). Independent review covered the exact content workflow blob 222b2f7b40e0e5b61fa7f7bd1febbf81e9d12427.
 - Next action: Owner views rendered cuts and decides whether to authorize any further release work.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:3484c01b92cf7b8808aec0e770251164300d2df076630c6a48fa17f12c873b80 -->
+### Canonical memory checkpoint — cli-20261126-174141
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `3484c01b92cf7b8808aec0e770251164300d2df076630c6a48fa17f12c873b80`
+- Commit binding: `72de91f6da11fe87e245b698ee7892eed9cf6592` (bound)
+- Record: Connected topic research, hook design, shot diagnosis and continuity repair to their production stages. The next batch reads prior verified craft fixes and separately considers comparable market evidence.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-flow-adoption.json -> exit_code=0 (80 tests). Node 22.16.0 npm ci and video typecheck passed. Skill validation, relative links and independent scenario review passed.
+- Next action: Use the revised skill at the next authorized batch. Continue to keep Owner decisions, formal checks and market measurements independent.
+- PLAN reconciliation: `not_applicable`
