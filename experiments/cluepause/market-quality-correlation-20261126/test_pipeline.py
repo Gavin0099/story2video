@@ -14,6 +14,7 @@ import os
 import unittest
 
 import build_index
+import analyze_reliability
 import build_table
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -115,6 +116,13 @@ class Windows(unittest.TestCase):
         self.assertIsNone(build_table.parse_taipei(""))
         self.assertIsNone(build_table.parse_taipei("sometime last week"))
 
+    def test_parses_dot_net_seven_digit_fractions(self):
+        """WhyNest d1.csv stamps carry seven fractional digits; %f takes six."""
+        got = build_table.parse_taipei("2026-11-23T01:11:23.5546429+08:00")
+        self.assertIsNotNone(got)
+        self.assertEqual(got.hour, 1)
+        self.assertEqual(got.minute, 11)
+
     def test_closed_window_without_data_is_not_called_pending(self):
         pub = build_table.parse_taipei("2026-11-21 21:25:37+08:00")
         self.assertEqual(build_table.window_state(pub, 3, False, self.now),
@@ -192,6 +200,82 @@ class Statistics(unittest.TestCase):
                 {"code": "e", "v": "3"}, {"code": "f", "v": "900"}]
         self.assertIn("f", build_table.outlier_codes(rows, "v"))
         self.assertNotIn("c", build_table.outlier_codes(rows, "v"))
+
+
+class ReliabilityAnalysis(unittest.TestCase):
+    def rows(self, totals, cores="supported", issues=()):
+        """Build reader rows the way read_panel does: `clear` is derived from
+        cores, critical issues and the critical dimensions, never passed in."""
+        out = []
+        for i, t in enumerate(totals):
+            scores = dict.fromkeys(analyze_reliability.DIMS, 4)
+            core_map = {"c": cores}
+            out.append({"reader": "reader-%02d.json" % (i + 1), "valid": True,
+                        "total": t, "critical_issues": list(issues),
+                        "cores": core_map, "scores": scores,
+                        "clear": analyze_reliability.is_clear(
+                            scores, core_map, list(issues)),
+                        "usage": {"input_tokens": 0, "output_tokens": 0}})
+        return out
+
+    def test_total_matches_the_published_weights(self):
+        best = dict.fromkeys(analyze_reliability.DIMS, 5)
+        self.assertEqual(analyze_reliability.total(best), 100)
+        vals = {"suspense": 4, "reframe": 4, "motivation": 5,
+                "causality": 5, "fairness": 5, "visuals": 5}
+        self.assertEqual(analyze_reliability.total(vals), 91)
+
+    def test_three_passing_readers_pass(self):
+        self.assertEqual(analyze_reliability.verdict(self.rows([91, 91, 93])),
+                         "PASS")
+
+    def test_a_single_low_reader_fails_the_panel(self):
+        self.assertEqual(analyze_reliability.verdict(self.rows([96, 87, 91])),
+                         "FAIL")
+
+    def test_a_partial_core_fails_even_when_every_score_passes(self):
+        """04-v7 panel B: 91/91/91 and still FAIL, on a cores verdict."""
+        rows = self.rows([91, 91, 91])
+        bad = self.rows([91], cores="partial")[0]
+        rows[1] = bad
+        self.assertFalse(bad["clear"])
+        self.assertEqual(analyze_reliability.verdict(rows), "FAIL")
+
+    def test_missing_readers_are_invalid_not_a_failure(self):
+        self.assertTrue(analyze_reliability.verdict(self.rows([91, 91]))
+                        .startswith("INVALID"))
+
+    def test_clear_is_a_conjunction_not_just_absence_of_critical_issues(self):
+        """autoloop.read_trial ANDs cores, critical issues and the critical
+        dimensions. Exporting it as an OR made the published CSV recompute a
+        failing panel as a pass."""
+        good = dict.fromkeys(analyze_reliability.DIMS, 5)
+        self.assertTrue(analyze_reliability.is_clear(good, {"c": "supported"}, []))
+        self.assertFalse(analyze_reliability.is_clear(good, {"c": "partial"}, []))
+        self.assertFalse(analyze_reliability.is_clear(good, {"c": "supported"},
+                                                      ["something"]))
+        low = dict(good, fairness=2)
+        self.assertFalse(analyze_reliability.is_clear(low, {"c": "supported"}, []))
+
+    def test_exported_clear_column_reproduces_the_published_verdicts(self):
+        """Reading reliability-results.csv on its own, with the documented
+        rule, must give the same gate verdicts the write-up reports."""
+        path = os.path.join(HERE, "reliability-results.csv")
+        if not os.path.exists(path):
+            self.skipTest("benchmark not run in this checkout")
+        with open(path, encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        panels = {}
+        for r in rows:
+            panels.setdefault((r["version_id"], r["panel"]), []).append(r)
+        verdicts = {k: (len(v) == 3
+                        and all(float(x["total"]) >= 90 and x["clear"] == "True"
+                                for x in v))
+                    for k, v in panels.items()}
+        self.assertTrue(verdicts[("04-v7", "A")])
+        self.assertFalse(verdicts[("04-v7", "B")], "the headline gate flip")
+        self.assertTrue(verdicts[("05-v6", "A")])
+        self.assertFalse(verdicts[("05-v6", "B")])
 
 
 class RepoIntegration(unittest.TestCase):

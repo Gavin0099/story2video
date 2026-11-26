@@ -1,0 +1,17 @@
+{
+  "story": "02",
+  "version": "v3",
+  "parent": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "title": "窗裡的求救燈",
+  "first": "印刷店歇業那天，爸從玻璃門上撕掉我的名字，把紅燈的腳踏開關拔下來塞給我。以前店裡忙不過來，他踩一下，我就知道要下樓。吳太太捏著取件單等在門外，我提起行李走向計程車。身後的紅燈忽然亮了。開關還在我口袋裡。",
+  "second": "回頭時，燈已從樓梯口搬到窗邊，照著一張新貼的紙。紙上寫著「未交件的訂單，憑單退款」，署名只有爸爸。我以為他撕了我的名字，是想把賣店的錢全拿走。他卻隔著櫃台遞給我一個信封，封面寫著「你的那份」，封口沒動過。吳太太把取件單遞向爸爸，我也把手伸了過去。\n\n爸爸拆掉開關、撕掉我的名字，為什麼還要點亮那盞燈？",
+  "reveal": "爸把燈從腳踏開關上拆下來，直接插到牆上。他仍有一屋子沒做完的訂單，卻把紅燈移出樓梯口。這一次，它照的是給客人看的退款告示。撕掉我的名字、告示只簽他自己，都是為了讓我帶著我的那份走，把善後留給他。\n\n我在他名字旁邊簽上自己的名字，接過吳太太的單子。信封裡是我搬出去要用的錢。我拆開它，數了第一筆退款。",
+  "english": "On our print shop’s last day, Dad peeled my name off the door and handed me the red lamp’s foot switch. He used it to call me downstairs. Mrs. Wu was waiting with her claim ticket. I headed for my taxi. The lamp came on. The switch was still in my pocket.\n\nDad had moved the lamp to the window. It lit a sign offering refunds on unfinished orders. He’d signed it alone. I thought he wanted all the money from the sale. Then he handed me my share, still sealed. Mrs. Wu held out her ticket. I reached for it too. Why light the lamp after taking away the switch and my name?\n\nHe’d plugged it straight into the wall. The light was for the customers. He meant to handle the refunds himself. I signed beside him, tore open my envelope, and paid Mrs. Wu.",
+  "cores": {
+    "燈改為照退款公告": "爸爸點燈是讓尚未拿到訂單的客人看見退款告示。燈由樓梯口移到窗邊，舊腳踏開關已拔掉。直接插牆是合理的揭曉細節。",
+    "父親獨自出面退款": "父親讓女兒拿走她應得的分款，自己以唯一署名處理舊訂單退款，撕掉名字是免除女兒的負擔。女兒補簽及付款是揭曉中的選擇。"
+  },
+  "hypothesis": "用燈的位置、告示署名與仍密封的分款支撐同一重解，讓解答的焦點從電路轉到父女對善後責任的選擇。",
+  "change": "以印刷店結業時的退款替換淹水反射。題卡在父女同時伸手時停下，將補簽與拆封退款保留到揭曉。",
+  "belief_shift": "燈亮時以為父親又叫女兒幫忙，得知燈是給顧客的之後，重新理解他撕名是準備獨自承擔。"
+}

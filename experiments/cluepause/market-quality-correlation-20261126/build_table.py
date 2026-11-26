@@ -86,6 +86,8 @@ def parse_taipei(text):
         return None
     s = text.strip().replace("T", " ")
     s = re.sub(r"\s*\+08:?00$", "", s)
+    # .NET writes seven fractional digits; %f accepts at most six.
+    s = re.sub(r"(\.\d{6})\d+$", r"\1", s)
     for fmt in ("%Y-%m-%d %H:%M:%S.%f", "%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"):
         try:
             return dt.datetime.strptime(s, fmt).replace(tzinfo=TAIPEI)

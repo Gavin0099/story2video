@@ -85,13 +85,13 @@ S2,static-ten public five,all five,,-,,MISSING_FIELD,Studio publish time (hh:mm)
 S3,WhyNest Lab public ten,01,a-tHhhJhNG8,D1,2026-11-23T00:42:19+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
 S3,WhyNest Lab public ten,02,EVWSVM3KBzA,D1,2026-11-23T00:42:28+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
 S3,WhyNest Lab public ten,03,cezLqruPBzQ,D1,2026-11-23T00:43:59+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,04,cHh2x9hWWDs,D1,2026-11-23T01:11:23.5546429+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,05,NsZLF8Qeryo,D1,2026-11-23T01:15:41.0172916+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,06,sbYYwZ5dvog,D1,2026-11-23T01:19:48.5235252+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,09,_Ab2h9g4zhE,D1,2026-11-23T01:21:10.0275225+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,13,Gnjv-OT0LHA,D1,2026-11-23T01:22:24.9767516+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,14,eeoDtRKgBsk,D1,2026-11-23T01:23:45.1193298+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
-S3,WhyNest Lab public ten,15,sqMni_nnJ3k,D1,2026-11-23T01:24:56.1805718+08:00,UNKNOWN_PUBLISH_TIME,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,04,cHh2x9hWWDs,D1,2026-11-23T01:11:23.5546429+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,05,NsZLF8Qeryo,D1,2026-11-23T01:15:41.0172916+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,06,sbYYwZ5dvog,D1,2026-11-23T01:19:48.5235252+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,09,_Ab2h9g4zhE,D1,2026-11-23T01:21:10.0275225+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,13,Gnjv-OT0LHA,D1,2026-11-23T01:22:24.9767516+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,14,eeoDtRKgBsk,D1,2026-11-23T01:23:45.1193298+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
+S3,WhyNest Lab public ten,15,sqMni_nnJ3k,D1,2026-11-23T01:24:56.1805718+08:00,CLOSED_NOT_COLLECTED,views / engaged views / stayed to watch % / avg % viewed / subscribers delta,d1.csv data_status=waiting
 S4,quality-market join,26M-B,2mLUR21IRg0,-,,VERSION_UNVERIFIED,not a Studio item: locate the frozen story text,"no readable story text for this master, so no score can be attached; it is neither a pass nor a failure"
 S5,per-second retention,"all but 04-v7, V09",,-,,NOT_AVAILABLE,Studio retention card (per-second curve),only two curves exist; the rest have too few views to render one
 S5,shorts feed metrics,all,,D1,,NEVER_CAPTURED,shorts_feed_shown and stayed_to_watch_pct,both columns exist in first-24h-and-timing.csv but are empty for every row; only lifetime stayed % was captured

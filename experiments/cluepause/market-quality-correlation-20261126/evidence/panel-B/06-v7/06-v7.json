@@ -1,0 +1,16 @@
+{
+  "story": "06",
+  "version": "v7",
+  "parent": "063cc51d1d81f33ff3c7801a4af481740ef33778",
+  "title": "她說不要，爸爸還是開了配鑰匙機",
+  "first": "莉娜才說不要，爸爸就打開了配鑰匙機。剛才，他朝莉娜伸手，要她把新公寓的鑰匙給他。「我也配一把。」莉娜來鎖店是要還舊家的鑰匙。她把那把鑰匙推過工作檯。紅色鑰匙頭的裂痕正好穿過掛鑰匙圈的小孔。",
+  "second": "莉娜伸手想關掉機器。她另一手握著房東封好的信封，隔著紙摸到了鑰匙的齒。\n\n爸爸正在配哪扇門的鑰匙？",
+  "reveal": "爸爸把剛配好的鑰匙放在那把裂開的鑰匙旁，朝莉娜推了過去。莉娜把新的那把扣上自己的鑰匙圈。\n\n爸爸把最後一箱東西搬到她的新公寓。他放下箱子，敲了敲門。莉娜開了門。",
+  "english": "Lina’s dad switched on his key cutter as soon as she said no. He’d held out his hand for her new apartment key. “I’ll cut myself a spare.” Lina had come to his shop to give back her old house key. She slid it across his bench. Its red head had cracked through the ring hole.\n\nLina reached for the switch. In her other hand she felt a key’s teeth through her landlord’s sealed envelope. Which door was Dad cutting a key for?\n\nDad set a fresh copy beside her cracked key and slid it toward her. Lina slipped it onto her ring. Dad brought the last box to her apartment, set it down, and knocked. She opened the door.",
+  "cores": {
+    "爸爸配的是舊家的門鑰匙": "莉娜把裂開的舊家鑰匙推給爸爸。她另一手還握著房東封好的信封，隔著紙摸得到新公寓鑰匙的齒。"
+  },
+  "hypothesis": "爸爸伸手要鑰匙後立刻開機，觀眾可能先順著莉娜的反應，以為他要配新公寓的備用鑰匙。信封裡摸得到的鑰匙齒讓觀眾重新判斷他正在配哪一把。",
+  "change": "移除押金與買賣，用裂開的鑰匙頭和封好的信封建立一個可驗證的問題。看讀者能否在揭曉前推到舊家的門，同時對爸爸會把新配的鑰匙交給誰保有好奇。",
+  "belief_shift": "莉娜以為爸爸會無視她的拒絕。他交給她一把仍能回舊家的鑰匙，到了她的新家則放下箱子敲門，等她親手打開。"
+}

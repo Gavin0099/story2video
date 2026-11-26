@@ -1,0 +1,113 @@
+{
+  "protocol": "story-quality-autoloop/v2",
+  "runtime": {
+    "cli_sha256": "2692c8c7bb2cf8b0aefe638741fc90236f4b824c59578ce84994f9de58200993",
+    "profile": [
+      "--no-daemon",
+      "-s",
+      "read-only",
+      "-a",
+      "never",
+      "--disable",
+      "shell_tool",
+      "--disable",
+      "shell_snapshot",
+      "--disable",
+      "unified_exec",
+      "--disable",
+      "view_image",
+      "--disable",
+      "image_generation",
+      "--disable",
+      "code_mode_host",
+      "--disable",
+      "apps",
+      "--disable",
+      "plugins",
+      "--disable",
+      "multi_agent",
+      "--disable",
+      "multi_agent_v2",
+      "--disable",
+      "memories",
+      "--disable",
+      "hooks",
+      "--disable",
+      "skill_search",
+      "-c",
+      "web_search=\"disabled\"",
+      "-c",
+      "project_doc_max_bytes=0"
+    ],
+    "credentials": "keyring",
+    "exec_flags": [
+      "exec",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--json"
+    ],
+    "windows_flags": [
+      "-c",
+      "windows.sandbox=\"elevated\""
+    ],
+    "environment_keys": [
+      "ALLUSERSPROFILE",
+      "APPDATA",
+      "COMMONPROGRAMFILES",
+      "HOMEDRIVE",
+      "HOMEPATH",
+      "LOCALAPPDATA",
+      "PROCESSOR_ARCHITECTURE",
+      "PROGRAMDATA",
+      "PROGRAMFILES",
+      "PROGRAMFILES(X86)",
+      "SYSTEMDRIVE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "USERDOMAIN",
+      "USERNAME",
+      "USERPROFILE",
+      "WINDIR"
+    ],
+    "login": "chatgpt"
+  },
+  "drafts": {
+    "02-v3": "c31bee27846727559ce1b289354d0c18baa58cd2b5da9d0b30b648d61c817662"
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "key": "02-v3",
+      "draft_sha256": "c31bee27846727559ce1b289354d0c18baa58cd2b5da9d0b30b648d61c817662",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 2,
+      "key": "02-v3",
+      "draft_sha256": "c31bee27846727559ce1b289354d0c18baa58cd2b5da9d0b30b648d61c817662",
+      "probe": 1,
+      "mode": "formal"
+    },
+    {
+      "number": 3,
+      "key": "02-v3",
+      "draft_sha256": "c31bee27846727559ce1b289354d0c18baa58cd2b5da9d0b30b648d61c817662",
+      "probe": 1,
+      "mode": "formal"
+    }
+  ],
+  "probes": [
+    "67c206c84fcccd3063100b5d1d729b5a6f55033c925c2193ed250c0d5833c521"
+  ],
+  "rubric_sha256": "c7bb71da8e3a3e3fa0dbce1f1efa296de4459799ac883419293bac14f1cb5ba3",
+  "base_git_sha": "306c472c7b494c1ab13c79bb9c0271ec987c6812",
+  "reader_sha256": {
+    "1": "0a5f9d77375de71b0ba3847bd8d5c04234cfe9fa2a91e9e24139973996912983",
+    "2": "3094bd3220db7500bff264310d277840fcfb0ca73f2ae0c197d30dc9a17666f7",
+    "3": "652c7b41e30e57b1d515cb1910aeb9232b8b3af0b0c8e8e3c98d9861ea94ef75"
+  }
+}
