@@ -102,3 +102,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-prop-photo-payoff.json -> exit_code=0 (80 tests). Video typecheck and skill validation passed. Independent review found no P0/P1 on workflow blob b67eb1f034c037a17fbb6235a0c15e94f7c93b02.
 - Next action: Apply the method to suitable shots and record whether each reviewed ending delivers the intended feeling.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:fee6afbc343c87d5a9274413a8b00fb6aeb09fbdf625a7662e0ea280faa8ce6e -->
+### Canonical memory checkpoint — cli-20261126-233302
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `fee6afbc343c87d5a9274413a8b00fb6aeb09fbdf625a7662e0ea280faa8ce6e`
+- Commit binding: `f6182130055d4f7b6f6e5f5e945a17a0e801fb5b` (bound)
+- Record: Added source-based story research and mechanism-only original writing to the existing CluePause editorial workflow.
+- Validation boundary: PASS: artifacts/evidence/test-results/story-research-flow.json -> exit_code=0 (80 tests); installed skill validator passed; independent editorial workflow review found no P0/P1.
+- Next action: Compare original text trials privately and validate shortlisted films against their own audience cohorts after owner approval.
+- PLAN reconciliation: `not_applicable`

@@ -20,3 +20,5 @@ projection superseded them. History only; not current state.
 - New productions use a versioned channel look and validate the selected shots, inserts and final cut. <!-- memory_record_projection:active-task-summary:a6bcb2428f09370f0c3b412c2fb949020ceb1013cc20f93678d19b155286a82a -->
 
 - Apply the contextual sound and contact guidance through the existing production and review workflow. <!-- memory_record_projection:active-task-summary:17b487e07da8f0dd19df9375bf5cfe71d8019328be2d19d19f87c074b0e76634 -->
+
+- Verified the photographic clue and horror ending guidance in the existing Shorts production flow. <!-- memory_record_projection:active-task-summary:2e93bf424d117b3d3a2f39ad2862bbedb688f852e75a72f1e6cc8002e4b8f710 -->
