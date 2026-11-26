@@ -11,6 +11,8 @@ description: Plan and deliver a batch of original or rights-cleared classic Clue
 
 開始各階段前，先讀取該階段引用的 skill。按名稱從專案或使用者已安裝的 skills 尋找。缺少所需 skill 或隔離評分程式時，先完成可獨立驗證的階段，記下待補項目和該階段狀態。
 
+單片與批次共用[頻道視覺規格](references/visual-style.md)。CluePause 在分鏡、備素材和返修開始前讀寫實短劇規格。WhyNest 依科學主張選圖解或實拍方式。
+
 ## 定義交付數量
 
 - 從 YouTube Studio 的 Shorts 清單核對指定頻道和實際可見性。對上批次的作品代碼、成片版本與影片 ID。把已公開、已上傳待試看、已成片待上傳、尚未完成各自計數。排除重複上傳、A/B 測試及批次以外的草稿。總成片數由唯一作品相加，頻道公開數由 Studio 核對。使用者只說「做到 N 支」時，依對話確定累計或新增，並說明採用的口徑。
