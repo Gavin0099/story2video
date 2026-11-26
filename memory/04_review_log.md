@@ -58,3 +58,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-flow-adoption.json -> exit_code=0 (80 tests). Node 22.16.0 npm ci and video typecheck passed. Skill validation, relative links and independent scenario review passed.
 - Next action: Use the revised skill at the next authorized batch. Continue to keep Owner decisions, formal checks and market measurements independent.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:e19bce76b5ff21ee1fc2b5c94c2ff95942d7ebf3bbe8310bf96e145a145251e3 -->
+### Canonical memory checkpoint — cli-20261126-s09-private-review
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `e19bce76b5ff21ee1fc2b5c94c2ff95942d7ebf3bbe8310bf96e145a145251e3`
+- Commit binding: `798abe466b0ddff6fe22881be63c6a7e86599720` (bound)
+- Record: Recorded the Owner's authorization for S09 private review and the 20 reopened Studio Private visibility results using opaque job references and exact preview SHA-256 digests.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-private-receipts.json -> exit_code=0 (20 reopened Private receipts, matching local watch links and public record privacy scan). Independent review approved all 20 evidence rows, file scope and authorization. At base 54cc1e819281ad8678002efc07b8697ecf71e758, uv sync --locked and uv run --locked pytest passed (80 tests), as did npm ci and npm run typecheck under Node 22.16.0. Studio playback and public market response are outside the recorded checks.
+- Next action: Owner continues private viewing. Public market observation starts only after a separately authorized publication.
+- PLAN reconciliation: `not_applicable`
