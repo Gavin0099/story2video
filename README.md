@@ -2,6 +2,8 @@
 
 以 Python CLI、Episode JSON 和本機 SQLite 管理影片製作流程。M0 交付本機分集資料與狀態基礎。完整規格與各階段驗收見 [PLAN.md](PLAN.md)。
 
+製作 CluePause 與 WhyNest Lab Shorts 時，從[批次製片 Skill](.agents/skills/story2video-shorts-batch/SKILL.md)進入。既有工具、四類編輯方法和公開影片清單見 [Issue #32 製片盤點](experiments/issue-32/README.md)。
+
 ## 安裝與驗收
 
 使用 Python 3.13、Node 22.16.0 和 uv 0.13.9。首次安裝從套件 registry 下載開發依賴。CLI 與測試可在安裝後離線執行，無需提供任何憑證。
