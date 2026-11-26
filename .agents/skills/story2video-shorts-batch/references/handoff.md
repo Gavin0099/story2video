@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | 海龜湯選題、編輯 | [Story Generation b4320b0810d912d095e9d4b9ecfc5b44e11465c8](https://github.com/Gavin0099/story2video/blob/b4320b0810d912d095e9d4b9ecfc5b44e11465c8/.agents/skills/story-generation/SKILL.md) | 用答案倒推題面，列替代解釋及揭曉前能排除它的線索。保留 EN 旁白與 zh-Hant 字幕的揭曉時點。 |
 | CluePause 權利及故事品質 | [Shorts Batch 1a30c369a2f06fcb7304aa2dc301d27bdab9f517](https://github.com/Gavin0099/story2video/tree/1a30c369a2f06fcb7304aa2dc301d27bdab9f517/.agents/skills/story2video-shorts-batch) | 隔離三位新讀者分段盲評，每位至少 90，核心因果均有線索支持，且無關鍵缺陷。保留凍結稿、逐輪原始證據和 AutoLoop 原有上限。權利查核逐篇對應 SHA-256，狀態用 approved、pending_permission、pending_verification 或 rejected。詳見 [既有權利規則](story-rights.md)。 |
-| 首看及開場 | [Shorts Viewer Gate f21677f7a78d8e68fbb0c23fd12952640efda1fb](https://github.com/Gavin0099/story2video/blob/f21677f7a78d8e68fbb0c23fd12952640efda1fb/skills/shorts-viewer-gate/references/story2video.md) | 用未見同版腳本的觀眾核對開場及故事。有適用的既有海龜湯真人門檻時，五位有效同版首看中至少四位說對核心答案，且至少三位覺得反轉有趣並能說出理解改變。樣本不足就待驗。日常詭異和都市怪談的 [genre gate 草案](https://github.com/Gavin0099/story2video/blob/f21677f7a78d8e68fbb0c23fd12952640efda1fb/experiments/cluepause/genre-pilot-20261124/gates.md) 仍待採納，草案不能產生正式 PASS。 |
+| 首看及開場 | [Shorts Viewer Gate f21677f7a78d8e68fbb0c23fd12952640efda1fb](https://github.com/Gavin0099/story2video/blob/f21677f7a78d8e68fbb0c23fd12952640efda1fb/skills/shorts-viewer-gate/references/story2video.md) | 用從未接觸同題稿、成片或解答的觀眾核對開場及故事。有適用的既有海龜湯真人門檻時，五位有效同版首看中至少四位說對核心答案，且至少三位覺得反轉有趣並能說出理解改變。樣本不足就待驗。日常詭異和都市怪談的 [genre gate 草案](https://github.com/Gavin0099/story2video/blob/f21677f7a78d8e68fbb0c23fd12952640efda1fb/experiments/cluepause/genre-pilot-20261124/gates.md) 仍待採納，草案不能產生正式 PASS。 |
 | WhyNest 科普 | [WhyNest 批次 067d103d07c7c5f5eb7bc5c795bdda893c041b1a](https://github.com/Gavin0099/story2video/blob/067d103d07c7c5f5eb7bc5c795bdda893c041b1a/experiments/science-shorts/script-library/batch-006/README.md) | 核心主張至少兩個獨立發布者支持，事實與圖解交不同 agent 審查。兩位讀者先各自鎖定開場分數，再看雙語定稿與分鏡。各至少 85 分且因果複述和遷移應用兩題都答對。分項沿用 15／25／25／20／10／5。圖解列控制條件、實拍與示意之別，保留實驗的可驗證限制。 |
 | CluePause 分鏡與渲染 | [Static Storyboard 3170e0bab567007c6c5fc1fccf97e10fb02c3af1](https://github.com/Gavin0099/story2video/tree/3170e0bab567007c6c5fc1fccf97e10fb02c3af1/experiments/cluepause/static-ten-20261124/pipeline) | 按 pipeline 合約備 `story.md`、`shots.json`、`references.json`，使用 canonical 角色／道具／場景和 9:16 裁切。先執行 `python -B "<pipeline>/static_storyboard.py" validate "<job>"`，圖像和本機音訊就緒後用同工具 `run "<job>"`。參考 git 版本中的 tools lock 及 README 綁定 FFmpeg、ffprobe、字型、本機 Kokoro 或既有規格 WAV。輸出記實際 cue／切鏡時間及解碼結果。 |
 | WhyNest 分鏡與渲染 | WhyNest 批次的各集「製片交接」及既有本機 Remotion／向量圖解 | 交付 EN／zh-Hant cue、逐鏡因果、示意限制、畫面標籤和控制條件。保留可編輯圖層供事實及圖解查核。先確認相容 composition 與素材，缺相容渲染入口就記 HOLD。 |
@@ -32,6 +32,10 @@
 | 開場動作或科普圖解似乎被景別、字幕或畫面元素蓋過。 | 借 Novoads `analyze-video` 的鏡頭欄位，針對問題鏡頭記切點、景別、主體動作、口白、螢幕文字及先後節拍，找出手機上應先看見的證據。 [Novoads 分析方法](https://github.com/novoads/agent-skills/blob/82e6d0628d848d36fcf441549d7d77c7b399396e/skills/analyze-video/SKILL.md) |
 | 切鏡、留白、重複動作或音效讓線索難讀。 | 用 `short-drama-breakdown` 把實際鏡頭時長和轉場對到其敘事功能，先分辨必要讀圖時間、反應及重複資訊。用剪輯單標記移動、縮短或替換的位置，實際修片走原剪輯工具。 [鏡頭量測與解讀](https://github.com/zenstory-ai/drama-skills/blob/82a1ce5750138ada79be6904d1ec72d6a285105d/skills/short-drama-breakdown/references/measure-and-read.md) · [剪輯方法](https://github.com/zenstory-ai/drama-skills/blob/82a1ce5750138ada79be6904d1ec72d6a285105d/skills/short-drama-edit/references/editing-guide.md) |
 | 角色、道具、空間或圖解跨鏡跳變，或需決定如何返工。 | 用 `short-drama-review` 查接點前後的同一參照。定位時間碼後標需重做素材、修剪或重排字幕，回驗時重看相鄰鏡頭與片尾。 [成片瑕疵與返工](https://github.com/zenstory-ai/drama-skills/blob/82a1ce5750138ada79be6904d1ec72d6a285105d/skills/short-drama-review/references/generated-media.md) |
+
+完整播放的聲畫觀察、靜音播放、順序抽格、ASR、波形、已知解答的審片，各自記錄方法與限制。先做 SHA-256 和全流解碼可以確認檔案與版本，再依[匿名成片首看](content-workflow.md#cluepause-理解檢查與返修)收集理解證據。若片子依靠聲音辨別因果，實際不能聽的審片者只回報可查的畫格、時碼或波形。
+
+**同一參照拍因果。** 若觀眾只辨認到結果，先找漏看的觸發動作與第一個錯誤推論。保持位置與方向，用同一可辨參照拍清動作完成、狀態改變及角色反應。需要對證時，從相同視角重現參照，讓差異落在故事要交代的變化。刪掉搶注意的背景道具或需要另建空間關係的插鏡。用新版本回驗因果，並另外記錄情緒效果。
 
 ## 最小適用範例與回退
 

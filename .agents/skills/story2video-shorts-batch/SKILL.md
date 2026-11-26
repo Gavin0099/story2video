@@ -26,7 +26,7 @@ description: Plan and deliver a batch of original or rights-cleared classic Clue
 2. 依 `story-quality-autoloop` 隔離三位新讀者分段盲評。每位至少 90 分、核心均有線索支持且無關鍵缺陷，才通過故事品質。製作批可使用多個編輯輪次，各自遵守 AutoLoop 的回合、讀者及單篇上限。每篇沿用原本的凍結稿、逐輪讀者紀錄與雜湊，達到單篇上限就換故事。作者自評單獨保留。當次只要求寫稿或評分時，交付候選稿。
 3. 正式 CluePause 製片前完成 [Story Rights Gate](references/story-rights.md)，逐篇對應凍結稿 SHA-256。權利待授權、待確認或拒絕的題目限內部研究。使用者已要求製片時，將同時通過故事品質與權利查核的凍結稿移交製作。
 4. 依 `shorts-viewer-gate` 與[製片、剪輯和看片流程](references/content-workflow.md) 製作。依 PLAN 輸出 9:16、1080×1920、30 FPS、30–60 秒。交付英文旁白母片、英／繁中 SRT 及方便試看的繁中燒錄版或雙字幕 MP4。保留素材、成本、版本雜湊、命令和驗收。
-5. 文字分數、媒體 QA、真人單次首看、公開後觀看數據各有自己的證據。首看測試只給從未接觸同稿的觀眾對應 MP4，保留原話與版本。照已有門檻判斷，沒有足夠真人樣本就記待驗。
+5. CluePause 依 S04 與 S08 執行[文字與成片的兩次隔離首看](references/content-workflow.md#cluepause-理解檢查與返修)，以「容易理解、難以預測」為目標。成片影音能力不足時依流程標待驗。保留各階段原話與版本。工程、知情審片、Owner 單次首看、真人試看及公開後數據各自留證，照已有門檻判斷。
 
 ## 上傳與重新核對
 
