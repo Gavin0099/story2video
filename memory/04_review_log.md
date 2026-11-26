@@ -69,3 +69,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-phone-coverage.json -> exit_code=0 (80 tests). Independent review of workflow blob 549e3378fb6dced6ec0e341034ad8d7bda0bf87b passed.
 - Next action: Apply the updated checks to future authorized productions and keep private viewer feedback local.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:a6bcb2428f09370f0c3b412c2fb949020ceb1013cc20f93678d19b155286a82a -->
+### Canonical memory checkpoint — cli-20261126-182934
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `a6bcb2428f09370f0c3b412c2fb949020ceb1013cc20f93678d19b155286a82a`
+- Commit binding: `28beeed21bb549367601e2c09c68c3f599242161` (bound)
+- Record: Integrated a versioned cinematic visual reference for CluePause across topic-specific storyboards, source selection, motion inserts and final preview. WhyNest retains scientific diagrams and filmed demonstrations.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-channel-visual-style.json -> exit_code=0 (80 tests). Node 22.16.0 npm ci and video typecheck passed. Independent review accepted the four workflow blobs. The real renderer and editorial smoketest covered a photographic source, a complete flat drawing, missing media and an existing science diagram.
+- Next action: Use the channel reference and episode continuity sheet for new productions, then review the actual cut in the intended player layout.
+- PLAN reconciliation: `not_applicable`

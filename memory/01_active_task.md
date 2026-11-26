@@ -8,4 +8,4 @@
 
 - Update this file when task state changes.
 
-- The Shorts review flow now checks key visual evidence and captions against an observed phone player overlay. <!-- memory_record_projection:active-task-summary:409245d73bcf547b30c0bd6aa2b2f232d2ada821821a3941e6ec6de078eb55a9 -->
+- New productions use a versioned channel look and validate the selected shots, inserts and final cut. <!-- memory_record_projection:active-task-summary:a6bcb2428f09370f0c3b412c2fb949020ceb1013cc20f93678d19b155286a82a -->
