@@ -58,3 +58,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-flow-adoption.json -> exit_code=0 (80 tests). Node 22.16.0 npm ci and video typecheck passed. Skill validation, relative links and independent scenario review passed.
 - Next action: Use the revised skill at the next authorized batch. Continue to keep Owner decisions, formal checks and market measurements independent.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:409245d73bcf547b30c0bd6aa2b2f232d2ada821821a3941e6ec6de078eb55a9 -->
+### Canonical memory checkpoint — cli-20261126-180723
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `409245d73bcf547b30c0bd6aa2b2f232d2ada821821a3941e6ec6de078eb55a9`
+- Commit binding: `6cbb909dba4e19fbbc0247ceda617307fd206e96` (bound)
+- Record: Documented device-specific overlay checks on the actual rendered cut and separate owner disposition when a previously reviewed visual clue is unclear.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-phone-coverage.json -> exit_code=0 (80 tests). Independent review of workflow blob 549e3378fb6dced6ec0e341034ad8d7bda0bf87b passed.
+- Next action: Apply the updated checks to future authorized productions and keep private viewer feedback local.
+- PLAN reconciliation: `not_applicable`
