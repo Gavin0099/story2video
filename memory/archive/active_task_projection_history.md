@@ -16,3 +16,5 @@ projection superseded them. History only; not current state.
 - Integrated source-backed creative, editing and batch closeout methods into the existing Shorts production flow. <!-- memory_record_projection:active-task-summary:3484c01b92cf7b8808aec0e770251164300d2df076630c6a48fa17f12c873b80 -->
 
 - The Shorts review flow now checks key visual evidence and captions against an observed phone player overlay. <!-- memory_record_projection:active-task-summary:409245d73bcf547b30c0bd6aa2b2f232d2ada821821a3941e6ec6de078eb55a9 -->
+
+- New productions use a versioned channel look and validate the selected shots, inserts and final cut. <!-- memory_record_projection:active-task-summary:a6bcb2428f09370f0c3b412c2fb949020ceb1013cc20f93678d19b155286a82a -->

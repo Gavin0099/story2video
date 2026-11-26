@@ -80,3 +80,14 @@
 - Validation boundary: PASS: artifacts/evidence/test-results/s09-channel-visual-style.json -> exit_code=0 (80 tests). Node 22.16.0 npm ci and video typecheck passed. Independent review accepted the four workflow blobs. The real renderer and editorial smoketest covered a photographic source, a complete flat drawing, missing media and an existing science diagram.
 - Next action: Use the channel reference and episode continuity sheet for new productions, then review the actual cut in the intended player layout.
 - PLAN reconciliation: `not_applicable`
+
+<!-- memory_record_projection:review-log:17b487e07da8f0dd19df9375bf5cfe71d8019328be2d19d19f87c074b0e76634 -->
+### Canonical memory checkpoint — cli-20261126-191127
+
+- Writer: `governance_tools.memory_record`
+- Record identity: `17b487e07da8f0dd19df9375bf5cfe71d8019328be2d19d19f87c074b0e76634`
+- Commit binding: `e95b31290dadea9fc8992cc720a7ad51fe611dfe` (bound)
+- Record: The CluePause workflow records when to use a cleared musical underscore, preserve practical cues, and check soft-prop pressure through the reaction shot.
+- Validation boundary: PASS: artifacts/evidence/test-results/s09-score-prop-flow.json -> exit_code=0 (80 tests). Node 22.16.0 dependency installation and video typecheck passed. Independent reviewer confirmed workflow blob 21ddfab2a21e1f638e95651a73d81ed3daab96ef.
+- Next action: Reuse these methods on applicable stories and verify the actual encoded sound and motion.
+- PLAN reconciliation: `not_applicable`
