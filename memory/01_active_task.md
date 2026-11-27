@@ -8,4 +8,4 @@
 
 - Update this file when task state changes.
 
-- Issue #32 的公開製片工作流、來源及 60 支公開片清單已通過獨立審查。 <!-- memory_record_projection:active-task-summary:95d91f11b454b1e266c6fc302bf9b909d5fd2f91f4288a1a8ccb074e7cf40cfc -->
+- The CluePause editorial workflow now hands verified narrative mechanisms to original writers. Text pilots and audience validation retain their separate statuses. <!-- memory_record_projection:active-task-summary:fee6afbc343c87d5a9274413a8b00fb6aeb09fbdf625a7662e0ea280faa8ce6e -->

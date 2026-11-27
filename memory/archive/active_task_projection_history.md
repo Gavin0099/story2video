@@ -6,3 +6,19 @@ projection superseded them. History only; not current state.
 - Development governance is wired. M0 application tests passed locally, Git hooks were exercised, and remote GitHub Actions remains pending. <!-- memory_record_projection:active-task-summary:c7a4ba9b9b9e6f026fea9f7994336845ec73ce12f4c3573eab2f594878f2e1b6 -->
 
 - WhyNest Lab 首批十篇雙語科普稿通過內容審查與本機驗收，可交 GitHub PR 看稿。 <!-- memory_record_projection:active-task-summary:0f12226d90a52eee60a982d08904846cded53337044aade9455aa3d042c30bb5 -->
+
+- Issue #32 的公開製片工作流、來源及 60 支公開片清單已通過獨立審查。 <!-- memory_record_projection:active-task-summary:95d91f11b454b1e266c6fc302bf9b909d5fd2f91f4288a1a8ccb074e7cf40cfc -->
+
+- Issue 32 S09 content methods reviewed in a stacked worktree. Owner evaluation and market follow-up are pending. <!-- memory_record_projection:active-task-summary:75cef6bf082d3b6183fcb36e26ca60d0c1494730aec72193cd64c385f57ad043 -->
+
+- S09 post-encode review and two-channel capacity documented; local previews delivered for Owner viewing. <!-- memory_record_projection:active-task-summary:720ecc13402b7e03815e2b86439b7256ff40f26a1f152b25fa8425edb8450d16 -->
+
+- Integrated source-backed creative, editing and batch closeout methods into the existing Shorts production flow. <!-- memory_record_projection:active-task-summary:3484c01b92cf7b8808aec0e770251164300d2df076630c6a48fa17f12c873b80 -->
+
+- The Shorts review flow now checks key visual evidence and captions against an observed phone player overlay. <!-- memory_record_projection:active-task-summary:409245d73bcf547b30c0bd6aa2b2f232d2ada821821a3941e6ec6de078eb55a9 -->
+
+- New productions use a versioned channel look and validate the selected shots, inserts and final cut. <!-- memory_record_projection:active-task-summary:a6bcb2428f09370f0c3b412c2fb949020ceb1013cc20f93678d19b155286a82a -->
+
+- Apply the contextual sound and contact guidance through the existing production and review workflow. <!-- memory_record_projection:active-task-summary:17b487e07da8f0dd19df9375bf5cfe71d8019328be2d19d19f87c074b0e76634 -->
+
+- Verified the photographic clue and horror ending guidance in the existing Shorts production flow. <!-- memory_record_projection:active-task-summary:2e93bf424d117b3d3a2f39ad2862bbedb688f852e75a72f1e6cc8002e4b8f710 -->
